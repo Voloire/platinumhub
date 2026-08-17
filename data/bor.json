@@ -3,6 +3,7 @@
   "id": "bor",
   "format": 1,
   "version": 1,
+  "order": 70,
   "accent": "#7fc98a",
   "tagline": {
    "en": "Emma & Koo - parry-tank, story mode, NG+ clear",

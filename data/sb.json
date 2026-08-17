@@ -3,6 +3,7 @@
   "id": "sb",
   "format": 1,
   "version": 1,
+  "order": 40,
   "accent": "#d06a8a",
   "tagline": {
    "en": "Eve - the collectible run, nothing missed",

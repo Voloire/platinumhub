@@ -3,6 +3,7 @@
   "id": "kz",
   "format": 1,
   "version": 1,
+  "order": 50,
   "accent": "#6aa8a0",
   "tagline": {
    "en": "Greatsword Khazan - true ending gates handled",

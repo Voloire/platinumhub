@@ -19,32 +19,21 @@ from .ui import esc, page_head
 #
 # I testi del canvas sono volutamente SOLO in italiano: sono il brand del
 # canale, non interfaccia. L'interfaccia intorno e' bilingue come il resto.
-THUMB_DESIGNS = {
-    "er":  {"icon": "ring",     "glow": "120,80,25",  "seed": 20260817,
-            "stats": [["3", "FINALI"], ["1", "RUN"]],
-            "tag": "Vagabondo · scudo · niente glitch"},
-    "dsr": {"icon": "bonfire",  "glow": "110,60,18",  "seed": 11,
-            "stats": [["3", "CICLI"]], "tag": None},
-    "ds3": {"icon": "darksign", "glow": "105,45,14",  "seed": 12,
-            "stats": [["3", "VIAGGI"]], "tag": None},
-    "sb":  {"icon": "crescent", "glow": "35,90,105",  "seed": 13,
-            "stats": [["1", "RUN"], ["", "NG+"]], "tag": None},
-    "kz":  {"icon": "slashes",  "glow": "105,25,25",  "seed": 14,
-            "stats": [["1", "RUN"], ["", "EXPERT"]], "tag": None},
-    "lop": {"icon": "strings",  "glow": "45,65,100",  "seed": 15,
-            "stats": [["3", "FINALI"], ["", "NG+"]], "tag": None},
-    "bor": {"icon": "paw",      "glow": "100,50,30",  "seed": 16,
-            "stats": [["2", "RUN"]], "tag": None},
-    "bmw": {"icon": "staff",    "glow": "110,70,20",  "seed": 17,
-            "stats": [["1", "RUN"], ["", "NG+"]], "tag": None},
-    "n3":  {"icon": "hitodama", "glow": "40,55,115",  "seed": 18,
-            "stats": [["0", "MISSABILI"], ["1", "RUN"]], "tag": None},
-    "na":  {"icon": "cube",     "glow": "85,78,60",   "seed": 19,
-            "stats": [["3", "ROUTE"]], "tag": None},
-}
-# Un gioco aggiunto domani, senza design suo, ha comunque una thumbnail seria.
+#
+# Il design per gioco vive nel meta.thumb della route (icona, glow, seme,
+# statistiche, tag): e' parte della route, viaggia con lei. Qui resta solo
+# il ripiego, cosi' una route senza design ha comunque una thumbnail seria.
 THUMB_FALLBACK = {"icon": "trophy", "glow": "110,80,25", "seed": 5, "stats": [], "tag": None}
 THUMB_TAG_DEFAULT = "Niente glitch · niente skip · route verificata"
+
+
+def thumb_design(route):
+    """Il design della thumbnail di una route: meta.thumb con il ripiego sotto."""
+    meta = route.get("meta") or {}
+    design = dict(THUMB_FALLBACK)
+    design.update({k: v for k, v in (meta.get("thumb") or {}).items()
+                   if k in THUMB_FALLBACK})
+    return design
 
 # L'arte (sfondo, particelle, icone) e' separata dalla pagina che la usa:
 # la disegnano sia /thumb/<run> sia le card della home, e deve esistere UNA
@@ -442,7 +431,7 @@ def render_thumb(run_id):
     lg = lang()
     t = T[lg]
     d = ROUTES[run_id]
-    design = THUMB_DESIGNS.get(run_id, THUMB_FALLBACK)
+    design = thumb_design(d)
     cfg = {
         "game": str(d["game"]).upper(),
         "stats": [[str(d.get("trophy_total") or "?"), "TROFEI"]] + design["stats"],
