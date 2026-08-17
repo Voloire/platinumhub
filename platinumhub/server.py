@@ -55,6 +55,9 @@ class Handler(http.server.BaseHTTPRequestHandler):
         self._send(json.dumps(obj, ensure_ascii=False), "application/json; charset=utf-8", code)
 
     def _redirect(self, to):
+        # niente caratteri di controllo nella Location: un %0d%0a decodificato
+        # da parse_qs diventerebbe una riga di header scritta dal client
+        to = re.sub(r"[\x00-\x1f\x7f]", "", str(to))
         self.send_response(303)
         self.send_header("Location", to)
         self.send_header("Content-Length", "0")
@@ -243,9 +246,13 @@ class Handler(http.server.BaseHTTPRequestHandler):
                               extra={"Content-Disposition": 'attachment; filename="%s"' % fname})
 
         if path.startswith("/fonts/"):
+            # whitelist stretta: nessun separatore puo' entrare nel nome,
+            # quindi il join non puo' uscire dalla cartella fonts/
             name = os.path.basename(path)
+            if not re.match(r"^[A-Za-z0-9_-]+\.woff2$", name):
+                return self._send(b"", "font/woff2", 404)
             fp = os.path.join(BASE, "fonts", name)
-            if name.endswith(".woff2") and os.path.isfile(fp):
+            if os.path.isfile(fp):
                 with open(fp, "rb") as f:
                     data = f.read()
                 self.send_response(200)
