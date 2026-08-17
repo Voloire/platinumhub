@@ -11,6 +11,11 @@ la numerazione segue [Semantic Versioning](https://semver.org/lang/it/).
 
 ## [Non rilasciato]
 
+## [4.1.0] - 2026-08-17
+
+Una funzione sola, ma è quella che serviva: **non devi più aprire un file di testo
+per sapere quali tasti premere.**
+
 ### Aggiunto
 - **Le scorciatoie da tastiera si vedono dentro l'app.** Un pulsante ⌨ in alto a
   destra di ogni pagina — o il tasto <kbd>?</kbd> — apre un pannello che elenca
