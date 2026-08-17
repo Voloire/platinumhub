@@ -230,6 +230,25 @@ T = {
         "hk_state_on": "active",
         "hk_state_off": "not active",
         "hk_save": "Save shortcuts",
+        "hk_btn": "Shortcuts",
+        "hk_panel_title": "Keyboard shortcuts",
+        "hk_panel_intro": ("These work <b>while the game has focus</b>: you do not need to alt+tab. "
+                           "Windows only. Press <kbd>?</kbd> to open this panel again."),
+        "hk_col_key": "Key",
+        "hk_col_what": "What it does",
+        "hk_act_rec": "Start or stop the OBS recording",
+        "hk_act_next": "Tick the current step and move to the next one",
+        "hk_act_undo": "Undo the step you ticked last",
+        "hk_act_mark": "Drop a bookmark at this exact moment",
+        "hk_ok": "registered",
+        "hk_taken": "taken by another program",
+        "hk_thieves": ("A combination that will not register is almost always held by the GeForce Experience "
+                       "overlay, Discord or the Xbox Game Bar. Turn its shortcut off there, or pick another key."),
+        "hk_off_note": "Shortcuts are off. Turn them on and choose your own combinations in",
+        "hk_settings": "the session settings",
+        "hk_restart": "Changing them needs an app restart.",
+        "hk_close": "Close",
+        "hk_loading": "reading the state…",
         "diag": "Diagnostics",
         "diag_run": "Run the checks",
         "diag_note": "Runs the whole chain on this PC and writes a report to diagnostica.txt next to app.py. Start OBS (and a test stream or recording) before pressing.",
@@ -380,6 +399,25 @@ T = {
         "hk_state_on": "attive",
         "hk_state_off": "non attive",
         "hk_save": "Salva scorciatoie",
+        "hk_btn": "Scorciatoie",
+        "hk_panel_title": "Scorciatoie da tastiera",
+        "hk_panel_intro": ("Funzionano <b>con il gioco in primo piano</b>: non serve fare alt+tab. "
+                           "Solo Windows. Premi <kbd>?</kbd> per riaprire questo pannello."),
+        "hk_col_key": "Tasti",
+        "hk_col_what": "Cosa fa",
+        "hk_act_rec": "Avvia o ferma la registrazione di OBS",
+        "hk_act_next": "Spunta il passo corrente e passa al successivo",
+        "hk_act_undo": "Annulla l'ultimo passo che hai spuntato",
+        "hk_act_mark": "Metti un segnaposto in questo preciso momento",
+        "hk_ok": "registrata",
+        "hk_taken": "occupata da un altro programma",
+        "hk_thieves": ("Una combinazione che non si registra è quasi sempre tenuta dall'overlay di GeForce "
+                       "Experience, da Discord o dalla Xbox Game Bar. Disattivala là, o scegline un'altra."),
+        "hk_off_note": "Le scorciatoie sono spente. Puoi accenderle e scegliere le tue combinazioni in",
+        "hk_settings": "impostazioni della sessione",
+        "hk_restart": "Per cambiarle serve riavviare l'app.",
+        "hk_close": "Chiudi",
+        "hk_loading": "leggo lo stato…",
         "diag": "Diagnostica",
         "diag_run": "Esegui i controlli",
         "diag_note": "Prova tutta la catena su questo PC e scrive un referto in diagnostica.txt, accanto ad app.py. Avvia OBS (con una diretta o registrazione di prova) prima di premere.",
@@ -782,6 +820,28 @@ background:var(--panel);border:1px solid var(--gold-dim);border-radius:8px;paddi
 .modesel a.on{background:var(--gold-dim);border-color:var(--gold);color:#12141c}
 .topright{position:absolute;top:14px;right:16px;z-index:30;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 @media(max-width:820px){.topright{position:static;justify-content:center;margin-bottom:10px}}
+/* pannello delle scorciatoie: si apre da un pulsante o col tasto ? */
+.hkbtn{font-size:.8em;letter-spacing:1px;padding:5px 11px;background:var(--panel);
+border:1px solid var(--gold-dim);border-radius:8px;color:var(--muted);cursor:pointer}
+.hkbtn:hover{border-color:var(--gold);color:var(--gold)}
+.hkmodal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;
+background:rgba(6,8,12,.72);padding:20px}
+.hkmodal.open{display:flex}
+.hkbox{background:var(--panel);border:1px solid var(--gold-dim);border-radius:12px;
+max-width:680px;width:100%;max-height:86vh;overflow:auto;padding:22px 24px}
+.hkbox h2{margin:0 0 10px;font-size:1.05em;color:var(--gold);letter-spacing:2px;text-transform:uppercase;
+font-weight:500}
+.hkbox .intro{color:var(--muted);font-size:.9em;line-height:1.6;margin-bottom:16px}
+.hkrow{display:flex;gap:14px;align-items:baseline;padding:9px 0;border-top:1px solid var(--line);
+flex-wrap:wrap}
+.hkrow .what{flex:1;min-width:220px}
+kbd,.hkkey{font-family:inherit;font-size:.82em;letter-spacing:1px;background:var(--panel2);
+border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;padding:3px 8px;color:var(--text);
+white-space:nowrap}
+.hkfoot{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);display:flex;gap:12px;
+align-items:center;flex-wrap:wrap;font-size:.88em;color:var(--muted)}
+.hkwarn{color:var(--warn);font-size:.88em;line-height:1.6;margin-top:12px;background:var(--warn-bg);
+border:1px solid var(--warn);border-radius:8px;padding:10px 13px}
 .tabs{display:flex;gap:8px;margin:16px 0 0}
 .tabs a{background:var(--panel2);border:1px solid var(--line);color:var(--muted);
 border-radius:7px 7px 0 0;padding:7px 15px;font-size:.85em}
@@ -1004,8 +1064,10 @@ def render_home():
     t = T[lg]
     p = ['<!DOCTYPE html><html lang="%s"><head><meta charset="UTF-8">' % lg,
          '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
-         "<title>Platinum Hub - by Voloirex</title>", "<style>" + CSS + "</style></head><body>"]
-    p.append(f'<header>{langsel(lg, "/", top=True)}<h1>{t["hub_title"]}</h1>'
+         "<title>Platinum Hub - by Voloirex</title>", "<style>" + CSS + "</style></head><body>",
+         hk_panel(lg)]
+    p.append(f'<header><div class="topright">{hk_button(lg)}{langsel(lg, "/")}</div>'
+             f'<h1>{t["hub_title"]}</h1>'
              f'<p class="sub">{t["hub_sub"]} · <span class="by">{t["by"]}</span></p>'
              f'<p class="meta">{t["hub_meta"]}</p></header>')
     p.append('<div class="wrap">')
@@ -1493,8 +1555,8 @@ def render_run(run_id):
     p = ['<!DOCTYPE html><html lang="%s"><head><meta charset="UTF-8">' % lg,
          '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
          f"<title>{esc(d['game'])} - {t['checklist']} - Voloirex</title>",
-         "<style>" + CSS + "</style></head><body>"]
-    p.append(f'<header><div class="topright">{modesel(lg, "/run/" + run_id)}'
+         "<style>" + CSS + "</style></head><body>", hk_panel(lg, run_id)]
+    p.append(f'<header><div class="topright">{hk_button(lg)}{modesel(lg, "/run/" + run_id)}'
              f'{langsel(lg, "/run/" + run_id)}</div><h1>{esc(d["game"]).upper()} · {t["checklist"]}</h1>'
              f'<p class="sub">{t["sub_run"]} · <span class="by">{t["by"]}</span></p>'
              f'<p class="meta">🏆 {d["trophy_total"]} {t["trophies"]} · {esc(L(d, "playthroughs", lg))} · '
@@ -2112,15 +2174,93 @@ tick(); setInterval(tick, 700);
 
 
 # ------------------------------------------------------------- episodes page
+def hk_button(lg):
+    """Il pulsante che apre il pannello delle scorciatoie."""
+    t = T[lg]
+    return ('<button class="hkbtn" onclick="hkOpen()" title="%s  (?)">⌨ %s</button>'
+            % (esc(t["hk_panel_title"]), esc(t["hk_btn"])))
+
+
+# Le combinazioni arrivano dalle preferenze, cioe' sono testo scritto dall'utente:
+# passano tutte da hkEsc() prima di finire in innerHTML.
+HK_PANEL_JS = """
+function hkEsc(s){ var d=document.createElement('div'); d.textContent=(s==null?'':s); return d.innerHTML; }
+function hkPretty(s){
+  return String(s).split('+').map(function(x){
+    x = x.trim();
+    return x.length > 1 ? x.charAt(0).toUpperCase() + x.slice(1) : x.toUpperCase();
+  }).join(' + ');
+}
+function hkRow(key, action, state, cls){
+  return '<div class="hkrow"><span class="hkkey">' + hkEsc(hkPretty(key)) + '</span>' +
+         '<span class="what">' + hkEsc(HK_DESC[action] || action) + '</span>' +
+         '<span class="chip ' + cls + '">' + hkEsc(state) + '</span></div>';
+}
+function hkClose(){ var m = document.getElementById('hkModal'); if(m) m.classList.remove('open'); }
+function hkOpen(){
+  var m = document.getElementById('hkModal'); if(!m) return;
+  m.classList.add('open');
+  var box = document.getElementById('hkRows');
+  fetch('/api/hotkeys').then(function(r){ return r.json(); }).then(function(d){
+    var act = {}, fail = {};
+    (d.active || []).forEach(function(p){ act[p[0]] = 1; });
+    (d.failed || []).forEach(function(p){ fail[p[0]] = 1; });
+    var rows = (d.configured || []).map(function(p){
+      if(act[p[0]])  return hkRow(p[0], p[1], HK_TXT.ok, 'ok');
+      if(fail[p[0]]) return hkRow(p[0], p[1], HK_TXT.taken, 'bad');
+      return hkRow(p[0], p[1], d.why || HK_TXT.off, '');
+    });
+    box.innerHTML = rows.length ? rows.join('')
+      : '<div class="hkrow"><span class="what">' + HK_TXT.offnote + ' ' + HK_TXT.where + '</span></div>';
+    document.getElementById('hkWarn').innerHTML =
+      (d.failed && d.failed.length) ? '<div class="hkwarn">' + HK_TXT.thieves + '</div>' : '';
+  }).catch(function(){ box.textContent = '\\u2014'; });
+}
+document.addEventListener('keydown', function(e){
+  var tag = ((e.target && e.target.tagName) || '').toLowerCase();
+  if(tag === 'input' || tag === 'textarea' || tag === 'select') return;
+  if(e.key === '?'){ e.preventDefault(); hkOpen(); }
+  else if(e.key === 'Escape'){ hkClose(); }
+});
+"""
+
+
+def hk_panel(lg, run_id=None):
+    """Il pannello delle scorciatoie, identico su ogni pagina.
+
+    Non e' documentazione incollata: legge /api/hotkeys e dice quali
+    combinazioni Windows ha davvero registrato e quali gli ha rubato un altro
+    programma. Quel dato non sta in nessun file di testo, e in un file di testo
+    non potrebbe starci."""
+    t = T[lg]
+    where = ('<a href="/session/%s">%s</a>' % (esc(str(run_id)), esc(t["hk_settings"]))
+             if run_id else esc(t["hk_settings"]))
+    txt = {"ok": t["hk_ok"], "taken": t["hk_taken"], "off": t["hk_state_off"],
+           "thieves": t["hk_thieves"], "offnote": t["hk_off_note"], "where": where}
+    desc = {a: t["hk_act_" + a] for a in HOTKEY_ACTIONS}
+    return ('<div class="hkmodal" id="hkModal" onclick="if(event.target===this)hkClose()">'
+            '<div class="hkbox" role="dialog" aria-modal="true" aria-label="%s">'
+            '<h2>⌨ %s</h2><div class="intro">%s</div>'
+            '<div id="hkRows">%s</div><div id="hkWarn"></div>'
+            '<div class="hkfoot"><button onclick="hkClose()">%s</button><span>%s</span></div>'
+            '</div></div><script>var HK_DESC=%s;var HK_TXT=%s;%s</script>'
+            % (esc(t["hk_panel_title"]), esc(t["hk_panel_title"]), t["hk_panel_intro"],
+               esc(t["hk_loading"]), esc(t["hk_close"]), esc(t["hk_restart"]),
+               json.dumps(desc, ensure_ascii=False), json.dumps(txt, ensure_ascii=False),
+               HK_PANEL_JS))
+
+
 def page_head(lg, title, run_id, active, subtitle=""):
     t = T[lg]
     return ('<!DOCTYPE html><html lang="%s"><head><meta charset="UTF-8">'
             '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
-            '<title>%s</title><style>%s</style></head><body>'
-            '<header><div class="topright">%s%s</div><h1>%s</h1>'
+            '<title>%s</title><style>%s</style></head><body>%s'
+            '<header><div class="topright">%s%s%s</div><h1>%s</h1>'
             '<p class="sub">%s · <span class="by">%s</span></p></header>'
             '<div class="wrap"><a class="back" href="/">← %s</a>%s'
-            % (lg, esc(title), CSS, modesel(lg, "/%s/%s" % (active_path(active), run_id)),
+            % (lg, esc(title), CSS, hk_panel(lg, run_id),
+               hk_button(lg),
+               modesel(lg, "/%s/%s" % (active_path(active), run_id)),
                langsel(lg, "/%s/%s" % (active_path(active), run_id)),
                esc(title), esc(subtitle), t["by"], t["back"],
                tabs(lg, run_id, active)))
@@ -2847,8 +2987,15 @@ class Handler(http.server.BaseHTTPRequestHandler):
             return self._send(render_changelog())
 
         if path == "/api/hotkeys":
-            return self._json({"spec": get_pref("hotkeys", HOTKEYS_DEFAULT),
+            spec = get_pref("hotkeys", HOTKEYS_DEFAULT)
+            # "configured" e' la lista che l'utente ha impostato, indipendente da
+            # quello che Windows ha poi accettato di registrare: serve al pannello
+            # per mostrare le scorciatoie anche quando sono spente o siamo su Linux,
+            # senza rifare in JavaScript il lavoro di parse_hotkeys().
+            return self._json({"spec": spec,
                                "on": get_pref("hotkeys_on", "1") == "1",
+                               "configured": [[label, action]
+                                              for _m, _vk, action, label in parse_hotkeys(spec)],
                                "active": HOTKEY_STATE["active"],
                                "failed": HOTKEY_STATE["failed"],
                                "why": HOTKEY_STATE["why"],

@@ -14,6 +14,7 @@ BASE — e quindi il database — restano nella cartella temporanea).
 """
 
 import os
+import re
 import sys
 import time
 import unittest
@@ -229,6 +230,96 @@ class CommandQueueApiTest(harness.ServerTestCase, unittest.TestCase):
 def harness_default(server):
     """Riporta la specifica di default leggendola dall'app stessa."""
     return "ctrl+alt+F9:rec, ctrl+alt+F10:next, ctrl+alt+F8:undo, ctrl+alt+F11:mark"
+
+
+class HotkeyPanelDataTest(harness.ServerTestCase, unittest.TestCase):
+    """/api/hotkeys deve dire al pannello quali combinazioni SONO configurate.
+
+    "configured" e' diverso da "active": su Linux, o con le scorciatoie spente,
+    "active" e' vuoto ma il pannello deve comunque poter elencare le
+    combinazioni. Serve perche' il pannello non rifaccia parse_hotkeys() in
+    JavaScript: una seconda implementazione della stessa regola divergerebbe.
+    """
+
+    def tearDown(self):
+        self.server.post_json("/api/hotkeys",
+                              {"spec": harness_default(self.server), "on": True})
+
+    def test_configured_lists_label_and_action_of_every_combo(self):
+        code, res = self.server.get_json("/api/hotkeys")
+        self.assertEqual(code, 200)
+        self.assertIn("configured", res)
+        pairs = [tuple(x) for x in res["configured"]]
+        self.assertEqual(pairs, [("ctrl+alt+F9", "rec"), ("ctrl+alt+F10", "next"),
+                                 ("ctrl+alt+F8", "undo"), ("ctrl+alt+F11", "mark")])
+
+    def test_configured_follows_the_saved_spec(self):
+        self.server.post_json("/api/hotkeys",
+                              {"spec": "ctrl+shift+F5:mark", "on": True})
+        code, res = self.server.get_json("/api/hotkeys")
+        self.assertEqual([tuple(x) for x in res["configured"]], [("ctrl+shift+F5", "mark")])
+
+    def test_configured_drops_what_parse_hotkeys_drops(self):
+        # F9 senza modificatori non si registra, "banana" non e' un'azione.
+        self.server.post_json("/api/hotkeys",
+                              {"spec": "ctrl+alt+F9:rec, F2:next, ctrl+alt+F3:banana",
+                               "on": True})
+        code, res = self.server.get_json("/api/hotkeys")
+        self.assertEqual([tuple(x) for x in res["configured"]], [("ctrl+alt+F9", "rec")])
+
+
+class HotkeyPanelRenderTest(harness.ServerTestCase, unittest.TestCase):
+    """Il pannello deve esserci su ogni pagina, in entrambe le lingue.
+
+    Il punto della funzione e' che nessuno debba aprire la documentazione: se il
+    pulsante non c'e' su una pagina, su quella pagina la funzione non esiste.
+    """
+
+    PAGES = ("/", "/run/kz", "/episodes/kz", "/session/kz")
+
+    def tearDown(self):
+        self.server.set_lang("it")
+
+    def test_panel_and_button_are_on_every_page_in_both_languages(self):
+        for lg in ("it", "en"):
+            self.server.set_lang(lg)
+            for path in self.PAGES:
+                with self.subTest(lang=lg, page=path):
+                    code, html = self.server.get_text(path)
+                    self.assertEqual(code, 200)
+                    self.assertIn('id="hkModal"', html,
+                                  "manca il pannello scorciatoie su %s" % path)
+                    self.assertIn('class="hkbtn"', html,
+                                  "manca il pulsante scorciatoie su %s" % path)
+
+    def test_every_action_has_a_description_in_both_languages(self):
+        """Se si aggiunge un'azione senza tradurla, hk_panel() alza KeyError e
+        OGNI pagina risponde 500. Meglio scoprirlo qui."""
+        app, sandbox = harness.import_app_module()
+        try:
+            for lg in ("it", "en"):
+                for action in app.HOTKEY_ACTIONS:
+                    with self.subTest(lang=lg, action=action):
+                        key = "hk_act_" + action
+                        self.assertIn(key, app.T[lg],
+                                      "manca la traduzione %s in %s" % (key, lg))
+                        self.assertTrue(str(app.T[lg][key]).strip())
+        finally:
+            harness.drop_sandbox(sandbox)
+
+    def test_the_panel_adds_no_checklist_checkbox(self):
+        """La regola dura (CLAUDE.md 2.4): i progressi sono una stringa
+        posizionale lunga quanto la checklist, e i bit vengono dalle caselle
+        <input type="checkbox" id="sN">. Qualunque casella nuova nella pagina
+        della run sposterebbe le spunte di chiunque abbia una run in corso."""
+        expected = harness.route_step_count(harness.load_route("kz.json"))
+        for lg in ("it", "en"):
+            self.server.set_lang(lg)
+            with self.subTest(lang=lg):
+                code, html = self.server.get_text("/run/kz")
+                found = len(re.findall(r'<input type="checkbox" id="s\d+">', html))
+                self.assertEqual(found, expected,
+                                 "il pannello ha alterato il numero di caselle della checklist")
 
 
 if __name__ == "__main__":
