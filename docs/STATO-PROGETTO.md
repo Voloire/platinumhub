@@ -195,11 +195,12 @@ session/start session/stop session/update session/delete cmd pending toast hotke
 
 Le fasi sono in **ordine di dipendenza**. Fermarsi alla 3 ha comunque senso.
 
-### Fase 0 — Repo privato su GitHub
-- [ ] Repository **privato** `platinum-hub`; `.gitignore` con `platinum.db`, `diagnostica.txt`, `*.log`, `__pycache__/`, `dist/`, `build/`, `*.spec`, `.venv/`
-- [ ] Commit iniziale **senza `platinum.db`** (contiene la password di OBS in chiaro e i progressi personali)
-- [ ] Struttura: `app.py` · `data/` · `fonts/` · `tools/` · `docs/` · `.github/workflows/`
-- [ ] `README.md`, strategia branch (`main` sempre verde, lavoro su `feat/` e `fix/`, merge via PR anche da solo), Conventional Commits
+### Fase 0 — Repo su GitHub — fatta (pubblico, non privato)
+- [x] Repository **pubblico** `Voloire/platinumhub`; `.gitignore` con `platinum.db`, `diagnostica.txt`, `*.log`, `__pycache__/`, `dist/`, `build/`, `*.spec`, `.venv/`
+- [x] Commit iniziale **senza `platinum.db`** (contiene la password di OBS in chiaro e i progressi personali)
+- [x] Struttura: `app.py` · `data/` · `fonts/` · `tools/` · `docs/` · `.github/workflows/`
+- [x] `README.md`, strategia branch (`main` sempre verde, lavoro su `feat/` e `fix/`, merge via PR anche da solo), Conventional Commits
+- [ ] Protezione di `main` con i controlli obbligatori (dopo la prima CI verde)
 
 ### Fase 1 — Igiene del codice
 - [ ] **Versione in un posto solo** (oggi è scritta a mano in 4 file)
@@ -260,7 +261,7 @@ casi come *"i primi quattro boss di quattro giochi diversi"* o *"sfida senza scu
 sono i **pezzi piccoli**: una quest line, "tutte le lacrime mimiche", "i sepolcri d'eroe". Stesso formato di 8a:
 una quest line è una run con una fase sola.
 
-- [ ] Repo pubblico `platinum-hub-catalog`: `checklists/<gioco>/<slug>.json` (formattati leggibili, i diff delle PR
+- [ ] Repo pubblico `platinumhub-catalog`: `checklists/<gioco>/<slug>.json` (formattati leggibili, i diff delle PR
       devono essere leggibili), `schema/`, `CONTRIBUTING.md`, `dist/index.json` **generato, mai scritto a mano**
 - [ ] Action su PR: valida schema, id unici e dimensioni, e commenta con un riassunto → la review è di merito, non di sintassi
 - [ ] Action su merge: ricalcola gli hash, rigenera l'indice, pubblica su **GitHub Pages** (non `raw.githubusercontent`:

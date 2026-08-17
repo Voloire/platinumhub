@@ -40,6 +40,12 @@ scompatta e si fa doppio clic. Non serve più installare Python.
   arriva dal tag git: non può più divergere da quello che è stato pubblicato.
 
 ### Corretto
+- **Due copie dell'app aperte insieme finivano entrambe sulla porta 8787**, e le
+  richieste andavano a caso all'una o all'altra: si credeva di guardare la copia
+  appena aperta e si stava usando quella di prima. Su Windows la porta occupata
+  non veniva riconosciuta come tale, così il passaggio automatico alla porta
+  successiva non scattava mai. Ora la seconda copia si sposta davvero, e
+  l'indirizzo stampato nella finestra nera è quello giusto.
 - Un corpo JSON valido ma non-oggetto (`[1,2]`, `"testo"`, `42`) faceva morire la
   richiesta senza risposta, con un traceback nella finestra nera. Ora risponde 400.
 - Stesso problema con i campi numerici di tipo sbagliato (`"lead": "molto"`) su

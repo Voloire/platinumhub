@@ -39,16 +39,21 @@ L'obiettivo non è burocrazia: è **poter cambiare il codice senza paura** e **c
 
 Le fasi sono in ordine di dipendenza. Ogni fase ha senso anche da sola: se ci si ferma alla 3, si è comunque guadagnato molto.
 
-### Fase 0 — Repo privato su GitHub
+### Fase 0 — Repo su GitHub — fatta
 
-- [ ] Creare il repository **privato** `platinum-hub`
-- [ ] `.gitignore`: `platinum.db`, `diagnostica.txt`, `*.log`, `__pycache__/`, `dist/`, `build/`, `*.spec`, `.venv/`
-- [ ] Portare dentro il codice attuale come commit iniziale, **senza** `platinum.db` (contiene la password di OBS in chiaro e i progressi personali)
-- [ ] Struttura cartelle definitiva:
+Nata come "repo privato", è finita **pubblica**: chi scarica un eseguibile non firmato deve poter leggere
+cosa fa il programma. Pubblico ≠ open source — i diritti restano all'autore, vedi `LICENSE`.
+
+- [x] Creare il repository **pubblico** `platinumhub` (login `Voloire`, non `Voloirex`)
+- [x] `.gitignore`: `platinum.db`, `diagnostica.txt`, `*.log`, `__pycache__/`, `dist/`, `build/`, `*.spec`, `.venv/`
+- [x] Portare dentro il codice attuale come commit iniziale, **senza** `platinum.db` (contiene la password di OBS in chiaro e i progressi personali)
+- [x] Struttura cartelle definitiva:
       `app.py` · `data/` · `fonts/` · `tools/` (generatore standalone) · `docs/` · `.github/workflows/`
-- [ ] `README.md` del repo: cos'è, come si avvia in sviluppo, come si builda
-- [ ] Decidere la strategia branch: **`main` sempre funzionante**, lavoro su `feat/…` e `fix/…`, merge via PR anche da solo (serve a far girare la CI prima del merge)
-- [ ] Convenzione dei messaggi di commit — proposta: *Conventional Commits* (`feat:`, `fix:`, `docs:`, `chore:`), perché poi il changelog si genera da solo
+- [x] `README.md` del repo: cos'è, come si avvia in sviluppo, come si builda
+- [x] Decidere la strategia branch: **`main` sempre funzionante**, lavoro su `feat/…` e `fix/…`, merge via PR anche da solo (serve a far girare la CI prima del merge)
+- [x] Convenzione dei messaggi di commit — *Conventional Commits* (`feat:`, `fix:`, `docs:`, `chore:`), perché poi il changelog si genera da solo
+- [ ] Proteggere `main` con i controlli obbligatori — da fare **dopo** che la CI è passata (i nomi dei
+      controlli compaiono nell'elenco solo dopo la prima esecuzione)
 
 ### Fase 1 — Igiene del codice, prima di automatizzare
 
@@ -159,7 +164,7 @@ Il formato è lo stesso di 8a: una checklist condivisa è un file JSON, e una li
 
 Il principio che regge tutto: *il catalogo non è una query, è un artefatto di build*. Si rigenera a ogni merge e si serve come file statico. Nessun server sul percorso di lettura, quindi nessun costo che cresce con gli utenti.
 
-**Struttura del repository** (`platinum-hub-catalog`, pubblico, separato dal repo privato del codice):
+**Struttura del repository** (`platinumhub-catalog`, pubblico, separato dal repo del codice):
 
 ```
 checklists/<gioco>/<slug>.json    sorgente, formattato leggibile (i diff nelle PR devono essere leggibili)
