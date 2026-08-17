@@ -33,6 +33,7 @@ Sui dieci giochi attuali, questo quarto passaggio ha eliminato 24 traduzioni che
     "id": "sigla",                   //   autodescrittiva e distribuibile come file
     "format": 1,                     // versione del formato: l'app rifiuta i formati che non conosce
     "version": 1,                    // versione del contenuto: cresce a ogni correzione pubblicata
+    "order": 10,                     // posizione della card in home (spaziato di 10)
     "accent": "#c8a24a",             // colore della card (un colore che non somigli a quelli già usati)
     "tagline": {"en": "...", "it": "..."},
     "thumb": {                       // parametri della thumbnail disegnata dall'app
@@ -98,12 +99,11 @@ Per questo il test `tests/test_data_integrity.py` è il più importante della su
 
 1. Produci il draft inglese seguendo il formato qui sopra (passaggi 1 e 2 del metodo).
 2. Aggiungi il livello italiano (passaggi 3 e 4).
-3. Scrivi il blocco `meta` (id, tagline, accent, thumb) direttamente nel file.
+3. Scrivi il blocco `meta` direttamente nel file: id, `order` (l'ordine della card
+   in home, spaziato di 10), tagline, accent, thumb. **Il meta è tutto il registro
+   che serve**: l'app scopre la route da sola, non c'è niente da toccare nel codice.
 4. Metti il file in `data/<sigla>.json` e lancia `python tools/assign_sids.py <sigla>.json`
    per assegnare i sid ai passi. **Mai riassegnare un sid esistente.**
-5. Registra il gioco nella lista `RUNS` in `platinumhub/routes.py`: `id`, `file`, `accent`,
-   `tagline` — devono coincidere con il `meta` (un test lo verifica). *Questo passo
-   sparirà quando l'app leggerà i registri dal `meta` dei JSON.*
-6. `python -m pytest tests/test_data_integrity.py` — se passa, la struttura regge.
-7. `python tools/generate_standalone.py` per rigenerare le checklist HTML singole.
-8. Aggiorna il conteggio dei giochi nel README e la voce in `CHANGELOG.md`.
+5. `python -m pytest tests/test_data_integrity.py` — se passa, la struttura regge.
+6. `python tools/generate_standalone.py` per rigenerare le checklist HTML singole.
+7. Aggiorna il conteggio dei giochi nel README e la voce in `CHANGELOG.md`.

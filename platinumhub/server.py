@@ -21,7 +21,7 @@ from .page_home import render_changelog, render_home
 from .page_run import render_run
 from .page_streamer import (render_episodes, render_overlay, render_selftest,
                             render_session)
-from .routes import ROUTES, RUNS, load_routes
+from .routes import ROUTES, load_routes
 from .store import (SID_OK, current_state, db, done_sids, get_note, get_pref,
                     lang, progress_updated_at, save_done, sessions_of,
                     session_row, set_note, set_pref, stats)
@@ -210,12 +210,11 @@ class Handler(http.server.BaseHTTPRequestHandler):
 
         if path == "/api/summary":
             out = []
-            for r in RUNS:
-                if r["id"] in ROUTES:
-                    done, total, td, tt, when = stats(r["id"])
-                    out.append({"run": r["id"], "game": ROUTES[r["id"]]["game"], "steps_done": done,
-                                "steps_total": total, "trophies_done": td, "trophies_total": tt,
-                                "updated_at": when})
+            for rid, d in ROUTES.items():
+                done, total, td, tt, when = stats(rid)
+                out.append({"run": rid, "game": d["game"], "steps_done": done,
+                            "steps_total": total, "trophies_done": td, "trophies_total": tt,
+                            "updated_at": when})
             return self._json(out)
 
         if path == "/api/export":
@@ -524,17 +523,19 @@ def main():
     print("  =========================================")
     print("   PLATINUM HUB v%s  ·  by Voloirex" % VERSION)
     print("  =========================================")
+    # PRIMA delle route: load_routes() crea il file del database per la
+    # tabella routes, e la migrazione del db 3.x accanto all'exe scatta solo
+    # se il db utente non esiste ancora.
+    moved = migrate_legacy_db()
     load_routes()
     if not ROUTES:
         print("  ERRORE / ERROR: nessun file route in", DATA)
         input("  Invio per chiudere / Enter to close...")
         return
-    moved = migrate_legacy_db()
     db()
-    for r in RUNS:
-        if r["id"] in ROUTES:
-            done, total, td, tt, _ = stats(r["id"])
-            print(f"   · {ROUTES[r['id']]['game']:<30} {done:>3}/{total:<4} passi   {td:>2}/{tt:<3} trofei")
+    for rid in ROUTES:
+        done, total, td, tt, _ = stats(rid)
+        print(f"   · {ROUTES[rid]['game']:<30} {done:>3}/{total:<4} passi   {td:>2}/{tt:<3} trofei")
     srv, port = pick_port()
     if srv is None:
         print("  ERRORE: nessuna porta libera tra %d e %d." % (PORT_START, PORT_START + 24))

@@ -228,14 +228,15 @@ class ThumbnailTest(harness.ServerTestCase, unittest.TestCase):
                 self.assertIn("var ART = ", html)
 
     def test_every_design_icon_exists_in_the_art_js(self):
-        """Un design che nomina un'icona inesistente cadrebbe sul ripiego senza
-        che nessuno se ne accorga: meglio un test rosso."""
+        """Un meta.thumb che nomina un'icona inesistente cadrebbe sul ripiego
+        senza che nessuno se ne accorga: meglio un test rosso."""
         app, sandbox = harness.import_app_module("thumbs")
         try:
-            for rid, design in app.THUMB_DESIGNS.items():
-                with self.subTest(run=rid):
-                    self.assertIn("\n" + design["icon"] + ": function(", app.THUMB_ART_JS,
-                                  "l'icona '%s' non esiste nel JS" % design["icon"])
+            for name in harness.route_files():
+                icon = harness.load_route(name)["meta"]["thumb"]["icon"]
+                with self.subTest(run=name):
+                    self.assertIn("\n" + icon + ": function(", app.THUMB_ART_JS,
+                                  "l'icona '%s' non esiste nel JS" % icon)
             self.assertIn("\ntrophy: function(", app.THUMB_ART_JS)
         finally:
             harness.drop_sandbox(sandbox)

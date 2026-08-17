@@ -17,7 +17,6 @@ riferimento (kz.json) e con gli invarianti che l'app da' per scontati.
 Non serve nessun server: si leggono solo i file JSON (in sola lettura).
 """
 
-import ast
 import os
 import re
 import sys
@@ -40,31 +39,12 @@ SID_RE = re.compile(r"^s\d{3,}$")
 
 # Campi obbligatori del blocco meta: la carta d'identita' della route,
 # cio' che permette di distribuirla come file senza toccare il codice.
-META_FIELDS = ("id", "format", "version", "accent", "tagline", "thumb")
+META_FIELDS = ("id", "format", "version", "order", "accent", "tagline", "thumb")
 META_THUMB_FIELDS = ("icon", "glow", "seed", "stats", "tag")
 ACCENT_RE = re.compile(r"^#[0-9a-f]{6}$")
 GLOW_RE = re.compile(r"^\d{1,3},\d{1,3},\d{1,3}$")
 
 
-# Dove vivono i registri hardcoded dentro il package.
-APP_LITERALS = {"RUNS": os.path.join("platinumhub", "routes.py"),
-                "THUMB_DESIGNS": os.path.join("platinumhub", "thumbs.py")}
-
-
-def app_literal(name):
-    """
-    Estrae una costante di primo livello dal modulo che la ospita senza
-    eseguirlo, per confrontare i registri hardcoded con i meta dei JSON.
-    """
-    path = os.path.join(harness.APP_DIR, APP_LITERALS[name])
-    with open(path, "r", encoding="utf-8") as f:
-        tree = ast.parse(f.read())
-    for node in tree.body:
-        if isinstance(node, ast.Assign) and len(node.targets) == 1 \
-                and isinstance(node.targets[0], ast.Name) \
-                and node.targets[0].id == name:
-            return ast.literal_eval(node.value)
-    raise AssertionError("costante %s non trovata in %s" % (name, path))
 
 # Coppie di liste che devono avere la stessa lunghezza nelle due lingue.
 PARALLEL_LISTS = (("golden_rules", "golden_rules_it"),
@@ -398,29 +378,21 @@ class RouteShapeTest(unittest.TestCase):
                     self.assertEqual(len(stat), 2)
                 self.assertIsInstance(thumb["tag"], (str, type(None)))
 
-    def test_meta_matches_the_hardcoded_registries(self):
+    def test_meta_order_is_an_int_and_unique_across_routes(self):
         """
-        TRANSITORIO: finche' RUNS e THUMB_DESIGNS vivono in app.py, i meta dei
-        JSON devono dire le stesse cose, altrimenti l'app mostra una cosa e il
-        catalogo ne distribuira' un'altra. Quando i registri hardcoded
-        spariranno, questo test sparira' con loro.
+        L'ordine delle card in home viene da meta.order: un valore mancante
+        manda la route in fondo, un duplicato rende l'ordine dipendente dal
+        caso. Meglio un test rosso.
         """
-        runs = {r["id"]: r for r in app_literal("RUNS")}
-        thumbs = app_literal("THUMB_DESIGNS")
+        seen = {}
         for name, route in self.routes.items():
-            meta = route.get("meta") or {}
-            rid = meta.get("id")
-            with self.subTest(file=name, what="RUNS"):
-                self.assertIn(rid, runs, "%s: id '%s' non e' in RUNS" % (name, rid))
-                self.assertEqual(meta.get("accent"), runs[rid]["accent"])
-                self.assertEqual(meta.get("tagline"), runs[rid]["tagline"])
-            with self.subTest(file=name, what="THUMB_DESIGNS"):
-                self.assertIn(rid, thumbs)
-                expected = dict(thumbs[rid])
-                got = dict(meta.get("thumb") or {})
-                # json non ha le tuple: le stats di app.py si confrontano come liste
-                expected["stats"] = [list(x) for x in expected["stats"]]
-                self.assertEqual(got, expected)
+            order = (route.get("meta") or {}).get("order")
+            with self.subTest(file=name):
+                self.assertIsInstance(order, int, "%s: meta.order mancante" % name)
+                self.assertNotIn(order, seen,
+                                 "%s: meta.order %s duplicato con %s"
+                                 % (name, order, seen.get(order)))
+                seen[order] = name
 
     def test_glossary_entries_are_non_empty_strings(self):
         for name, route in self.routes.items():

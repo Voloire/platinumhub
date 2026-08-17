@@ -6,9 +6,9 @@ import os
 
 from .config import BASE, RELEASES_PAGE, UPDATE, VERSION
 from .i18n import T
-from .routes import ROUTES, RUNS
+from .routes import ROUTES
 from .store import lang, stats
-from .thumbs import THUMB_DESIGNS, THUMB_FALLBACK, THUMB_ART_JS
+from .thumbs import THUMB_ART_JS, thumb_design
 from .ui import CSS, esc, hk_button, hk_panel, langsel, md_lite
 
 
@@ -62,18 +62,15 @@ def render_home():
                  f'<a class="updlnk" href="/changelog">{t["upd_notes"]}</a>'
                  f'<a class="updlnk" href="/update/off">{t["upd_off"]}</a></div></div>')
     p.append('<div class="cards">')
-    for r in RUNS:
-        d = ROUTES.get(r["id"])
-        if not d:
-            continue
-        done, total, tdone, ttotal, when = stats(r["id"])
+    for rid, d in ROUTES.items():
+        done, total, tdone, ttotal, when = stats(rid)
         pct = (done / total * 100) if total else 0
         tpct = (tdone / ttotal * 100) if ttotal else 0
-        p.append(f'<a class="card" href="/run/{r["id"]}">')
-        p.append(f'<span class="stripe" style="background:{r["accent"]}"></span>')
+        p.append(f'<a class="card" href="/run/{rid}">')
+        p.append(f'<span class="stripe" style="background:{esc(d["meta"]["accent"])}"></span>')
         # l'arte della thumbnail al posto della vecchia descrizione testuale:
         # stesso codice di disegno di /thumb/<run>, ritagliato a fascia
-        p.append(f'<canvas class="cardart" data-run="{r["id"]}" width="640" height="270"></canvas>')
+        p.append(f'<canvas class="cardart" data-run="{rid}" width="640" height="270"></canvas>')
         p.append(f'<h2>{esc(d["game"])}{" &nbsp;🏆" if total and done == total else ""}</h2>')
         p.append(f'<div class="prow"><span class="lb">🏆 {t["trophy_steps"]}</span><div class="bar">'
                  f'<div style="width:{tpct:.1f}%"></div></div><span class="count">{tdone} / {ttotal}</span></div>')
@@ -93,8 +90,8 @@ def render_home():
     p.append("</div>")
     p.append(f'<footer>{t["footer"]}</footer>')
     # disegna l'arte delle card: stesse icone di /thumb/<run>, una implementazione
-    art_map = {rid: {k: THUMB_DESIGNS.get(rid, THUMB_FALLBACK)[k] for k in ("icon", "glow", "seed")}
-               for rid in ROUTES}
+    art_map = {rid: {k: thumb_design(d)[k] for k in ("icon", "glow", "seed")}
+               for rid, d in ROUTES.items()}
     p.append("<script>var ART = %s;\n%s\n"
              "document.querySelectorAll('canvas.cardart').forEach(function(c){\n"
              "  var d = ART[c.dataset.run]; if (!d) return;\n"
