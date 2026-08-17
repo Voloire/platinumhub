@@ -11,6 +11,10 @@ la numerazione segue [Semantic Versioning](https://semver.org/lang/it/).
 
 ## [Non rilasciato]
 
+## [4.2.0] - 2026-08-17
+
+La serie ha una faccia: le thumbnail. E le fa l'app.
+
 ### Aggiunto
 - **Thumbnail YouTube dentro l'app.** Nuova scheda 🖼 in modalità streamer:
   per ogni gioco l'app disegna la miniatura della serie — stessa struttura,
