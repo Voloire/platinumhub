@@ -1,0 +1,3548 @@
+{
+ "game": "Lies of P + Overture",
+ "prefix": "LOP",
+ "playthroughs": "1 full Motivity run (base Ch1-9 -> Overture -> Ch10-11, 3 endings via save backup) + 1 NG+ sweep for golden records, the 11th special weapon and P-Organ Phase 5.",
+ "hours": "60-75 h for 100% (approx. 40-45 h base run, 12-15 h Overture, 8-12 h NG+ sweep). Add ~10 h if you are new to soulslikes and refuse the assist difficulties.",
+ "trophy_total": 53,
+ "build_summary": "STRENGTH in Lies of P is MOTIVITY, and the whole run is built around it. Start on Path of the Sweeper (Greatsword of Fate, Motivity-weighted stats) so your very first weapon already scales the way you want. Lies of P lets you split any normal weapon into BLADE (base damage, damage type, hitbox and most of the weight) and HANDLE (the scaling grades, the moveset and the stagger multiplier) — and blade and handle EACH carry their own Fable Art, so the Motivity route is a chain of assemblies: Greatsword of Fate blade + Greatsword of Fate handle (Ch1) -> Fire Axe blade + Big Pipe Wrench handle (Ch3, your first real Motivity monster - the Wrench handle is Motivity B and its Fable Art 'Payback Swing' scales with it) -> Bone-Cutting Sawblade + Exploding Pickaxe handle (Ch5-6, best reach-to-stamina ratio in the game and the single best all-round Motivity assembly for the mid-game) -> Holy Sword of the Ark or Frozen Feast (special weapons, cannot be split, but both are A-Motivity) -> Noblesse Oblige with a Motivity Crank for S-scaling once Simon Manus is down, and Silent Evangelist's Mace as the Overture heavy-blunt option. Feed Motivity Cranks into every Motivity assembly the moment Venigni sells them. Stat spread: push VITALITY and MOTIVITY to 20 first (survive Ch1-4), then CAPACITY to ~20 so a heavy blade+heavy handle still sits inside the 'Normal' equip-load band (never let yourself go Heavy - your dodge and Perfect Guard timing both suffer), then dump into MOTIVITY until 40 (the practical soft cap where A-grade handles stop paying out linearly), topping VITALITY toward 30-40 alongside. VIGOR only needs enough stamina for two heavy swings plus a dodge (~20-25); TECHNIQUE and ADVANCE stay at base forever - a strength build gets nothing from them. P-Organ order: Phase 1 take 'Increase Staggerable Window 1' (charged heavy attacks are your stagger engine) and the Pulse Cell charge node; Phase 2 take 'Add Amulet Slots 1' then 'Retain Guard Regain 1' (Motivity builds live on Guard Regain because heavy weapons commit you); Phase 3 take the extra Pulse Cell and 'Increase Fable Slots'; Phase 4 take 'Perfect Guards Cause Stiffness' - it turns your slow weapon into a stance-breaker; Phase 5 take 'Increase Staggerable Window 2' and 'Add Amulet Slots 2'. Legion Arms: Fulminis early for the ranged stagger poke, Aegis for boss walls, Puppet String from Ch6 onward to yank staggered enemies into a Fatal Attack, and in Overture the Cataclysm shotgun (Motivity A / Technique C) which is flatly the best Motivity Legion Arm in the game. Amulets: Carrier's Amulet (weight) is near-permanent, plus Strength Amulet (+4 Motivity), Patience Amulet (stamina recovery) and Iron Wall Amulet (physical DR); swap in Extreme Modification Amulet or Murderer's Amulet for boss burst once you have four slots. Other assemblies worth building: Booster Glaive Blade on the Big Pipe Wrench Handle, and the Seven-Coil Spring Sword. Path of the Sweeper starts you at Vitality 11 / Vigor 5 / Capacity 11 / Motivity 11 / Technique 5 / Advance 6. Prioritise the Fable Arts that read Motivity — 'Payback Swing' on the Wrench handle above all. Play it as a heavy-trading build: charged R2 into stagger, Fatal Attack, Perfect Guard to break weapons, and use Specters on every boss - they are free and cost you nothing at all.",
+ "golden_rules": [
+  "ACHIEVEMENT SPLIT (Steam): the BASE game has exactly 42 achievements. The OVERTURE DLC adds exactly 11 more, for 53 total on Steam. PowerPyx's 11 is correct; the Steam 100% guide that says 10 is simply miscounted - its own table of contents lists all 11, including 'Enduring Resolve'.",
+  "PLAYSTATION DIFFERS ONLY BY THE PLATINUM: PS5 base list = 43 trophies (1 Platinum + 3 Gold + 13 Silver + 26 Bronze), i.e. the same 42 unlockables plus the auto-popping Platinum. Overture on PS adds the same 11 (2 Silver + 9 Bronze) and has NO second platinum. So: Steam 53, PS5 54 including the Platinum.",
+  "SAVE BACKUP IS MANDATORY unless you want three full playthroughs. On Steam copy <SteamLibrary>\\steamapps\\common\\Lies of P\\LiesofP\\Saved\\SaveGames (inside the game folder, not AppData) to a safe folder (close the game first). On PS5 disable auto-upload, then use Settings > Saved Data > Upload/Download to Cloud (or a USB stick) as your restore point.",
+  "BACK UP TWICE IN CHAPTER 11: once immediately after defeating Laxasia the Complete (before the Sophia conversation), and again after Simon Manus but before you answer Geppetto. Those two points let you farm all 3 endings from one run.",
+  "NEVER CONSUME BOSS ERGO. It all goes to Alidoro for special weapons. But note that only 9 of the 11 special weapons come from him: GOLDEN LIE comes from Geppetto via the Portrait of a Boy at max Humanity, and PROOF OF HUMANITY comes from beating the Nameless Puppet — so 'Special Weapon Collector' is impossible on a Real-Boy-only route. Overture's rare Ergo goes to a different NPC, Rookie Explorer Hugo.",
+  "LIE ON RUN 1, TELL THE TRUTH IN NG+. Lying is what raises Humanity, which you need for the Golden Lie weapon and the Rise of P ending. Alidoro is NOT an exception — lying to him only routes him through Venigni Works, he still ends up selling at Hotel Krat. What actually breaks him is never speaking to him at his first location, the St. Frangelico Cathedral Library (which also kills Eugénie's quest).",
+  "NG+ IS REQUIRED FOR THE RECORDS AND NOTHING ELSE: the 5 base-game Golden Records sold by Wandering Merchants, the opposite Eugénie record, and all THREE Overture Gold Records. Everything else — including P-Organ Phase 5 — fits inside run 1.",
+  "ALL THREE OVERTURE GOLD RECORDS ARE NG+ ONLY: 'Lisrim (Gold)' (merchant at the Archon Fleet Shipwrecks, 9,000 Ergo), 'The Clear Blue Sky (Gold)' (merchant near the Carnival Garden Stargazer, 9,000 Ergo) and 'Nightmare (Gold)' (Klaus at Eventide Hotel, one Ancient Disk, only after you hand him Klaus's Premium Luxury Bag — and only in NG+). So 'Memory's Melody' cannot pop on a first playthrough, period, and Nightmare is missable inside the NG+ cycle if you leave it past the final DLC boss.",
+  "OVERTURE HAS 4 MISSABLES: True Combat Gear Collector, Memory's Melody, To Be Human, Tracker of Dark Secrets. All four are collection/quest based - none of them auto-complete, and the Tracker one dies if you pick the wrong dialogue line.",
+  "SPECTERS ARE ALLOWED AND ENCOURAGED. Summon one at every boss fog gate with a Star Fragment - no achievement is locked behind soloing, and a Specter halves the danger of Markiona, Laxasia and Arlecchino.",
+  "THE GAME HAS OFFICIAL ASSIST DIFFICULTIES since the Overture update: Butterfly's Guidance (very easy), Awakened Puppet (easy) and Legendary Stalker (default/intended). They live in Settings > Gameplay > Difficulty, can be changed at ANY time with no penalty, and do NOT block a single achievement. Drop to Butterfly's Guidance for a wall boss and go back up after - it costs you nothing.",
+  "INSERT OVERTURE AFTER CHAPTER 9. The Star's Chrysalis lands in your Functional Items when Chapter 9 ends; use it at the PATH OF THE PILGRIM Stargazer (the first Stargazer of Chapter 5) and follow the trail to the derelict Stargazer that repairs itself. You come out at the Krat Zoo outskirts and can return to the base world from any Stargazer. On each new NG+ cycle you must reach Chapter 9 again before the DLC reopens.",
+  "OVERTURE IS HARDER THAN THE BASE GAME. Go in at Motivity ~40 / Vitality ~30 with a +8 or better weapon and at least Holy Sword of the Ark or Frozen Feast in the bag.",
+  "PIANIST OF KRAT AND THE GESTURE/RECORD LOGS: collectible logs carry into NG+, so a record or gesture you grabbed in run 1 still counts in run 2. Only the merchant stock and Eugenie's dialogue reset.",
+  "P-ORGAN PHASE 5 IS A RUN-1 JOB. ~31 Quartz exist in one playthrough, far more than Phase 5 needs. Phases 6-7 need NG+ but no achievement is up there. 'Extreme Potential' = reach Phase 5 (base game); 'Beyond Limitless Potential' = spend one Quartz on any Overture P-Organ node after the Core Upgrade at the end of Overture Chapter 1 — two different things.",
+  "SAVE PATH ON STEAM IS INSIDE THE GAME FOLDER: <SteamLibrary>\\steamapps\\common\\Lies of P\\LiesofP\\Saved\\SaveGames\\<user-id>\\. AppData only holds settings."
+ ],
+ "stat_table": {
+  "note": "Motivity (STRENGTH) route, Path of the Sweeper start. Values are TARGETS to have hit by that level, not exact game values - the starting numbers shift by a point or two. Golden rule: Capacity only needs to be high enough that your blade + handle + amulets keep you in the 'Normal' equip-load band; every spare point after that goes to Motivity, then Vitality. Technique and Advance never move.",
+  "columns": [
+   "LEVEL",
+   "VITALITY",
+   "VIGOR",
+   "CAPACITY",
+   "MOTIVITY",
+   "TECHNIQUE",
+   "ADVANCE",
+   "Notes"
+  ],
+  "rows": [
+   [
+    "1",
+    "10",
+    "9",
+    "12",
+    "15",
+    "10",
+    "6",
+    "Path of the Sweeper start. Greatsword of Fate, Motivity-weighted."
+   ],
+   [
+    "12",
+    "14",
+    "11",
+    "14",
+    "20",
+    "10",
+    "6",
+    "Ch2-3. Motivity 20 unlocks real returns on the Fire Axe / Big Pipe Wrench assembly."
+   ],
+   [
+    "22",
+    "20",
+    "13",
+    "17",
+    "24",
+    "10",
+    "6",
+    "Ch4-5. Vitality 20 is the first real survivability breakpoint (Andreus, Black Rabbits)."
+   ],
+   [
+    "32",
+    "24",
+    "16",
+    "20",
+    "30",
+    "10",
+    "6",
+    "Ch6-7. Capacity 20 lets Bone-Cutting Sawblade + Exploding Pickaxe handle sit at Normal load."
+   ],
+   [
+    "45",
+    "27",
+    "18",
+    "22",
+    "35",
+    "10",
+    "6",
+    "Ch8-9. Equip Carrier's Amulet + Strength Amulet here; pre-Overture checkpoint."
+   ],
+   [
+    "60",
+    "30",
+    "20",
+    "25",
+    "40",
+    "10",
+    "6",
+    "OVERTURE ENTRY. Motivity 40 is the practical soft cap for A-grade handles."
+   ],
+   [
+    "75",
+    "35",
+    "22",
+    "28",
+    "45",
+    "10",
+    "6",
+    "Ch10-11. Extra Vitality purely for Laxasia and Simon Manus."
+   ],
+   [
+    "90",
+    "40",
+    "25",
+    "30",
+    "50",
+    "10",
+    "6",
+    "Nameless Puppet + Noblesse Oblige with Motivity Crank (S scaling)."
+   ],
+   [
+    "110",
+    "45",
+    "28",
+    "32",
+    "55",
+    "10",
+    "6",
+    "NG+ sweep. Comfortable enough to speed through for records."
+   ]
+  ]
+ },
+ "phases": [
+  {
+   "title": "Phase 1 — Setup, Path of the Sweeper & Chapter 1 (Krat Central Station)",
+   "note": "Difficulty is in Settings > Gameplay > Difficulty and can be changed at any moment with zero penalty. Pick Path of the Sweeper for the Motivity start. Quartz total for the run: 28 findable in the base game (plus 2 buyable from Polendina after you turn in Supply Boxes) - Chapter 1 gives you your first from the Parade Master.",
+   "steps": [
+    {
+     "text": "Choose PATH OF THE SWEEPER at the combat-style prompt. It is the Motivity/Capacity start and hands you the Greatsword of Fate, a heavy weapon that already scales the way this whole run is built.",
+     "loc": "Opening prompt, Krat Central Station Platform",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Path of the Sweeper (Motivity start)",
+       "label_it": "⚔️ Via dello Spazzino (partenza Forza Motrice)"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Scegli la VIA DELLO SPAZZINO (Path of the Sweeper) alla schermata di scelta dello stile di combattimento. È la partenza Forza Motrice/Capacità e ti consegna lo Spadone del destino (Greatsword of Fate), un'arma pesante che scala già esattamente come è costruito tutto questo run.",
+     "loc_it": "Schermata iniziale, Binario della stazione centrale"
+    },
+    {
+     "text": "Set difficulty. Legendary Stalker is the intended experience; Awakened Puppet and Butterfly's Guidance are official assist presets that block NOTHING. Use them freely on wall bosses.",
+     "loc": "Settings > Gameplay > Difficulty",
+     "tags": [
+      {
+       "type": "build",
+       "label": "🛟 Assist difficulties are achievement-safe",
+       "label_it": "🛟 Le difficoltà assistite non bloccano obiettivi"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Imposta la difficoltà. Persecutore Leggendario è l'esperienza voluta dagli sviluppatori; Burattino Risvegliato e Guida della Farfalla sono preset di assistenza ufficiali che non bloccano NULLA. Usali liberamente sui boss-muro.",
+     "loc_it": "Impostazioni > Gameplay > Difficoltà"
+    },
+    {
+     "text": "Set up your save backup routine NOW. Steam saves are inside the GAME FOLDER, not AppData: <SteamLibrary>\\steamapps\\common\\Lies of P\\LiesofP\\Saved\\SaveGames\\<user-id>\\ — close the game, copy that folder somewhere safe, restore by copying it back. (%LOCALAPPDATA%\\LiesofP\\Saved only holds settings and logs; the Xbox/Game Pass PC build keeps saves under %LOCALAPPDATA%\\Packages\\Neowiz...\\SystemAppData.) PS5: turn OFF auto cloud upload so you control when a save is overwritten.",
+     "loc": "Steam library folder / PS5 System Settings",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠️ Do this before Chapter 11 or you replay the game",
+       "label_it": "⚠️ Fallo prima del Capitolo 11 o rigiochi tutto il gioco"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Imposta ORA la tua routine di backup dei salvataggi. Su Steam i salvataggi stanno nella CARTELLA DI GIOCO, non in AppData: <SteamLibrary>\\steamapps\\common\\Lies of P\\LiesofP\\Saved\\SaveGames\\<user-id>\\ — chiudi il gioco, copia quella cartella in un posto sicuro e ripristina ricopiandola indietro. (%LOCALAPPDATA%\\LiesofP\\Saved contiene solo impostazioni e log; la build PC Xbox/Game Pass tiene i salvataggi sotto %LOCALAPPDATA%\\Packages\\Neowiz...\\SystemAppData.) PS5: DISATTIVA il caricamento automatico su cloud, così controlli tu quando un salvataggio viene sovrascritto.",
+     "loc_it": "Cartella della libreria Steam / Impostazioni di sistema PS5"
+    },
+    {
+     "text": "Rest at the first Stargazer to repair it.",
+     "loc": "Krat Central Station Platform, right at the start",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 STARGAZER'S GUIDE",
+       "label_it": "🏆 GUIDA AGLI STARGAZER"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Riposa al primo Stargazer per ripararlo.",
+     "loc_it": "Binario della stazione centrale, proprio all'inizio"
+    },
+    {
+     "text": "Stagger any early puppet with a charged heavy attack (hold R2) until it flashes white, then press R1 to drive the blade in. Charged heavies are the core loop of a Motivity build - learn them here.",
+     "loc": "Krat Central Station Platform corridors",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 FATAL BLOW",
+       "label_it": "🏆 COLPO FATALE"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Stordisci un qualsiasi burattino iniziale con un attacco pesante caricato (tieni premuto R2) finché non lampeggia di bianco, poi premi R1 per affondare la lama. Gli attacchi pesanti caricati sono il ciclo fondamentale di una build Forza Motrice: imparali qui.",
+     "loc_it": "Corridoi del Binario della stazione centrale"
+    },
+    {
+     "text": "Perfect-Guard (tap block on the exact hit frame) a puppet repeatedly until its weapon shatters. Any early trash puppet with a pipe works; the Motivity playstyle leans on this constantly.",
+     "loc": "Krat Central Station Platform / Plaza",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 THE ULTIMATE DEFENSE TECHNIQUE",
+       "label_it": "🏆 TECNICA DI DIFESA DEFINITIVA"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Esegui una Guardia Perfetta (tocca la parata esattamente sul frame del colpo) contro un burattino ripetutamente finché la sua arma non si spezza. Va bene un qualsiasi burattino comune iniziale armato di tubo; lo stile Forza Motrice si appoggia continuamente a questa meccanica.",
+     "loc_it": "Binario / Piazza della stazione centrale"
+    },
+    {
+     "text": "At the Hotel Krat door, answer the girl's question with a LIE. This is your first Humanity point and sets the lie route for run 1.",
+     "loc": "Hotel Krat entrance",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 FIRST LIE",
+       "label_it": "🏆 PRIMA BUGIA"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Lie route = Humanity for Golden Lie + Rise of P",
+       "label_it": "⚠️ Percorso menzogna = Humanity per Golden Lie + Rise of P"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Alla porta dell'Hotel Krat, rispondi alla domanda della ragazza con una BUGIA. È il tuo primo punto Humanity e imposta il percorso della menzogna per il run 1.",
+     "loc_it": "Ingresso dell'Hotel Krat"
+    },
+    {
+     "text": "Talk to Antonia on your first visit to the hotel for the Show Off Clothes gesture.",
+     "loc": "Hotel Krat lobby",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Gesture 3/17",
+       "label_it": "🏆 Gesto 3/17"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Parla con Antonia alla tua prima visita all'hotel per il gesto Show Off Clothes.",
+     "loc_it": "Atrio dell'Hotel Krat"
+    },
+    {
+     "text": "At the Venigni Craft Machine, split your Greatsword of Fate and re-assemble it (any blade + any handle). Learn the system you will abuse all run: the HANDLE sets the scaling grades, the moveset and the stagger multiplier; the BLADE sets base damage, damage type, hitbox size and most of the weight. Blade AND handle each carry their own Fable Art, so an assembled weapon has two.",
+     "loc": "Hotel Krat, Venigni Craft Machine",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 EXPLORING POSSIBILITIES",
+       "label_it": "🏆 ESPLORARE LE POSSIBILITÀ"
+      },
+      {
+       "type": "build",
+       "label": "🔧 Blade = moveset, Handle = scaling + Fable Art",
+       "label_it": "🔧 Lama = moveset, Impugnatura = scaling + Arte della Favola"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Alla Venigni Craft Machine, dividi il tuo Spadone del destino e riassemblalo (qualsiasi lama + qualsiasi impugnatura). Impara il sistema che sfrutterai per tutto il run: l'IMPUGNATURA definisce i gradi di scaling, il moveset e il moltiplicatore di stordimento; la LAMA definisce danno base, tipo di danno, dimensione della hitbox e gran parte del peso. Lama E impugnatura portano ciascuna la propria Arte della Favola, quindi un'arma assemblata ne ha due.",
+     "loc_it": "Hotel Krat, Venigni Craft Machine"
+    },
+    {
+     "text": "Buy the Wintry Rapier and Greatsword of Fate from the Wandering Merchant in Cerasani Alley if you did not start with them - you need every normal weapon eventually. Also bank the Puppet's Saber HANDLE — its cheap stamina cost makes it a useful emergency handle for a heavy blade.",
+     "loc": "Cerasani Alley merchant",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🔧 Normal weapon 3/29",
+       "label_it": "🔧 Arma normale 3/29"
+      },
+      {
+       "type": "build",
+       "label": "⚔️ Handle library starts here",
+       "label_it": "⚔️ Qui nasce la tua libreria di impugnature"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Compra lo Stocco invernale (Wintry Rapier) e lo Spadone del destino dal Wandering Merchant di Cerasani Alley se non li hai avuti all'inizio: prima o poi ti servono tutte le armi normali. Metti da parte anche l'IMPUGNATURA della Sciabola del burattino (Puppet's Saber): il suo consumo di stamina ridotto la rende un'impugnatura d'emergenza utile per una lama pesante.",
+     "loc_it": "Mercante di Cerasani Alley"
+    },
+    {
+     "text": "Defeat the Parade Master. Summon a Specter at the fog gate with a Star Fragment - it eats half his aggro and costs you nothing.",
+     "loc": "Krat Central Station Plaza, end of Chapter 1",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 PARADE MASTER",
+       "label_it": "🏆 MAESTRO DELLA SFILATA"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi il Maestro della sfilata (Parade Master). Evoca uno Spettro alla nebbia con un Frammento di Stella: si prende metà della sua aggro e non ti costa nulla.",
+     "loc_it": "Piazza della stazione centrale, fine del Capitolo 1"
+    },
+    {
+     "text": "Take the Parade Master's Ergo to Alidoro at Hotel Krat and trade it for the SEVEN-COIL SPRING SWORD. Do NOT consume boss Ergo for levelling, ever.",
+     "loc": "Hotel Krat, Alidoro",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "⚔️ Special weapon 1/11",
+       "label_it": "⚔️ Arma speciale 1/11"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Consuming boss Ergo kills Special Weapon Collector",
+       "label_it": "⚠️ Consumare l'Ergo dei boss uccide Collezionista di armi speciali"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Porta l'Ergo del Maestro della sfilata ad Alidoro all'Hotel Krat e scambialo con il SEVEN-COIL SPRING SWORD. Non consumare MAI l'Ergo dei boss per salire di livello.",
+     "loc_it": "Hotel Krat, Alidoro"
+    },
+    {
+     "text": "Spend your first Quartz on P-Organ Phase 1: take 'Increase Staggerable Window 1' first - it directly extends the window your charged heavies create.",
+     "loc": "Hotel Krat, P-Organ",
+     "tags": [
+      {
+       "type": "build",
+       "label": "🧬 P-Organ P1: Staggerable Window 1",
+       "label_it": "🧬 Organo-P F1: Staggerable Window 1"
+      },
+      {
+       "type": "coll",
+       "label": "💎 Quartz 1/28",
+       "label_it": "💎 Quarzo 1/28"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Spendi il tuo primo Quarzo sulla Fase 1 dell'Organo-P: prendi per prima cosa 'Increase Staggerable Window 1', che allunga direttamente la finestra creata dai tuoi pesanti caricati.",
+     "loc_it": "Hotel Krat, Organo-P"
+    }
+   ],
+   "title_it": "Fase 1 — Preparazione, Via dello Spazzino e Capitolo 1 (Stazione Centrale di Krat)",
+   "note_it": "La difficoltà si trova in Impostazioni > Gameplay > Difficoltà e si può cambiare in qualsiasi momento senza alcuna penalità. Scegli la Via dello Spazzino per la partenza orientata alla Forza Motrice. Totale Quarzi per il run: 28 trovabili nel gioco base (più 2 acquistabili da Polendina dopo avergli consegnato le Supply Box) - il Capitolo 1 ti dà il primo, dal Maestro della sfilata."
+  },
+  {
+   "title": "Phase 2 — Chapter 2 (Elysion Boulevard, Krat City Hall, Scrapped Watchman)",
+   "note": "First Trinity Key and the Weeping Woman record live here. Two Quartz-relevant notes: Chapter 2 gives 1 Quartz (Scrapped Watchman). Keep lying to everyone except Alidoro.",
+   "steps": [
+    {
+     "text": "Read the letter in the building near Elysion Boulevard Entrance for the Remembrance gesture.",
+     "loc": "Elysion Boulevard Entrance, side building",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Gesture 4/17",
+       "label_it": "🏆 Gesto 4/17"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Leggi la lettera nell'edificio vicino all'Ingresso di Viale Elisio per il gesto Remembrance.",
+     "loc_it": "Ingresso di Viale Elisio, edificio laterale"
+    },
+    {
+     "text": "Complete the Weeping Woman questline inside the House on Elysion Boulevard and LIE to her. Reward: the record 'Feel'.",
+     "loc": "Inside the House on Elysion Boulevard",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Record 1/16",
+       "label_it": "🏆 Disco 1/16"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Requires the lie option",
+       "label_it": "⚠️ Richiede l'opzione menzogna"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Completa la linea di missioni della Weeping Woman nell'Interno della casa di Viale Elisio e MENTILE. Ricompensa: il disco 'Feel'.",
+     "loc_it": "Interno della casa di Viale Elisio"
+    },
+    {
+     "text": "Kill the police elite enemy for the KRAT POLICE BATON.",
+     "loc": "Krat City Hall approach",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🔧 Normal weapon 4/29",
+       "label_it": "🔧 Arma normale 4/29"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Uccidi il nemico d'élite poliziotto per il KRAT POLICE BATON.",
+     "loc_it": "Avvicinamento al Municipio di Krat"
+    },
+    {
+     "text": "Answer the ringing phone in Krat City Hall Courtyard with 'HUMAN' to receive TRINITY KEY #1.",
+     "loc": "Krat City Hall Courtyard, telephone",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🗝️ Trinity Key 1/4",
+       "label_it": "🗝️ Chiave della Trinità 1/4"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Wrong answer = no key this run",
+       "label_it": "⚠️ Risposta sbagliata = niente chiave in questo run"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Rispondi al telefono che squilla nel Cortile del Municipio di Krat con 'UMANO' per ottenere la CHIAVE DELLA TRINITÀ #1.",
+     "loc_it": "Cortile del Municipio di Krat, telefono"
+    },
+    {
+     "text": "Defeat the Scrapped Watchman. Perfect Guard his two-hit overhead; your greatsword out-trades him if you stay patient.",
+     "loc": "Krat City Hall rooftop",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 SCRAPPED WATCHMAN",
+       "label_it": "🏆 SENTINELLA ROTTAMATA"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi la Sentinella rottamata (Scrapped Watchman). Para in Guardia Perfetta il suo fendente dall'alto in due colpi; il tuo spadone lo supera nello scambio se resti paziente.",
+     "loc_it": "Tetto del Municipio di Krat"
+    },
+    {
+     "text": "Trade the Scrapped Watchman's Ergo to Alidoro for ETIQUETTE.",
+     "loc": "Hotel Krat, Alidoro",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "⚔️ Special weapon 2/11",
+       "label_it": "⚔️ Arma speciale 2/11"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Scambia l'Ergo della Sentinella rottamata con Alidoro per ETIQUETTE.",
+     "loc_it": "Hotel Krat, Alidoro"
+    },
+    {
+     "text": "Give the Overcharged Storage Battery (Scrapped Watchman drop) to Eugenie to craft the FULMINIS Legion Arm. Fulminis is your ranged stagger-starter for the whole early game. Level target here: ~12 with Motivity 20, Vitality 14, Capacity 14 — Motivity 20 is the first grade breakpoint where heavy handles noticeably hit harder.",
+     "loc": "Hotel Krat, Eugenie's workshop",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🦾 Legion Arm 1/6",
+       "label_it": "🦾 Braccio a Legione 1/6"
+      },
+      {
+       "type": "build",
+       "label": "🦾 Fulminis = free stagger chip",
+       "label_it": "🦾 Fulminis = stordimento gratis"
+      },
+      {
+       "type": "build",
+       "label": "📈 Motivity 20 breakpoint",
+       "label_it": "📈 Scatto Forza Motrice 20"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Consegna l'Accumulatore Energetico Sovraccarico (drop della Sentinella rottamata) a Eugenie per costruire il Braccio a Legione FULMINIS. Fulminis è il tuo innesco di stordimento a distanza per tutto l'inizio del gioco. Livello obiettivo qui: ~12 con Forza Motrice 20, Vitalità 14, Capacità 14 — Forza Motrice 20 è il primo scatto di grado in cui le impugnature pesanti colpiscono sensibilmente più forte.",
+     "loc_it": "Hotel Krat, laboratorio di Eugenie"
+    },
+    {
+     "text": "Spend Quartz on P-Organ Phase 1 second node: the Pulse Cell charge upgrade. Heavy builds trade hits; healing throughput matters.",
+     "loc": "Hotel Krat, P-Organ",
+     "tags": [
+      {
+       "type": "build",
+       "label": "🧬 P-Organ P1 complete",
+       "label_it": "🧬 Organo-P F1 completa"
+      },
+      {
+       "type": "coll",
+       "label": "💎 Quartz 2/28",
+       "label_it": "💎 Quarzo 2/28"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Spendi un Quarzo sul secondo nodo della Fase 1 dell'Organo-P: il potenziamento della carica della Cella a Impulso. Le build pesanti scambiano colpi; la quantità di cure che riesci a erogare conta.",
+     "loc_it": "Hotel Krat, Organo-P"
+    }
+   ],
+   "title_it": "Fase 2 — Capitolo 2 (Viale Elisio, Municipio di Krat, Sentinella rottamata)",
+   "note_it": "Qui trovi la prima Chiave della Trinità e il disco della Weeping Woman. Due note sui Quarzi: il Capitolo 2 ne dà 1 (Sentinella rottamata). Continua a mentire a tutti tranne che ad Alidoro."
+  },
+  {
+   "title": "Phase 3 — Chapter 3 (Workshop Union, Venigni Works, Mad Donkey & Fuoco)",
+   "note": "This is where your first real Motivity weapon comes online: Fire Axe blade + Big Pipe Wrench handle. Chapter 3 has 2 Quartz (Workshop Union Culvert Trinity room, Puppet of the Future boss).",
+   "steps": [
+    {
+     "text": "Kill Mad Donkey, the stalker who has been ambushing you since Elysion Boulevard.",
+     "loc": "Workshop Union Entrance approach",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 THE BASTARDS AND THE SWEEPERS",
+       "label_it": "🏆 I BASTARDI E GLI SPAZZINI"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi Mad Donkey, il Persecutore che ti tende imboscate fin da Viale Elisio.",
+     "loc_it": "Avvicinamento all'Ingresso dell'Unione dell'Officina"
+    },
+    {
+     "text": "Use TRINITY KEY #1 on the Trinity Sanctum door in Workshop Union Culvert (go right past the enemies to the next hall). Contains 1 Quartz.",
+     "loc": "Workshop Union Culvert",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🚪 Trinity Sanctum 1/4",
+       "label_it": "🚪 Santuario della trinità 1/4"
+      },
+      {
+       "type": "coll",
+       "label": "💎 Quartz 3/28",
+       "label_it": "💎 Quarzo 3/28"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Usa la CHIAVE DELLA TRINITÀ #1 sulla porta del Santuario della trinità nel Canale sotterraneo dell'Unione dell'Officina (vai a destra oltre i nemici fino alla sala successiva). Contiene 1 Quarzo.",
+     "loc_it": "Canale sotterraneo dell'Unione dell'Officina"
+    },
+    {
+     "text": "Defeat the Survivor mini-boss in Workshop Union Culvert for the Stalker's Promise gesture.",
+     "loc": "Workshop Union Culvert",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Gesture 5/17",
+       "label_it": "🏆 Gesto 5/17"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Missable gesture",
+       "label_it": "⚠️ Gesto mancabile"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Sconfiggi il mini-boss Survivor nel Canale sotterraneo dell'Unione dell'Officina per il gesto Stalker's Promise.",
+     "loc_it": "Canale sotterraneo dell'Unione dell'Officina"
+    },
+    {
+     "text": "Talk to Venigni in the Venigni Works Control Room BEFORE the chapter boss for the Fear gesture.",
+     "loc": "Venigni Works Control Room",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Gesture 6/17",
+       "label_it": "🏆 Gesto 6/17"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Missable — must be before the boss",
+       "label_it": "⚠️ Mancabile — deve avvenire prima del boss"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Parla con Venigni nella Sala di controllo della Fabbrica di Venigni PRIMA del boss del capitolo per il gesto Fear.",
+     "loc_it": "Sala di controllo della Fabbrica di Venigni"
+    },
+    {
+     "text": "Pick up the SALAMANDER DAGGER, FIRE AXE and BIG PIPE WRENCH in this chapter. The Fire Axe and Wrench are the two pieces you actually want.",
+     "loc": "Workshop Union / Venigni Works",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🔧 Normal weapon 7/29",
+       "label_it": "🔧 Arma normale 7/29"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Raccogli il SALAMANDER DAGGER, la FIRE AXE e il BIG PIPE WRENCH in questo capitolo. Fire Axe e Wrench sono i due pezzi che ti servono davvero.",
+     "loc_it": "Unione dell'Officina / Fabbrica di Venigni"
+    },
+    {
+     "text": "ASSEMBLE: Fire Axe BLADE + Big Pipe Wrench HANDLE. The Wrench handle is Motivity B / Technique D, so its Fable Art 'Payback Swing' pays off directly on this build and turns every Perfect Guard into a huge punish. This is your main weapon until Chapter 5. Buy Motivity Cranks from Venigni the moment they appear and slot them into the handle — on a strength run they are never wasted.",
+     "loc": "Hotel Krat, Venigni Craft Machine",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Fire Axe blade + Big Pipe Wrench handle",
+       "label_it": "⚔️ Lama Fire Axe + impugnatura Big Pipe Wrench"
+      },
+      {
+       "type": "build",
+       "label": "🔩 Motivity Crank priority",
+       "label_it": "🔩 Priorità ai Motivity Crank"
+      }
+     ],
+     "trophy": false,
+     "text_it": "ASSEMBLA: LAMA Fire Axe + IMPUGNATURA Big Pipe Wrench. L'impugnatura Wrench è Forza Motrice B / Tecnica D, quindi la sua Arte della Favola 'Payback Swing' rende direttamente su questa build e trasforma ogni Guardia Perfetta in una punizione enorme. È la tua arma principale fino al Capitolo 5. Compra i Motivity Crank da Venigni appena compaiono e infilali nell'impugnatura: in un run di forza non sono mai sprecati.",
+     "loc_it": "Hotel Krat, Venigni Craft Machine"
+    },
+    {
+     "text": "Defeat King's Flame, Fuoco. Summon a Specter and stay behind him - his forward slams are the only thing that punishes a heavy weapon here.",
+     "loc": "Venigni Works, end of Chapter 3",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 KING'S FLAME",
+       "label_it": "🏆 FIAMMA DEL RE"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi Fuoco, Fiamma del re (King's Flame, Fuoco). Evoca uno Spettro e resta dietro di lui: le sue schiacciate frontali sono l'unica cosa che punisce un'arma pesante qui.",
+     "loc_it": "Fabbrica di Venigni, fine del Capitolo 3"
+    },
+    {
+     "text": "Trade Fuoco's Ergo to Alidoro for the HOLY SWORD OF THE ARK - an A-Motivity special weapon whose handle art extends it into a spear and hands you a damage buff on retract. Keep this in your back pocket for bosses.",
+     "loc": "Hotel Krat, Alidoro",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "⚔️ Special weapon 3/11",
+       "label_it": "⚔️ Arma speciale 3/11"
+      },
+      {
+       "type": "build",
+       "label": "⚔️ Holy Sword of the Ark = boss stick",
+       "label_it": "⚔️ Holy Sword of the Ark = arma da boss"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Scambia l'Ergo di Fuoco con Alidoro per la HOLY SWORD OF THE ARK: un'arma speciale con Forza Motrice A la cui arte dell'impugnatura la allunga in lancia e ti dà un buff al danno quando la ritrai. Tienila da parte per i boss.",
+     "loc_it": "Hotel Krat, Alidoro"
+    },
+    {
+     "text": "Give the High-powered Flame Amplifier (Fuoco drop) to Eugenie for the FLAMBERGE Legion Arm.",
+     "loc": "Hotel Krat, Eugenie",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🦾 Legion Arm 2/6",
+       "label_it": "🦾 Braccio a Legione 2/6"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Consegna l'High-powered Flame Amplifier (drop di Fuoco) a Eugenie per il Braccio a Legione FLAMBERGE.",
+     "loc_it": "Hotel Krat, Eugenie"
+    },
+    {
+     "text": "Talk to Venigni at the hotel after the boss for the Swagger gesture, and start P-Organ Phase 2: 'Add Amulet Slots 1' then 'Retain Guard Regain 1'. Guard Regain is what keeps a committed heavy attacker alive.",
+     "loc": "Hotel Krat",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Gesture 7/17",
+       "label_it": "🏆 Gesto 7/17"
+      },
+      {
+       "type": "build",
+       "label": "🧬 P-Organ P2: Amulet Slots 1 + Guard Regain 1",
+       "label_it": "🧬 Organo-P F2: Amulet Slots 1 + Guard Regain 1"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Parla con Venigni all'hotel dopo il boss per il gesto Swagger, e avvia la Fase 2 dell'Organo-P: 'Add Amulet Slots 1' e poi 'Retain Guard Regain 1'. Il Guard Regain è ciò che tiene in vita un attaccante pesante che si impegna nei colpi.",
+     "loc_it": "Hotel Krat"
+    }
+   ],
+   "title_it": "Fase 3 — Capitolo 3 (Unione dell'Officina, Fabbrica di Venigni, Mad Donkey e Fuoco)",
+   "note_it": "Qui entra in scena la tua prima vera arma da Forza Motrice: lama Fire Axe + impugnatura Big Pipe Wrench. Il Capitolo 3 ha 2 Quarzi (stanza della Trinità nel Canale sotterraneo dell'Unione dell'Officina, boss Puppet of the Future)."
+  },
+  {
+   "title": "Phase 4 — Chapter 4 (Moonlight Town, St. Frangelico Cathedral, Andreus)",
+   "note": "First Cryptic Vessel and the third Legion Plug. Chapter 4 holds 2 Quartz (Cathedral Chapel elite, Cryptic Vessel reward). Cecile's questline is missable and gates a gesture and a record.",
+   "steps": [
+    {
+     "text": "Solve the spinning wheel puzzle for the BLIND MAN'S DOUBLE-SIDED SPEAR.",
+     "loc": "Path of Misery / Moonlight Town",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🔧 Normal weapon 8/29",
+       "label_it": "🔧 Arma normale 8/29"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Risolvi il rompicapo della ruota girevole per la BLIND MAN'S DOUBLE-SIDED SPEAR.",
+     "loc_it": "Sentiero dell'infelicità / Claraluna"
+    },
+    {
+     "text": "Find the Legion Plug in the small alcove reached by the wooden elevator shortcut in St. Frangelico Cathedral Chapel and craft the third Legion Arm.",
+     "loc": "St. Frangelico Cathedral Chapel",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🦾 Legion Arm 3/6",
+       "label_it": "🦾 Braccio a Legione 3/6"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Trova il Legion Plug nella piccola nicchia raggiungibile con la scorciatoia dell'ascensore di legno nella Cappella della cattedrale di San Frangelico e costruisci il terzo Braccio a Legione.",
+     "loc_it": "Cappella della cattedrale di San Frangelico"
+    },
+    {
+     "text": "Pick up the CRAFTED CRYPTIC VESSEL in the Cathedral Chapel, take it to Venigni at the Center of Venigni Works to decrypt, then solve it. Rewards 1 Quartz + Owl Doctor's Hunting Apparel. A second Quartz sits on an elite enemy in the same Chapel.",
+     "loc": "St. Frangelico Cathedral Chapel",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🔍 Cryptic Vessel 1/6",
+       "label_it": "🔍 Cilindro criptico 1/6"
+      },
+      {
+       "type": "coll",
+       "label": "💎 Quartz 5/28",
+       "label_it": "💎 Quarzo 5/28"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Veteran Explorer needs all 6",
+       "label_it": "⚠️ Esploratore veterano ne richiede tutti e 6"
+      },
+      {
+       "type": "coll",
+       "label": "💎 Quartz 6/28",
+       "label_it": "💎 Quarzo 6/28"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Raccogli il CRAFTED CRYPTIC VESSEL nella Cappella della cattedrale, portalo a Venigni al Centro della Fabbrica di Venigni per decifrarlo, poi risolvilo. Ricompensa: 1 Quarzo + Owl Doctor's Hunting Apparel. Un secondo Quarzo è addosso a un nemico d'élite nella stessa Cappella.",
+     "loc_it": "Cappella della cattedrale di San Frangelico"
+    },
+    {
+     "text": "Complete Sister Cecile's questline in the Cathedral Library. Reward: the record 'Divine Service'.",
+     "loc": "St. Frangelico Cathedral Library",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Record 2/16",
+       "label_it": "🏆 Disco 2/16"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Missable questline",
+       "label_it": "⚠️ Linea di missioni mancabile"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Completa la linea di missioni di Sister Cecile nella Biblioteca della cattedrale. Ricompensa: il disco 'Divine Service'.",
+     "loc_it": "Biblioteca della cattedrale di San Frangelico"
+    },
+    {
+     "text": "Read the letter that arrives after Cecile's quest for the Pray gesture.",
+     "loc": "Hotel Krat, letter box",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Gesture 8/17",
+       "label_it": "🏆 Gesto 8/17"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Missable",
+       "label_it": "⚠️ Mancabile"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Leggi la lettera che arriva dopo la quest di Cecile per il gesto Pray.",
+     "loc_it": "Hotel Krat, cassetta delle lettere"
+    },
+    {
+     "text": "Defeat Fallen Archbishop Andreus. His second phase punishes greed - use the Holy Sword of the Ark extended form for reach and let the Specter tank the roar.",
+     "loc": "St. Frangelico Cathedral, end of Chapter 4",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 FALLEN ARCHBISHOP",
+       "label_it": "🏆 ARCIVESCOVO CADUTO"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi l'Arcivescovo caduto Andreus (Fallen Archbishop Andreus). La sua seconda fase punisce l'ingordigia: usa la forma estesa della Holy Sword of the Ark per la portata e lascia che sia lo Spettro a incassare il ruggito.",
+     "loc_it": "Cattedrale di San Frangelico, fine del Capitolo 4"
+    },
+    {
+     "text": "Trade Andreus's Ergo to Alidoro for the TRIDENT OF THE COVENANT. Level target here: ~22 with Vitality 20, Motivity 24, Capacity 17, and equip Carrier's Amulet the moment you find one — it is what lets a heavy blade sit on a heavy handle at Normal load.",
+     "loc": "Hotel Krat, Alidoro",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "⚔️ Special weapon 4/11",
+       "label_it": "⚔️ Arma speciale 4/11"
+      },
+      {
+       "type": "build",
+       "label": "📿 Carrier's Amulet enables the heavy assembly",
+       "label_it": "📿 Il Carrier's Amulet abilita l'assemblaggio pesante"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Scambia l'Ergo di Andreus con Alidoro per il TRIDENT OF THE COVENANT. Livello obiettivo qui: ~22 con Vitalità 20, Forza Motrice 24, Capacità 17, ed equipaggia il Carrier's Amulet appena ne trovi uno: è ciò che permette a una lama pesante di stare su un'impugnatura pesante restando a carico Normale.",
+     "loc_it": "Hotel Krat, Alidoro"
+    }
+   ],
+   "title_it": "Fase 4 — Capitolo 4 (Claraluna, Cattedrale di San Frangelico, Andreus)",
+   "note_it": "Primo cilindro criptico e terzo Legion Plug. Il Capitolo 4 contiene 2 Quarzi (élite della Cappella della cattedrale, ricompensa del cilindro criptico). La linea di missioni di Cecile è mancabile e blocca un gesto e un disco."
+  },
+  {
+   "title": "Phase 5 — Chapter 5 (Path of the Pilgrim, Malum District, Black Rabbit Brotherhood)",
+   "note": "Malum District is a collectible goldmine: a record, a Trinity Key, the Portrait of a Boy for the Golden Lie weapon, and 2 Quartz. Remember the Path of the Pilgrim Stargazer - it is the Overture entrance later.",
+   "steps": [
+    {
+     "text": "Buy the record 'Someday' (3,800 Ergo) and the BRAMBLE CURVED SWORD from the Malum District Wandering Merchant.",
+     "loc": "Malum District, Wandering Merchant",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Record 3/16",
+       "label_it": "🏆 Disco 3/16"
+      },
+      {
+       "type": "coll",
+       "label": "🔧 Normal weapon 11/29",
+       "label_it": "🔧 Arma normale 11/29"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Compra il disco 'Someday' (3.800 Ergo) e la BRAMBLE CURVED SWORD dal Wandering Merchant del Quartiere Malum.",
+     "loc_it": "Quartiere Malum, Wandering Merchant"
+    },
+    {
+     "text": "Collect the ACIDIC CRYSTAL SPEAR and the BONE-CUTTING SAWBLADE. The Sawblade is one of the best blades in the game and improves almost any assembly.",
+     "loc": "Path of the Pilgrim / Malum District",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🔧 Normal weapon 10/29",
+       "label_it": "🔧 Arma normale 10/29"
+      },
+      {
+       "type": "build",
+       "label": "⚔️ Bone-Cutting Sawblade acquired",
+       "label_it": "⚔️ Bone-Cutting Sawblade ottenuta"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Raccogli l'ACIDIC CRYSTAL SPEAR e la BONE-CUTTING SAWBLADE. La Sawblade è una delle migliori lame del gioco e migliora quasi qualsiasi assemblaggio.",
+     "loc_it": "Sentiero del pellegrino / Quartiere Malum"
+    },
+    {
+     "text": "Answer the Malum District phone with 'CANDLE' for TRINITY KEY #2, then open the Trinity Sanctum in St. Frangelico Cathedral Chapel (up the ladder near the rolling electrical boulder).",
+     "loc": "Malum District telephone → Cathedral Chapel",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🗝️ Trinity Key 2/4",
+       "label_it": "🗝️ Chiave della Trinità 2/4"
+      },
+      {
+       "type": "coll",
+       "label": "🚪 Trinity Sanctum 2/4",
+       "label_it": "🚪 Santuario della trinità 2/4"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Rispondi al telefono del Quartiere Malum con 'CANDELA' per la CHIAVE DELLA TRINITÀ #2, poi apri il Santuario della trinità nella Cappella della cattedrale di San Frangelico (su per la scala a pioli vicino al masso elettrico che rotola).",
+     "loc_it": "Telefono del Quartiere Malum → Cappella della cattedrale"
+    },
+    {
+     "text": "Grab a Quartz from the Malum District chest.",
+     "loc": "Malum District",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "💎 Quartz 7/28",
+       "label_it": "💎 Quarzo 7/28"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prendi un Quarzo dalla cassa del Quartiere Malum.",
+     "loc_it": "Quartiere Malum"
+    },
+    {
+     "text": "Defeat the Eldest of the Black Rabbit Brotherhood. Gives the Taunt gesture automatically and 1 Quartz.",
+     "loc": "Malum District, end of Chapter 5",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 THE DELAYED MATCH",
+       "label_it": "🏆 LO SCONTRO RITARDATO"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Gesture 9/17",
+       "label_it": "🏆 Gesto 9/17"
+      },
+      {
+       "type": "coll",
+       "label": "💎 Quartz 8/28",
+       "label_it": "💎 Quarzo 8/28"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi il Maggiore della Confraternita dei conigli neri (Eldest of the Black Rabbit Brotherhood). Dà automaticamente il gesto Taunt e 1 Quarzo.",
+     "loc_it": "Quartiere Malum, fine del Capitolo 5"
+    },
+    {
+     "text": "Loot the PORTRAIT OF A BOY from the Black Rabbit hideout in Malum District Town Hall and give it to Geppetto at Hotel Krat. This starts the Golden Lie weapon chain and gives the Clap gesture. Keep listening to every record at the hotel gramophone and keep lying — you are farming toward Humanity 10.",
+     "loc": "Malum District Town Hall → Hotel Krat",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Gesture 10/17",
+       "label_it": "🏆 Gesto 10/17"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Portrait is required for the Golden Lie special weapon",
+       "label_it": "⚠️ Il Ritratto serve per l'arma speciale Golden Lie"
+      },
+      {
+       "type": "build",
+       "label": "💛 Humanity 10 target",
+       "label_it": "💛 Obiettivo Humanity 10"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Saccheggia il RITRATTO DI UN RAGAZZO (Portrait of a Boy) dal covo dei Conigli neri nel Municipio del Quartiere Malum e consegnalo a Geppetto all'Hotel Krat. Questo avvia la catena dell'arma Golden Lie e dà il gesto Clap. Continua ad ascoltare ogni disco al grammofono dell'hotel e continua a mentire: stai puntando a Humanity 10.",
+     "loc_it": "Municipio del Quartiere Malum → Hotel Krat"
+    },
+    {
+     "text": "ASSEMBLE: Bone-Cutting Sawblade BLADE + Exploding Pickaxe HANDLE once you have the Pickaxe (Chapter 6). Until then, Sawblade + Big Pipe Wrench handle is the strongest Motivity option you own.",
+     "loc": "Hotel Krat, Venigni Craft Machine",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Sawblade transition",
+       "label_it": "⚔️ Transizione alla Sawblade"
+      }
+     ],
+     "trophy": false,
+     "text_it": "ASSEMBLA: LAMA Bone-Cutting Sawblade + IMPUGNATURA Exploding Pickaxe non appena avrai il Pickaxe (Capitolo 6). Fino ad allora, Sawblade + impugnatura Big Pipe Wrench è la migliore opzione Forza Motrice che possiedi.",
+     "loc_it": "Hotel Krat, Venigni Craft Machine"
+    },
+    {
+     "text": "P-Organ Phase 3: take the extra Pulse Cell and the Fable Slot increase. More Fable charges = more Motivity-scaling Fable Arts per fight.",
+     "loc": "Hotel Krat, P-Organ",
+     "tags": [
+      {
+       "type": "build",
+       "label": "🧬 P-Organ P3: Pulse Cell + Fable Slots",
+       "label_it": "🧬 Organo-P F3: Cella a Impulso + Slot Favola"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Fase 3 dell'Organo-P: prendi la Cella a Impulso extra e l'aumento degli Slot Favola. Più cariche Favola = più Arti della Favola che scalano con la Forza Motrice per combattimento.",
+     "loc_it": "Hotel Krat, Organo-P"
+    }
+   ],
+   "title_it": "Fase 5 — Capitolo 5 (Sentiero del pellegrino, Quartiere Malum, Confraternita dei conigli neri)",
+   "note_it": "Il Quartiere Malum è una miniera di collezionabili: un disco, una Chiave della Trinità, il Ritratto di un ragazzo per l'arma Golden Lie e 2 Quarzi. Ricordati lo Stargazer del Sentiero del pellegrino: più avanti è l'ingresso di Overture."
+  },
+  {
+   "title": "Phase 6 — Chapter 6 (Rosa Isabelle Street, Estella Opera House, King of Puppets)",
+   "note": "3 Quartz here (Rosa Isabelle sewers, Mad Clown Puppet, Opera House Trinity room). Two missable questlines: Adelina's record and Julian's gesture.",
+   "steps": [
+    {
+     "text": "Find the Legion Plug in the safe on the top floor of the building at Rosa Isabelle Street Entrance and craft the fourth Legion Arm.",
+     "loc": "Rosa Isabelle Street Entrance, top floor safe",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🦾 Legion Arm 4/6",
+       "label_it": "🦾 Braccio a Legione 4/6"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Trova il Legion Plug nella cassaforte all'ultimo piano dell'edificio all'Ingresso di Via Rosa Isabelle e costruisci il quarto Braccio a Legione.",
+     "loc_it": "Ingresso di Via Rosa Isabelle, cassaforte all'ultimo piano"
+    },
+    {
+     "text": "Collect the DANCER'S CURVED SWORD, EXPLODING PICKAXE and CLOCK SWORD. The Exploding Pickaxe handle is the piece you actually came for.",
+     "loc": "Rosa Isabelle Street / Opera House",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🔧 Normal weapon 14/29",
+       "label_it": "🔧 Arma normale 14/29"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Raccogli la DANCER'S CURVED SWORD, l'EXPLODING PICKAXE e la CLOCK SWORD. L'impugnatura dell'Exploding Pickaxe è il pezzo per cui sei venuto davvero.",
+     "loc_it": "Via Rosa Isabelle / Teatro dell'opera"
+    },
+    {
+     "text": "ASSEMBLE THE MID-GAME KING: Bone-Cutting Sawblade BLADE + Exploding Pickaxe HANDLE. Best reach-to-stamina ratio in the base game for a Motivity build, and the handle art reduces stamina drain in long boss fights. Pair it with the PUPPET STRING Legion Arm from here on — yanking a staggered enemy toward you chains straight into a Fatal Attack, the build's highest burst window.",
+     "loc": "Hotel Krat, Venigni Craft Machine",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Sawblade + Exploding Pickaxe handle",
+       "label_it": "⚔️ Sawblade + impugnatura Exploding Pickaxe"
+      },
+      {
+       "type": "build",
+       "label": "🦾 Puppet String → Fatal Attack chain",
+       "label_it": "🦾 Filo del Burattino → catena di attacco fatale"
+      }
+     ],
+     "trophy": false,
+     "text_it": "ASSEMBLA IL RE DEL MID-GAME: LAMA Bone-Cutting Sawblade + IMPUGNATURA Exploding Pickaxe. Miglior rapporto portata/stamina del gioco base per una build Forza Motrice, e l'arte dell'impugnatura riduce il consumo di stamina nei combattimenti lunghi contro i boss. Da qui in poi abbinala al Braccio a Legione Filo del Burattino (Puppet String): tirarti addosso un nemico stordito si concatena direttamente in un attacco fatale, la finestra di burst più alta della build.",
+     "loc_it": "Hotel Krat, Venigni Craft Machine"
+    },
+    {
+     "text": "Complete Adelina's questline (needs a Red Apple) for the record 'Fascination'.",
+     "loc": "Estella Opera House Entrance",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Record 4/16",
+       "label_it": "🏆 Disco 4/16"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Missable — needs Red Apple",
+       "label_it": "⚠️ Mancabile — serve la Red Apple"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Completa la linea di missioni di Adelina (richiede una Red Apple) per il disco 'Fascination'.",
+     "loc_it": "Ingresso del teatro dell'opera Estella"
+    },
+    {
+     "text": "Pick up the JEWELED CRYPTIC VESSEL at Estella Opera House Entrance, decrypt with Venigni, and solve it for a Legion Caliber + The Atoned's Hunting Apparel.",
+     "loc": "Estella Opera House Entrance",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🔍 Cryptic Vessel 2/6",
+       "label_it": "🔍 Cilindro criptico 2/6"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Raccogli il JEWELED CRYPTIC VESSEL all'Ingresso del teatro dell'opera Estella, fallo decifrare a Venigni e risolvilo per un Legion Caliber + The Atoned's Hunting Apparel.",
+     "loc_it": "Ingresso del teatro dell'opera Estella"
+    },
+    {
+     "text": "Complete Julian the Gentleman's questline with the correct dialogue choice for the Sad gesture. Also sweep the Rosa Isabelle sewers Quartz and the Mad Clown Puppet Quartz; leave the Opera House Trinity room for when you hold Key #3.",
+     "loc": "Rosa Isabelle Street",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Gesture 11/17",
+       "label_it": "🏆 Gesto 11/17"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Missable — dialogue dependent",
+       "label_it": "⚠️ Mancabile — dipende dal dialogo"
+      },
+      {
+       "type": "coll",
+       "label": "💎 Quartz 10/28",
+       "label_it": "💎 Quarzo 10/28"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Completa la linea di missioni di Julian the Gentleman con la scelta di dialogo corretta per il gesto Sad. Raccogli anche il Quarzo nel canale sotterraneo di Via Rosa Isabelle e quello del Mad Clown Puppet; lascia la stanza della Trinità del teatro dell'opera a quando avrai la Chiave #3.",
+     "loc_it": "Via Rosa Isabelle"
+    },
+    {
+     "text": "Defeat Romeo, King of Puppets. Perfect Guard his flame-mace combo; phase 2 rewards heavy charged punishes after his big overhead.",
+     "loc": "Estella Opera House, end of Chapter 6",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 KING OF PUPPETS",
+       "label_it": "🏆 RE DEI BURATTINI"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi Romeo, Re dei burattini (Romeo, King of Puppets). Para in Guardia Perfetta la sua combo con la mazza infuocata; la fase 2 premia le punizioni pesanti caricate dopo il suo grande fendente dall'alto.",
+     "loc_it": "Teatro dell'opera Estella, fine del Capitolo 6"
+    },
+    {
+     "text": "Trade the King of Puppets' Ergo to Alidoro for PUPPET RIPPER.",
+     "loc": "Hotel Krat, Alidoro",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "⚔️ Special weapon 5/11",
+       "label_it": "⚔️ Arma speciale 5/11"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Scambia l'Ergo del Re dei burattini con Alidoro per PUPPET RIPPER.",
+     "loc_it": "Hotel Krat, Alidoro"
+    }
+   ],
+   "title_it": "Fase 6 — Capitolo 6 (Via Rosa Isabelle, Teatro dell'opera Estella, Re dei burattini)",
+   "note_it": "Qui ci sono 3 Quarzi (canale sotterraneo di Via Rosa Isabelle, Mad Clown Puppet, stanza della Trinità del teatro dell'opera). Due linee di missioni mancabili: il disco di Adelina e il gesto di Julian."
+  },
+  {
+   "title": "Phase 7 — Chapter 7 (Lorenzini Arcade, Grand Exhibition, Champion Victor)",
+   "note": "The Gold Coin Tree, the Dimensional Butterflies and Trinity Key #3 all live around here. Chapter 7 has 1 Quartz (Grand Exhibition Gallery chest).",
+   "steps": [
+    {
+     "text": "Buy the CIRCULAR ELECTRIC CHAINSAW from the merchant and loot the SPEAR OF HONOR from the underground safe.",
+     "loc": "Lorenzini Arcade",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🔧 Normal weapon 16/29",
+       "label_it": "🔧 Arma normale 16/29"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Compra la CIRCULAR ELECTRIC CHAINSAW dal mercante e saccheggia lo SPEAR OF HONOR dalla cassaforte sotterranea.",
+     "loc_it": "Galleria Lorenzini"
+    },
+    {
+     "text": "Get the Legion Plug from the chest in Grand Exhibition Gallery (behind the white puppet enemy) for the fifth Legion Arm, plus the Quartz in the Gallery chest.",
+     "loc": "Grand Exhibition Gallery",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🦾 Legion Arm 5/6",
+       "label_it": "🦾 Braccio a Legione 5/6"
+      },
+      {
+       "type": "coll",
+       "label": "💎 Quartz 11/28",
+       "label_it": "💎 Quarzo 11/28"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prendi il Legion Plug dalla cassa nella Galleria della Grande Esposizione (dietro il burattino bianco) per il quinto Braccio a Legione, più il Quarzo nella cassa della Galleria.",
+     "loc_it": "Galleria della Grande Esposizione"
+    },
+    {
+     "text": "Answer the Grand Exhibition phone with 'EGG', then interact with the statue, to get TRINITY KEY #3. Use it on the Trinity Sanctum below the swinging chandelier at Estella Opera House Entrance.",
+     "loc": "Grand Exhibition → Opera House Entrance",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🗝️ Trinity Key 3/4",
+       "label_it": "🗝️ Chiave della Trinità 3/4"
+      },
+      {
+       "type": "coll",
+       "label": "🚪 Trinity Sanctum 3/4",
+       "label_it": "🚪 Santuario della trinità 3/4"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Rispondi al telefono della Grande Esposizione con 'UOVO', poi interagisci con la statua, per ottenere la CHIAVE DELLA TRINITÀ #3. Usala sul Santuario della trinità sotto il lampadario oscillante all'Ingresso del teatro dell'opera Estella.",
+     "loc_it": "Grande Esposizione → Ingresso del teatro dell'opera"
+    },
+    {
+     "text": "Backtrack past the final elite enemy and enter the double doors for the Respect gesture.",
+     "loc": "Grand Exhibition, rear double doors",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Gesture 12/17",
+       "label_it": "🏆 Gesto 12/17"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Torna indietro oltre l'ultimo nemico d'élite ed entra dalla doppia porta per il gesto Respect.",
+     "loc_it": "Grande Esposizione, doppia porta sul retro"
+    },
+    {
+     "text": "Defeat Champion Victor. He is a pure stagger-check: charged heavies into Fatal Attacks, and Perfect Guard his ground pound.",
+     "loc": "Grand Exhibition, end of Chapter 7",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 THE CHAMPION OF EVOLUTION",
+       "label_it": "🏆 IL CAMPIONE DI EVOLUZIONE"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi Victor il campione (Champion Victor). È un puro test di stordimento: pesanti caricati fino all'attacco fatale, e Guardia Perfetta sulla sua schiacciata a terra.",
+     "loc_it": "Grande Esposizione, fine del Capitolo 7"
+    },
+    {
+     "text": "Trade Victor's Ergo to Alidoro for FROZEN FEAST - a heavy Motivity special weapon that also solves this build's crowd-control weakness.",
+     "loc": "Hotel Krat, Alidoro",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "⚔️ Special weapon 6/11",
+       "label_it": "⚔️ Arma speciale 6/11"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Scambia l'Ergo di Victor con Alidoro per FROZEN FEAST: un'arma speciale pesante da Forza Motrice che risolve anche la debolezza di questa build contro i gruppi.",
+     "loc_it": "Hotel Krat, Alidoro"
+    },
+    {
+     "text": "Harvest fruit from the Gold Coin Tree in the Hotel Krat garden (it fruits as the story progresses - check after every chapter).",
+     "loc": "Hotel Krat garden, Gold Coin Tree",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 BEAR GOLD COIN FRUIT",
+       "label_it": "🏆 DETENTORE DI ZECCHINI D'ORO"
+      },
+      {
+       "type": "coll",
+       "label": "💎 Quartz +2 purchasable",
+       "label_it": "💎 Quarzo +2 acquistabili"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Raccogli un frutto dall'albero degli zecchini d'oro nel giardino dell'Hotel Krat (fruttifica man mano che la storia avanza: controlla dopo ogni capitolo).",
+     "loc_it": "Giardino dell'Hotel Krat, albero degli zecchini d'oro"
+    },
+    {
+     "text": "Give the Gold Coin Fruit to Black Cat and Red Fox after Champion Victor for the record 'Quixotic' and the Beg gesture.",
+     "loc": "Hotel Krat garden / Black Cat and Red Fox",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Record 5/16",
+       "label_it": "🏆 Disco 5/16"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Gesture 13/17",
+       "label_it": "🏆 Gesto 13/17"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Both are missable",
+       "label_it": "⚠️ Entrambi mancabili"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Dai lo zecchino d'oro a Black Cat e Red Fox dopo Victor il campione per il disco 'Quixotic' e il gesto Beg.",
+     "loc_it": "Giardino dell'Hotel Krat / Black Cat e Red Fox"
+    },
+    {
+     "text": "Kill one Dimensional Butterfly of each colour. The common blue ones are everywhere; the rare ones are the Red at Workshop Union Entrance (top floor by the two big fans), the Pink across the lake at Path of the Pilgrim, and the Orange at Lorenzini Arcade past the big floor hole in the ring room. There are ~28-32 spawns total but you only need one of each colour.",
+     "loc": "Workshop Union Entrance / Path of the Pilgrim / Lorenzini Arcade",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 FROM ACROSS THE RIFT",
+       "label_it": "🏆 DA OLTRE LA SPACCATURA"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Rare colours despawn if you leave the zone",
+       "label_it": "⚠️ I colori rari spariscono se lasci la zona"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi una farfalla dimensionale di ogni colore. Quelle blu comuni sono ovunque; le rare sono la Rossa all'Ingresso dell'Unione dell'Officina (ultimo piano, vicino ai due grandi ventilatori), la Rosa oltre il lago al Sentiero del pellegrino e l'Arancione alla Galleria Lorenzini, oltre il grande buco nel pavimento nella sala circolare. Ci sono ~28-32 spawn in totale, ma te ne serve solo una per colore.",
+     "loc_it": "Ingresso dell'Unione dell'Officina / Sentiero del pellegrino / Galleria Lorenzini"
+    }
+   ],
+   "title_it": "Fase 7 — Capitolo 7 (Galleria Lorenzini, Grande Esposizione, Victor il campione)",
+   "note_it": "L'albero degli zecchini d'oro, le farfalle dimensionali e la Chiave della Trinità #3 stanno tutti da queste parti. Il Capitolo 7 ha 1 Quarzo (cassa della Galleria della Grande Esposizione)."
+  },
+  {
+   "title": "Phase 8 — Chapter 8 (Barren Swamp, Hermit's Cave, Green Monster)",
+   "note": "4 Quartz here (two Puppet of the Future fights, Broken Puppet side quest, Hermit's Cave). This is also where you should hit +10 on your main weapon.",
+   "steps": [
+    {
+     "text": "Collect the LIVE PUPPET'S AXE and CITY LONGSPEAR, and buy the TYRANT MURDERER'S DAGGER, PISTOL ROCK DRILL and CARCASS CRYSTAL AXE from NPC merchants as they unlock.",
+     "loc": "Barren Swamp / NPC merchants",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🔧 Normal weapon 21/29",
+       "label_it": "🔧 Arma normale 21/29"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Raccogli la LIVE PUPPET'S AXE e la CITY LONGSPEAR, e compra il TYRANT MURDERER'S DAGGER, il PISTOL ROCK DRILL e la CARCASS CRYSTAL AXE dai mercanti NPC man mano che si sbloccano.",
+     "loc_it": "Palude Desolata / mercanti NPC"
+    },
+    {
+     "text": "Get the OLD CRYPTIC VESSEL from Rookie Explorer Hugo at Barren Swamp Bridge, decrypt and solve it for the Life Amulet + a Legion Caliber. Solving it also yields the BLACK STEEL CUTTER.",
+     "loc": "Barren Swamp Bridge, Hugo",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🔍 Cryptic Vessel 3/6",
+       "label_it": "🔍 Cilindro criptico 3/6"
+      },
+      {
+       "type": "coll",
+       "label": "🔧 Normal weapon 22/29",
+       "label_it": "🔧 Arma normale 22/29"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Fatti dare l'OLD CRYPTIC VESSEL da Rookie Explorer Hugo al Ponte della Palude Desolata, decifralo e risolvilo per il Life Amulet + un Legion Caliber. Risolverlo ti dà anche il BLACK STEEL CUTTER.",
+     "loc_it": "Ponte della Palude Desolata, Hugo"
+    },
+    {
+     "text": "Kill the elite Decay enemy in Hermit's Cave for the record 'Misty E'rA' plus a Quartz. The Broken Puppet side quest in the Swamp gives another Quartz.",
+     "loc": "Hermit's Cave",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Record 6/16",
+       "label_it": "🏆 Disco 6/16"
+      },
+      {
+       "type": "coll",
+       "label": "💎 Quartz 14/28",
+       "label_it": "💎 Quarzo 14/28"
+      },
+      {
+       "type": "coll",
+       "label": "💎 Quartz 15/28",
+       "label_it": "💎 Quarzo 15/28"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Uccidi il nemico d'élite Decay nel Grotta dell'Eremita per il disco 'Misty E'rA' più un Quarzo. La missione secondaria del Broken Puppet nella palude dà un altro Quarzo.",
+     "loc_it": "Grotta dell'Eremita"
+    },
+    {
+     "text": "Upgrade your main Motivity assembly to +10 using Hidden Moonstones from Venigni. Take the Sawblade + Exploding Pickaxe handle to +10.",
+     "loc": "Hotel Krat, Venigni Craft Machine",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 STRONGEST NORMAL WEAPON",
+       "label_it": "🏆 ARMA NORMALE PIÙ FORTE"
+      },
+      {
+       "type": "build",
+       "label": "🔩 Main weapon at +10",
+       "label_it": "🔩 Arma principale a +10"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Porta il tuo assemblaggio Forza Motrice principale a +10 usando gli Hidden Moonstone di Venigni. Porta a +10 la Sawblade + impugnatura Exploding Pickaxe.",
+     "loc_it": "Hotel Krat, Venigni Craft Machine"
+    },
+    {
+     "text": "Defeat the Puppet-Devouring Green Monster (Monster of the Swamp). He is huge and slow - the perfect Motivity punching bag. Charged heavies into his head.",
+     "loc": "Barren Swamp, end of Chapter 8",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 PUPPET-DEVOURING GREEN MONSTER",
+       "label_it": "🏆 MOSTRO VERDE DIVORATORE DI BURATTINI"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi il Mostro verde divoratore di burattini (Puppet-Devouring Green Monster, il Monster of the Swamp). È enorme e lento: il sacco da boxe perfetto per la Forza Motrice. Pesanti caricati in testa.",
+     "loc_it": "Palude Desolata, fine del Capitolo 8"
+    },
+    {
+     "text": "Trade the Monster of the Swamp's Ergo to Alidoro for the TWO DRAGONS SWORD.",
+     "loc": "Hotel Krat, Alidoro",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "⚔️ Special weapon 7/11",
+       "label_it": "⚔️ Arma speciale 7/11"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Scambia l'Ergo del Monster of the Swamp con Alidoro per la TWO DRAGONS SWORD.",
+     "loc_it": "Hotel Krat, Alidoro"
+    },
+    {
+     "text": "Talk to Antonia after the chapter boss for the Greet gesture, and give her the cure when the option appears - this is a hard prerequisite for her ending record and story achievement in Chapter 11.",
+     "loc": "Hotel Krat, Antonia's room",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Gesture 14/17",
+       "label_it": "🏆 Gesto 14/17"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Antonia's cure gates a record + achievement",
+       "label_it": "⚠️ La cura di Antonia sblocca un disco + un obiettivo"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Parla con Antonia dopo il boss del capitolo per il gesto Greet, e dalle la cura quando compare l'opzione: è un prerequisito assoluto per il suo disco di fine storia e per l'obiettivo narrativo nel Capitolo 11.",
+     "loc_it": "Hotel Krat, stanza di Antonia"
+    },
+    {
+     "text": "P-Organ Phase 4: take 'Perfect Guards Cause Stiffness'. On a heavy weapon this is the strongest node in the tree - it breaks enemy stance and buys you a full charged heavy.",
+     "loc": "Hotel Krat, P-Organ",
+     "tags": [
+      {
+       "type": "build",
+       "label": "🧬 P-Organ P4: Perfect Guards Cause Stiffness",
+       "label_it": "🧬 Organo-P F4: Perfect Guards Cause Stiffness"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Fase 4 dell'Organo-P: prendi 'Perfect Guards Cause Stiffness'. Su un'arma pesante è il nodo più forte dell'albero: rompe la postura del nemico e ti regala un pesante caricato completo.",
+     "loc_it": "Hotel Krat, Organo-P"
+    }
+   ],
+   "title_it": "Fase 8 — Capitolo 8 (Palude Desolata, Grotta dell'Eremita, Mostro verde)",
+   "note_it": "Qui ci sono 4 Quarzi (due scontri con il Puppet of the Future, missione secondaria del Broken Puppet, Grotta dell'Eremita). È anche il punto in cui dovresti portare l'arma principale a +10."
+  },
+  {
+   "title": "Phase 9 — Chapter 9 (Krat Central Station, Collapsed Krat, Corrupted Parade Master) — Overture unlocks here",
+   "note": "2 Quartz (Station Platform chest, Corrupted Parade Master). The 6th Legion Plug and the 4th Trinity Key are both here, so this is the chapter where three collection achievements land. Finishing the chapter awards the STAR'S CHRYSALIS, which opens Overture.",
+   "steps": [
+    {
+     "text": "Kill the Decay elite enemy shortly after leaving the station for the 6th Legion Plug and craft the final base-game Legion Arm.",
+     "loc": "Krat Central Station Lobby",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 LEGION ARM COLLECTOR",
+       "label_it": "🏆 COLLEZIONISTA DI BRACCIA A LEGIONE"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi il nemico d'élite Decay poco dopo essere uscito dalla stazione per il 6° Legion Plug e costruisci l'ultimo Braccio a Legione del gioco base.",
+     "loc_it": "Atrio della stazione centrale"
+    },
+    {
+     "text": "Modify one Legion Arm to its maximum level at Eugenie's bench using Legion Calibers. Max the AEGIS or the PUPPET STRING - both serve the Motivity build.",
+     "loc": "Hotel Krat, Eugenie",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 STRONGEST LEGION ARM",
+       "label_it": "🏆 BRACCIO A LEGIONE PIÙ FORTE"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Modifica un Braccio a Legione al livello massimo al banco di Eugenie usando i Legion Caliber. Porta al massimo l'AEGIS o il Filo del Burattino: entrambi servono alla build Forza Motrice.",
+     "loc_it": "Hotel Krat, Eugenie"
+    },
+    {
+     "text": "Answer the Central Station Street phone with 'ERGO' for TRINITY KEY #4, then open the Trinity Sanctum through the left-hand door from the Krat Central Station Lobby Stargazer. This is the fourth and final Trinity Sanctum.",
+     "loc": "Central Station Street → Krat Central Station Lobby",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 END OF RIDDLES",
+       "label_it": "🏆 FINE DEGLI INDOVINELLI"
+      },
+      {
+       "type": "coll",
+       "label": "🗝️ Trinity Key 4/4",
+       "label_it": "🗝️ Chiave della Trinità 4/4"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Rispondi al telefono della Via della stazione centrale con 'ERGO' per la CHIAVE DELLA TRINITÀ #4, poi apri il Santuario della trinità attraverso la porta di sinistra dallo Stargazer dell'Atrio della stazione centrale. È il quarto e ultimo Santuario della trinità.",
+     "loc_it": "Via della stazione centrale → Atrio della stazione centrale"
+    },
+    {
+     "text": "Loot the Station Platform chest Quartz.",
+     "loc": "Krat Central Station Platform",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "💎 Quartz 16/28",
+       "label_it": "💎 Quarzo 16/28"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Saccheggia il Quarzo dalla cassa del Binario della stazione centrale.",
+     "loc_it": "Binario della stazione centrale"
+    },
+    {
+     "text": "Collect the MASTER CHEF'S KNIFE, COIL MJOLNIR and buy the MILITARY SHOVEL. The Coil Mjolnir is a strong Motivity blunt if you want a change of pace.",
+     "loc": "Collapsed Krat / merchant",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🔧 Normal weapon 25/29",
+       "label_it": "🔧 Arma normale 25/29"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Raccogli il MASTER CHEF'S KNIFE e il COIL MJOLNIR, e compra la MILITARY SHOVEL. Il Coil Mjolnir è un ottimo contundente da Forza Motrice se vuoi cambiare ritmo.",
+     "loc_it": "Strada Crollata / mercante"
+    },
+    {
+     "text": "Lie to Belle when she asks about the outside world for the record 'Why'.",
+     "loc": "Hotel Krat, Belle",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Record 7/16",
+       "label_it": "🏆 Disco 7/16"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Requires the lie",
+       "label_it": "⚠️ Richiede la menzogna"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Menti a Belle quando ti chiede del mondo esterno per il disco 'Why'.",
+     "loc_it": "Hotel Krat, Belle"
+    },
+    {
+     "text": "Talk to Antonia at the end of the chapter for the Anger gesture.",
+     "loc": "Hotel Krat",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Gesture 15/17",
+       "label_it": "🏆 Gesto 15/17"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Parla con Antonia alla fine del capitolo per il gesto Anger.",
+     "loc_it": "Hotel Krat"
+    },
+    {
+     "text": "Find the RUSTY CRYPTIC VESSEL in Collapsed Krat, decrypt and solve for Black Cat's Hunting Apparel + 1 Quartz.",
+     "loc": "Collapsed Krat",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🔍 Cryptic Vessel 4/6",
+       "label_it": "🔍 Cilindro criptico 4/6"
+      },
+      {
+       "type": "coll",
+       "label": "💎 Quartz 17/28",
+       "label_it": "💎 Quarzo 17/28"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Trova il RUSTY CRYPTIC VESSEL nella Strada Crollata, fallo decifrare e risolvilo per la Black Cat's Hunting Apparel + 1 Quarzo.",
+     "loc_it": "Strada Crollata"
+    },
+    {
+     "text": "Defeat the Corrupted Parade Master. This ends Chapter 9 and drops the STAR'S CHRYSALIS into your inventory.",
+     "loc": "Collapsed Krat, end of Chapter 9",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 CORRUPTED PARADE MASTER",
+       "label_it": "🏆 MAESTRO DELLA SFILATA CORROTTO"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi il Maestro della sfilata corrotto (Corrupted Parade Master). Questo chiude il Capitolo 9 e ti mette in inventario la CRISALIDE DELLA STELLA.",
+     "loc_it": "Strada Crollata, fine del Capitolo 9"
+    },
+    {
+     "text": "STOP. Do not start Chapter 10. Level to ~Level 60 (Motivity 40, Vitality 30, Capacity 25), take your +10 assembly and Holy Sword of the Ark, and head to Overture now - the story dialogue only lines up if you go before Chapter 10.",
+     "loc": "Any Stargazer",
+     "tags": [
+      {
+       "type": "build",
+       "label": "📈 Overture entry checkpoint: Motivity 40 / Vit 30",
+       "label_it": "📈 Checkpoint d'ingresso in Overture: Forza Motrice 40 / Vit 30"
+      }
+     ],
+     "trophy": false,
+     "text_it": "FERMATI. Non iniziare il Capitolo 10. Sali fino a circa il livello 60 (Forza Motrice 40, Vitalità 30, Capacità 25), prendi il tuo assemblaggio +10 e la Holy Sword of the Ark, e vai in Overture ADESSO: i dialoghi della storia tornano solo se ci vai prima del Capitolo 10.",
+     "loc_it": "Qualsiasi Stargazer"
+    }
+   ],
+   "title_it": "Fase 9 — Capitolo 9 (Stazione Centrale di Krat, Strada Crollata, Maestro della sfilata corrotto) — qui si sblocca Overture",
+   "note_it": "2 Quarzi (cassa del Binario della stazione centrale, Maestro della sfilata corrotto). Il 6° Legion Plug e la 4ª Chiave della Trinità sono entrambi qui, quindi è il capitolo in cui scattano tre obiettivi da collezione. Completare il capitolo ti assegna la CRISALIDE DELLA STELLA, che apre Overture."
+  },
+  {
+   "title": "Phase 10 — OVERTURE Part 1 (Strange Forest, Hall of Adventure, Carnival Garden, Krat Zoo, Markiona)",
+   "note": "Entry: travel to the Path of the Pilgrim Stargazer in Malum District (Chapter 5 area). A cutscene plays and a butterfly leads you to a vine-covered broken Stargazer nearby; use the Star's Chrysalis on it and interact to enter the Forgotten Time. You can hop back to the base timeline from ANY Stargazer at any time. Overture adds its OWN P-Organ extension at the Maintenance Tools table, and there are Quartz scattered through its areas (Premetamorphic Green Hunter drops one).",
+   "steps": [
+    {
+     "text": "Open Overture: the STAR'S CHRYSALIS is already in your Functional Items after Chapter 9. Warp to the PATH OF THE PILGRIM Stargazer — the first Stargazer of CHAPTER 5, not Malum District — use the Chrysalis there and follow the glowing trail to a second, derelict Stargazer that repairs itself and becomes the portal. You come out at the outskirts of Krat Zoo. Rest at the Eventide Hotel Krat Stargazer: that is the DLC hub, with Hugo, Klaus, the Tracker and the Maintenance Tools table. You can hop between Overture and the base world from ANY Stargazer, any time.",
+     "loc": "Path of the Pilgrim Stargazer (Chapter 5) → Krat Zoo outskirts → Eventide Hotel Krat",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "🗺️ Overture unlocked",
+       "label_it": "🗺️ Overture sbloccato"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Apri Overture: la CRISALIDE DELLA STELLA (Star's Chrysalis) è già nei tuoi Oggetti funzionali dopo il Capitolo 9. Teletrasportati allo Stargazer del SENTIERO DEL PELLEGRINO — il primo Stargazer del CAPITOLO 5, non del Quartiere Malum — usa lì la Crisalide e segui la scia luminosa fino a un secondo Stargazer abbandonato che si ripara da solo e diventa il portale. Sbuchi ai margini del Krat Zoo. Riposa allo Stargazer dell'Eventide Hotel Krat: è l'hub del DLC, con Hugo, Klaus, il Tracker e il tavolo Maintenance Tools. Puoi passare tra Overture e il mondo base da QUALSIASI Stargazer, in qualsiasi momento.",
+     "loc_it": "Stargazer del Sentiero del pellegrino (Capitolo 5) → margini del Krat Zoo → Eventide Hotel Krat"
+    },
+    {
+     "text": "Spend a single Quartz at the MAINTENANCE TOOLS TABLE in Eventide Hotel Krat to buy the DLC's extra P-Organ node. This is the DLC-only P-Organ extension, separate from the base tree.",
+     "loc": "Eventide Hotel Krat, Maintenance Tools table",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 BEYOND LIMITLESS POTENTIAL",
+       "label_it": "🏆 OLTRE LE POTENZIALITÀ ILLIMITATE"
+      },
+      {
+       "type": "build",
+       "label": "🧬 DLC P-Organ extension",
+       "label_it": "🧬 Estensione Organo-P del DLC"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Spendi un singolo Quarzo al TAVOLO MAINTENANCE TOOLS dell'Eventide Hotel Krat per comprare il nodo extra dell'Organo-P del DLC. È l'estensione dell'Organo-P esclusiva del DLC, separata dall'albero base.",
+     "loc_it": "Eventide Hotel Krat, tavolo Maintenance Tools"
+    },
+    {
+     "text": "In the Hall of Adventure, grab the ROYAL HORN BOW west of the Stargazer.",
+     "loc": "Hall of Adventure, west of Stargazer",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "⚔️ DLC weapon 1/10",
+       "label_it": "⚔️ Arma DLC 1/10"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Nella Hall of Adventure, prendi il ROYAL HORN BOW a ovest dello Stargazer.",
+     "loc_it": "Hall of Adventure, a ovest dello Stargazer"
+    },
+    {
+     "text": "Still in the Hall of Adventure, find 'Discover Wildlife: Bears!' on the floor in front of the large double doors behind the mammoth statue for the Play Dead gesture.",
+     "loc": "Hall of Adventure, behind the mammoth statue",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🎭 DLC gesture 1/8",
+       "label_it": "🎭 Gesto DLC 1/8"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ To Be Human is missable",
+       "label_it": "⚠️ Essere umano è mancabile"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Sempre nella Hall of Adventure, trova 'Discover Wildlife: Bears!' per terra davanti alla grande doppia porta dietro la statua del mammut, per il gesto Play Dead.",
+     "loc_it": "Hall of Adventure, dietro la statua del mammut"
+    },
+    {
+     "text": "Collect all 4 CARNIVAL COINS around Carnival Garden. Insert one into the mechanical organ in the building left of the carnival entrance for the Tap Dance gesture.",
+     "loc": "Carnival Garden, left-hand building",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🎭 DLC gesture 2/8",
+       "label_it": "🎭 Gesto DLC 2/8"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Raccogli tutte e 4 le CARNIVAL COIN sparse per il Giardino del Luna Park. Inseriscine una nell'organo meccanico nell'edificio a sinistra dell'ingresso del luna park per il gesto Tap Dance.",
+     "loc_it": "Giardino del Luna Park, edificio di sinistra"
+    },
+    {
+     "text": "Go to the stage in the right-hand Carnival Garden building and perform Tap Dance on it for the Cheer gesture.",
+     "loc": "Carnival Garden, right-hand building stage",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🎭 DLC gesture 3/8",
+       "label_it": "🎭 Gesto DLC 3/8"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Needs all 4 Carnival Coins first",
+       "label_it": "⚠️ Servono prima tutte e 4 le Carnival Coin"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Vai sul palco nell'edificio di destra del Giardino del Luna Park ed eseguici sopra il gesto Tap Dance per ottenere il gesto Cheer.",
+     "loc_it": "Giardino del Luna Park, palco dell'edificio di destra"
+    },
+    {
+     "text": "Win the Carnival Garden mini-game for the MANIAC'S PINWHEEL BLADE - a greatsword blade that is excellent on a Motivity handle.",
+     "loc": "Carnival Garden mini-game",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "⚔️ DLC weapon 2/10",
+       "label_it": "⚔️ Arma DLC 2/10"
+      },
+      {
+       "type": "build",
+       "label": "⚔️ Pinwheel Blade + heavy handle",
+       "label_it": "⚔️ Pinwheel Blade + impugnatura pesante"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Vinci il minigioco del Giardino del Luna Park per la MANIAC'S PINWHEEL BLADE: una lama da spadone eccellente su un'impugnatura da Forza Motrice.",
+     "loc_it": "Minigioco del Giardino del Luna Park"
+    },
+    {
+     "text": "Take the LORENZINI BOLT greatsword from the left of the ravine on the Jungle Zone Walkway, and pick up the first GENIU'S LEGION PLUG part there.",
+     "loc": "Jungle Zone Walkway",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "⚔️ DLC weapon 3/10",
+       "label_it": "⚔️ Arma DLC 3/10"
+      },
+      {
+       "type": "coll",
+       "label": "🦾 DLC Legion plug part 1",
+       "label_it": "🦾 Pezzo 1 del Legion Plug del DLC"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prendi lo spadone LORENZINI BOLT a sinistra del burrone sulla Jungle Zone Walkway, e raccogli lì il primo pezzo del GENIU'S LEGION PLUG.",
+     "loc_it": "Jungle Zone Walkway"
+    },
+    {
+     "text": "Beat the Tyrannical Predator, the DLC's first real boss, in the Krat Zoo. Specters are available here too - use one.",
+     "loc": "Krat Zoo / Savanna Experience Center",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "⚔️ Boss: Tyrannical Predator",
+       "label_it": "⚔️ Boss: Tyrannical Predator"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Batti il Tyrannical Predator, il primo vero boss del DLC, nel Krat Zoo. Anche qui gli Spettri sono disponibili: usane uno.",
+     "loc_it": "Krat Zoo / Savanna Experience Center"
+    },
+    {
+     "text": "Defeat MARKIONA, PUPPETEER OF DEATH - the hardest fight in the first half of the DLC. Drop to Awakened Puppet difficulty if she walls you; it costs nothing.",
+     "loc": "Krat Zoo",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 PUPPETEER OF DEATH",
+       "label_it": "🏆 BURATTINAIA DELLA MORTE"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi MARKIONA, LA BURATTINAIA DELLA MORTE (Markiona, Puppeteer of Death): lo scontro più duro della prima metà del DLC. Se ti sbarra la strada, scendi a difficoltà Burattino Risvegliato: non ti costa nulla.",
+     "loc_it": "Krat Zoo"
+    },
+    {
+     "text": "Buy DEATH'S TALON from Hugo, who restocks after Markiona.",
+     "loc": "Eventide Hotel Krat, Hugo",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "⚔️ DLC weapon 4/10",
+       "label_it": "⚔️ Arma DLC 4/10"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Compra DEATH'S TALON da Hugo, che rifornisce il negozio dopo Markiona.",
+     "loc_it": "Eventide Hotel Krat, Hugo"
+    },
+    {
+     "text": "Talk to the Tracker at Eventide Hotel and select 'Decrypt a cipher machine' for the BLOODY CIPHER MACHINE (dropped by the Two-Faced Overseer). Then retrieve the necropsy report from the crocodile in the Hall of Adventure. Reward: Whirlwind Amulet.",
+     "loc": "Eventide Hotel Krat, Tracker → Hall of Adventure",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🔐 Cipher 1/3",
+       "label_it": "🔐 Cifrario 1/3"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Tracker of Dark Secrets is missable",
+       "label_it": "⚠️ Segugio di segreti oscuri è mancabile"
+      },
+      {
+       "type": "quest",
+       "label": "🔐 Cipher 1 answer location",
+       "label_it": "🔐 Posizione della risposta al cifrario 1"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Parla con il Tracker all'Eventide Hotel e scegli 'Decifra una macchina cifrante' per la BLOODY CIPHER MACHINE (lasciata dal Two-Faced Overseer). Poi recupera il referto dell'autopsia dal coccodrillo nella Hall of Adventure. Ricompensa: Whirlwind Amulet.",
+     "loc_it": "Eventide Hotel Krat, Tracker → Hall of Adventure"
+    }
+   ],
+   "title_it": "Fase 10 — OVERTURE Parte 1 (Strange Forest, Hall of Adventure, Giardino del Luna Park, Krat Zoo, Markiona)",
+   "note_it": "Ingresso: raggiungi lo Stargazer del Sentiero del pellegrino nel Quartiere Malum (area del Capitolo 5). Parte un filmato e una farfalla ti guida verso uno Stargazer rotto e ricoperto di rampicanti lì vicino; usaci sopra la Crisalide della Stella e interagisci per entrare nel Tempo dimenticato. Puoi rientrare nella linea temporale base da QUALSIASI Stargazer in qualsiasi momento. Overture aggiunge una PROPRIA estensione dell'Organo-P al tavolo Maintenance Tools, e ci sono Quarzi sparsi per le sue aree (il Premetamorphic Green Hunter ne lascia uno)."
+  },
+  {
+   "title": "Phase 11 — OVERTURE Part 2 (Zelator Underground, Ergo Mining Site, Pistris Harbor, Archon Fleet Shipwreck)",
+   "note": "This is the weapon and Legion Arm phase. True Combat Gear Collector wants all 10 DLC weapons AND both DLC Legion Arms crafted, so do not leave a chest behind. Both DLC Legion Arms are crafted at the Venigni Craft Machine once you hold both halves of each plug.",
+   "steps": [
+    {
+     "text": "Open the chest in the Zelator Underground Facility for LA VENDETTA (blunt).",
+     "loc": "Zelator Underground Facility, chest",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "⚔️ DLC weapon 5/10",
+       "label_it": "⚔️ Arma DLC 5/10"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Apri la cassa nella Zelator Underground Facility per LA VENDETTA (contundente).",
+     "loc_it": "Zelator Underground Facility, cassa"
+    },
+    {
+     "text": "Get ARCHE'S GUARDIAN from the scaffolding chest at Ergo Mining Site, and the second GENIU'S LEGION PLUG part in the same area.",
+     "loc": "Ergo Mining Site, scaffolding chest",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "⚔️ DLC weapon 6/10",
+       "label_it": "⚔️ Arma DLC 6/10"
+      },
+      {
+       "type": "coll",
+       "label": "🦾 DLC Legion plug part 2",
+       "label_it": "🦾 Pezzo 2 del Legion Plug del DLC"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prendi ARCHE'S GUARDIAN dalla cassa sull'impalcatura all'Ergo Mining Site, e il secondo pezzo del GENIU'S LEGION PLUG nella stessa area.",
+     "loc_it": "Ergo Mining Site, cassa sull'impalcatura"
+    },
+    {
+     "text": "Craft the CATACLYSM shotgun Legion Arm at the Venigni Craft Machine. Motivity A / Technique C - it is flatly the best Motivity Legion Arm in the game and its Perfect Reload counter is a boss-melter.",
+     "loc": "Hotel Krat / Eventide Hotel, Venigni Craft Machine",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🦾 DLC Legion Arm 1/2",
+       "label_it": "🦾 Braccio a Legione DLC 1/2"
+      },
+      {
+       "type": "build",
+       "label": "🦾 Cataclysm = best Motivity Legion Arm",
+       "label_it": "🦾 Cataclysm = miglior Braccio a Legione da Forza Motrice"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Costruisci il Braccio a Legione fucile CATACLYSM alla Venigni Craft Machine. Forza Motrice A / Tecnica C: è nettamente il miglior Braccio a Legione da Forza Motrice del gioco e il suo contrattacco Perfect Reload scioglie i boss.",
+     "loc_it": "Hotel Krat / Eventide Hotel, Venigni Craft Machine"
+    },
+    {
+     "text": "Craft ICARUS (Motivity B / Technique B) with the second plug set. Its Strengthen Blade art buffs your heavy weapon directly.",
+     "loc": "Venigni Craft Machine",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🦾 DLC Legion Arm 2/2",
+       "label_it": "🦾 Braccio a Legione DLC 2/2"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Costruisci ICARUS (Forza Motrice B / Tecnica B) con il secondo set di plug. La sua arte Strengthen Blade potenzia direttamente la tua arma pesante.",
+     "loc_it": "Venigni Craft Machine"
+    },
+    {
+     "text": "Open the locked chest in the Security Area for the PUPPET OF THE FUTURE'S WELDER greatsword. Buy the PALE KNIGHT greatsword from Hugo at the Destroyed Tram Station while you are passing.",
+     "loc": "Security Area, locked chest",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "⚔️ DLC weapon 7/10",
+       "label_it": "⚔️ Arma DLC 7/10"
+      },
+      {
+       "type": "coll",
+       "label": "⚔️ DLC weapon 8/10",
+       "label_it": "⚔️ Arma DLC 8/10"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Apri la cassa chiusa a chiave nella Security Area per lo spadone PUPPET OF THE FUTURE'S WELDER. Compra lo spadone PALE KNIGHT da Hugo alla Destroyed Tram Station mentre sei di passaggio.",
+     "loc_it": "Security Area, cassa chiusa a chiave"
+    },
+    {
+     "text": "Talk to the third fallen Crusher Puppet after the long bridge at the Ancient Ruins Excavation Site for the Doubt gesture.",
+     "loc": "Ancient Ruins Excavation Site, past the long bridge",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🎭 DLC gesture 4/8",
+       "label_it": "🎭 Gesto DLC 4/8"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Parla con il terzo Crusher Puppet caduto dopo il lungo ponte all'Ancient Ruins Excavation Site per il gesto Doubt.",
+     "loc_it": "Ancient Ruins Excavation Site, oltre il lungo ponte"
+    },
+    {
+     "text": "Kill the BULLZDOZER elite at the Ergo Mining Site for the CORRODED CIPHER MACHINE, have the Tracker decrypt it, then blow the rock wall at Ancient Ruins Excavation Site and grab the Misfit's Diary from the hidden cave. Reward: ANCIENT DISK (keep it - Klaus wants it). The Premetamorphic Green Hunter (the burrowing, self-healing boss) in the same region drops a Quartz.",
+     "loc": "Ergo Mining Site → Ancient Ruins Excavation Site",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🔐 Cipher 2/3",
+       "label_it": "🔐 Cifrario 2/3"
+      },
+      {
+       "type": "quest",
+       "label": "💿 Ancient Disk needed for Nightmare (Gold)",
+       "label_it": "💿 Ancient Disk necessario per Nightmare (Gold)"
+      },
+      {
+       "type": "coll",
+       "label": "💎 DLC Quartz",
+       "label_it": "💎 Quarzo DLC"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Uccidi l'élite BULLZDOZER all'Ergo Mining Site per la CORRODED CIPHER MACHINE, falla decifrare dal Tracker, poi fai saltare la parete rocciosa all'Ancient Ruins Excavation Site e prendi il Misfit's Diary dalla caverna nascosta. Ricompensa: ANCIENT DISK (tienilo: lo vuole Klaus). Il Premetamorphic Green Hunter (il boss che scava e si autocura) nella stessa regione lascia un Quarzo.",
+     "loc_it": "Ergo Mining Site → Ancient Ruins Excavation Site"
+    },
+    {
+     "text": "Complete Rosaura's side quest at Pistris Harbor and hand over Ergo for the Heart gesture, and finish it at Carnival Garden for the record 'Lisrim'.",
+     "loc": "Pistris Harbor / Carnival Garden, Rosaura",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🎭 DLC gesture 5/8",
+       "label_it": "🎭 Gesto DLC 5/8"
+      },
+      {
+       "type": "coll",
+       "label": "🎵 DLC Record 1/8",
+       "label_it": "🎵 Disco DLC 1/8"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Completa la missione secondaria di Rosaura al Porto di Pistris e consegnale dell'Ergo per il gesto Heart, poi concludila al Giardino del Luna Park per il disco 'Lisrim'.",
+     "loc_it": "Porto di Pistris / Giardino del Luna Park, Rosaura"
+    },
+    {
+     "text": "Complete Goddard's quest at the Zoo Tram Station for the record 'The Clear Blue Sky', and the Brain in a Vat quest at Pistris Harbor for 'Nightmare'.",
+     "loc": "Zoo Tram Station / Pistris Harbor",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🎵 DLC Record 3/8",
+       "label_it": "🎵 Disco DLC 3/8"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Completa la quest di Goddard alla Zoo Tram Station per il disco 'The Clear Blue Sky', e la quest del Brain in a Vat al Porto di Pistris per 'Nightmare'.",
+     "loc_it": "Zoo Tram Station / Porto di Pistris"
+    },
+    {
+     "text": "Find 'Correspondence from Beyond the Sea' inside the second shipwreck for the Deep Bow gesture, plus the FROSTED CIPHER MACHINE from the safe at the Archon Fleet Shipwreck (guarded by an elite).",
+     "loc": "Archon Fleet Shipwreck",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🎭 DLC gesture 6/8",
+       "label_it": "🎭 Gesto DLC 6/8"
+      },
+      {
+       "type": "quest",
+       "label": "🔐 Frosted Cipher acquired",
+       "label_it": "🔐 Frosted Cipher ottenuta"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Trova 'Correspondence from Beyond the Sea' dentro il secondo relitto per il gesto Deep Bow, più la FROSTED CIPHER MACHINE nella cassaforte all'Archon Fleet Shipwreck (sorvegliata da un élite).",
+     "loc_it": "Archon Fleet Shipwreck"
+    },
+    {
+     "text": "Pick up KLAUS'S PREMIUM LUXURY BAG in the Shipwreck Interior and hand it to Klaus at Eventide Hotel now, so the shop is unlocked. He then stocks NIGHTMARE (GOLD) for one Ancient Disk — but the record only appears in his stock in NEW GAME+, and it is missable inside that cycle: buy it before you kill the DLC's final boss.",
+     "loc": "Shipwreck Interior → Eventide Hotel Krat, Klaus",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🎵 DLC Record 4/8",
+       "label_it": "🎵 Disco DLC 4/8"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Bag first, then the Ancient Disk purchase",
+       "label_it": "⚠️ Prima la borsa, poi l'acquisto con l'Ancient Disk"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Raccogli la KLAUS'S PREMIUM LUXURY BAG nello Shipwreck Interior e consegnala subito a Klaus all'Eventide Hotel, così il negozio si sblocca. A quel punto tiene in stock NIGHTMARE (GOLD) per un Ancient Disk — ma il disco compare nel suo assortimento solo in NEW GAME+, ed è mancabile all'interno di quel ciclo: compralo prima di uccidere il boss finale del DLC.",
+     "loc_it": "Shipwreck Interior → Eventide Hotel Krat, Klaus"
+    },
+    {
+     "text": "Take the SILENT EVANGELIST'S MACE (head + handle) from the Shipwreck Interior front deck. Large Blunt, and an outstanding Motivity assembly piece for the rest of the DLC.",
+     "loc": "Shipwreck Interior, front deck",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "⚔️ DLC weapon 9/10",
+       "label_it": "⚔️ Arma DLC 9/10"
+      },
+      {
+       "type": "build",
+       "label": "⚔️ Silent Evangelist's Mace",
+       "label_it": "⚔️ Silent Evangelist's Mace"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prendi la SILENT EVANGELIST'S MACE (testa + impugnatura) dal ponte di prua dello Shipwreck Interior. È un contundente grande e un pezzo da assemblaggio Forza Motrice eccezionale per tutto il resto del DLC.",
+     "loc_it": "Shipwreck Interior, ponte di prua"
+    },
+    {
+     "text": "Defeat VERONIQUE, LEADER OF THE SWEEPERS and then LUMACCHIO, LEADER OF THE BASTARDS on the Shipwreck Exterior. Lumacchio is weak to fire and to backstabs.",
+     "loc": "Shipwreck Exterior",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 HONOR AND REVENGE",
+       "label_it": "🏆 ONORE E VENDETTA"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi VERONIQUE, CAPO DEGLI SPAZZINI e poi LUMACCHIO, CAPO DEI BASTARDI sullo Shipwreck Exterior. Lumacchio è debole al fuoco e ai colpi alle spalle.",
+     "loc_it": "Shipwreck Exterior"
+    },
+    {
+     "text": "Defeat the ANGUISHED GUARDIAN.",
+     "loc": "Frozen Coast / Shipwreck area",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 ANGUISHED GUARDIAN",
+       "label_it": "🏆 GUARDIANO ANGUSTIATO"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi il GUARDIANO ANGUSTIATO (Anguished Guardian).",
+     "loc_it": "Frozen Coast / area del relitto"
+    },
+    {
+     "text": "Pick up the 10th and final DLC weapon and confirm you have crafted BOTH DLC Legion Arms. The achievement checks 10 weapons + 2 Legion Arms together.",
+     "loc": "Weapon inventory / Venigni Craft Machine",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 TRUE COMBAT GEAR COLLECTOR",
+       "label_it": "🏆 COLLEZIONISTA DI VERE ARMI DA COMBATTIMENTO"
+      },
+      {
+       "type": "coll",
+       "label": "⚔️ DLC weapon 10/10",
+       "label_it": "⚔️ Arma DLC 10/10"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Raccogli la 10ª e ultima arma del DLC e verifica di aver costruito ENTRAMBE le braccia a Legione del DLC. L'obiettivo controlla insieme 10 armi + 2 braccia a Legione.",
+     "loc_it": "Inventario armi / Venigni Craft Machine"
+    }
+   ],
+   "title_it": "Fase 11 — OVERTURE Parte 2 (Zelator Underground, Ergo Mining Site, Porto di Pistris, Archon Fleet Shipwreck)",
+   "note_it": "Questa è la fase delle armi e delle braccia a Legione. Collezionista di vere armi da combattimento vuole tutte e 10 le armi del DLC E entrambe le braccia a Legione del DLC costruite, quindi non lasciarti indietro nessuna cassa. Entrambe le braccia a Legione del DLC si costruiscono alla Venigni Craft Machine una volta che possiedi entrambe le metà di ciascun plug."
+  },
+  {
+   "title": "Phase 12 — OVERTURE Part 3 (Krat Lighthouse, Frozen Coast, Monad Charity House, Rose Garden, Arlecchino)",
+   "note": "The last two gestures, the third cipher and the DLC ending all land here. 'Enduring Resolve' only becomes possible AFTER Arlecchino dies. This is the end of your Overture first pass - the two NG+ Gold Records come back in Phase 15.",
+   "steps": [
+    {
+     "text": "Die once while afflicted with FREEZE (Zelator Underground Facility or Frozen Coast enemies will oblige) for the Shiver gesture. Yes, deliberately.",
+     "loc": "Frozen Coast or Zelator Underground Facility",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🎭 DLC gesture 7/8",
+       "label_it": "🎭 Gesto DLC 7/8"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Muori una volta mentre sei afflitto da CONGELAMENTO (i nemici della Zelator Underground Facility o della Frozen Coast ti accontenteranno) per il gesto Shiver. Sì, di proposito.",
+     "loc_it": "Frozen Coast o Zelator Underground Facility"
+    },
+    {
+     "text": "Climb to the Krat Lighthouse rooftop and trigger the cutscene for the Peer Into Distance gesture - the 8th and last.",
+     "loc": "Krat Lighthouse rooftop",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 TO BE HUMAN",
+       "label_it": "🏆 ESSERE UMANO"
+      },
+      {
+       "type": "coll",
+       "label": "🎭 DLC gesture 8/8",
+       "label_it": "🎭 Gesto DLC 8/8"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sali sul tetto del Faro di Krat e attiva il filmato per il gesto Peer Into Distance, l'8° e ultimo.",
+     "loc_it": "Tetto del Faro di Krat"
+    },
+    {
+     "text": "Have the Tracker decrypt the FROSTED CIPHER MACHINE (needs the Bastard story boss down), buy the GIANT'S AMULET from the Wandering Merchant, equip it at the Krat Lighthouse to weigh down the pressure plate, and take the Lighthouse Keeper's Journal from the secret room. Reward: Detective's Clothes.",
+     "loc": "Krat Lighthouse, weight-sensitive floor panel",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🔐 Cipher 3/3",
+       "label_it": "🔐 Cifrario 3/3"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Needs Giant's Amulet equipped",
+       "label_it": "⚠️ Serve il Giant's Amulet equipaggiato"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Fai decifrare al Tracker la FROSTED CIPHER MACHINE (serve aver abbattuto il boss narrativo dei Bastardi), compra il GIANT'S AMULET dal Wandering Merchant, equipaggialo al Faro di Krat per far abbassare la piastra a pressione e prendi il Lighthouse Keeper's Journal dalla stanza segreta. Ricompensa: Detective's Clothes.",
+     "loc_it": "Faro di Krat, pannello del pavimento sensibile al peso"
+    },
+    {
+     "text": "Return to the Tracker and finish his questline. When the dialogue option comes up you MUST answer 'They will be, and Krat will be saved.' Any other line loses the achievement and the record.",
+     "loc": "Eventide Hotel Krat, The Tracker",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 TRACKER OF DARK SECRETS",
+       "label_it": "🏆 SEGUGIO DI SEGRETI OSCURI"
+      },
+      {
+       "type": "coll",
+       "label": "🎵 DLC Record 5/8 (SURVIVOR)",
+       "label_it": "🎵 Disco DLC 5/8 (SURVIVOR)"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Exact dialogue line required",
+       "label_it": "⚠️ Serve esattamente quella riga di dialogo"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Torna dal Tracker e concludi la sua linea di missioni. Quando compare l'opzione di dialogo DEVI rispondere 'Lo saranno, e Krat sarà salva.' Qualunque altra riga ti fa perdere l'obiettivo e il disco.",
+     "loc_it": "Eventide Hotel Krat, il Tracker"
+    },
+    {
+     "text": "Push through Pleroma Forest Cave, Monad Charity House, the Charity House Cellar and Valentinus's Study to Rose Garden Entrance. Rest at every Stargazer - the Rose Garden run-back is long.",
+     "loc": "Pleroma Forest Cave → Rose Garden Entrance",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "🗺️ Final Overture stretch",
+       "label_it": "🗺️ Tratto finale di Overture"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Fatti strada attraverso la Pleroma Forest Cave, la Monad Charity House, il Charity House Cellar e il Valentinus's Study fino al Rose Garden Entrance. Riposa a ogni Stargazer: il tragitto di ritorno al Giardino delle Rose è lungo.",
+     "loc_it": "Pleroma Forest Cave → Rose Garden Entrance"
+    },
+    {
+     "text": "Defeat ARLECCHINO, THE BLOOD ARTIST. She is the hardest fight in the whole package - highly mobile, long flurries. Bring a Specter, a fully charged Cataclysm, and drop the difficulty if you need to.",
+     "loc": "Rose Garden Entrance",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 THE BLOOD ARTIST",
+       "label_it": "🏆 L'ARTISTA SANGUINARIO"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi ARLECCHINO, L'ARTISTA SANGUINARIO (Arlecchino, the Blood Artist). È lo scontro più duro dell'intero pacchetto: mobilissima, con raffiche lunghe. Porta uno Spettro, un Cataclysm completamente carico e abbassa la difficoltà se ti serve.",
+     "loc_it": "Rose Garden Entrance"
+    },
+    {
+     "text": "Watch the DLC ending sequence that follows Arlecchino.",
+     "loc": "Rose Garden / post-boss cutscene",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 THE ROSE'S MEMORY",
+       "label_it": "🏆 THE ROSE'S MEMORY"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Guarda la sequenza finale del DLC che segue Arlecchino.",
+     "loc_it": "Giardino delle Rose / filmato post-boss"
+    },
+    {
+     "text": "Collect the SECRET ROOM KEY that Arlecchino drops, fast travel to the Eventide Hotel Krat Stargazer, walk to the Golden Coin Tree, and unlock the iron gate BEHIND the tree.",
+     "loc": "Eventide Hotel Krat, behind the Golden Coin Tree",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "🗝️ Secret Room Key",
+       "label_it": "🗝️ Chiave della Stanza Segreta"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Easy to miss entirely — nothing signposts it",
+       "label_it": "⚠️ Facilissima da mancare del tutto — nulla la segnala"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Raccogli la CHIAVE DELLA STANZA SEGRETA (Secret Room Key) che lascia Arlecchino, viaggia rapidamente allo Stargazer dell'Eventide Hotel Krat, raggiungi a piedi l'albero degli zecchini d'oro e apri il cancello di ferro DIETRO l'albero.",
+     "loc_it": "Eventide Hotel Krat, dietro l'albero degli zecchini d'oro"
+    },
+    {
+     "text": "Inside the secret room, listen to Lea's Recollection (the voice record) from the collectibles menu. The achievement pops on listening, not on picking it up.",
+     "loc": "Eventide Hotel Krat secret room → Collectibles menu",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 ENDURING RESOLVE",
+       "label_it": "🏆 RISOLUTEZZA COSTANTE"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Dentro la stanza segreta, ascolta Lea's Recollection (la registrazione vocale) dal menu dei collezionabili. L'obiettivo scatta all'ascolto, non alla raccolta.",
+     "loc_it": "Stanza segreta dell'Eventide Hotel Krat → menu Collezionabili"
+    },
+    {
+     "text": "Record ledger check: you should now hold 6 of 8 Overture records. The missing two - LISRIM (GOLD) and THE CLEAR BLUE SKY (GOLD), 9,000 Ergo each from Wandering Merchants near Archon Fleet Shipwrecks and Carnival Garden - are NEW GAME PLUS ONLY. Nothing you can do about it this run. Do not forget SURVIVOR (Red) from the final unlocked room at Eventide Hotel Krat after the DLC ending.",
+     "loc": "Collectibles > Records menu",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠️ Memory's Melody cannot pop before NG+",
+       "label_it": "⚠️ Melodia della memoria non può scattare prima del NG+"
+      },
+      {
+       "type": "coll",
+       "label": "🎵 DLC Record 6/8",
+       "label_it": "🎵 Disco DLC 6/8"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Verifica dei dischi: a questo punto dovresti averne 6 su 8 di Overture. I due mancanti — LISRIM (GOLD) e THE CLEAR BLUE SKY (GOLD), 9.000 Ergo l'uno dai Wandering Merchant vicino agli Archon Fleet Shipwrecks e al Giardino del Luna Park — sono ESCLUSIVI DEL NEW GAME PLUS. In questo run non ci puoi fare niente. Non dimenticare SURVIVOR (Red) dall'ultima stanza sbloccata all'Eventide Hotel Krat dopo il finale del DLC.",
+     "loc_it": "Collezionabili > menu Dischi"
+    },
+    {
+     "text": "Return to the base timeline from any Stargazer and resume the main story at Chapter 10.",
+     "loc": "Any Stargazer > switch timeline",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "🗺️ Back to base game",
+       "label_it": "🗺️ Ritorno al gioco base"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Torna alla linea temporale base da qualsiasi Stargazer e riprendi la storia principale dal Capitolo 10.",
+     "loc_it": "Qualsiasi Stargazer > cambia linea temporale"
+    }
+   ],
+   "title_it": "Fase 12 — OVERTURE Parte 3 (Faro di Krat, Frozen Coast, Monad Charity House, Giardino delle Rose, Arlecchino)",
+   "note_it": "Qui arrivano gli ultimi due gesti, il terzo cifrario e il finale del DLC. 'Risolutezza costante' diventa possibile solo DOPO la morte di Arlecchino. È la fine del tuo primo passaggio in Overture: i due Dischi d'Oro esclusivi del NG+ tornano nella Fase 15."
+  },
+  {
+   "title": "Phase 13 — Chapters 10-11 (Relic of Trismegistus, Arche Abbey, Laxasia, Simon Manus)",
+   "note": "The biggest Quartz chapter: Chapter 10 has 1 (Black Rabbit Brotherhood), Chapter 11 has 6 across the Abbey (Trinity door NPC, elite enemy, spike-trap chest, green-lights chest, Disruption elite, Cryptic Vessel reward). Also the last normal weapons, the last cryptic vessels and the last gestures. BACK UP YOUR SAVE the moment Laxasia dies.",
+   "steps": [
+    {
+     "text": "Defeat the Black Rabbit Brotherhood (the full group). Drops 1 Quartz.",
+     "loc": "Relic of Trismegistus, end of Chapter 10",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 REVENGE OF BLACK",
+       "label_it": "🏆 VENDETTA NERA"
+      },
+      {
+       "type": "coll",
+       "label": "💎 Quartz 18/28",
+       "label_it": "💎 Quarzo 18/28"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi la Confraternita dei conigli neri (Black Rabbit Brotherhood) al completo. Lascia 1 Quarzo.",
+     "loc_it": "Reliquia di Trismegistus, fine del Capitolo 10"
+    },
+    {
+     "text": "Speak to Eugenie at Hotel Krat after the Black Rabbit Brotherhood. For run 1 pick the choice that gives 'PROPOSAL, FLOWER, WOLF PART 1'. The other line gives 'FAR EAST PRINCESS' - you take that one in NG+.",
+     "loc": "Hotel Krat, Eugenie",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Record 8/16",
+       "label_it": "🏆 Disco 8/16"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Mutually exclusive — the other needs NG+",
+       "label_it": "⚠️ Mutuamente esclusivi — l'altro richiede il NG+"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Parla con Eugenie all'Hotel Krat dopo la Confraternita dei conigli neri. Per il run 1 scegli l'opzione che dà 'PROPOSAL, FLOWER, WOLF PART 1'. L'altra riga dà 'FAR EAST PRINCESS': quella la prenderai in NG+.",
+     "loc_it": "Hotel Krat, Eugenie"
+    },
+    {
+     "text": "Defeat Alidoro at the Relic of Trismegistus Combat Field, then take ALIDORO'S CRYPTIC VESSEL and solve it. Note on his earlier choice: LYING to him does NOT break the questline — truth just sends him to Hotel Krat sooner, the lie routes him via Venigni Works and he still ends up at the hotel. The only real way to break the chain is never talking to him at his first location, the St. Frangelico Cathedral Library (that also kills Eugénie's quest). Killing him here is fine: a replacement merchant keeps selling the special weapons.",
+     "loc": "Relic of Trismegistus Combat Field",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 THE STORY OF A STRANGER GIRL",
+       "label_it": "🏆 LA STORIA DI UNA RAGAZZA SCONOSCIUTA"
+      },
+      {
+       "type": "coll",
+       "label": "🔍 Cryptic Vessel 5/6",
+       "label_it": "🔍 Cilindro criptico 5/6"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Truth to Alidoro required",
+       "label_it": "⚠️ Serve dire la verità ad Alidoro"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi Alidoro nel Combat Field della Reliquia di Trismegistus, poi prendi l'ALIDORO'S CRYPTIC VESSEL e risolvilo. Nota sulla scelta precedente: MENTIRGLI NON rompe la linea di missioni — la verità lo manda solo prima all'Hotel Krat, la bugia lo fa passare per la Fabbrica di Venigni e comunque finisce all'hotel. L'unico modo vero per spezzare la catena è non parlargli mai nella sua prima posizione, la Biblioteca della cattedrale di San Frangelico (cosa che uccide anche la quest di Eugénie). Ucciderlo qui va bene: un mercante sostitutivo continua a vendere le armi speciali.",
+     "loc_it": "Combat Field della Reliquia di Trismegistus"
+    },
+    {
+     "text": "Find the MECHANICAL CRYPTIC VESSEL at the Arche Abbey Broken Rift, decrypt with Venigni and solve it for Red Fox's Hunting Apparel + 1 Quartz. That is all six.",
+     "loc": "Arche Abbey Broken Rift",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 VETERAN EXPLORER",
+       "label_it": "🏆 ESPLORATORE VETERANO"
+      },
+      {
+       "type": "coll",
+       "label": "🔍 Cryptic Vessel 6/6",
+       "label_it": "🔍 Cilindro criptico 6/6"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Trova il MECHANICAL CRYPTIC VESSEL alla Spaccatura dell'Abbazia di Arche, fallo decifrare a Venigni e risolvilo per la Red Fox's Hunting Apparel + 1 Quarzo. Con questo sono tutti e sei.",
+     "loc_it": "Spaccatura dell'Abbazia di Arche"
+    },
+    {
+     "text": "Open the CHOSEN ONE'S DOOR in Arche Abbey (separate from the four Trinity Sanctums) and sweep the Abbey's six Quartz: the Trinity door NPC, the elite enemy, the spike-trap chest, the green-lights chest, the Disruption elite, and the Cryptic Vessel reward.",
+     "loc": "Arche Abbey",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "💎 Quartz 24/28",
+       "label_it": "💎 Quarzo 24/28"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Apri la CHOSEN ONE'S DOOR nell'Abbazia di Arche (distinta dai quattro Santuari della trinità) e raccogli i sei Quarzi dell'Abbazia: l'NPC della porta della Trinità, il nemico d'élite, la cassa con la trappola a spuntoni, la cassa delle luci verdi, l'élite Disruption e la ricompensa del cilindro criptico.",
+     "loc_it": "Abbazia di Arche"
+    },
+    {
+     "text": "Pick up the ACIDIC GREAT CURVED SWORD in Chapter 11 - the 29th and final normal weapon. The CURSED KNIGHT'S HALBERD in Chapter 10 is number 28.",
+     "loc": "Arche Abbey",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 NORMAL WEAPON COLLECTOR",
+       "label_it": "🏆 COLLEZIONISTA DI ARMI NORMALI"
+      },
+      {
+       "type": "coll",
+       "label": "🔧 Normal weapon 29/29",
+       "label_it": "🔧 Arma normale 29/29"
+      },
+      {
+       "type": "coll",
+       "label": "🔧 Normal weapon 26/29",
+       "label_it": "🔧 Arma normale 26/29"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Raccogli l'ACIDIC GREAT CURVED SWORD nel Capitolo 11: è la 29ª e ultima arma normale. La CURSED KNIGHT'S HALBERD nel Capitolo 10 è la numero 28.",
+     "loc_it": "Abbazia di Arche"
+    },
+    {
+     "text": "Upgrade any special weapon to +5 using Hidden Crystals - put them into the Holy Sword of the Ark or Frozen Feast, both A-Motivity.",
+     "loc": "Hotel Krat, Venigni Craft Machine",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 STRONGEST SPECIAL WEAPON",
+       "label_it": "🏆 ARMA SPECIALE PIÙ FORTE"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Potenzia una qualsiasi arma speciale a +5 usando gli Hidden Crystal: mettili nella Holy Sword of the Ark o in Frozen Feast, entrambe con Forza Motrice A.",
+     "loc_it": "Hotel Krat, Venigni Craft Machine"
+    },
+    {
+     "text": "Take the elevator down at Arche Abbey Outer Wall and talk to Test Subject 826 for the Happy gesture.",
+     "loc": "Arche Abbey Outer Wall, lower area via elevator",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Gesture 16/17",
+       "label_it": "🏆 Gesto 16/17"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Easy to walk past",
+       "label_it": "⚠️ Facilissimo tirare dritto"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prendi l'ascensore che scende alle Mura esterne dell'Abbazia di Arche e parla con Test Subject 826 per il gesto Happy.",
+     "loc_it": "Mura esterne dell'Abbazia di Arche, zona inferiore tramite ascensore"
+    },
+    {
+     "text": "Defeat LAXASIA THE COMPLETE. Her lightning phase punishes greedy heavies - Perfect Guard the chain and punish with a single charged R2, not a combo.",
+     "loc": "Arche Abbey",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 THE COMPLETE ONE",
+       "label_it": "🏆 LA COMPLETA"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi LAXASIA LA COMPLETA (Laxasia the Complete). La sua fase con i fulmini punisce i pesanti ingordi: para in Guardia Perfetta la catena e punisci con un singolo R2 caricato, non con una combo.",
+     "loc_it": "Abbazia di Arche"
+    },
+    {
+     "text": "*** BACK UP YOUR SAVE RIGHT NOW *** — Laxasia is down and you have not spoken to Sophia yet. Copy the save folder (Steam) or upload to cloud/USB (PS5). This is BACKUP A.",
+     "loc": "Desktop / PS5 Saved Data",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠️ BACKUP A — skipping this costs you a whole playthrough",
+       "label_it": "⚠️ BACKUP A — saltarlo ti costa un intero playthrough"
+      }
+     ],
+     "trophy": false,
+     "text_it": "*** FAI IL BACKUP DEL SALVATAGGIO ADESSO *** — Laxasia è a terra e non hai ancora parlato con Sophia. Copia la cartella dei salvataggi (Steam) o caricala su cloud/USB (PS5). Questo è il BACKUP A.",
+     "loc_it": "Desktop / Dati salvati PS5"
+    },
+    {
+     "text": "Talk to Sophia after Laxasia and choose 'GIVE HER PEACE' for the record 'Shadow Flower' and the Entreat gesture - the 17th and last gesture.",
+     "loc": "Arche Abbey, Sophia",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 LEARNING ABOUT EMOTIONS",
+       "label_it": "🏆 IMPARARE LE EMOZIONI"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Record 9/16",
+       "label_it": "🏆 Disco 9/16"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Gesture 17/17",
+       "label_it": "🏆 Gesto 17/17"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Parla con Sophia dopo Laxasia e scegli 'DARLE PACE' per il disco 'Shadow Flower' e il gesto Entreat, il 17° e ultimo gesto.",
+     "loc_it": "Abbazia di Arche, Sophia"
+    },
+    {
+     "text": "Confirm you gave Antonia the cure back in Chapter 8, then complete her storyline at Hotel Krat and read the resulting letter. This also yields the record 'Memory of Beach' at Ascension Bridge.",
+     "loc": "Hotel Krat / Ascension Bridge",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 THE STORY OF THE REFINED OLD LADY",
+       "label_it": "🏆 LA STORIA DELL'ANZIANA RAFFINATA"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Record 10/16",
+       "label_it": "🏆 Disco 10/16"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Dead if you never gave the cure",
+       "label_it": "⚠️ Perso per sempre se non hai mai dato la cura"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Verifica di aver dato la cura ad Antonia nel Capitolo 8, poi completa la sua linea narrativa all'Hotel Krat e leggi la lettera che ne consegue. Da qui esce anche il disco 'Memory of Beach' al Ponte dell'ascensione.",
+     "loc_it": "Hotel Krat / Ponte dell'ascensione"
+    },
+    {
+     "text": "Complete Venigni's storyline and read his letter.",
+     "loc": "Hotel Krat, letter box",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 THE STORY OF THE PRINCE",
+       "label_it": "🏆 LA STORIA DEL PRINCIPE"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Missable questline",
+       "label_it": "⚠️ Linea di missioni mancabile"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Completa la linea narrativa di Venigni e leggi la sua lettera.",
+     "loc_it": "Hotel Krat, cassetta delle lettere"
+    },
+    {
+     "text": "Check your Humanity. The GOLDEN LIE comes from the Portrait of a Boy chain: after you gave Geppetto the portrait and received the 'Your heart is pounding' message TWICE (keep lying, keep listening to records), he hands the weapon over. Do this before you leave for the ending.",
+     "loc": "Hotel Krat, Geppetto",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "⚔️ Special weapon 9/11",
+       "label_it": "⚔️ Arma speciale 9/11"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Humanity resets in NG+ — get it now",
+       "label_it": "⚠️ La Humanity si azzera in NG+ — prendila adesso"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Controlla la tua Humanity. GOLDEN LIE arriva dalla catena del Ritratto di un ragazzo: dopo aver dato il ritratto a Geppetto e aver ricevuto DUE VOLTE il messaggio 'Il tuo cuore batte forte' (continua a mentire, continua ad ascoltare dischi), lui ti consegna l'arma. Fallo prima di partire per il finale.",
+     "loc_it": "Hotel Krat, Geppetto"
+    },
+    {
+     "text": "Activate P-Organ PHASE 5 — this does NOT need NG+. There are ~31 Quartz in a single playthrough (28 findable + Polendina's), comfortably more than Phase 5 costs; only Phases 6-7 need NG+ and no achievement lives up there. Take 'Increase Staggerable Window 2' and 'Add Amulet Slots 2' first. Watch the semi-missable Quartz from the Broken Puppet NPC: it needs the Clap, Sad, Anger and Happy gestures learned first.",
+     "loc": "Hotel Krat, P-Organ",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 EXTREME POTENTIAL",
+       "label_it": "🏆 POTENZIALE ESTREMO"
+      },
+      {
+       "type": "build",
+       "label": "🧬 P-Organ P5: Staggerable Window 2 + Amulet Slots 2",
+       "label_it": "🧬 Organo-P F5: Staggerable Window 2 + Amulet Slots 2"
+      },
+      {
+       "type": "coll",
+       "label": "💎 Quartz — second pass",
+       "label_it": "💎 Quarzi — secondo passaggio"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Attiva la FASE 5 dell'Organo-P: NON serve il NG+. In un singolo playthrough ci sono ~31 Quarzi (28 trovabili + quelli di Polendina), abbondantemente più di quanti ne costi la Fase 5; solo le Fasi 6-7 richiedono il NG+ e lassù non c'è nessun obiettivo. Prendi per primi 'Increase Staggerable Window 2' e 'Add Amulet Slots 2'. Attenzione al Quarzo semi-mancabile dell'NPC Broken Puppet: richiede di aver già imparato i gesti Clap, Sad, Anger e Happy.",
+     "loc_it": "Hotel Krat, Organo-P"
+    },
+    {
+     "text": "Defeat SIMON MANUS, AWAKENED GOD.",
+     "loc": "Arche Abbey, final area",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 THE AWAKENED GOD",
+       "label_it": "🏆 IL DIO RISVEGLIATO"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi SIMON MANUS, DIO RISVEGLIATO (Simon Manus, Awakened God).",
+     "loc_it": "Abbazia di Arche, area finale"
+    },
+    {
+     "text": "The Simon Manus storyline resolves automatically on his death.",
+     "loc": "Arche Abbey",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 THE STORY OF THE ONE WHO DREAMED",
+       "label_it": "🏆 LA STORIA DI COLUI CHE SOGNÒ"
+      }
+     ],
+     "trophy": true,
+     "text_it": "La linea narrativa di Simon Manus si risolve automaticamente con la sua morte.",
+     "loc_it": "Abbazia di Arche"
+    },
+    {
+     "text": "Trade Simon Manus's Ergo to Alidoro for NOBLESSE OBLIGE, then slot a MOTIVITY CRANK into it for S-grade Motivity scaling. This is the single hardest-hitting weapon in the game on this build. Trade Laxasia's Ergo for UROBOROS'S EYE at the same time.",
+     "loc": "Hotel Krat, Alidoro → Venigni Craft Machine",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "⚔️ Special weapon 10/11",
+       "label_it": "⚔️ Arma speciale 10/11"
+      },
+      {
+       "type": "build",
+       "label": "⚔️ Noblesse Oblige + Motivity Crank = S scaling",
+       "label_it": "⚔️ Noblesse Oblige + Motivity Crank = scaling S"
+      },
+      {
+       "type": "coll",
+       "label": "⚔️ Special weapon 8/11",
+       "label_it": "⚔️ Arma speciale 8/11"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Scambia l'Ergo di Simon Manus con Alidoro per NOBLESSE OBLIGE, poi infilaci un MOTIVITY CRANK per lo scaling di grado S in Forza Motrice. Su questa build è l'arma che colpisce più forte di tutte. Scambia allo stesso tempo l'Ergo di Laxasia per UROBOROS'S EYE.",
+     "loc_it": "Hotel Krat, Alidoro → Venigni Craft Machine"
+    },
+    {
+     "text": "*** BACK UP YOUR SAVE AGAIN *** — Simon Manus down, Geppetto's question NOT yet answered. This is BACKUP B and it is the one you will reload twice.",
+     "loc": "Desktop / PS5 Saved Data",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠️ BACKUP B — the ending-swap pivot",
+       "label_it": "⚠️ BACKUP B — il perno per cambiare finale"
+      }
+     ],
+     "trophy": false,
+     "text_it": "*** FAI DI NUOVO IL BACKUP DEL SALVATAGGIO *** — Simon Manus abbattuto, domanda di Geppetto NON ancora risposta. Questo è il BACKUP B ed è quello che ricaricherai due volte.",
+     "loc_it": "Desktop / Dati salvati PS5"
+    }
+   ],
+   "title_it": "Fase 13 — Capitoli 10-11 (Reliquia di Trismegistus, Abbazia di Arche, Laxasia, Simon Manus)",
+   "note_it": "Il capitolo più ricco di Quarzi: il Capitolo 10 ne ha 1 (Confraternita dei conigli neri), il Capitolo 11 ne ha 6 sparsi per l'Abbazia (NPC della porta della Trinità, nemico d'élite, cassa con trappola a spuntoni, cassa delle luci verdi, élite Disruption, ricompensa del cilindro criptico). Ci sono anche le ultime armi normali, gli ultimi cilindri criptici e gli ultimi gesti. FAI IL BACKUP DEL SALVATAGGIO nell'istante in cui Laxasia muore."
+  },
+  {
+   "title": "Phase 14 — The three endings via save backup (+ Nameless Puppet)",
+   "note": "Order matters. From BACKUP B you can farm all three endings without replaying anything. 'Rise of P' requires max Humanity AND that you told Sophia 'give her peace'; both are already done. Restore BACKUP B between each ending.",
+   "steps": [
+    {
+     "text": "ENDING 1 — From BACKUP B, REFUSE Geppetto's request, then fight and win the Nameless Puppet. Because you told Sophia 'give her peace' you land on Rise of P; if you want Free from the Puppet String instead, restore BACKUP A and choose 'let her live' before refusing. Do the 'let her live' variant first so it is out of the way.",
+     "loc": "Hotel Krat / final confrontation",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 FREE FROM THE PUPPET STRING",
+       "label_it": "🏆 FREE FROM THE PUPPET STRING"
+      }
+     ],
+     "trophy": true,
+     "text_it": "FINALE 1 — Dal BACKUP B, RIFIUTA la richiesta di Geppetto, poi affronta e batti il Burattino senza nome. Poiché hai detto a Sophia di 'darle pace' atterri su Rise of P; se invece vuoi Free from the Puppet String, ripristina il BACKUP A e scegli 'lasciala vivere' prima di rifiutare. Fai per prima la variante 'lasciala vivere', così te la togli di mezzo.",
+     "loc_it": "Hotel Krat / confronto finale"
+    },
+    {
+     "text": "The Nameless Puppet dies on that same run - the fight is shared by both refuse-endings.",
+     "loc": "Final boss arena",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 THE FIRST PUPPET",
+       "label_it": "🏆 IL PRIMO BURATTINO"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Il Burattino senza nome muore in quello stesso run: lo scontro è condiviso da entrambi i finali con il rifiuto.",
+     "loc_it": "Arena del boss finale"
+    },
+    {
+     "text": "ENDING 2 — Restore BACKUP B and GIVE THE HEART to Geppetto. No Nameless Puppet fight on this path.",
+     "loc": "Hotel Krat, Geppetto",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 REAL BOY : THEY ALL LIVED HAPPILY EVER AFTER",
+       "label_it": "🏆 REAL BOY : THEY ALL LIVED HAPPILY EVER AFTER"
+      }
+     ],
+     "trophy": true,
+     "text_it": "FINALE 2 — Ripristina il BACKUP B e DAI IL CUORE a Geppetto. Su questo percorso non c'è lo scontro con il Burattino senza nome.",
+     "loc_it": "Hotel Krat, Geppetto"
+    },
+    {
+     "text": "After the Real Boy credits, read Geppetto's letter.",
+     "loc": "Hotel Krat, letter box",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 THE STORY OF ONE FATHER",
+       "label_it": "🏆 LA STORIA DI UN PADRE"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Only readable on the give-heart path",
+       "label_it": "⚠️ Leggibile solo sul percorso in cui dai il cuore"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Dopo i titoli di coda di Real Boy, leggi la lettera di Geppetto.",
+     "loc_it": "Hotel Krat, cassetta delle lettere"
+    },
+    {
+     "text": "Play the piano in Hotel Krat and complete the tune. It becomes playable at the hotel; the Real Boy post-credits state is the reliable window.",
+     "loc": "Hotel Krat, piano",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 PIANIST OF KRAT",
+       "label_it": "🏆 PIANISTA DI KRAT"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Missable — do it before you roll into NG+",
+       "label_it": "⚠️ Mancabile — fallo prima di passare al NG+"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Suona il pianoforte dell'Hotel Krat e completa la melodia. Diventa suonabile all'hotel; lo stato post-titoli di Real Boy è la finestra più affidabile.",
+     "loc_it": "Hotel Krat, pianoforte"
+    },
+    {
+     "text": "ENDING 3 — Restore BACKUP B one last time, confirm Humanity is maxed, REFUSE Geppetto and beat the Nameless Puppet again with the 'give her peace' Sophia state intact.",
+     "loc": "Final confrontation",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 RISE OF P",
+       "label_it": "🏆 RISE OF P"
+      }
+     ],
+     "trophy": true,
+     "text_it": "FINALE 3 — Ripristina il BACKUP B un'ultima volta, verifica che la Humanity sia al massimo, RIFIUTA Geppetto e batti di nuovo il Burattino senza nome con lo stato di Sophia 'darle pace' intatto.",
+     "loc_it": "Confronto finale"
+    },
+    {
+     "text": "Read Sophia's letter after the Rise of P credits.",
+     "loc": "Hotel Krat, letter box",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 THE STORY OF THE BLUE BUTTERFLY",
+       "label_it": "🏆 LA STORIA DELLA FARFALLA TURCHINA"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Refuse-heart + give-peace path only",
+       "label_it": "⚠️ Solo sul percorso rifiuta-cuore + darle pace"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Leggi la lettera di Sophia dopo i titoli di coda di Rise of P.",
+     "loc_it": "Hotel Krat, cassetta delle lettere"
+    },
+    {
+     "text": "Before you touch New Game+, listen to every record you own at the gramophone one more time and re-check the Records tab - you should be sitting on 10 of 16 base-game records.",
+     "loc": "Hotel Krat, gramophone",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Record 10/16",
+       "label_it": "🏆 Disco 10/16"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prima di toccare il New Game+, ascolta un'ultima volta al grammofono ogni disco che possiedi e ricontrolla la scheda Dischi: dovresti essere a 10 su 16 dischi del gioco base.",
+     "loc_it": "Hotel Krat, grammofono"
+    },
+    {
+     "text": "Take the Nameless Puppet's Ergo to ALIDORO at Hotel Krat (or to the replacement merchant if you killed him) and trade it for PROOF OF HUMANITY. Hugo is the Overture rare-Ergo trader and does not handle base-game boss Ergo.",
+     "loc": "Hotel Krat, Alidoro / replacement merchant",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "⚔️ Special weapon 11/11",
+       "label_it": "⚔️ Arma speciale 11/11"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Porta l'Ergo del Burattino senza nome ad ALIDORO all'Hotel Krat (o al mercante sostitutivo se l'hai ucciso) e scambialo per PROOF OF HUMANITY. Hugo è il commerciante di Ergo raro di Overture e non tratta l'Ergo dei boss del gioco base.",
+     "loc_it": "Hotel Krat, Alidoro / mercante sostitutivo"
+    },
+    {
+     "text": "Start NEW GAME PLUS from the Hotel Krat Stargazer. Your levels, weapons, Legion Arms and collectible logs carry over; Humanity, merchant stock and NPC dialogue reset. Before you do, verify all three ending achievements actually popped in the overlay, and note that BATTLE MEMORIES / DEATH MARCH are now unlocked at the Hotel Stargazer (not required for anything, but the painless way to re-practise a boss).",
+     "loc": "Hotel Krat Stargazer",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "🔁 NG+ begins",
+       "label_it": "🔁 Inizia il NG+"
+      },
+      {
+       "type": "quest",
+       "label": "🎯 Boss rematch modes unlocked",
+       "label_it": "🎯 Modalità rivincita boss sbloccate"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Avvia il NEW GAME PLUS dallo Stargazer dell'Hotel Krat. Livelli, armi, braccia a Legione e registri dei collezionabili passano al nuovo ciclo; Humanity, scorte dei mercanti e dialoghi degli NPC si azzerano. Prima di farlo, verifica che tutti e tre gli obiettivi dei finali siano davvero scattati nell'overlay, e nota che BATTLE MEMORIES / DEATH MARCH ora sono sbloccati allo Stargazer dell'hotel (non servono per nulla, ma sono il modo indolore per riprovare un boss).",
+     "loc_it": "Stargazer dell'Hotel Krat"
+    }
+   ],
+   "title_it": "Fase 14 — I tre finali tramite backup dei salvataggi (+ Burattino senza nome)",
+   "note_it": "L'ordine conta. Dal BACKUP B puoi ottenere tutti e tre i finali senza rigiocare niente. 'Rise of P' richiede Humanity al massimo E che tu abbia detto a Sophia di 'darle pace'; entrambe le cose sono già fatte. Ripristina il BACKUP B tra un finale e l'altro."
+  },
+  {
+   "title": "Phase 15 — NG+ sweep (golden records, the 11th special weapon, P-Organ Phase 5, Overture Gold Records)",
+   "note": "This run is a shopping trip, not a fight. Tell the TRUTH this time. You need: 5 base-game Golden Records from Wandering Merchants, the opposite Eugenie record, the 2 Overture NG+ Gold Records, enough Quartz for P-Organ Phase 5, and Proof of Humanity if you did not already have it. Drop the difficulty to Awakened Puppet or Butterfly's Guidance and blast through - it changes nothing about the achievements.",
+   "steps": [
+    {
+     "text": "Verify all 11 special weapons. Nine come from trading boss Ergo to Alidoro; GOLDEN LIE comes from Geppetto via the Portrait of a Boy at max Humanity; PROOF OF HUMANITY comes from beating the Nameless Puppet — which means this achievement cannot happen on a Real-Boy-only route. Trade the Nameless Puppet's Ergo now if you have not, then check the list.",
+     "loc": "Hotel Krat, weapon inventory",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 SPECIAL WEAPON COLLECTOR",
+       "label_it": "🏆 COLLEZIONISTA DI ARMI SPECIALI"
+      },
+      {
+       "type": "coll",
+       "label": "⚔️ Special weapon 11/11",
+       "label_it": "⚔️ Arma speciale 11/11"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Verifica tutte e 11 le armi speciali. Nove arrivano scambiando l'Ergo dei boss con Alidoro; GOLDEN LIE arriva da Geppetto tramite il Ritratto di un ragazzo con Humanity al massimo; PROOF OF HUMANITY arriva battendo il Burattino senza nome — il che significa che questo obiettivo non può scattare su un percorso solo-Real Boy. Scambia adesso l'Ergo del Burattino senza nome se non l'hai fatto, poi controlla la lista.",
+     "loc_it": "Hotel Krat, inventario armi"
+    },
+    {
+     "text": "Buy 'PROPOSAL, FLOWER, WOLF PART 1 (GOLDEN)' from the Cerasani Alley Wandering Merchant, 6,000 Ergo.",
+     "loc": "Cerasani Alley, Wandering Merchant",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Record 11/16",
+       "label_it": "🏆 Disco 11/16"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ NG+ merchant stock only",
+       "label_it": "⚠️ Solo nelle scorte dei mercanti in NG+"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Compra 'PROPOSAL, FLOWER, WOLF PART 1 (GOLDEN)' dal Wandering Merchant di Cerasani Alley, 6.000 Ergo.",
+     "loc_it": "Cerasani Alley, Wandering Merchant"
+    },
+    {
+     "text": "Buy 'QUIXOTIC (GOLDEN)' from the merchant Inside the House on Elysion Boulevard, 10,000 Ergo.",
+     "loc": "Inside the House on Elysion Boulevard",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Record 12/16",
+       "label_it": "🏆 Disco 12/16"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Compra 'QUIXOTIC (GOLDEN)' dal mercante nell'Interno della casa di Viale Elisio, 10.000 Ergo.",
+     "loc_it": "Interno della casa di Viale Elisio"
+    },
+    {
+     "text": "Buy 'FASCINATION (GOLDEN)' at Rosa Isabelle Street Entrance - it requires meeting Test Subject 826 in NG+ first.",
+     "loc": "Rosa Isabelle Street Entrance",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Record 13/16",
+       "label_it": "🏆 Disco 13/16"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Gated behind Test Subject 826",
+       "label_it": "⚠️ Bloccato dietro Test Subject 826"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Compra 'FASCINATION (GOLDEN)' all'Ingresso di Via Rosa Isabelle: richiede di aver prima incontrato Test Subject 826 in NG+.",
+     "loc_it": "Ingresso di Via Rosa Isabelle"
+    },
+    {
+     "text": "Buy 'SHADOW FLOWER (GOLDEN)' from the Lorenzini Arcade merchant, 10,000 Ergo.",
+     "loc": "Lorenzini Arcade",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Record 14/16",
+       "label_it": "🏆 Disco 14/16"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Compra 'SHADOW FLOWER (GOLDEN)' dal mercante della Galleria Lorenzini, 10.000 Ergo.",
+     "loc_it": "Galleria Lorenzini"
+    },
+    {
+     "text": "Buy 'MEMORY OF BEACH (GOLDEN)' from the Abandoned Apartment merchant, 10,000 Ergo.",
+     "loc": "Abandoned Apartment (Chapter 9)",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Record 15/16",
+       "label_it": "🏆 Disco 15/16"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Compra 'MEMORY OF BEACH (GOLDEN)' dal mercante dell'Appartamento abbandonato, 10.000 Ergo.",
+     "loc_it": "Appartamento abbandonato (Capitolo 9)"
+    },
+    {
+     "text": "OVERTURE DETOUR: in NG+ the Forgotten Time opens earlier (from around Chapter 5). Re-enter Overture and buy 'LISRIM (GOLD)' from the Wandering Merchant near the Archon Fleet Shipwrecks, 9,000 Ergo.",
+     "loc": "Overture, near Archon Fleet Shipwrecks",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🎵 DLC Record 7/8",
+       "label_it": "🎵 Disco DLC 7/8"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ NG+ exclusive",
+       "label_it": "⚠️ Esclusivo del NG+"
+      }
+     ],
+     "trophy": false,
+     "text_it": "DEVIAZIONE IN OVERTURE: in NG+ il Tempo dimenticato si apre prima (da circa il Capitolo 5). Rientra in Overture e compra 'LISRIM (GOLD)' dal Wandering Merchant vicino agli Archon Fleet Shipwrecks, 9.000 Ergo.",
+     "loc_it": "Overture, vicino agli Archon Fleet Shipwrecks"
+    },
+    {
+     "text": "Buy 'THE CLEAR BLUE SKY (GOLD)' from the Wandering Merchant near Carnival Garden, 9,000 Ergo, then listen to all 8 Overture records in the collectibles menu.",
+     "loc": "Overture, near Carnival Garden",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 MEMORY'S MELODY",
+       "label_it": "🏆 MELODIA DELLA MEMORIA"
+      },
+      {
+       "type": "coll",
+       "label": "🎵 DLC Record 8/8",
+       "label_it": "🎵 Disco DLC 8/8"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Compra 'THE CLEAR BLUE SKY (GOLD)' dal Wandering Merchant vicino al Giardino del Luna Park, 9.000 Ergo, poi ascolta tutti e 8 i dischi di Overture nel menu dei collezionabili.",
+     "loc_it": "Overture, vicino al Giardino del Luna Park"
+    },
+    {
+     "text": "Back in the base timeline, reach the post-Black Rabbit Brotherhood point and take the OPPOSITE Eugenie dialogue from run 1 for 'FAR EAST PRINCESS'.",
+     "loc": "Hotel Krat, Eugenie",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Record 16/16",
+       "label_it": "🏆 Disco 16/16"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Must be the other choice",
+       "label_it": "⚠️ Deve essere l'altra scelta"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Tornato nella linea temporale base, raggiungi il punto successivo alla Confraternita dei conigli neri e scegli il dialogo OPPOSTO di Eugenie rispetto al run 1 per 'FAR EAST PRINCESS'.",
+     "loc_it": "Hotel Krat, Eugenie"
+    },
+    {
+     "text": "Listen to all 16 base-game records on the Hotel Krat gramophone. The achievement fires on PLAYING them, not on owning them - work through the list one by one.",
+     "loc": "Hotel Krat, gramophone",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 GOLDEN MELODY",
+       "label_it": "🏆 MELODIA DORATA"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Ascolta tutti e 16 i dischi del gioco base al grammofono dell'Hotel Krat. L'obiettivo scatta quando li SUONI, non quando li possiedi: passali in rassegna uno per uno.",
+     "loc_it": "Hotel Krat, grammofono"
+    },
+    {
+     "text": "Final audit: 42 base-game achievements + 11 Overture achievements = 53 on Steam. On PS5 the Platinum 'Lies of P' auto-pops with the 42nd base trophy for 54 total. If something is still locked, it will be a record you own but never PLAYED, or a gesture you never actually opened the gesture wheel to register.",
+     "loc": "Steam overlay / PSN trophy list",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "✅ 53/53 on Steam",
+       "label_it": "✅ 53/53 su Steam"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Verifica finale: 42 obiettivi del gioco base + 11 obiettivi di Overture = 53 su Steam. Su PS5 il Platino 'Lies of P' scatta da solo con il 42° trofeo base, per un totale di 54. Se qualcosa è ancora bloccato, sarà un disco che possiedi ma non hai mai SUONATO, o un gesto per cui non hai mai aperto la ruota dei gesti per registrarlo.",
+     "loc_it": "Overlay Steam / lista trofei PSN"
+    }
+   ],
+   "title_it": "Fase 15 — Passaggio in NG+ (dischi dorati, l'11ª arma speciale, Fase 5 dell'Organo-P, Dischi d'Oro di Overture)",
+   "note_it": "Questo run è una spesa, non una battaglia. Questa volta di' la VERITÀ. Ti servono: i 5 Dischi Dorati del gioco base dai Wandering Merchant, il disco alternativo di Eugenie, i 2 Dischi d'Oro di Overture esclusivi del NG+, abbastanza Quarzi per la Fase 5 dell'Organo-P e Proof of Humanity se non ce l'hai già. Abbassa la difficoltà a Burattino Risvegliato o Guida della Farfalla e vola: non cambia nulla per gli obiettivi."
+  }
+ ],
+ "playthroughs_it": "1 run completo con build Forza Motrice (base Cap. 1-9 -> Overture -> Cap. 10-11, 3 finali tramite backup dei salvataggi) + 1 passaggio in NG+ per i dischi dorati, l'11ª arma speciale e la Fase 5 dell'Organo-P.",
+ "hours_it": "60-75 h per il 100% (circa 40-45 h il run base, 12-15 h Overture, 8-12 h il passaggio in NG+). Aggiungi ~10 h se sei alle prime armi con i soulslike e rifiuti le difficoltà assistite.",
+ "build_summary_it": "In Lies of P la FORZA è la FORZA MOTRICE (Motivity) ed è su quella che è costruito tutto il run. Inizia con la Via dello Spazzino (Path of the Sweeper) — Spadone del destino (Greatsword of Fate), statistiche orientate alla Forza Motrice — così la tua primissima arma scala già come ti serve. Lies of P ti permette di dividere qualsiasi arma normale in LAMA (danno base, tipo di danno, hitbox e gran parte del peso) e IMPUGNATURA (i gradi di scaling, il moveset e il moltiplicatore di stordimento) — e lama e impugnatura portano CIASCUNA la propria Arte della Favola (Fable Art), quindi il percorso Forza Motrice è una catena di assemblaggi: lama Spadone del destino + impugnatura Spadone del destino (Cap. 1) -> lama Fire Axe + impugnatura Big Pipe Wrench (Cap. 3, il tuo primo vero mostro da Forza Motrice: l'impugnatura Wrench è Forza Motrice B e la sua Arte della Favola 'Payback Swing' scala di conseguenza) -> Bone-Cutting Sawblade + impugnatura Exploding Pickaxe (Cap. 5-6, il miglior rapporto portata/stamina del gioco e in assoluto il miglior assemblaggio Forza Motrice per il mid-game) -> Holy Sword of the Ark o Frozen Feast (armi speciali, non divisibili, ma entrambe A in Forza Motrice) -> Noblesse Oblige con un Motivity Crank per lo scaling S una volta abbattuto Simon Manus, e Silent Evangelist's Mace come opzione contundente pesante in Overture. Infila Motivity Crank in ogni assemblaggio Forza Motrice appena Venigni li mette in vendita. Distribuzione delle statistiche: porta prima VITALITÀ e FORZA MOTRICE a 20 (per sopravvivere ai Cap. 1-4), poi CAPACITÀ a ~20 così che lama pesante + impugnatura pesante restino nella fascia di carico 'Normale' (non lasciarti mai scivolare su Pesante: ne soffrono sia la schivata sia il timing della Guardia Perfetta), poi scarica tutto su FORZA MOTRICE fino a 40 (il soft cap pratico oltre il quale le impugnature di grado A smettono di rendere in modo lineare), portando in parallelo la VITALITÀ verso 30-40. Il VIGORE serve solo quanto basta per due fendenti pesanti più una schivata (~20-25); TECNICA e SVILUPPO restano al valore base per sempre — una build di forza non ci ricava niente. Ordine dell'Organo-P: in Fase 1 prendi 'Increase Staggerable Window 1' (gli attacchi pesanti caricati sono il tuo motore di stordimento) e il nodo di carica della Cella a Impulso; in Fase 2 prendi 'Add Amulet Slots 1' e poi 'Retain Guard Regain 1' (le build Forza Motrice vivono di Guard Regain, perché le armi pesanti ti costringono a impegnarti); in Fase 3 prendi la Cella a Impulso extra e 'Increase Fable Slots'; in Fase 4 prendi 'Perfect Guards Cause Stiffness', che trasforma la tua arma lenta in uno spezza-postura; in Fase 5 prendi 'Increase Staggerable Window 2' e 'Add Amulet Slots 2'. Braccia a Legione: Fulminis presto per il colpo a distanza che avvia lo stordimento, Aegis per i boss-muro, Filo del Burattino (Puppet String) dal Cap. 6 in poi per tirarti addosso i nemici storditi e concatenare un attacco fatale, e in Overture il fucile Cataclysm (Forza Motrice A / Tecnica C), che è nettamente il miglior Braccio a Legione per la Forza Motrice del gioco. Amuleti: Carrier's Amulet (peso) è praticamente permanente, più Strength Amulet (+4 Forza Motrice), Patience Amulet (recupero stamina) e Iron Wall Amulet (riduzione danno fisico); passa a Extreme Modification Amulet o Murderer's Amulet per il burst sui boss quando avrai quattro slot. Altri assemblaggi che vale la pena costruire: Booster Glaive Blade sull'impugnatura Big Pipe Wrench, e il Seven-Coil Spring Sword. La Via dello Spazzino parte con Vitalità 11 / Vigore 5 / Capacità 11 / Forza Motrice 11 / Tecnica 5 / Sviluppo 6. Dai priorità alle Arti della Favola che leggono la Forza Motrice — 'Payback Swing' sull'impugnatura Wrench più di tutte. Giocala come una build da scambio pesante: R2 caricato per stordire, attacco fatale, Guardia Perfetta per rompere le armi, e usa gli Spettri a ogni boss: sono gratis e non ti costano assolutamente nulla.",
+ "golden_rules_it": [
+  "DIVISIONE DEGLI OBIETTIVI (Steam): il gioco BASE ha esattamente 42 obiettivi. Il DLC OVERTURE ne aggiunge esattamente 11, per un totale di 53 su Steam. Gli 11 di PowerPyx sono corretti; la guida Steam al 100% che ne indica 10 ha semplicemente sbagliato il conto: il suo stesso indice li elenca tutti e 11, 'Risolutezza costante' inclusa.",
+  "SU PLAYSTATION CAMBIA SOLO IL PLATINO: la lista base PS5 conta 43 trofei (1 Platino + 3 Oro + 13 Argento + 26 Bronzo), cioè gli stessi 42 sbloccabili più il Platino che scatta da solo. Overture su PS aggiunge gli stessi 11 (2 Argento + 9 Bronzo) e NON ha un secondo platino. Quindi: Steam 53, PS5 54 Platino incluso.",
+  "IL BACKUP DEI SALVATAGGI È OBBLIGATORIO, a meno che tu non voglia farti tre run complete. Su Steam copia <SteamLibrary>\\steamapps\\common\\Lies of P\\LiesofP\\Saved\\SaveGames (dentro la cartella di gioco, non in AppData) in una cartella sicura (chiudi prima il gioco). Su PS5 disattiva il caricamento automatico, poi usa Impostazioni > Dati salvati > Carica/Scarica dal cloud (o una chiavetta USB) come punto di ripristino.",
+  "FAI IL BACKUP DUE VOLTE NEL CAPITOLO 11: una subito dopo aver sconfitto Laxasia la completa (Laxasia the Complete), prima della conversazione con Sophia, e un'altra dopo Simon Manus ma prima di rispondere a Geppetto. Questi due punti ti permettono di ottenere tutti e 3 i finali da un solo run.",
+  "NON CONSUMARE MAI L'ERGO DEI BOSS. Va tutto ad Alidoro per le armi speciali. Attenzione però: solo 9 delle 11 armi speciali arrivano da lui: GOLDEN LIE la ottieni da Geppetto tramite il Ritratto di un ragazzo (Portrait of a Boy) con Humanity al massimo, e PROOF OF HUMANITY battendo il Burattino senza nome (Nameless Puppet) — quindi 'Collezionista di armi speciali' è impossibile su un percorso solo-Real Boy. L'Ergo raro di Overture va a un NPC diverso, Rookie Explorer Hugo.",
+  "MENTI NEL RUN 1, DI' LA VERITÀ IN NG+. Mentire è ciò che alza la Humanity, che ti serve per l'arma Golden Lie e per il finale Rise of P. Alidoro NON è un'eccezione: mentirgli lo fa solo passare per la Fabbrica di Venigni, e comunque finisce a vendere all'Hotel Krat. Quello che davvero lo rompe è non parlargli mai nella sua prima posizione, la Biblioteca della cattedrale di San Frangelico (cosa che uccide anche la quest di Eugénie).",
+  "IL NG+ SERVE PER I DISCHI E PER NIENT'ALTRO: i 5 Dischi Dorati del gioco base venduti dai Wandering Merchant, il disco alternativo di Eugenie e tutti e TRE i Dischi d'Oro di Overture. Tutto il resto — Fase 5 dell'Organo-P compresa — sta dentro il run 1.",
+  "TUTTI E TRE I DISCHI D'ORO DI OVERTURE SONO ESCLUSIVI DEL NG+: 'Lisrim (Gold)' (mercante agli Archon Fleet Shipwrecks, 9.000 Ergo), 'The Clear Blue Sky (Gold)' (mercante vicino allo Stargazer del Giardino del Luna Park, 9.000 Ergo) e 'Nightmare (Gold)' (Klaus all'Eventide Hotel, un Ancient Disk, solo dopo che gli hai consegnato la Klaus's Premium Luxury Bag — e solo in NG+). Quindi 'Melodia della memoria' non può scattare al primo playthrough, punto, e Nightmare è mancabile all'interno del ciclo NG+ se lo rimandi oltre il boss finale del DLC.",
+  "OVERTURE HA 4 OBIETTIVI MANCABILI: Collezionista di vere armi da combattimento, Melodia della memoria, Essere umano, Segugio di segreti oscuri. Tutti e quattro dipendono da collezionabili o quest: nessuno si completa da solo, e quello del Segugio muore se scegli la riga di dialogo sbagliata.",
+  "GLI SPETTRI SONO PERMESSI E CONSIGLIATI. Evoca uno Spettro a ogni nebbia dei boss con un Frammento di Stella: nessun obiettivo richiede di giocare in solitaria, e uno Spettro dimezza la pericolosità di Markiona, Laxasia e Arlecchino.",
+  "IL GIOCO HA DIFFICOLTÀ ASSISTITE UFFICIALI dall'aggiornamento di Overture: Guida della Farfalla (molto facile), Burattino Risvegliato (facile) e Persecutore Leggendario (predefinita/intesa). Si trovano in Impostazioni > Gameplay > Difficoltà, si cambiano in QUALSIASI momento senza penalità e NON bloccano un solo obiettivo. Scendi a Guida della Farfalla per un boss-muro e poi risali: non ti costa niente.",
+  "INSERISCI OVERTURE DOPO IL CAPITOLO 9. La Crisalide della Stella (Star's Chrysalis) finisce nei tuoi Oggetti funzionali alla fine del Capitolo 9; usala allo Stargazer del SENTIERO DEL PELLEGRINO (il primo Stargazer del Capitolo 5) e segui la scia fino allo Stargazer abbandonato che si ripara da solo. Sbuchi ai margini del Krat Zoo e puoi tornare al mondo base da qualsiasi Stargazer. A ogni nuovo ciclo NG+ devi raggiungere di nuovo il Capitolo 9 prima che il DLC si riapra.",
+  "OVERTURE È PIÙ DIFFICILE DEL GIOCO BASE. Entraci con Forza Motrice ~40 / Vitalità ~30, un'arma +8 o migliore e almeno Holy Sword of the Ark o Frozen Feast in inventario.",
+  "PIANISTA DI KRAT E I REGISTRI DI GESTI/DISCHI: i registri dei collezionabili passano al NG+, quindi un disco o un gesto raccolto nel run 1 conta ancora nel run 2. Si azzerano solo le scorte dei mercanti e i dialoghi di Eugenie.",
+  "LA FASE 5 DELL'ORGANO-P È ROBA DA RUN 1. In un singolo playthrough esistono ~31 Quarzi, molti più di quanti ne serva la Fase 5. Le Fasi 6-7 richiedono il NG+, ma lassù non c'è nessun obiettivo. 'Potenziale estremo' = raggiungi la Fase 5 (gioco base); 'Oltre le potenzialità illimitate' = spendi un Quarzo su un qualsiasi nodo dell'Organo-P di Overture dopo il Nucleo di Potenziamento a fine Capitolo 1 di Overture — sono due cose diverse.",
+  "IL PERCORSO DEI SALVATAGGI SU STEAM È DENTRO LA CARTELLA DI GIOCO: <SteamLibrary>\\steamapps\\common\\Lies of P\\LiesofP\\Saved\\SaveGames\\<user-id>\\. In AppData ci sono solo le impostazioni."
+ ],
+ "stat_table_it": {
+  "note": "Percorso Forza Motrice (FORZA), partenza con la Via dello Spazzino. I valori sono OBIETTIVI da aver raggiunto a quel livello, non valori esatti del gioco: i numeri di partenza cambiano di un punto o due. Regola d'oro: la Capacità deve essere alta solo quanto basta perché lama + impugnatura + amuleti ti tengano nella fascia di carico 'Normale'; ogni punto in più va prima in Forza Motrice, poi in Vitalità. Tecnica e Sviluppo non si toccano mai.",
+  "columns": [
+   "LIVELLO",
+   "VITALITÀ",
+   "VIGORE",
+   "CAPACITÀ",
+   "FORZA MOTRICE",
+   "TECNICA",
+   "SVILUPPO",
+   "Note"
+  ],
+  "rows": [
+   [
+    "1",
+    "10",
+    "9",
+    "12",
+    "15",
+    "10",
+    "6",
+    "Partenza con la Via dello Spazzino. Spadone del destino, statistiche orientate alla Forza Motrice."
+   ],
+   [
+    "12",
+    "14",
+    "11",
+    "14",
+    "20",
+    "10",
+    "6",
+    "Cap. 2-3. Forza Motrice 20 sblocca rese concrete sull'assemblaggio Fire Axe / Big Pipe Wrench."
+   ],
+   [
+    "22",
+    "20",
+    "13",
+    "17",
+    "24",
+    "10",
+    "6",
+    "Cap. 4-5. Vitalità 20 è il primo vero scatto di sopravvivenza (Andreus, Conigli neri)."
+   ],
+   [
+    "32",
+    "24",
+    "16",
+    "20",
+    "30",
+    "10",
+    "6",
+    "Cap. 6-7. Capacità 20 permette a Bone-Cutting Sawblade + impugnatura Exploding Pickaxe di restare a carico Normale."
+   ],
+   [
+    "45",
+    "27",
+    "18",
+    "22",
+    "35",
+    "10",
+    "6",
+    "Cap. 8-9. Equipaggia qui Carrier's Amulet + Strength Amulet; checkpoint pre-Overture."
+   ],
+   [
+    "60",
+    "30",
+    "20",
+    "25",
+    "40",
+    "10",
+    "6",
+    "INGRESSO IN OVERTURE. Forza Motrice 40 è il soft cap pratico per le impugnature di grado A."
+   ],
+   [
+    "75",
+    "35",
+    "22",
+    "28",
+    "45",
+    "10",
+    "6",
+    "Cap. 10-11. Vitalità extra puramente per Laxasia e Simon Manus."
+   ],
+   [
+    "90",
+    "40",
+    "25",
+    "30",
+    "50",
+    "10",
+    "6",
+    "Burattino senza nome + Noblesse Oblige con Motivity Crank (scaling S)."
+   ],
+   [
+    "110",
+    "45",
+    "28",
+    "32",
+    "55",
+    "10",
+    "6",
+    "Passaggio in NG+. Abbastanza comodo da correre veloce per i dischi."
+   ]
+  ]
+ },
+ "glossary_it": {
+  "Legion Arm": "Braccio a Legione",
+  "Legion Arms": "braccia a Legione",
+  "P-Organ": "Organo-P",
+  "Pulse Cell": "Cella a Impulso",
+  "Quartz": "Quarzo",
+  "Fable Art": "Arte della Favola",
+  "Fable Slots": "Slot Favola",
+  "Trinity Sanctum": "Santuario della trinità",
+  "Trinity Key": "Chiave della Trinità",
+  "Cryptic Vessel": "cilindro criptico",
+  "Stargazer": "Stargazer",
+  "Ergo": "Ergo",
+  "Hotel Krat": "Hotel Krat",
+  "Specter": "Spettro",
+  "Star Fragment": "Frammento di Stella",
+  "Star's Chrysalis": "Crisalide della Stella",
+  "Perfect Guard": "Guardia Perfetta",
+  "Fatal Attack": "attacco fatale",
+  "Stalker": "Persecutore",
+  "Amulet": "Amuleto",
+  "gesture": "gesto",
+  "record": "disco",
+  "blade": "lama",
+  "handle": "impugnatura",
+  "Dimensional Butterfly": "farfalla dimensionale",
+  "Gold Coin Fruit": "zecchino d'oro",
+  "Gold Coin Tree": "albero degli zecchini d'oro",
+  "Forgotten Time": "Tempo dimenticato",
+  "Portrait of a Boy": "Ritratto di un ragazzo",
+  "Overcharged Storage Battery": "Accumulatore Energetico Sovraccarico",
+  "Secret Room Key": "Chiave della Stanza Segreta",
+  "Puppet String": "Filo del Burattino",
+  "cipher machine": "macchina cifrante",
+  "Core Upgrade": "Nucleo di Potenziamento",
+  "VITALITY": "VITALITÀ",
+  "VIGOR": "VIGORE",
+  "CAPACITY": "CAPACITÀ",
+  "MOTIVITY": "FORZA MOTRICE",
+  "TECHNIQUE": "TECNICA",
+  "ADVANCE": "SVILUPPO",
+  "Vitality": "Vitalità",
+  "Vigor": "Vigore",
+  "Capacity": "Capacità",
+  "Motivity": "Forza Motrice",
+  "Technique": "Tecnica",
+  "Advance": "Sviluppo",
+  "Path of the Sweeper": "Via dello Spazzino",
+  "Path of the Cricket": "Via del Grillo",
+  "Path of the Bastard": "Via del Bastardo",
+  "Butterfly's Guidance": "Guida della Farfalla",
+  "Awakened Puppet": "Burattino Risvegliato",
+  "Legendary Stalker": "Persecutore Leggendario",
+  "Greatsword of Fate": "Spadone del destino",
+  "Wintry Rapier": "Stocco invernale",
+  "Puppet's Saber": "Sciabola del burattino",
+  "Parade Master": "Maestro della sfilata",
+  "Corrupted Parade Master": "Maestro della sfilata corrotto",
+  "Scrapped Watchman": "Sentinella rottamata",
+  "King's Flame, Fuoco": "Fuoco, Fiamma del re",
+  "Fallen Archbishop Andreus": "Arcivescovo caduto Andreus",
+  "Eldest of the Black Rabbit Brotherhood": "Maggiore della Confraternita dei conigli neri",
+  "Black Rabbit Brotherhood": "Confraternita dei conigli neri",
+  "Romeo, King of Puppets": "Romeo, Re dei burattini",
+  "Champion Victor": "Victor il campione",
+  "Puppet-Devouring Green Monster": "Mostro verde divoratore di burattini",
+  "Laxasia the Complete": "Laxasia la completa",
+  "Simon Manus, Awakened God": "Simon Manus, Dio risvegliato",
+  "Nameless Puppet": "Burattino senza nome",
+  "Markiona, Puppeteer of Death": "Markiona, la Burattinaia della morte",
+  "Anguished Guardian of the Ruins": "Guardiano delle rovine angustiato",
+  "Arlecchino, the Blood Artist": "Arlecchino, l'Artista sanguinario",
+  "Leader of the Sweepers": "capo degli Spazzini",
+  "Leader of the Bastards": "capo dei Bastardi",
+  "Krat Central Station": "Stazione Centrale di Krat",
+  "Krat Central Station Platform": "Binario della stazione centrale",
+  "Krat Central Station Lobby": "Atrio della stazione centrale",
+  "Central Station Street": "Via della stazione centrale",
+  "Elysion Boulevard": "Viale Elisio",
+  "Elysion Boulevard Entrance": "Ingresso di Viale Elisio",
+  "Inside the House on Elysion Boulevard": "Interno della casa di Viale Elisio",
+  "Krat City Hall": "Municipio di Krat",
+  "Krat City Hall Courtyard": "Cortile del Municipio di Krat",
+  "Workshop Union": "Unione dell'Officina",
+  "Workshop Union Entrance": "Ingresso dell'Unione dell'Officina",
+  "Workshop Union Culvert": "Canale sotterraneo dell'Unione dell'Officina",
+  "Venigni Works": "Fabbrica di Venigni",
+  "Venigni Works Control Room": "Sala di controllo della Fabbrica di Venigni",
+  "Center of Venigni Works": "Centro della Fabbrica di Venigni",
+  "Moonlight Town": "Claraluna",
+  "Path of Misery": "Sentiero dell'infelicità",
+  "St. Frangelico Cathedral": "Cattedrale di San Frangelico",
+  "St. Frangelico Cathedral Chapel": "Cappella della cattedrale",
+  "St. Frangelico Cathedral Library": "Biblioteca della cattedrale",
+  "Path of the Pilgrim": "Sentiero del pellegrino",
+  "Malum District": "Quartiere Malum",
+  "Malum District Town Hall": "Municipio del Quartiere Malum",
+  "Rosa Isabelle Street": "Via Rosa Isabelle",
+  "Rosa Isabelle Street Entrance": "Ingresso di Via Rosa Isabelle",
+  "Rosa Isabelle sewers": "Canale sotterraneo di Via Rosa Isabelle",
+  "Estella Opera House": "Teatro dell'opera Estella",
+  "Estella Opera House Entrance": "Ingresso del teatro dell'opera Estella",
+  "Lorenzini Arcade": "Galleria Lorenzini",
+  "Grand Exhibition": "Grande Esposizione",
+  "Grand Exhibition Gallery": "Galleria della Grande Esposizione",
+  "Barren Swamp": "Palude Desolata",
+  "Barren Swamp Bridge": "Ponte della Palude Desolata",
+  "Hermit's Cave": "Grotta dell'Eremita",
+  "Collapsed Krat": "Strada Crollata",
+  "Abandoned Apartment": "Appartamento abbandonato",
+  "Relic of Trismegistus": "Reliquia di Trismegistus",
+  "Arche Abbey": "Abbazia di Arche",
+  "Arche Abbey Outer Wall": "Mura esterne dell'Abbazia di Arche",
+  "Arche Abbey Broken Rift": "Spaccatura dell'Abbazia di Arche",
+  "Ascension Bridge": "Ponte dell'ascensione",
+  "Carnival Garden": "Giardino del Luna Park",
+  "Pistris Harbor": "Porto di Pistris",
+  "Krat Lighthouse": "Faro di Krat",
+  "Rose Garden": "Giardino delle Rose",
+  "Eventide Hotel Krat": "Eventide Hotel Krat",
+  "HUMAN": "UMANO",
+  "CANDLE": "CANDELA",
+  "EGG": "UOVO",
+  "Lies of P": "Lies of P",
+  "Real boy: They all lived happily ever after": "Real boy : They all lived happily ever after",
+  "Free from the puppet string": "Free from the puppet string",
+  "Rise of P": "Rise of P",
+  "The First Puppet": "Il primo burattino",
+  "Strongest Normal Weapon": "Arma normale più forte",
+  "Strongest Special Weapon": "Arma speciale più forte",
+  "Strongest Legion Arm": "Braccio a Legione più forte",
+  "Extreme Potential": "Potenziale estremo",
+  "Pianist of Krat": "Pianista di Krat",
+  "Legion Arm Collector": "Collezionista di braccia a Legione",
+  "Special Weapon Collector": "Collezionista di armi speciali",
+  "Normal Weapon Collector": "Collezionista di armi normali",
+  "Golden Melody": "Melodia dorata",
+  "Learning about Emotions": "Imparare le emozioni",
+  "Veteran Explorer": "Esploratore veterano",
+  "End of Riddles": "Fine degli indovinelli",
+  "First Lie": "Prima bugia",
+  "Stargazer's Guide": "Guida agli Stargazer",
+  "Exploring Possibilities": "Esplorare le possibilità",
+  "The Ultimate Defense Technique": "Tecnica di difesa definitiva",
+  "Fatal Blow": "Colpo fatale",
+  "The Bastards and the Sweepers": "I Bastardi e gli Spazzini",
+  "King's Flame": "Fiamma del re",
+  "Fallen Archbishop": "Arcivescovo caduto",
+  "The Delayed Match": "Lo scontro ritardato",
+  "King of Puppets": "Re dei burattini",
+  "The Champion of Evolution": "Il campione di evoluzione",
+  "Revenge of Black": "Vendetta nera",
+  "The Complete One": "La completa",
+  "The Awakened God": "Il Dio risvegliato",
+  "Bear Gold Coin Fruit": "Detentore di zecchini d'oro",
+  "From Across the Rift": "Da oltre la spaccatura",
+  "The Story of the Prince": "La storia del principe",
+  "The Story of the Refined Old Lady": "La storia dell'anziana raffinata",
+  "The Story of the One Who Dreamed": "La storia di colui che sognò",
+  "The Story of One Father": "La storia di un padre",
+  "The Story of a Stranger Girl": "La storia di una ragazza sconosciuta",
+  "The Story of the Blue Butterfly": "La storia della farfalla turchina",
+  "The Rose's Memory": "The Rose's Memory",
+  "Enduring Resolve": "Risolutezza costante",
+  "True Combat Gear Collector": "Collezionista di vere armi da combattimento",
+  "Beyond Limitless Potential": "Oltre le potenzialità illimitate",
+  "Memory's Melody": "Melodia della memoria",
+  "To Be Human": "Essere umano",
+  "Tracker of Dark Secrets": "Segugio di segreti oscuri",
+  "Puppeteer of Death": "Burattinaia della morte",
+  "Anguished Guardian": "Guardiano angustiato",
+  "The Blood Artist": "L'Artista sanguinario",
+  "Honor and Revenge": "Onore e Vendetta"
+ },
+ "unverified_it": [
+  "Lies of P",
+  "Real boy : They all lived happily ever after",
+  "Free from the puppet string",
+  "Rise of P",
+  "The Rose's Memory",
+  "Humanity",
+  "Fire Axe",
+  "Big Pipe Wrench",
+  "Bone-Cutting Sawblade",
+  "Exploding Pickaxe",
+  "Salamander Dagger",
+  "Krat Police Baton",
+  "Blind Man's Double-Sided Spear",
+  "Bramble Curved Sword",
+  "Acidic Crystal Spear",
+  "Dancer's Curved Sword",
+  "Clock Sword",
+  "Circular Electric Chainsaw",
+  "Spear of Honor",
+  "Live Puppet's Axe",
+  "City Longspear",
+  "Tyrant Murderer's Dagger",
+  "Pistol Rock Drill",
+  "Carcass Crystal Axe",
+  "Black Steel Cutter",
+  "Master Chef's Knife",
+  "Coil Mjolnir",
+  "Military Shovel",
+  "Cursed Knight's Halberd",
+  "Acidic Great Curved Sword",
+  "Booster Glaive Blade",
+  "Seven-Coil Spring Sword",
+  "Etiquette",
+  "Holy Sword of the Ark",
+  "Trident of the Covenant",
+  "Puppet Ripper",
+  "Frozen Feast",
+  "Two Dragons Sword",
+  "Uroboros's Eye",
+  "Noblesse Oblige",
+  "Golden Lie",
+  "Proof of Humanity",
+  "Royal Horn Bow",
+  "Maniac's Pinwheel Blade",
+  "Lorenzini Bolt",
+  "Death's Talon",
+  "La Vendetta",
+  "Arche's Guardian",
+  "Puppet of the Future's Welder",
+  "Pale Knight",
+  "Silent Evangelist's Mace",
+  "Fulminis",
+  "Flamberge",
+  "Aegis",
+  "Cataclysm",
+  "Icarus",
+  "Legion Plug",
+  "Legion Caliber",
+  "Motivity Crank",
+  "Hidden Moonstone",
+  "Hidden Crystal",
+  "Carrier's Amulet",
+  "Strength Amulet",
+  "Patience Amulet",
+  "Iron Wall Amulet",
+  "Extreme Modification Amulet",
+  "Murderer's Amulet",
+  "Life Amulet",
+  "Whirlwind Amulet",
+  "Giant's Amulet",
+  "Guard Regain",
+  "Increase Staggerable Window 1",
+  "Increase Staggerable Window 2",
+  "Add Amulet Slots 1",
+  "Add Amulet Slots 2",
+  "Retain Guard Regain 1",
+  "Perfect Guards Cause Stiffness",
+  "Increase Fable Slots",
+  "Payback Swing",
+  "Strengthen Blade",
+  "Perfect Reload",
+  "Battle Memories",
+  "Death March",
+  "Show Off Clothes",
+  "Remembrance",
+  "Stalker's Promise",
+  "Fear",
+  "Swagger",
+  "Pray",
+  "Taunt",
+  "Clap",
+  "Sad",
+  "Respect",
+  "Beg",
+  "Greet",
+  "Anger",
+  "Happy",
+  "Entreat",
+  "Play Dead",
+  "Tap Dance",
+  "Cheer",
+  "Doubt",
+  "Heart",
+  "Deep Bow",
+  "Shiver",
+  "Peer Into Distance",
+  "Feel",
+  "Divine Service",
+  "Someday",
+  "Fascination",
+  "Quixotic",
+  "Misty E'rA",
+  "Why",
+  "Proposal, Flower, Wolf Part 1",
+  "Far East Princess",
+  "Shadow Flower",
+  "Memory of Beach",
+  "Lisrim",
+  "The Clear Blue Sky",
+  "Nightmare",
+  "Survivor",
+  "Lea's Recollection",
+  "Cerasani Alley",
+  "Krat Central Station Plaza",
+  "Strange Forest",
+  "Hall of Adventure",
+  "Krat Zoo",
+  "Savanna Experience Center",
+  "Jungle Zone Walkway",
+  "Zelator Underground Facility",
+  "Ergo Mining Site",
+  "Archon Fleet Shipwreck",
+  "Security Area",
+  "Ancient Ruins Excavation Site",
+  "Shipwreck Interior",
+  "Shipwreck Exterior",
+  "Destroyed Tram Station",
+  "Zoo Tram Station",
+  "Frozen Coast",
+  "Pleroma Forest Cave",
+  "Monad Charity House",
+  "Charity House Cellar",
+  "Valentinus's Study",
+  "Rose Garden Entrance",
+  "Combat Field",
+  "Venigni Craft Machine",
+  "Maintenance Tools table",
+  "Supply Box",
+  "Ancient Disk",
+  "Klaus's Premium Luxury Bag",
+  "Bloody Cipher Machine",
+  "Corroded Cipher Machine",
+  "Frosted Cipher Machine",
+  "Chosen One's Door",
+  "Owl Doctor's Hunting Apparel",
+  "The Atoned's Hunting Apparel",
+  "Black Cat's Hunting Apparel",
+  "Red Fox's Hunting Apparel",
+  "Detective's Clothes",
+  "Red Apple",
+  "Misfit's Diary",
+  "Lighthouse Keeper's Journal",
+  "Correspondence from Beyond the Sea",
+  "Discover Wildlife: Bears!",
+  "Carnival Coin",
+  "High-powered Flame Amplifier",
+  "Alidoro",
+  "Venigni",
+  "Eugenie",
+  "Eugénie",
+  "Antonia",
+  "Geppetto",
+  "Sophia",
+  "Belle",
+  "Polendina",
+  "Black Cat",
+  "Red Fox",
+  "Rookie Explorer Hugo",
+  "Klaus",
+  "The Tracker",
+  "Rosaura",
+  "Goddard",
+  "Julian the Gentleman",
+  "Sister Cecile",
+  "Adelina",
+  "Mad Donkey",
+  "Test Subject 826",
+  "Broken Puppet",
+  "Tyrannical Predator",
+  "Premetamorphic Green Hunter",
+  "Two-Faced Overseer",
+  "Bullzdozer",
+  "Veronique",
+  "Lumacchio",
+  "Brain in a Vat",
+  "Monster of the Swamp",
+  "Mad Clown Puppet",
+  "Puppet of the Future",
+  "Weeping Woman",
+  "Wandering Merchant",
+  "Crusher Puppet"
+ ],
+ "build_bullets": [
+  {
+   "h": "Core",
+   "t": "STRENGTH in Lies of P is MOTIVITY, and the whole run is built around it. Start on Path of the Sweeper (Greatsword of Fate, Motivity-weighted stats) so your very first weapon already scales the way you want. Path of the Sweeper starts you at Vitality 11 / Vigor 5 / Capacity 11 / Motivity 11 / Technique 5 / Advance 6."
+  },
+  {
+   "h": "Stat spread",
+   "t": "Push VITALITY and MOTIVITY to 20 first (survive Ch1-4), then CAPACITY to ~20 so a heavy blade+heavy handle still sits inside the 'Normal' equip-load band (never let yourself go Heavy - your dodge and Perfect Guard timing both suffer), then dump into MOTIVITY until 40 (the practical soft cap where A-grade handles stop paying out linearly), topping VITALITY toward 30-40 alongside. VIGOR only needs enough stamina for two heavy swings plus a dodge (~20-25); TECHNIQUE and ADVANCE stay at base forever - a strength build gets nothing from them."
+  },
+  {
+   "h": "Blade + handle",
+   "t": "Lies of P lets you split any normal weapon into BLADE (base damage, damage type, hitbox and most of the weight) and HANDLE (the scaling grades, the moveset and the stagger multiplier) - and blade and handle EACH carry their own Fable Art. That is why the Motivity route is a chain of assemblies."
+  },
+  {
+   "h": "Assembly chain",
+   "t": "Greatsword of Fate blade + Greatsword of Fate handle (Ch1) -> Fire Axe blade + Big Pipe Wrench handle (Ch3, your first real Motivity monster - the Wrench handle is Motivity B and its Fable Art 'Payback Swing' scales with it) -> Bone-Cutting Sawblade + Exploding Pickaxe handle (Ch5-6, best reach-to-stamina ratio in the game and the single best all-round Motivity assembly for the mid-game) -> Holy Sword of the Ark or Frozen Feast (special weapons, cannot be split, but both are A-Motivity) -> Noblesse Oblige with a Motivity Crank for S-scaling once Simon Manus is down, and Silent Evangelist's Mace as the Overture heavy-blunt option."
+  },
+  {
+   "h": "Cranks and extras",
+   "t": "Feed Motivity Cranks into every Motivity assembly the moment Venigni sells them. Prioritise the Fable Arts that read Motivity - 'Payback Swing' on the Wrench handle above all. Other assemblies worth building: Booster Glaive Blade on the Big Pipe Wrench Handle, and the Seven-Coil Spring Sword."
+  },
+  {
+   "h": "P-Organ order",
+   "t": "Phase 1 take 'Increase Staggerable Window 1' (charged heavy attacks are your stagger engine) and the Pulse Cell charge node; Phase 2 take 'Add Amulet Slots 1' then 'Retain Guard Regain 1' (Motivity builds live on Guard Regain because heavy weapons commit you); Phase 3 take the extra Pulse Cell and 'Increase Fable Slots'; Phase 4 take 'Perfect Guards Cause Stiffness' - it turns your slow weapon into a stance-breaker; Phase 5 take 'Increase Staggerable Window 2' and 'Add Amulet Slots 2'."
+  },
+  {
+   "h": "Legion Arms",
+   "t": "Fulminis early for the ranged stagger poke, Aegis for boss walls, Puppet String from Ch6 onward to yank staggered enemies into a Fatal Attack, and in Overture the Cataclysm shotgun (Motivity A / Technique C) which is flatly the best Motivity Legion Arm in the game."
+  },
+  {
+   "h": "Amulets",
+   "t": "Carrier's Amulet (weight) is near-permanent, plus Strength Amulet (+4 Motivity), Patience Amulet (stamina recovery) and Iron Wall Amulet (physical DR); swap in Extreme Modification Amulet or Murderer's Amulet for boss burst once you have four slots."
+  },
+  {
+   "h": "Playstyle",
+   "t": "Play it as a heavy-trading build: charged R2 into stagger, Fatal Attack, Perfect Guard to break weapons, and use Specters on every boss - they are free and cost you nothing at all."
+  }
+ ],
+ "build_bullets_it": [
+  {
+   "h": "Il cuore",
+   "t": "In Lies of P la FORZA è la FORZA MOTRICE (Motivity) ed è su quella che è costruito tutto il run. Inizia con la Via dello Spazzino (Path of the Sweeper) — Spadone del destino (Greatsword of Fate), statistiche orientate alla Forza Motrice — così la tua primissima arma scala già come ti serve. La Via dello Spazzino parte con Vitalità 11 / Vigore 5 / Capacità 11 / Forza Motrice 11 / Tecnica 5 / Sviluppo 6."
+  },
+  {
+   "h": "Distribuzione statistiche",
+   "t": "Distribuzione delle statistiche: porta prima VITALITÀ e FORZA MOTRICE a 20 (per sopravvivere ai Cap. 1-4), poi CAPACITÀ a ~20 così che lama pesante + impugnatura pesante restino nella fascia di carico 'Normale' (non lasciarti mai scivolare su Pesante: ne soffrono sia la schivata sia il timing della Guardia Perfetta), poi scarica tutto su FORZA MOTRICE fino a 40 (il soft cap pratico oltre il quale le impugnature di grado A smettono di rendere in modo lineare), portando in parallelo la VITALITÀ verso 30-40. Il VIGORE serve solo quanto basta per due fendenti pesanti più una schivata (~20-25); TECNICA e SVILUPPO restano al valore base per sempre — una build di forza non ci ricava niente."
+  },
+  {
+   "h": "Lama + impugnatura",
+   "t": "Lies of P ti permette di dividere qualsiasi arma normale in LAMA (danno base, tipo di danno, hitbox e gran parte del peso) e IMPUGNATURA (i gradi di scaling, il moveset e il moltiplicatore di stordimento) — e lama e impugnatura portano CIASCUNA la propria Arte della Favola (Fable Art), quindi il percorso Forza Motrice è una catena di assemblaggi."
+  },
+  {
+   "h": "Catena di assemblaggi",
+   "t": "Lama Spadone del destino + impugnatura Spadone del destino (Cap. 1) -> lama Fire Axe + impugnatura Big Pipe Wrench (Cap. 3, il tuo primo vero mostro da Forza Motrice: l'impugnatura Wrench è Forza Motrice B e la sua Arte della Favola 'Payback Swing' scala di conseguenza) -> Bone-Cutting Sawblade + impugnatura Exploding Pickaxe (Cap. 5-6, il miglior rapporto portata/stamina del gioco e in assoluto il miglior assemblaggio Forza Motrice per il mid-game) -> Holy Sword of the Ark o Frozen Feast (armi speciali, non divisibili, ma entrambe A in Forza Motrice) -> Noblesse Oblige con un Motivity Crank per lo scaling S una volta abbattuto Simon Manus, e Silent Evangelist's Mace come opzione contundente pesante in Overture."
+  },
+  {
+   "h": "Crank ed extra",
+   "t": "Infila Motivity Crank in ogni assemblaggio Forza Motrice appena Venigni li mette in vendita. Dai priorità alle Arti della Favola che leggono la Forza Motrice — 'Payback Swing' sull'impugnatura Wrench più di tutte. Altri assemblaggi che vale la pena costruire: Booster Glaive Blade sull'impugnatura Big Pipe Wrench, e il Seven-Coil Spring Sword."
+  },
+  {
+   "h": "Ordine Organo-P",
+   "t": "Ordine dell'Organo-P: in Fase 1 prendi 'Increase Staggerable Window 1' (gli attacchi pesanti caricati sono il tuo motore di stordimento) e il nodo di carica della Cella a Impulso; in Fase 2 prendi 'Add Amulet Slots 1' e poi 'Retain Guard Regain 1' (le build Forza Motrice vivono di Guard Regain, perché le armi pesanti ti costringono a impegnarti); in Fase 3 prendi la Cella a Impulso extra e 'Increase Fable Slots'; in Fase 4 prendi 'Perfect Guards Cause Stiffness', che trasforma la tua arma lenta in uno spezza-postura; in Fase 5 prendi 'Increase Staggerable Window 2' e 'Add Amulet Slots 2'."
+  },
+  {
+   "h": "Braccia a Legione",
+   "t": "Fulminis presto per il colpo a distanza che avvia lo stordimento, Aegis per i boss-muro, Filo del Burattino (Puppet String) dal Cap. 6 in poi per tirarti addosso i nemici storditi e concatenare un attacco fatale, e in Overture il fucile Cataclysm (Forza Motrice A / Tecnica C), che è nettamente il miglior Braccio a Legione per la Forza Motrice del gioco."
+  },
+  {
+   "h": "Amuleti",
+   "t": "Carrier's Amulet (peso) è praticamente permanente, più Strength Amulet (+4 Forza Motrice), Patience Amulet (recupero stamina) e Iron Wall Amulet (riduzione danno fisico); passa a Extreme Modification Amulet o Murderer's Amulet per il burst sui boss quando avrai quattro slot."
+  },
+  {
+   "h": "Stile di gioco",
+   "t": "Giocala come una build da scambio pesante: R2 caricato per stordire, attacco fatale, Guardia Perfetta per rompere le armi, e usa gli Spettri a ogni boss: sono gratis e non ti costano assolutamente nulla."
+  }
+ ]
+}

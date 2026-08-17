@@ -1,0 +1,1543 @@
+{
+ "game": "Stellar Blade",
+ "prefix": "SB",
+ "playthroughs": "1 full playthrough + a short NG+ rush (~5-8h). All 43 base trophies incl. platinum 'EVE Protocol' fit in one run using a PS+ cloud/USB save backup at the Nest Supply Camp for 2 of the 3 endings; the 3rd ending (Cost of Lost Memories needs Lily's bar UNDER 100%) plus the 2 update-added NG+ trophies come from the NG+ rush. No chapter select exists.",
+ "hours": "50-65 hours for 100% (PowerPyx: 40-50h for platinum, +NG+ rush)",
+ "trophy_total": 45,
+ "build_summary": "Stellar Blade has no classes; your 'sword-and-board' is the Survival skill tree. Rush Perfect Parry mastery: Counter I/II and Counter Chain, Reflection/Chain Reflection (Perfect Dodge follow-ups), Blink and Repulse (counters for blue/purple flash attacks), Reflex Boost and Focus Boost, plus Beta Energy Recharge so parries fuel Beta skills. Beta tree: Shield Breaker and Triplet→Quadruplet. Burst tree: Tempest with Life Steal and Descending Break. Tachy tree defensive line: Winged Shield, Judgement Counter I/II, Judgement Reflection. Exospines: Reflex-Type (wider parry windows) + Protection-Type or Recovery-Type. Every trophy is obtainable on Story Mode — there are no difficulty trophies.",
+ "golden_rules": [
+  "Two hard points of no return (verified on PowerPyx): completing Abyss Levoire locks Xion's city content, and finishing Spire 4 locks EVERY region. Backup a save (PS+ cloud or USB) before both, and again at the Nest Supply Camp before Adam's final choice.",
+  "Kill one of every new enemy type on sight — Naytiba Researcher needs all 67 Data Bank entries, and 15 of 16 Weapon Cores (story AND optional bosses like Stalker/Behemoth) max the Blood Edge (Perfect Blood Edge).",
+  "Parry first, dodge second: a defensive playstyle passively clears Agile Gladiator (300 Perfect Parries), Battlefield Martial Artist (200 Perfect Dodges) and feeds the Beta/Burst/Tachy kill counters.",
+  "Open every box (Box Hunter: 200) and grab every document/memory stick (Records Collector: 200 Data Bank entries) — documents also fill Lily's bar, which gates the best ending and the Eidos 9 Atelier visit.",
+  "Finish ALL Xion side quests and bulletin requests before handing in Abyss Levoire — the Enya & Su, Kaya and D1G-g2r questlines are trophy-tied (Beyond Fate, Sisterly Love, Beep!).",
+  "The 2 NG+ trophies (Repeating Protocols, Infinite Blade) came with the June 2024 NG+ update as a separate list — NOT required for the platinum, only for 100%."
+ ],
+ "stat_table": {
+  "note": "No stats/classes — progression is SP into 5 skill trees plus gear. Defensive-build SP priorities per phase. HP/Beta capacity come from collectibles: 18 of 20 Body Cores (max HP), Beta Cores, 18 Tumbler Expansion Modules (3 per upgrade × 6 levels).",
+  "columns": [
+   "Phase",
+   "SP focus",
+   "Key skills",
+   "Milestone"
+  ],
+  "rows": [
+   [
+    "Eidos 7",
+    "Survival basics",
+    "Perfect Parry, Counter I, Perfect Dodge, Double Jump",
+    "Parry-counter loop online before the Gigas fight"
+   ],
+   [
+    "Xion / early Wasteland",
+    "Survival + Beta opener",
+    "Shield Breaker, Slash, Reflection I, Ambush executions",
+    "Shield-break opener ready for Brute; start Silent Executioner (50)"
+   ],
+   [
+    "Wasteland / Altess Levoire",
+    "Counter mastery",
+    "Counter II, Counter Chain I, Blink, Repulse, Beta Energy Recharge",
+    "Blue/purple flash counters unlocked for Stalker and Juggernaut"
+   ],
+   [
+    "Matrix 11",
+    "Defense capstones",
+    "Chain Reflection I/II, Reflex Boost, Focus Boost, Double Dodge",
+    "Full parry toolkit for Tachy — the run's hardest duel"
+   ],
+   [
+    "Great Desert",
+    "Burst tree",
+    "Tempest + Life Steal, Descending Break + Aftershock",
+    "Self-healing Burst rotation for Behemoth; feed Relentless Destroyer (50)"
+   ],
+   [
+    "Abyss Levoire",
+    "Beta finishers",
+    "Triplet → Quadruplet, Infinite Breaker, damage boosts",
+    "Boss melt rotation; push Naytiba Hunter (100 Beta kills)"
+   ],
+   [
+    "Spire 4 / Nest",
+    "Tachy tree",
+    "Tachy Mode, Winged Shield, Judgement Counter I/II",
+    "Counter Raven/Providence in Tachy Mode; finish Revenging Agent (50)"
+   ],
+   [
+    "Cleanup",
+    "Everything remaining",
+    "All 96 base skills",
+    "Thorough Technician — SP farm the Library camp Ambush loop"
+   ],
+   [
+    "NG+ rush",
+    "NG+ skill tier",
+    "All added NG+ nodes",
+    "Infinite Blade + Repeating Protocols (100% only)"
+   ]
+  ]
+ },
+ "phases": [
+  {
+   "title": "Phase 1 — Eidos 7 (Prologue to Gigas)",
+   "note": "Tutorial region. Set habits now: parry everything, loot every box, kill every new Naytiba type.",
+   "steps": [
+    {
+     "text": "Pick any difficulty — the platinum is legal on Story Mode (verified PowerPyx: no difficulty trophies). You can change it anytime.",
+     "loc": "Options / new game setup",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Scegli la difficoltà che vuoi — il platino è legittimo in modalità Storia (verificato PowerPyx: nessun trofeo legato alla difficoltà). Puoi cambiarla in qualsiasi momento.",
+     "loc_it": "Opzioni / impostazione nuova partita"
+    },
+    {
+     "text": "Beat Abaddon in the opening squad drop, then activate your first camp for the (gold!) Camp Preparation trophy.",
+     "loc": "Eidos 7 — crash site / first Supply Camp",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Abaddon + Camp Preparation",
+       "label_it": "🏆 Abaddon + Preparazione accampamento"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Batti Abaddon nel lancio iniziale della squadra, poi attiva il tuo primo accampamento per il trofeo (oro!) Preparazione accampamento (Camp Preparation).",
+     "loc_it": "Eidos 7 — sito dello schianto / primo Supply Camp"
+    },
+    {
+     "text": "Buy Perfect Parry upgrades first: Counter I, then Perfect Dodge and Double Jump. Practice on packs — Agile Gladiator needs 300 Perfect Parries total.",
+     "loc": "Skill menu — Survival tree",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Compra prima i potenziamenti della Parata perfetta: Contrattacco I, poi Schivata perfetta e Double Jump. Allenati sui gruppi — Gladiatrice agile richiede 300 Parate perfette in totale.",
+     "loc_it": "Menu abilità — albero di sopravvivenza"
+    },
+    {
+     "text": "Grab Eidos 7's 3 cans and every memory stick/passcode — Data Bank entries count toward Records Collector (200) and fill Lily's ending-critical bar.",
+     "loc": "Eidos 7 — all sub-areas (PowerPyx cans #1-3)",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Can Collector 3/49",
+       "label_it": "🏆 Collezionista di lattine 3/49"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Raccogli le 3 lattine di Eidos 7 e ogni scheda di memoria/codice di accesso — le voci della Banca dati contano per Collezionista di registri (200) e riempiono la barra di Lily, decisiva per il finale.",
+     "loc_it": "Eidos 7 — tutte le sotto-aree (lattine PowerPyx #1-3)"
+    },
+    {
+     "text": "Kill one of every enemy type you see — Naytiba Researcher needs all 67 Data Bank Naytiba entries and some are region-locked later.",
+     "loc": "Everywhere, whole game",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ Naytiba entries",
+       "label_it": "⚠ Voci Naytiba"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Uccidi un esemplare di ogni tipo di nemico che incontri — Ricercatore di Naytiba richiede tutte le 67 voci Naytiba della Banca dati e alcune vengono bloccate più avanti nelle rispettive regioni.",
+     "loc_it": "Ovunque, per tutto il gioco"
+    },
+    {
+     "text": "Defeat Corrupter mid-region — a parry check: hold guard when unsure, release into Perfect Parry on its telegraphed swings.",
+     "loc": "Eidos 7 — story path",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Corrupter",
+       "label_it": "🏆 Corruttore"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi il Corruttore (Corrupter) a metà regione — è un esame di parata: tieni la guardia quando sei in dubbio e rilascia in Parata perfetta sui suoi fendenti telegrafati.",
+     "loc_it": "Eidos 7 — percorso della storia"
+    },
+    {
+     "text": "Defeat Gigas to end Eidos 7. Bosses drop Weapon Cores — you need 15 of 16 to max the Blood Edge, so never skip a boss.",
+     "loc": "Eidos 7 — finale",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Gigas",
+       "label_it": "🏆 Gigas"
+      },
+      {
+       "type": "coll",
+       "label": "Weapon Core",
+       "label_it": "Nucleo arma"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi Gigas per chiudere Eidos 7. I boss lasciano cadere Nuclei arma — te ne servono 15 su 16 per portare al massimo la Lama sanguigna, quindi non saltare mai un boss.",
+     "loc_it": "Eidos 7 — finale"
+    }
+   ],
+   "title_it": "Fase 1 — Eidos 7 (dal prologo a Gigas)",
+   "note_it": "Regione tutorial. Prendi subito le abitudini giuste: para tutto, saccheggia ogni cassa, uccidi ogni nuovo tipo di Naytiba."
+  },
+  {
+   "title": "Phase 2 — Xion, the Remaining City (first visit)",
+   "note": "Hub city on an invisible timer: the Abyss Levoire point of no return later torches it. Start every questline now.",
+   "steps": [
+    {
+     "text": "Meet Orcal and unlock the hub. Talk to EVERY NPC with a marker; accept all bulletin-board requests — 5 completed requests later gate the Fantastic Bait info from Roxanne.",
+     "loc": "Xion — plaza, bulletin board",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Incontra Orcal e sblocca l’hub. Parla con OGNI PNG che ha un indicatore; accetta tutte le richieste in bacheca — 5 richieste completate sbloccheranno più avanti l’informazione sull’Esca eccezionale (Fantastic Bait) da Roxanne.",
+     "loc_it": "Xion — piazza, bacheca"
+    },
+    {
+     "text": "Start the trophy questlines the moment they appear: Kaya (Sisterly Love), Enya & Su (Beyond Fate), D1G-g2r (Beep!). Their chains span the whole game.",
+     "loc": "Xion — NPCs Kaya, Enya/Su, D1G-g2r",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "3 trophy chains",
+       "label_it": "3 catene da trofeo"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ Locked after Abyss Levoire",
+       "label_it": "⚠ Bloccate dopo l’Abisso Levoire"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Avvia le linee narrative da trofeo appena compaiono: Kaya (Amore tra sorelle), Enya e Su (Oltre il destino), D1G-g2r (Bip!). Le loro catene attraversano tutto il gioco.",
+     "loc_it": "Xion — PNG Kaya, Enya/Su, D1G-g2r"
+    },
+    {
+     "text": "D1G-g2r also exchanges 2 Damaged Weapon Cores for 1 intact core — bank every damaged core for Perfect Blood Edge.",
+     "loc": "Xion — D1G-g2r",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "D1G-g2r scambia anche 2 Damaged Weapon Cores con 1 nucleo intatto — metti da parte ogni nucleo danneggiato per Lama sanguigna perfetta.",
+     "loc_it": "Xion — D1G-g2r"
+    },
+    {
+     "text": "Collect Xion's city cans and Data Bank entries; buy available Nano Suits from shops (Nano Suit Collector needs 30, 40+ obtainable in one run).",
+     "loc": "Xion — shops, rooftops (PowerPyx can list)",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Cans + suits",
+       "label_it": "🏆 Lattine + nanotute"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Raccogli le lattine cittadine di Xion e le voci della Banca dati; compra le nanotute (Nano Suits) disponibili nei negozi (Collezionista di nanotute ne richiede 30, in una run se ne ottengono 40+).",
+     "loc_it": "Xion — negozi, tetti (lista lattine PowerPyx)"
+    },
+    {
+     "text": "Buy Survival: Reflection I; Beta: Slash, Shield Breaker. Shield Breaker opens every boss fight for the rest of the run.",
+     "loc": "Skill menu — Survival/Beta trees",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Compra Sopravvivenza: Reflection I; Beta: Squarcio, Shield Breaker. Shield Breaker aprirà ogni scontro con i boss per tutto il resto della run.",
+     "loc_it": "Menu abilità — alberi Sopravvivenza/Beta"
+    },
+    {
+     "text": "Equip Training Gear when found (+SP gain) and keep it on while roaming — Thorough Technician (all 96 skills) is a long SP grind.",
+     "loc": "Gear menu",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Equipaggia il Training Gear appena lo trovi (+guadagno SP) e tienilo addosso mentre giri — Tecnico accurato (tutte le 96 abilità) è un lungo grind di SP.",
+     "loc_it": "Menu equipaggiamento"
+    },
+    {
+     "text": "Use stealth Ambush kills on unaware mobs all game — Silent Executioner wants 50 execution kills and they're slow to farm late.",
+     "loc": "Open zones, whole game",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Silent Executioner 0/50",
+       "label_it": "🏆 Boia silente 0/50"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Usa le uccisioni furtive con Agguato sui nemici ignari per tutto il gioco — Boia silente vuole 50 uccisioni con esecuzione e nel finale sono lente da farmare.",
+     "loc_it": "Zone aperte, per tutto il gioco"
+    }
+   ],
+   "title_it": "Fase 2 — Xion, la Città Rimasta (prima visita)",
+   "note_it": "Città hub con un timer invisibile: il punto di non ritorno dell’Abisso Levoire la brucerà più avanti. Avvia subito ogni linea narrativa."
+  },
+  {
+   "title": "Phase 3 — Wasteland & Altess Levoire",
+   "note": "First open zone. Body Cores sit on dead Angel bodies; scan constantly with the drone.",
+   "steps": [
+    {
+     "text": "Sweep the Wasteland: its ~14-15 cans, all camps (Meticulous Explorer needs EVERY camp), Body Cores on Angel corpses (18 of 20 = Perfect Physical Enhancement).",
+     "loc": "Wasteland open zone (PowerPyx can list)",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Cans + Body Cores",
+       "label_it": "🏆 Lattine + Nuclei corporei"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Rastrella la Landa (Wasteland): le sue ~14-15 lattine, tutti gli accampamenti (Esploratrice meticolosa li richiede TUTTI), i Nuclei corporei sui cadaveri degli Angel (18 su 20 = Perfezionamento fisico).",
+     "loc_it": "Zona aperta della Landa (lista lattine PowerPyx)"
+    },
+    {
+     "text": "Defeat Brute — your first big parry exam. Guard-hold his charge, Perfect Parry the overheads, punish with Shield Breaker into Triplet.",
+     "loc": "Wasteland — story path",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Brute",
+       "label_it": "🏆 Bruto"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi il Bruto — il tuo primo grande esame di parata. Tieni la guardia sulla sua carica, esegui la Parata perfetta sui colpi dall’alto, punisci con Shield Breaker in Triattacco.",
+     "loc_it": "Landa — percorso della storia"
+    },
+    {
+     "text": "Fight Stalker when it appears — optional-feeling bosses still drop Weapon Cores and Naytiba entries you cannot skip for 100%.",
+     "loc": "Wasteland region",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Stalker",
+       "label_it": "🏆 Persecutore"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ Weapon Core",
+       "label_it": "⚠ Nucleo arma"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Affronta il Persecutore quando compare — i boss che sembrano opzionali lasciano comunque Nuclei arma e voci Naytiba che non puoi saltare per il 100%.",
+     "loc_it": "Regione della Landa"
+    },
+    {
+     "text": "Clear Altess Levoire and retrieve the Hyper Cell (gold trophy). Defeat Juggernaut — parry the slow crushing arcs, Blink the blue lunges.",
+     "loc": "Altess Levoire dungeon",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Altess Levoire + Juggernaut",
+       "label_it": "🏆 Sommità Levoire + Colosso"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Completa la Sommità Levoire e recupera l’Ipercella (Hyper Cell) (trofeo oro). Sconfiggi il Colosso (Juggernaut) — para i lenti archi schiaccianti, usa Blink sugli affondi blu.",
+     "loc_it": "Dungeon della Sommità Levoire"
+    },
+    {
+     "text": "At a Large Supply Camp repair console, pump Weapon Cores into the Blood Edge and enhance exospines — Perfect Exospine needs 10 exospines maxed (3 levels each).",
+     "loc": "Any Large Supply Camp — repair console",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Alla console di riparazione di un Large Supply Camp, investi i Nuclei arma nella Lama sanguigna e potenzia le esospine — Esospina perfetta richiede 10 esospine al massimo (3 livelli ciascuna).",
+     "loc_it": "Qualsiasi Large Supply Camp — console di riparazione"
+    },
+    {
+     "text": "Equip the Protection-Type exospine now; swap in Reflex-Type when found — it widens Perfect Parry/Dodge windows, the heart of this build.",
+     "loc": "Exospine menu",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Equipaggia ora l’esospina Protection-Type; sostituiscila con la Reflex-Type quando la trovi — allarga le finestre di Parata/Schivata perfetta, il cuore di questa build.",
+     "loc_it": "Menu esospine"
+    },
+    {
+     "text": "Buy Counter II, Counter Chain, Blink, Repulse — blue-flash attacks demand Blink, purple demand Repulse; both count as defensive tech and build Burst gauge.",
+     "loc": "Skill menu — Survival tree",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Compra Contrattacco II, Counter Chain, Blink, Repulse — gli attacchi con lampo blu richiedono Blink, quelli viola Repulse; entrambi contano come tecnica difensiva e caricano la barra esplosiva.",
+     "loc_it": "Menu abilità — albero di sopravvivenza"
+    },
+    {
+     "text": "Small scampering robots drop Tumbler Expansion Modules — you need 18 (3 per upgrade × 6 levels) to max the tumbler (Perfect Rechargeable Tumbler).",
+     "loc": "All open zones — robot mobs",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Tumbler Modules /18",
+       "label_it": "🏆 Moduli fiaschetta /18"
+      }
+     ],
+     "trophy": false,
+     "text_it": "I piccoli robot sgattaiolanti lasciano cadere Moduli potenziamento fiaschetta — te ne servono 18 (3 per potenziamento × 6 livelli) per portare al massimo la fiaschetta (Fiaschetta ricaricabile perfetta).",
+     "loc_it": "Tutte le zone aperte — gruppi di robot"
+    }
+   ],
+   "title_it": "Fase 3 — Landa e Sommità Levoire",
+   "note_it": "Prima zona aperta. I Nuclei corporei stanno sui cadaveri degli Angel; scansiona di continuo con il drone."
+  },
+  {
+   "title": "Phase 4 — Xion interlude & Matrix 11 (Tachy)",
+   "note": "Light of Hope quests in Xion, then the Alpha Signal into Matrix 11 — a linear dark dungeon ending in the game's most feared duel.",
+   "steps": [
+    {
+     "text": "Back in Xion, clear new side quests and bulletin requests; documents auto-log — keep Lily's bar climbing for the Making New Memories route.",
+     "loc": "Xion — quest boards",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Tornata a Xion, completa le nuove missioni secondarie e le richieste in bacheca; i documenti si registrano da soli — tieni la barra di Lily in crescita per la via di Creazione di nuovi ricordi.",
+     "loc_it": "Xion — bacheche delle missioni"
+    },
+    {
+     "text": "Enter Matrix 11: grab its cans and all Data Bank entries in one pass — an easy region to leave half-looted.",
+     "loc": "Matrix 11 (PowerPyx can list)",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Cans",
+       "label_it": "🏆 Lattine"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Entra in Matrix 11: raccogli le sue lattine e tutte le voci della Banca dati in un’unica passata — è una regione che si lascia facilmente saccheggiata a metà.",
+     "loc_it": "Matrix 11 (lista lattine PowerPyx)"
+    },
+    {
+     "text": "Buy Chain Reflection, Reflex Boost, Focus Boost before the end of Matrix 11 — you want the full defensive kit for what's coming.",
+     "loc": "Skill menu — Survival tree",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Compra Chain Reflection, Incremento di riflessi e Incremento di concentrazione prima della fine di Matrix 11 — ti serve il kit difensivo completo per quello che sta per arrivare.",
+     "loc_it": "Menu abilità — albero di sopravvivenza"
+    },
+    {
+     "text": "Defeat Tachy — community-consensus hardest story boss. Parry her flurries by drumming L1 to her rhythm, Repulse the purple dive, never greed past 2 counters.",
+     "loc": "Matrix 11 — finale (Alpha Signal)",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Tachy",
+       "label_it": "🏆 Tachy"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi Tachy — per consenso della community il boss della storia più duro. Para le sue raffiche tamburellando su L1 al suo ritmo, usa Repulse sulla picchiata viola, non ingordirti mai oltre 2 contrattacchi.",
+     "loc_it": "Matrix 11 — finale (Alpha Signal)"
+    },
+    {
+     "text": "If Tachy walls you: drop to Story Mode just for her — trophies still pop and SP gain is identical on all difficulties (verified Game8).",
+     "loc": "Options — difficulty",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Se Tachy ti sbarra la strada: scendi a modalità Storia solo per lei — i trofei scattano lo stesso e il guadagno di SP è identico a tutte le difficoltà (verificato Game8).",
+     "loc_it": "Opzioni — difficoltà"
+    },
+    {
+     "text": "Unlock Tachy Mode in the Tachy tree and start popping it on mob packs — Revenging Agent needs 50 kills inside Tachy Mode and the gauge fills slowly.",
+     "loc": "Skill menu — Tachy tree",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Revenging Agent 0/50",
+       "label_it": "🏆 Agente della vendetta 0/50"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Sblocca la Modalità tachionica (Tachy Mode) nell’albero Tachy e inizia ad attivarla sui gruppi di nemici — Agente della vendetta richiede 50 uccisioni in Modalità tachionica e la barra si riempie lentamente.",
+     "loc_it": "Menu abilità — albero Tachy"
+    },
+    {
+     "text": "Use the drone gun on weak mobs regularly — Cold-blooded Sniper needs 150 ranged kills; the Eagle Eye-Type exospine refunds ammo on weak-point hits.",
+     "loc": "Whole game",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Cold-blooded Sniper 0/150",
+       "label_it": "🏆 Cecchina a sangue freddo 0/150"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Usa regolarmente il fucile del drone sui nemici deboli — Cecchina a sangue freddo richiede 150 uccisioni a distanza; l’esospina Eagle Eye-Type rimborsa munizioni sui colpi ai punti deboli.",
+     "loc_it": "Tutto il gioco"
+    }
+   ],
+   "title_it": "Fase 4 — Interludio a Xion e Matrix 11 (Tachy)",
+   "note_it": "Le missioni Light of Hope a Xion, poi l’Alpha Signal dentro Matrix 11 — un dungeon lineare e buio che si chiude con il duello più temuto del gioco."
+  },
+  {
+   "title": "Phase 5 — Great Desert (big collectible zone + fishing)",
+   "note": "A can-rich region. Fishing unlocks here once the Abyss Levoire quest is active; it feeds a trophy AND a hard can.",
+   "steps": [
+    {
+     "text": "Full desert sweep: its ~13-15 cans, camps, Body/Beta Cores, nano suit chests. Beta Cores push Perfect Beta Energy Enhancement.",
+     "loc": "Great Desert open zone (PowerPyx can list)",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Cans + cores",
+       "label_it": "🏆 Lattine + nuclei"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Rastrellata completa del deserto: le sue ~13-15 lattine, gli accampamenti, i Nuclei corporei/Beta, le casse con le nanotute. I Nuclei Beta (Beta Cores) spingono Perfezionamento energia Beta.",
+     "loc_it": "Zona aperta del Vasto Deserto (lista lattine PowerPyx)"
+    },
+    {
+     "text": "Hunt Behemoth — optional boss, but its Weapon Core and Naytiba entry are mandatory for Perfect Blood Edge and Naytiba Researcher.",
+     "loc": "Great Desert",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Behemoth",
+       "label_it": "🏆 Behemoth"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ Don't skip",
+       "label_it": "⚠ Non saltarlo"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Vai a caccia del Behemoth — boss opzionale, ma il suo Nucleo arma e la sua voce Naytiba sono obbligatori per Lama sanguigna perfetta e Ricercatore di Naytiba.",
+     "loc_it": "Vasto Deserto"
+    },
+    {
+     "text": "Meet Clyde and do the Looking Glass fishing tutorial (available once the Abyss Levoire story stage is active). Buy Fishing Data + Advanced Fishing Data ASAP.",
+     "loc": "Great Desert — Oasis (Clyde)",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Incontra Clyde e fai il tutorial di pesca Looking Glass (disponibile una volta attiva la fase narrativa dell’Abisso Levoire). Compra Fishing Data e Advanced Fishing Data il prima possibile.",
+     "loc_it": "Vasto Deserto — Oasi (Clyde)"
+    },
+    {
+     "text": "Fish toward 20 of 25 species (Lonely Fisherman). Bait ladder: Small Shrimp < Wriggling Insect < Fish Slice < Special < Fantastic. Turn on the accessibility fishing controls.",
+     "loc": "6 spots: Oasis, Xion-Wasteland path, 2 Wasteland lakes, Eidos 7 pond, Eidos 9 Atelier",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Lonely Fisherman",
+       "label_it": "🏆 Pesca solitaria"
+      },
+      {
+       "type": "coll",
+       "label": "Fish 20/25",
+       "label_it": "Pesci 20/25"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Pesca fino a 20 specie su 25 (Pesca solitaria). Scala delle esche: Small Shrimp < Wriggling Insect < Fish Slice < Special < Esca eccezionale. Attiva i comandi di pesca per l’accessibilità.",
+     "loc_it": "6 punti: Oasi, sentiero Xion-Landa, 2 laghi della Landa, stagno di Eidos 7, Atelier di Eidos 9"
+    },
+    {
+     "text": "Get the Fantastic Bait: complete 5 bulletin requests, then buy the info from Roxanne. All 25 fish also award the Ocean Maid nano suit (counts toward 30 suits).",
+     "loc": "Xion — Roxanne / fishing spots",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Fantastic Bait + suit",
+       "label_it": "Esca eccezionale + nanotuta"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Procurati l’Esca eccezionale: completa 5 richieste in bacheca, poi compra l’informazione da Roxanne. Tutti i 25 pesci assegnano inoltre la nanotuta Cameriera dell’Oceano (Ocean Maid) (conta per le 30 nanotute).",
+     "loc_it": "Xion — Roxanne / punti di pesca"
+    },
+    {
+     "text": "Can 'Moonwell' is PowerPyx's 'super missable' pick — it can be pulled up via fishing if you miss the normal grab. 'Cryo the Clear' hides behind locked-gate progression.",
+     "loc": "Great Desert — Moonwell / gated ruins",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ Hardest cans",
+       "label_it": "⚠ Lattine più difficili"
+      }
+     ],
+     "trophy": false,
+     "text_it": "La lattina ‘Moonwell’ è la scelta ‘super mancabile’ di PowerPyx — se salti la presa normale, puoi ripescarla con la canna. ‘Cryo the Clear’ si nasconde dietro una progressione a cancelli bloccati.",
+     "loc_it": "Vasto Deserto — Moonwell / rovine chiuse"
+    },
+    {
+     "text": "Buy Burst tree: Tempest + Life Steal (your sustain button) and Descending Break (-2 boss balance). Burst kills on mobs feed Relentless Destroyer (50).",
+     "loc": "Skill menu — Burst tree",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Compra l’albero esplosivo: Tempesta + Life Steal (il tuo pulsante di sostentamento) e Schianto dall’alto (-2 all’equilibrio dei boss). Le uccisioni esplosive sui nemici comuni alimentano Distruttrice implacabile (50).",
+     "loc_it": "Menu abilità — albero esplosivo"
+    },
+    {
+     "text": "Defeat Belial when the story serves it up — Blink its blue aerial dives; another Weapon Core banked.",
+     "loc": "Great Desert / Abyss Levoire approach",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Belial",
+       "label_it": "🏆 Belial"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi Belial quando la storia te lo propone — usa Blink sulle sue picchiate aeree blu; un altro Nucleo arma in cassaforte.",
+     "loc_it": "Vasto Deserto / avvicinamento all’Abisso Levoire"
+    }
+   ],
+   "title_it": "Fase 5 — Vasto Deserto (grande zona di collezionabili + pesca)",
+   "note_it": "Regione ricca di lattine. La pesca si sblocca qui una volta attiva la missione dell’Abisso Levoire; alimenta un trofeo E una lattina difficile."
+  },
+  {
+   "title": "Phase 6 — POINT OF NO RETURN #1: before finishing Abyss Levoire",
+   "note": "VERIFIED (PowerPyx): completing Abyss Levoire locks Xion's city section — NPC quests, shops, anything unfinished. Audit before you dive.",
+   "steps": [
+    {
+     "text": "STOP. In Xion: finish every side quest and bulletin request, all city cans, all shop nano suits, and every available step of the Kaya / Enya & Su / D1G-g2r chains.",
+     "loc": "Xion — full audit",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ PONR #1",
+       "label_it": "⚠ PONR #1"
+      },
+      {
+       "type": "quest",
+       "label": "Xion lockout",
+       "label_it": "Blocco di Xion"
+      }
+     ],
+     "trophy": false,
+     "text_it": "FERMATI. A Xion: chiudi ogni missione secondaria e richiesta in bacheca, tutte le lattine cittadine, tutte le nanotute dei negozi e ogni passo disponibile delle catene di Kaya / Enya e Su / D1G-g2r.",
+     "loc_it": "Xion — controllo completo"
+    },
+    {
+     "text": "Upload a backup save to PS+ cloud or USB before the final Abyss Levoire objective — insurance if anything above was missed.",
+     "loc": "PS5 — Saved Data manager",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ Backup save",
+       "label_it": "⚠ Backup del salvataggio"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Carica un salvataggio di backup su cloud PS+ o USB prima dell’obiettivo finale dell’Abisso Levoire — assicurazione nel caso qualcosa qui sopra sia sfuggito.",
+     "loc_it": "PS5 — gestione dati salvati"
+    },
+    {
+     "text": "Clear Abyss Levoire and retrieve its Hyper Cell. The dungeon is parry-heavy; Recovery-Type exospine + Tempest Life Steal trivializes attrition.",
+     "loc": "Abyss Levoire dungeon (Great Desert)",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Abyss Levoire",
+       "label_it": "🏆 Abisso Levoire"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Completa l’Abisso Levoire e recupera la sua Ipercella. Il dungeon è tutto incentrato sulla parata; l’esospina Recovery-Type + Tempesta con Life Steal rendono banale l’attrito.",
+     "loc_it": "Dungeon dell’Abisso Levoire (Vasto Deserto)"
+    },
+    {
+     "text": "By now the questline trophies should be popping as the chains conclude: Beyond Fate (Enya & Su), Sisterly Love (Kaya), Beep! (D1G-g2r).",
+     "loc": "Xion questlines",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 3 quest trophies",
+       "label_it": "🏆 3 trofei da missione"
+      }
+     ],
+     "trophy": true,
+     "text_it": "A questo punto i trofei delle linee narrative dovrebbero scattare mentre le catene si concludono: Oltre il destino (Enya e Su), Amore tra sorelle (Kaya), Bip! (D1G-g2r).",
+     "loc_it": "Linee narrative di Xion"
+    },
+    {
+     "text": "Check the Data Bank counter — you want to track well toward 200 entries (Records Collector) and ~63/67 Naytiba entries before the SECOND point of no return.",
+     "loc": "Menu — Data Bank",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "200 entries pace",
+       "label_it": "Ritmo 200 voci"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Controlla il contatore della Banca dati — devi essere in buona traiettoria verso le 200 voci (Collezionista di registri) e ~63/67 voci Naytiba prima del SECONDO punto di non ritorno.",
+     "loc_it": "Menu — Banca dati"
+    },
+    {
+     "text": "Keep upgrading: Blood Edge with every new Weapon Core, exospines to level 3 (10 needed maxed), tumbler with module triplets.",
+     "loc": "Large Supply Camp — repair console",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Continua a potenziare: la Lama sanguigna con ogni nuovo Nucleo arma, le esospine al livello 3 (ne servono 10 al massimo), la fiaschetta con le terne di moduli.",
+     "loc_it": "Large Supply Camp — console di riparazione"
+    },
+    {
+     "text": "Beta tree finishers: Quadruplet and Infinite Breaker — your boss rotation is now Shield Breaker (shield) → Triplet (health) → Burst on stagger.",
+     "loc": "Skill menu — Beta tree",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Finisher dell’albero Beta: Quadruplet e Infinite Breaker — la tua rotazione sui boss ora è Shield Breaker (scudo) → Triattacco (salute) → esplosiva sullo stordimento.",
+     "loc_it": "Menu abilità — albero Beta"
+    }
+   ],
+   "title_it": "Fase 6 — PUNTO DI NON RITORNO #1: prima di completare l’Abisso Levoire",
+   "note_it": "VERIFICATO (PowerPyx): completare l’Abisso Levoire blocca la sezione cittadina di Xion — missioni dei PNG, negozi, tutto ciò che è rimasto in sospeso. Fai l’inventario prima di tuffarti."
+  },
+  {
+   "title": "Phase 7 — Aftermath, Orcal's Testimony & Eidos 9 (Lily check)",
+   "note": "The Lily-bar checkpoint. Her bar must hit 100% BEFORE Spire 4 for the best ending and the conditional Eidos 9 content.",
+   "steps": [
+    {
+     "text": "Play through Hidden Truth and toward Orcal's Testimony; mop up newly opened Data Bank documents immediately — each one feeds Lily's bar.",
+     "loc": "Xion / story missions",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Gioca Hidden Truth e prosegui verso Orcal’s Testimony; raccogli subito i documenti della Banca dati appena aperti — ognuno alimenta la barra di Lily.",
+     "loc_it": "Xion / missioni della storia"
+    },
+    {
+     "text": "Verify Lily's bar is FULL before Spire 4. 100% = Making New Memories ending + the conditional Secret Garden mission; below 100% = that ending is gone this run.",
+     "loc": "Menu — Lily bond bar",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ Lily 100% gate",
+       "label_it": "⚠ Soglia Lily 100%"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Verifica che la barra di Lily sia PIENA prima di Spire 4. 100% = finale Creazione di nuovi ricordi + la missione condizionale Secret Garden; sotto il 100% quel finale è perso per questa run.",
+     "loc_it": "Menu — barra del legame con Lily"
+    },
+    {
+     "text": "With the bar full, do the Secret Garden content and visit Eidos 9's Atelier — it holds the final fishing spot AND the Cocoon Naytiba, found ONLY here.",
+     "loc": "Eidos 9 — Atelier (before finishing Orcal's Testimony)",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ Cocoon Naytiba",
+       "label_it": "⚠ Cocoon Naytiba"
+      },
+      {
+       "type": "coll",
+       "label": "Last fishing spot",
+       "label_it": "Ultimo punto di pesca"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Con la barra piena, affronta i contenuti di Secret Garden e visita l’Atelier di Eidos 9 — ospita l’ultimo punto di pesca E il Cocoon Naytiba, che si trova SOLO qui.",
+     "loc_it": "Eidos 9 — Atelier (prima di completare Orcal’s Testimony)"
+    },
+    {
+     "text": "Finish Lonely Fisherman here if species remain — the Atelier spot completes the fish list; all 25 fish = Ocean Maid suit.",
+     "loc": "Eidos 9 — Atelier pond",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Fish cleanup",
+       "label_it": "Completamento pesci"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Chiudi qui Pesca solitaria se ti mancano ancora delle specie — il punto dell’Atelier completa la lista dei pesci; tutti i 25 pesci = nanotuta Cameriera dell’Oceano.",
+     "loc_it": "Eidos 9 — stagno dell’Atelier"
+    },
+    {
+     "text": "Tachy-tree defensive line: Winged Shield, Judgement Counter I/II, Judgement Reflection I/II — free counters inside Tachy Mode for the endgame gauntlet.",
+     "loc": "Skill menu — Tachy tree",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Linea difensiva dell’albero Tachy: Winged Shield, Judgement Counter I/II, Judgement Reflection I/II — contrattacchi gratuiti in Modalità tachionica per il rush finale.",
+     "loc_it": "Menu abilità — albero Tachy"
+    },
+    {
+     "text": "Hit 30 Nano Suits now if possible (found/quest/shop suits combined) — Nano Suit Collector; over 40 are obtainable in one run.",
+     "loc": "Wardrobe check",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Nano Suit Collector",
+       "label_it": "🏆 Collezionista di nanotute"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Arriva a 30 nanotute ora se possibile (trovate + da missione + da negozio) — Collezionista di nanotute; in una sola run se ne ottengono oltre 40.",
+     "loc_it": "Controllo del guardaroba"
+    }
+   ],
+   "title_it": "Fase 7 — Conseguenze, Orcal’s Testimony ed Eidos 9 (verifica Lily)",
+   "note_it": "Il checkpoint della barra di Lily. Deve arrivare al 100% PRIMA di Spire 4 per il finale migliore e per i contenuti condizionali di Eidos 9."
+  },
+  {
+   "title": "Phase 8 — GRAND CLEANUP before finishing Spire 4 (PONR #2)",
+   "note": "VERIFIED (PowerPyx): progressing past Spire 4 locks EVERY area. Last free-roam window — finish all world collectibles and grinds NOW.",
+   "steps": [
+    {
+     "text": "Can Collector audit: all 49 cans — follow PowerPyx's numbered list #1-49 (regional counts vary slightly by guide: Eidos 7 ~3, Xion ~7-8, Wasteland ~14-15, Matrix 11 ~3-4, Great Desert ~13-15, Spire 4 ~4).",
+     "loc": "All regions — PowerPyx can checklist",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Can Collector 49",
+       "label_it": "🏆 Collezionista di lattine 49"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ Last window",
+       "label_it": "⚠ Ultima finestra"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Controllo Collezionista di lattine: tutte le 49 lattine — segui la lista numerata #1-49 di PowerPyx (i conteggi regionali variano leggermente da guida a guida: Eidos 7 ~3, Xion ~7-8, Landa ~14-15, Matrix 11 ~3-4, Vasto Deserto ~13-15, Spire 4 ~4).",
+     "loc_it": "Tutte le regioni — checklist lattine PowerPyx"
+    },
+    {
+     "text": "Camps audit for Meticulous Explorer — every activatable camp in the open regions now; the handful inside Spire 4/Nest come on the story path.",
+     "loc": "Map — camp icons, all regions",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Meticulous Explorer",
+       "label_it": "🏆 Esploratrice meticolosa"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Controllo accampamenti per Esploratrice meticolosa — ogni accampamento attivabile nelle regioni aperte, adesso; quei pochi dentro Spire 4/il Nido arrivano lungo il percorso della storia.",
+     "loc_it": "Mappa — icone degli accampamenti, tutte le regioni"
+    },
+    {
+     "text": "Counters check: 200 boxes (Box Hunter), 200 Data Bank (Records Collector), 18 Body Cores, Beta Cores, 18 Tumbler Modules.",
+     "loc": "Menus — collectible tallies",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 5 collectible trophies",
+       "label_it": "🏆 5 trofei da collezionabili"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Verifica dei contatori: 200 casse (Cacciatrice di casse), 200 voci della Banca dati (Collezionista di registri), 18 Nuclei corporei, Nuclei Beta, 18 Moduli fiaschetta.",
+     "loc_it": "Menu — conteggi dei collezionabili"
+    },
+    {
+     "text": "SP farm for Thorough Technician (all 96 skills): Ambush-loop the 4 mobs below the Library camp (~100 SP/min, rest to respawn) or grind Spire 4's Space Center later.",
+     "loc": "Library camp loop / Spire 4 Space Center",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Thorough Technician",
+       "label_it": "🏆 Tecnico accurato"
+      },
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Farma SP per Tecnico accurato (tutte le 96 abilità): fai il loop di Agguato sui 4 nemici sotto il Library camp (~100 SP/min, riposa per farli riapparire) oppure grinda più avanti lo Space Center di Spire 4.",
+     "loc_it": "Loop del Library camp / Space Center di Spire 4"
+    },
+    {
+     "text": "Farming doubles as gold income — buy remaining shop suits and consumables. Story Mode farming is fastest (same SP/kill).",
+     "loc": "Farm loops + shops",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Il farming vale anche come entrata d’oro — compra le nanotute rimaste nei negozi e i consumabili. Farmare in modalità Storia è più rapido (stessi SP per uccisione).",
+     "loc_it": "Loop di farming + negozi"
+    },
+    {
+     "text": "Combat tallies: 300 Perfect Parries, 200 Perfect Dodges, 50 executions, 100 Beta kills, 50 Burst kills, 50 Tachy kills, 150 ranged, 1,500 total kills — top up stragglers on farm loops.",
+     "loc": "Any respawning camp",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 8 combat trophies",
+       "label_it": "🏆 8 trofei di combattimento"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Conteggi di combattimento: 300 Parate perfette, 200 Schivate perfette, 50 esecuzioni, 100 uccisioni Beta, 50 uccisioni esplosive, 50 uccisioni Tachy, 150 a distanza, 1.500 uccisioni totali — recupera i numeri mancanti sui loop di farming.",
+     "loc_it": "Qualsiasi accampamento con respawn"
+    },
+    {
+     "text": "Naytiba Researcher check: ~63/67 entries is the expected pre-PONR count (PowerPyx) — the last few come from endgame/ending bosses automatically.",
+     "loc": "Data Bank — Naytiba tab",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "63/67 checkpoint",
+       "label_it": "Checkpoint 63/67"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Controllo Ricercatore di Naytiba: ~63/67 voci è il conteggio atteso prima del PONR (PowerPyx) — le ultime arrivano automaticamente dai boss di endgame e dei finali.",
+     "loc_it": "Banca dati — scheda Naytiba"
+    },
+    {
+     "text": "Backup save again before entering Spire 4's endgame stretch — world-state insurance for anything missed.",
+     "loc": "PS5 — Saved Data manager",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ PONR #2 backup",
+       "label_it": "⚠ Backup PONR #2"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Fai di nuovo un backup del salvataggio prima di entrare nel tratto finale di Spire 4 — assicurazione sullo stato del mondo per qualsiasi cosa sia sfuggita.",
+     "loc_it": "PS5 — gestione dati salvati"
+    }
+   ],
+   "title_it": "Fase 8 — GRANDE PULIZIA prima di completare Spire 4 (PONR #2)",
+   "note_it": "VERIFICATO (PowerPyx): superare Spire 4 blocca OGNI area. Ultima finestra di esplorazione libera — chiudi ORA tutti i collezionabili e i grind del mondo."
+  },
+  {
+   "title": "Phase 9 — Spire 4, Raven, the Nest & all three endings",
+   "note": "Eye of the Hurricane onward. The Nest Supply Camp save-backup trick nets 2 endings in one run — verified PowerPyx method.",
+   "steps": [
+    {
+     "text": "Clear Spire 4 (Eye of the Hurricane): grab its 4 cans and every collectible as you go — no returning after this region.",
+     "loc": "Spire 4 (PowerPyx cans #46-49)",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Final 4 cans",
+       "label_it": "🏆 Ultime 4 lattine"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ One-way region",
+       "label_it": "⚠ Regione a senso unico"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Completa Spire 4 (L’occhio del ciclone): raccogli le sue 4 lattine e ogni collezionabile strada facendo — dopo questa regione non si torna indietro.",
+     "loc_it": "Spire 4 (lattine PowerPyx #46-49)"
+    },
+    {
+     "text": "Defeat Karakuri — parry its rhythmic mechanical combos; Descending Break during stagger windows shreds its balance.",
+     "loc": "Spire 4",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Karakuri",
+       "label_it": "🏆 Karakuri"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi il Karakuri — para le sue combo meccaniche cadenzate; Schianto dall’alto durante le finestre di stordimento gli fa a pezzi l’equilibrio.",
+     "loc_it": "Spire 4"
+    },
+    {
+     "text": "Defeat Demogorgon — Tachy Mode + Judgement Counter turns its aggression into free damage.",
+     "loc": "Spire 4",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Demogorgon",
+       "label_it": "🏆 Demogorgone"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sconfiggi il Demogorgone (Demogorgon) — Modalità tachionica + Judgement Counter trasformano la sua aggressività in danno gratuito.",
+     "loc_it": "Spire 4"
+    },
+    {
+     "text": "Push through Burning Xion and Last Fragment, then duel Raven outside the Nest — fast delayed-timing strings; wait for the arm-draw glint, parry on impact frames, Repulse the purple dashes.",
+     "loc": "Wasteland — Nest entrance",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Raven",
+       "label_it": "🏆 Raven"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Attraversa Burning Xion e Last Fragment, poi affronta Raven fuori dal Nido — sequenze rapide dai tempi ritardati; aspetta il bagliore dell’estrazione del braccio, para sui frame di impatto, usa Repulse sugli scatti viola.",
+     "loc_it": "Landa — ingresso del Nido"
+    },
+    {
+     "text": "AT THE NEST SUPPLY CAMP (final camp before Adam): upload your save to PS+ cloud or USB. This single save is worth two ending trophies.",
+     "loc": "The Nest — Supply Camp",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ CRITICAL backup",
+       "label_it": "⚠ Backup CRITICO"
+      }
+     ],
+     "trophy": false,
+     "text_it": "AL SUPPLY CAMP DEL NIDO (l’ultimo accampamento prima di Adam): carica il salvataggio su cloud PS+ o USB. Questo singolo salvataggio vale due trofei di finale.",
+     "loc_it": "Il Nido — Supply Camp"
+    },
+    {
+     "text": "Ending 1: TAKE Adam's hand (Lily bar 100%) → fight Providence (no dedicated boss trophy — the ending covers it). The parry build carries: balance breaks fast under Perfect Parry chains + Descending Break.",
+     "loc": "The Nest — final choice",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Making New Memories",
+       "label_it": "🏆 Creazione di nuovi ricordi"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Finale 1: PRENDI la mano di Adam (barra di Lily al 100%) → combatti Provvidenza (Providence) (nessun trofeo dedicato al boss — lo copre il finale). La build da parata regge: l’equilibrio crolla in fretta sotto catene di Parate perfette + Schianto dall’alto.",
+     "loc_it": "Il Nido — scelta finale"
+    },
+    {
+     "text": "Re-download the cloud/USB save. Ending 2: REFUSE the hand → fight the Elder Naytiba instead → Return to the Colony trophy.",
+     "loc": "The Nest — reloaded save",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Return to the Colony",
+       "label_it": "🏆 Ritorno alla Colonia"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Riscarica il salvataggio da cloud/USB. Finale 2: RIFIUTA la mano → combatti invece il Naytiba Anziano (Elder Naytiba) → trofeo Ritorno alla Colonia.",
+     "loc_it": "Il Nido — salvataggio ricaricato"
+    },
+    {
+     "text": "Ending-path bosses complete the Naytiba Data Bank — Naytiba Researcher pops around here if you held ~63/67 earlier.",
+     "loc": "The Nest — post-boss",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Naytiba Researcher",
+       "label_it": "🏆 Ricercatore di Naytiba"
+      }
+     ],
+     "trophy": true,
+     "text_it": "I boss dei percorsi finali completano la Banca dati Naytiba — Ricercatore di Naytiba scatta all’incirca qui se prima eri a ~63/67.",
+     "loc_it": "Il Nido — dopo i boss"
+    },
+    {
+     "text": "If all counters were cleared, the platinum EVE Protocol pops with your 43rd base trophy — it does NOT require the 2 NG+ update trophies.",
+     "loc": "Trophy list",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 PLATINUM: EVE Protocol",
+       "label_it": "🏆 PLATINO: Protocollo EVE"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Se tutti i contatori sono stati chiusi, il platino Protocollo EVE scatta con il tuo 43° trofeo base — NON richiede i 2 trofei NG+ dell’aggiornamento.",
+     "loc_it": "Lista trofei"
+    }
+   ],
+   "title_it": "Fase 9 — Spire 4, Raven, il Nido e tutti e tre i finali",
+   "note_it": "Da L’occhio del ciclone (Eye of the Hurricane) in poi. Il trucco del backup al Supply Camp del Nido frutta 2 finali in una sola run — metodo verificato PowerPyx."
+  },
+  {
+   "title": "Phase 10 — NG+ rush: third ending + 100% (update trophies)",
+   "note": "NG+ (June 2024 update) carries gear/skills, adds a new skill tier and extra suits. Cost of Lost Memories REQUIRES Lily under 100% — impossible in your 100% run, hence NG+.",
+   "steps": [
+    {
+     "text": "Start New Game+ from your cleared save. Everything carries; enemies hit harder but your maxed parry build steamrolls.",
+     "loc": "Main menu — NG+",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Avvia la Nuova partita + dal tuo salvataggio completato. Tutto viene mantenuto; i nemici picchiano più forte, ma la tua build da parata al massimo li travolge.",
+     "loc_it": "Menu principale — NG+"
+    },
+    {
+     "text": "RUSH the story and deliberately SKIP documents/side content so Lily's bar stays under 100% — that's the whole trick for the last ending.",
+     "loc": "NG+ — main missions only",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ Keep bar <100%",
+       "label_it": "⚠ Tieni la barra <100%"
+      }
+     ],
+     "trophy": false,
+     "text_it": "CORRI nella storia e SALTA deliberatamente documenti e contenuti secondari, così la barra di Lily resta sotto il 100% — è tutto qui il trucco per l’ultimo finale.",
+     "loc_it": "NG+ — solo missioni principali"
+    },
+    {
+     "text": "Spend banked SP plus NG+ income on the new NG+ skill tier as nodes unlock — working toward Infinite Blade (all NG+ skills).",
+     "loc": "Skill menu — NG+ nodes",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Spendi gli SP messi da parte più le entrate dell’NG+ sul nuovo livello di abilità NG+ man mano che i nodi si sbloccano — obiettivo Lama eterna (tutte le abilità NG+).",
+     "loc_it": "Menu abilità — nodi NG+"
+    },
+    {
+     "text": "At the Nest: TAKE Adam's hand with the bar under 100% → Providence again → Cost of Lost Memories trophy.",
+     "loc": "NG+ — The Nest final choice",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Cost of Lost Memories",
+       "label_it": "🏆 Prezzo dei ricordi perduti"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Al Nido: PRENDI la mano di Adam con la barra sotto il 100% → di nuovo Provvidenza → trofeo Prezzo dei ricordi perduti.",
+     "loc_it": "NG+ — scelta finale al Nido"
+    },
+    {
+     "text": "Finishing NG+ pops Repeating Protocols; finish any leftover NG+ skill nodes (same SP farm loops) for Infinite Blade = 45/45, 100%.",
+     "loc": "NG+ endgame",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Repeating Protocols + Infinite Blade",
+       "label_it": "🏆 Protocolli ripetitivi + Lama eterna"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Completare l’NG+ fa scattare Protocolli ripetitivi; chiudi eventuali nodi abilità NG+ rimasti (stessi loop di farming SP) per Lama eterna = 45/45, 100%.",
+     "loc_it": "Endgame NG+"
+    },
+    {
+     "text": "Optional victory lap: NG+ exclusive nano suits and any missed tumbler modules — cosmetic only, no further trophies in the current patch state.",
+     "loc": "NG+ world",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "NG+ extras",
+       "label_it": "Extra NG+"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Giro d’onore facoltativo: nanotute esclusive dell’NG+ e moduli fiaschetta eventualmente mancati — solo estetica, nessun ulteriore trofeo nello stato attuale delle patch.",
+     "loc_it": "Mondo NG+"
+    }
+   ],
+   "title_it": "Fase 10 — Corsa in NG+: terzo finale e 100% (trofei dell’aggiornamento)",
+   "note_it": "La Nuova partita + (aggiornamento di giugno 2024) mantiene equipaggiamento e abilità, aggiunge un nuovo livello di abilità e nanotute extra. Prezzo dei ricordi perduti RICHIEDE Lily sotto il 100% — impossibile nella tua run al 100%, da qui l’NG+."
+  }
+ ],
+ "playthroughs_it": "1 partita completa + una breve corsa in NG+ (~5-8h). Tutti i 43 trofei base, platino ‘Protocollo EVE’ (EVE Protocol) incluso, entrano in un’unica run sfruttando un backup del salvataggio su cloud PS+/USB al Supply Camp del Nido (The Nest) per 2 dei 3 finali; il 3° finale (Prezzo dei ricordi perduti (Cost of Lost Memories) richiede la barra di Lily SOTTO il 100%) più i 2 trofei NG+ aggiunti dall’aggiornamento arrivano dalla corsa in NG+. Non esiste la selezione dei capitoli.",
+ "hours_it": "50-65 ore per il 100% (PowerPyx: 40-50h per il platino, + corsa in NG+)",
+ "build_summary_it": "Stellar Blade non ha classi; la tua build ‘spada e scudo’ è l’albero delle abilità di sopravvivenza (Survival). Punta subito alla padronanza della Parata perfetta (Perfect Parry): Contrattacco (Counter) I/II e Counter Chain, Reflection/Chain Reflection (follow-up della Schivata perfetta (Perfect Dodge)), Blink e Repulse (contromosse per gli attacchi con lampo blu/viola), Incremento di riflessi (Reflex Boost) e Incremento di concentrazione (Focus Boost), più Ricarica energia beta (Beta Energy Recharge) così le parate alimentano le abilità Beta. Albero Beta: Shield Breaker e Triattacco (Triplet)→Quadruplet. Albero delle abilità esplosive (Burst): Tempesta (Tempest) con Life Steal e Schianto dall’alto (Descending Break). Linea difensiva dell’albero Tachy: Winged Shield, Judgement Counter I/II, Judgement Reflection. Esospine (Exospines): Reflex-Type (finestre di parata più ampie) + Protection-Type o Recovery-Type. Ogni trofeo è ottenibile in modalità Storia — non ci sono trofei legati alla difficoltà.",
+ "golden_rules_it": [
+  "Due punti di non ritorno netti (verificati su PowerPyx): completare l’Abisso Levoire (Abyss Levoire) blocca i contenuti cittadini di Xion, e finire Spire 4 blocca OGNI regione. Fai un backup del salvataggio (cloud PS+ o USB) prima di entrambi, e di nuovo al Supply Camp del Nido prima della scelta finale di Adam.",
+  "Uccidi un esemplare di ogni nuovo tipo di nemico appena lo vedi — Ricercatore di Naytiba (Naytiba Researcher) richiede tutte le 67 voci della Banca dati (Data Bank), e 15 Nuclei arma (Weapon Cores) su 16 (boss della storia E opzionali come Persecutore (Stalker)/Behemoth) portano al massimo la Lama sanguigna (Blood Edge) — trofeo Lama sanguigna perfetta (Perfect Blood Edge).",
+  "Prima la parata, poi la schivata: uno stile di gioco difensivo sblocca passivamente Gladiatrice agile (Agile Gladiator) (300 Parate perfette), Artista marziale degli scontri (Battlefield Martial Artist) (200 Schivate perfette) e alimenta i contatori di uccisioni Beta/esplosive/Tachy.",
+  "Apri ogni cassa (Cacciatrice di casse (Box Hunter): 200) e raccogli ogni documento/scheda di memoria (Collezionista di registri (Records Collector): 200 voci della Banca dati) — i documenti riempiono anche la barra di Lily, che determina il finale migliore e la visita all’Atelier di Eidos 9.",
+  "Completa TUTTE le missioni secondarie e le richieste in bacheca di Xion prima di consegnare l’Abisso Levoire — le linee narrative di Enya e Su, Kaya e D1G-g2r sono legate a trofei (Oltre il destino (Beyond Fate), Amore tra sorelle (Sisterly Love), Bip! (Beep!)).",
+  "I 2 trofei NG+ (Protocolli ripetitivi (Repeating Protocols), Lama eterna (Infinite Blade)) sono arrivati con l’aggiornamento NG+ di giugno 2024 come lista separata — NON servono per il platino, solo per il 100%."
+ ],
+ "stat_table_it": {
+  "note": "Niente statistiche o classi — la progressione sono gli SP investiti in 5 alberi delle abilità più l’equipaggiamento. Priorità di SP per fase con build difensiva. PS e capacità Beta arrivano dai collezionabili: 18 Nuclei corporei (Body Cores) su 20 (PS al massimo), Nuclei Beta, 18 Moduli potenziamento fiaschetta (Tumbler Expansion Modules) (3 per potenziamento × 6 livelli).",
+  "columns": [
+   "Fase",
+   "Focus SP",
+   "Abilità chiave",
+   "Traguardo"
+  ],
+  "rows": [
+   [
+    "Eidos 7",
+    "Basi di sopravvivenza",
+    "Parata perfetta, Contrattacco I, Schivata perfetta, Double Jump",
+    "Ciclo parata-contrattacco operativo prima dello scontro con Gigas"
+   ],
+   [
+    "Xion / inizio Landa",
+    "Sopravvivenza + apertura Beta",
+    "Shield Breaker, Squarcio (Slash), Reflection I, esecuzioni con Agguato (Ambush)",
+    "Apertura con rottura scudo pronta per il Bruto; avvia Boia silente (50)"
+   ],
+   [
+    "Landa / Sommità Levoire",
+    "Padronanza del contrattacco",
+    "Contrattacco II, Counter Chain I, Blink, Repulse, Ricarica energia beta",
+    "Contromosse per lampo blu/viola sbloccate per Persecutore e Colosso"
+   ],
+   [
+    "Matrix 11",
+    "Capisaldi difensivi",
+    "Chain Reflection I/II, Incremento di riflessi, Incremento di concentrazione, Schivata doppia (Double Dodge)",
+    "Kit di parata completo per Tachy — il duello più duro della run"
+   ],
+   [
+    "Vasto Deserto",
+    "Albero esplosivo",
+    "Tempesta + Life Steal, Schianto dall’alto + Aftershock",
+    "Rotazione esplosiva con auto-cura per il Behemoth; alimenta Distruttrice implacabile (50)"
+   ],
+   [
+    "Abisso Levoire",
+    "Finisher Beta",
+    "Triattacco → Quadruplet, Infinite Breaker, potenziamenti ai danni",
+    "Rotazione sciogliboss; spingi Cacciatrice di Naytiba (100 uccisioni Beta)"
+   ],
+   [
+    "Spire 4 / Nido",
+    "Albero Tachy",
+    "Modalità tachionica, Winged Shield, Judgement Counter I/II",
+    "Contrattacca Raven e Provvidenza in Modalità tachionica; chiudi Agente della vendetta (50)"
+   ],
+   [
+    "Pulizia",
+    "Tutto il resto",
+    "Tutte le 96 abilità base",
+    "Tecnico accurato — farma SP con il loop di Agguato al Library camp"
+   ],
+   [
+    "Corsa NG+",
+    "Livello abilità NG+",
+    "Tutti i nodi NG+ aggiunti",
+    "Lama eterna + Protocolli ripetitivi (solo per il 100%)"
+   ]
+  ]
+ },
+ "glossary_it": {
+  "EVE Protocol": "Protocollo EVE",
+  "Camp Preparation": "Preparazione accampamento",
+  "Abaddon": "Abaddon",
+  "Corrupter": "Corruttore",
+  "Gigas": "Gigas",
+  "Brute": "Bruto",
+  "Altess Levoire": "Sommità Levoire",
+  "Stalker": "Persecutore",
+  "Juggernaut": "Colosso",
+  "Tachy": "Tachy",
+  "Behemoth": "Behemoth",
+  "Abyss Levoire": "Abisso Levoire",
+  "Belial": "Belial",
+  "Karakuri": "Karakuri",
+  "Demogorgon": "Demogorgone",
+  "Raven": "Raven",
+  "Return to the Colony": "Ritorno alla Colonia",
+  "Cost of Lost Memories": "Prezzo dei ricordi perduti",
+  "Making New Memories": "Creazione di nuovi ricordi",
+  "Can Collector": "Collezionista di lattine",
+  "Nano Suit Collector": "Collezionista di nanotute",
+  "Records Collector": "Collezionista di registri",
+  "Lonely Fisherman": "Pesca solitaria",
+  "Box Hunter": "Cacciatrice di casse",
+  "Naytiba Researcher": "Ricercatore di Naytiba",
+  "Meticulous Explorer": "Esploratrice meticolosa",
+  "Perfect Exospine": "Esospina perfetta",
+  "Perfect Blood Edge": "Lama sanguigna perfetta",
+  "Perfect Rechargeable Tumbler": "Fiaschetta ricaricabile perfetta",
+  "Perfect Physical Enhancement": "Perfezionamento fisico",
+  "Perfect Beta Energy Enhancement": "Perfezionamento energia Beta",
+  "Thorough Technician": "Tecnico accurato",
+  "Beyond Fate": "Oltre il destino",
+  "Sisterly Love": "Amore tra sorelle",
+  "Beep!": "Bip!",
+  "Battlefield Martial Artist": "Artista marziale degli scontri",
+  "Agile Gladiator": "Gladiatrice agile",
+  "Silent Executioner": "Boia silente",
+  "Naytiba Hunter": "Cacciatrice di Naytiba",
+  "Relentless Destroyer": "Distruttrice implacabile",
+  "Revenging Agent": "Agente della vendetta",
+  "Cold-blooded Sniper": "Cecchina a sangue freddo",
+  "Cruel Liberator": "Liberatrice crudele",
+  "Repeating Protocols": "Protocolli ripetitivi",
+  "Infinite Blade": "Lama eterna",
+  "Camp": "accampamento",
+  "Nano Suit": "nanotuta",
+  "Blood Edge": "Lama sanguigna",
+  "Rechargeable Tumbler": "Fiaschetta ricaricabile",
+  "tumbler": "fiaschetta",
+  "Exospine": "Esospina",
+  "Beta Energy": "Energia Beta",
+  "Beta Skills": "abilità Beta",
+  "Burst Skills": "abilità esplosive",
+  "Tachy Mode": "Modalità tachionica",
+  "Perfect Parry": "Parata perfetta",
+  "Perfect Dodge": "Schivata perfetta",
+  "HP": "PS",
+  "Data Bank": "Banca dati",
+  "Memorystick": "scheda di memoria",
+  "Passcode": "codice di accesso",
+  "Document": "documento",
+  "box": "cassa",
+  "can": "lattina",
+  "Hyper Cell": "Ipercella",
+  "Body Core": "Nucleo corporeo",
+  "Beta Core": "Nucleo Beta",
+  "Weapon Core": "Nucleo arma",
+  "Tumbler Expansion Module": "Modulo potenziamento fiaschetta",
+  "New Game+": "Nuova partita +",
+  "execution": "esecuzione",
+  "ranged attacks": "attacchi a distanza",
+  "skills": "abilità",
+  "Fishing": "Pesca",
+  "bulletin request": "richiesta in bacheca",
+  "side quest": "missione secondaria",
+  "Wasteland": "Landa",
+  "Great Desert": "Vasto Deserto",
+  "The Nest": "Nido",
+  "Oasis": "Oasi",
+  "Eidos 7": "Eidos 7",
+  "Eidos 9": "Eidos 9",
+  "Xion": "Xion",
+  "Matrix 11": "Matrix 11",
+  "Spire 4": "Spire 4",
+  "Naytiba": "Naytiba",
+  "Providence": "Provvidenza",
+  "Elder Naytiba": "Naytiba Anziano",
+  "Atelier": "Atelier",
+  "Ocean Maid": "Cameriera dell'Oceano",
+  "Fantastic Bait": "Esca eccezionale",
+  "Eye of the Hurricane": "L'occhio del ciclone",
+  "Survival tree": "albero delle abilità di sopravvivenza",
+  "Beta tree": "albero delle abilità beta",
+  "Burst tree": "albero delle abilità esplosive",
+  "Tachy tree": "albero delle abilità della modalità Tachy",
+  "Counter": "Contrattacco",
+  "Reflex Boost": "Incremento di riflessi",
+  "Focus Boost": "Incremento di concentrazione",
+  "Double Dodge": "Schivata doppia",
+  "Beta Energy Recharge": "Ricarica energia beta",
+  "Triplet": "Triattacco",
+  "Slash": "Squarcio",
+  "Tempest": "Tempesta",
+  "Descending Break": "Schianto dall'alto",
+  "Ambush": "Agguato"
+ },
+ "unverified_it": [
+  "Blink",
+  "Repulse",
+  "Shield Breaker",
+  "Reflection",
+  "Chain Reflection",
+  "Counter Chain",
+  "Quadruplet",
+  "Infinite Breaker",
+  "Life Steal",
+  "Aftershock",
+  "Winged Shield",
+  "Judgement Counter",
+  "Judgement Reflection",
+  "Double Jump",
+  "Training Gear",
+  "Gear",
+  "Reflex-Type",
+  "Protection-Type",
+  "Recovery-Type",
+  "Eagle Eye-Type",
+  "Supply Camp",
+  "Large Supply Camp",
+  "Hidden Truth",
+  "Orcal's Testimony",
+  "Burning Xion",
+  "Last Fragment",
+  "Secret Garden",
+  "Looking Glass",
+  "Light of Hope",
+  "Alpha Signal",
+  "Moonwell",
+  "Cryo the Clear",
+  "Cocoon Naytiba",
+  "Angel",
+  "Library camp",
+  "Space Center",
+  "Small Shrimp",
+  "Wriggling Insect",
+  "Fish Slice",
+  "Special (bait)",
+  "Fishing Data",
+  "Advanced Fishing Data",
+  "Damaged Weapon Core",
+  "Skill Tree",
+  "SP",
+  "Orcal",
+  "Roxanne",
+  "Clyde",
+  "Lily",
+  "Adam",
+  "Kaya",
+  "Enya",
+  "Su",
+  "D1G-g2r"
+ ],
+ "build_bullets": [
+  {
+   "h": "Core",
+   "t": "Stellar Blade has no classes; your 'sword-and-board' is the Survival skill tree. You win by mastering Perfect Parry."
+  },
+  {
+   "h": "Parry core",
+   "t": "Rush Perfect Parry mastery in the Survival tree: Counter I/II and Counter Chain, Reflection/Chain Reflection (Perfect Dodge follow-ups)."
+  },
+  {
+   "h": "Flash counters",
+   "t": "Also take Blink and Repulse (counters for blue/purple flash attacks), Reflex Boost and Focus Boost, plus Beta Energy Recharge so parries fuel Beta skills."
+  },
+  {
+   "h": "Beta tree",
+   "t": "Beta tree: Shield Breaker and Triplet→Quadruplet."
+  },
+  {
+   "h": "Burst tree",
+   "t": "Burst tree: Tempest with Life Steal and Descending Break."
+  },
+  {
+   "h": "Tachy tree",
+   "t": "Tachy tree defensive line: Winged Shield, Judgement Counter I/II, Judgement Reflection."
+  },
+  {
+   "h": "Exospines",
+   "t": "Exospines: Reflex-Type (wider parry windows) + Protection-Type or Recovery-Type."
+  },
+  {
+   "h": "Difficulty",
+   "t": "Every trophy is obtainable on Story Mode — there are no difficulty trophies."
+  }
+ ],
+ "build_bullets_it": [
+  {
+   "h": "Il cuore",
+   "t": "Stellar Blade non ha classi; la tua build ‘spada e scudo’ è l’albero delle abilità di sopravvivenza (Survival). Si vince padroneggiando la Parata perfetta (Perfect Parry)."
+  },
+  {
+   "h": "Base parata",
+   "t": "Punta subito alla padronanza della Parata perfetta (Perfect Parry) nell’albero Survival: Contrattacco (Counter) I/II e Counter Chain, Reflection/Chain Reflection (follow-up della Schivata perfetta (Perfect Dodge))."
+  },
+  {
+   "h": "Contromosse lampo",
+   "t": "Prendi anche Blink e Repulse (contromosse per gli attacchi con lampo blu/viola), Incremento di riflessi (Reflex Boost) e Incremento di concentrazione (Focus Boost), più Ricarica energia beta (Beta Energy Recharge) così le parate alimentano le abilità Beta."
+  },
+  {
+   "h": "Albero Beta",
+   "t": "Albero Beta: Shield Breaker e Triattacco (Triplet)→Quadruplet."
+  },
+  {
+   "h": "Albero Burst",
+   "t": "Albero delle abilità esplosive (Burst): Tempesta (Tempest) con Life Steal e Schianto dall’alto (Descending Break)."
+  },
+  {
+   "h": "Albero Tachy",
+   "t": "Linea difensiva dell’albero Tachy: Winged Shield, Judgement Counter I/II, Judgement Reflection."
+  },
+  {
+   "h": "Esospine",
+   "t": "Esospine (Exospines): Reflex-Type (finestre di parata più ampie) + Protection-Type o Recovery-Type."
+  },
+  {
+   "h": "Difficoltà",
+   "t": "Ogni trofeo è ottenibile in modalità Storia — non ci sono trofei legati alla difficoltà."
+  }
+ ]
+}

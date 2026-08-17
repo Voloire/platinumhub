@@ -1,0 +1,74 @@
+# Changelog
+
+Tutte le modifiche degne di nota di Platinum Hub.
+Formato ispirato a [Keep a Changelog](https://keepachangelog.com/it/1.1.0/);
+la numerazione segue [Semantic Versioning](https://semver.org/lang/it/).
+
+> **La sezione di ogni versione finisce, parola per parola, nel corpo della
+> GitHub Release**: la estrae `tools/changelog_extract.py` dal tag.
+> Se manca la sezione, il rilascio si ferma prima di compilare. Scrivila
+> pensando a chi scarica lo zip, non a chi legge i commit.
+
+## [Non rilasciato]
+
+## [4.0.0] - 2026-08-17
+
+Prima versione distribuita come **applicazione Windows**: si scarica uno zip, si
+scompatta e si fa doppio clic. Non serve più installare Python.
+
+### Aggiunto
+- **Eseguibile Windows** (`PlatinumHub.exe`), costruito da GitHub Actions a ogni
+  tag e pubblicato nelle Release con il suo SHA256.
+- **Controllo aggiornamenti all'avvio**: se esiste una versione più recente
+  compare un avviso con il link al download e le note di questa pagina. Una sola
+  chiamata, con timeout corto: senza rete l'app parte lo stesso. Nessun download
+  automatico e nessuna installazione silenziosa — il file lo scarichi tu.
+- **Pagina *Cosa è cambiato*** dentro l'app, che mostra questo changelog.
+- Pipeline di integrazione continua: lint, 130 test automatici, avvio dell'app su
+  Windows e Linux, a ogni push e su ogni pull request.
+- Analisi di sicurezza in pipeline: CodeQL, gitleaks (per non pubblicare mai un
+  `platinum.db` con dentro la password di OBS) e pip-audit.
+- Variabile `PLATINUM_HUB_DATA` per tenere i progressi dove vuoi — per esempio
+  accanto all'app su una chiavetta.
+
+### Cambiato
+- **I progressi si sono spostati in `%LOCALAPPDATA%\PlatinumHub\platinum.db`.**
+  Un database della 3.x accanto all'app viene importato da solo al primo avvio,
+  e l'originale resta lì rinominato `.migrated`. Da adesso puoi scompattare una
+  versione nuova sopra la vecchia senza perdere niente.
+- Il numero di versione ha una sola fonte di verità nel codice, e in release
+  arriva dal tag git: non può più divergere da quello che è stato pubblicato.
+
+### Corretto
+- Un corpo JSON valido ma non-oggetto (`[1,2]`, `"testo"`, `42`) faceva morire la
+  richiesta senza risposta, con un traceback nella finestra nera. Ora risponde 400.
+- Stesso problema con i campi numerici di tipo sbagliato (`"lead": "molto"`) su
+  sessioni, marker e passo corrente: ora è un 400 onesto.
+- La pagina Episodi andava in errore per sempre se esisteva un marker che puntava
+  a un passo oltre la fine della checklist.
+- `lead: 0` (nessun anticipo sui link) veniva scambiato per "non indicato" e
+  diventava 15.
+- I redirect di lingua e modalità accettavano un `next=//host` verso l'esterno.
+
+### Sicurezza
+- Il repository è pubblico: `platinum.db` contiene la password di OBS in chiaro e
+  **non va mai committato**. Lo escludono `.gitignore`, un controllo esplicito in
+  CI sui file vietati e gitleaks.
+
+## [3.2.0] - 2026-08-17
+
+### Aggiunto
+- Scorciatoie da tastiera globali su Windows (avvia/chiudi episodio, task fatto,
+  annulla, segnaposto), configurabili dalla scheda Sessione.
+- Coda dei link video mancanti: gli episodi chiusi senza URL restano in evidenza
+  nella barra della sessione finché non incolli il link.
+- Overlay per OBS con posizione, dimensione e durata configurabili dall'URL.
+
+### Cambiato
+- Alla chiusura di un episodio non viene più chiesto subito l'URL del video:
+  in quel momento il video non è ancora online.
+
+### Corretto
+- *Azzera la run* ora cancella davvero anche marker, sessioni ed episodi.
+- Intestazione di fase non più *sticky*: non copre più il testo dei passi.
+- Beast of Reincarnation, *Busy Paws*: 30 oggetti craftati, non 300.

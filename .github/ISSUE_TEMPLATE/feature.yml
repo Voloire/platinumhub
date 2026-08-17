@@ -1,0 +1,68 @@
+name: Proposta o correzione di contenuto
+description: Un'idea per l'app, un gioco da aggiungere, oppure un passo della checklist da correggere.
+title: "[Proposta] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Platinum Hub è scritto da una persona sola, nel tempo libero.
+        Le proposte sono lette tutte; non tutte diventano codice.
+        Le **correzioni di contenuto** (un passo sbagliato, un nome tradotto male,
+        un missabile nel punto sbagliato) hanno la corsia preferenziale.
+
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Di cosa si tratta
+      options:
+        - "Correzione a una checklist esistente (passo sbagliato, ordine, missabile)"
+        - "Traduzione italiana da correggere"
+        - "Gioco nuovo da aggiungere"
+        - "Funzione nuova dell'app"
+        - "Altro"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposta
+    attributes:
+      label: Cosa proponi
+      description: Con parole tue.
+    validations:
+      required: true
+
+  - type: input
+    id: gioco
+    attributes:
+      label: Gioco interessato
+      placeholder: "Elden Ring, Nioh 3, ... (lascia vuoto se non riguarda un gioco)"
+    validations:
+      required: false
+
+  - type: textarea
+    id: passo
+    attributes:
+      label: Passo o fase interessata
+      description: Copia il testo del passo, o dì in che fase si trova.
+      placeholder: "Fase 4 — 'Parla con Millicent al Pozzo...'"
+    validations:
+      required: false
+
+  - type: textarea
+    id: fonte
+    attributes:
+      label: Come lo sai
+      description: |
+        Per le correzioni di contenuto questa è la parte che conta di più:
+        l'hai verificato in gioco? c'è una guida che lo dice? uno screenshot?
+      placeholder: "Verificato in gioco su PS5, versione 1.16. / PowerPyx dice che ..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: perche
+    attributes:
+      label: Perché sarebbe utile
+    validations:
+      required: false

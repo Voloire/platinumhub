@@ -1,0 +1,187 @@
+name: CI
+
+# Runs on every branch push and every pull request.
+# Also callable from release.yml (workflow_call) so that a tag can never be
+# published unless this whole workflow is green.
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_call:
+
+# Least privilege: nothing here writes to the repository.
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PYTHON_VERSION: "3.12"
+
+jobs:
+
+  # ---------------------------------------------------------------- lint
+  lint:
+    name: Lint (ruff)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Setup Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+      - name: Install dev dependencies
+        run: python -m pip install --disable-pip-version-check -r requirements-dev.txt
+      - name: ruff check
+        run: python -m ruff check --output-format=github .
+
+  # ------------------------------------------------- repository hygiene
+  # The single most dangerous accident in this project is committing
+  # platinum.db: it contains the OBS WebSocket password in clear text.
+  hygiene:
+    name: Hygiene (file vietati + gitleaks)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout (full history, gitleaks needs it)
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Nessun file privato tracciato da git
+        shell: bash
+        run: |
+          set -euo pipefail
+          bad="$(git ls-files | grep -Ei '(^|/)(platinum\.db|diagnostica\.txt)$|\.(db|db-wal|db-shm|db-journal|log)$|(^|/)platinum-backup-.*\.json$' || true)"
+          if [ -n "$bad" ]; then
+            echo "::error::File privati tracciati nel repository (rimuovili dall'indice e dalla storia):"
+            echo "$bad"
+            exit 1
+          fi
+          echo "OK: nessun database, backup o log tracciato."
+
+      - name: Install gitleaks (binario ufficiale, versione fissata)
+        shell: bash
+        env:
+          GITLEAKS_VERSION: "8.30.1"
+        run: |
+          set -euo pipefail
+          base="https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}"
+          tarball="gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz"
+          curl -sSfL --retry 3 -o "$tarball" "$base/$tarball"
+          curl -sSfL --retry 3 -o checksums.txt "$base/gitleaks_${GITLEAKS_VERSION}_checksums.txt"
+          # Integrity check against the checksum file published with the release.
+          grep " $tarball\$" checksums.txt | sha256sum -c -
+          tar -xzf "$tarball" gitleaks
+          sudo install -m 0755 gitleaks /usr/local/bin/gitleaks
+          rm -f "$tarball" checksums.txt gitleaks
+          gitleaks version
+
+      - name: gitleaks - storia git
+        run: gitleaks git --no-banner --redact --exit-code 1 .
+
+      - name: gitleaks - working tree
+        run: gitleaks dir --no-banner --redact --exit-code 1 .
+
+  # ---------------------------------------------------------------- audit
+  audit:
+    name: pip-audit (dipendenze di sviluppo)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Setup Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+      - name: Install pip-audit
+        run: python -m pip install --disable-pip-version-check -r requirements-dev.txt
+      - name: pip-audit
+        run: python -m pip_audit --strict --progress-spinner=off -r requirements-dev.txt
+
+  # ---------------------------------------------------------------- tests
+  test:
+    name: Test (ubuntu)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      # tests/harness.py copies the app into a temporary sandbox before every
+      # run; this tells it where the app lives. In CI the app IS the checkout.
+      PLATINUM_HUB_DIR: ${{ github.workspace }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Setup Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+      - name: Install dev dependencies
+        run: python -m pip install --disable-pip-version-check -r requirements-dev.txt
+
+      # Fast lane: data integrity + API + rendering + robustness. No browser.
+      # These are the tests that protect the positional 0/1 progress string.
+      - name: pytest
+        run: python -m pytest
+
+      # Second opinion: the suite must also run with the plain standard-library
+      # runner, on a machine where pytest is not installed. If this breaks, the
+      # tests have grown a hidden dependency on pytest.
+      - name: Runner senza dipendenze (tests/run_all.py)
+        run: python tests/run_all.py
+
+      # Slow lane: the browser tests. They live in tests/optional_playwright_ui.py,
+      # a file deliberately named so that pytest and run_all.py do NOT collect it
+      # (the base suite must stay standard-library only). Here we run it on purpose.
+      - name: Install Playwright Chromium
+        run: python -m playwright install --with-deps chromium
+      - name: Test di interfaccia (Playwright)
+        run: python tests/optional_playwright_ui.py
+
+      - name: Upload test artifacts
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: test-artifacts-ubuntu
+          path: |
+            diagnostica.txt
+            test-results/
+            playwright-report/
+          if-no-files-found: ignore
+          retention-days: 7
+
+  # ---------------------------------------------------------------- smoke
+  # Deliberately installs NOTHING: this job is the living proof that the
+  # application runs on a bare Python 3 with zero runtime dependencies.
+  smoke:
+    name: Avvio app (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Setup Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: L'app parte e risponde
+        run: python tools/smoke_check.py

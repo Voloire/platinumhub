@@ -1,0 +1,226 @@
+==========================================================
+ PLATINUM HUB  ·  by Voloirex   ·   v3.2
+ Seven platinum runs, one home page, progress saved forever
+ Bilingual: Italian / English
+==========================================================
+
+
+WHAT THIS IS
+------------
+A little offline app for your PC. It opens a home page in your browser
+where you pick which platinum run you're playing, and every checkbox you
+tick is written straight into a local database. Close everything, reboot
+the PC, come back a month later: your progress is exactly where you left
+it. No accounts, no cloud, no internet needed.
+
+Runs included:
+  · Elden Ring                    - Vagabond shield-knight, all 42 trophies,
+                                    all 3 endings in ONE playthrough via the
+                                    save-backup method       (150 steps)
+  · Dark Souls Remastered         - Knight                    (87 steps)
+  · Dark Souls III                - Knight                    (68 steps)
+  · Stellar Blade                 - Eve, full collectible run (73 steps)
+  · The First Berserker: Khazan   - greatsword, true ending   (61 steps)
+  · Lies of P + Overture          - Motivity (strength) build, 42 base
+                                    + 11 Overture achievements = 53 on
+                                    Steam                     (159 steps)
+  · Beast of Reincarnation        - Emma & Kuu, parry-tank    (67 steps)
+  · Black Myth: Wukong            - Smash-stance tank, secret ending,
+                                    one NG+ cycle              (72 steps)
+  · Nioh 3                        - Odachi samurai, 51 trophies, one
+                                    playthrough, zero missables (61 steps)
+  · NieR: Automata                - 2B/9S/A2, all 48 trophies earned in
+                                    play, never bought          (67 steps)
+
+
+LANGUAGE
+--------
+The  [ Language  ITA  ENG ]  switch sits in TWO places so you cannot
+miss it: top right of every page, and inside the toolbar of every
+checklist next to "Reset run". The active one has the solid gold box.
+
+NOT SEEING IT? You are almost certainly running an older folder.
+Check the first line of the black console window: it must read
+"PLATINUM HUB v3.2".
+
+It switches It switches the interface AND the
+route content, item names included, and the choice is remembered.
+
+In Italian, in-game names use the OFFICIAL Italian localisation, taken
+from the official Italian trophy lists and from guides that transcribe
+in-game text. Where the Italian name could not be verified, the English
+name is kept ON PURPOSE - a correct English name beats an invented
+Italian one. Italian mode also adds an EN <-> IT glossary at the bottom
+of each checklist, handy when following an English guide.
+
+
+HOW TO START IT (Windows 11)
+----------------------------
+1. Unzip this folder anywhere you like (Desktop, Documents, whatever).
+2. Double-click  run.bat
+3. A black console window opens and your browser opens on the hub.
+4. Play. Tick boxes. That's it.
+
+Leave the black console window open while you use the hub - it IS the app.
+When you're done, just close it (or press Ctrl+C in it).
+
+FIRST TIME ONLY: you need Python 3 installed. If run.bat tells you it
+can't find it, install it once - it's free and takes 30 seconds:
+   · easiest: open the Microsoft Store, search "Python 3.12", Install
+   · or: https://www.python.org/downloads/  (tick "Add python.exe to PATH")
+Then double-click run.bat again. Nothing else to install - no pip, no
+libraries, no dependencies. The app only uses what ships with Python.
+
+On Mac/Linux the same thing works with:  python3 app.py
+
+
+THE TOOLBAR ON EACH RUN
+-----------------------
+  filter steps...      type anything (an item, a boss, an area) and only
+                       the matching steps stay, with their phases opened
+                       automatically. Shortcut: press  /  to jump there.
+  hide completed       removes everything already ticked. Near the end of
+                       a run this is the difference between scrolling 5
+                       rows and scrolling 150.
+  only missable        shows only the steps you can lose forever. Run it
+                       before leaving an area for good.
+  Where I left off     jumps to the first unticked step, opens its phase
+                       and highlights it. It also does this by itself
+                       when you reopen a run in progress.
+  Expand / Collapse    opens or closes every phase at once.
+  Reset run            wipes that game COMPLETELY: ticks, recorded
+                       episodes with their video URLs, timestamp markers
+                       and your notes. Other games are untouched. It asks
+                       first, listing exactly what goes.
+
+Filter and language settings persist between sessions.
+
+
+WHERE YOUR PROGRESS LIVES, AND BACKUPS
+--------------------------------------
+In  platinum.db  next to app.py. A standard SQLite database, created on
+first run, holding all seven runs plus notes and preferences.
+
+  · Quick backup       -> copy platinum.db somewhere safe
+  · Dated backup       -> "Download backup" on the home page writes a
+                          .json with everything in it
+  · Restore            -> "Restore backup…" and pick that file (it asks
+                          first: restoring replaces everything)
+  · Move to another PC -> copy the whole folder, progress comes along
+  · Start over on one run -> open it and click "Reset run"
+  · Start over completely -> delete platinum.db (recreated empty)
+
+Each run page also has a per-run NOTES box at the bottom - also saved in
+the database.
+
+
+THE standalone-html FOLDER
+--------------------------
+The same seven checklists as single HTML files, also bilingual with
+ITA/ENG buttons. Those DO open with a double-click, no Python needed.
+The catch: they cannot save by themselves, because a lone HTML file has
+no database. Hit "Copy progress code" before closing and keep the code
+in a text file, then "Load code" next time.
+
+Use them to share a checklist (Drive, phone, a friend) or as a backup.
+For playing, use the hub - it saves on its own, which is exactly why the
+progress-code buttons are gone from the hub itself.
+
+
+RUN NOTES & WARNINGS
+--------------------
+The orange box above the phases starts COLLAPSED. Inside: the golden
+rules (the mistakes that cost you a trophy) and the build explained as
+bullets. Open it once before you start, then fold it away.
+
+Throughout the checklist, names in CAPITALS - stats, weapons, items,
+areas - are tinted cyan, so you can find the subject of a sentence
+without reading the whole sentence.
+
+
+TWO MODES: GAMER AND STREAMER
+-----------------------------
+Top right, next to the language: [ Mode GAMER STREAMER ]. Ships in
+GAMER.
+
+GAMER is the essential experience: checklist, filters, notes. No
+sessions, no OBS, no markers. If someone hands you a checklist that
+was recorded, Gamer keeps the ▶ links to the videos - which is why
+you downloaded it.
+
+STREAMER adds the session bar plus two tabs, Episodes and Session.
+
+
+RECORDING TIMESTAMPS WHILE YOU PLAY
+-----------------------------------
+1) In OBS: Tools -> WebSocket Server Settings -> enable it, copy the
+   password.
+2) In the hub: Session tab -> paste the password -> Test. It must go
+   green.
+3) Hit "Start episode" when the stream or the recording starts.
+4) Play and tick boxes as usual. Nothing else to do.
+
+Ticking task 3 records two things at once: task 3 DONE now, and task
+4 STARTED now. So every task has a start and an end, and chapters are
+generated from the start - which is where a viewer wants to land.
+
+Out of order? Double-click a row to say "this is what I'm doing now".
+
+WITHOUT OBS it still works, on an internal stopwatch started by
+"Start episode". Less accurate if you pause the recording, but you
+still get the markers. Every marker stores two times, the OBS
+timecode and the wall clock, so nothing is ever lost.
+
+
+ONCE THE VIDEO IS PUBLISHED
+---------------------------
+Session tab -> paste the YouTube URL and say which second of the
+recording the published cut starts from (the trimmed intro). One
+number. Every stamp in that episode becomes a link to the exact
+moment.
+
+There is also a LEAD (15 seconds by default): you tick the box AFTER
+the thing happened, so links land slightly before it.
+
+The Episodes tab has each episode's timeline plus "Copy YouTube
+chapters" (trophy steps only, ready for the description) and "Copy
+task list" (everything).
+
+Nothing is assigned by hand: a session is an episode, so a task
+belongs to the episode you ticked it in.
+
+
+OVERLAY IN OBS
+--------------
+Session tab -> an address like http://127.0.0.1:8787/overlay/er
+In OBS add a "Browser" source, paste it, 1920x1080, transparent
+background. Done.
+
+The video now shows the task you are on, taken from the checklist,
+with its phase, location, the trophy it unlocks and what comes next.
+It follows your ticks by itself, in both the stream and the file.
+
+Tweak it with ?pos=bl|br|top|tr &size=s|m|l &next=0 &progress=0
+
+
+TAG LEGEND (same on every run)
+------------------------------
+  solid gold border   a trophy pops on this exact step
+  dashed gold border  counts toward a collection trophy (e.g. 4/9
+                      legendary armaments) - the number is in the tag
+  BUILD               build item: weapon, armour, talisman, stat point
+  quest               questline / NPC / lore step
+  MISSABLE            you can permanently lose this - don't skip it
+
+
+SOURCES
+-------
+Every route was researched against PowerPyx, Fextralife, Game8,
+PSNProfiles and community threads, then re-checked by independent
+fact-checking passes that corrected item locations and questline gates.
+The Italian layer was built from official Italian trophy lists and
+Italian sources transcribing in-game text, then audited by a separate
+adversarial pass hunting for invented names.
+
+
+                    One run. Every trophy. Good luck.

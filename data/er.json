@@ -1,0 +1,3003 @@
+{
+ "game": "Elden Ring",
+ "prefix": "ERV",
+ "playthroughs": "1 playthrough (all 3 endings via the save-backup method)",
+ "hours": "90-120 hours for a first-time player taking the scenic route; 60-75 hours if you already know the map. Add 3-5 hours if Malenia fights back hard.",
+ "trophy_total": 42,
+ "build_summary": "You are playing the classic Elden Ring shield-knight: a Vagabond who wins by standing still. The entire build is a 100% physical-block medium shield in the left hand (the starting Heater Shield is already 100% physical and carries you until you swap to a Brass Shield, Banished Knight's Shield or Beast Crest Heater Shield for stability) and a Heavy-affinity greatsword in the right, and the core mechanic is the GUARD COUNTER: block an incoming attack, then immediately press heavy attack for a big, poise-breaking riposte that ignores most of what a boss is trying to do to you. Stat priority is VIGOR first and always — reach 28 VIG before Godrick, 40 before Leyndell and the 60 soft cap before the Haligtree, because dying in two hits is what actually stops shield builds. ENDURANCE is second (it buys stamina for blocking, not just equip load: target 25-30 by the Mountaintops and keep your equip load under 70% for a medium roll while wearing the Banished Knight set from Stormveil). STRENGTH is third, riding up from the Vagabond's starting 14 to 16 the moment you find the Claymore, then to 27-33 through Caelid and Altus, and finally to 50-60 late for a two-handed Heavy Claymore. DEXTERITY sits at 13-20 purely to meet weapon requirements, MIND at 14-20 for a couple of Ash of War uses, and INT/FAI/ARC never move off base. Weapon path: start on the Longsword with Storm Stomp from Gatefront, upgrade to the BLOODHOUND'S FANG from Bloodhound Knight Darriwil in Phase 1 (a Somber weapon, cheap to upgrade, carries you to Altus), pick up the CLAYMORE from the chest in Castle Morne's north building in Phase 3 and make it your permanent weapon, put a Heavy affinity on it, and slot ASH OF WAR: LION'S CLAW from the Lion Guardian at Fort Gael in Phase 5 — that overhead slam plus guard counters is your entire damage output for 80 hours. Keep ASH OF WAR: GOLDEN VOW (mounted Godrick Knight, Limgrave) on a spare weapon as a pre-boss buff. Talismans in acquisition order: the CURVED SWORD TALISMAN from the dark Banished-Knight room near Stormveil Cliffside (+20% guard counter damage, the single most important item in the build), the GREATSHIELD TALISMAN from the ballista-guarded carriage east of Erdtree-Gazing Hill (+guard stability), the DRAGONCREST GREATSHIELD TALISMAN from the Drainage Channel chest in Elphael (-20% physical damage), and ERDTREE'S FAVOR +2 from the Forbidden Lands lift courtyard (+HP, +stamina, +equip load) — that is your endgame set, with RADAGON'S SORESEAL as a swap-in when you want raw stats and can eat the extra damage. Spirit Ashes are not optional in this route, they are part of the build: Lone Wolf and Lhutel early, a +10 MIMIC TEAR from the mid-game onward, and BLACK KNIFE TICHE for every hard fight from Astel to Malenia. Finish with a Heavy Claymore at +25 (one Ancient Dragon Smithing Stone at the final step, which also pops the God-Slaying Armament trophy) around RL 150.",
+ "golden_rules": [
+  "VIGOR first, every single level, until 60. A shield does not help a corpse.",
+  "Learn the guard counter (block, then heavy attack) in the tutorial cave. It is 80% of this build's damage.",
+  "Spirit Ashes and NPC summon signs are fully allowed and encouraged — summon everything, always. Upgrade the Mimic Tear to +10.",
+  "DO NOT KILL RECUSANT BERNAHL early. He must live to invade you in Crumbling Farum Azula, or you permanently lose the Devourer's Scepter and the Legendary Armaments trophy.",
+  "Take the BOLT OF GRANSAX in Leyndell BEFORE you burn the Erdtree. Leyndell Royal Capital becomes the Ashen Capital and is gone forever.",
+  "Do NOT touch the Three Fingers / Frenzied Flame Proscription door until Phase 13. Touching it early locks out both Age of the Stars and Elden Lord.",
+  "Finish Ranni's questline (Dark Moon Ring to her doll at the Cathedral of Manus Celes) before the final boss, or the Age of the Stars ending simply does not exist for you.",
+  "Fia's questline needs the Cursemark of Death from the Divine Tower of Liurnia, and you must NOT give D's brother the Twinned Armour Set until AFTER Lichdragon Fortissax.",
+  "Back up your save ONCE, at the Fractured Marika grace, immediately after the Elden Beast dies and before touching the statue — then spend that backup three times.",
+  "Turn OFF PS5 auto-cloud-upload / Steam Cloud for Elden Ring before you restore a backup, or the console will overwrite it for you.",
+  "Ending order is fixed: AGE OF THE STARS first, then ELDEN LORD, then LORD OF FRENZIED FLAME last.",
+  "Grab every Golden Seed and Sacred Tear you pass. Flask charges are the real difficulty slider, especially before Malenia."
+ ],
+ "stat_table": {
+  "note": "Approximate targets for a Vagabond sword-and-board knight. RL is roughly where you should be when you arrive in that area. INT/FAI/ARC never leave base — the legendary sorceries and incantations are collectibles for you, not spells you will ever cast. If you overshoot, Rennala respecs you for a Larval Tear.",
+  "columns": [
+   "RL",
+   "VIG",
+   "MND",
+   "END",
+   "STR",
+   "DEX",
+   "INT",
+   "FAI",
+   "ARC",
+   "Notes"
+  ],
+  "rows": [
+   [
+    "9",
+    "15",
+    "10",
+    "11",
+    "14",
+    "13",
+    "9",
+    "9",
+    "7",
+    "Vagabond start — Heater Shield already blocks 100% physical"
+   ],
+   [
+    "30",
+    "28",
+    "12",
+    "15",
+    "16",
+    "13",
+    "9",
+    "9",
+    "7",
+    "Margit / Godrick. 16 STR unlocks the Claymore; VIG is everything"
+   ],
+   [
+    "50",
+    "38",
+    "14",
+    "19",
+    "19",
+    "14",
+    "9",
+    "9",
+    "7",
+    "Liurnia, Raya Lucaria, Caria Manor. END buys blocking stamina"
+   ],
+   [
+    "70",
+    "45",
+    "15",
+    "22",
+    "27",
+    "15",
+    "9",
+    "9",
+    "7",
+    "Caelid, Radahn, Nokron. Heavy Claymore starts paying off"
+   ],
+   [
+    "90",
+    "52",
+    "16",
+    "26",
+    "33",
+    "17",
+    "9",
+    "9",
+    "7",
+    "Altus, Volcano Manor, Rykard, Leyndell. Past the 40-VIG survival line"
+   ],
+   [
+    "110",
+    "58",
+    "18",
+    "30",
+    "40",
+    "18",
+    "9",
+    "9",
+    "7",
+    "Mountaintops of the Giants, Fire Giant, Castle Sol"
+   ],
+   [
+    "125",
+    "60",
+    "20",
+    "32",
+    "47",
+    "20",
+    "9",
+    "9",
+    "7",
+    "Consecrated Snowfield, Mohg, Haligtree. VIG 60 soft cap before Malenia"
+   ],
+   [
+    "150",
+    "60",
+    "20",
+    "42",
+    "60",
+    "22",
+    "9",
+    "9",
+    "7",
+    "Farum Azula, Maliketh, Radagon / Elden Beast. Comfortable finish"
+   ]
+  ]
+ },
+ "phases": [
+  {
+   "title": "Phase 1 — Limgrave: Building the Shield-Knight",
+   "note": "Goal: get Torrent, open Ranni's and Blaidd's questlines, pick up the Ashes of War and talismans that define the whole run, and end on your first trophy. Play slow, learn the guard counter (block an attack, then press R2/RT immediately — it staggers almost everything in the early game).",
+   "steps": [
+    {
+     "text": "Create your character as VAGABOND. Take the Golden Seed as your Keepsake (an extra flask charge from minute one is worth more than anything else on the list). Vagabond starts at RL9 with 15 VIG / 11 END / 14 STR / 13 DEX, a Longsword, a Halberd and a Heater Shield with 100% physical block — that shield alone carries you for 20 hours.",
+     "loc": "Character creation screen",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Class: Vagabond — Keepsake: Golden Seed",
+       "label_it": "⚔️ Classe: Cavaliere errante — Keepsake: Seme d'oro"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Crea il personaggio come CAVALIERE ERRANTE (Vagabond). Prendi il Seme d'oro come Keepsake (una carica extra dell'ampolla dal primo minuto vale più di qualsiasi altra cosa in quella lista). Il Cavaliere errante parte a RL9 con 15 VIT / 11 TEM / 14 FOR / 13 DES, una Spada lunga, un'Alabarda e un Heater Shield con blocco fisico al 100% — quello scudo da solo ti porta avanti per 20 ore.",
+     "loc_it": "Schermata di creazione del personaggio"
+    },
+    {
+     "text": "Fight (or deliberately lose to) the Grafted Scion in the prologue — losing is scripted and costs nothing. Then do the Cave of Knowledge tutorial in the hole just past the first grace: it teaches guard counters and crouch attacks and gives the Tarnished's Wizened Finger.",
+     "loc": "Chapel of Anticipation → Cave of Knowledge, below Stranded Graveyard",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Learn guard counter timing",
+       "label_it": "⚔️ Impara il tempismo del guard counter"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Affronta (o perdi di proposito contro) il Grafted Scion nel prologo — perdere è previsto dallo script e non costa nulla. Poi fai il tutorial della Cave of Knowledge, nel buco appena oltre il primo luogo di grazia: insegna i guard counter e gli attacchi accovacciati e ti dà il Tarnished's Wizened Finger.",
+     "loc_it": "Chapel of Anticipation → Cave of Knowledge, sotto lo Stranded Graveyard"
+    },
+    {
+     "text": "Go to Church of Elleh and buy the Crafting Kit and Telescope from Merchant Kalé. Crafting gives you unlimited Fire Grease and boluses later.",
+     "loc": "Church of Elleh, north-west of the First Step grace",
+     "tags": [],
+     "trophy": false,
+     "text_it": "Vai alla Chiesa di Elleh e compra il Crafting Kit e il Telescope da Merchant Kalé. La creazione di oggetti ti dà Fire Grease e boli illimitati più avanti.",
+     "loc_it": "Chiesa di Elleh, a nord-ovest del luogo di grazia Primo Passo"
+    },
+    {
+     "text": "Loot Gatefront Ruins: the Limgrave map, the Whetstone Knife (unlocks Ash of War swapping at any grace) and Ash of War: Storm Stomp. Storm Stomp is your first real poise-breaker on the Longsword.",
+     "loc": "Gatefront Ruins, centre of west Limgrave",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Whetstone Knife + Ash of War: Storm Stomp",
+       "label_it": "⚔️ Coltello da affilatura + Ash of War: Storm Stomp"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Saccheggia le Gatefront Ruins: la mappa di Sepolcride, il Coltello da affilatura (Whetstone Knife, sblocca il cambio delle ceneri di guerra a qualsiasi luogo di grazia) e Ash of War: Storm Stomp. Storm Stomp è il tuo primo vero rompi-postura sulla Spada lunga.",
+     "loc_it": "Gatefront Ruins, centro della Sepolcride occidentale"
+    },
+    {
+     "text": "Rest at any grace at night until Melina appears and gives you Torrent (the Spectral Steed Whistle). You cannot progress Ranni's questline — and therefore the Age of the Stars ending — without accepting Torrent, so do this early.",
+     "loc": "Any Site of Grace in Limgrave (Gatefront is reliable)",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Ranni prerequisite: accept Torrent",
+       "label_it": "👤 Prerequisito Ranni: accetta Torrente"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Riposa a un luogo di grazia qualsiasi di notte finché non compare Melina e ti dà Torrente (lo Spectral Steed Whistle). Non puoi avanzare nella missione di Ranni — e quindi nel finale Era delle stelle — senza accettare Torrente, quindi fallo subito.",
+     "loc_it": "Qualsiasi luogo di grazia a Sepolcride (Gatefront è affidabile)"
+    },
+    {
+     "text": "Return to Church of Elleh at NIGHT and speak to Renna sitting on the wall. She gives you the Spirit Calling Bell and the Lone Wolf Ashes. This is technically the opening beat of Ranni's questline and it makes every boss in the game easier. Spirit Ashes are fully allowed in this route — use them.",
+     "loc": "Church of Elleh at night",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Ranni step 1 — Renna at Church of Elleh",
+       "label_it": "👤 Ranni passo 1 — Renna alla Chiesa di Elleh"
+      },
+      {
+       "type": "build",
+       "label": "⚔️ Spirit Calling Bell + Lone Wolf Ashes",
+       "label_it": "⚔️ Campana evoca spiriti + Ceneri di lupi spettrali"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Torna alla Chiesa di Elleh di NOTTE e parla con Renna, seduta sul muretto. Ti dà la Campana evoca spiriti e le Ceneri di lupi spettrali. Tecnicamente è la battuta d'apertura della missione di Ranni e rende più facile ogni boss del gioco. In questa route le Ceneri spiritiche sono pienamente consentite — usale.",
+     "loc_it": "Chiesa di Elleh, di notte"
+    },
+    {
+     "text": "Ride east to Mistwood and find Blaidd. If he is not howling on the ruins, buy/learn the Finger Snap gesture from the Nomadic Merchant on the cliff in north-east Mistwood and use it at Mistwood Ruins to summon him.",
+     "loc": "Mistwood Ruins, eastern Limgrave",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Blaidd questline start",
+       "label_it": "👤 Inizio missione di Blaidd"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Cavalca a est fino a Mistwood e trova Blaidd. Se non sta ululando sulle rovine, compra/impara il gesto Finger Snap dal Nomadic Merchant sulla scogliera nel nord-est di Mistwood e usalo alle Mistwood Ruins per farlo comparire.",
+     "loc_it": "Mistwood Ruins, Sepolcride orientale"
+    },
+    {
+     "text": "Go to the Forlorn Hound Evergaol, summon Blaidd's golden sign outside, and kill Bloodhound Knight Darriwil for the Bloodhound's Fang. It is a Somber weapon (cheap to upgrade), scales STR/DEX, and will out-damage everything you own until Altus.",
+     "loc": "Forlorn Hound Evergaol, south-west Limgrave",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Blaidd questline",
+       "label_it": "👤 Missione di Blaidd"
+      },
+      {
+       "type": "build",
+       "label": "⚔️ Bloodhound's Fang — main weapon for Phases 1-5",
+       "label_it": "⚔️ Zanna del limiere — arma principale per le Fasi 1-5"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Vai alla Forlorn Hound Evergaol, evoca il segno dorato di Blaidd all'esterno e uccidi il Cavaliere limiere Darriwil per la ZANNA DEL LIMIERE (Bloodhound's Fang). È un'arma funerea (economica da potenziare), scala su FOR/DES e farà più danno di qualsiasi altra cosa tu possieda fino ad Altus.",
+     "loc_it": "Forlorn Hound Evergaol, Sepolcride sud-occidentale"
+    },
+    {
+     "text": "Kill the mounted Godrick Knight patrolling the hill east of the Limgrave colosseum, south-west above Deathtouched Catacombs, for Ash of War: Golden Vow. A self-buff that gives +15% attack and +10% defence for 80 seconds is absurd on a shield knight — put it on your off-hand or a spare weapon and use it before every boss.",
+     "loc": "Hillside east of the Limgrave colosseum, above Deathtouched Catacombs",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Ash of War: Golden Vow — pre-boss buff",
+       "label_it": "⚔️ Cenere di guerra: Voto aureo — potenziamento pre-boss"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Uccidi il Godrick Knight a cavallo che pattuglia la collina a est del colosseo di Sepolcride, a sud-ovest sopra le Deathtouched Catacombs, per la CENERE DI GUERRA: VOTO AUREO (Ash of War: Golden Vow). Un auto-potenziamento che dà +15% di attacco e +10% di difesa per 80 secondi è assurdo su un cavaliere con scudo — mettilo sulla mano secondaria o su un'arma di scorta e usalo prima di ogni boss.",
+     "loc_it": "Collina a est del colosseo di Sepolcride, sopra le Deathtouched Catacombs"
+    },
+    {
+     "text": "Clear Deathtouched Catacombs (Erdtree Burial Watchdog) for a Deathroot, and Summonwater Village Highway (Tibia Mariner) for a second Deathroot plus the Skeletal Militiaman Ashes. You will hand Deathroot to D at Roundtable Hold, which is what eventually feeds Fia's questline.",
+     "loc": "Deathtouched Catacombs (north Limgrave) and Summonwater Village (north-east Limgrave)",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 D, Hunter of the Dead — Deathroot",
+       "label_it": "👤 D, Hunter of the Dead — Deathroot"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Ripulisci le Deathtouched Catacombs (Erdtree Burial Watchdog) per un Deathroot, e la Summonwater Village Highway (Tibia Mariner) per un secondo Deathroot più le Skeletal Militiaman Ashes. Consegnerai i Deathroot a D alla Rocca della Tavola rotonda, ed è questo che alla lunga alimenta la missione di Fia.",
+     "loc_it": "Deathtouched Catacombs (Sepolcride settentrionale) e Summonwater Village (Sepolcride nord-orientale)"
+    },
+    {
+     "text": "Speak to Kenneth Haight on the ruined bridge in eastern Limgrave, then clear Fort Haight for the Dectus Medallion (Left). Do not skip this — it is half of your ticket to Altus Plateau.",
+     "loc": "Fort Haight, south-east Limgrave",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠️ Dectus Medallion (Left) — needed for the Grand Lift of Dectus",
+       "label_it": "⚠️ Dectus Medallion (Left) — serve per il Grand Lift of Dectus"
+      },
+      {
+       "type": "quest",
+       "label": "👤 Kenneth Haight",
+       "label_it": "👤 Kenneth Haight"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Parla con Kenneth Haight sul ponte in rovina nella Sepolcride orientale, poi ripulisci Fort Haight per il Dectus Medallion (Left). Non saltarlo — è metà del tuo biglietto per l'Altopiano di Altus.",
+     "loc_it": "Fort Haight, Sepolcride sud-orientale"
+    },
+    {
+     "text": "Meet Roderika at Stormhill Shack and tell her to go to Roundtable Hold; take the Spirit Jellyfish Ashes from her. Once she is installed at the Hold she upgrades Spirit Ashes for you, which matters a lot for the Mimic Tear later.",
+     "loc": "Stormhill Shack, on the road up to Stormveil",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Roderika — Spirit Ash upgrades",
+       "label_it": "👤 Roderika — potenziamento delle Ceneri"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Incontra Roderika alla Stormhill Shack e dille di andare alla Rocca della Tavola rotonda; prendi da lei le Spirit Jellyfish Ashes. Una volta sistemata alla Rocca ti potenzia le Ceneri spiritiche, cosa che conta parecchio per la Lacrima riflessa più avanti.",
+     "loc_it": "Stormhill Shack, sulla strada che sale verso Stormveil"
+    },
+    {
+     "text": "Level up to roughly RL 25-30 before the gate boss. Pour everything into VIGOR first — the single biggest mistake Vagabond players make is levelling STR before VIG. Target VIG 28 / END 15 / STR 16 / DEX 13.",
+     "loc": "Any Site of Grace (Table of Lost Grace / Roundtable)",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ VIG first, always",
+       "label_it": "⚔️ Prima la VIT, sempre"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Sali fino a circa RL 25-30 prima del boss del cancello. Metti tutto in VITALITÀ per prima cosa — l'errore più grande dei giocatori Cavaliere errante è alzare la FOR prima della VIT. Obiettivo: VIT 28 / TEM 15 / FOR 16 / DES 13.",
+     "loc_it": "Qualsiasi luogo di grazia (Tavola dei luoghi di grazia / Rocca della Tavola rotonda)"
+    },
+    {
+     "text": "Kill Margit, the Fell Omen at the Stormveil gate. Summon Sorcerer Rogier's golden sign outside the fog, use the Lone Wolf Ashes, and throw the Margit's Shackle if you bought it from Patches in Murkwater Cave. Block-and-guard-counter his combos rather than rolling.",
+     "loc": "Castleward Tunnel, gate of Stormveil Castle",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Margit, the Fell Omen",
+       "label_it": "🏆 Margit il Presagio implacabile"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi Margit il Presagio implacabile al cancello di Stormveil. Evoca il segno dorato di Sorcerer Rogier fuori dalla nebbia, usa le Ceneri di lupi spettrali e lancia il Margit's Shackle se l'hai comprato da Patches alla Murkwater Cave. Para e fai guard counter sulle sue combo invece di schivare in capriola.",
+     "loc_it": "Castleward Tunnel, cancello del Castello di Grantempesta"
+    }
+   ],
+   "title_it": "Fase 1 — Sepolcride: costruire il cavaliere con scudo",
+   "note_it": "Obiettivo: ottenere Torrente, aprire le missioni di Ranni e Blaidd, raccogliere le ceneri di guerra e i talismani che definiscono tutta la run, e chiudere con il primo trofeo. Gioca lento, impara il guard counter (para un attacco, poi premi subito R2/RT — stordisce quasi tutto nella prima parte del gioco)."
+  },
+  {
+   "title": "Phase 2 — Stormveil Castle, Godrick and the Roundtable Hold",
+   "note": "Stormveil is where the Vagabond becomes the Vagabond: full Banished Knight armour, the Curved Sword Talisman that makes guard counters hit like a truck, and your first Great Rune. Two trophies here plus the Great Rune trophy.",
+   "steps": [
+    {
+     "text": "Enter Stormveil through the main gate and talk to Gatekeeper Gostoc. Take the main route (not Gostoc's side path) so you pass through the courtyard and rampart towers where the Banished Knights live.",
+     "loc": "Stormveil Castle, Main Gate",
+     "tags": [],
+     "trophy": false,
+     "text_it": "Entra a Stormveil dal cancello principale e parla con Gatekeeper Gostoc. Prendi la via principale (non la scorciatoia di Gostoc) così passi per il cortile e per le torri dei bastioni dove vivono i Banished Knight.",
+     "loc_it": "Castello di Grantempesta, cancello principale"
+    },
+    {
+     "text": "Farm two or three Banished Knights on the ramparts for the Banished Knight armour set. It is the best poise-per-weight heavy set available this early; you want to stay under 70% equip load (medium roll) with Great Rune-level poise.",
+     "loc": "Stormveil Castle ramparts and Rampart Tower",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Banished Knight armour set — poise",
+       "label_it": "⚔️ Banished Knight armour set — postura"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Fai il farming di due o tre Banished Knight sui bastioni per il Banished Knight armour set. È il miglior set pesante per rapporto postura/peso disponibile così presto; vuoi restare sotto il 70% di carico (capriola media) con una postura da Runa maggiore.",
+     "loc_it": "Bastioni del Castello di Grantempesta e Rampart Tower"
+    },
+    {
+     "text": "From the Stormveil Cliffside grace, find the DARK ROOM guarded by a Banished Knight and open the chest inside for the CURVED SWORD TALISMAN (+20% guard counter damage). The warhawk room nearby is only an adjacent pass-through, not the chest room — keep going into the unlit chamber with the knight. This talisman is the single most important item for this build; equip it now and never take it off.",
+     "loc": "Dark room near the Stormveil Cliffside grace, guarded by a Banished Knight",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Curved Sword Talisman — core build item, +20% guard counters",
+       "label_it": "⚔️ Curved Sword Talisman — oggetto chiave della build, +20% ai guard counter"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Dal luogo di grazia Stormveil Cliffside, trova la STANZA BUIA sorvegliata da un Banished Knight e apri il forziere all'interno per il CURVED SWORD TALISMAN (+20% di danno ai guard counter). La stanza dei warhawk lì vicino è solo un passaggio adiacente, non la stanza del forziere — continua fino alla camera non illuminata con il cavaliere. Questo talismano è l'oggetto singolo più importante della build; equipaggialo ora e non toglierlo mai più.",
+     "loc_it": "Stanza buia vicino al luogo di grazia Stormveil Cliffside, sorvegliata da un Banished Knight"
+    },
+    {
+     "text": "Talk to Sorcerer Rogier in the Stormveil chapel (behind the Rampart Tower). His questline eventually gives you the Black Knife information that ties into Ranni and Fia.",
+     "loc": "Stormveil Castle chapel, near the Rampart Tower grace",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Rogier",
+       "label_it": "👤 Rogier"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Parla con Sorcerer Rogier nella cappella di Stormveil (dietro la Rampart Tower). La sua linea di missioni ti dà alla fine le informazioni sui Black Knife che si legano a Ranni e a Fia.",
+     "loc_it": "Cappella del Castello di Grantempesta, vicino al luogo di grazia Rampart Tower"
+    },
+    {
+     "text": "Talk to Nepheli Loux at the Liftside Chamber and remember her golden summon sign outside Godrick's fog — summon both her and your Spirit Ash for the fight.",
+     "loc": "Stormveil Castle, Liftside Chamber",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Nepheli Loux",
+       "label_it": "👤 Nepheli Loux"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Parla con Nepheli Loux alla Liftside Chamber, e ricordati del suo segno di evocazione dorato fuori dalla nebbia di Godrick — evoca lei e le tue Ceneri spiritiche per lo scontro.",
+     "loc_it": "Castello di Grantempesta, Liftside Chamber"
+    },
+    {
+     "text": "Kill Godrick the Grafted. Block his axe combos behind the Heater Shield, guard-counter after the last swing, and stay under his legs in phase two. You receive Godrick's Great Rune and a Remembrance (trade it at Roundtable for the Axe of Godrick or Godskin Peeler — either is fine, they are not collection items).",
+     "loc": "Godrick's Great Hall, Stormveil Castle",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Shardbearer Godrick",
+       "label_it": "🏆 Araldo del frammento Godrick"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi Godrick the Grafted. Para le sue combo d'ascia dietro l'Heater Shield, fai guard counter dopo l'ultimo fendente e resta sotto le sue gambe nella seconda fase. Ottieni la Godrick's Great Rune e un Ricordo (scambialo alla Rocca della Tavola rotonda per l'Axe of Godrick o il Godskin Peeler — vanno bene entrambi, non sono oggetti da collezione).",
+     "loc_it": "Godrick's Great Hall, Castello di Grantempesta"
+    },
+    {
+     "text": "Rest at the grace after Godrick; Melina offers to take you to the Roundtable Hold. Accept.",
+     "loc": "Godrick's Great Hall grace / any grace afterwards",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Roundtable Hold",
+       "label_it": "🏆 Rocca della Tavola rotonda"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Riposa al luogo di grazia dopo Godrick; Melina si offre di portarti alla Rocca della Tavola rotonda. Accetta.",
+     "loc_it": "Luogo di grazia della Godrick's Great Hall / qualsiasi luogo di grazia successivo"
+    },
+    {
+     "text": "At the Hold: give your Deathroot to D, Hunter of the Dead; hug Fia for the first time (this opens her questline); buy the Smithing Stone bell bearings you find from the Twin Maiden Husks; and hand Hewg your weapons for upgrades. Do NOT attack Ensha when he invades near the Hold — just kill him, it is safe, but do not aggro Gideon.",
+     "loc": "Roundtable Hold",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Fia hug #1",
+       "label_it": "👤 Abbraccio di Fia #1"
+      },
+      {
+       "type": "quest",
+       "label": "👤 D — Deathroot",
+       "label_it": "👤 D — Deathroot"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Alla Rocca: dai i tuoi Deathroot a D, Hunter of the Dead; abbraccia Fia per la prima volta (apre la sua missione); compra dalle Twin Maiden Husks i globi delle Pietre da forgiatura che trovi; e consegna le armi a Hewg per i potenziamenti. NON attaccare Ensha quando ti invade vicino alla Rocca — ucciderlo è sicuro, ma non far arrabbiare Gideon.",
+     "loc_it": "Rocca della Tavola rotonda"
+    },
+    {
+     "text": "Optional but strongly recommended: Fringefolk Hero's Grave (needs 2 Stonesword Keys, entrance at Stranded Graveyard). Grab Erdtree's Favor +1 and the Banished Knight Oleg Ashes. Oleg is a fantastic early Spirit Ash for a shield build because he tanks and staggers.",
+     "loc": "Fringefolk Hero's Grave, below Stranded Graveyard",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Erdtree's Favor +1, Banished Knight Oleg Ashes",
+       "label_it": "⚔️ Erdtree's Favor +1, Banished Knight Oleg Ashes"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Opzionale ma caldamente consigliato: Fringefolk Hero's Grave (servono 2 Chiavi della spada di pietra, ingresso allo Stranded Graveyard). Prendi Erdtree's Favor +1 e le Banished Knight Oleg Ashes. Oleg è una Cenere iniziale fantastica per una build con scudo perché tanka e stordisce.",
+     "loc_it": "Fringefolk Hero's Grave, sotto lo Stranded Graveyard"
+    },
+    {
+     "text": "Ride to the Divine Tower of Limgrave (the bridge east of Stormveil, past the Fort of Reprimand) and touch the altar at the top to restore Godrick's Great Rune. Then equip it and keep a stack of Rune Arcs — +5 to every stat for one Rune Arc is a huge boost on a low-level shield knight.",
+     "loc": "Divine Tower of Limgrave, east of Stormveil Castle",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Great Rune",
+       "label_it": "🏆 Runa maggiore"
+      },
+      {
+       "type": "build",
+       "label": "⚔️ Godrick's Great Rune equipped",
+       "label_it": "⚔️ Godrick's Great Rune equipaggiata"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Cavalca fino alla Divine Tower of Limgrave (il ponte a est di Stormveil, oltre il Fort of Reprimand) e tocca l'altare in cima per ripristinare la Godrick's Great Rune. Poi equipaggiala e tieni una scorta di Saette runiche — +5 a ogni statistica per un Saetta runica è un incremento enorme su un cavaliere con scudo di basso livello.",
+     "loc_it": "Divine Tower of Limgrave, a est del Castello di Grantempesta"
+    }
+   ],
+   "title_it": "Fase 2 — Castello di Grantempesta, Godrick e la Rocca della Tavola rotonda",
+   "note_it": "Stormveil è dove il Cavaliere errante diventa davvero il Cavaliere errante: il Banished Knight armour set completo, il Curved Sword Talisman che fa picchiare i guard counter come un camion, e la tua prima Runa maggiore. Due trofei qui, più quello della Runa maggiore."
+  },
+  {
+   "title": "Phase 3 — Weeping Peninsula, Castle Morne and the Siofra River",
+   "note": "Two more trophies, your first Legendary Armament, your first Legendary Spirit Ash, and the Claymore — the weapon this whole route is built around. Do this before Liurnia; it is low-level and packed with Golden Seeds and Sacred Tears.",
+   "steps": [
+    {
+     "text": "Cross the Bridge of Sacrifice (kill or avoid the Grafted Scion under it) and take the Weeping Peninsula map. Talk to Irina on the road south of the bridge, then to her father Edgar at Castle Morne — that opens the Castle Morne questline.",
+     "loc": "Bridge of Sacrifice, northern Weeping Peninsula",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Irina / Edgar",
+       "label_it": "👤 Irina / Edgar"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Attraversa il Bridge of Sacrifice (uccidi o evita il Grafted Scion sotto di esso) e prendi la mappa della Penisola del pianto. Parla con Irina sulla strada a sud del ponte, poi con suo padre Edgar a Castle Morne — così apri la missione di Castle Morne.",
+     "loc_it": "Bridge of Sacrifice, Penisola del pianto settentrionale"
+    },
+    {
+     "text": "Clear Tombsward Catacombs and kill the Cemetery Shade boss for LHUTEL THE HEADLESS ashes — Legendary Spirit Ash 1 of 6. Lhutel is also, genuinely, one of the best Spirit Ashes in the game for a slow melee build: she teleports, tanks, and throws spears.",
+     "loc": "Tombsward Catacombs, western Weeping Peninsula",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Spirit Ash 1/6 — Lhutel the Headless",
+       "label_it": "🏆 Spirito leggendario 1/6 — Lhutel Senzatesta"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Ripulisci le Tombsward Catacombs e uccidi il boss Cemetery Shade per le ceneri LHUTEL SENZATESTA (Lhutel the Headless) — Spirito leggendario 1 di 6. Lhutel è anche, sinceramente, una delle migliori Ceneri del gioco per una build corpo a corpo lenta: si teletrasporta, tanka e lancia lance.",
+     "loc_it": "Tombsward Catacombs, Penisola del pianto occidentale"
+    },
+    {
+     "text": "Enter Castle Morne. From the main courtyard entrance hug the RIGHT wall, go past the burning corpses surrounded by Misbegotten, and open the chest in the north building for the CLAYMORE (16 STR / 13 DEX). Put a Heavy affinity on it once you have the Whetstone Knife and Heavy Stone, and slot Lion's Claw or Golden Vow later. This is your weapon for the rest of the run.",
+     "loc": "Castle Morne, chest in the north building past the burning corpses",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ CLAYMORE — primary weapon for the whole route",
+       "label_it": "⚔️ CLAYMORE — arma principale per tutta la route"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Entra a Castle Morne. Dall'ingresso del cortile principale costeggia il muro a DESTRA, supera i cadaveri in fiamme circondati dai Misbegotten e apri il forziere nell'edificio nord per la CLAYMORE (16 FOR / 13 DES). Mettici un'affinità pesante appena hai il Coltello da affilatura e una Heavy Stone, e più avanti piazzaci Artiglio leonino o Voto aureo. Questa è la tua arma per il resto della run.",
+     "loc_it": "Castle Morne, forziere nell'edificio nord oltre i cadaveri in fiamme"
+    },
+    {
+     "text": "Kill the Leonine Misbegotten on the cliff platform at the back of Castle Morne. He drops the Remembrance-free GRAFTED BLADE GREATSWORD — Legendary Armament 1 of 9. You will not use it (it needs 40 STR) but it counts for the trophy, so bank it.",
+     "loc": "Castle Morne, seaside platform at the rear of the castle",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Leonine Misbegotten",
+       "label_it": "🏆 Progenie leonina"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Armament 1/9 — Grafted Blade Greatsword",
+       "label_it": "🏆 Armamento leggendario 1/9 — Spadone della lama innestata"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi la Progenie leonina (Leonine Misbegotten) sulla piattaforma a strapiombo sul retro di Castle Morne. Lascia cadere lo SPADONE DELLA LAMA INNESTATA (Grafted Blade Greatsword), che non richiede un Ricordo — Armamento leggendario 1 di 9. Non lo userai (servono 40 FOR) ma conta per il trofeo, quindi mettilo da parte.",
+     "loc_it": "Castle Morne, piattaforma sul mare sul retro del castello"
+    },
+    {
+     "text": "Return the Sword of Morne to Edgar (or to Irina's body — the outcome differs but neither blocks a trophy). Edgar later shows up in Liurnia's Revenger's Shack; killing him there gives the Sacrificial Twig.",
+     "loc": "Castle Morne rampart / Irina's spot on the road",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Edgar / Irina resolution",
+       "label_it": "👤 Risoluzione Edgar / Irina"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Riporta la Sword of Morne a Edgar (o al corpo di Irina — l'esito cambia ma nessuna delle due opzioni blocca un trofeo). Edgar ricompare più avanti alla Revenger's Shack di Liurnia; ucciderlo lì dà il Sacrificial Twig.",
+     "loc_it": "Bastioni di Castle Morne / il punto di Irina sulla strada"
+    },
+    {
+     "text": "Sweep the peninsula for Golden Seeds and Sacred Tears: Church of Pilgrimage, Callu Baptismal Church, Fourth Church of Marika, Tombsward Church, Isolated Merchant's Shack. Flask upgrades are the real difficulty setting in this game — do not skip them.",
+     "loc": "Weeping Peninsula, all churches and minor erdtrees",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Flask upgrades — aim for 8-9 charges by Liurnia",
+       "label_it": "⚔️ Potenziamenti dell'ampolla — punta a 8-9 cariche entro Liurnia"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Setaccia la penisola per Semi d'oro e Lacrime sacre: Chiesa del Pellegrinaggio, Chiesa battesimale di Callu, Quarta Chiesa di Marika, Tombsward Church, Isolated Merchant's Shack. I potenziamenti dell'ampolla sono la vera impostazione di difficoltà di questo gioco — non saltarli.",
+     "loc_it": "Penisola del pianto, tutte le chiese e i piccoli alberi madre"
+    },
+    {
+     "text": "Run Morne Tunnel and Limgrave Tunnels for Smithing Stones [1] and [2] and get the Claymore to +6 at Hewg. Also grab the Smithing-Stone Miner's Bell Bearing [1] from the Crystal Miners in the Raya Lucaria Crystal Tunnel later so you can just buy stones.",
+     "loc": "Morne Tunnel (Weeping Peninsula) and Limgrave Tunnels",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Claymore +6",
+       "label_it": "⚔️ Claymore +6"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Fai il Morne Tunnel e i Limgrave Tunnels per le Pietre da forgiatura [1] e [2] e porta la Claymore a +6 da Hewg. Più avanti prendi anche lo Smithing-Stone Miner's Bell Bearing [1] dai Crystal Miner nel Raya Lucaria Crystal Tunnel, così potrai semplicemente comprare le pietre.",
+     "loc_it": "Morne Tunnel (Penisola del pianto) e Limgrave Tunnels"
+    },
+    {
+     "text": "Take the Siofra River Well in eastern Mistwood down to the Siofra River. This underground zone is a separate map layer — ride the lift down, it is long.",
+     "loc": "Siofra River Well, eastern Mistwood, Limgrave",
+     "tags": [],
+     "trophy": false,
+     "text_it": "Prendi il Siofra River Well nella Mistwood orientale per scendere al Fiume Siofra. Questa zona sotterranea è un livello di mappa a parte — prendi l'ascensore verso il basso, è lungo.",
+     "loc_it": "Siofra River Well, Mistwood orientale, Sepolcride"
+    },
+    {
+     "text": "Light all EIGHT obelisks scattered around the Hallowhorn Grounds east of the Siofra River Bank grace. When the eighth is lit, the deer carcass at the back of the temple glows — interact with it to be teleported outside the boss fog.",
+     "loc": "Siofra River, Hallowhorn Grounds (8 obelisks)",
+     "tags": [],
+     "trophy": false,
+     "text_it": "Accendi tutti e OTTO gli obelischi sparsi per gli Hallowhorn Grounds a est del luogo di grazia Siofra River Bank. Quando accendi l'ottavo, la carcassa di cervo in fondo al tempio si illumina — interagisci con essa per essere teletrasportato davanti alla nebbia del boss.",
+     "loc_it": "Fiume Siofra, Hallowhorn Grounds (8 obelischi)"
+    },
+    {
+     "text": "Kill the Ancestor Spirit. He is a pure damage-check with a huge hitbox; Lhutel plus a Heavy Claymore R2 does it. Take the Ancestral Follower Ashes and the Remembrance.",
+     "loc": "Hallowhorn Grounds boss arena, Siofra River",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Ancestor Spirit",
+       "label_it": "🏆 Spirito ancestrale"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi lo Spirito ancestrale (Ancestor Spirit). È una pura prova di danno con una hitbox enorme; Lhutel più una R2 di Claymore pesante bastano. Prendi le Ancestral Follower Ashes e il Ricordo.",
+     "loc_it": "Arena del boss agli Hallowhorn Grounds, Fiume Siofra"
+    }
+   ],
+   "title_it": "Fase 3 — Penisola del pianto, Castle Morne e il Fiume Siofra",
+   "note_it": "Altri due trofei, il tuo primo Armamento leggendario, il tuo primo Spirito leggendario e la Claymore — l'arma attorno a cui è costruita tutta questa route. Fallo prima di Liurnia; è di basso livello ed è pieno di Semi d'oro e Lacrime sacre."
+  },
+  {
+   "title": "Phase 4 — Liurnia of the Lakes, Raya Lucaria and Caria Manor",
+   "note": "Three trophies, two Legendary Armaments' worth of groundwork, your first Legendary Sorcery, your first Legendary Talisman, and the formal start of Ranni's questline — which is the long pole for the Age of the Stars ending. Also the first Varré step.",
+   "steps": [
+    {
+     "text": "Leave Stormveil by the back gate (or ride the cliff road) into Liurnia of the Lakes and grab the map from the Liurnia Lake Shore stele.",
+     "loc": "Liurnia Lake Shore, southern Liurnia",
+     "tags": [],
+     "trophy": false,
+     "text_it": "Lascia Stormveil dal cancello posteriore (o cavalca lungo la strada a strapiombo) per entrare in Liurnia Lacustre e prendi la mappa dalla stele di Liurnia Lake Shore.",
+     "loc_it": "Liurnia Lake Shore, Liurnia meridionale"
+    },
+    {
+     "text": "Go to the Rose Church in south-west Liurnia and talk to White Mask Varré repeatedly. He asks whether the Two Fingers seemed right — answer 'They didn't seem right' to continue. You need a restored Great Rune (you have Godrick's) for him to move on. He gives you five Festering Bloody Fingers.",
+     "loc": "Rose Church, south-west Liurnia (island in the lake)",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Varré step 1 — Rose Church",
+       "label_it": "👤 Varré passo 1 — Rose Church"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Vai alla Rose Church nella Liurnia sud-occidentale e parla ripetutamente con White Mask Varré. Ti chiede se le Two Fingers ti siano sembrate giuste — rispondi 'Non mi sono sembrate giuste' per proseguire. Perché lui vada avanti serve una Runa maggiore ripristinata (hai quella di Godrick). Ti dà cinque Festering Bloody Fingers.",
+     "loc_it": "Rose Church, Liurnia sud-occidentale (isola nel lago)"
+    },
+    {
+     "text": "Clear Malefactor's Evergaol and kill Adan, Thief of Fire for FLAME OF THE FELL GOD — Legendary Sorcery/Incantation 1 of 7. You will never cast it (it needs 41 FAI); it just has to sit in your inventory.",
+     "loc": "Malefactor's Evergaol, western Liurnia",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Sorcery/Incantation 1/7 — Flame of the Fell God",
+       "label_it": "🏆 Stregoneria/Incantesimo leggendario 1/7 — Fiamma del dio caduto"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Ripulisci il Malefactor's Evergaol e uccidi Adan, Thief of Fire per la FIAMMA DEL DIO CADUTO (Flame of the Fell God) — Stregoneria/Incantesimo leggendario 1 di 7. Non la lancerai mai (servono 41 FED); deve solo restare nell'inventario.",
+     "loc_it": "Malefactor's Evergaol, Liurnia occidentale"
+    },
+    {
+     "text": "Get the Academy Glintstone Key: the obvious one is on the dragon-guarded corpse at the south-west tip of the lake near the Church of Vows; you can also buy a spare from Thops' teacher later. Talk to Thops at the Church of Irith for his questline.",
+     "loc": "South-western Liurnia lake tip / Church of Irith",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Thops",
+       "label_it": "👤 Thops"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Procurati l'Academy Glintstone Key: quella ovvia è sul cadavere sorvegliato dal drago sulla punta sud-occidentale del lago, vicino alla Church of Vows; puoi anche comprarne una di scorta più avanti dal maestro di Thops. Parla con Thops alla Church of Irith per la sua missione.",
+     "loc_it": "Punta sud-occidentale del lago di Liurnia / Church of Irith"
+    },
+    {
+     "text": "Enter the Academy of Raya Lucaria via the Main Academy Gate and kill the Red Wolf of Radagon in the Church of the Cuckoo. He is fast and squishy — shield up, punish the sword-teleport recovery.",
+     "loc": "Church of the Cuckoo, Academy of Raya Lucaria",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Red Wolf of Radagon",
+       "label_it": "🏆 Lupo rosso di Radagon"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Entra nell'Accademia di Raya Lucaria dal Main Academy Gate e uccidi il Lupo rosso di Radagon nella Church of the Cuckoo. È veloce e fragile — scudo alzato, punisci il recupero dopo il teletrasporto con la spada.",
+     "loc_it": "Church of the Cuckoo, Accademia di Raya Lucaria"
+    },
+    {
+     "text": "Open the chest on the SECOND FLOOR of the Debate Parlour for the RADAGON ICON — Legendary Talisman 1 of 8. It also raises casting speed, which is useless to you, but the trophy counts it.",
+     "loc": "Debate Parlour second floor, Academy of Raya Lucaria",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Talisman 1/8 — Radagon Icon",
+       "label_it": "🏆 Talismano leggendario 1/8 — Icona di Radagon"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Apri il forziere al SECONDO PIANO del Debate Parlour per l'ICONA DI RADAGON (Radagon Icon) — Talismano leggendario 1 di 8. Aumenta anche la velocità di lancio, cosa inutile per te, ma il trofeo lo conta.",
+     "loc_it": "Secondo piano del Debate Parlour, Accademia di Raya Lucaria"
+    },
+    {
+     "text": "Beat Rennala, Queen of the Full Moon. Phase one: kill the crawling students to break her shield, three times. Phase two: stay aggressive, roll through the moon. She gives the Great Rune of the Unborn and unlocks free respecs with a Larval Tear — useful if you overshoot a stat later.",
+     "loc": "Raya Lucaria Grand Library",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Rennala, Queen of the Full Moon",
+       "label_it": "🏆 Rennala, Regina del plenilunio"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Batti Rennala, Regina del plenilunio. Prima fase: uccidi gli studenti striscianti per rompere il suo scudo, tre volte. Seconda fase: resta aggressivo, schiva attraverso la luna. Ti dà la Great Rune of the Unborn e sblocca le riassegnazioni gratuite delle statistiche in cambio di una Lacrima di larva — utile se più avanti sfori una statistica.",
+     "loc_it": "Raya Lucaria Grand Library"
+    },
+    {
+     "text": "Note for later: the DARK MOON RING sits in a locked chest next to the Raya Lucaria Grand Library grace, opened with the Discarded Palace Key found in the Academy. You need it in Phase 6 to finish Ranni — grab it now so you do not have to backtrack.",
+     "loc": "Locked chest beside the Raya Lucaria Grand Library grace",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Ranni — Dark Moon Ring",
+       "label_it": "👤 Ranni — Anello della Luna Nera"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Required for the Age of the Stars ending",
+       "label_it": "⚠️ Necessario per il finale Era delle stelle"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Nota per dopo: l'ANELLO DELLA LUNA NERA (Dark Moon Ring) si trova in un forziere chiuso accanto al luogo di grazia della Raya Lucaria Grand Library, e si apre con la Discarded Palace Key che trovi nell'Accademia. Ti serve nella Fase 6 per completare Ranni — prendilo adesso così non devi tornare indietro.",
+     "loc_it": "Forziere chiuso accanto al luogo di grazia della Raya Lucaria Grand Library"
+    },
+    {
+     "text": "Ride north to Caria Manor and fight through the hands. Kill Royal Knight Loretta in the courtyard — stay mounted-off, shield up against the bolts, close the distance during her greatbow wind-up.",
+     "loc": "Caria Manor courtyard, north Liurnia",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Royal Knight Loretta",
+       "label_it": "🏆 Guardia reale Loretta"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Cavalca a nord fino al Maniero Cariano e fatti strada tra le mani. Uccidi la Guardia reale Loretta nel cortile — scendi da cavallo, scudo alzato contro i dardi, e accorcia la distanza mentre carica il suo grande arco.",
+     "loc_it": "Cortile del Maniero Cariano, Liurnia settentrionale"
+    },
+    {
+     "text": "Before leaving Caria Manor, drop into the manor's lower garden area and take the SWORD OF NIGHT AND FLAME from the chest — Legendary Armament 2 of 9.",
+     "loc": "Caria Manor, hidden basement chest",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Armament 2/9 — Sword of Night and Flame",
+       "label_it": "🏆 Armamento leggendario 2/9 — Spada della notte ardente"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prima di lasciare il Maniero Cariano, scendi nel giardino inferiore del maniero e prendi la SPADA DELLA NOTTE ARDENTE (Sword of Night and Flame) dal forziere — Armamento leggendario 2 di 9.",
+     "loc_it": "Maniero Cariano, forziere nascosto nel seminterrato"
+    },
+    {
+     "text": "Behind Caria Manor is Ranni's Rise. Talk to Ranni and accept her service. Then speak to Iji, Blaidd and Seluvis in the towers around her. This formally starts the Age of the Stars chain — everything from here to Phase 6 is that questline.",
+     "loc": "Ranni's Rise, Three Sisters, behind Caria Manor",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Ranni step 2 — enter her service",
+       "label_it": "👤 Ranni passo 2 — entra al suo servizio"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Age of the Stars ending depends on this",
+       "label_it": "⚠️ Il finale Era delle stelle dipende da questo"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Dietro il Maniero Cariano c'è la Guglia di Ranni. Parla con Ranni e accetta di entrare al suo servizio. Poi parla con Iji, Blaidd e Seluvis nelle torri attorno a lei. Questo avvia formalmente la catena dell'Era delle stelle — tutto da qui alla Fase 6 è quella missione.",
+     "loc_it": "Guglia di Ranni, Three Sisters, dietro il Maniero Cariano"
+    },
+    {
+     "text": "Go to the Village of the Albinaurics in south-west Liurnia, shoot the pot at the top of the village to reveal Albus, and get the HALIGTREE SECRET MEDALLION (RIGHT). Without it you cannot reach Consecrated Snowfield, Mohgwyn Palace by waygate, or the Haligtree at all.",
+     "loc": "Village of the Albinaurics, south-west Liurnia",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠️ Haligtree Secret Medallion (Right) — hard requirement for Malenia",
+       "label_it": "⚠️ Medaglione segreto del Sacro Albero (destro) — requisito assoluto per Malenia"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Vai al Village of the Albinaurics nella Liurnia sud-occidentale, spara al vaso in cima al villaggio per rivelare Albus, e prendi il MEDAGLIONE SEGRETO DEL SACRO ALBERO (DESTRO). Senza di esso non puoi raggiungere i Campi di neve consacrati, né Mohgwyn Palace tramite portale, né il Sacro Albero.",
+     "loc_it": "Village of the Albinaurics, Liurnia sud-occidentale"
+    },
+    {
+     "text": "Clear the Ruin-Strewn Precipice (the ravine in north Liurnia) and kill Magma Wyrm Makar. Shield up, stay under him, guard-counter the lava sweeps. This is also your backup route into Altus Plateau if you lose a Dectus half.",
+     "loc": "Ruin-Strewn Precipice, north Liurnia",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Magma Wyrm Makar",
+       "label_it": "🏆 Drago di magma Makar"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Ripulisci il Ruin-Strewn Precipice (la gola nella Liurnia settentrionale) e uccidi il Drago di magma Makar. Scudo alzato, resta sotto di lui, fai guard counter sulle spazzate di lava. È anche la tua via alternativa verso l'Altopiano di Altus se perdi una metà del Medaglione di Dectus.",
+     "loc_it": "Ruin-Strewn Precipice, Liurnia settentrionale"
+    },
+    {
+     "text": "Sweep Liurnia: Boc the Seamster (armour alterations), the Academy Crystal Cave, Bellum Church, Lakeside Crystal Cave, and the many Golden Seeds. Also find Church of Inhibition in north-east Liurnia — you will need it for Varré in Phase 7.",
+     "loc": "Liurnia of the Lakes, general sweep",
+     "tags": [],
+     "trophy": false,
+     "text_it": "Setaccia Liurnia: Boc the Seamster (modifiche alle armature), l'Academy Crystal Cave, la Bellum Church, la Lakeside Crystal Cave e i tanti Semi d'oro. Trova anche la Church of Inhibition nella Liurnia nord-orientale — ti servirà per Varré nella Fase 7.",
+     "loc_it": "Liurnia Lacustre, ricognizione generale"
+    },
+    {
+     "text": "Push the Claymore to +12-15 and level to about RL 50: VIG 38 / MND 14 / END 19 / STR 19 / DEX 14. Endurance is buying you stamina for blocking, not just equip load — blocking a Godrick combo costs a lot of stamina.",
+     "loc": "Roundtable Hold (Hewg)",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Claymore +12-15, RL ~50",
+       "label_it": "⚔️ Claymore +12-15, RL ~50"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Porta la Claymore a +12-15 e sali a circa RL 50: VIT 38 / MEN 14 / TEM 19 / FOR 19 / DES 14. La Tempra ti compra stamina per parare, non solo carico di equipaggiamento — parare una combo di Godrick costa un sacco di stamina.",
+     "loc_it": "Rocca della Tavola rotonda (Hewg)"
+    }
+   ],
+   "title_it": "Fase 4 — Liurnia Lacustre, Raya Lucaria e il Maniero Cariano",
+   "note_it": "Tre trofei, le basi per due Armamenti leggendari, la tua prima Stregoneria leggendaria, il tuo primo Talismano leggendario e l'inizio formale della missione di Ranni — che è il vero collo di bottiglia per il finale Era delle stelle. Anche il primo passo di Varré."
+  },
+  {
+   "title": "Phase 5 — Caelid, Radahn and the fall of Nokron",
+   "note": "Caelid is ugly but it is a collectible goldmine: two Legendary Sorceries, a Legendary Talisman, a Legendary Spirit Ash, and Radahn — whose death physically opens Nokron and with it both Ranni's and the Mimic Tear's chains. Bring Preserving Boluses.",
+   "steps": [
+    {
+     "text": "Enter Caelid via the Smouldering Church road from Limgrave (avoid the Sellia gaol teleporter trap unless you want a shortcut). Grab the Caelid map from the stele near Sellia.",
+     "loc": "Caelid, via the eastern Limgrave road",
+     "tags": [],
+     "trophy": false,
+     "text_it": "Entra a Caelid dalla strada della Smouldering Church partendo da Sepolcride (evita la trappola del teletrasporto della prigione di Sellia, a meno che tu non voglia una scorciatoia). Prendi la mappa di Caelid dalla stele vicino a Sellia.",
+     "loc_it": "Caelid, dalla strada della Sepolcride orientale"
+    },
+    {
+     "text": "Kill the Lion Guardian at Fort Gael for ASH OF WAR: LION'S CLAW. On a Heavy Claymore this is your damage button for the entire rest of the run — it is a flipping overhead slam with huge poise damage and it staggers most humanoid bosses in two hits.",
+     "loc": "Fort Gael, western Caelid (nearest grace: Fort Gael North)",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Ash of War: Lion's Claw — main damage ash",
+       "label_it": "⚔️ Cenere di guerra: Artiglio leonino — cenere di danno principale"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Uccidi il Lion Guardian a Fort Gael per la CENERE DI GUERRA: ARTIGLIO LEONINO (Ash of War: Lion's Claw). Su una Claymore pesante è il tuo pulsante del danno per tutto il resto della run — è una spallata capovolta dall'alto con un enorme danno alla postura e stordisce la maggior parte dei boss umanoidi in due colpi.",
+     "loc_it": "Fort Gael, Caelid occidentale (luogo di grazia più vicino: Fort Gael North)"
+    },
+    {
+     "text": "Ride to Fort Faroth on the eastern cliffs and take RADAGON'S SORESEAL from the corpse inside — Legendary Talisman 2 of 8. It is also genuinely good for you right now: +5 VIG, +5 END, +5 STR, +5 DEX for +15% damage taken. On a 100%-block shield build the downside is small.",
+     "loc": "Fort Faroth, eastern Caelid",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Talisman 2/8 — Radagon's Soreseal",
+       "label_it": "🏆 Talismano leggendario 2/8 — Sigillo piaga di Radagon"
+      },
+      {
+       "type": "build",
+       "label": "⚔️ Wearable: +5 VIG/END/STR/DEX",
+       "label_it": "⚔️ Indossabile: +5 VIT/TEM/FOR/DES"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Cavalca fino a Fort Faroth sulle scogliere orientali e prendi il SIGILLO PIAGA DI RADAGON (Radagon's Soreseal) dal cadavere all'interno — Talismano leggendario 2 di 8. È anche sinceramente ottimo per te in questo momento: +5 VIT, +5 TEM, +5 FOR, +5 DES a fronte di +15% di danno subito. Su una build con scudo che para il 100% il malus pesa poco.",
+     "loc_it": "Fort Faroth, Caelid orientale"
+    },
+    {
+     "text": "Kill Elder Dragon Greyoll (the huge sleeping dragon below Fort Faroth). She barely fights back — hit her tail. You get five Dragon Hearts and a massive rune payout.",
+     "loc": "Greyoll's Dragonbarrow, below Fort Faroth",
+     "tags": [],
+     "trophy": false,
+     "text_it": "Uccidi Elder Dragon Greyoll (l'enorme drago addormentato sotto Fort Faroth). Praticamente non reagisce — colpisci la coda. Ottieni cinque Dragon Heart e una montagna di rune.",
+     "loc_it": "Greyoll's Dragonbarrow, sotto Fort Faroth"
+    },
+    {
+     "text": "Take three Dragon Hearts to the Cathedral of Dragon Communion in southern Caelid and buy GREYOLL'S ROAR — Legendary Sorcery/Incantation 2 of 7.",
+     "loc": "Cathedral of Dragon Communion, southern Caelid",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Sorcery/Incantation 2/7 — Greyoll's Roar",
+       "label_it": "🏆 Stregoneria/Incantesimo leggendario 2/7 — Ruggito di Greyoll"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Porta tre Dragon Heart alla Cathedral of Dragon Communion nella Caelid meridionale e compra il RUGGITO DI GREYOLL (Greyoll's Roar) — Stregoneria/Incantesimo leggendario 2 di 7.",
+     "loc_it": "Cathedral of Dragon Communion, Caelid meridionale"
+    },
+    {
+     "text": "Light the eight torch braziers in Sellia, Town of Sorcery to dispel the seal, then find Sellia Hideaway behind the illusory wall in the Sellia crystal cave. Deep inside, free Master Lusat and take STARS OF RUIN — Legendary Sorcery/Incantation 3 of 7.",
+     "loc": "Sellia Hideaway, behind Sellia, Town of Sorcery, Caelid",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Sorcery/Incantation 3/7 — Stars of Ruin",
+       "label_it": "🏆 Stregoneria/Incantesimo leggendario 3/7 — Stelle della rovina"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Accendi gli otto bracieri a Sellia, Town of Sorcery per dissolvere il sigillo, poi trova il Sellia Hideaway dietro il muro illusorio nella grotta di cristallo di Sellia. In fondo, libera Master Lusat e prendi le STELLE DELLA ROVINA (Stars of Ruin) — Stregoneria/Incantesimo leggendario 3 di 7.",
+     "loc_it": "Sellia Hideaway, dietro Sellia, Town of Sorcery, Caelid"
+    },
+    {
+     "text": "Optional but nice: talk to Gowry in his shack near Sellia and start the Millicent questline (Unalloyed Gold Needle chain). It ends with the Rotten Winged Sword Insignia, one of the best damage talismans in the game for a combo-attacking build.",
+     "loc": "Gowry's Shack, east of Sellia, Caelid",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Millicent — optional, ends in Rotten Winged Sword Insignia",
+       "label_it": "👤 Millicent — opzionale, finisce con il Rotten Winged Sword Insignia"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Opzionale ma carino: parla con Gowry nella sua capanna vicino a Sellia e avvia la missione di Millicent (la catena dell'Unalloyed Gold Needle). Finisce con il Rotten Winged Sword Insignia, uno dei migliori talismani da danno del gioco per una build che attacca in combo.",
+     "loc_it": "Gowry's Shack, a est di Sellia, Caelid"
+    },
+    {
+     "text": "Clear the War Dead Catacombs (in the ravine below Redmane Castle) and kill the Putrid Tree Spirit for REDMANE KNIGHT OGHA — Legendary Spirit Ash 3 of 6 in acquisition order. Ogha is an archer who staggers bosses from range; he is excellent.",
+     "loc": "War Dead Catacombs, south Caelid below Redmane Castle",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Spirit Ash 2/6 — Redmane Knight Ogha",
+       "label_it": "🏆 Spirito leggendario 2/6 — Ogha, cavaliere Mantorosso"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Ripulisci le War Dead Catacombs (nella gola sotto il Castello Mantorosso) e uccidi il Putrid Tree Spirit per OGHA, CAVALIERE MANTOROSSO (Redmane Knight Ogha) — Spirito leggendario 3 di 6 in ordine di acquisizione. Ogha è un arciere che stordisce i boss dalla distanza; è eccellente.",
+     "loc_it": "War Dead Catacombs, Caelid meridionale sotto il Castello Mantorosso"
+    },
+    {
+     "text": "Go to Redmane Castle, talk to Jerren, and trigger the Radahn Festival. Then fight Starscourge Radahn on the beach. Use Torrent to close distance, ride away from the arrow barrage, and summon every NPC sign on the field — they are free aggro. Blaidd, Jerren, Alexander and Okina all help.",
+     "loc": "Wailing Dunes, below Redmane Castle, Caelid",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Shardbearer Radahn",
+       "label_it": "🏆 Araldo del frammento Radahn"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Vai al Castello Mantorosso, parla con Jerren e avvia il Festival di Radahn. Poi affronta Starscourge Radahn sulla spiaggia. Usa Torrente per accorciare la distanza, allontanati a cavallo dalla pioggia di frecce ed evoca ogni segno degli PNG sul campo — sono aggro gratis. Blaidd, Jerren, Alexander e Okina danno tutti una mano.",
+     "loc_it": "Wailing Dunes, sotto il Castello Mantorosso, Caelid"
+    },
+    {
+     "text": "Return to Redmane Castle after the festival has ended and fight the Misbegotten Warrior + Crucible Knight duo in the plaza. They drop the RUINS GREATSWORD — Legendary Armament 3 of 9. Summon your Mimic or Lhutel; this duo is harder than Radahn for many players.",
+     "loc": "Redmane Castle plaza (post-festival), Caelid",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Armament 3/9 — Ruins Greatsword",
+       "label_it": "🏆 Armamento leggendario 3/9 — Spadone delle rovine"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Torna al Castello Mantorosso dopo la fine del festival e affronta il duo Misbegotten Warrior + Crucible Knight nella piazza. Lasciano cadere lo SPADONE DELLE ROVINE (Ruins Greatsword) — Armamento leggendario 3 di 9. Evoca la tua Lacrima riflessa o Lhutel; per molti giocatori questo duo è più duro di Radahn.",
+     "loc_it": "Piazza del Castello Mantorosso (dopo il festival), Caelid"
+    },
+    {
+     "text": "Radahn's death drops the star. Ride to the crater in eastern Limgrave (Mistwood / Fort Haight area) and descend into NOKRON, ETERNAL CITY.",
+     "loc": "Fallen star crater, eastern Limgrave",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Ranni step 3 — Nokron opens",
+       "label_it": "👤 Ranni passo 3 — si apre Nokron"
+      }
+     ],
+     "trophy": false,
+     "text_it": "La morte di Radahn fa cadere la stella. Cavalca fino al cratere nella Sepolcride orientale (zona Mistwood / Fort Haight) e scendi in NOKRON, CITTÀ ETERNA.",
+     "loc_it": "Cratere della stella caduta, Sepolcride orientale"
+    },
+    {
+     "text": "Kill the Mimic Tear boss in Nokron. It copies your entire loadout — the classic trick is to unequip everything at the fog gate so it spawns naked, then re-equip. That is not a glitch, it is just how the boss reads your inventory.",
+     "loc": "Nokron, Eternal City — Mimic Tear arena",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Mimic Tear",
+       "label_it": "🏆 Lacrima riflessa"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi il boss Lacrima riflessa a Nokron. Copia tutto il tuo equipaggiamento — il trucco classico è togliersi tutto davanti alla nebbia così compare nuda, e poi riequipaggiarsi. Non è un glitch, è semplicemente il modo in cui il boss legge il tuo inventario.",
+     "loc_it": "Nokron, Città Eterna — arena della Lacrima riflessa"
+    },
+    {
+     "text": "Light the SIX obelisks around the Hallowhorn Grounds in Nokron's Ancestral Woods, then interact with the glowing deer carcass at the back of the temple to be sent to the Regal Ancestor Spirit's fog gate.",
+     "loc": "Nokron, Ancestral Woods / Hallowhorn Grounds (6 obelisks)",
+     "tags": [],
+     "trophy": false,
+     "text_it": "Accendi i SEI obelischi attorno agli Hallowhorn Grounds negli Ancestral Woods di Nokron, poi interagisci con la carcassa di cervo illuminata in fondo al tempio per essere spedito davanti alla nebbia dello Spirito ancestrale regale.",
+     "loc_it": "Nokron, Ancestral Woods / Hallowhorn Grounds (6 obelischi)"
+    },
+    {
+     "text": "Kill the Regal Ancestor Spirit. Same fight as the Ancestor Spirit but bigger; the Ancestral Follower's Horn drops here.",
+     "loc": "Hallowhorn Grounds boss arena, Nokron, Eternal City",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Regal Ancestor Spirit",
+       "label_it": "🏆 Spirito ancestrale regale"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi lo Spirito ancestrale regale. Stesso scontro dello Spirito ancestrale ma più grosso; qui cade l'Ancestral Follower's Horn.",
+     "loc_it": "Arena del boss agli Hallowhorn Grounds, Nokron, Città Eterna"
+    },
+    {
+     "text": "In Night's Sacred Ground, open the imp-statue door with a Stonesword Key and take the MIMIC TEAR ASHES from the chest — Legendary Spirit Ash 3 of 6. Upgrade it with Roderika as soon as you can; a +10 Mimic running your Claymore build is the best summon in the game for this route.",
+     "loc": "Night's Sacred Ground, Nokron — imp statue door",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Spirit Ash 3/6 — Mimic Tear",
+       "label_it": "🏆 Spirito leggendario 3/6 — Lacrima riflessa"
+      },
+      {
+       "type": "build",
+       "label": "⚔️ Upgrade Mimic Tear to +10 ASAP",
+       "label_it": "⚔️ Porta la Lacrima riflessa a +10 il prima possibile"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Al Night's Sacred Ground, apri la porta con la statua dell'imp usando una Chiave della spada di pietra e prendi le CENERI DELLA LACRIMA RIFLESSA (Mimic Tear Ashes) dal forziere — Spirito leggendario 3 di 6. Potenziale con Roderika appena puoi; una Lacrima riflessa +10 che replica la tua build con la Claymore è la miglior evocazione del gioco per questa route.",
+     "loc_it": "Night's Sacred Ground, Nokron — porta con la statua dell'imp"
+    },
+    {
+     "text": "Take the FINGERSLAYER BLADE from the giant chest in the treasure room of Night's Sacred Ground, then return to Ranni's Rise and give it to Ranni. She rewards you with the Carian Inverted Statue and the waygate in Renna's Rise opens.",
+     "loc": "Night's Sacred Ground treasure room → Ranni's Rise, Liurnia",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Ranni step 4 — Fingerslayer Blade → Carian Inverted Statue",
+       "label_it": "👤 Ranni passo 4 — Lama flagello delle dita → Statua invertita di Caria"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prendi la LAMA FLAGELLO DELLE DITA (Fingerslayer Blade) dal forziere gigante nella sala del tesoro del Night's Sacred Ground, poi torna alla Guglia di Ranni e consegnagliela. Ti ricompensa con la Statua invertita di Caria e si apre il portale nella Guglia di Renna.",
+     "loc_it": "Sala del tesoro del Night's Sacred Ground → Guglia di Ranni, Liurnia"
+    }
+   ],
+   "title_it": "Fase 5 — Caelid, Radahn e la caduta di Nokron",
+   "note_it": "Caelid è brutta ma è una miniera d'oro di collezionabili: due Stregonerie leggendarie, un Talismano leggendario, uno Spirito leggendario e Radahn — la cui morte apre fisicamente Nokron e con essa sia la catena di Ranni sia quella della Lacrima riflessa. Porta dei Preserving Boluses."
+  },
+  {
+   "title": "Phase 6 — Ranni's underworld: Ainsel, Lake of Rot, Astel and the Moonlight Altar",
+   "note": "This is the long tail of the Age of the Stars ending, and it is also where four separate collectibles live. Do it in one sitting. Bring 15+ Preserving Boluses for the Lake of Rot (craft them: Dewkissed Herba + Crystal Cave Moss + Sacramental Bud).",
+   "steps": [
+    {
+     "text": "Use the Carian Inverted Statue on the pedestal at Carian Study Hall (east Liurnia) to flip the building upside down, then climb down through it to the Divine Tower of Liurnia. At the bottom take the CURSEMARK OF DEATH — you need it for Fia in Phase 8, and Rogier's questline also reacts to it.",
+     "loc": "Carian Study Hall → Divine Tower of Liurnia, eastern Liurnia",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Fia prerequisite — Cursemark of Death",
+       "label_it": "👤 Prerequisito di Fia — Cursemark of Death"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Missable if you kill Ranni or wreck Rogier's quest",
+       "label_it": "⚠️ Perdibile se uccidi Ranni o rovini la missione di Rogier"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Usa la Statua invertita di Caria sul piedistallo della Sala da studio Cariana (Liurnia orientale) per capovolgere l'edificio, poi scendi attraverso di esso fino alla Divine Tower of Liurnia. In fondo prendi il CURSEMARK OF DEATH — ti serve per Fia nella Fase 8, e anche la missione di Rogier reagisce a questo oggetto.",
+     "loc_it": "Sala da studio Cariana → Divine Tower of Liurnia, Liurnia orientale"
+    },
+    {
+     "text": "Go to Renna's Rise (the tower beside Ranni's Rise, now unsealed) and take the waygate at the top down to the Ainsel River Main.",
+     "loc": "Renna's Rise, Three Sisters, Liurnia",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Ranni step 5",
+       "label_it": "👤 Ranni passo 5"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Vai alla Guglia di Renna (la torre accanto alla Guglia di Ranni, ora dissigillata) e prendi il portale in cima per scendere all'Ainsel River Main.",
+     "loc_it": "Guglia di Renna, Three Sisters, Liurnia"
+    },
+    {
+     "text": "Fight through the ants of the Ainsel River and kill the Dragonkin Soldier of Nokstella. Shield up against the lightning, punish the tail sweeps. Sitting behind a 100%-block shield trivialises this one.",
+     "loc": "Ainsel River Main, Dragonkin Soldier arena",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Dragonkin Soldier of Nokstella",
+       "label_it": "🏆 Soldato draconide di Nokstella"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Fatti strada tra le formiche del Fiume Ainsel e uccidi il Soldato draconide di Nokstella. Scudo alzato contro i fulmini, punisci le spazzate di coda. Stare dietro uno scudo che para il 100% rende questo scontro banale.",
+     "loc_it": "Ainsel River Main, arena del Soldato draconide"
+    },
+    {
+     "text": "Cross into Nokstella, Eternal City and take the MOON OF NOKSTELLA from the chest underneath the enormous throne — Legendary Talisman 3 of 8. It gives +2 memory slots; irrelevant for you, but it is on the list.",
+     "loc": "Nokstella, Eternal City — chest beneath the great throne",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Talisman 3/8 — Moon of Nokstella",
+       "label_it": "🏆 Talismano leggendario 3/8 — Luna di Nokstella"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Passa a Nokstella, Città Eterna e prendi la LUNA DI NOKSTELLA (Moon of Nokstella) dal forziere sotto l'enorme trono — Talismano leggendario 3 di 8. Dà +2 slot di memoria; irrilevante per te, ma è nella lista.",
+     "loc_it": "Nokstella, Città Eterna — forziere sotto il grande trono"
+    },
+    {
+     "text": "Ride the coffin lift down into the LAKE OF ROT. Sprint the raised walkways between islands and hit the five pillars scattered around the lake — each one you activate lowers the rot level. Eat a Preserving Bolus the moment the Scarlet Rot bar fills, not before.",
+     "loc": "Lake of Rot, below Nokstella",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠️ Scarlet Rot — bring Preserving Boluses",
+       "label_it": "⚠️ Scarlet Rot — porta dei Preserving Boluses"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prendi l'ascensore-sarcofago che scende nel LAGO PUTRESCENTE. Corri sui camminamenti rialzati tra le isole e colpisci i cinque pilastri sparsi per il lago — ognuno che attivi abbassa il livello del marciume. Mangia un Preserving Bolus nel momento in cui la barra della Scarlet Rot si riempie, non prima.",
+     "loc_it": "Lago putrescente, sotto Nokstella"
+    },
+    {
+     "text": "At the far end of the Lake of Rot, enter the Grand Cloister and kill ASTEL, NATURALBORN OF THE VOID. He is the biggest wall in Ranni's questline: stay under him, never stand in front of the head (the gravity nuke is a one-shot), and let your Mimic hold aggro.",
+     "loc": "Grand Cloister, end of the Lake of Rot",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Astel, Naturalborn of the Void",
+       "label_it": "🏆 Astel, progenie del vuoto"
+      }
+     ],
+     "trophy": true,
+     "text_it": "All'estremità opposta del Lago putrescente, entra nel Grand Cloister e uccidi ASTEL, PROGENIE DEL VUOTO. È il muro più alto della missione di Ranni: resta sotto di lui, non stare mai davanti alla testa (la bomba gravitazionale uccide in un colpo) e lascia che la tua Lacrima riflessa tenga l'aggro.",
+     "loc_it": "Grand Cloister, in fondo al Lago putrescente"
+    },
+    {
+     "text": "Behind Astel's arena, use the DARK MOON RING you took from Raya Lucaria to open the sealed path, then ride the lift up onto the MOONLIGHT ALTAR plateau in south-west Liurnia.",
+     "loc": "Sealed door behind Astel → Moonlight Altar, south-west Liurnia",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Ranni step 6 — Moonlight Altar unlocked",
+       "label_it": "👤 Ranni passo 6 — Campi della Luna sbloccati"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Dietro l'arena di Astel, usa l'ANELLO DELLA LUNA NERA (Dark Moon Ring) preso a Raya Lucaria per aprire il passaggio sigillato, poi prendi l'ascensore che sale sull'altopiano dei CAMPI DELLA LUNA (Moonlight Altar), nella Liurnia sud-occidentale.",
+     "loc_it": "Porta sigillata dietro Astel → Campi della Luna, Liurnia sud-occidentale"
+    },
+    {
+     "text": "Solve the Chelona's Rise tower puzzle (find the three Wandering Nobles / 'wise beast' phantoms scattered around the plateau and shoot each one) and open the chest at the top for RANNI'S DARK MOON — Legendary Sorcery/Incantation 4 of 7.",
+     "loc": "Chelona's Rise, Moonlight Altar",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Sorcery/Incantation 4/7 — Ranni's Dark Moon",
+       "label_it": "🏆 Stregoneria/Incantesimo leggendario 4/7 — Luna nera di Ranni"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Risolvi l'enigma della torre Chelona's Rise (trova i tre fantasmi di Wandering Noble / 'bestia saggia' sparsi per l'altopiano e colpiscili tutti) e apri il forziere in cima per la LUNA NERA DI RANNI (Ranni's Dark Moon) — Stregoneria/Incantesimo leggendario 4 di 7.",
+     "loc_it": "Chelona's Rise, Campi della Luna"
+    },
+    {
+     "text": "Enter the Ringleader's Evergaol on the Moonlight Altar and kill Alecto, Black Knife Ringleader for BLACK KNIFE TICHE — Legendary Spirit Ash 4 of 6. Tiche is arguably the best Spirit Ash in the game; upgrade her and use her on Malenia.",
+     "loc": "Ringleader's Evergaol, Moonlight Altar",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Spirit Ash 4/6 — Black Knife Tiche",
+       "label_it": "🏆 Spirito leggendario 4/6 — Tiche dei Neri Coltelli"
+      },
+      {
+       "type": "build",
+       "label": "⚔️ Best Spirit Ash for late bosses",
+       "label_it": "⚔️ Miglior Cenere per i boss avanzati"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Entra nel Ringleader's Evergaol sui Campi della Luna e uccidi Alecto, Black Knife Ringleader per TICHE DEI NERI COLTELLI (Black Knife Tiche) — Spirito leggendario 4 di 6. Tiche è probabilmente la miglior Cenere del gioco; potenziala e usala su Malenia.",
+     "loc_it": "Ringleader's Evergaol, Campi della Luna"
+    },
+    {
+     "text": "Go to the Cathedral of Manus Celes on the Moonlight Altar, find Ranni's doll on the altar, and give her the Dark Moon Ring. This LOCKS IN the Age of the Stars ending as an available choice and rewards you with the DARK MOON GREATSWORD — Legendary Armament 4 of 9.",
+     "loc": "Cathedral of Manus Celes, Moonlight Altar",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Ranni COMPLETE — Age of the Stars now available",
+       "label_it": "👤 Ranni COMPLETATA — Era delle stelle ora disponibile"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Armament 4/9 — Dark Moon Greatsword",
+       "label_it": "🏆 Armamento leggendario 4/9 — Spadone della luna nera"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ Do NOT take the Frenzied Flame before this or you lose the ending",
+       "label_it": "⚠️ NON prendere la Frenzied Flame prima di questo passo o perdi il finale"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Vai alla Cattedrale di Manus Celes sui Campi della Luna, trova la bambola di Ranni sull'altare e dalle l'Anello della Luna Nera. Questo RENDE DEFINITIVAMENTE DISPONIBILE il finale Era delle stelle e ti ricompensa con lo SPADONE DELLA LUNA NERA (Dark Moon Greatsword) — Armamento leggendario 4 di 9.",
+     "loc_it": "Cattedrale di Manus Celes, Campi della Luna"
+    }
+   ],
+   "title_it": "Fase 6 — Il sottosuolo di Ranni: Ainsel, Lago putrescente, Astel e i Campi della Luna",
+   "note_it": "Questa è la lunga coda del finale Era delle stelle, ed è anche dove vivono quattro collezionabili separati. Fallo tutto d'un fiato. Porta 15+ Preserving Boluses per il Lago putrescente (creali: Dewkissed Herba + Crystal Cave Moss + Sacramental Bud)."
+  },
+  {
+   "title": "Phase 7 — Altus Plateau, Volcano Manor and Mt. Gelmir",
+   "note": "Three trophies, two Legendary Armaments, a Legendary Talisman, a Legendary Sorcery, the Greatshield Talisman for your build, and the whole Varré chain (including the offline route). Also the single most important 'do not kill this NPC yet' warning in the run.",
+   "steps": [
+    {
+     "text": "Get the Dectus Medallion (Right) from Fort Faroth in Caelid — you already have the Left half from Fort Haight — and ride the Grand Lift of Dectus up to Altus Plateau. (If you missed a half, the Ruin-Strewn Precipice route from Phase 4 also gets you there.)",
+     "loc": "Grand Lift of Dectus, northern Limgrave / Liurnia border",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠️ Both Dectus Medallion halves",
+       "label_it": "⚠️ Entrambe le metà del Medaglione di Dectus"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prendi il Dectus Medallion (Right) da Fort Faroth a Caelid — la metà sinistra ce l'hai già da Fort Haight — e sali con il Grand Lift of Dectus fino all'Altopiano di Altus. (Se ti manca una metà, anche la rotta del Ruin-Strewn Precipice della Fase 4 ti porta lassù.)",
+     "loc_it": "Grand Lift of Dectus, confine nord tra Sepolcride e Liurnia"
+    },
+    {
+     "text": "Do the offline-safe Varré step: go to WRITHEBLOOD RUINS in western Altus Plateau and use the red summon sign there to invade the NPC MAGNUS THE BEAST CLAW. Kill him THREE times (the sign respawns). Since patch 1.06 this fully satisfies Varré's 'invade three worlds' requirement without ever going online.",
+     "loc": "Writheblood Ruins, western Altus Plateau — red summon sign",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Varré step 2 — three invasions",
+       "label_it": "👤 Varré passo 2 — tre invasioni"
+      },
+      {
+       "type": "build",
+       "label": "⚔️ Works completely offline since patch 1.06",
+       "label_it": "⚔️ Funziona del tutto offline dalla patch 1.06"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Fai il passo di Varré che funziona offline: vai alle WRITHEBLOOD RUINS nell'Altopiano di Altus occidentale e usa il segno di evocazione rosso lì presente per invadere il PNG MAGNUS THE BEAST CLAW. Uccidilo TRE volte (il segno ricompare). Dalla patch 1.06 questo soddisfa completamente il requisito di Varré di 'invadere tre mondi' senza mai andare online.",
+     "loc_it": "Writheblood Ruins, Altopiano di Altus occidentale — segno di evocazione rosso"
+    },
+    {
+     "text": "Take the Lord of Blood's Favor Varré gives you and soak it in maiden's blood at the CHURCH OF INHIBITION in north-east Liurnia (a dead Finger Maiden lies there). Return it to Varré at Rose Church for the PUREBLOOD KNIGHT'S MEDAL — a one-item teleport straight to Mohgwyn Palace.",
+     "loc": "Church of Inhibition, north-east Liurnia → Rose Church",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Varré COMPLETE — Pureblood Knight's Medal",
+       "label_it": "👤 Varré COMPLETATO — Pureblood Knight's Medal"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prendi il Lord of Blood's Favor che ti dà Varré e imbevilo del sangue di una fanciulla alla CHURCH OF INHIBITION nella Liurnia nord-orientale (lì giace una Finger Maiden morta). Riportalo a Varré alla Rose Church per il PUREBLOOD KNIGHT'S MEDAL — un oggetto che ti teletrasporta direttamente a Mohgwyn Palace.",
+     "loc_it": "Church of Inhibition, Liurnia nord-orientale → Rose Church"
+    },
+    {
+     "text": "Enter the Golden Lineage Evergaol and kill Godefroy the Grafted for the GODFREY ICON — Legendary Talisman 4 of 8.",
+     "loc": "Golden Lineage Evergaol, western Altus Plateau",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Talisman 4/8 — Godfrey Icon",
+       "label_it": "🏆 Talismano leggendario 4/8 — Icona di Godfrey"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Entra nel Golden Lineage Evergaol e uccidi Godefroy the Grafted per l'ICONA DI GODFREY (Godfrey Icon) — Talismano leggendario 4 di 8.",
+     "loc_it": "Golden Lineage Evergaol, Altopiano di Altus occidentale"
+    },
+    {
+     "text": "Clear Sainted Hero's Grave (west of Leyndell, the one with the chariot) and take ANCIENT DRAGON KNIGHT KRISTOFF — Legendary Spirit Ash 5 of 6.",
+     "loc": "Sainted Hero's Grave, Altus Plateau west of Leyndell",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Spirit Ash 5/6 — Ancient Dragon Knight Kristoff",
+       "label_it": "🏆 Spirito leggendario 5/6 — Antico cavaliere drago Kristoff"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Ripulisci la Sainted Hero's Grave (a ovest di Leyndell, quella con il carro) e prendi l'ANTICO CAVALIERE DRAGO KRISTOFF (Ancient Dragon Knight Kristoff) — Spirito leggendario 5 di 6.",
+     "loc_it": "Sainted Hero's Grave, Altopiano di Altus a ovest di Leyndell"
+    },
+    {
+     "text": "Ride EAST/south-east from the Erdtree-Gazing Hill grace to the carriage guarded by fire-arrow ballistae, and loot the GREATSHIELD TALISMAN from it. It boosts guard stability by 10% — pair it with the Curved Sword Talisman and your shield stops costing stamina.",
+     "loc": "Carriage east/south-east of the Erdtree-Gazing Hill grace, Altus Plateau",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Greatshield Talisman — core build item, +guard stability",
+       "label_it": "⚔️ Greatshield Talisman — oggetto chiave della build, +stabilità in guardia"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Cavalca a EST/sud-est dal luogo di grazia Erdtree-Gazing Hill fino al carro sorvegliato dalle baliste a frecce infuocate, e saccheggia il GREATSHIELD TALISMAN. Aumenta la stabilità in guardia del 10% — abbinalo al Curved Sword Talisman e il tuo scudo smette di costare stamina.",
+     "loc_it": "Carro a est/sud-est del luogo di grazia Erdtree-Gazing Hill, Altopiano di Altus"
+    },
+    {
+     "text": "Clear The Shaded Castle (poison swamp castle in north Altus) and kill Elemer of the Briar. He drops the MARAIS EXECUTIONER'S SWORD — Legendary Armament 5 of 9. He is fast; block his charge, guard-counter, and do not greed.",
+     "loc": "The Shaded Castle, northern Altus Plateau",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Elemer of the Briar",
+       "label_it": "🏆 Elemer del Rovo"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Armament 5/9 — Marais Executioner's Sword",
+       "label_it": "🏆 Armamento leggendario 5/9 — Spada da carnefice di Marais"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Ripulisci The Shaded Castle (il castello nella palude velenosa nell'Altus settentrionale) e uccidi Elemer del Rovo. Lascia cadere la SPADA DA CARNEFICE DI MARAIS (Marais Executioner's Sword) — Armamento leggendario 5 di 9. È veloce: para la sua carica, fai guard counter e non essere avido.",
+     "loc_it": "The Shaded Castle, Altopiano di Altus settentrionale"
+    },
+    {
+     "text": "Go to Volcano Manor, talk to Tanith, and JOIN. This gives you the Volcano Manor assassination questline and, crucially, keeps Recusant Bernahl alive and friendly.",
+     "loc": "Volcano Manor, Mt. Gelmir",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Volcano Manor — join Tanith",
+       "label_it": "👤 Villa Vulcano — unisciti a Tanith"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Vai a Villa Vulcano, parla con Tanith e UNISCITI a loro. Questo ti dà la missione degli omicidi di Villa Vulcano e, cosa cruciale, mantiene Recusant Bernahl vivo e amichevole.",
+     "loc_it": "Villa Vulcano, Monte Gelmir"
+    },
+    {
+     "text": "DO NOT KILL BERNAHL AT VOLCANO MANOR OR AT WARMASTER'S SHACK. He must survive to invade you in Crumbling Farum Azula in Phase 11, because that invasion is the only way to get the Devourer's Scepter — Legendary Armament 9 of 9. Killing him early forfeits the Legendary Armaments trophy for this save.",
+     "loc": "Volcano Manor / Warmaster's Shack, Stormhill",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠️ HARD MISSABLE — Bernahl must live until Farum Azula",
+       "label_it": "⚠️ PERDIBILE PER SEMPRE — Bernahl deve restare vivo fino a Farum Azula"
+      }
+     ],
+     "trophy": false,
+     "text_it": "NON UCCIDERE BERNAHL A VILLA VULCANO NÉ ALLA WARMASTER'S SHACK. Deve sopravvivere per invaderti a Crumbling Farum Azula nella Fase 11, perché quell'invasione è l'unico modo per ottenere lo Scettro del divoratore — Armamento leggendario 9 di 9. Ucciderlo presto ti fa perdere il trofeo Armamenti leggendari su questo salvataggio.",
+     "loc_it": "Villa Vulcano / Warmaster's Shack, Colle Tempesta"
+    },
+    {
+     "text": "Climb Mt. Gelmir and find Primeval Sorcerer Azur seated near the Hermit Village. Take COMET AZUR — Legendary Sorcery/Incantation 5 of 7.",
+     "loc": "Primeval Sorcerer Azur, Hermit Village, Mt. Gelmir",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Sorcery/Incantation 5/7 — Comet Azur",
+       "label_it": "🏆 Stregoneria/Incantesimo leggendario 5/7 — Cometa di Azur"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Scala il Monte Gelmir e trova Primeval Sorcerer Azur seduto vicino allo Hermit Village. Prendi la COMETA DI AZUR (Comet Azur) — Stregoneria/Incantesimo leggendario 5 di 7.",
+     "loc_it": "Primeval Sorcerer Azur, Hermit Village, Monte Gelmir"
+    },
+    {
+     "text": "Kill the Godskin Noble in the Temple of Eiglay inside Volcano Manor. He rolls; stay at his side, block the stretched-neck attacks and Lion's Claw him when he flops.",
+     "loc": "Temple of Eiglay, Volcano Manor",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Godskin Noble",
+       "label_it": "🏆 Nobile Sacriderma"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi il Nobile Sacriderma nel Temple of Eiglay dentro Villa Vulcano. Rotola su sé stesso; restagli di fianco, para gli attacchi con il collo allungato e colpiscilo con Artiglio leonino quando si accascia.",
+     "loc_it": "Temple of Eiglay, Villa Vulcano"
+    },
+    {
+     "text": "Take the SERPENT-HUNTER greatspear from the room before the Rykard fog gate — it is a fight-specific weapon that does enormous damage to him and works regardless of your stats. Then kill Rykard, Lord of Blasphemy with it. Two-hand it, hit the face, use the R2 to hit the snake head.",
+     "loc": "Temple of Eiglay → Rykard's arena, Volcano Manor",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Shardbearer Rykard",
+       "label_it": "🏆 Araldo del frammento Rykard"
+      },
+      {
+       "type": "build",
+       "label": "⚔️ Use the Serpent-Hunter, not the Claymore",
+       "label_it": "⚔️ Usa la Serpent-Hunter, non la Claymore"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Prendi la grande lancia SERPENT-HUNTER nella stanza prima della nebbia di Rykard — è un'arma specifica per lo scontro che gli fa danni enormi e funziona a prescindere dalle tue statistiche. Poi uccidi Rykard, Lord of Blasphemy con essa. Impugnala a due mani, colpisci il volto e usa la R2 per raggiungere la testa del serpente.",
+     "loc_it": "Temple of Eiglay → arena di Rykard, Villa Vulcano"
+    },
+    {
+     "text": "Upgrade pass: Claymore to +18-21, and level toward RL 90: VIG 52 / MND 16 / END 26 / STR 33 / DEX 17. You have now passed the 40-VIG breakpoint, which is where the game stops one-shotting you.",
+     "loc": "Roundtable Hold (Hewg)",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Claymore +18-21, RL ~90",
+       "label_it": "⚔️ Claymore +18-21, RL ~90"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Giro di potenziamenti: Claymore a +18-21, e sali verso RL 90: VIT 52 / MEN 16 / TEM 26 / FOR 33 / DES 17. Hai ormai superato la soglia dei 40 VIT, che è il punto in cui il gioco smette di ucciderti in un colpo.",
+     "loc_it": "Rocca della Tavola rotonda (Hewg)"
+    }
+   ],
+   "title_it": "Fase 7 — Altopiano di Altus, Villa Vulcano e Monte Gelmir",
+   "note_it": "Tre trofei, due Armamenti leggendari, un Talismano leggendario, una Stregoneria leggendaria, il Greatshield Talisman per la tua build e tutta la catena di Varré (rotta offline inclusa). Anche l'avviso 'non uccidere ancora questo PNG' più importante di tutta la run."
+  },
+  {
+   "title": "Phase 8 — Leyndell, Royal Capital and Deeproot Depths",
+   "note": "Four trophies here, one hard-missable Legendary Armament, a Legendary Sorcery, and the completion of Fia's questline. Read the Bolt of Gransax and Frenzied Flame warnings carefully — this phase contains the two easiest ways to ruin a platinum run.",
+   "steps": [
+    {
+     "text": "Kill the Draconic Tree Sentinel at the capital gates and enter Leyndell, Royal Capital.",
+     "loc": "Capital Outskirts → Leyndell main gate",
+     "tags": [],
+     "trophy": false,
+     "text_it": "Uccidi il Draconic Tree Sentinel alle porte della capitale ed entra a Leyndell, Capitale Reale.",
+     "loc_it": "Capital Outskirts → cancello principale di Leyndell"
+    },
+    {
+     "text": "HARD MISSABLE: take the BOLT OF GRANSAX now. It is embedded in the giant spear fragment lying across the Leyndell rooftops — from the Erdtree Sanctuary grace go out and down onto the enormous spear shaft and run along it. Legendary Armament 6 of 9. Once the Erdtree burns and Leyndell becomes the Ashen Capital, this area is gone forever.",
+     "loc": "Leyndell rooftops — the giant spear shaft, from the Erdtree Sanctuary grace",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Armament 6/9 — Bolt of Gransax",
+       "label_it": "🏆 Armamento leggendario 6/9 — Lancia di Gransax"
+      },
+      {
+       "type": "miss",
+       "label": "⚠️ HARD MISSABLE after the Erdtree is burned",
+       "label_it": "⚠️ PERDIBILE PER SEMPRE dopo aver bruciato l'Albero Madre"
+      }
+     ],
+     "trophy": false,
+     "text_it": "PERDIBILE PER SEMPRE: prendi ADESSO la LANCIA DI GRANSAX (Bolt of Gransax). È conficcata nel frammento di lancia gigante disteso sui tetti di Leyndell — dal luogo di grazia Erdtree Sanctuary esci e scendi sull'enorme asta della lancia, poi corri lungo di essa. Armamento leggendario 6 di 9. Una volta bruciato l'Albero Madre e trasformata Leyndell in Leyndell, Ashen Capital, quest'area sparisce per sempre.",
+     "loc_it": "Tetti di Leyndell — l'asta della lancia gigante, dal luogo di grazia Erdtree Sanctuary"
+    },
+    {
+     "text": "Kill Godfrey the First Lord (the golden shade) in the Erdtree Sanctuary. He is a pure aggression check — block, guard-counter, and use the pillars.",
+     "loc": "Erdtree Sanctuary, Leyndell Royal Capital",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Godfrey the First Lord",
+       "label_it": "🏆 Godfrey, primo Lord ancestrale"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi Godfrey the First Lord (l'ombra dorata) all'Erdtree Sanctuary. È una pura prova di aggressività — para, fai guard counter e usa le colonne.",
+     "loc_it": "Erdtree Sanctuary, Leyndell, Capitale Reale"
+    },
+    {
+     "text": "Drop into the Subterranean Shunning-Grounds (the sewer entrance in the Leyndell Capital Outskirts, down the well behind the giant statue) and fight through to MOHG, THE OMEN. This is the sewer Mohg, not the Blood Lord — different boss, different trophy.",
+     "loc": "Subterranean Shunning-Grounds, beneath Leyndell",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Mohg, the Omen",
+       "label_it": "🏆 Mohg il Presagio"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Scendi nei Subterranean Shunning-Grounds (l'ingresso alle fogne nella Leyndell Capital Outskirts, giù per il pozzo dietro la statua gigante) e fatti strada fino a MOHG IL PRESAGIO. Questo è il Mohg delle fogne, non il Lord of Blood — boss diverso, trofeo diverso.",
+     "loc_it": "Subterranean Shunning-Grounds, sotto Leyndell"
+    },
+    {
+     "text": "Continue past Mohg the Omen to the Cathedral of the Forsaken and LIGHT THE GRACE THERE, then go down and find the Frenzied Flame Proscription door. Look at it, confirm you can reach it, and WALK AWAY. Lighting the grace means you can fast-travel back here instantly in Phase 13 for the final ending.",
+     "loc": "Cathedral of the Forsaken → Frenzied Flame Proscription, Subterranean Shunning-Grounds",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠️ DO NOT touch the Three Fingers yet — it locks Age of the Stars and Elden Lord",
+       "label_it": "⚠️ NON toccare ancora le Three Fingers — bloccherebbe Era delle stelle e Lord ancestrale"
+      },
+      {
+       "type": "quest",
+       "label": "👤 Sets up the Frenzied Flame ending for Phase 13",
+       "label_it": "👤 Prepara il finale della Fiamma della frenesia per la Fase 13"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prosegui oltre Mohg il Presagio fino alla Cathedral of the Forsaken e ACCENDI LÌ IL LUOGO DI GRAZIA, poi scendi e trova la porta della Frenzied Flame Proscription. Guardala, verifica di riuscire a raggiungerla, e VATTENE. Aver acceso il luogo di grazia significa poter tornare qui istantaneamente nella Fase 13 per il finale conclusivo.",
+     "loc_it": "Cathedral of the Forsaken → Frenzied Flame Proscription, Subterranean Shunning-Grounds"
+    },
+    {
+     "text": "Kill Morgott, the Omen King at the Erdtree. He is Margit with two health bars and better tracking — same plan: block, guard-counter, avoid the cursed-blood pools. Take Morgott's Great Rune and optionally restore it at the Divine Tower of East Altus (the lift behind the Elden Throne) for a flat +HP boost.",
+     "loc": "Elden Throne, Leyndell Royal Capital",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Shardbearer Morgott",
+       "label_it": "🏆 Araldo del frammento Morgott"
+      },
+      {
+       "type": "build",
+       "label": "⚔️ Morgott's Great Rune — +HP",
+       "label_it": "⚔️ Morgott's Great Rune — +PV"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi Morgott, the Omen King all'Albero Madre. È Margit con due barre di vita e un tracciamento migliore — stesso piano: para, fai guard counter, evita le pozze di sangue maledetto. Prendi la Morgott's Great Rune e, volendo, ripristinala alla Divine Tower of East Altus (l'ascensore dietro l'Elden Throne) per un bonus fisso ai PV.",
+     "loc_it": "Elden Throne, Leyndell, Capitale Reale"
+    },
+    {
+     "text": "From the Siofra River, take the eastern route to the SIOFRA AQUEDUCT and fight the VALIANT GARGOYLES (a duo — the second one joins at about 60% health). Summon Black Knife Tiche. Their death opens the way down to Deeproot Depths.",
+     "loc": "Siofra Aqueduct, deep Siofra River",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Valiant Gargoyles",
+       "label_it": "🏆 Audaci gargoyle"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Dal Fiume Siofra, prendi la via orientale verso il SIOFRA AQUEDUCT e affronta gli AUDACI GARGOYLE (un duo — il secondo si unisce intorno al 60% di vita). Evoca Tiche dei Neri Coltelli. La loro morte apre la strada per scendere alle Deeproot Depths.",
+     "loc_it": "Siofra Aqueduct, Fiume Siofra profondo"
+    },
+    {
+     "text": "In Deeproot Depths, go to the Great Waterfall Crest grace and pick up ELDEN STARS from the corpse near the great root — Legendary Sorcery/Incantation 6 of 7.",
+     "loc": "Great Waterfall Crest grace, Deeproot Depths",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Sorcery/Incantation 6/7 — Elden Stars",
+       "label_it": "🏆 Stregoneria/Incantesimo leggendario 6/7 — Stelle ancestrali"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Nelle Deeproot Depths, vai al luogo di grazia Great Waterfall Crest e raccogli le STELLE ANCESTRALI (Elden Stars) dal cadavere vicino alla grande radice — Stregoneria/Incantesimo leggendario 6 di 7.",
+     "loc_it": "Luogo di grazia Great Waterfall Crest, Deeproot Depths"
+    },
+    {
+     "text": "Fia's questline recap, in order, so you can check where you are: (1) hug her at Roundtable when you first arrive, (2) reach Altus and hug her again for the Weathered Dagger, (3) give the dagger to D, (4) kill any two Shardbearers and talk to her, (5) reload and find her in the locked room at the end of the Hold — loot the TWINNED ARMOUR SET from the body there.",
+     "loc": "Roundtable Hold",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Fia steps 1-5",
+       "label_it": "👤 Fia passi 1-5"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Riepilogo della missione di Fia, in ordine, così puoi controllare a che punto sei: (1) abbracciala alla Rocca della Tavola rotonda quando ci arrivi la prima volta, (2) raggiungi Altus e abbracciala di nuovo per il Weathered Dagger, (3) dai il pugnale a D, (4) uccidi due Araldi del frammento qualsiasi e parlale, (5) ricarica e trovala nella stanza chiusa in fondo alla Rocca — saccheggia il TWINNED ARMOUR SET dal corpo che c'è lì.",
+     "loc_it": "Rocca della Tavola rotonda"
+    },
+    {
+     "text": "At the Prince of Death's Throne in Deeproot Depths, defeat Fia's Champions (five NPC invaders in waves at the far side of the arena), then talk to Fia and choose 'No, I want to be held' rather than attacking her.",
+     "loc": "Prince of Death's Throne, Deeproot Depths",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Fia — Champions + hug",
+       "label_it": "👤 Fia — Campioni + abbraccio"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Al Prince of Death's Throne nelle Deeproot Depths, sconfiggi i Campioni di Fia (cinque PNG invasori a ondate all'altro capo dell'arena), poi parla con Fia e scegli 'No, voglio essere abbracciato' invece di attaccarla.",
+     "loc_it": "Prince of Death's Throne, Deeproot Depths"
+    },
+    {
+     "text": "Give Fia the CURSEMARK OF DEATH you took from the Divine Tower of Liurnia in Phase 6, reload the area, then interact with the sleeping Fia to enter the Deathbed Dream.",
+     "loc": "Prince of Death's Throne, Deeproot Depths",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "👤 Fia — Cursemark of Death",
+       "label_it": "👤 Fia — Cursemark of Death"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Dai a Fia il CURSEMARK OF DEATH preso alla Divine Tower of Liurnia nella Fase 6, ricarica l'area, poi interagisci con Fia addormentata per entrare nel Deathbed Dream.",
+     "loc_it": "Prince of Death's Throne, Deeproot Depths"
+    },
+    {
+     "text": "Kill LICHDRAGON FORTISSAX inside the Deathbed Dream. He is a Death-lightning dragon — stay under the chest, block the red lightning fields, and heal aggressively. Afterwards take the Mending Rune of the Death-Prince from Fia's body.",
+     "loc": "Deathbed Dream, Deeproot Depths",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Lichdragon Fortissax",
+       "label_it": "🏆 Necrodrago Fortissax"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi il NECRODRAGO FORTISSAX dentro il Deathbed Dream. È un drago con fulmini della Morte — resta sotto il petto, para i campi di fulmini rossi e curati senza risparmiarti. Dopo, prendi la Mending Rune of the Death-Prince dal corpo di Fia.",
+     "loc_it": "Deathbed Dream, Deeproot Depths"
+    },
+    {
+     "text": "Only NOW give the Twinned Armour Set to D's brother near the Valiant Gargoyle arena, if you want the Inseparable Sword. Doing this BEFORE Fortissax can abruptly end Fia's questline and cost you the trophy.",
+     "loc": "Deeproot Depths, near the Valiant Gargoyle arena",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠️ Do this AFTER Fortissax, never before",
+       "label_it": "⚠️ Fallo DOPO Fortissax, mai prima"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Solo ADESSO dai il Twinned Armour Set al fratello di D vicino all'arena degli Audaci gargoyle, se vuoi l'Inseparable Sword. Farlo PRIMA di Fortissax può interrompere di colpo la missione di Fia e costarti il trofeo.",
+     "loc_it": "Deeproot Depths, vicino all'arena degli Audaci gargoyle"
+    }
+   ],
+   "title_it": "Fase 8 — Leyndell, Capitale Reale e Deeproot Depths",
+   "note_it": "Qui ci sono quattro trofei, un Armamento leggendario perdibile per sempre, una Stregoneria leggendaria e il completamento della missione di Fia. Leggi con attenzione gli avvisi sulla Lancia di Gransax e sulla Frenzied Flame: questa fase contiene i due modi più facili di rovinare una run da platino."
+  },
+  {
+   "title": "Phase 9 — Mountaintops of the Giants",
+   "note": "Two trophies, one Legendary Armament, one Legendary Talisman, and the seventh Legendary Sorcery, which pops the first of your four collection trophies. Do NOT go to the Forge of the Giants yet — burning the Erdtree is a one-way door and is deliberately parked in Phase 11.",
+   "steps": [
+    {
+     "text": "After Morgott, Melina gives you the Rold Medallion. Ride the Grand Lift of Rold using the NORMAL medallion to reach the Forbidden Lands.",
+     "loc": "Grand Lift of Rold, east of Leyndell",
+     "tags": [],
+     "trophy": false,
+     "text_it": "Dopo Morgott, Melina ti dà il Rold Medallion. Usa il Grand Lift of Rold con il medaglione NORMALE per raggiungere le Forbidden Lands.",
+     "loc_it": "Grand Lift of Rold, a est di Leyndell"
+    },
+    {
+     "text": "From the Forbidden Lands grace, take the WOODEN LIFT up and go into the courtyard at the top. It is guarded by THREE Lesser Ulcerated Tree Spirits — the loot there is ERDTREE'S FAVOR +2, Legendary Talisman 5 of 8. Fight them one at a time by pulling from the entrance, or simply sprint the loot on Torrent and leave.",
+     "loc": "Courtyard above the wooden lift near the Forbidden Lands grace",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Talisman 5/8 — Erdtree's Favor +2",
+       "label_it": "🏆 Talismano leggendario 5/8 — Favore dell'Albero Madre +2"
+      },
+      {
+       "type": "build",
+       "label": "⚔️ Best all-round talisman: +HP, +stamina, +equip load",
+       "label_it": "⚔️ Miglior talismano tuttofare: +PV, +stamina, +carico"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Dal luogo di grazia delle Forbidden Lands, prendi l'ASCENSORE DI LEGNO che sale ed entra nel cortile in cima. È sorvegliato da TRE Lesser Ulcerated Tree Spirit — il bottino lì è il FAVORE DELL'ALBERO MADRE +2 (Erdtree's Favor +2), Talismano leggendario 5 di 8. Affrontali uno alla volta attirandoli dall'ingresso, oppure fai semplicemente una corsa a cavallo di Torrente, prendi il bottino e vattene.",
+     "loc_it": "Cortile sopra l'ascensore di legno vicino al luogo di grazia delle Forbidden Lands"
+    },
+    {
+     "text": "Push into the Mountaintops proper, grab the map, clear Zamor Ruins (Ancient Hero of Zamor), and sweep the region's Golden Seeds and Sacred Tears — Church of Repose, Whiteridge Road, Freezing Lake. Get your Flask of Crimson Tears as close to +11/12 as you can before Malenia.",
+     "loc": "Zamor Ruins and the wider Mountaintops of the Giants",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Max out flasks before the Haligtree",
+       "label_it": "⚔️ Massimizza le ampolle prima del Sacro Albero"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Spingiti nelle Vette dei Giganti vere e proprie, prendi la mappa, ripulisci le Zamor Ruins (Ancient Hero of Zamor) e setaccia la regione per Semi d'oro e Lacrime sacre — Church of Repose, Whiteridge Road, Freezing Lake. Porta l'Ampolla delle lacrime cremisi il più vicino possibile a +11/12 prima di Malenia.",
+     "loc_it": "Zamor Ruins e tutta la regione delle Vette dei Giganti"
+    },
+    {
+     "text": "Cross the invisible bridge to HERETICAL RISE (from the Church of Repose area, walk out onto empty air east of the tower — the bridge is really there, use a Rainbow Stone or crouch-walk). Open the chest at the top for FOUNDING RAIN OF STARS — Legendary Sorcery/Incantation 7 of 7.",
+     "loc": "Heretical Rise, Mountaintops of the Giants (invisible bridge)",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Sorcery/Incantation 7/7 — Founding Rain of Stars",
+       "label_it": "🏆 Stregoneria/Incantesimo leggendario 7/7 — Pioggia di stelle primordiali"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Legendary Sorceries and Incantations",
+       "label_it": "🏆 Stregonerie e incantesimi leggendari"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Attraversa il ponte invisibile fino allo HERETICAL RISE (dalla zona della Church of Repose, cammina nel vuoto a est della torre — il ponte c'è davvero, usa una Rainbow Stone o procedi accovacciato). Apri il forziere in cima per la PIOGGIA DI STELLE PRIMORDIALI (Founding Rain of Stars) — Stregoneria/Incantesimo leggendario 7 di 7.",
+     "loc_it": "Heretical Rise, Vette dei Giganti (ponte invisibile)"
+    },
+    {
+     "text": "Clear Castle Sol in the far north-east. At the Church of the Eclipse inside, take the ECLIPSE SHOTEL from the altar — Legendary Armament 7 of 9.",
+     "loc": "Church of the Eclipse, Castle Sol, Mountaintops of the Giants",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Armament 7/9 — Eclipse Shotel",
+       "label_it": "🏆 Armamento leggendario 7/9 — Shotel dell'eclissi"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Ripulisci Castle Sol nell'estremo nord-est. Alla Church of the Eclipse all'interno, prendi lo SHOTEL DELL'ECLISSI (Eclipse Shotel) dall'altare — Armamento leggendario 7 di 9.",
+     "loc_it": "Church of the Eclipse, Castle Sol, Vette dei Giganti"
+    },
+    {
+     "text": "Kill Commander Niall at the top of Castle Sol. He summons two banished knight phantoms first — kill those immediately (Tiche or your Mimic helps enormously), then deal with Niall alone. Block his lightning-charged halberd; do not try to trade.",
+     "loc": "Castle Sol summit, Mountaintops of the Giants",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Commander Niall",
+       "label_it": "🏆 Comandante Niall"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi il Comandante Niall in cima a Castle Sol. Prima evoca due fantasmi di banished knight — uccidili subito (Tiche o la tua Lacrima riflessa aiutano moltissimo), poi occupati di Niall da solo. Para la sua alabarda caricata a fulmini; non provare a scambiare colpi.",
+     "loc_it": "Vetta di Castle Sol, Vette dei Giganti"
+    },
+    {
+     "text": "Take the HALIGTREE SECRET MEDALLION (LEFT) from Niall's arena. With the Right half from the Village of the Albinaurics you now have the full medallion — this is your key to Consecrated Snowfield, the Haligtree and Malenia.",
+     "loc": "Castle Sol summit, after Commander Niall",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠️ Haligtree Secret Medallion (Left) — required for Malenia",
+       "label_it": "⚠️ Medaglione segreto del Sacro Albero (sinistro) — necessario per Malenia"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prendi il MEDAGLIONE SEGRETO DEL SACRO ALBERO (SINISTRO) nell'arena di Niall. Con la metà destra presa al Village of the Albinaurics ora hai il medaglione completo — è la tua chiave per i Campi di neve consacrati, il Sacro Albero e Malenia.",
+     "loc_it": "Vetta di Castle Sol, dopo il Comandante Niall"
+    },
+    {
+     "text": "Fight the FIRE GIANT on the plateau past the Giants' Gravepost. Phase one: destroy the shackled leg, stay behind him. Phase two: he becomes a rolling wheel — ride Torrent, punish the arm-slam recovery, and keep your Spirit Ash alive. This is a stamina fight; a shield build has to be patient here.",
+     "loc": "Flame Peak, Mountaintops of the Giants",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Fire Giant",
+       "label_it": "🏆 Gigante di fuoco"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Affronta il GIGANTE DI FUOCO sull'altopiano oltre il Giants' Gravepost. Prima fase: distruggi la gamba incatenata e restagli dietro. Seconda fase: diventa una ruota che rotola — cavalca Torrente, punisci il recupero dopo la spallata del braccio e tieni viva la tua Cenere. È uno scontro di stamina; una build con scudo deve avere pazienza qui.",
+     "loc_it": "Flame Peak, Vette dei Giganti"
+    },
+    {
+     "text": "STOP. Do NOT walk into the Forge of the Giants yet. Everything from Phase 10 (Consecrated Snowfield, Mohgwyn Palace, the Haligtree, Malenia) is easier and safer to do while Leyndell still exists. The Forge is parked at the start of Phase 11.",
+     "loc": "Forge of the Giants, Flame Peak",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠️ One-way transition — do not trigger yet",
+       "label_it": "⚠️ Transizione a senso unico — non innescarla ancora"
+      }
+     ],
+     "trophy": false,
+     "text_it": "FERMATI. NON entrare ancora nella Forge of the Giants. Tutto quello che c'è nella Fase 10 (Campi di neve consacrati, Mohgwyn Palace, il Sacro Albero, Malenia) è più facile e più sicuro da fare mentre Leyndell esiste ancora. La Forge è parcheggiata all'inizio della Fase 11.",
+     "loc_it": "Forge of the Giants, Flame Peak"
+    }
+   ],
+   "title_it": "Fase 9 — Vette dei Giganti",
+   "note_it": "Due trofei, un Armamento leggendario, un Talismano leggendario e la settima Stregoneria leggendaria, che sblocca il primo dei tuoi quattro trofei da collezione. NON andare ancora alla Forge of the Giants: bruciare l'Albero Madre è una porta a senso unico ed è volutamente parcheggiata nella Fase 11."
+  },
+  {
+   "title": "Phase 10 — Consecrated Snowfield, the Mohgwyn ATM, and Miquella's Haligtree",
+   "note": "The hardest content in the base game, funded by the best rune farm in the base game. Two Shardbearer trophies, two Legendary Armaments' worth of collectibles, the last three Legendary Talismans and the last Legendary Spirit Ash. Farm first, then fight.",
+   "steps": [
+    {
+     "text": "Take both halves of the Haligtree Secret Medallion to the Grand Lift of Rold and choose 'Hoist Secret Medallion' to be taken to the Consecrated Snowfield instead of the Forbidden Lands.",
+     "loc": "Grand Lift of Rold — Hoist Secret Medallion",
+     "tags": [],
+     "trophy": false,
+     "text_it": "Porta entrambe le metà del Medaglione segreto del Sacro Albero al Grand Lift of Rold e scegli 'Solleva il medaglione segreto' per essere portato ai Campi di neve consacrati invece che alle Forbidden Lands.",
+     "loc_it": "Grand Lift of Rold — Solleva il medaglione segreto"
+    },
+    {
+     "text": "Navigate the blizzard by following the road markers south-to-north (or simply ride Torrent along the left cliff). Grab the Consecrated Snowfield map to clear the fog on your map screen.",
+     "loc": "Consecrated Snowfield, Mountaintops of the Giants",
+     "tags": [],
+     "trophy": false,
+     "text_it": "Attraversa la bufera seguendo i segnavia della strada da sud a nord (oppure cavalca Torrente lungo la parete rocciosa a sinistra). Prendi la mappa dei Campi di neve consacrati per ripulire la nebbia dalla schermata della mappa.",
+     "loc_it": "Campi di neve consacrati, Vette dei Giganti"
+    },
+    {
+     "text": "Enter the CAVE OF THE FORLORN (behind a waterfall on the west side of the Snowfield) and kill the Misbegotten Crusader at the end for the GOLDEN ORDER GREATSWORD — Legendary Armament 8 of 9. He hits extremely hard; use Tiche and fight him in the wide part of the arena.",
+     "loc": "Cave of the Forlorn, western Consecrated Snowfield",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Armament 8/9 — Golden Order Greatsword",
+       "label_it": "🏆 Armamento leggendario 8/9 — Spadone dell'ordine aureo"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Entra nella CAVE OF THE FORLORN (dietro una cascata sul lato ovest dei Campi di neve) e uccidi il Misbegotten Crusader in fondo per lo SPADONE DELL'ORDINE AUREO (Golden Order Greatsword) — Armamento leggendario 8 di 9. Colpisce durissimo; usa Tiche e affrontalo nella parte larga dell'arena.",
+     "loc_it": "Cave of the Forlorn, Campi di neve consacrati occidentali"
+    },
+    {
+     "text": "OPTIONAL 'ATM' PHASE — open Mohgwyn Palace. Two legit routes: (a) use the PUREBLOOD KNIGHT'S MEDAL from Varré (Phase 7) to teleport straight in, or (b) take the WAYGATE near the Yelough Anix Ruins in north-west Consecrated Snowfield. Both drop you at the Palace Approach Ledge-Road grace.",
+     "loc": "Yelough Anix Ruins waygate, Consecrated Snowfield / Pureblood Knight's Medal",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Mohgwyn Palace — optional rune farm",
+       "label_it": "⚔️ Mohgwyn Palace — farm di rune opzionale"
+      }
+     ],
+     "trophy": false,
+     "text_it": "FASE 'BANCOMAT' OPZIONALE — apri Mohgwyn Palace. Due rotte legittime: (a) usa il PUREBLOOD KNIGHT'S MEDAL di Varré (Fase 7) per teletrasportarti direttamente dentro, oppure (b) prendi il PORTALE vicino alle Yelough Anix Ruins nei Campi di neve consacrati nord-occidentali. Entrambe ti fanno arrivare al luogo di grazia Palace Approach Ledge-Road.",
+     "loc_it": "Portale delle Yelough Anix Ruins, Campi di neve consacrati / Pureblood Knight's Medal"
+    },
+    {
+     "text": "The farm itself, from the Palace Approach Ledge-Road grace: (1) shoot the giant Monstrous Crow on the ledge below with one arrow — it charges, falls off the cliff, and dies for roughly 11,000 runes, then rest and repeat; or (2) run down onto the blood swamp and clear the kneeling albinaurics, which is tens of thousands of runes per lap with any wide sweeping attack. Fifteen minutes here funds every level you still need.",
+     "loc": "Palace Approach Ledge-Road grace, Mohgwyn Palace",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ ATM: ~11k runes per crow, ~40k+ per albinauric lap",
+       "label_it": "⚔️ Bancomat: ~11k rune a corvo, ~40k+ a giro di albinaurici"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Il farm vero e proprio, dal luogo di grazia Palace Approach Ledge-Road: (1) colpisci con una freccia il gigantesco Monstrous Crow sulla sporgenza sottostante — carica, cade dalla scogliera e muore per circa 11.000 rune, poi riposa e ripeti; oppure (2) scendi di corsa nella palude di sangue e falcia gli albinaurici inginocchiati, che valgono decine di migliaia di rune a giro con qualsiasi attacco ad ampio raggio. Quindici minuti qui finanziano tutti i livelli che ti restano da prendere.",
+     "loc_it": "Luogo di grazia Palace Approach Ledge-Road, Mohgwyn Palace"
+    },
+    {
+     "text": "Level to roughly RL 125 with the farmed runes: VIG 60 / MND 20 / END 32 / STR 47 / DEX 20. VIG 60 is the hard soft-cap and it is the difference between surviving Malenia's Waterfowl Dance and not.",
+     "loc": "Any Site of Grace",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ RL ~125, VIG 60 before Malenia",
+       "label_it": "⚔️ RL ~125, VIT 60 prima di Malenia"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Sali a circa RL 125 con le rune farmate: VIT 60 / MEN 20 / TEM 32 / FOR 47 / DES 20. VIT 60 è il soft cap duro ed è la differenza tra sopravvivere alla Waterfowl Dance di Malenia e non sopravviverle.",
+     "loc_it": "Qualsiasi luogo di grazia"
+    },
+    {
+     "text": "Kill MOHG, LORD OF BLOOD at the end of Mohgwyn Palace. Use the Purifying Crystal Tear (from the Nomadic Merchant near the Altus/Leyndell road) in a Wondrous Physick to completely negate his Nihil blood-curse phase transition — that item turns the fight from brutal to routine. Bring Bloodflame/blood-resist gear and Tiche.",
+     "loc": "Cocoon of the Empyrean, Mohgwyn Palace",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Shardbearer Mohg",
+       "label_it": "🏆 Araldo del frammento Mohg"
+      },
+      {
+       "type": "build",
+       "label": "⚔️ Purifying Crystal Tear negates the Nihil",
+       "label_it": "⚔️ La Purifying Crystal Tear annulla il Nihil"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi MOHG, LORD OF BLOOD in fondo a Mohgwyn Palace. Usa la Purifying Crystal Tear (dal Nomadic Merchant vicino alla strada Altus/Leyndell) in un'Ampolla di balsamo portentoso per annullare completamente la transizione di fase con la maledizione di sangue Nihil — quell'oggetto trasforma lo scontro da brutale a ordinaria amministrazione. Porta equipaggiamento con resistenza al sangue e Tiche.",
+     "loc_it": "Cocoon of the Empyrean, Mohgwyn Palace"
+    },
+    {
+     "text": "Return to Consecrated Snowfield and do ORDINA, LITURGICAL TOWN. Light all FOUR phantom candles while invisible assassins hunt you — the Sentry's Torch (bought from the Hermit Merchant in Mt. Gelmir) makes them visible and turns this puzzle into a formality. Then use the waygate at the top.",
+     "loc": "Ordina, Liturgical Town, Consecrated Snowfield",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Sentry's Torch reveals the invisible assassins",
+       "label_it": "⚔️ La Sentry's Torch rivela gli assassini invisibili"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Torna ai Campi di neve consacrati e fai ORDINA, LA CITTÀ LITURGICA. Accendi tutte e QUATTRO le candele fantasma mentre assassini invisibili ti danno la caccia — la Sentry's Torch (comprata dallo Hermit Merchant sul Monte Gelmir) li rende visibili e trasforma l'enigma in una formalità. Poi usa il portale in cima.",
+     "loc_it": "Ordina, la città liturgica, Campi di neve consacrati"
+    },
+    {
+     "text": "Fight up through Miquella's Haligtree (the branch-walking section) and kill LORETTA, KNIGHT OF THE HALIGTREE. Same moveset as Royal Knight Loretta but much faster; close the gap and guard-counter.",
+     "loc": "Miquella's Haligtree, Loretta's arena",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Loretta, Knight of the Haligtree",
+       "label_it": "🏆 Loretta, cavaliere del Sacro Albero"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sali attraverso il Sacro Albero di Miquella (la sezione in cui si cammina sui rami) e uccidi LORETTA, CAVALIERE DEL SACRO ALBERO. Stesso repertorio di mosse della Guardia reale Loretta ma molto più veloce; accorcia la distanza e fai guard counter.",
+     "loc_it": "Sacro Albero di Miquella, arena di Loretta"
+    },
+    {
+     "text": "Enter Elphael, Brace of the Haligtree. From the DRAINAGE CHANNEL grace, open the nearby chest for the DRAGONCREST GREATSHIELD TALISMAN — Legendary Talisman 6 of 8. This is also flatly the best defensive talisman in the game for you: equip it now.",
+     "loc": "Chest near the Drainage Channel grace, Elphael",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Talisman 6/8 — Dragoncrest Greatshield Talisman",
+       "label_it": "🏆 Talismano leggendario 6/8 — Talismano granscudo del Drago"
+      },
+      {
+       "type": "build",
+       "label": "⚔️ Equip immediately — -20% physical damage",
+       "label_it": "⚔️ Equipaggialo subito — -20% danno fisico"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Entra a Elphael, Brace of the Haligtree. Dal luogo di grazia DRAINAGE CHANNEL, apri il forziere lì vicino per il TALISMANO GRANSCUDO DEL DRAGO (Dragoncrest Greatshield Talisman) — Talismano leggendario 6 di 8. È anche, senza mezzi termini, il miglior talismano difensivo del gioco per te: equipaggialo subito.",
+     "loc_it": "Forziere vicino al luogo di grazia Drainage Channel, Elphael"
+    },
+    {
+     "text": "Still in Elphael, use a Stonesword Key on the imp statue near the Prayer Room grace and take MARIKA'S SORESEAL from the altar inside — Legendary Talisman 7 of 8.",
+     "loc": "Imp statue room near the Prayer Room grace, Elphael",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Talisman 7/8 — Marika's Soreseal",
+       "label_it": "🏆 Talismano leggendario 7/8 — Sigillo piaga di Marika"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Sempre a Elphael, usa una Chiave della spada di pietra sulla statua dell'imp vicino al luogo di grazia Prayer Room e prendi il SIGILLO PIAGA DI MARIKA (Marika's Soreseal) dall'altare all'interno — Talismano leggendario 7 di 8.",
+     "loc_it": "Stanza con la statua dell'imp vicino al luogo di grazia Prayer Room, Elphael"
+    },
+    {
+     "text": "Find the chest in Elphael guarded by a Cleanrot Knight and take CLEANROT KNIGHT FINLAY — Legendary Spirit Ash 6 of 6. That is the whole set.",
+     "loc": "Elphael, Brace of the Haligtree — knight-guarded chest",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Spirit Ash 6/6 — Cleanrot Knight Finlay",
+       "label_it": "🏆 Spirito leggendario 6/6 — Cavaliere marcescente Finlay"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Legendary Ashen Remains",
+       "label_it": "🏆 Spiriti leggendari"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Trova il forziere di Elphael sorvegliato da un Cleanrot Knight e prendi il CAVALIERE MARCESCENTE FINLAY (Cleanrot Knight Finlay) — Spirito leggendario 6 di 6. Il set è completo.",
+     "loc_it": "Elphael, Brace of the Haligtree — forziere sorvegliato dal cavaliere"
+    },
+    {
+     "text": "Kill MALENIA, BLADE OF MIQUELLA. The realistic shield-knight plan: summon Black Knife Tiche (+10), wear high immunity gear, keep Preserving Boluses hotkeyed, and NEVER be at mid-range when she raises the sword — Waterfowl Dance is only survivable if you are either very far away or hugging her. Expect this to take many attempts; it is the single hardest fight in the base game.",
+     "loc": "Haligtree Roots, Elphael",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Shardbearer Malenia",
+       "label_it": "🏆 Araldo del frammento Malenia"
+      },
+      {
+       "type": "quest",
+       "label": "👤 Optional: resolve Millicent here for the Rotten Winged Sword Insignia; Miquella's Needle, the Frenzied Flame cure, also lives in this quest — this route never needs it because Frenzied Flame is taken last",
+       "label_it": "👤 Opzionale: chiudi qui la missione di Millicent per il Rotten Winged Sword Insignia; anche Miquella's Needle, la cura per la Fiamma della frenesia, vive in questa missione — questa route non ne ha mai bisogno perché la Frenzied Flame si prende per ultima"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi MALENIA, BLADE OF MIQUELLA. Il piano realistico per un cavaliere con scudo: evoca Tiche dei Neri Coltelli (+10), indossa equipaggiamento ad alta immunità, tieni i Preserving Boluses assegnati a un tasto rapido e NON stare MAI a media distanza quando alza la spada — alla Waterfowl Dance si sopravvive solo se sei molto lontano o completamente addosso a lei. Aspettati parecchi tentativi; è lo scontro più duro in assoluto del gioco base.",
+     "loc_it": "Haligtree Roots, Elphael"
+    }
+   ],
+   "title_it": "Fase 10 — Campi di neve consacrati, il bancomat di Mohgwyn e il Sacro Albero di Miquella",
+   "note_it": "Il contenuto più duro del gioco base, finanziato dal miglior farm di rune del gioco base. Due trofei da Araldo del frammento, i collezionabili di due Armamenti leggendari, gli ultimi tre Talismani leggendari e l'ultimo Spirito leggendario. Prima si farma, poi si combatte."
+  },
+  {
+   "title": "Phase 11 — Burning the Erdtree and Crumbling Farum Azula",
+   "note": "Point of no return for Leyndell. Before you light the forge, do the final missable check. Farum Azula then delivers four trophies, the last Legendary Talisman and the last Legendary Armament — two more collection trophies pop here.",
+   "steps": [
+    {
+     "text": "FINAL MISSABLE CHECK before the Forge. Confirm you have: Bolt of Gransax (Leyndell rooftops), everything you want from Leyndell Royal Capital, and that Recusant Bernahl is still ALIVE. Once the Erdtree burns, Leyndell becomes the Ashen Capital and the old version is gone.",
+     "loc": "Roundtable Hold / inventory screen",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠️ Last chance for Leyndell Royal Capital items",
+       "label_it": "⚠️ Ultima occasione per gli oggetti di Leyndell, Capitale Reale"
+      }
+     ],
+     "trophy": false,
+     "text_it": "CONTROLLO FINALE DEGLI OGGETTI PERDIBILI prima della Forge. Verifica di avere: la Lancia di Gransax (tetti di Leyndell), tutto quello che vuoi da Leyndell, Capitale Reale, e che Recusant Bernahl sia ancora VIVO. Una volta bruciato l'Albero Madre, Leyndell diventa Leyndell, Ashen Capital e la vecchia versione sparisce.",
+     "loc_it": "Rocca della Tavola rotonda / schermata dell'inventario"
+    },
+    {
+     "text": "Walk into the Forge of the Giants at Flame Peak and let Melina burn the Erdtree. The world transitions and you wake in Crumbling Farum Azula.",
+     "loc": "Forge of the Giants, Flame Peak",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Erdtree Aflame",
+       "label_it": "🏆 Albero Madre in fiamme"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Entra nella Forge of the Giants a Flame Peak e lascia che Melina bruci l'Albero Madre. Il mondo cambia e ti risvegli a Crumbling Farum Azula.",
+     "loc_it": "Forge of the Giants, Flame Peak"
+    },
+    {
+     "text": "Work through Crumbling Farum Azula to the 'Beside the Great Bridge' grace. Pick up the Ancient Dragon Smithing Stones you find here — there is no bell bearing for them, and you need one for the +25 upgrade trophy in Phase 12.",
+     "loc": "Crumbling Farum Azula, Beside the Great Bridge",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Collect Ancient Dragon Smithing Stones",
+       "label_it": "⚔️ Raccogli le Pietre da forgiatura del drago antico"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Fatti strada per Crumbling Farum Azula fino al luogo di grazia 'Beside the Great Bridge'. Raccogli le Pietre da forgiatura del drago antico che trovi qui — non esiste un globo per comprarle, e te ne serve una per il trofeo del potenziamento a +25 nella Fase 12.",
+     "loc_it": "Crumbling Farum Azula, Beside the Great Bridge"
+    },
+    {
+     "text": "From the Great Bridge, go NORTH, out onto the balcony, and climb the LADDER up to the Dragon Temple rooftop. Follow the rooftop to its EAST edge and open the chest in the small rotunda there for the OLD LORD'S TALISMAN — Legendary Talisman 8 of 8. Beastmen guard the area.",
+     "loc": "Small rotunda on the EAST edge of the Dragon Temple rooftop, Crumbling Farum Azula",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Talisman 8/8 — Old Lord's Talisman",
+       "label_it": "🏆 Talismano leggendario 8/8 — Talismano del vecchio signore"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Legendary Talismans",
+       "label_it": "🏆 Talismani leggendari"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Dal Great Bridge vai a NORD, esci sul balcone e sali la SCALA fino al tetto del Dragon Temple. Segui il tetto fino al suo lato EST e apri il forziere nella piccola rotonda per il TALISMANO DEL VECCHIO SIGNORE (Old Lord's Talisman) — Talismano leggendario 8 di 8. La zona è sorvegliata dagli uomini-bestia.",
+     "loc_it": "Piccola rotonda sul lato EST del tetto del Dragon Temple, Crumbling Farum Azula"
+    },
+    {
+     "text": "RECUSANT BERNAHL invades you in that same rooftop area. Kill him for the DEVOURER'S SCEPTER — Legendary Armament 9 of 9. He is a heavy-weapon duellist; block, guard-counter, punish his jump attack. (If you joined Volcano Manor and never attacked him, this invasion is guaranteed.)",
+     "loc": "Dragon Temple rooftop area, Crumbling Farum Azula",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Armament 9/9 — Devourer's Scepter",
+       "label_it": "🏆 Armamento leggendario 9/9 — Scettro del divoratore"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Legendary Armaments",
+       "label_it": "🏆 Armamenti leggendari"
+      }
+     ],
+     "trophy": true,
+     "text_it": "RECUSANT BERNAHL ti invade in quella stessa zona del tetto. Uccidilo per lo SCETTRO DEL DIVORATORE (Devourer's Scepter) — Armamento leggendario 9 di 9. È un duellante con arma pesante; para, fai guard counter e punisci il suo attacco in salto. (Se ti sei unito a Villa Vulcano e non l'hai mai attaccato, questa invasione è garantita.)",
+     "loc_it": "Zona del tetto del Dragon Temple, Crumbling Farum Azula"
+    },
+    {
+     "text": "Kill the GODSKIN DUO on the Dragon Temple altar. They share a single health bar that only drains permanently once you kill enough of them — the Mimic Tear plus the Blackflame incantations or simply sustained Lion's Claw pressure works. Do not chase; let them come to your shield.",
+     "loc": "Dragon Temple Altar, Crumbling Farum Azula",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Godskin Duo",
+       "label_it": "🏆 Duo Sacriderma"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi il DUO SACRIDERMA sull'altare del Dragon Temple. Condividono un'unica barra di vita che cala definitivamente solo dopo che ne hai uccisi abbastanza — la Lacrima riflessa più gli incantesimi di Blackflame, o semplicemente una pressione costante con Artiglio leonino, funzionano. Non inseguirli; lascia che vengano loro sul tuo scudo.",
+     "loc_it": "Dragon Temple Altar, Crumbling Farum Azula"
+    },
+    {
+     "text": "Find DRAGONLORD PLACIDUSAX. From the Dragon Temple Rooftop grace, drop down the series of ledges to the wide plateau below, walk to the two-fingers scorch mark on the ground and use the 'lie down' prompt — you are teleported into his arena. He is completely optional content that is mandatory for platinum.",
+     "loc": "Plateau below the Dragon Temple Rooftop grace — lie down on the two-fingers mark",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Dragonlord Placidusax",
+       "label_it": "🏆 Lord draconico Placidusax"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Trova il LORD DRACONICO PLACIDUSAX. Dal luogo di grazia Dragon Temple Rooftop, scendi lungo la serie di sporgenze fino all'ampio pianoro sottostante, cammina fino al segno bruciato a due dita sul terreno e usa il comando 'sdraiati' — vieni teletrasportato nella sua arena. È contenuto completamente opzionale che però è obbligatorio per il platino.",
+     "loc_it": "Pianoro sotto il luogo di grazia Dragon Temple Rooftop — sdraiati sul segno a due dita"
+    },
+    {
+     "text": "Kill MALIKETH, THE BLACK BLADE. Phase two applies Destined Death (a black damage-over-time that caps your healing) — the shield-knight answer is to stop blocking and start rolling in phase two, because his attacks pierce guard hard. Tiche or a +10 Mimic is close to mandatory here.",
+     "loc": "Beside the Great Bridge → Maliketh's arena, Crumbling Farum Azula",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Maliketh the Black Blade",
+       "label_it": "🏆 Maliketh la Lama nera"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi MALIKETH LA LAMA NERA. Nella seconda fase applica la Destined Death (un danno nel tempo nero che ti limita le cure) — la risposta del cavaliere con scudo è smettere di parare e iniziare a schivare in capriola nella seconda fase, perché i suoi attacchi bucano pesantemente la guardia. Tiche o una Lacrima riflessa +10 sono qui quasi obbligatorie.",
+     "loc_it": "Beside the Great Bridge → arena di Maliketh, Crumbling Farum Azula"
+    },
+    {
+     "text": "The world transitions again: you return to LEYNDELL, ASHEN CAPITAL. Fight through the ash and burning ruins to the Elden Throne, killing Sir Gideon Ofnir, the All-Knowing in the Erdtree Sanctuary on the way (no trophy, but he blocks the path).",
+     "loc": "Leyndell, Ashen Capital → Erdtree Sanctuary",
+     "tags": [],
+     "trophy": false,
+     "text_it": "Il mondo cambia di nuovo: torni a LEYNDELL, ASHEN CAPITAL. Fatti strada tra la cenere e le rovine in fiamme fino all'Elden Throne, uccidendo lungo il percorso Sir Gideon Ofnir, the All-Knowing all'Erdtree Sanctuary (nessun trofeo, ma blocca la strada).",
+     "loc_it": "Leyndell, Ashen Capital → Erdtree Sanctuary"
+    },
+    {
+     "text": "Kill Godfrey the First Lord / HOARAH LOUX, WARRIOR at the Elden Throne. Phase two he throws away the axe and grapples — the grab is unblockable, so learn to roll it. Everything else can be blocked and guard-countered.",
+     "loc": "Elden Throne, Leyndell Ashen Capital",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Hoarah Loux the Warrior",
+       "label_it": "🏆 Hoarah Loux, Guerriero"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi Godfrey the First Lord / HOARAH LOUX, GUERRIERO all'Elden Throne. Nella seconda fase butta via l'ascia e passa alle prese — la presa non è parabile, quindi impara a schivarla in capriola. Tutto il resto si può parare e punire con i guard counter.",
+     "loc_it": "Elden Throne, Leyndell, Ashen Capital"
+    }
+   ],
+   "title_it": "Fase 11 — Bruciare l'Albero Madre e Crumbling Farum Azula",
+   "note_it": "Punto di non ritorno per Leyndell. Prima di accendere la fucina, fai l'ultimo controllo degli oggetti perdibili. Farum Azula poi consegna quattro trofei, l'ultimo Talismano leggendario e l'ultimo Armamento leggendario — qui sbloccano altri due trofei da collezione."
+  },
+  {
+   "title": "Phase 12 — Final sweep, +25 upgrade and collection audit",
+   "note": "Do not walk into Radagon until this phase is clean. One trophy here, plus the audit that stops you discovering a missing collectible after you have already burned your backups.",
+   "steps": [
+    {
+     "text": "Upgrade any weapon to its maximum: a normal weapon to +25 (needs one ANCIENT DRAGON SMITHING STONE at the last step) or a Somber weapon to +10 (needs a SOMBER ANCIENT DRAGON SMITHING STONE). There is no bell bearing for either — they are fixed drops. Crumbling Farum Azula alone has several, and the Godskin Duo chest and Deeproot Depths give more. Take your Heavy Claymore to +25.",
+     "loc": "Roundtable Hold — Smithing Master Hewg",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 God-Slaying Armament",
+       "label_it": "🏆 Armamento deicida"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Porta un'arma qualsiasi al massimo: un'arma normale a +25 (serve una PIETRA DA FORGIATURA DEL DRAGO ANTICO all'ultimo passaggio) oppure un'arma funerea a +10 (serve una PIETRA DA FORGIATURA FUNEREA DRACONICA). Non esiste un globo per nessuna delle due — sono drop fissi. Solo Crumbling Farum Azula ne ha diverse, e il forziere del Duo Sacriderma e le Deeproot Depths ne danno altre. Porta la tua Claymore pesante a +25.",
+     "loc_it": "Rocca della Tavola rotonda — Mastro fabbro Hewg"
+    },
+    {
+     "text": "Audit all four legendary collections against your inventory. ARMAMENTS 9/9: Grafted Blade Greatsword, Sword of Night and Flame, Ruins Greatsword, Dark Moon Greatsword, Marais Executioner's Sword, Bolt of Gransax, Eclipse Shotel, Golden Order Greatsword, Devourer's Scepter. SORCERIES & INCANTATIONS 7/7: Flame of the Fell God, Greyoll's Roar, Stars of Ruin, Ranni's Dark Moon, Comet Azur, Elden Stars, Founding Rain of Stars. TALISMANS 8/8: Radagon Icon, Radagon's Soreseal, Godfrey Icon, Moon of Nokstella, Erdtree's Favor +2, Dragoncrest Greatshield Talisman, Marika's Soreseal, Old Lord's Talisman. SPIRIT ASHES 6/6: Lhutel the Headless, Redmane Knight Ogha, Mimic Tear, Black Knife Tiche, Ancient Dragon Knight Kristoff, Cleanrot Knight Finlay.",
+     "loc": "Inventory → Armaments / Sorceries / Talismans / Spirit Ashes",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Armaments 9/9 audit",
+       "label_it": "🏆 Verifica Armamenti leggendari 9/9"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Sorceries & Incantations 7/7 audit",
+       "label_it": "🏆 Verifica Stregonerie e incantesimi leggendari 7/7"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Talismans 8/8 audit",
+       "label_it": "🏆 Verifica Talismani leggendari 8/8"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Legendary Spirit Ashes 6/6 audit",
+       "label_it": "🏆 Verifica Spiriti leggendari 6/6"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Verifica tutte e quattro le collezioni leggendarie confrontandole con il tuo inventario. ARMAMENTI 9/9: Spadone della lama innestata, Spada della notte ardente, Spadone delle rovine, Spadone della luna nera, Spada da carnefice di Marais, Lancia di Gransax, Shotel dell'eclissi, Spadone dell'ordine aureo, Scettro del divoratore. STREGONERIE E INCANTESIMI 7/7: Fiamma del dio caduto, Ruggito di Greyoll, Stelle della rovina, Luna nera di Ranni, Cometa di Azur, Stelle ancestrali, Pioggia di stelle primordiali. TALISMANI 8/8: Icona di Radagon, Sigillo piaga di Radagon, Icona di Godfrey, Luna di Nokstella, Favore dell'Albero Madre +2, Talismano granscudo del Drago, Sigillo piaga di Marika, Talismano del vecchio signore. CENERI SPIRITICHE 6/6: Lhutel Senzatesta, Ogha cavaliere Mantorosso, Lacrima riflessa, Tiche dei Neri Coltelli, Antico cavaliere drago Kristoff, Cavaliere marcescente Finlay.",
+     "loc_it": "Inventario → Armamenti / Stregonerie / Talismani / Ceneri spiritiche"
+    },
+    {
+     "text": "Audit BOSS TROPHIES. Check off: Margit, Godrick, Rennala, Radahn, Red Wolf, Magma Wyrm Makar, Leonine Misbegotten, Royal Knight Loretta, Ancestor Spirit, Regal Ancestor Spirit, Mimic Tear, Dragonkin Soldier of Nokstella, Astel, Elemer of the Briar, Godskin Noble, Rykard, Godfrey the First Lord, Mohg the Omen, Morgott, Valiant Gargoyles, Lichdragon Fortissax, Commander Niall, Fire Giant, Mohg Lord of Blood, Loretta Knight of the Haligtree, Malenia, Erdtree Aflame, Godskin Duo, Placidusax, Maliketh, Hoarah Loux, Roundtable Hold, Great Rune.",
+     "loc": "Trophy / Achievement list in the system menu",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠️ Anything missing here is far easier to fix NOW",
+       "label_it": "⚠️ Qualunque cosa manchi qui è molto più facile da sistemare ADESSO"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Verifica i TROFEI DEI BOSS. Spunta: Margit, Godrick, Rennala, Radahn, Lupo rosso, Drago di magma Makar, Progenie leonina, Guardia reale Loretta, Spirito ancestrale, Spirito ancestrale regale, Lacrima riflessa, Soldato draconide di Nokstella, Astel, Elemer del Rovo, Nobile Sacriderma, Rykard, Godfrey primo Lord ancestrale, Mohg il Presagio, Morgott, Audaci gargoyle, Necrodrago Fortissax, Comandante Niall, Gigante di fuoco, Mohg Lord of Blood, Loretta cavaliere del Sacro Albero, Malenia, Albero Madre in fiamme, Duo Sacriderma, Placidusax, Maliketh, Hoarah Loux, Rocca della Tavola rotonda, Runa maggiore.",
+     "loc_it": "Elenco trofei / obiettivi nel menu di sistema"
+    },
+    {
+     "text": "Final build check for the endgame: Heavy Claymore +25 with Lion's Claw, a 100%-physical-block medium shield (Brass Shield, Banished Knight's Shield or the Beast Crest Heater Shield) in the left hand, and talismans = Curved Sword Talisman + Greatshield Talisman + Dragoncrest Greatshield Talisman + Erdtree's Favor +2. Swap in Radagon's Soreseal if you want raw stats and can take the extra damage.",
+     "loc": "Any Site of Grace",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ Endgame loadout",
+       "label_it": "⚔️ Equipaggiamento da endgame"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Controllo finale della build per l'endgame: Claymore pesante +25 con Artiglio leonino, uno scudo medio con blocco fisico al 100% (Brass Shield, Banished Knight's Shield o Beast Crest Heater Shield) nella mano sinistra, e talismani = Curved Sword Talisman + Greatshield Talisman + Talismano granscudo del Drago + Favore dell'Albero Madre +2. Metti il Sigillo piaga di Radagon se vuoi statistiche pure e puoi reggere il danno extra.",
+     "loc_it": "Qualsiasi luogo di grazia"
+    },
+    {
+     "text": "Optional last levelling run at Mohgwyn Palace to reach RL 150: VIG 60 / MND 20 / END 42 / STR 60 / DEX 22. Beyond that the returns are tiny — RL 150 is comfortably enough for Radagon and the Elden Beast with a Spirit Ash.",
+     "loc": "Palace Approach Ledge-Road, Mohgwyn Palace",
+     "tags": [
+      {
+       "type": "build",
+       "label": "⚔️ RL ~150 final",
+       "label_it": "⚔️ RL ~150 finale"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Ultima sessione di livellamento opzionale a Mohgwyn Palace per arrivare a RL 150: VIT 60 / MEN 20 / TEM 42 / FOR 60 / DES 22. Oltre, i ritorni sono minimi — RL 150 è abbondantemente sufficiente per Radagon e l'Elden Beast con una Cenere al fianco.",
+     "loc_it": "Palace Approach Ledge-Road, Mohgwyn Palace"
+    }
+   ],
+   "title_it": "Fase 12 — Ricognizione finale, potenziamento a +25 e verifica delle collezioni",
+   "note_it": "Non presentarti davanti a Radagon finché questa fase non è pulita. Un trofeo qui, più la verifica che ti evita di scoprire un collezionabile mancante dopo aver già bruciato i backup."
+  },
+  {
+   "title": "Phase 13 — The Elden Beast and all three endings via save backup",
+   "note": "The entire platinum hinges on this phase being done in the right ORDER. Back up ONCE, immediately after the Elden Beast dies and BEFORE you touch anything, then spend the backup three times. Frenzied Flame goes LAST because taking it permanently locks out both Age of the Stars and Elden Lord unless you cure it with Miquella's Needle.",
+   "steps": [
+    {
+     "text": "Rest at the Fractured Marika grace in front of the final fog — mix your Wondrous Physick, top up flasks, pick your Spirit Ash — then kill RADAGON OF THE GOLDEN ORDER. He is a fast humanoid with delayed swings — a 100%-block shield handles almost his entire moveset; guard-counter after his hammer plants. Save your flasks for the second half.",
+     "loc": "Elden Throne → Radagon's arena",
+     "tags": [],
+     "trophy": false,
+     "text_it": "Riposa al luogo di grazia Fractured Marika davanti alla nebbia finale — prepara l'Ampolla di balsamo portentoso, riempi le ampolle, scegli la Cenere — poi uccidi RADAGON OF THE GOLDEN ORDER. È un umanoide veloce con fendenti ritardati — uno scudo che para il 100% gestisce quasi tutto il suo repertorio; fai guard counter dopo le martellate a terra. Risparmia le ampolle per la seconda metà.",
+     "loc_it": "Elden Throne → arena di Radagon"
+    },
+    {
+     "text": "Kill the ELDEN BEAST. Ride Torrent inside the arena (it is allowed), stay glued to its underside so the Elden Stars projectiles fly past, and attack the golden weak spot on its chest/underbelly. This is a marathon; bring stamina.",
+     "loc": "Elden Beast arena, beyond Radagon",
+     "tags": [],
+     "trophy": false,
+     "text_it": "Uccidi l'ELDEN BEAST. Cavalca Torrente dentro l'arena (è consentito), restagli incollato sotto la pancia così i proiettili delle Stelle ancestrali ti passano oltre, e colpisci il punto debole dorato sul petto/ventre. È una maratona; porta stamina.",
+     "loc_it": "Arena dell'Elden Beast, oltre Radagon"
+    },
+    {
+     "text": "CRITICAL: after the Elden Beast dies, do NOT touch the Fractured Marika statue. Rest at the Fractured Marika grace that appears and QUIT TO TITLE. You can freely fast-travel away from here, which is exactly what makes the three-ending trick work.",
+     "loc": "Fractured Marika grace, after the Elden Beast",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠️ Do not touch the statue — back up first",
+       "label_it": "⚠️ Non toccare la statua — prima fai il backup"
+      }
+     ],
+     "trophy": false,
+     "text_it": "CRITICO: dopo la morte dell'Elden Beast, NON toccare la statua di Fractured Marika. Riposa al luogo di grazia Fractured Marika che compare ed ESCI AL MENU PRINCIPALE. Da qui puoi viaggiare rapidamente altrove senza problemi, ed è esattamente questo a far funzionare il trucco dei tre finali.",
+     "loc_it": "Luogo di grazia Fractured Marika, dopo l'Elden Beast"
+    },
+    {
+     "text": "BACK UP THE SAVE — PS5: fully close Elden Ring. Go to Settings → Saved Data and Game/App Settings → Saved Data (PS5) → Console Storage → Upload to Cloud Storage (or Copy to USB Drive) and copy the Elden Ring save. IMPORTANT: also go to Settings → Saved Data → Auto-Upload and turn OFF automatic cloud sync for Elden Ring, otherwise the console will silently overwrite your backup with the post-ending save.",
+     "loc": "PS5 System Settings → Saved Data and Game/App Settings",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠️ Turn OFF auto-upload before you spend the backup",
+       "label_it": "⚠️ Disattiva il caricamento automatico prima di spendere il backup"
+      }
+     ],
+     "trophy": false,
+     "text_it": "FAI IL BACKUP DEL SALVATAGGIO — PS5: chiudi completamente Elden Ring. Vai su Impostazioni → Dati salvati e impostazioni di gioco/app → Dati salvati (PS5) → Memoria della console → Carica su Memoria cloud (oppure Copia su unità USB) e copia il salvataggio di Elden Ring. IMPORTANTE: vai anche su Impostazioni → Dati salvati → Caricamento automatico e DISATTIVA la sincronizzazione cloud automatica per Elden Ring, altrimenti la console sovrascriverà silenziosamente il backup con il salvataggio post-finale.",
+     "loc_it": "Impostazioni di sistema PS5 → Dati salvati e impostazioni di gioco/app"
+    },
+    {
+     "text": "BACK UP THE SAVE — PC: fully close Elden Ring, then copy the whole folder C:\\Users\\<YourName>\\AppData\\Roaming\\EldenRing\\<SteamID> (it contains ER0000.sl2 and ER0000.sl2.bak) to somewhere safe like your Desktop. Also disable Steam Cloud for Elden Ring (right-click the game → Properties → General → uncheck 'Keep game saves in the Steam Cloud') so Steam does not re-sync the post-ending file over your restored copy.",
+     "loc": "C:\\Users\\<YourName>\\AppData\\Roaming\\EldenRing\\<SteamID>",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠️ Disable Steam Cloud sync before restoring",
+       "label_it": "⚠️ Disattiva la sincronizzazione Steam Cloud prima di ripristinare"
+      }
+     ],
+     "trophy": false,
+     "text_it": "FAI IL BACKUP DEL SALVATAGGIO — PC: chiudi completamente Elden Ring, poi copia l'intera cartella C:\\Users\\<TuoNome>\\AppData\\Roaming\\EldenRing\\<SteamID> (contiene ER0000.sl2 e ER0000.sl2.bak) in un posto sicuro, per esempio il Desktop. Disattiva anche lo Steam Cloud per Elden Ring (tasto destro sul gioco → Proprietà → Generale → togli la spunta a 'Mantieni i salvataggi nello Steam Cloud') così Steam non ri-sincronizza il file post-finale sopra la copia ripristinata.",
+     "loc_it": "C:\\Users\\<TuoNome>\\AppData\\Roaming\\EldenRing\\<SteamID>"
+    },
+    {
+     "text": "ENDING 1 — AGE OF THE STARS. Load the game, walk up to the Fractured Marika statue and look for RANNI'S BLUE SUMMON SIGN on the ground in front of it. Summon her FIRST, then interact with the statue. (This sign only exists because you gave her the Dark Moon Ring in Phase 6.) Watch the ending to the credits.",
+     "loc": "Fractured Marika statue — Ranni's blue summon sign",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Age of the Stars",
+       "label_it": "🏆 Era delle stelle"
+      }
+     ],
+     "trophy": true,
+     "text_it": "FINALE 1 — ERA DELLE STELLE. Carica la partita, avvicinati alla statua di Fractured Marika e cerca il SEGNO DI EVOCAZIONE BLU DI RANNI a terra davanti a essa. Evoca lei PER PRIMA, poi interagisci con la statua. (Quel segno esiste solo perché le hai dato l'Anello della Luna Nera nella Fase 6.) Guarda il finale fino ai titoli di coda.",
+     "loc_it": "Statua di Fractured Marika — segno di evocazione blu di Ranni"
+    },
+    {
+     "text": "RESTORE THE BACKUP. PS5: Settings → Saved Data → Cloud/USB Storage → Download/Copy to Console Storage, overwrite. PC: quit the game, delete the current EldenRing save folder contents and paste your backed-up ER0000.sl2 back in. Launch and confirm you are standing at Fractured Marika again with the Elden Beast dead.",
+     "loc": "PS5 Saved Data menu / PC AppData EldenRing folder",
+     "tags": [],
+     "trophy": false,
+     "text_it": "RIPRISTINA IL BACKUP. PS5: Impostazioni → Dati salvati → Memoria cloud/USB → Scarica/Copia nella memoria della console, sovrascrivi. PC: chiudi il gioco, cancella il contenuto della cartella EldenRing attuale e incolla dentro il tuo ER0000.sl2 di backup. Avvia e verifica di essere di nuovo a Fractured Marika con l'Elden Beast morto.",
+     "loc_it": "Menu Dati salvati PS5 / cartella EldenRing in AppData su PC"
+    },
+    {
+     "text": "ENDING 2 — ELDEN LORD. This time IGNORE Ranni's summon sign entirely and just touch the Fractured Marika statue. (Any Mending Rune you have — Death-Prince, Perfect Order, Fell Curse — changes the flavour of this ending but all of them still award the Elden Lord trophy, so you can safely use none.)",
+     "loc": "Fractured Marika statue",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Elden Lord",
+       "label_it": "🏆 Lord ancestrale"
+      }
+     ],
+     "trophy": true,
+     "text_it": "FINALE 2 — LORD ANCESTRALE. Stavolta IGNORA completamente il segno di evocazione di Ranni e tocca semplicemente la statua di Fractured Marika. (Qualsiasi Mending Rune tu abbia — Death-Prince, Perfect Order, Fell Curse — cambia il tono del finale, ma tutte assegnano comunque il trofeo Lord ancestrale, quindi puoi tranquillamente non usarne nessuna.)",
+     "loc_it": "Statua di Fractured Marika"
+    },
+    {
+     "text": "RESTORE THE BACKUP a second time, exactly as before.",
+     "loc": "PS5 Saved Data menu / PC AppData EldenRing folder",
+     "tags": [],
+     "trophy": false,
+     "text_it": "RIPRISTINA IL BACKUP una seconda volta, esattamente come prima.",
+     "loc_it": "Menu Dati salvati PS5 / cartella EldenRing in AppData su PC"
+    },
+    {
+     "text": "ENDING 3 — LORD OF FRENZIED FLAME, LAST. From Fractured Marika, fast-travel to the Cathedral of the Forsaken grace you lit back in Phase 8. Go down to the FRENZIED FLAME PROSCRIPTION door, REMOVE ALL ARMOUR AND HEADGEAR (you must be naked — talismans are fine to keep on), and interact with the door to touch the Three Fingers.",
+     "loc": "Frenzied Flame Proscription, below the Cathedral of the Forsaken, Subterranean Shunning-Grounds",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠️ Must be fully unequipped of armour to open the door",
+       "label_it": "⚠️ Devi esserti tolto completamente l'armatura per aprire la porta"
+      }
+     ],
+     "trophy": false,
+     "text_it": "FINALE 3 — SIGNORE DELLA FIAMMA DELLA FRENESIA, PER ULTIMO. Da Fractured Marika, viaggia rapidamente al luogo di grazia Cathedral of the Forsaken che avevi acceso nella Fase 8. Scendi fino alla porta della FRENZIED FLAME PROSCRIPTION, TOGLI TUTTA L'ARMATURA E IL COPRICAPO (devi essere nudo — i talismani puoi tenerli) e interagisci con la porta per toccare le Three Fingers.",
+     "loc_it": "Frenzied Flame Proscription, sotto la Cathedral of the Forsaken, Subterranean Shunning-Grounds"
+    },
+    {
+     "text": "Fast-travel back to the Fractured Marika grace and touch the statue. The Frenzied Flame ending plays and the trophy pops. Because you did this LAST and off a backup, it costs you nothing.",
+     "loc": "Fractured Marika statue, Leyndell Ashen Capital",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Lord of Frenzied Flame",
+       "label_it": "🏆 Signore della Fiamma della frenesia"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Viaggia rapidamente fino al luogo di grazia Fractured Marika e tocca la statua. Parte il finale della Fiamma della frenesia e il trofeo si sblocca. Dato che l'hai fatto per ULTIMO e partendo da un backup, non ti costa nulla.",
+     "loc_it": "Statua di Fractured Marika, Leyndell, Ashen Capital"
+    },
+    {
+     "text": "The PLATINUM / 1000G unlocks the moment the last of the 41 other trophies registers. If it does not pop immediately, quit to title and reload once — the list sometimes needs a sync. Keep your backup until you have physically seen the platinum notification.",
+     "loc": "Post-credits / title screen",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Elden Ring — PLATINUM",
+       "label_it": "🏆 Elden Ring — PLATINO"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Il PLATINO / 1000G si sblocca nel momento in cui viene registrato l'ultimo degli altri 41 trofei. Se non compare subito, esci al menu principale e ricarica una volta — a volte l'elenco ha bisogno di sincronizzarsi. Tieni il backup finché non hai visto fisicamente la notifica del platino.",
+     "loc_it": "Dopo i titoli di coda / schermata del titolo"
+    }
+   ],
+   "title_it": "Fase 13 — L'Elden Beast e tutti e tre i finali con il backup del salvataggio",
+   "note_it": "L'intero platino dipende dal fatto che questa fase sia fatta nell'ORDINE giusto. Fai il backup UNA VOLTA, subito dopo la morte dell'Elden Beast e PRIMA di toccare qualsiasi cosa, poi spendi quel backup tre volte. La Fiamma della frenesia va per ULTIMA perché prenderla blocca in modo permanente sia Era delle stelle sia Lord ancestrale, a meno di curarti con Miquella's Needle."
+  }
+ ],
+ "playthroughs_it": "1 partita (tutti e 3 i finali con il metodo del backup del salvataggio)",
+ "hours_it": "90-120 ore per chi gioca la prima volta e si gode il panorama; 60-75 ore se conosci già la mappa. Aggiungi 3-5 ore se Malenia decide di reagire sul serio.",
+ "build_summary_it": "Stai giocando il classico cavaliere con scudo di Elden Ring: un Cavaliere errante (Vagabond) che vince restando immobile. Tutta la build è uno scudo medio con blocco fisico al 100% nella mano sinistra (l'Heater Shield iniziale è già al 100% fisico e ti porta avanti finché non passi a un Brass Shield, un Banished Knight's Shield o un Beast Crest Heater Shield per la stabilità) e uno spadone ad affinità pesante nella destra, e la meccanica centrale è il GUARD COUNTER: para un attacco in arrivo, poi premi subito l'attacco pesante per una risposta devastante che rompe la postura e ignora quasi tutto quello che un boss sta cercando di farti. La priorità delle statistiche è VITALITÀ prima di tutto e sempre — arriva a 28 VIT prima di Godrick, 40 prima di Leyndell e al soft cap di 60 prima del Sacro Albero, perché morire in due colpi è ciò che davvero ferma le build con scudo. La TEMPRA viene seconda (ti compra stamina per parare, non solo carico di equipaggiamento: punta a 25-30 entro le Vette dei Giganti e tieni il carico sotto il 70% per la capriola media indossando il Banished Knight armour set preso a Castello di Grantempesta). La FORZA è terza, e sale dal 14 iniziale del Cavaliere errante a 16 nel momento in cui trovi la Claymore, poi a 27-33 attraversando Caelid e Altus, e infine a 50-60 nel finale per una Claymore pesante impugnata a due mani. La DESTREZZA resta a 13-20 solo per soddisfare i requisiti delle armi, la MENTE a 14-20 per un paio di usi delle ceneri di guerra, e INT/FED/ARC non si muovono mai dalla base. Percorso delle armi: parti con la Spada lunga e Ash of War: Storm Stomp da Gatefront, passa alla ZANNA DEL LIMIERE (Bloodhound's Fang) del Cavaliere limiere Darriwil nella Fase 1 (arma funerea, economica da potenziare, ti porta fino ad Altus), prendi la CLAYMORE dal forziere nell'edificio nord di Castle Morne nella Fase 3 e falla diventare la tua arma definitiva, mettici un'affinità pesante e piazzaci la CENERE DI GUERRA: ARTIGLIO LEONINO (Ash of War: Lion's Claw) del Lion Guardian a Fort Gael nella Fase 5 — quella spallata dall'alto più i guard counter sono tutto il tuo danno per 80 ore. Tieni la CENERE DI GUERRA: VOTO AUREO (Ash of War: Golden Vow, dal Godrick Knight a cavallo a Sepolcride) su un'arma di scorta come potenziamento pre-boss. Talismani in ordine di acquisizione: il CURVED SWORD TALISMAN dalla stanza buia del Banished Knight vicino a Stormveil Cliffside (+20% di danno ai guard counter, l'oggetto più importante della build), il GREATSHIELD TALISMAN dal carro sorvegliato dalle baliste a est di Erdtree-Gazing Hill (+stabilità in guardia), il TALISMANO GRANSCUDO DEL DRAGO (Dragoncrest Greatshield Talisman) dal forziere del Drainage Channel a Elphael (-20% danno fisico) e il FAVORE DELL'ALBERO MADRE +2 (Erdtree's Favor +2) dal cortile dell'ascensore delle Forbidden Lands (+PV, +stamina, +carico) — questo è il tuo set da endgame, con il SIGILLO PIAGA DI RADAGON (Radagon's Soreseal) come alternativa quando vuoi statistiche pure e puoi permetterti il danno extra. Le Ceneri spiritiche non sono opzionali in questa route, fanno parte della build: Ceneri di lupi spettrali e Lhutel presto, una LACRIMA RIFLESSA (Mimic Tear) +10 dalla metà del gioco in poi, e TICHE DEI NERI COLTELLI (Black Knife Tiche) per ogni scontro difficile da Astel a Malenia. Chiudi con una Claymore pesante a +25 (una Pietra da forgiatura del drago antico all'ultimo passaggio, che sblocca anche il trofeo Armamento deicida) intorno a RL 150.",
+ "golden_rules_it": [
+  "VITALITÀ per prima cosa, a ogni singolo livello, fino a 60. Uno scudo non serve a un cadavere.",
+  "Impara il guard counter (para, poi attacco pesante) nella caverna del tutorial. È l'80% del danno di questa build.",
+  "Ceneri spiritiche e segni di evocazione degli PNG sono pienamente consentiti e anzi consigliati — evoca tutto, sempre. Porta la Lacrima riflessa a +10.",
+  "NON UCCIDERE RECUSANT BERNAHL presto. Deve restare vivo per invaderti a Crumbling Farum Azula, altrimenti perdi per sempre lo Scettro del divoratore e il trofeo Armamenti leggendari.",
+  "Prendi la LANCIA DI GRANSAX (Bolt of Gransax) a Leyndell PRIMA di bruciare l'Albero Madre. Leyndell, Capitale Reale diventa Leyndell, Ashen Capital e sparisce per sempre.",
+  "NON toccare le Three Fingers / la porta della Frenzied Flame Proscription fino alla Fase 13. Toccarla in anticipo ti blocca sia Era delle stelle sia Lord ancestrale.",
+  "Completa la linea di missioni di Ranni (Anello della Luna Nera alla sua bambola alla Cattedrale di Manus Celes) prima del boss finale, altrimenti il finale Era delle stelle per te semplicemente non esiste.",
+  "La missione di Fia richiede il Cursemark of Death dalla Divine Tower of Liurnia, e NON devi dare il Twinned Armour Set al fratello di D prima di aver battuto Lichdragon Fortissax.",
+  "Fai il backup del salvataggio UNA VOLTA, al luogo di grazia Fractured Marika, subito dopo la morte dell'Elden Beast e prima di toccare la statua — poi spendi quel backup tre volte.",
+  "Disattiva il caricamento automatico su cloud della PS5 / lo Steam Cloud per Elden Ring prima di ripristinare un backup, altrimenti la console te lo sovrascrive da sola.",
+  "L'ordine dei finali è fisso: prima ERA DELLE STELLE, poi LORD ANCESTRALE, e per ultimo SIGNORE DELLA FIAMMA DELLA FRENESIA.",
+  "Raccogli ogni Seme d'oro e ogni Lacrima sacra che incontri. Le cariche dell'ampolla sono il vero cursore di difficoltà, soprattutto prima di Malenia."
+ ],
+ "stat_table_it": {
+  "note": "Obiettivi approssimativi per un Cavaliere errante spada-e-scudo. RL è più o meno il livello a cui dovresti essere quando arrivi in quella zona. INT/FED/ARC non lasciano mai la base — le stregonerie e gli incantesimi leggendari per te sono collezionabili, non magie che lancerai mai. Se sfori, Rennala ti rifà le statistiche in cambio di una Lacrima di larva.",
+  "columns": [
+   "RL",
+   "VIT",
+   "MEN",
+   "TEM",
+   "FOR",
+   "DES",
+   "INT",
+   "FED",
+   "ARC",
+   "Note"
+  ],
+  "rows": [
+   [
+    "9",
+    "15",
+    "10",
+    "11",
+    "14",
+    "13",
+    "9",
+    "9",
+    "7",
+    "Inizio Cavaliere errante — l'Heater Shield para già il 100% del fisico"
+   ],
+   [
+    "30",
+    "28",
+    "12",
+    "15",
+    "16",
+    "13",
+    "9",
+    "9",
+    "7",
+    "Margit / Godrick. 16 FOR sblocca la Claymore; la VIT è tutto"
+   ],
+   [
+    "50",
+    "38",
+    "14",
+    "19",
+    "19",
+    "14",
+    "9",
+    "9",
+    "7",
+    "Liurnia, Raya Lucaria, Maniero Cariano. La TEM ti compra stamina per parare"
+   ],
+   [
+    "70",
+    "45",
+    "15",
+    "22",
+    "27",
+    "15",
+    "9",
+    "9",
+    "7",
+    "Caelid, Radahn, Nokron. La Claymore pesante inizia a rendere"
+   ],
+   [
+    "90",
+    "52",
+    "16",
+    "26",
+    "33",
+    "17",
+    "9",
+    "9",
+    "7",
+    "Altus, Villa Vulcano, Rykard, Leyndell. Superata la soglia di sopravvivenza dei 40 VIT"
+   ],
+   [
+    "110",
+    "58",
+    "18",
+    "30",
+    "40",
+    "18",
+    "9",
+    "9",
+    "7",
+    "Vette dei Giganti, Gigante di fuoco, Castle Sol"
+   ],
+   [
+    "125",
+    "60",
+    "20",
+    "32",
+    "47",
+    "20",
+    "9",
+    "9",
+    "7",
+    "Campi di neve consacrati, Mohg, Sacro Albero. VIT 60, soft cap prima di Malenia"
+   ],
+   [
+    "150",
+    "60",
+    "20",
+    "42",
+    "60",
+    "22",
+    "9",
+    "9",
+    "7",
+    "Farum Azula, Maliketh, Radagon / Elden Beast. Finale in scioltezza"
+   ]
+  ]
+ },
+ "glossary_it": {
+  "Elden Ring (trophy)": "Anello ancestrale",
+  "Elden Lord": "Lord ancestrale",
+  "Age of the Stars": "Era delle stelle",
+  "Lord of Frenzied Flame": "Signore della Fiamma della frenesia",
+  "Shardbearer Godrick": "Araldo del frammento Godrick",
+  "Shardbearer Radahn": "Araldo del frammento Radahn",
+  "Shardbearer Morgott": "Araldo del frammento Morgott",
+  "Shardbearer Rykard": "Araldo del frammento Rykard",
+  "Shardbearer Malenia": "Araldo del frammento Malenia",
+  "Shardbearer Mohg": "Araldo del frammento Mohg",
+  "Maliketh the Black Blade": "Maliketh la Lama nera",
+  "Hoarah Loux, Warrior": "Hoarah Loux, Guerriero",
+  "Dragonlord Placidusax": "Lord draconico Placidusax",
+  "God-Slaying Armament": "Armamento deicida",
+  "Legendary Armaments": "Armamenti leggendari",
+  "Legendary Ashen Remains": "Spiriti leggendari",
+  "Legendary Sorceries and Incantations": "Stregonerie e incantesimi leggendari",
+  "Legendary Talismans": "Talismani leggendari",
+  "Rennala, Queen of the Full Moon": "Rennala, Regina del plenilunio",
+  "Lichdragon Fortissax": "Necrodrago Fortissax",
+  "Godskin Duo": "Duo Sacriderma",
+  "Fire Giant": "Gigante di fuoco",
+  "Dragonkin Soldier of Nokstella": "Soldato draconide di Nokstella",
+  "Regal Ancestor Spirit": "Spirito ancestrale regale",
+  "Valiant Gargoyles": "Audaci gargoyle",
+  "Margit, the Fell Omen": "Margit il Presagio implacabile",
+  "Red Wolf of Radagon": "Lupo rosso di Radagon",
+  "Godskin Noble": "Nobile Sacriderma",
+  "Magma Wyrm Makar": "Drago di magma Makar",
+  "Godfrey, First Elden Lord": "Godfrey, primo Lord ancestrale",
+  "Mohg, the Omen": "Mohg il Presagio",
+  "Mimic Tear": "Lacrima riflessa",
+  "Loretta, Knight of the Haligtree": "Loretta, cavaliere del Sacro Albero",
+  "Astel, Naturalborn of the Void": "Astel, progenie del vuoto",
+  "Leonine Misbegotten": "Progenie leonina",
+  "Royal Knight Loretta": "Guardia reale Loretta",
+  "Elemer of the Briar": "Elemer del Rovo",
+  "Ancestor Spirit": "Spirito ancestrale",
+  "Commander Niall": "Comandante Niall",
+  "Roundtable Hold": "Rocca della Tavola rotonda",
+  "Great Rune": "Runa maggiore",
+  "Erdtree Aflame": "Albero Madre in fiamme",
+  "Vigor": "Vitalità",
+  "Mind": "Mente",
+  "Endurance": "Tempra",
+  "Strength": "Forza",
+  "Dexterity": "Destrezza",
+  "Intelligence": "Intelligenza",
+  "Faith": "Fede",
+  "Arcane": "Arcano",
+  "VIG": "VIT",
+  "MND": "MEN",
+  "END": "TEM",
+  "STR": "FOR",
+  "DEX": "DES",
+  "FAI": "FED",
+  "Site of Grace": "Luogo di grazia",
+  "Ash of War": "Cenere di guerra",
+  "Ashes of War": "Ceneri di guerra",
+  "Spirit Ashes": "Ceneri spiritiche",
+  "Spirit Calling Bell": "Campana evoca spiriti",
+  "Lone Wolf Ashes": "Ceneri di lupi spettrali",
+  "Remembrance": "Ricordo",
+  "Smithing Stone": "Pietra da forgiatura",
+  "Somber Smithing Stone": "Pietra da forgiatura funerea",
+  "Ancient Dragon Smithing Stone": "Pietra da forgiatura del drago antico",
+  "Somber Ancient Dragon Smithing Stone": "Pietra da forgiatura funerea draconica",
+  "Bell Bearing": "Globo",
+  "Golden Seed": "Seme d'oro",
+  "Sacred Tear": "Lacrima sacra",
+  "Talisman": "Talismano",
+  "Flask of Crimson Tears": "Ampolla delle lacrime cremisi",
+  "Flask of Cerulean Tears": "Ampolla delle lacrime cerulee",
+  "Flask of Wondrous Physick": "Ampolla di balsamo portentoso",
+  "Crystal Tear": "Lacrima di cristallo",
+  "Stonesword Key": "Chiave della spada di pietra",
+  "Rune Arc": "Saetta runica",
+  "Larval Tear": "Lacrima di larva",
+  "Whetstone Knife": "Coltello da affilatura",
+  "Heavy (affinity)": "pesante",
+  "Evergaol": "Galera eterna",
+  "Erdtree": "Albero Madre",
+  "Haligtree": "Sacro Albero",
+  "Torrent": "Torrente",
+  "Vagabond": "Cavaliere errante",
+  "Longsword": "Spada lunga",
+  "Halberd": "Alabarda",
+  "Limgrave": "Sepolcride",
+  "Weeping Peninsula": "Penisola del pianto",
+  "Stormhill": "Colle Tempesta",
+  "Stormveil Castle": "Castello di Grantempesta",
+  "Liurnia of the Lakes": "Liurnia Lacustre",
+  "Academy of Raya Lucaria": "Accademia di Raya Lucaria",
+  "Caria Manor": "Maniero Cariano",
+  "Ranni's Rise": "Guglia di Ranni",
+  "Renna's Rise": "Guglia di Renna",
+  "Carian Study Hall": "Sala da studio Cariana",
+  "Altus Plateau": "Altopiano di Altus",
+  "Mt. Gelmir": "Monte Gelmir",
+  "Volcano Manor": "Villa Vulcano",
+  "Leyndell, Royal Capital": "Leyndell, Capitale Reale",
+  "Mountaintops of the Giants": "Vette dei Giganti",
+  "Consecrated Snowfield": "Campi di neve consacrati",
+  "Nokron, Eternal City": "Nokron, Città Eterna",
+  "Nokstella, Eternal City": "Nokstella, Città Eterna",
+  "Siofra River": "Fiume Siofra",
+  "Ainsel River": "Fiume Ainsel",
+  "Lake of Rot": "Lago putrescente",
+  "Moonlight Altar": "Campi della Luna",
+  "Cathedral of Manus Celes": "Cattedrale di Manus Celes",
+  "Church of Elleh": "Chiesa di Elleh",
+  "Redmane Castle": "Castello Mantorosso",
+  "Ordina, Liturgical Town": "Ordina, la città liturgica",
+  "Church of Pilgrimage": "Chiesa del Pellegrinaggio",
+  "Callu Baptismal Church": "Chiesa battesimale di Callu",
+  "Fourth Church of Marika": "Quarta Chiesa di Marika",
+  "Agheel Lake": "Lago di Agheel",
+  "Bloodhound's Fang": "Zanna del limiere",
+  "Bloodhound Knight Darriwil": "Cavaliere limiere Darriwil",
+  "Ash of War: Lion's Claw": "Cenere di guerra: Artiglio leonino",
+  "Ash of War: Golden Vow": "Cenere di guerra: Voto aureo",
+  "Grafted Blade Greatsword": "Spadone della lama innestata",
+  "Sword of Night and Flame": "Spada della notte ardente",
+  "Ruins Greatsword": "Spadone delle rovine",
+  "Dark Moon Greatsword": "Spadone della luna nera",
+  "Marais Executioner's Sword": "Spada da carnefice di Marais",
+  "Bolt of Gransax": "Lancia di Gransax",
+  "Eclipse Shotel": "Shotel dell'eclissi",
+  "Golden Order Greatsword": "Spadone dell'ordine aureo",
+  "Devourer's Scepter": "Scettro del divoratore",
+  "Flame of the Fell God": "Fiamma del dio caduto",
+  "Greyoll's Roar": "Ruggito di Greyoll",
+  "Stars of Ruin": "Stelle della rovina",
+  "Ranni's Dark Moon": "Luna nera di Ranni",
+  "Comet Azur": "Cometa di Azur",
+  "Elden Stars": "Stelle ancestrali",
+  "Founding Rain of Stars": "Pioggia di stelle primordiali",
+  "Radagon Icon": "Icona di Radagon",
+  "Radagon's Soreseal": "Sigillo piaga di Radagon",
+  "Godfrey Icon": "Icona di Godfrey",
+  "Moon of Nokstella": "Luna di Nokstella",
+  "Erdtree's Favor +2": "Favore dell'Albero Madre +2",
+  "Dragoncrest Greatshield Talisman": "Talismano granscudo del Drago",
+  "Marika's Soreseal": "Sigillo piaga di Marika",
+  "Old Lord's Talisman": "Talismano del vecchio signore",
+  "Lhutel the Headless": "Lhutel Senzatesta",
+  "Redmane Knight Ogha": "Ogha, cavaliere Mantorosso",
+  "Black Knife Tiche": "Tiche dei Neri Coltelli",
+  "Ancient Dragon Knight Kristoff": "Antico cavaliere drago Kristoff",
+  "Cleanrot Knight Finlay": "Cavaliere marcescente Finlay",
+  "Fingerslayer Blade": "Lama flagello delle dita",
+  "Carian Inverted Statue": "Statua invertita di Caria",
+  "Dark Moon Ring": "Anello della Luna Nera",
+  "Dectus Medallion": "Medaglione di Dectus",
+  "Haligtree Secret Medallion": "Medaglione segreto del Sacro Albero"
+ },
+ "unverified_it": [
+  "guard counter",
+  "Keepsake",
+  "Heater Shield",
+  "Brass Shield",
+  "Banished Knight's Shield",
+  "Beast Crest Heater Shield",
+  "Claymore",
+  "Serpent-Hunter",
+  "Ash of War: Storm Stomp",
+  "Curved Sword Talisman",
+  "Greatshield Talisman",
+  "Rotten Winged Sword Insignia",
+  "Purifying Crystal Tear",
+  "Preserving Boluses",
+  "Sentry's Torch",
+  "Rainbow Stone",
+  "Fire Grease",
+  "Deathroot",
+  "Cursemark of Death",
+  "Twinned Armour Set",
+  "Lord of Blood's Favor",
+  "Pureblood Knight's Medal",
+  "Festering Bloody Fingers",
+  "Academy Glintstone Key",
+  "Discarded Palace Key",
+  "Spectral Steed Whistle",
+  "Tarnished's Wizened Finger",
+  "Crafting Kit",
+  "Telescope",
+  "Margit's Shackle",
+  "Mending Rune of the Death-Prince",
+  "Miquella's Needle",
+  "Sacrificial Twig",
+  "Unalloyed Gold Needle",
+  "Weathered Dagger",
+  "Sword of Morne",
+  "Inseparable Sword",
+  "Axe of Godrick",
+  "Godskin Peeler",
+  "Banished Knight armour set",
+  "Erdtree's Favor +1",
+  "Banished Knight Oleg Ashes",
+  "Skeletal Militiaman Ashes",
+  "Spirit Jellyfish Ashes",
+  "Ancestral Follower Ashes",
+  "Ancestral Follower's Horn",
+  "Great Rune of the Unborn",
+  "Morgott's Great Rune",
+  "Godrick's Great Rune",
+  "Dewkissed Herba",
+  "Crystal Cave Moss",
+  "Sacramental Bud",
+  "Smithing-Stone Miner's Bell Bearing [1]",
+  "Finger Snap",
+  "Chapel of Anticipation",
+  "Cave of Knowledge",
+  "Stranded Graveyard",
+  "Gatefront Ruins",
+  "Mistwood",
+  "Mistwood Ruins",
+  "Forlorn Hound Evergaol",
+  "Deathtouched Catacombs",
+  "Summonwater Village",
+  "Fort Haight",
+  "Stormhill Shack",
+  "Castleward Tunnel",
+  "Rampart Tower",
+  "Stormveil Cliffside",
+  "Liftside Chamber",
+  "Godrick's Great Hall",
+  "Fringefolk Hero's Grave",
+  "Divine Tower of Limgrave",
+  "Fort of Reprimand",
+  "Bridge of Sacrifice",
+  "Tombsward Catacombs",
+  "Castle Morne",
+  "Tombsward Church",
+  "Isolated Merchant's Shack",
+  "Morne Tunnel",
+  "Limgrave Tunnels",
+  "Siofra River Well",
+  "Hallowhorn Grounds",
+  "Liurnia Lake Shore",
+  "Rose Church",
+  "Malefactor's Evergaol",
+  "Church of Vows",
+  "Church of Irith",
+  "Main Academy Gate",
+  "Church of the Cuckoo",
+  "Debate Parlour",
+  "Raya Lucaria Grand Library",
+  "Three Sisters",
+  "Village of the Albinaurics",
+  "Ruin-Strewn Precipice",
+  "Academy Crystal Cave",
+  "Bellum Church",
+  "Lakeside Crystal Cave",
+  "Church of Inhibition",
+  "Raya Lucaria Crystal Tunnel",
+  "Revenger's Shack",
+  "Smouldering Church",
+  "Sellia",
+  "Sellia, Town of Sorcery",
+  "Sellia Hideaway",
+  "Fort Gael",
+  "Fort Gael North",
+  "Fort Faroth",
+  "Greyoll's Dragonbarrow",
+  "Cathedral of Dragon Communion",
+  "Gowry's Shack",
+  "War Dead Catacombs",
+  "Wailing Dunes",
+  "Night's Sacred Ground",
+  "Ancestral Woods",
+  "Grand Cloister",
+  "Chelona's Rise",
+  "Ringleader's Evergaol",
+  "Divine Tower of Liurnia",
+  "Writheblood Ruins",
+  "Golden Lineage Evergaol",
+  "Sainted Hero's Grave",
+  "Erdtree-Gazing Hill",
+  "The Shaded Castle",
+  "Hermit Village",
+  "Temple of Eiglay",
+  "Warmaster's Shack",
+  "Grand Lift of Dectus",
+  "Grand Lift of Rold",
+  "Capital Outskirts",
+  "Erdtree Sanctuary",
+  "Elden Throne",
+  "Subterranean Shunning-Grounds",
+  "Cathedral of the Forsaken",
+  "Frenzied Flame Proscription",
+  "Three Fingers",
+  "Divine Tower of East Altus",
+  "Siofra Aqueduct",
+  "Deeproot Depths",
+  "Great Waterfall Crest",
+  "Prince of Death's Throne",
+  "Deathbed Dream",
+  "Forbidden Lands",
+  "Zamor Ruins",
+  "Church of Repose",
+  "Whiteridge Road",
+  "Freezing Lake",
+  "Heretical Rise",
+  "Castle Sol",
+  "Church of the Eclipse",
+  "Giants' Gravepost",
+  "Flame Peak",
+  "Forge of the Giants",
+  "Cave of the Forlorn",
+  "Yelough Anix Ruins",
+  "Mohgwyn Palace",
+  "Palace Approach Ledge-Road",
+  "Cocoon of the Empyrean",
+  "Miquella's Haligtree",
+  "Elphael, Brace of the Haligtree",
+  "Drainage Channel",
+  "Prayer Room",
+  "Haligtree Roots",
+  "Crumbling Farum Azula",
+  "Beside the Great Bridge",
+  "Dragon Temple",
+  "Dragon Temple Altar",
+  "Dragon Temple Rooftop",
+  "Leyndell, Ashen Capital",
+  "Fractured Marika",
+  "Grafted Scion",
+  "Erdtree Burial Watchdog",
+  "Tibia Mariner",
+  "Cemetery Shade",
+  "Putrid Tree Spirit",
+  "Misbegotten Warrior",
+  "Crucible Knight",
+  "Lesser Ulcerated Tree Spirit",
+  "Misbegotten Crusader",
+  "Monstrous Crow",
+  "Draconic Tree Sentinel",
+  "Alecto, Black Knife Ringleader",
+  "Adan, Thief of Fire",
+  "Godefroy the Grafted",
+  "Ancient Hero of Zamor",
+  "Elder Dragon Greyoll",
+  "Radagon of the Golden Order",
+  "Elden Beast",
+  "Godrick the Grafted",
+  "Starscourge Radahn",
+  "Rykard, Lord of Blasphemy",
+  "Morgott, the Omen King",
+  "Mohg, Lord of Blood",
+  "Malenia, Blade of Miquella",
+  "Sir Gideon Ofnir, the All-Knowing",
+  "Godfrey the First Lord",
+  "Recusant Bernahl",
+  "Magnus the Beast Claw",
+  "Waterfowl Dance",
+  "Destined Death",
+  "Scarlet Rot",
+  "Nihil",
+  "Wondrous Physick",
+  "Melina",
+  "Renna",
+  "Ranni",
+  "Blaidd",
+  "Iji",
+  "Seluvis",
+  "Roderika",
+  "Rogier",
+  "Nepheli Loux",
+  "Gatekeeper Gostoc",
+  "Twin Maiden Husks",
+  "Hewg",
+  "Ensha",
+  "D, Hunter of the Dead",
+  "Fia",
+  "Irina",
+  "Edgar",
+  "Kenneth Haight",
+  "Thops",
+  "Boc the Seamster",
+  "White Mask Varré",
+  "Patches",
+  "Merchant Kalé",
+  "Tanith",
+  "Millicent",
+  "Gowry",
+  "Jerren",
+  "Alexander",
+  "Okina",
+  "Master Lusat",
+  "Primeval Sorcerer Azur",
+  "Fia's Champions",
+  "Nomadic Merchant",
+  "Hermit Merchant",
+  "Lion Guardian",
+  "Godrick Knight",
+  "Banished Knight",
+  "Cleanrot Knight",
+  "Age of the Stars (ending)",
+  "Elden Lord (ending)"
+ ],
+ "build_bullets": [
+  {
+   "h": "Core",
+   "t": "You are playing the classic Elden Ring shield-knight: a Vagabond who wins by standing still. The entire build is a 100% physical-block medium shield in the left hand (the starting Heater Shield is already 100% physical and carries you until you swap to a Brass Shield, Banished Knight's Shield or Beast Crest Heater Shield for stability) and a Heavy-affinity greatsword in the right."
+  },
+  {
+   "h": "Guard counter",
+   "t": "The core mechanic is the GUARD COUNTER: block an incoming attack, then immediately press heavy attack for a big, poise-breaking riposte that ignores most of what a boss is trying to do to you."
+  },
+  {
+   "h": "VIGOR first",
+   "t": "Stat priority is VIGOR first and always — reach 28 VIG before Godrick, 40 before Leyndell and the 60 soft cap before the Haligtree, because dying in two hits is what actually stops shield builds."
+  },
+  {
+   "h": "ENDURANCE",
+   "t": "ENDURANCE is second (it buys stamina for blocking, not just equip load: target 25-30 by the Mountaintops and keep your equip load under 70% for a medium roll while wearing the Banished Knight set from Stormveil)."
+  },
+  {
+   "h": "STRENGTH",
+   "t": "STRENGTH is third, riding up from the Vagabond's starting 14 to 16 the moment you find the Claymore, then to 27-33 through Caelid and Altus, and finally to 50-60 late for a two-handed Heavy Claymore."
+  },
+  {
+   "h": "Minor stats",
+   "t": "DEXTERITY sits at 13-20 purely to meet weapon requirements, MIND at 14-20 for a couple of Ash of War uses, and INT/FAI/ARC never move off base."
+  },
+  {
+   "h": "Weapon path",
+   "t": "Start on the Longsword with Storm Stomp from Gatefront, upgrade to the BLOODHOUND'S FANG from Bloodhound Knight Darriwil in Phase 1 (a Somber weapon, cheap to upgrade, carries you to Altus), pick up the CLAYMORE from the chest in Castle Morne's north building in Phase 3 and make it your permanent weapon, put a Heavy affinity on it, and slot ASH OF WAR: LION'S CLAW from the Lion Guardian at Fort Gael in Phase 5 — that overhead slam plus guard counters is your entire damage output for 80 hours. Keep ASH OF WAR: GOLDEN VOW (mounted Godrick Knight, Limgrave) on a spare weapon as a pre-boss buff."
+  },
+  {
+   "h": "Talismans",
+   "t": "Talismans in acquisition order: the CURVED SWORD TALISMAN from the dark Banished-Knight room near Stormveil Cliffside (+20% guard counter damage, the single most important item in the build), the GREATSHIELD TALISMAN from the ballista-guarded carriage east of Erdtree-Gazing Hill (+guard stability), the DRAGONCREST GREATSHIELD TALISMAN from the Drainage Channel chest in Elphael (-20% physical damage), and ERDTREE'S FAVOR +2 from the Forbidden Lands lift courtyard (+HP, +stamina, +equip load) — that is your endgame set, with RADAGON'S SORESEAL as a swap-in when you want raw stats and can eat the extra damage."
+  },
+  {
+   "h": "Spirit Ashes",
+   "t": "Spirit Ashes are not optional in this route, they are part of the build: Lone Wolf and Lhutel early, a +10 MIMIC TEAR from the mid-game onward, and BLACK KNIFE TICHE for every hard fight from Astel to Malenia."
+  },
+  {
+   "h": "Finish line",
+   "t": "Finish with a Heavy Claymore at +25 (one Ancient Dragon Smithing Stone at the final step, which also pops the God-Slaying Armament trophy) around RL 150."
+  }
+ ],
+ "build_bullets_it": [
+  {
+   "h": "Il cuore",
+   "t": "Stai giocando il classico cavaliere con scudo di Elden Ring: un Cavaliere errante (Vagabond) che vince restando immobile. Tutta la build è uno scudo medio con blocco fisico al 100% nella mano sinistra (l'Heater Shield iniziale è già al 100% fisico e ti porta avanti finché non passi a un Brass Shield, un Banished Knight's Shield o un Beast Crest Heater Shield per la stabilità) e uno spadone ad affinità pesante nella destra."
+  },
+  {
+   "h": "Guard counter",
+   "t": "La meccanica centrale è il GUARD COUNTER: para un attacco in arrivo, poi premi subito l'attacco pesante per una risposta devastante che rompe la postura e ignora quasi tutto quello che un boss sta cercando di farti."
+  },
+  {
+   "h": "Prima la VITALITÀ",
+   "t": "La priorità delle statistiche è VITALITÀ prima di tutto e sempre — arriva a 28 VIT prima di Godrick, 40 prima di Leyndell e al soft cap di 60 prima del Sacro Albero, perché morire in due colpi è ciò che davvero ferma le build con scudo."
+  },
+  {
+   "h": "TEMPRA",
+   "t": "La TEMPRA viene seconda (ti compra stamina per parare, non solo carico di equipaggiamento: punta a 25-30 entro le Vette dei Giganti e tieni il carico sotto il 70% per la capriola media indossando il Banished Knight armour set preso a Castello di Grantempesta)."
+  },
+  {
+   "h": "FORZA",
+   "t": "La FORZA è terza, e sale dal 14 iniziale del Cavaliere errante a 16 nel momento in cui trovi la Claymore, poi a 27-33 attraversando Caelid e Altus, e infine a 50-60 nel finale per una Claymore pesante impugnata a due mani."
+  },
+  {
+   "h": "Statistiche minori",
+   "t": "La DESTREZZA resta a 13-20 solo per soddisfare i requisiti delle armi, la MENTE a 14-20 per un paio di usi delle ceneri di guerra, e INT/FED/ARC non si muovono mai dalla base."
+  },
+  {
+   "h": "Percorso delle armi",
+   "t": "Parti con la Spada lunga e Ash of War: Storm Stomp da Gatefront, passa alla ZANNA DEL LIMIERE (Bloodhound's Fang) del Cavaliere limiere Darriwil nella Fase 1 (arma funerea, economica da potenziare, ti porta fino ad Altus), prendi la CLAYMORE dal forziere nell'edificio nord di Castle Morne nella Fase 3 e falla diventare la tua arma definitiva, mettici un'affinità pesante e piazzaci la CENERE DI GUERRA: ARTIGLIO LEONINO (Ash of War: Lion's Claw) del Lion Guardian a Fort Gael nella Fase 5 — quella spallata dall'alto più i guard counter sono tutto il tuo danno per 80 ore. Tieni la CENERE DI GUERRA: VOTO AUREO (Ash of War: Golden Vow, dal Godrick Knight a cavallo a Sepolcride) su un'arma di scorta come potenziamento pre-boss."
+  },
+  {
+   "h": "Talismani",
+   "t": "Talismani in ordine di acquisizione: il CURVED SWORD TALISMAN dalla stanza buia del Banished Knight vicino a Stormveil Cliffside (+20% di danno ai guard counter, l'oggetto più importante della build), il GREATSHIELD TALISMAN dal carro sorvegliato dalle baliste a est di Erdtree-Gazing Hill (+stabilità in guardia), il TALISMANO GRANSCUDO DEL DRAGO (Dragoncrest Greatshield Talisman) dal forziere del Drainage Channel a Elphael (-20% danno fisico) e il FAVORE DELL'ALBERO MADRE +2 (Erdtree's Favor +2) dal cortile dell'ascensore delle Forbidden Lands (+PV, +stamina, +carico) — questo è il tuo set da endgame, con il SIGILLO PIAGA DI RADAGON (Radagon's Soreseal) come alternativa quando vuoi statistiche pure e puoi permetterti il danno extra."
+  },
+  {
+   "h": "Ceneri spiritiche",
+   "t": "Le Ceneri spiritiche non sono opzionali in questa route, fanno parte della build: Ceneri di lupi spettrali e Lhutel presto, una LACRIMA RIFLESSA (Mimic Tear) +10 dalla metà del gioco in poi, e TICHE DEI NERI COLTELLI (Black Knife Tiche) per ogni scontro difficile da Astel a Malenia."
+  },
+  {
+   "h": "Traguardo finale",
+   "t": "Chiudi con una Claymore pesante a +25 (una Pietra da forgiatura del drago antico all'ultimo passaggio, che sblocca anche il trofeo Armamento deicida) intorno a RL 150."
+  }
+ ]
+}

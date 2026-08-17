@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Come si usa Platinum Hub
+    url: https://github.com/Voloire/platinumhub/blob/main/README.md
+    about: Istruzioni di avvio, avviso di Windows SmartScreen, domande frequenti.
+  - name: Segnalare un problema di sicurezza
+    url: https://github.com/Voloire/platinumhub/security/advisories/new
+    about: Non aprire una issue pubblica. Usa la segnalazione privata (vedi SECURITY.md).

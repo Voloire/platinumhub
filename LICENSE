@@ -1,0 +1,89 @@
+Platinum Hub — Proprietary Software License
+Copyright (c) 2026 Frank ("Voloirex"). All rights reserved.
+
+This repository is PUBLIC. It is NOT open source.
+The source code is visible so that anyone can inspect what the program does
+before running it. Visibility is not a grant of rights.
+
+1. WHAT YOU MAY DO
+
+   a. Download the released application (or clone this repository) and run it
+      on computers you own or control, for your own personal, non-commercial
+      use, for free, with no limit on time or number of your own machines.
+
+   b. Read and study the source code.
+
+   c. Make private modifications to your own copy, for your own personal use
+      only. Such modifications must not be published, shared or distributed.
+
+   d. Report bugs, and propose corrections to the checklist content in
+      data/*.json, as described in CONTRIBUTING.md.
+
+2. WHAT YOU MAY NOT DO, without prior written permission from the copyright
+   holder
+
+   a. Redistribute, republish, mirror, resell, rent, sublicense or otherwise
+      make available this software or any part of it, in source or binary
+      form, modified or unmodified.
+
+   b. Create or distribute derivative works, forks, ports or repackaged
+      versions, including translations of the content and including
+      distribution through app stores, package managers or software bundles.
+
+   c. Use this software, its source code, its checklist content or any part of
+      it for any commercial purpose, or as part of a product or service
+      offered to third parties.
+
+   d. Use this software, its source code or its content as training data for
+      machine learning models, or to generate a competing work.
+
+   e. Remove, alter or obscure any copyright notice, author credit or license
+      text.
+
+   Forking on GitHub for the sole purpose of preparing a pull request to this
+   repository is permitted, and is the one exception to 2(a) and 2(b).
+
+3. CONTRIBUTIONS
+
+   By submitting a pull request, an issue attachment or any other material to
+   this project, you grant the copyright holder a perpetual, worldwide,
+   irrevocable, royalty-free, non-exclusive licence to use, modify, relicense
+   and distribute that material as part of this software. You confirm that the
+   material is yours to give.
+
+4. CHECKLIST CONTENT
+
+   The files in data/ and the generated checklists are original editorial work
+   protected by copyright as an expression. Individual facts about video games
+   are not owned by anyone; the wording, ordering, grouping and annotations in
+   these files are, and are covered by this licence.
+
+5. NO WARRANTY
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+6. NO LIABILITY
+
+   IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+   DEALINGS IN THE SOFTWARE. This includes, without limitation, lost game
+   progress, lost recordings and lost save files.
+
+7. TERMINATION
+
+   Any use in breach of this licence terminates the rights granted in
+   section 1 automatically and immediately.
+
+8. NOT AFFILIATED
+
+   Platinum Hub is an independent tool. It is not affiliated with,
+   endorsed by or sponsored by FromSoftware, Sony Interactive Entertainment,
+   Neowiz, Game Science, Koei Tecmo, Shift Up, Square Enix, Nexon, OBS Project,
+   Microsoft, YouTube or any other rights holder. All game names and trademarks
+   belong to their respective owners and are used for identification only.
+
+For permissions beyond the scope of this licence, open an issue on this
+repository asking for contact.

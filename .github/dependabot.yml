@@ -1,0 +1,46 @@
+version: 2
+
+updates:
+  # ------------------------------------------------------------------ CI
+  # Third-party and GitHub-owned actions are pinned to full commit SHAs.
+  # Dependabot understands SHA pins: it bumps the SHA and rewrites the
+  # trailing "# vX.Y.Z" comment, so pinning costs nothing in maintenance.
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+      time: "06:00"
+      timezone: Europe/Rome
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "ci"
+    labels:
+      - dependencies
+      - github-actions
+    groups:
+      actions:
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
+
+  # -------------------------------------------------- dev dependencies
+  # The application has ZERO runtime dependencies: this only covers
+  # requirements-dev.txt (PyInstaller, ruff, pytest, Playwright, pip-audit).
+  - package-ecosystem: pip
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+      time: "06:00"
+      timezone: Europe/Rome
+    open-pull-requests-limit: 5
+    versioning-strategy: increase
+    commit-message:
+      prefix: "build"
+    labels:
+      - dependencies
+      - python
+    groups:
+      dev-tools:
+        patterns: ["*"]
+        update-types: ["minor", "patch"]

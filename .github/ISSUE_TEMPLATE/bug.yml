@@ -1,0 +1,111 @@
+name: Qualcosa non funziona
+description: L'app non parte, si comporta male o mostra un'informazione sbagliata.
+title: "[Problema] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per la segnalazione. Non serve essere tecnici: rispondi come puoi,
+        anche solo alle prime due domande è già utile.
+
+        **Attenzione:** non allegare il file `platinum.db` e non incollare la
+        password di OBS. Se incolli il testo della diagnostica, cancella la riga
+        della password prima di inviare.
+
+  - type: textarea
+    id: cosa
+    attributes:
+      label: Cosa è successo
+      description: Racconta il problema con parole tue.
+      placeholder: "Ho fatto doppio clic su PlatinumHub.exe e non si apre niente."
+    validations:
+      required: true
+
+  - type: textarea
+    id: passi
+    attributes:
+      label: Cosa avevi fatto prima
+      description: I passaggi per rivederlo succedere, se te li ricordi.
+      placeholder: |
+        1. Ho aperto l'app
+        2. Sono andato su Elden Ring
+        3. Ho spuntato un passo
+        4. ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: atteso
+    attributes:
+      label: Cosa ti aspettavi invece
+    validations:
+      required: false
+
+  - type: dropdown
+    id: come
+    attributes:
+      label: Come usi Platinum Hub
+      options:
+        - "Eseguibile scaricato dalle Release (PlatinumHub.exe)"
+        - "Cartella con app.py e run.bat"
+        - "Una delle checklist HTML da aprire nel browser"
+        - "Non lo so"
+    validations:
+      required: true
+
+  - type: input
+    id: versione
+    attributes:
+      label: Versione
+      description: La trovi in fondo alla pagina dell'app, oppure il nome dello zip scaricato.
+      placeholder: "v3.2"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: windows
+    attributes:
+      label: Sistema operativo
+      options:
+        - Windows 11
+        - Windows 10
+        - Altro
+        - Non lo so
+    validations:
+      required: false
+
+  - type: input
+    id: gioco
+    attributes:
+      label: Gioco / route interessata
+      placeholder: "Elden Ring, Lies of P, ..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: diagnostica
+    attributes:
+      label: Diagnostica (facoltativa, molto utile)
+      description: |
+        Nell'app c'è una pagina **Diagnostica**: premi *Esegui*, poi *Copia*, e incolla qui.
+        Rileggi il testo e **cancella la riga con la password di OBS** prima di inviare.
+      render: text
+    validations:
+      required: false
+
+  - type: textarea
+    id: schermate
+    attributes:
+      label: Schermate
+      description: Trascina qui le immagini, se ne hai.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: conferme
+    attributes:
+      label: Prima di inviare
+      options:
+        - label: Non sto allegando `platinum.db` né la password di OBS
+          required: true

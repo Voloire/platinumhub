@@ -1,0 +1,90 @@
+# ============================================================================
+#  Platinum Hub — configurazione di ruff
+# ----------------------------------------------------------------------------
+#  app.py esiste già ed è lungo ~2.900 righe. Una configurazione severa
+#  produrrebbe centinaia di segnalazioni il primo giorno e la CI verrebbe
+#  ignorata. Questa configurazione è tarata sul codice attuale: con `app.py`
+#  di oggi il risultato è "All checks passed".
+#
+#  La strada è stringere un po' alla volta: in fondo al file c'è la scaletta
+#  delle regole da riattivare, in ordine di rapporto fra valore e fastidio.
+#
+#  Uso:  python -m ruff check .
+#        python -m ruff check --fix .
+# ============================================================================
+
+# run.bat accetta qualsiasi python3 installato: restiamo compatibili all'indietro.
+target-version = "py38"
+line-length = 120
+indent-width = 4
+
+extend-exclude = [
+    "standalone-html",
+    "dist",
+    "build",
+    ".venv",
+]
+
+[lint]
+# E/W  pycodestyle      errori di stile veri (indentazione, spazi, sintassi)
+# F    pyflakes         import inutilizzati, nomi non definiti, variabili morte
+# B    flake8-bugbear   trappole classiche (default mutabili, except larghi, ...)
+# C4   comprehensions   comprehension inutili o scritte male
+# PIE  flake8-pie       codice ridondante
+# A    builtins         nomi che oscurano le builtin (list, id, type, ...)
+# RSE  raise            raise Exception() scritto male
+# PLE  pylint errors    solo la categoria "errore" di pylint, niente opinioni
+select = ["E", "W", "F", "B", "C4", "PIE", "A", "RSE", "PLE"]
+
+ignore = [
+    # Lunghezza riga: il codice ha ~30 righe fra 120 e 160 caratteri, quasi
+    # tutte stringhe HTML/CSS che spezzate si leggono peggio.
+    "E501",
+    # `x = lambda ...`: usato in un paio di punti come tabella di funzioni.
+    "E731",
+    # Nome di variabile ambiguo (`l`): una sola occorrenza, non vale il diff.
+    "E741",
+    # f-string senza segnaposto: 14 casi, effetto zero, rumore puro.
+    "F541",
+    # Variabile di ciclo non usata: un caso, la tupla serve tutta.
+    "B007",
+    # Comprehension "inutile": due casi che servono a copiare la lista.
+    "C416",
+]
+
+# I test possono usare nomi che oscurano le builtin nelle fixture e possono
+# avere import "inutilizzati" (fixture importate per effetto collaterale).
+[lint.per-file-ignores]
+"tests/**" = ["A", "F401", "B011"]
+"tools/**" = ["A"]
+
+[lint.flake8-bugbear]
+# assert_ non serve qui; teniamo la lista vuota ed esplicita.
+extend-immutable-calls = []
+
+[format]
+# Il formatter NON è attivo in CI: riformattare 2.900 righe in un colpo solo
+# rende illeggibile ogni futuro `git blame`. Le impostazioni restano scritte
+# qui per quando si deciderà di farlo, file per file.
+quote-style = "preserve"
+indent-style = "space"
+line-ending = "lf"
+
+# ============================================================================
+#  Scaletta di irrigidimento (una voce per volta, una PR per volta)
+# ----------------------------------------------------------------------------
+#  1. "I"    isort         ordina gli import. Una sola segnalazione oggi,
+#                          si risolve con `ruff check --fix`.
+#  2. "UP"   pyupgrade     ~40 casi, quasi tutti `"%s" % x` -> f-string.
+#                          Da fare quando si spezza app.py in moduli.
+#  3. "SIM"  simplify      2 casi (contextlib.suppress). Innocuo.
+#  4. "RUF"  ruff-specific 10 casi di caratteri unicode ambigui nelle stringhe
+#                          italiane: vanno guardati uno per uno, non a massa.
+#  5. "S"    bandit        4 segnalazioni oggi (urllib.urlopen, try/except/pass,
+#                          una query SQL costruita con f-string). Valgono una
+#                          lettura, ma la sicurezza vera la fa CodeQL: attivare
+#                          "S" solo per il codice nuovo, con per-file-ignores.
+#  6. "T20"  print         19 print, tutti voluti (la console è l'interfaccia
+#                          di avvio). Da attivare solo sui moduli non-CLI.
+#  7. Togliere "E501" dopo aver estratto CSS e JS in assets/ (Fase 1).
+# ============================================================================

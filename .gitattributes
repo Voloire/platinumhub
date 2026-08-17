@@ -1,0 +1,25 @@
+# Normalizzazione dei fine riga.
+# Il repository contiene LF; Git converte in CRLF nella copia di lavoro su
+# Windows solo dove serve. Senza questo file, un commit fatto da Windows puo'
+# trasformare tutto in CRLF e far fallire i job della CI, che girano su Linux.
+
+* text=auto eol=lf
+
+# Questi DEVONO restare CRLF: Windows li esegue.
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+*.ps1  text eol=crlf
+
+# Binari: mai toccati.
+*.woff2 binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.ico   binary
+*.zip   binary
+*.db    binary
+
+# Le checklist HTML autonome sono generate: fuori dalle statistiche del
+# linguaggio del repository e collassate nei diff delle pull request.
+standalone-html/* linguist-generated=true
+docs/img/*        linguist-documentation=true

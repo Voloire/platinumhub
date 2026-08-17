@@ -1,0 +1,82 @@
+# ============================================================================
+#  MAI committare: dati locali e privati
+# ----------------------------------------------------------------------------
+#  platinum.db contiene la PASSWORD DI OBS IN CHIARO oltre ai progressi
+#  personali. Se finisce in un repository pubblico, va considerata compromessa:
+#  cambiala in OBS e riscrivi la storia del repository.
+# ============================================================================
+platinum.db
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+platinum-backup-*.json
+diagnostica.txt
+*.log
+.env
+.env.*
+
+# ============================================================================
+#  Solo locale: contesto di lavoro, non fa parte del prodotto
+# ----------------------------------------------------------------------------
+#  CLAUDE.md contiene percorsi locali, roadmap, decisioni di prodotto e il
+#  confine del tier a pagamento: serve a chi lavora al codice, non a chi lo
+#  scarica. Resta sul disco e non finisce mai online.
+# ============================================================================
+CLAUDE.md
+.claude/
+
+# ============================================================================
+#  Build PyInstaller
+# ============================================================================
+build/
+dist/
+*.spec
+*.manifest
+PlatinumHub-v*-win-x64.zip
+RELEASE_NOTES.md
+RELEASE_BODY.md
+
+# ============================================================================
+#  Python
+# ============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+.venv*/
+venv/
+env/
+pyvenv.cfg
+.python-version
+*.egg-info/
+.eggs/
+
+# ============================================================================
+#  Strumenti di sviluppo e test
+# ============================================================================
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+test-results/
+playwright-report/
+pip-audit-report.json
+
+# ============================================================================
+#  Sistema operativo ed editor
+# ============================================================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+_to_delete/

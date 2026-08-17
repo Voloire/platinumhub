@@ -1,0 +1,1748 @@
+{
+ "game": "Dark Souls III",
+ "prefix": "DS3",
+ "playthroughs": "3 journeys: NG = full quest/covenant/spell sweep + Usurpation of Fire; NG+ = all +1 rings, farm cleanup + The End of Fire; NG++ = targeted +2 ring run + To Link the First Flame",
+ "hours": "90-120 hours",
+ "trophy_total": 43,
+ "build_summary": "Knight (SL9), sword-and-board. Infuse the starting Longsword with the Raw Gem from the High Wall crystal lizard — flat damage, zero stat investment, carries you past Abyss Watchers while you pump VIG/END. Farm High Wall Lothric Knights early for the Lothric Knight Sword and 100%-physical Lothric Knight Shield; wear the Grass Crest Shield on your back for stamina regen once you find it in Crucifixion Woods. From Irithyll onward drop Raw for a Refined infusion and grow into a 40/40 STR/DEX quality build — Refined Lothric Knight Sword (or Longsword) +10 is a proven plat workhorse. DLC is NOT needed: all 43 trophies and all 107 rings are base game.",
+ "golden_rules": [
+  "NEVER let the Fire Keeper heal the Dark Sigil in NG — it instantly voids the Usurpation of Fire ending.",
+  "Recruit Yoel right after Vordt and burn all 5 free levels BEFORE Abyss Watchers ('Draw Out True Strength' x5 — ~5-6 deaths are enough: each death adds hollowing equal to your sigils, thresholds 2/6/12/15), or he dies and Yuria never appears.",
+  "Give Rosaria ZERO Pale Tongues until Sirris's quest is done — offering even one permanently fails her (Silvercat Ring + Darkmoon Loyalty gesture). Rank Rosaria's Fingers in NG+ instead.",
+  "Grab covenants and gestures the moment they open: Mound-makers ideally BEFORE Curse-rotted Greatwood (backup: Sirris's co-op sign at Aldrich if the tree is dead), Path of the Dragon corpse right after Oceiros, Prostration from Patches.",
+  "Spend boss souls on SPELLS first (Master of Sorceries/Miracles/Pyromancies) — boss weapons can wait for NG+/NG++ copies of the same souls.",
+  "Never farm without max item discovery: Covetous Gold Serpent Ring + Symbol of Avarice + Rusted Coins (Concord/shackle drops are ~1%)."
+ ],
+ "stat_table": {
+  "note": "Knight base (SL9): VIG12/ATT10/END11/VIT15/STR13/DEX12/INT9/FTH9/LCK7. Raw Longsword ignores scaling, so front-load VIG/END; feed STR/DEX once you swap to Refined. ATT stays 10 (spells only need to be OBTAINED, not cast).",
+  "columns": [
+   "SL",
+   "VIG",
+   "END",
+   "STR",
+   "DEX",
+   "Milestone"
+  ],
+  "rows": [
+   [
+    "9",
+    "12",
+    "11",
+    "13",
+    "12",
+    "Start: Knight, Raw Longsword + Lothric Knight Shield; survivability first"
+   ],
+   [
+    "25",
+    "18",
+    "15",
+    "13",
+    "12",
+    "High Wall/Settlement done: pure VIG-END pump — Raw scales with upgrades, not stats"
+   ],
+   [
+    "40",
+    "22",
+    "20",
+    "16",
+    "14",
+    "Farron/Abyss Watchers: weapon +4-6, begin drip-feeding STR/DEX"
+   ],
+   [
+    "55",
+    "25",
+    "24",
+    "20",
+    "18",
+    "Irithyll: swap Raw for Refined (Lothric Knight Sword) — quality scaling now outdamages Raw"
+   ],
+   [
+    "70",
+    "27",
+    "27",
+    "24",
+    "24",
+    "Anor Londo/Lothric Castle: +9/+10 weapon, do the Silver Knight Concord farm here"
+   ],
+   [
+    "85",
+    "30",
+    "30",
+    "30",
+    "28",
+    "NG finale: comfortable for Nameless King and Soul of Cinder"
+   ],
+   [
+    "105+",
+    "35",
+    "32",
+    "40",
+    "40",
+    "NG+/NG++: finish 40/40 quality; dump spare points into VIG for NG++ bosses"
+   ]
+  ]
+ },
+ "phases": [
+  {
+   "title": "Phase 1 — Cemetery of Ash & High Wall (NG)",
+   "note": "Foundation: Raw Gem, early knight farm, first two covenants, and Greirat freed before Vordt.",
+   "steps": [
+    {
+     "text": "Create a Knight (any burial gift; Fire Gems is handy). Beat Iudex Gundyr, reach Firelink Shrine, meet the Fire Keeper, Handmaid and Andre.",
+     "loc": "Cemetery of Ash → Firelink Shrine",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Iudex Gundyr",
+       "label_it": "🏆 Gundyr, il Giudice"
+      },
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Crea un Knight (qualsiasi dono di sepoltura; le Fire Gems sono comode). Batti Gundyr, il Giudice (Iudex Gundyr), raggiungi l'Altare del Vincolo (Firelink Shrine) e incontra la Fire Keeper, l'Ancella del Santuario (Shrine Handmaid) e Andre.",
+     "loc_it": "Cimitero della Cenere (Cemetery of Ash) → Altare del Vincolo"
+    },
+    {
+     "text": "Get Way of Blue from Emma in the High Wall chapel and equip it — the covenant trophy pops on joining. She also gives the Small Lothric Banner.",
+     "loc": "High Wall of Lothric — chapel before Vordt",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Covenant: Way of Blue",
+       "label_it": "🏆 Patto: Via Blu"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Prendi la Via Blu (Way of Blue) da Emma nella cappella delle Mura del Castello di Lothric ed equipaggiala: il trofeo del patto scatta all'iscrizione. Lei ti dà anche il Small Lothric Banner.",
+     "loc_it": "Mura del Castello di Lothric — cappella prima di Vordt"
+    },
+    {
+     "text": "Kill the crystal lizard below Tower on the Wall for the RAW GEM; have Andre infuse your Longsword Raw. This weapon carries you to mid-game with no stat spend.",
+     "loc": "High Wall — descend from the Tower on the Wall bonfire",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      },
+      {
+       "type": "coll",
+       "label": "Raw Gem",
+       "label_it": "Raw Gem"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Uccidi la lucertola di cristallo sotto Tower on the Wall per la RAW GEM; fatti infondere la Longsword in Raw da Andre. Quest'arma ti porta a metà gioco senza spendere un solo punto statistica.",
+     "loc_it": "Mura del Castello di Lothric — scendi dal falò di Tower on the Wall"
+    },
+    {
+     "text": "Farm the Lothric Knights near Tower on the Wall for the Lothric Knight Sword, Lothric Knight Shield (100% phys) and Titanite Shards — classic early quality-build setup.",
+     "loc": "High Wall — Tower on the Wall bonfire",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Farma i Lothric Knight vicino a Tower on the Wall per la Lothric Knight Sword, il Lothric Knight Shield (100% fisico) e i Frammenti di titanite (Titanite Shards): il classico setup da build quality iniziale.",
+     "loc_it": "Mura del Castello di Lothric — falò di Tower on the Wall"
+    },
+    {
+     "text": "Grab the Cell Key (basement past the winged knight) and a Pale Tongue on the wall; free Greirat in the tower cell and send him to Firelink.",
+     "loc": "High Wall — basement / lift tower",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "quest"
+      },
+      {
+       "type": "coll",
+       "label": "Cell Key",
+       "label_it": "Cell Key"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Raccogli la Cell Key (seminterrato oltre il winged knight) e una Pale Tongue sul muro; libera Greirat dalla cella nella torre e mandalo all'Altare del Vincolo.",
+     "loc_it": "Mura del Castello di Lothric — seminterrato / torre dell'ascensore"
+    },
+    {
+     "text": "Kill Vordt of the Boreal Valley, then use the banner to fly to the Undead Settlement.",
+     "loc": "High Wall of Lothric — main gate",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Vordt of the Boreal Valley",
+       "label_it": "🏆 Vordt della Valle Boreale"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi Vordt della Valle Boreale, poi usa il banner per volare all'Insediamento di non morti (Undead Settlement).",
+     "loc_it": "Mura del Castello di Lothric — cancello principale"
+    },
+    {
+     "text": "After Vordt, Leonhard appears at Firelink: give him a Pale Tongue for the Lift Chamber Key, kill the Darkwraith below Tower on the Wall — his quest yields the Applause gesture.",
+     "loc": "Firelink Shrine / High Wall lift",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      },
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "quest"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Dopo Vordt, Leonhard compare all'Altare del Vincolo: dagli una Pale Tongue per la Lift Chamber Key, uccidi il Darkwraith sotto Tower on the Wall; la sua quest frutta il gesto Applause.",
+     "loc_it": "Altare del Vincolo / ascensore delle Mura del Castello di Lothric"
+    }
+   ],
+   "title_it": "Fase 1 — Cimitero della Cenere e Mura del Castello di Lothric (NG)",
+   "note_it": "Fondamenta: Raw Gem, farm dei cavalieri iniziali, primi due patti e Greirat liberato prima di Vordt."
+  },
+  {
+   "title": "Phase 2 — Undead Settlement: Yoel & the Hollow route",
+   "note": "The plat's biggest missable lives here: Yoel's 5 free levels arm the Usurpation ending.",
+   "steps": [
+    {
+     "text": "MISSABLE: Recruit Yoel of Londor from the pilgrim corpses near Foot of the High Wall; he warps to Firelink.",
+     "loc": "Undead Settlement entrance — dead pilgrim group",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      },
+      {
+       "type": "quest",
+       "label": "Usurpation start",
+       "label_it": "Inizio Conquista del fuoco"
+      }
+     ],
+     "trophy": false,
+     "text_it": "PERDIBILE: recluta Yoel of Londor dai cadaveri dei pellegrini vicino a Foot of the High Wall; si teletrasporta all'Altare del Vincolo.",
+     "loc_it": "Ingresso dell'Insediamento di non morti — gruppo di pellegrini morti"
+    },
+    {
+     "text": "MISSABLE: Die ~5-6 times (jump off a Firelink ledge — each death adds hollowing equal to your sigil count; thresholds 2/6/12/15) and take 'Draw Out True Strength' 5 times BEFORE Abyss Watchers. Yuria then replaces him — get her Dignified Bow gesture. Never heal the sigil.",
+     "loc": "Firelink Shrine",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ 5 Dark Sigils",
+       "label_it": "⚠ 5 Dark Sigil"
+      },
+      {
+       "type": "miss",
+       "label": "Dignified Bow",
+       "label_it": "Dignified Bow"
+      }
+     ],
+     "trophy": false,
+     "text_it": "PERDIBILE: muori ~5-6 volte (buttati da un cornicione dell'Altare del Vincolo; ogni morte aggiunge hollowing pari al numero di sigilli, soglie 2/6/12/15) e prendi 'Draw Out True Strength' 5 volte PRIMA dei Guardiani dell'Abisso. Poi Yuria lo sostituisce: fatti dare il gesto Dignified Bow. Non curare mai il sigillo.",
+     "loc_it": "Altare del Vincolo"
+    },
+    {
+     "text": "Join Warriors of Sunlight at the altar in the building before the big bridge (drop through the floor hole).",
+     "loc": "Undead Settlement — house before the Road of Sacrifices bridge",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Covenant: Warrior of Sunlight",
+       "label_it": "🏆 Patto: Guerrieri del Sole"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Iscriviti ai Guerrieri del Sole (Warrior of Sunlight) all'altare nell'edificio prima del grande ponte (lasciati cadere dal buco nel pavimento).",
+     "loc_it": "Insediamento di non morti — casa prima del ponte per la Strada dei Sacrifici"
+    },
+    {
+     "text": "Before killing the Curse-rotted Greatwood, follow the villager carrying a cage and examine the cage on his back — you're carried to Hodrick and join Mound-makers. (Backup if the tree is already dead: Sirris's co-op sign at the Aldrich boss door, quest not failed.)",
+     "loc": "Undead Settlement — cage-carrier route to the Pit of Hollows",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Covenant: Mound-makers",
+       "label_it": "🏆 Patto: Creatori di tumuli"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ do it now",
+       "label_it": "⚠ fallo ora"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Prima di uccidere Granbosco, la foresta maledetta (Curse-rotted Greatwood), segui il paesano che porta una gabbia ed esamina la gabbia sulla sua schiena: vieni trasportato da Hodrick e ti iscrivi ai Creatori di tumuli. (Ripiego se l'albero è già morto: il segno co-op di Sirris alla porta del boss Aldrich, quest non fallita.)",
+     "loc_it": "Insediamento di non morti — percorso del portagabbia verso il Pit of Hollows"
+    },
+    {
+     "text": "Rescue Irina (Grave Key via Mortician's Ashes, or the sewer tunnel); agree to touch her for the Prayer gesture; she teaches miracles at Firelink. Give Cornyx the pyromancy flame and get the Welcome gesture.",
+     "loc": "Undead Settlement sewer / Firelink Shrine",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "quest"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ gestures",
+       "label_it": "⚠ gesti"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Salva Irina (Grave Key tramite le Mortician's Ashes, oppure il tunnel fognario); accetta di toccarla per il gesto Prayer; insegna miracoli all'Altare del Vincolo. Dai a Cornyx la fiamma piromantica e ottieni il gesto Welcome.",
+     "loc_it": "Fogne dell'Insediamento di non morti / Altare del Vincolo"
+    },
+    {
+     "text": "Ride the tower elevator half-way trick to meet Siegward on the ledge; help him kill the Fire Demon. Give Greirat Loretta's Bone and send his first (safe) expedition.",
+     "loc": "Undead Settlement — tower elevator / Firelink",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "quest"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Usa il trucco dell'ascensore della torre fermato a metà per incontrare Siegward sul cornicione; aiutalo a uccidere il Fire Demon. Dai a Greirat il Loretta's Bone e mandalo nella sua prima spedizione (sicura).",
+     "loc_it": "Insediamento di non morti — ascensore della torre / Altare del Vincolo"
+    },
+    {
+     "text": "Kill the Curse-rotted Greatwood for the TRANSPOSING KILN (boss-soul spells) and a Pale Tongue. Give the Kiln to Ludleth.",
+     "loc": "Undead Settlement — Pit of Hollows",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Curse-rotted Greatwood",
+       "label_it": "🏆 Granbosco, la foresta maledetta"
+      },
+      {
+       "type": "coll",
+       "label": "Transposing Kiln",
+       "label_it": "Transposing Kiln"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi Granbosco, la foresta maledetta per il TRANSPOSING KILN (magie da anime dei boss) e una Pale Tongue. Consegna il Kiln a Ludleth.",
+     "loc_it": "Insediamento di non morti — Pit of Hollows"
+    }
+   ],
+   "title_it": "Fase 2 — Insediamento di non morti: Yoel e la via del vacuo",
+   "note_it": "Qui vive il più grosso perdibile del platino: i 5 livelli gratuiti di Yoel armano il finale La conquista del fuoco."
+  },
+  {
+   "title": "Phase 3 — Road of Sacrifices & Cathedral of the Deep",
+   "note": "Anri's quest begins; Rosaria's Fingers joined but NOT ranked — Sirris must finish first.",
+   "steps": [
+    {
+     "text": "MISSABLE: Talk to Anri and Horace at Halfway Fortress (starts the marriage questline). Horace gives the Blue Sentinels covenant — equip it.",
+     "loc": "Road of Sacrifices — Halfway Fortress bonfire",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Covenant: Blue Sentinels",
+       "label_it": "🏆 Patto: Sentinelle Blu"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ Anri quest",
+       "label_it": "⚠ quest di Anri"
+      }
+     ],
+     "trophy": true,
+     "text_it": "PERDIBILE: parla con Anri e Horace a Halfway Fortress (avvia la linea di quest del matrimonio). Horace ti dà il patto delle Sentinelle Blu (Blue Sentinels): equipaggialo.",
+     "loc_it": "Strada dei Sacrifici (Road of Sacrifices) — falò di Halfway Fortress"
+    },
+    {
+     "text": "MISSABLE: Recruit Orbeck (room above the corridor near the Farron Keep gate) — give him ANY scroll before defeating 6 more bosses or he leaves for good. He's central to Master of Sorceries + the Young Dragon Ring.",
+     "loc": "Road of Sacrifices — Crucifixion Woods keep building",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      },
+      {
+       "type": "quest",
+       "label": "Sorcery vendor",
+       "label_it": "Venditore di stregonerie"
+      }
+     ],
+     "trophy": false,
+     "text_it": "PERDIBILE: recluta Orbeck (stanza sopra il corridoio vicino al cancello del Forte di Farron): dagli UNA scroll qualsiasi prima di battere altri 6 boss, o se ne va per sempre. È centrale per Maestro della stregoneria e per il Young Dragon Ring.",
+     "loc_it": "Strada dei Sacrifici — edificio del forte a Crucifixion Woods"
+    },
+    {
+     "text": "Grab the Grass Crest Shield by the giant crab in the lake — wear it on your BACK for passive stamina regen (community-standard tech). Farron Coal: end of the corridor past the Ravenous Crystal Lizard — deliver to Andre.",
+     "loc": "Crucifixion Woods — crab lake / stone corridor",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      },
+      {
+       "type": "coll",
+       "label": "Farron Coal",
+       "label_it": "Farron Coal"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prendi il Grass Crest Shield vicino al granchio gigante nel lago: portalo sulla SCHIENA per la rigenerazione passiva della stamina (tecnica standard della community). Farron Coal: in fondo al corridoio oltre il Ravenous Crystal Lizard; consegnalo ad Andre.",
+     "loc_it": "Crucifixion Woods — lago dei granchi / corridoio in pietra"
+    },
+    {
+     "text": "Get the Braille Divine Tome of Carim (ledge by the water) for Irina. Kill the Crystal Sage.",
+     "loc": "Road of Sacrifices",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Crystal Sage",
+       "label_it": "🏆 Saggio di Cristallo"
+      },
+      {
+       "type": "coll",
+       "label": "Carim tome",
+       "label_it": "Tomo di Carim"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Prendi il Braille Divine Tome of Carim (cornicione vicino all'acqua) per Irina. Uccidi il Saggio di Cristallo (Crystal Sage).",
+     "loc_it": "Strada dei Sacrifici"
+    },
+    {
+     "text": "MISSABLE: In the Cathedral, let Patches trick you (tower bridge), then confront him — Prostration gesture. Later buy Siegward's armor back and return it near the Cleansing Chapel for the Rejoice gesture.",
+     "loc": "Cathedral of the Deep / Firelink tower",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ gestures",
+       "label_it": "⚠ gesti"
+      },
+      {
+       "type": "quest",
+       "label": "Patches",
+       "label_it": "Patches"
+      }
+     ],
+     "trophy": false,
+     "text_it": "PERDIBILE: nella Cattedrale lasciati ingannare da Patches (ponte della torre), poi affrontalo: gesto Prostration. Più avanti ricompra l'armatura di Siegward e restituiscigliela vicino alla Cleansing Chapel per il gesto Rejoice.",
+     "loc_it": "Cattedrale delle Profondità (Cathedral of the Deep) / torre dell'Altare del Vincolo"
+    },
+    {
+     "text": "Loot the Deep Braille Divine Tome (mimic) — give DARK tomes to KARLA later, not Irina (buying dark miracles from Irina fails her quest).",
+     "loc": "Cathedral of the Deep — mimic chest",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Deep Braille tome",
+       "label_it": "Deep Braille tome"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ Irina warning",
+       "label_it": "⚠ attenzione a Irina"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Saccheggia il Deep Braille Divine Tome (mimic): i tomi OSCURI vanno a KARLA, non a Irina (comprare miracoli oscuri da Irina fa fallire la sua quest).",
+     "loc_it": "Cattedrale delle Profondità — forziere mimic"
+    },
+    {
+     "text": "Join Rosaria's Fingers in Rosaria's Bed Chamber (covenant trophy) but offer NO Pale Tongues this playthrough — one tongue permanently fails Sirris.",
+     "loc": "Cathedral of the Deep — Rosaria's Bed Chamber",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Covenant: Rosaria's Fingers",
+       "label_it": "🏆 Patto: Dita di Rosaria"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ No tongues in NG",
+       "label_it": "⚠ Nessuna tongue in NG"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Iscriviti alle Dita di Rosaria nella Rosaria's Bed Chamber (trofeo del patto), ma NON offrire nessuna Pale Tongue in questa partita: una sola lingua fa fallire Sirris per sempre.",
+     "loc_it": "Cattedrale delle Profondità — Rosaria's Bed Chamber"
+    },
+    {
+     "text": "MISSABLE: With Fingers joined, summon Yellowfinger Heysel twice (crab lake and Keep Ruins signs, before Abyss Watchers) for the Proper Bow gesture. Then kill the Deacons of the Deep for the Small Doll.",
+     "loc": "Road of Sacrifices / Farron Keep / Cathedral",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Deacons of the Deep",
+       "label_it": "🏆 Diaconi delle Profondità"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ Proper Bow",
+       "label_it": "⚠ Proper Bow"
+      }
+     ],
+     "trophy": true,
+     "text_it": "PERDIBILE: con le Dita attive, evoca Yellowfinger Heysel due volte (segni al lago dei granchi e a Keep Ruins, prima dei Guardiani dell'Abisso) per il gesto Proper Bow. Poi uccidi i Diaconi delle Profondità (Deacons of the Deep) per la Small Doll.",
+     "loc_it": "Strada dei Sacrifici / Forte di Farron / Cattedrale delle Profondità"
+    }
+   ],
+   "title_it": "Fase 3 — Strada dei Sacrifici e Cattedrale delle Profondità",
+   "note_it": "Inizia la quest di Anri; Dita di Rosaria da iscrivere ma NON da scalare: prima deve finire Sirris."
+  },
+  {
+   "title": "Phase 4 — Farron Keep",
+   "note": "Watchdogs, two scrolls, Sage's Coal and the Yoel deadline — finish sigils before the boss.",
+   "steps": [
+    {
+     "text": "Pray to the Old Wolf of Farron (top of the swamp-tower ladder): Legion Etiquette gesture + Watchdogs of Farron covenant.",
+     "loc": "Farron Keep — Old Wolf tower",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Covenant: Watchdogs of Farron",
+       "label_it": "🏆 Patto: Guardiani di Farron"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ gesture",
+       "label_it": "⚠ gesto"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Prega il Vecchio Lupo di Farron (Old Wolf of Farron) in cima alla scala della torre nella palude: gesto Legion Etiquette + patto dei Guardiani di Farron (Watchdogs of Farron).",
+     "loc_it": "Forte di Farron (Farron Keep) — torre del Vecchio Lupo"
+    },
+    {
+     "text": "Collect the Sage's Scroll (swamp corpse) and Golden Scroll (basilisk cave) for Orbeck; buy 3+ sorceries and hand over a scroll so he later gives the Young Dragon Ring and Slumbering Dragoncrest Ring.",
+     "loc": "Farron Keep swamp / basilisk cave",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "2 scrolls",
+       "label_it": "2 scroll"
+      },
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "quest"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Raccogli la Sage's Scroll (cadavere nella palude) e la Golden Scroll (grotta dei basilischi) per Orbeck; compragli 3+ stregonerie e consegnagli una scroll, così più avanti ti dà lo Young Dragon Ring e lo Slumbering Dragoncrest Ring.",
+     "loc_it": "Palude del Forte di Farron / grotta dei basilischi"
+    },
+    {
+     "text": "Sage's Coal sits in the perimeter tower past a Darkwraith — deliver to Andre (Crystal/Blessed/Deep infusions).",
+     "loc": "Farron Keep perimeter",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Sage's Coal",
+       "label_it": "Sage's Coal"
+      },
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "La Sage's Coal sta nella torre del perimetro oltre un Darkwraith: consegnala ad Andre (infusioni Crystal/Blessed/Deep).",
+     "loc_it": "Perimetro del Forte di Farron"
+    },
+    {
+     "text": "Farm 30 Wolf's Blood Swordgrass off the three Elder Ghru near the Keep Ruins bonfire (~1% — luck gear helps; finish in NG+ if it drags). Rank 2 = WOLF RING (needed for Master of Rings) + Old Wolf Curved Sword.",
+     "loc": "Farron Keep — Keep Ruins bonfire",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "30 Swordgrass",
+       "label_it": "30 Swordgrass"
+      },
+      {
+       "type": "quest",
+       "label": "Wolf Ring",
+       "label_it": "Wolf Ring"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Farma 30 Wolf's Blood Swordgrass dai tre Elder Ghru vicino al falò di Keep Ruins (~1%; l'equipaggiamento da Fortuna aiuta, se va per le lunghe finisci in NG+). Rango 2 = WOLF RING (serve per Maestro degli anelli) + Old Wolf Curved Sword.",
+     "loc_it": "Forte di Farron — falò di Keep Ruins"
+    },
+    {
+     "text": "Kill the Stray Demon on the bridge above — its soul transposes into HAVEL'S RING (Master of Rings).",
+     "loc": "Farron Keep — upper bridge",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Havel's Ring soul",
+       "label_it": "Anima per Havel's Ring"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Uccidi lo Stray Demon sul ponte sopra: la sua anima si traspone nell'HAVEL'S RING (Maestro degli anelli).",
+     "loc_it": "Forte di Farron — ponte superiore"
+    },
+    {
+     "text": "DEADLINE CHECK: all 5 Yoel levels done, Heysel summoned, Gotthard's sign used (By My Sword gesture). Then kill the Abyss Watchers.",
+     "loc": "Farron Keep — Abyss Watchers arena",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Abyss Watchers",
+       "label_it": "🏆 Guardiani dell'Abisso"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ By My Sword",
+       "label_it": "⚠ By My Sword"
+      }
+     ],
+     "trophy": true,
+     "text_it": "CONTROLLO SCADENZA: 5 livelli di Yoel presi, Heysel evocata, segno di Gotthard usato (gesto By My Sword). Poi uccidi i Guardiani dell'Abisso.",
+     "loc_it": "Forte di Farron — arena dei Guardiani dell'Abisso"
+    }
+   ],
+   "title_it": "Fase 4 — Forte di Farron",
+   "note_it": "Watchdogs, due scroll, Sage's Coal e la scadenza di Yoel: chiudi i sigilli prima del boss."
+  },
+  {
+   "title": "Phase 5 — Catacombs of Carthus & Smouldering Lake",
+   "note": "Anri's Catacombs talks, Horace's fate, and three pyromancy tomes.",
+   "steps": [
+    {
+     "text": "MISSABLE: Talk to Anri twice in the Catacombs (entrance, then near the rope bridge). Do NOT reveal Horace's location — say nothing/'no'.",
+     "loc": "Catacombs of Carthus",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ Anri talks",
+       "label_it": "⚠ dialoghi con Anri"
+      },
+      {
+       "type": "quest",
+       "label": "Usurpation",
+       "label_it": "Conquista del fuoco"
+      }
+     ],
+     "trophy": false,
+     "text_it": "PERDIBILE: parla con Anri due volte nelle Catacombe (all'ingresso, poi vicino al ponte di corda). NON rivelare dove si trova Horace: non dire nulla oppure rispondi 'no'.",
+     "loc_it": "Catacombe di Carthus (Catacombs of Carthus)"
+    },
+    {
+     "text": "Grab the Carthus Pyromancy Tome (Cornyx) and Grave Warden Pyromancy Tome (dark — save for Karla). Note the two red-eyed skeletons near the bonfire: they farm 30 Vertebra Shackles (~1%) for WARMTH — defer to NG+ with full luck gear if you like.",
+     "loc": "Catacombs of Carthus",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "2 tomes",
+       "label_it": "2 tomi"
+      },
+      {
+       "type": "coll",
+       "label": "30 Shackles = Warmth",
+       "label_it": "30 Shackle = Warmth"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prendi il Carthus Pyromancy Tome (per Cornyx) e il Grave Warden Pyromancy Tome (oscuro: tienilo per Karla). Occhio ai due scheletri con gli occhi rossi vicino al falò: sono il farm dei 30 Vertebra Shackles (~1%) per WARMTH; se vuoi, rimanda a NG+ con l'equipaggiamento da Fortuna al completo.",
+     "loc_it": "Catacombe di Carthus"
+    },
+    {
+     "text": "Cut the rope bridge, descend, kill High Lord Wolnir.",
+     "loc": "Catacombs — Wolnir's abyss",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 High Lord Wolnir",
+       "label_it": "🏆 Wolnir, il Signore supremo"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Taglia il ponte di corda, scendi e uccidi Wolnir, il Signore supremo (High Lord Wolnir).",
+     "loc_it": "Catacombe di Carthus — abisso di Wolnir"
+    },
+    {
+     "text": "Horace in Smouldering Lake: either kill him yourself or simply NEVER tell Anri his location — revealing it while he lives kills her quest (killing him is the tidy, safe play). Duel Knight Slayer Tsorig for the My Thanks gesture.",
+     "loc": "Smouldering Lake / Demon Ruins",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ Horace",
+       "label_it": "⚠ Horace"
+      },
+      {
+       "type": "miss",
+       "label": "My Thanks",
+       "label_it": "My Thanks"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Horace nel Lago Ardente: o lo uccidi tu, o semplicemente non riveli MAI ad Anri dove si trova; rivelarlo mentre è vivo uccide la quest di lei (ucciderlo è la scelta pulita e sicura). Duella con Knight Slayer Tsorig per il gesto My Thanks.",
+     "loc_it": "Lago Ardente (Smouldering Lake) / Demon Ruins"
+    },
+    {
+     "text": "Loot the Izalith Pyromancy Tome and the Quelana Pyromancy Tome (illusory wall — Karla only). Kill the Old Demon King; his soul becomes Chaos Bed Vestiges later.",
+     "loc": "Demon Ruins / Smouldering Lake",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Old Demon King",
+       "label_it": "🏆 Vecchio Re demone"
+      },
+      {
+       "type": "coll",
+       "label": "Izalith + Quelana tomes",
+       "label_it": "Tomi Izalith + Quelana"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Saccheggia l'Izalith Pyromancy Tome e il Quelana Pyromancy Tome (muro illusorio; solo per Karla). Uccidi il Vecchio Re demone (Old Demon King): la sua anima diventerà poi Chaos Bed Vestiges.",
+     "loc_it": "Demon Ruins / Lago Ardente"
+    }
+   ],
+   "title_it": "Fase 5 — Catacombe di Carthus e Lago Ardente",
+   "note_it": "I dialoghi con Anri nelle Catacombe, il destino di Horace e tre tomi di piromanzia."
+  },
+  {
+   "title": "Phase 6 — Irithyll & Anor Londo",
+   "note": "Sirris finishes, the Concord farm begins, Anri's wedding — the plat's densest stretch.",
+   "steps": [
+    {
+     "text": "MISSABLE: Answer Sirris's summons vs Creighton (bridge before Church of Yorshka), then vs Hodrick back at the Greatwood pit. Rewards: Darkmoon Loyalty gesture + SILVERCAT RING. Only now are Pale Tongues ever safe.",
+     "loc": "Irithyll bridge / Undead Settlement pit",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ Sirris quest",
+       "label_it": "⚠ quest di Sirris"
+      },
+      {
+       "type": "quest",
+       "label": "Silvercat Ring",
+       "label_it": "Silvercat Ring"
+      }
+     ],
+     "trophy": false,
+     "text_it": "PERDIBILE: rispondi alle evocazioni di Sirris contro Creighton (ponte prima della Chiesa di Yorshka) e poi contro Hodrick, di ritorno alla fossa di Granbosco. Ricompense: gesto Darkmoon Loyalty + SILVERCAT RING. Solo ora le Pale Tongue diventano sicure.",
+     "loc_it": "Ponte di Irithyll / fossa dell'Insediamento di non morti"
+    },
+    {
+     "text": "MISSABLE: Meet Siegward in the Irithyll kitchen (needs his armor returned) — Toast and Sleep gestures. Send Greirat's 2nd expedition to Irithyll only AFTER Siegward is here, or Greirat dies.",
+     "loc": "Irithyll — kitchen before Pontiff",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ Toast + Sleep",
+       "label_it": "⚠ Toast + Sleep"
+      },
+      {
+       "type": "quest",
+       "label": "Greirat exp. 2",
+       "label_it": "Greirat spediz. 2"
+      }
+     ],
+     "trophy": false,
+     "text_it": "PERDIBILE: incontra Siegward nella cucina di Irithyll (serve che gli sia stata restituita l'armatura): gesti Toast e Sleep. Manda Greirat nella 2ª spedizione a Irithyll SOLO dopo che Siegward è qui, altrimenti Greirat muore.",
+     "loc_it": "Irithyll della Valle Boreale — cucina prima di Sulyvahn"
+    },
+    {
+     "text": "Kill Pontiff Sulyvahn. Behind his arena, an illusory wall under the Water Reserve holds Archdeacon McDonnell — join ALDRICH FAITHFUL.",
+     "loc": "Irithyll — Pontiff arena / Water Reserve",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Pontiff + Covenant: Aldrich Faithful",
+       "label_it": "🏆 Sulyvahn, il Gran Sacerdote + Patto: Seguaci di Aldrich"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi Sulyvahn, il Gran Sacerdote (Pontiff Sulyvahn). Dietro la sua arena, un muro illusorio sotto la Water Reserve nasconde l'Arcidiacono McDonnell: iscriviti ai SEGUACI DI ALDRICH.",
+     "loc_it": "Irithyll — arena di Sulyvahn / Water Reserve"
+    },
+    {
+     "text": "Farm 10 Human Dregs from the Sewer Centipedes in the water by Distant Manor; kill the two Sulyvahn's Beasts in the Water Reserve for the Ring of Favor. Rank 1 = GREAT DEEP SOUL sorcery.",
+     "loc": "Irithyll — Distant Manor / Water Reserve",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "10 Human Dregs",
+       "label_it": "10 Human Dregs"
+      },
+      {
+       "type": "coll",
+       "label": "Ring of Favor",
+       "label_it": "Ring of Favor"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Farma 10 Human Dregs dai Sewer Centipedes nell'acqua vicino a Distant Manor; uccidi le due Sulyvahn's Beasts nella Water Reserve per il Ring of Favor. Rango 1 = stregoneria GREAT DEEP SOUL.",
+     "loc_it": "Irithyll — Distant Manor / Water Reserve"
+    },
+    {
+     "text": "In Anor Londo take the invisible ledge from the spinning staircase to Yorshka: join BLADES OF THE DARKMOON. Farm 30 Proof of Concord Kept from the staircase Silver Knights (~1% — Symbol of Avarice + gold serpent ring + Rusted Coins; budget hours). 10 = Darkmoon Ring, 30 = Darkmoon Blade.",
+     "loc": "Anor Londo — Prison Tower / Silver Knight stairs",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Covenant: Blade of the Darkmoon",
+       "label_it": "🏆 Patto: Lama della Luna Oscura"
+      },
+      {
+       "type": "coll",
+       "label": "30 Concords",
+       "label_it": "30 Concord"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Ad Anor Londo prendi il cornicione invisibile dalla scala a chiocciola per arrivare a Yorshka: iscriviti alla LAMA DELLA LUNA OSCURA. Farma 30 Proof of Concord Kept dai Silver Knight della scalinata (~1%: Symbol of Avarice + Covetous Gold Serpent Ring + Rusted Coins; mettici in conto delle ore). 10 = Darkmoon Ring, 30 = Darkmoon Blade.",
+     "loc_it": "Anor Londo — Prison Tower / scale dei Silver Knight"
+    },
+    {
+     "text": "Kill Aldrich. MISSABLE: at the Church of Yorshka do NOT kill the pilgrim assassin (the hag-like figure by the door — killing her voids the wedding); talk to Anri (Quiet Resolve gesture) and Yuria at Firelink.",
+     "loc": "Anor Londo / Church of Yorshka",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Aldrich, Devourer of Gods",
+       "label_it": "🏆 Aldrich, il Divoratore degli Dei"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ Spare the pilgrim",
+       "label_it": "⚠ Risparmia la pellegrina"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi Aldrich. PERDIBILE: alla Chiesa di Yorshka NON uccidere la pellegrina assassina (la figura simile a una megera vicino alla porta: ucciderla annulla il matrimonio); parla con Anri (gesto Quiet Resolve) e con Yuria all'Altare del Vincolo.",
+     "loc_it": "Anor Londo / Chiesa di Yorshka (Church of Yorshka)"
+    },
+    {
+     "text": "MISSABLE: Reveal the Darkmoon Tomb behind the Gwyn statue, take the Sword of Avowal from the pilgrim and 'wed' Anri. You are now on the Usurpation track — still no sigil healing.",
+     "loc": "Anor Londo — Darkmoon Tomb",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ Wedding",
+       "label_it": "⚠ Matrimonio"
+      },
+      {
+       "type": "quest",
+       "label": "Lord of Hollows",
+       "label_it": "Lord of Hollows"
+      }
+     ],
+     "trophy": false,
+     "text_it": "PERDIBILE: rivela la Darkmoon Tomb dietro la statua di Gwyn, prendi la Sword of Avowal dalla pellegrina e 'sposa' Anri. Ora sei sul binario de La conquista del fuoco: sempre nessuna cura del sigillo.",
+     "loc_it": "Anor Londo — Darkmoon Tomb"
+    },
+    {
+     "text": "Return to Rosaria — Leonhard has killed her. Take the Black Eye Orb, invade him in Gwynevere's chamber, win, and transpose the Soul of Rosaria into BOUNTIFUL SUNLIGHT (Master of Miracles).",
+     "loc": "Cathedral / Anor Londo — Gwynevere's chamber",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "quest"
+      },
+      {
+       "type": "coll",
+       "label": "Bountiful Sunlight",
+       "label_it": "Bountiful Sunlight"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Torna da Rosaria: Leonhard l'ha uccisa. Prendi il Black Eye Orb, invadilo nella camera di Gwynevere, vinci e trasponi la Soul of Rosaria in BOUNTIFUL SUNLIGHT (Maestro dei miracoli).",
+     "loc_it": "Cattedrale delle Profondità / Anor Londo — camera di Gwynevere"
+    }
+   ],
+   "title_it": "Fase 6 — Irithyll e Anor Londo",
+   "note_it": "Sirris finisce, parte il farm dei Concord, arriva il matrimonio di Anri: il tratto più denso del platino."
+  },
+  {
+   "title": "Phase 7 — Irithyll Dungeon & Profaned Capital",
+   "note": "Karla unlocks the dark spell schools; Siegward's finale at Yhorm.",
+   "steps": [
+    {
+     "text": "Loot the Profaned Coal (cell with the wretches, lower dungeon) and the Old Cell Key; free Siegward from his Profaned Capital cell.",
+     "loc": "Irithyll Dungeon",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Profaned Coal",
+       "label_it": "Profaned Coal"
+      },
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "quest"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Saccheggia la Profaned Coal (cella con i disgraziati, prigione inferiore) e la Old Cell Key; libera Siegward dalla sua cella nella Capitale Profanata.",
+     "loc_it": "Prigione di Irithyll (Irithyll Dungeon)"
+    },
+    {
+     "text": "Get the Jailer's Key Ring in the Profaned Capital, free KARLA and give her the Quelana + Grave Warden tomes (and the Londor tome from Yuria) — mandatory for the dark halves of Master of Pyromancies/Miracles.",
+     "loc": "Profaned Capital / Irithyll Dungeon cell",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "Karla",
+       "label_it": "Karla"
+      },
+      {
+       "type": "coll",
+       "label": "Dark tomes",
+       "label_it": "Tomi oscuri"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prendi il Jailer's Key Ring nella Capitale Profanata (Profaned Capital), libera KARLA e dalle i tomi Quelana e Grave Warden (più il Londor tome da Yuria): obbligatori per le metà oscure di Maestro della piromanzia e Maestro dei miracoli.",
+     "loc_it": "Capitale Profanata / cella della Prigione di Irithyll"
+    },
+    {
+     "text": "Kill the Court Sorcerer for Logan's Scroll (Orbeck) and grab the Covetous Gold Serpent Ring on the chapel ledge — your farm ring for the rest of the plat.",
+     "loc": "Profaned Capital — chapel roof/ledge",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Logan's Scroll",
+       "label_it": "Logan's Scroll"
+      },
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Uccidi il Court Sorcerer per la Logan's Scroll (Orbeck) e prendi il Covetous Gold Serpent Ring sul cornicione della cappella: è il tuo anello da farm per tutto il resto del platino.",
+     "loc_it": "Capitale Profanata — tetto/cornicione della cappella"
+    },
+    {
+     "text": "Fight Yhorm the Giant with the Storm Ruler; Siegward joins and completes his quest. Emma's summons then leads to the Dancer.",
+     "loc": "Profaned Capital — throne",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Yhorm the Giant",
+       "label_it": "🏆 Yhorm il Gigante"
+      },
+      {
+       "type": "quest",
+       "label": "Siegward finale",
+       "label_it": "Siegward finale"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Affronta Yhorm il Gigante con la Storm Ruler; Siegward si unisce e completa la sua quest. Le evocazioni di Emma portano poi alla Danzatrice.",
+     "loc_it": "Capitale Profanata — trono"
+    }
+   ],
+   "title_it": "Fase 7 — Prigione di Irithyll e Capitale Profanata",
+   "note_it": "Karla sblocca le scuole magiche oscure; il gran finale di Siegward a Yhorm."
+  },
+  {
+   "title": "Phase 8 — Lothric Castle, Untended Graves, Grand Archives, Archdragon Peak",
+   "note": "Path of the Dragon window, Eyes for NG+, medals, and Orbeck's endgame.",
+   "steps": [
+    {
+     "text": "Kill the Dancer of the Boreal Valley, then Oceiros in the Consumed King's Garden. Oceiros' soul later transposes into WHITE DRAGON BREATH — needed for Master of Sorceries.",
+     "loc": "High Wall chapel / Consumed King's Garden",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Dancer + Oceiros",
+       "label_it": "🏆 Danzatrice della Valle Boreale + Oceiros, il Re Consumato"
+      },
+      {
+       "type": "coll",
+       "label": "White Dragon Breath soul",
+       "label_it": "Anima per White Dragon Breath"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi la Danzatrice della Valle Boreale (Dancer of the Boreal Valley), poi Oceiros nel Giardino del Re Consumato. L'anima di Oceiros si traspone più avanti in WHITE DRAGON BREATH, necessaria per Maestro della stregoneria.",
+     "loc_it": "Cappella delle Mura del Castello di Lothric / Giardino del Re Consumato (Consumed King's Garden)"
+    },
+    {
+     "text": "MISSABLE: Behind Oceiros' arena, the seated corpse gives the PATH OF THE DRAGON gesture (gates Archdragon Peak). Through the illusory wall: Untended Graves — kill Champion Gundyr, loot the EYES OF A FIRE KEEPER (hold for NG+'s ending).",
+     "loc": "Consumed King's Garden / Untended Graves",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Champion Gundyr",
+       "label_it": "🏆 Gundyr, il Campione"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ Path of the Dragon + Eyes",
+       "label_it": "⚠ Path of the Dragon + Eyes"
+      }
+     ],
+     "trophy": true,
+     "text_it": "PERDIBILE: dietro l'arena di Oceiros, il cadavere seduto dà il gesto PATH OF THE DRAGON (che sblocca la Vetta dell'Arcidrago). Oltre il muro illusorio: Tombe dimenticate (Untended Graves); uccidi Gundyr, il Campione e saccheggia gli EYES OF A FIRE KEEPER (tienili per il finale di NG+).",
+     "loc_it": "Giardino del Re Consumato / Tombe dimenticate"
+    },
+    {
+     "text": "In Lothric Castle grab the Braille Divine Tome of Lothric (Dragon Barracks jump) for Irina. Deliver the remaining coals — with all 4 (Farron, Sage's, Profaned, Giant's) infuse one weapon with every gem type for MASTER OF INFUSION.",
+     "loc": "Lothric Castle / Firelink (Andre)",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Master of Infusion",
+       "label_it": "🏆 Maestro delle infusioni"
+      },
+      {
+       "type": "coll",
+       "label": "Lothric tome",
+       "label_it": "Tomo di Lothric"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Nel Castello di Lothric prendi il Braille Divine Tome of Lothric (salto ai Dragon Barracks) per Irina. Consegna le coal rimaste: con tutte e 4 (Farron, Sage's, Profaned, Giant's) infondi una stessa arma con ogni tipo di gemma per il MAESTRO DELLE INFUSIONI.",
+     "loc_it": "Castello di Lothric (Lothric Castle) / Altare del Vincolo (Andre)"
+    },
+    {
+     "text": "Grand Archives: the teleporting Crystal Sage drops the Crystal Scroll (Orbeck's last). Farm 30 Sunlight Medals off the two red-eyed Lothric Knights guarding the Archives approach — Sacred Oath (10) + GREAT LIGHTNING SPEAR (30).",
+     "loc": "Grand Archives / Lothric Castle",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Crystal Scroll",
+       "label_it": "Crystal Scroll"
+      },
+      {
+       "type": "coll",
+       "label": "30 Sunlight Medals",
+       "label_it": "30 Sunlight Medal"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Archivio Centrale: il Saggio di Cristallo che si teletrasporta lascia cadere la Crystal Scroll (l'ultima di Orbeck). Farma 30 Sunlight Medal dai due Lothric Knight con gli occhi rossi che sorvegliano l'accesso agli Archivi: Sacred Oath (10) + GREAT LIGHTNING SPEAR (30).",
+     "loc_it": "Archivio Centrale (Grand Archives) / Castello di Lothric"
+    },
+    {
+     "text": "Buy Orbeck's full stock while he lives (Master of Sorceries also needs the boss-soul sorceries: Crystal Hail from the Crystal Sage's soul, White Dragon Breath from Oceiros'). If he's died in the Grand Archives, his Ashes let the Handmaid sell the rest. Kill the Twin Princes.",
+     "loc": "Grand Archives",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Lorian & Lothric",
+       "label_it": "🏆 Lothric, Principe secondogenito"
+      },
+      {
+       "type": "quest",
+       "label": "Orbeck endgame",
+       "label_it": "Orbeck endgame"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Compra tutto lo stock di Orbeck finché è vivo (Maestro della stregoneria richiede anche le stregonerie da anime dei boss: Crystal Hail dall'anima del Saggio di Cristallo, White Dragon Breath da quella di Oceiros). Se è morto nell'Archivio Centrale, le sue Ashes permettono all'Ancella del Santuario di venderti il resto. Uccidi i Twin Princes.",
+     "loc_it": "Archivio Centrale"
+    },
+    {
+     "text": "Use Path of the Dragon at the Irithyll Dungeon meditation corpse to reach Archdragon Peak: Ancient Wyvern, then the gesture at the Great Belfry altar for the CALAMITY RING; grab Great Magic Barrier; kill the Nameless King (hardest base fight — level and embers ready).",
+     "loc": "Archdragon Peak",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Ancient Wyvern + Nameless King",
+       "label_it": "🏆 Antica Viverna + Il Re senza nome"
+      },
+      {
+       "type": "coll",
+       "label": "Calamity Ring",
+       "label_it": "Calamity Ring"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Usa Path of the Dragon sul cadavere in meditazione nella Prigione di Irithyll per raggiungere la Vetta dell'Arcidrago (Archdragon Peak): Antica Viverna, poi il gesto all'altare del Great Belfry per il CALAMITY RING; prendi Great Magic Barrier; uccidi Il Re senza nome (lo scontro più duro del gioco base: livello alto e brace pronte).",
+     "loc_it": "Vetta dell'Arcidrago"
+    }
+   ],
+   "title_it": "Fase 8 — Castello di Lothric, Tombe dimenticate, Archivio Centrale, Vetta dell'Arcidrago",
+   "note_it": "La finestra di Path of the Dragon, gli Eyes per NG+, le medaglie e l'endgame di Orbeck."
+  },
+  {
+   "title": "Phase 9 — NG wrap-up & Usurpation of Fire",
+   "note": "Spend souls, sweep spells and gestures, then take the hollow throne.",
+   "steps": [
+    {
+     "text": "Transpose every boss-soul SPELL at Ludleth: Crystal Sage→Crystal Hail, Deacons→Deep Soul, Old Demon King→Chaos Bed Vestiges, Dancer→Soothing Sunlight, Aldrich→Lifehunt Scythe, Oceiros→White Dragon Breath. Soul of the Lords → take SUNLIGHT SPEAR (the alternative is the Firelink Greatsword — not trophy-relevant; one soul per plat is enough).",
+     "loc": "Firelink Shrine — Ludleth",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Boss-soul spells",
+       "label_it": "Magie da anime dei boss"
+      },
+      {
+       "type": "build",
+       "label": "Spells > weapons",
+       "label_it": "Magie > armi"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Trasponi da Ludleth OGNI magia da anima di boss: Saggio di Cristallo→Crystal Hail, Diaconi→Deep Soul, Vecchio Re demone→Chaos Bed Vestiges, Danzatrice→Soothing Sunlight, Aldrich→Lifehunt Scythe, Oceiros→White Dragon Breath. Soul of the Lords → prendi la SUNLIGHT SPEAR (l'alternativa è la Firelink Greatsword, irrilevante per i trofei; un'anima a platino basta).",
+     "loc_it": "Altare del Vincolo — Ludleth"
+    },
+    {
+     "text": "Buy out Irina (all Carim/Lothric miracles), Cornyx, Karla and Orbeck stock. The three spell-mastery trophies need every school complete — track with a checklist.",
+     "loc": "Firelink Shrine vendors",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Spell buyout",
+       "label_it": "Acquisto magie"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Svuota lo stock di Irina (tutti i miracoli di Carim/Lothric), Cornyx, Karla e Orbeck. I tre trofei di maestria magica richiedono ogni scuola al completo: tieni traccia con una checklist.",
+     "loc_it": "Venditori dell'Altare del Vincolo"
+    },
+    {
+     "text": "Audit gestures vs the full gesture list before the final boss (Duel Bow comes from the Londor Pale Shade invasions your hollow run enables).",
+     "loc": "Any — menu check",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ Gesture audit",
+       "label_it": "⚠ Controllo gesti"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Confronta i gesti che hai con la lista completa prima del boss finale (il Duel Bow arriva dalle invasioni di Londor Pale Shade che la tua run da vacuo abilita).",
+     "loc_it": "Ovunque — controllo dal menu"
+    },
+    {
+     "text": "FINAL CHECK: 5 sigils intact (never healed), wedding done. Kill the Soul of Cinder and light the flame as Lord of Hollows — 🏆 THE USURPATION OF FIRE.",
+     "loc": "Kiln of the First Flame",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Soul of Cinder + Usurpation of Fire",
+       "label_it": "🏆 Anima di tizzoni + La conquista del fuoco"
+      }
+     ],
+     "trophy": true,
+     "text_it": "CONTROLLO FINALE: 5 sigilli intatti (mai curati), matrimonio fatto. Uccidi l'Anima di tizzoni e accendi la fiamma come Lord of Hollows — 🏆 LA CONQUISTA DEL FUOCO.",
+     "loc_it": "Fornace della Prima Fiamma (Kiln of the First Flame)"
+    },
+    {
+     "text": "Start Journey 2. Loot carries over; only the world resets.",
+     "loc": "Firelink Shrine — NG+",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "Enter NG+",
+       "label_it": "Entra in NG+"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Avvia il Journey 2. Il bottino si porta dietro; si azzera solo il mondo.",
+     "loc_it": "Altare del Vincolo — NG+"
+    }
+   ],
+   "title_it": "Fase 9 — Chiusura della NG e La conquista del fuoco",
+   "note_it": "Spendi le anime, ripulisci magie e gesti, poi prenditi il trono dei vacui."
+  },
+  {
+   "title": "Phase 10 — NG+: +1 rings, farm cleanup, The End of Fire",
+   "note": "~20 rings this lap (all 19 +1s plus the Life Ring +2 in Lothric Castle), Rosaria ranking now safe.",
+   "steps": [
+    {
+     "text": "Sweep the +1 rings as you replay: Speckled Stoneplate (Cemetery), Fleshbite (High Wall roof), Life/Poisonbite (Settlement), Lingering Dragoncrest (crab lake), Evil Eye (Cathedral), Magic Stoneplate + Wolf (Farron), Thunder Stoneplate (Catacombs), Bloodbite (Smouldering Lake).",
+     "loc": "Cemetery of Ash through Smouldering Lake",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "+1 rings (early half)",
+       "label_it": "anelli +1 (prima metà)"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Raccogli gli anelli +1 mentre rigiochi: Speckled Stoneplate (Cimitero della Cenere), Fleshbite (tetto delle Mura del Castello di Lothric), Life/Poisonbite (Insediamento), Lingering Dragoncrest (lago dei granchi), Evil Eye (Cattedrale), Magic Stoneplate + Wolf (Forte di Farron), Thunder Stoneplate (Catacombe), Bloodbite (Lago Ardente).",
+     "loc_it": "Dal Cimitero della Cenere al Lago Ardente"
+    },
+    {
+     "text": "Continue: Chloranthy, Covetous Gold Serpent, Ring of Favor (Pontiff arena upstairs), Covetous Silver Serpent (Dungeon), Flame Stoneplate (Profaned), Wood Grain (CK Garden), Dark Stoneplate (Lothric Castle), Sage (Archives), Havel (Archdragon) — plus the LIFE RING +2 in Lothric Castle's Dragon Barracks.",
+     "loc": "Irithyll through Archdragon Peak",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "+1 rings (late half)",
+       "label_it": "anelli +1 (seconda metà)"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Continua: Chloranthy, Covetous Gold Serpent, Ring of Favor (piano superiore dell'arena di Sulyvahn), Covetous Silver Serpent (Prigione), Flame Stoneplate (Capitale Profanata), Wood Grain (Giardino del Re Consumato), Dark Stoneplate (Castello di Lothric), Sage (Archivio Centrale), Havel (Vetta dell'Arcidrago), più il LIFE RING +2 nei Dragon Barracks del Castello di Lothric.",
+     "loc_it": "Da Irithyll alla Vetta dell'Arcidrago"
+    },
+    {
+     "text": "Sirris is done, so rank Rosaria's Fingers: offer 10 Pale Tongues (Darkwraiths near Abyss Watchers drop them) for the OBSCURING RING.",
+     "loc": "Cathedral — Rosaria's Bed Chamber / Farron Keep",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Obscuring Ring",
+       "label_it": "Obscuring Ring"
+      },
+      {
+       "type": "quest",
+       "label": "Fingers rank 1",
+       "label_it": "Dita rango 1"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Sirris è conclusa, quindi ora scala le Dita di Rosaria: offri 10 Pale Tongue (le lasciano cadere i Darkwraith vicino ai Guardiani dell'Abisso) per l'OBSCURING RING.",
+     "loc_it": "Cattedrale delle Profondità — Rosaria's Bed Chamber / Forte di Farron"
+    },
+    {
+     "text": "Finish any covenant farms (Shackles for Warmth, Concords, Medals, Swordgrass) with full luck gear; transpose any missed boss-soul spells — Master of Sorceries, Miracles and Pyromancies should all pop this journey.",
+     "loc": "Farm spots + Firelink (Ludleth)",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 3 spell masteries",
+       "label_it": "🏆 3 maestrie magiche"
+      },
+      {
+       "type": "coll",
+       "label": "Farm cleanup",
+       "label_it": "Pulizia farm"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Chiudi tutti i farm dei patti rimasti (Shackles per Warmth, Concord, Medal, Swordgrass) con l'equipaggiamento da Fortuna al completo; trasponi le magie da anime di boss che ti mancano: Maestro della stregoneria, dei miracoli e della piromanzia dovrebbero scattare tutti in questo journey.",
+     "loc_it": "Punti di farm + Altare del Vincolo (Ludleth)"
+    },
+    {
+     "text": "Give the Eyes of a Fire Keeper to the Fire Keeper. Kill the Soul of Cinder, then SUMMON her at the final bonfire — 🏆 THE END OF FIRE. Roll into Journey 3.",
+     "loc": "Firelink Shrine / Kiln of the First Flame",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 The End of Fire",
+       "label_it": "🏆 La fine del fuoco"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ Summon, don't light",
+       "label_it": "⚠ Evocala, non accendere"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Dai gli Eyes of a Fire Keeper alla Fire Keeper. Uccidi l'Anima di tizzoni, poi EVOCALA al falò finale — 🏆 LA FINE DEL FUOCO. Passa al Journey 3.",
+     "loc_it": "Altare del Vincolo / Fornace della Prima Fiamma"
+    }
+   ],
+   "title_it": "Fase 10 — NG+: anelli +1, pulizia dei farm, La fine del fuoco",
+   "note_it": "~20 anelli in questo giro (tutti i 19 +1 più il Life Ring +2 nel Castello di Lothric), e ora scalare Rosaria è sicuro."
+  },
+  {
+   "title": "Phase 11 — NG++: targeted +2 ring run → PLATINUM",
+   "note": "Speedrun the world for the 15 +2 rings; bosses needed only where they gate zones.",
+   "steps": [
+    {
+     "text": "Wolf Ring +2 (Cemetery graveyard wall), Ring of the Evil Eye +2 (High Wall, by the Cell Key barrels), then Vordt and off the wall.",
+     "loc": "Cemetery of Ash / High Wall of Lothric",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "+2 rings 1-2",
+       "label_it": "anelli +2 1-2"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Wolf Ring +2 (muro del cimitero al Cimitero della Cenere), Ring of the Evil Eye +2 (Mura del Castello di Lothric, vicino ai barili della Cell Key), poi Vordt e via dalle mura.",
+     "loc_it": "Cimitero della Cenere / Mura del Castello di Lothric"
+    },
+    {
+     "text": "Covetous Silver Serpent +2 (Settlement hut roof near Flynn's Ring), Chloranthy +2 (Road of Sacrifices ledge), Ring of Favor +2 (Cathedral rooftop, greataxe hollow).",
+     "loc": "Undead Settlement / Road of Sacrifices / Cathedral",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "+2 rings 3-5",
+       "label_it": "anelli +2 3-5"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Covetous Silver Serpent +2 (tetto della capanna nell'Insediamento vicino al Flynn's Ring), Chloranthy +2 (cornicione sulla Strada dei Sacrifici), Ring of Favor +2 (tetto della Cattedrale, vacuo con l'ascia grande).",
+     "loc_it": "Insediamento di non morti / Strada dei Sacrifici / Cattedrale delle Profondità"
+    },
+    {
+     "text": "Dark Stoneplate +2 (Farron, behind a wall near Keep Ruins), kill Abyss Watchers; Ring of Steel Protection +2 (Catacombs entrance pillar), Flame Stoneplate +2 (Smouldering Lake, illusory wall by the Black Knight), kill Wolnir.",
+     "loc": "Farron Keep / Catacombs / Smouldering Lake",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "+2 rings 6-8",
+       "label_it": "anelli +2 6-8"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Dark Stoneplate +2 (Forte di Farron, dietro un muro vicino a Keep Ruins), uccidi i Guardiani dell'Abisso; Ring of Steel Protection +2 (pilastro all'ingresso delle Catacombe), Flame Stoneplate +2 (Lago Ardente, muro illusorio vicino al Black Knight), uccidi Wolnir.",
+     "loc_it": "Forte di Farron / Catacombe di Carthus / Lago Ardente"
+    },
+    {
+     "text": "Wood Grain +2 (via Distant Manor), kill Pontiff and Aldrich; Havel's +2 (Prison Tower rafters), Magic Stoneplate +2 (Profaned Capital, below the bonfire), kill Yhorm.",
+     "loc": "Irithyll / Anor Londo / Profaned Capital",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "+2 rings 9-11",
+       "label_it": "anelli +2 9-11"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Wood Grain +2 (via Distant Manor), uccidi Sulyvahn e Aldrich; Havel's +2 (travi della Prison Tower), Magic Stoneplate +2 (Capitale Profanata, sotto il falò), uccidi Yhorm.",
+     "loc_it": "Irithyll / Anor Londo / Capitale Profanata"
+    },
+    {
+     "text": "After Dancer + Oceiros: Sage +2 (CK Garden elevator drop-off), Thunder Stoneplate +2 (Lothric Castle roof by Dragonslayer Armour), Lingering Dragoncrest +2 (Grand Archives roof alcove).",
+     "loc": "Consumed King's Garden / Lothric Castle / Grand Archives",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "+2 rings 12-14",
+       "label_it": "anelli +2 12-14"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Dopo Danzatrice + Oceiros: Sage +2 (uscita dell'ascensore nel Giardino del Re Consumato), Thunder Stoneplate +2 (tetto del Castello di Lothric vicino all'Armatura dell'Ammazzadraghi), Lingering Dragoncrest +2 (nicchia sul tetto dell'Archivio Centrale).",
+     "loc_it": "Giardino del Re Consumato / Castello di Lothric / Archivio Centrale"
+    },
+    {
+     "text": "Archdragon Peak: fight through for the Covetous Gold Serpent Ring +2 — with all 107 rings banked, 🏆 MASTER OF RINGS pops.",
+     "loc": "Archdragon Peak",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Master of Rings",
+       "label_it": "🏆 Maestro degli anelli"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Vetta dell'Arcidrago: fatti strada fino al Covetous Gold Serpent Ring +2; con tutti i 107 anelli in cassaforte scatta 🏆 MAESTRO DEGLI ANELLI.",
+     "loc_it": "Vetta dell'Arcidrago"
+    },
+    {
+     "text": "Kill the Soul of Cinder and simply LIGHT the bonfire (no summon, no Lord of Hollows) — 🏆 TO LINK THE FIRST FLAME, and 🏆 THE DARK SOUL platinum is yours.",
+     "loc": "Kiln of the First Flame",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 To Link the First Flame + PLATINUM",
+       "label_it": "🏆 Collegare la Prima Fiamma + PLATINO"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi l'Anima di tizzoni e limitati ad ACCENDERE il falò (niente evocazione, niente Lord of Hollows) — 🏆 COLLEGARE LA PRIMA FIAMMA, e 🏆 ANIMA OSCURA, il platino, è tuo.",
+     "loc_it": "Fornace della Prima Fiamma"
+    }
+   ],
+   "title_it": "Fase 11 — NG++: giro mirato per gli anelli +2 → PLATINO",
+   "note_it": "Corri il mondo per i 15 anelli +2; i boss servono solo dove bloccano l'accesso alle zone."
+  }
+ ],
+ "playthroughs_it": "3 journey: NG = sweep completo di quest, patti e magie + La conquista del fuoco; NG+ = tutti gli anelli +1, pulizia dei farm + La fine del fuoco; NG++ = giro mirato per gli anelli +2 + Collegare la Prima Fiamma",
+ "hours_it": "90-120 ore",
+ "build_summary_it": "Knight (SL9), spada e scudo. Infondi la Longsword iniziale con la Raw Gem della lucertola di cristallo delle Mura del Castello di Lothric (High Wall of Lothric): danno fisso, zero investimento nelle statistiche, ti porta oltre i Guardiani dell'Abisso (Abyss Watchers) mentre pompi VIG/END. Farma presto i Lothric Knight sulle Mura per la Lothric Knight Sword e il Lothric Knight Shield (100% fisico); porta il Grass Crest Shield sulla schiena per la rigenerazione della stamina appena lo trovi a Crucifixion Woods. Da Irithyll della Valle Boreale (Irithyll) in poi abbandona Raw per un'infusione Refined e cresci in una build quality 40/40 STR/DEX: la Lothric Knight Sword (o la Longsword) Refined +10 è un cavallo da tiro collaudato per il platino. Il DLC NON serve: tutti i 43 trofei e tutti i 107 anelli sono nel gioco base.",
+ "golden_rules_it": [
+  "Non lasciare MAI che la Fire Keeper curi il Dark Sigil in NG: annulla all'istante il finale La conquista del fuoco (The Usurpation of Fire).",
+  "Recluta Yoel subito dopo Vordt della Valle Boreale (Vordt) e brucia tutti e 5 i livelli gratuiti PRIMA dei Guardiani dell'Abisso ('Draw Out True Strength' x5: bastano ~5-6 morti, ogni morte aggiunge hollowing pari al numero di sigilli, soglie 2/6/12/15), altrimenti muore e Yuria non compare mai.",
+  "Offri a Rosaria ZERO Pale Tongue finché la quest di Sirris non è conclusa: anche una sola la fa fallire per sempre (Silvercat Ring + gesto Darkmoon Loyalty). Sali invece di rango nelle Dita di Rosaria (Rosaria's Fingers) in NG+.",
+  "Prendi patti e gesti appena si sbloccano: i Creatori di tumuli (Mound-makers) idealmente PRIMA di Granbosco, la foresta maledetta (backup: il segno co-op di Sirris ad Aldrich se l'albero è già morto), il cadavere con Path of the Dragon subito dopo Oceiros, il Prostration da Patches.",
+  "Spendi le anime dei boss prima sulle MAGIE (Maestro della stregoneria/dei miracoli/della piromanzia): le armi dei boss possono aspettare le copie delle stesse anime in NG+/NG++.",
+  "Non farmare mai senza item discovery al massimo: Covetous Gold Serpent Ring + Symbol of Avarice + Rusted Coins (i drop di Concord/shackle sono ~1%)."
+ ],
+ "stat_table_it": {
+  "note": "Base del Knight (SL9): VIG12/ATT10/END11/VIT15/STR13/DEX12/INT9/FTH9/LCK7. La Longsword Raw ignora lo scaling, quindi carica prima VIG/END; alimenta STR/DEX quando passi a Refined. ATT resta a 10 (le magie vanno solo OTTENUTE, non lanciate).",
+  "columns": [
+   "SL",
+   "VIG",
+   "END",
+   "STR",
+   "DEX",
+   "Milestone"
+  ],
+  "rows": [
+   [
+    "9",
+    "12",
+    "11",
+    "13",
+    "12",
+    "Inizio: Knight, Longsword Raw + Lothric Knight Shield; prima la sopravvivenza"
+   ],
+   [
+    "25",
+    "18",
+    "15",
+    "13",
+    "12",
+    "Mura del Castello di Lothric/Insediamento completati: pompa pura VIG-END, Raw scala con i potenziamenti, non con le statistiche"
+   ],
+   [
+    "40",
+    "22",
+    "20",
+    "16",
+    "14",
+    "Forte di Farron/Guardiani dell'Abisso: arma +4-6, inizia a dosare STR/DEX"
+   ],
+   [
+    "55",
+    "25",
+    "24",
+    "20",
+    "18",
+    "Irithyll: passa da Raw a Refined (Lothric Knight Sword), lo scaling quality ora batte Raw"
+   ],
+   [
+    "70",
+    "27",
+    "27",
+    "24",
+    "24",
+    "Anor Londo/Castello di Lothric: arma +9/+10, qui fai il farm dei Concord dai Silver Knight"
+   ],
+   [
+    "85",
+    "30",
+    "30",
+    "30",
+    "28",
+    "Finale NG: comodo per Il Re senza nome e l'Anima di tizzoni"
+   ],
+   [
+    "105+",
+    "35",
+    "32",
+    "40",
+    "40",
+    "NG+/NG++: completa il quality 40/40; butta i punti avanzati in VIG per i boss di NG++"
+   ]
+  ]
+ },
+ "glossary_it": {
+  "The Dark Soul": "Anima Oscura",
+  "To Link the First Flame": "Collegare la Prima Fiamma",
+  "The End of Fire": "La fine del fuoco",
+  "The Usurpation of Fire": "La conquista del fuoco",
+  "Supreme Weapon Reinforcement": "Rinforzo arma supremo",
+  "Master of Infusion": "Maestro delle infusioni",
+  "Master of Sorceries": "Maestro della stregoneria",
+  "Master of Pyromancies": "Maestro della piromanzia",
+  "Master of Miracles": "Maestro dei miracoli",
+  "Master of Rings": "Maestro degli anelli",
+  "Master of Expression": "Maestro delle espressioni",
+  "Ultimate Bonfire": "Falò definitivo",
+  "Ultimate Estus": "Estus definitivo",
+  "Enkindle": "Accensione",
+  "Embrace the Flame": "Abbraccia la Fiamma",
+  "Iudex Gundyr": "Gundyr, il Giudice",
+  "Vordt of the Boreal Valley": "Vordt della Valle Boreale",
+  "Curse-rotted Greatwood": "Granbosco, la foresta maledetta",
+  "Crystal Sage": "Saggio di Cristallo",
+  "Deacons of the Deep": "Diaconi delle Profondità",
+  "Abyss Watchers": "Guardiani dell'Abisso",
+  "High Lord Wolnir": "Wolnir, il Signore supremo",
+  "Old Demon King": "Vecchio Re demone",
+  "Pontiff Sulyvahn": "Sulyvahn, il Gran Sacerdote",
+  "Yhorm the Giant": "Yhorm il Gigante",
+  "Aldrich, Devourer of Gods": "Aldrich, il Divoratore degli Dei",
+  "Dancer of the Boreal Valley": "Danzatrice della Valle Boreale",
+  "Dragonslayer Armour": "Armatura dell'Ammazzadraghi",
+  "Oceiros, the Consumed King": "Oceiros, il Re Consumato",
+  "Champion Gundyr": "Gundyr, il Campione",
+  "Ancient Wyvern": "Antica Viverna",
+  "Nameless King": "Il Re senza nome",
+  "Lothric, Younger Prince": "Lothric, Principe secondogenito",
+  "Soul of Cinder": "Anima di tizzoni",
+  "Lords of Cinder": "Signori dei Tizzoni",
+  "Covenant": "Patto",
+  "Warrior of Sunlight": "Guerrieri del Sole",
+  "Way of Blue": "Via Blu",
+  "Blue Sentinels": "Sentinelle Blu",
+  "Blade of the Darkmoon": "Lama della Luna Oscura",
+  "Rosaria's Fingers": "Dita di Rosaria",
+  "Mound-makers": "Creatori di tumuli",
+  "Watchdogs of Farron": "Guardiani di Farron",
+  "Aldrich Faithful": "Seguaci di Aldrich",
+  "bonfire": "falò",
+  "Estus Flask": "Fiaschetta Estus",
+  "Ember": "Brace",
+  "Host of Embers": "portatore della brace",
+  "sorceries": "stregonerie",
+  "pyromancies": "piromanzie",
+  "miracles": "miracoli",
+  "rings": "anelli",
+  "gestures": "gesti",
+  "infusion": "infusione",
+  "Titanite Shard": "Frammento di titanite",
+  "Undead Bone Shard": "Scheggia d'osso di non morto",
+  "Homeward Bone": "Osso del ritorno",
+  "Vigor": "Vigore",
+  "Endurance": "Tempra",
+  "Vitality": "Vitalità",
+  "Strength": "Forza",
+  "Dexterity": "Destrezza",
+  "Intelligence": "Intelligenza",
+  "Faith": "Fede",
+  "Luck": "Fortuna",
+  "Cemetery of Ash": "Cimitero della Cenere",
+  "Firelink Shrine": "Altare del Vincolo",
+  "High Wall of Lothric": "Mura del Castello di Lothric",
+  "Undead Settlement": "Insediamento di non morti",
+  "Road of Sacrifices": "Strada dei Sacrifici",
+  "Cathedral of the Deep": "Cattedrale delle Profondità",
+  "Farron Keep": "Forte di Farron",
+  "Catacombs of Carthus": "Catacombe di Carthus",
+  "Smouldering Lake": "Lago Ardente",
+  "Irithyll of the Boreal Valley": "Irithyll della Valle Boreale",
+  "Anor Londo": "Anor Londo",
+  "Irithyll Dungeon": "Prigione di Irithyll",
+  "Profaned Capital": "Capitale Profanata",
+  "Lothric Castle": "Castello di Lothric",
+  "Consumed King's Garden": "Giardino del Re Consumato",
+  "Untended Graves": "Tombe dimenticate",
+  "Grand Archives": "Archivio Centrale",
+  "Archdragon Peak": "Vetta dell'Arcidrago",
+  "Kiln of the First Flame": "Fornace della Prima Fiamma",
+  "Church of Yorshka": "Chiesa di Yorshka",
+  "Shrine Handmaid": "Ancella del Santuario",
+  "Old Wolf of Farron": "Vecchio Lupo di Farron",
+  "Archdeacon McDonnell": "Arcidiacono McDonnell"
+ },
+ "unverified_it": [
+  "Knight",
+  "Longsword",
+  "Raw Gem",
+  "Raw",
+  "Refined",
+  "Lothric Knight Sword",
+  "Lothric Knight Shield",
+  "Grass Crest Shield",
+  "Lothric Knights",
+  "Crucifixion Woods",
+  "Tower on the Wall",
+  "Foot of the High Wall",
+  "Halfway Fortress",
+  "Keep Ruins",
+  "Pit of Hollows",
+  "Cleansing Chapel",
+  "Distant Manor",
+  "Water Reserve",
+  "Darkmoon Tomb",
+  "Prison Tower",
+  "Rosaria's Bed Chamber",
+  "Dragon Barracks",
+  "Great Belfry",
+  "Demon Ruins",
+  "Gwynevere's chamber",
+  "Fire Keeper",
+  "Dark Sigil",
+  "Lord of Hollows",
+  "Draw Out True Strength",
+  "Pale Tongue",
+  "Transposing Kiln",
+  "Cell Key",
+  "Lift Chamber Key",
+  "Small Lothric Banner",
+  "Grave Key",
+  "Mortician's Ashes",
+  "Loretta's Bone",
+  "Old Cell Key",
+  "Jailer's Key Ring",
+  "Storm Ruler",
+  "Sword of Avowal",
+  "Black Eye Orb",
+  "Eyes of a Fire Keeper",
+  "Small Doll",
+  "Farron Coal",
+  "Sage's Coal",
+  "Profaned Coal",
+  "Giant's Coal",
+  "Sage's Scroll",
+  "Golden Scroll",
+  "Logan's Scroll",
+  "Crystal Scroll",
+  "Braille Divine Tome of Carim",
+  "Deep Braille Divine Tome",
+  "Braille Divine Tome of Lothric",
+  "Carthus Pyromancy Tome",
+  "Grave Warden Pyromancy Tome",
+  "Izalith Pyromancy Tome",
+  "Quelana Pyromancy Tome",
+  "Londor tome",
+  "Wolf's Blood Swordgrass",
+  "Vertebra Shackles",
+  "Human Dregs",
+  "Proof of Concord Kept",
+  "Sunlight Medal",
+  "Rusted Coins",
+  "Symbol of Avarice",
+  "Covetous Gold Serpent Ring",
+  "Covetous Silver Serpent Ring",
+  "Ring of Favor",
+  "Wolf Ring",
+  "Havel's Ring",
+  "Silvercat Ring",
+  "Young Dragon Ring",
+  "Slumbering Dragoncrest Ring",
+  "Calamity Ring",
+  "Obscuring Ring",
+  "Darkmoon Ring",
+  "Life Ring",
+  "Chloranthy Ring",
+  "Speckled Stoneplate Ring",
+  "Fleshbite Ring",
+  "Poisonbite Ring",
+  "Bloodbite Ring",
+  "Lingering Dragoncrest Ring",
+  "Ring of the Evil Eye",
+  "Magic Stoneplate Ring",
+  "Thunder Stoneplate Ring",
+  "Flame Stoneplate Ring",
+  "Dark Stoneplate Ring",
+  "Wood Grain Ring",
+  "Sage Ring",
+  "Ring of Steel Protection",
+  "Flynn's Ring",
+  "Crystal Hail",
+  "Deep Soul",
+  "Great Deep Soul",
+  "Chaos Bed Vestiges",
+  "Soothing Sunlight",
+  "Lifehunt Scythe",
+  "White Dragon Breath",
+  "Bountiful Sunlight",
+  "Sunlight Spear",
+  "Great Lightning Spear",
+  "Sacred Oath",
+  "Great Magic Barrier",
+  "Warmth",
+  "Darkmoon Blade",
+  "Firelink Greatsword",
+  "Soul of the Lords",
+  "Old Wolf Curved Sword",
+  "Applause",
+  "Dignified Bow",
+  "Prayer",
+  "Welcome",
+  "Prostration",
+  "Rejoice",
+  "Proper Bow",
+  "Legion Etiquette",
+  "By My Sword",
+  "My Thanks",
+  "Toast",
+  "Sleep",
+  "Quiet Resolve",
+  "Darkmoon Loyalty",
+  "Path of the Dragon",
+  "Duel Bow",
+  "Londor Pale Shade",
+  "Darkwraith",
+  "Winged Knight",
+  "Fire Demon",
+  "Stray Demon",
+  "Elder Ghru",
+  "Silver Knights",
+  "Sewer Centipedes",
+  "Sulyvahn's Beasts",
+  "Court Sorcerer",
+  "Ravenous Crystal Lizard",
+  "Twin Princes",
+  "Yellowfinger Heysel",
+  "Knight Slayer Tsorig",
+  "Gotthard",
+  "Hodrick",
+  "Journey 2",
+  "SL",
+  "VIG",
+  "ATT",
+  "END",
+  "VIT",
+  "STR",
+  "DEX",
+  "INT",
+  "FTH",
+  "LCK"
+ ],
+ "build_bullets": [
+  {
+   "h": "Core",
+   "t": "Knight (SL9), sword-and-board. The build you are growing into is a 40/40 STR/DEX quality build — Refined Lothric Knight Sword (or Longsword) +10 is a proven plat workhorse."
+  },
+  {
+   "h": "Stats",
+   "t": "Pump VIG/END while the Raw infusion carries you: Raw needs zero stat investment, so early levels all go to survivability. Feed STR/DEX afterwards up to the 40/40 quality spread."
+  },
+  {
+   "h": "Starting weapon",
+   "t": "Infuse the starting Longsword with the Raw Gem from the High Wall crystal lizard — flat damage, zero stat investment, carries you past Abyss Watchers."
+  },
+  {
+   "h": "Early farm",
+   "t": "Farm High Wall Lothric Knights early for the Lothric Knight Sword and 100%-physical Lothric Knight Shield."
+  },
+  {
+   "h": "Back shield",
+   "t": "Wear the Grass Crest Shield on your back for stamina regen once you find it in Crucifixion Woods."
+  },
+  {
+   "h": "Mid-game swap",
+   "t": "From Irithyll onward drop Raw for a Refined infusion and grow into the 40/40 STR/DEX quality build."
+  },
+  {
+   "h": "No DLC",
+   "t": "DLC is NOT needed: all 43 trophies and all 107 rings are base game."
+  }
+ ],
+ "build_bullets_it": [
+  {
+   "h": "Il cuore",
+   "t": "Knight (SL9), spada e scudo. La build verso cui cresci è una build quality 40/40 STR/DEX: la Lothric Knight Sword (o la Longsword) Refined +10 è un cavallo da tiro collaudato per il platino."
+  },
+  {
+   "h": "Statistiche",
+   "t": "Pompa VIG/END mentre l'infusione Raw ti porta avanti: Raw richiede zero investimento nelle statistiche, quindi i primi livelli vanno tutti sulla sopravvivenza. Alimenta STR/DEX dopo, fino allo schema quality 40/40."
+  },
+  {
+   "h": "Arma iniziale",
+   "t": "Infondi la Longsword iniziale con la Raw Gem della lucertola di cristallo delle Mura del Castello di Lothric (High Wall of Lothric): danno fisso, zero investimento nelle statistiche, ti porta oltre i Guardiani dell'Abisso (Abyss Watchers)."
+  },
+  {
+   "h": "Farm iniziale",
+   "t": "Farma presto i Lothric Knight sulle Mura per la Lothric Knight Sword e il Lothric Knight Shield (100% fisico)."
+  },
+  {
+   "h": "Scudo in spalla",
+   "t": "Porta il Grass Crest Shield sulla schiena per la rigenerazione della stamina appena lo trovi a Crucifixion Woods."
+  },
+  {
+   "h": "Cambio a metà",
+   "t": "Da Irithyll della Valle Boreale (Irithyll) in poi abbandona Raw per un'infusione Refined e cresci in una build quality 40/40 STR/DEX."
+  },
+  {
+   "h": "Niente DLC",
+   "t": "Il DLC NON serve: tutti i 43 trofei e tutti i 107 anelli sono nel gioco base."
+  }
+ ]
+}

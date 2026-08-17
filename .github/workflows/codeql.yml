@@ -1,0 +1,56 @@
+name: CodeQL
+
+# Static security analysis. Free and unlimited on public repositories.
+#
+# NOTE: this is the "advanced" (committed workflow) setup. It is mutually
+# exclusive with GitHub's "default setup" for code scanning: if default setup
+# is enabled in Settings > Code security, this workflow is DISABLED by GitHub.
+# See docs/CI.md for why we keep the file instead of the default setup.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # Weekly, so that new CodeQL queries reach an idle repository too.
+    - cron: "37 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: codeql-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  analyze:
+    name: Analisi CodeQL (Python)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read          # checkout
+      security-events: write  # upload the SARIF results to the Security tab
+      actions: read           # read workflow run metadata (required on private repos, harmless here)
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@ff2f1c621b7f889edc0d3c761ac2e6a3f8cdb0dd # v4.37.7
+        with:
+          languages: python
+          # security-extended adds lower-severity security queries; "quality"
+          # would also add maintainability noise on a 2900-line single file.
+          queries: security-extended
+          config: |
+            paths-ignore:
+              - standalone-html
+              - dist
+              - build
+
+      # Python needs no build step: CodeQL extracts the source directly.
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@ff2f1c621b7f889edc0d3c761ac2e6a3f8cdb0dd # v4.37.7
+        with:
+          category: "/language:python"

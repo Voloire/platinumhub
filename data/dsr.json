@@ -1,0 +1,2058 @@
+{
+ "game": "Dark Souls Remastered",
+ "prefix": "DSR",
+ "playthroughs": "NG + NG+ + partial NG++ (only to Sif & the Giant Blacksmith in Anor Londo)",
+ "hours": "80-120 hours",
+ "trophy_total": 41,
+ "build_summary": "Knight (SL5) sword-and-board: Broadsword until you grab the Claymore on the Hellkite bridge, then Claymore +15 as your forever weapon behind a 100%-physical shield (Tower Kite; Grass Crest on back for stamina). Elite Knight set from Darkroot for poise; Havel's Ring + Ring of Favor and Protection carry your equip load. STR-leaning quality: VIT 40 / END 40 / STR 40, DEX stays near base (Claymore needs only 16/10) — INT/FAI never needed, spell trophies only require ACQUIRING spells, not casting them.",
+ "golden_rules": [
+  "NEVER consume a boss soul. Across cycles you need: Sif x3, Quelaag x2, Moonlight Butterfly x2, Iron Golem x2, Gwyndolin x2, Gwyn x2 (one for the Sunlight Spear MIRACLE, one for the Great Lord Greatsword), plus Ornstein's soul once and Smough's once.",
+  "Kill the Four Kings BEFORE placing the Lordvessel, then meet Kaathe — placing the vessel via Frampt locks Covenant: Darkwraith for the whole cycle.",
+  "Cut every tail before the kill: Hellkite Drake, Bell Gargoyle #1, Gaping Dragon, Stone Dragon, Priscilla, and Seath's MIDDLE tail.",
+  "O&S: kill Smough last in NG (his soul), Ornstein last in NG+ (Dragonslayer Spear) — you need both souls for Knight's Honor.",
+  "Buy EVERYTHING from every spell NPC before advancing their quest (Griggs, Logan, Dusk, Laurentius, Quelana, Rhea) — Rhea and Logan's White Dragon Breath are permanently missable.",
+  "Killing Gwyn instantly starts the next cycle — finish ALL forging, farming and covenant offerings first. Reach Sunlight rank +1 (10 medals) in NG so Gwyn's soul can become Sunlight Spear."
+ ],
+ "stat_table": {
+  "note": "Quality-lean STR Knight; VIT/END to their 40 soft caps first, STR follows — DEX stays low since the Claymore only needs 16 STR / 10 DEX.",
+  "columns": [
+   "SL",
+   "VIT",
+   "END",
+   "STR",
+   "DEX",
+   "Milestone"
+  ],
+  "rows": [
+   [
+    "5",
+    "14",
+    "10",
+    "11",
+    "11",
+    "Knight start — Broadsword + Tower Kite Shield"
+   ],
+   [
+    "20",
+    "18",
+    "17",
+    "16",
+    "11",
+    "Before Bell Gargoyles — Claymore usable (2H), tail axe cut"
+   ],
+   [
+    "30",
+    "22",
+    "22",
+    "20",
+    "12",
+    "Before Capra/Depths — Claymore +5, Large Ember secured"
+   ],
+   [
+    "45",
+    "28",
+    "28",
+    "24",
+    "14",
+    "Before Sen's Fortress — Claymore +10, Elite Knight set"
+   ],
+   [
+    "55",
+    "30",
+    "36",
+    "28",
+    "14",
+    "Before O&S — Havel's Ring + FaP, 53+ poise, mid roll"
+   ],
+   [
+    "70",
+    "36",
+    "40",
+    "32",
+    "14",
+    "Before pre-Lordvessel Four Kings — Claymore +15, Havel tank"
+   ],
+   [
+    "80",
+    "40",
+    "40",
+    "36",
+    "14",
+    "NG Gwyn / ending — full quality tank"
+   ],
+   [
+    "95+",
+    "45+",
+    "40",
+    "40",
+    "16",
+    "NG+/NG++ cleanup — comfortable for repeat Lord Souls"
+   ]
+  ]
+ },
+ "phases": [
+  {
+   "title": "Phase 1 — Asylum, Firelink, Undead Burg & First Bell (NG)",
+   "note": "Foundation: class, first trophies, Drake Sword tail and the two key early rings.",
+   "steps": [
+    {
+     "text": "Create a KNIGHT, take the Master Key gift. Escape the Asylum, receive the Estus Flask from Oscar — 🏆 Estus Flask. Plunge-attack the Asylum Demon from the balcony.",
+     "loc": "Northern Undead Asylum. Don't fight the demon on first meeting — run through the left door; the plunge on return takes half its HP.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Estus Flask",
+       "label_it": "🏆 Fiaschetta Estus"
+      },
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Crea un CAVALIERE e prendi come dono la Master Key. Fuggi dal Rifugio dei Non Morti (Undead Asylum), ricevi la Fiaschetta Estus (Estus Flask) da Oscar di Astora — 🏆 Fiaschetta Estus. Attacca in picchiata il Demone del Rifugio (Asylum Demon) dal balcone.",
+     "loc_it": "Rifugio dei Non Morti settentrionale. Non affrontare il demone al primo incontro: corri attraverso la porta di sinistra; l'attacco in picchiata al ritorno gli toglie metà dei PS."
+    },
+    {
+     "text": "Arrive at Firelink Shrine — 🏆 Reach Lordran. Kindle the bonfire (1 humanity) — 🏆 Enkindle. Talk to Petrus and join Way of White — 🏆 Covenant: Way of White.",
+     "loc": "Firelink Shrine. Petrus stands near the upper path; joining costs nothing. Note Anastacia the Fire Keeper below — Lautrec will murder her later (planned; we avenge her for the FaP ring).",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Reach Lordran + 2 more",
+       "label_it": "🏆 Raggiungi Lordran + altri 2"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Arriva al Santuario del Legame del Fuoco (Firelink Shrine) — 🏆 Raggiungi Lordran. Rinvigorisci il falò (1 umanità) — 🏆 Ardere. Parla con Petrus di Thorolund e unisciti alla Via Bianca — 🏆 Patto: Via Bianca.",
+     "loc_it": "Santuario del Legame del Fuoco. Petrus si trova vicino al sentiero superiore; unirsi non costa nulla. Nota Anastacia di Astora, la Fire Keeper, più in basso: Lautrec la ucciderà più avanti (è previsto; la vendicheremo per l'Anello della Protezione)."
+    },
+    {
+     "text": "Level VIT/END first (18/14 by SL15). Buy a Short Bow + ~50 Wood Arrows and the Residence Key from the Undead Merchant.",
+     "loc": "Undead Burg merchant (under the stairs). The bow is for the Hellkite tail; the key opens Griggs' room later.",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Sali prima VIT/END (18/14 entro SL15). Compra uno Short Bow + ~50 Wood Arrows e la Residence Key dal Mercante Non Morto.",
+     "loc_it": "Mercante del Borgo dei Non Morti (sotto le scale). L'arco serve per la coda del Drago Nibbio Infernale; la chiave apre la stanza di Griggs più avanti."
+    },
+    {
+     "text": "Kill the Taurus Demon (plunge from the tower ladder). Meet Solaire on the bridge and accept his offer — his questline runs all game.",
+     "loc": "Undead Burg. Player tip: climb the tower, plunge, retreat, repeat — 2-3 plunges end it.",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "quest"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Uccidi il Demone Toro (Taurus Demon) con un attacco in picchiata dalla scala della torre. Incontra Solaire di Astora sul ponte e accetta la sua proposta: la sua linea di quest attraversa tutto il gioco.",
+     "loc_it": "Borgo dei Non Morti. Consiglio: sali sulla torre, picchiata, ritirata, ripeti — bastano 2-3 picchiate."
+    },
+    {
+     "text": "Shoot the Hellkite Drake's tail with ~30-40 arrows from below the bridge → DRAKE SWORD (tail weapon 1/6 for Knight's Honor).",
+     "loc": "Stand at the stairs under the bridge, aim up manually. Reddit consensus: grab it for the checklist, use it vs early bosses, but it falls off hard by Sen's — the Claymore is your real weapon.",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: tail 1/6",
+       "label_it": "🏆 Onore del cavaliere: coda 1/6"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Colpisci la coda del Drago Nibbio Infernale (Hellkite Drake) con ~30-40 frecce da sotto il ponte → SPADA LEGGERA DEL DRAGO (arma da coda 1/6 per Onore del cavaliere).",
+     "loc_it": "Mettiti sulle scale sotto il ponte e mira verso l'alto manualmente. Consenso su Reddit: prendila per la checklist e usala contro i boss iniziali, ma decade parecchio già alla Fortezza di Sen — la Claymore è la tua vera arma."
+    },
+    {
+     "text": "Sprint onto the bridge and grab the CLAYMORE from the corpse. Then kill Havel in the tower basement → Havel's Ring.",
+     "loc": "Claymore: mid-bridge corpse (bait the drake's flame, run in during cooldown). Havel: tower between Burg and Darkroot Basin, opened with Master Key — strafe behind his slow swings; the ring = huge equip load.",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Scatta sul ponte e prendi la CLAYMORE dal cadavere. Poi uccidi Havel nel sotterraneo della torre → Anello di Havel (Havel's Ring).",
+     "loc_it": "Claymore: cadavere a metà ponte (fai sprecare la fiammata al drago e corri durante il recupero). Havel: torre tra il Borgo dei Non Morti e il Bacino Radiceoscura (Darkroot Basin), si apre con la Master Key — giragli attorno dietro i suoi colpi lenti; l'anello = carico dell'equipaggiamento enorme."
+    },
+    {
+     "text": "Andre of Astora: reinforce the Claymore to +5 with Titanite Shards (buy from Andre / farm Burg hollows).",
+     "loc": "Undead Parish basement bonfire. Also buy the Crest of Artorias here later (20k) for a Darkroot shortcut to Sif/Alvina.",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Andre di Astora: potenzia la Claymore a +5 con i Titanite Shards (compra da Andre / farma gli hollow del Borgo dei Non Morti).",
+     "loc_it": "Falò nel seminterrato della Undead Parish. Più avanti compra qui anche il Cimiero di Artorias (Crest of Artorias) per 20k: scorciatoia nel Giardino Radiceoscura verso Sif/Alvina."
+    },
+    {
+     "text": "Join Warrior of Sunlight at the altar — 🏆 Covenant: Warrior of Sunlight. Base req is 25 Faith; each successful co-op boss assist lowers it by 5 (Knight FAI 11 → 3 assists).",
+     "loc": "Sunlight Altar past the Hellkite bridge. Offline alternative: level FAI to 25 (no respec exists — co-op at Taurus/Gargoyles is much cheaper).",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Covenant: Warrior of Sunlight",
+       "label_it": "🏆 Patto: Guerriero del Sole"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Unisciti al Guerriero del Sole all'altare — 🏆 Patto: Guerriero del Sole. Il requisito base è 25 di Fede; ogni assistenza in co-op a un boss andata a buon fine lo abbassa di 5 (Cavaliere con FAI 11 → 3 assistenze).",
+     "loc_it": "Altare del Sole oltre il ponte del Drago Nibbio Infernale. Alternativa offline: porta la FAI a 25 (non esiste alcun respec — il co-op al Demone Toro/Gargoyle della Campana costa molto meno)."
+    },
+    {
+     "text": "Free Lautrec's cell (upper Parish). Bell Gargoyles: CUT THE FIRST GARGOYLE'S TAIL before the second lands → Gargoyle Tail Axe. Ring the bell — 🏆 Ring the Bell (Undead Church).",
+     "loc": "Undead Parish rooftop. Summon Solaire for safety. Afterwards buy Karmic Justice from Oswald of Carim in the bell tower (miracle checklist). Backup tail: the single Anor Londo gargoyle.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Ring the Bell (Undead Church)",
+       "label_it": "🏆 Campana (Chiesa dei Non Morti)"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: tail 2/6",
+       "label_it": "🏆 Onore del cavaliere: coda 2/6"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Libera Lautrec dalla sua cella (parte alta della Undead Parish). Gargoyle della Campana: TAGLIA LA CODA AL PRIMO GARGOYLE prima che atterri il secondo → Gargoyle Tail Axe. Suona la campana — 🏆 Campana (Chiesa dei Non Morti).",
+     "loc_it": "Tetto della Undead Parish. Evoca Solaire per sicurezza. Dopo, compra Giustizia Vendicativa (Karmic Justice) da Oswald di Carim nel campanile (checklist dei miracoli). Coda di riserva: il gargoyle singolo di Anor Londo."
+    }
+   ],
+   "title_it": "Fase 1 — Rifugio, Santuario del Legame del Fuoco, Borgo dei Non Morti e prima campana (NG)",
+   "note_it": "Fondamenta: classe, primi trofei, la coda per la Spada Leggera del Drago (Drake Sword) e i due anelli chiave iniziali."
+  },
+  {
+   "title": "Phase 2 — Lower Burg, Depths & Blighttown (NG)",
+   "note": "Second bell, first boss-soul bank, Chaos Servant join and the egg-carrier trick.",
+   "steps": [
+    {
+     "text": "Rescue Griggs of Vinheim behind the Residence Key door. He sells 7 sorceries at Firelink — buy ALL of them over time (Wisdom of a Sage).",
+     "loc": "Lower Undead Burg, closed house before Capra. No INT needed — spell trophies only require owning the spells, never casting them.",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "quest"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Salva Griggs di Vinheim dietro la porta della Residence Key. Vende 7 stregonerie al Santuario del Legame del Fuoco: compratele TUTTE col tempo (Sapere del saggio).",
+     "loc_it": "Borgo dei Non Morti inferiore, casa chiusa prima del Demone Capra. Non serve INT: i trofei degli incantesimi richiedono solo di possederli, mai di lanciarli."
+    },
+    {
+     "text": "Kill the Capra Demon for the Depths Key.",
+     "loc": "Lower Burg. Player tip: sprint left up the stairs, kill both dogs first, then plunge the Capra repeatedly.",
+     "tags": [],
+     "trophy": false,
+     "text_it": "Uccidi il Demone Capra (Capra Demon) per la Depths Key.",
+     "loc_it": "Borgo inferiore. Consiglio: scatta a sinistra su per le scale, uccidi prima entrambi i cani, poi colpisci il Demone Capra in picchiata ripetutamente."
+    },
+    {
+     "text": "Depths: free Laurentius from the barrel (roll into it), later buy his 5 pyromancies + Pyromancy Flame. Grab the LARGE EMBER (unlocks +6..+10 at Andre).",
+     "loc": "Large Ember: chest in the flooded lower chamber near the giant rat — watch the slimes. Laurentius: butcher room; answer 'No' when he later asks about your pyromancy source so he doesn't hollow.",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "quest"
+      },
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Profondità: libera Laurentius della Grande Palude dal barile (rotolaci contro), più avanti compra le sue 5 piromanzie + la Pyromancy Flame. Prendi il TIZZONE GRANDE (Large Ember), che sblocca +6..+10 da Andre.",
+     "loc_it": "Tizzone Grande: forziere nella camera inferiore allagata vicino al ratto gigante — attento alle melme. Laurentius: stanza del macellaio; rispondi 'No' quando più avanti ti chiede da dove viene la tua piromanzia, così non diventa hollow."
+    },
+    {
+     "text": "Note the Depths basilisks: they drop Eyes of Death — you'll need 10 total for Gravelord rank +1 (3 are free in the Catacombs).",
+     "loc": "Farm later with Covetous Gold Serpent Ring + 10 soft humanity (Item Discovery 410 ≈ 3x drop rate — the standard trick from the Knight's Honor guides).",
+     "tags": [],
+     "trophy": false,
+     "text_it": "Nota i basilischi delle Profondità: lasciano cadere gli Occhi della Morte (Eyes of Death) — te ne servono 10 in totale per il rango +1 del Servitore del Re Tombale (3 sono gratis nelle Catacombe).",
+     "loc_it": "Farma più avanti con l'Anello d'Oro del Serpente (Covetous Gold Serpent Ring) + 10 di umanità liquida (Item Discovery 410 ≈ 3x drop rate — il trucco standard delle guide su Onore del cavaliere)."
+    },
+    {
+     "text": "Gaping Dragon: CUT THE TAIL early → Dragon King Greataxe, then kill it for the Blighttown key.",
+     "loc": "Depths. The tail is huge and easy to hit while it crawls. Kill the Channeler on the balcony first (he also rarely drops the Channeler's Trident — the real farm comes in the Duke's Archives).",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: tail 3/6",
+       "label_it": "🏆 Onore del cavaliere: coda 3/6"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Drago Famelico (Gaping Dragon): TAGLIA SUBITO LA CODA → Ascia Bipenne del Re Drago (Dragon King Greataxe), poi uccidilo per la chiave della Città Infame.",
+     "loc_it": "Profondità. La coda è enorme e facile da colpire mentre striscia. Uccidi prima il Channeler sul balcone (raramente lascia cadere anche il Channeler's Trident — il vero farm arriva agli Archivi del Duca)."
+    },
+    {
+     "text": "Descend Blighttown. Pick up POWER WITHIN (behind the Parasitic Wall Hugger) and REMEDY (chest on the wooden structure) — both needed for the spell trophies.",
+     "loc": "Lower swamp area. Bring Blooming Purple Moss for toxic darts; the shortcut back is Valley of Drakes via Master Key.",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Scendi nella Città Infame. Raccogli FORZA INTERIORE (Power Within), dietro il Parasitic Wall Hugger, e RIMEDIO (Remedy), nel forziere sulla struttura di legno: servono entrambi per i trofei degli incantesimi.",
+     "loc_it": "Zona bassa della palude. Porta Blooming Purple Moss per i dardi tossici; la scorciatoia per tornare è la Valle dei Draghi (Valley of Drakes) con la Master Key."
+    },
+    {
+     "text": "Kill Chaos Witch Quelaag — bank Soul of Quelaag #1 (→ Quelaag's Furysword). Ring the second bell — 🏆 Ring the Bell (Quelaag's Domain).",
+     "loc": "Blighttown swamp. Do NOT consume the soul — Knight's Honor needs Quelaag x2 (Furysword NG, Chaos Blade NG+).",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Ring the Bell (Quelaag's Domain)",
+       "label_it": "🏆 Campana (Dominio di Quelaag)"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: Quelaag soul 1/2",
+       "label_it": "🏆 Onore del cavaliere: anima di Quelaag 1/2"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi Quelaag, la Strega del Caos — metti da parte l'Anima di Quelaag n.1 (→ Spada della Furia di Quelaag). Suona la seconda campana — 🏆 Campana (Dominio di Quelaag).",
+     "loc_it": "Palude della Città Infame. NON consumare l'anima: Onore del cavaliere richiede Quelaag x2 (Spada della Furia in NG, Lama del Caos in NG+)."
+    },
+    {
+     "text": "Illusory wall behind Quelaag's arena → Daughter of Chaos bonfire. Join Chaos Servant — 🏆 Covenant: Chaos Servant (grants Great Chaos Fireball). Let an Egg Burrower infect you, then buy Poison + Toxic Mist from Eingyi.",
+     "loc": "Egg carriers below Quelaag's Domain — get grabbed, wait for the egghead, buy both mists, then cure with Egg Vermifuge (Quelana's swamp / Eingyi). Toxic Mist is ONLY sold to egg carriers.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Covenant: Chaos Servant",
+       "label_it": "🏆 Patto: Servitore del Caos"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Muro illusorio dietro l'arena di Quelaag → falò della Figlia del Caos. Unisciti al Servitore del Caos — 🏆 Patto: Servitore del Caos (concede Palla di Fuoco Migliorata Caos, Great Chaos Fireball). Fatti infettare da un Egg Burrower, poi compra Nebbia Velenosa (Poison Mist) e Nebbia Tossica (Toxic Mist) da Eingyi.",
+     "loc_it": "Portatori d'uova sotto il Dominio di Quelaag: fatti afferrare, aspetta che spunti la testa d'uovo, compra entrambe le nebbie, poi curati con l'Egg Vermifuge (palude di Quelana / Eingyi). La Nebbia Tossica è venduta SOLO ai portatori d'uova."
+    },
+    {
+     "text": "Back at Andre: Claymore +10 (Large Titanite Shards — Depths slimes or buy from the Giant Blacksmith later). Ascend a spare +5 weapon to Raw +5 — 🏆 Raw Weapon.",
+     "loc": "Undead Parish. Use a cheap weapon (e.g. spare Longsword) for Raw — you'll build a stable of throwaway +10 blanks for boss-soul ascension all game.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Raw Weapon",
+       "label_it": "🏆 Arma grezza"
+      },
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Di nuovo da Andre: Claymore +10 (Large Titanite Shards — melme delle Profondità o acquisto dal Fabbro Gigante più avanti). Fai ascendere un'arma di scorta +5 a Grezza +5 — 🏆 Arma grezza.",
+     "loc_it": "Undead Parish. Usa un'arma economica (per esempio una Longsword di scorta) per il percorso Grezzo: per tutto il gioco terrai una scorta di basi +10 sacrificabili per le ascensioni con le anime dei boss."
+    }
+   ],
+   "title_it": "Fase 2 — Borgo inferiore, Profondità e Città Infame (NG)",
+   "note_it": "Seconda campana, prima riserva di anime di boss, ingresso nel Servitore del Caos e il trucco dei portatori d'uova."
+  },
+  {
+   "title": "Phase 3 — Darkroot, Great Hollow & Ash Lake (NG)",
+   "note": "Sif soul 1/3, three covenants' worth of detours, and the easily-forgotten Ash Lake pickups.",
+   "steps": [
+    {
+     "text": "Kill the Moonlight Butterfly — bank soul #1 (→ Moonlight Butterfly Horn). Behind the tower: DIVINE EMBER for Andre.",
+     "loc": "Darkroot Garden. Summon Witch Beatrice if you like. The Butterfly soul is needed x2 (Horn NG, Crystal Ring Shield NG+).",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: Butterfly soul 1/2",
+       "label_it": "🏆 Onore del cavaliere: anima della Farfalla 1/2"
+      },
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Uccidi la Farfalla della Luna (Moonlight Butterfly) — metti da parte l'anima n.1 (→ Moonlight Butterfly Horn). Dietro la torre: TIZZONE DIVINO (Divine Ember) per Andre.",
+     "loc_it": "Giardino Radiceoscura. Se vuoi, evoca Witch Beatrice. L'anima della Farfalla serve x2 (Horn in NG, Scudo ad Anelli di Cristallo in NG+)."
+    },
+    {
+     "text": "Grab the ELITE KNIGHT SET (corpse in Darkroot Garden) and the ENCHANTED EMBER (chest in the mushroom glade) for Rickert.",
+     "loc": "Elite Knight set = your poise armor until you can wear Havel pieces. The Enchanted Ember sits past the mushroom parents — run in, loot, run out.",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prendi il SET ELITE KNIGHT (cadavere nel Giardino Radiceoscura) e il TIZZONE INCANTATO (Enchanted Ember, forziere nella radura dei funghi) per Rickert di Vinheim.",
+     "loc_it": "Il set Elite Knight = la tua armatura da poise finché non riesci a indossare i pezzi di Havel. Il Tizzone Incantato si trova oltre i funghi genitori: entra di corsa, saccheggia, esci."
+    },
+    {
+     "text": "Darkroot Basin: Grass Crest Shield (Black Knight area), then kill the Hydra AND the golden crystal golem behind it to free Dusk. Buy ALL 5 of her sorceries.",
+     "loc": "Hidden Body, Cast Light, Repair, Hidden Weapon, Chameleon — summon her via the sign after the rescue. If she's lost, Wisdom of a Sage is gone this cycle.",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "quest"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Bacino Radiceoscura: Grass Crest Shield (zona del Cavaliere Nero), poi uccidi l'Hydra E il golem di cristallo dorato dietro di essa per liberare Dusk di Oolacile. Compra TUTTE e 5 le sue stregonerie.",
+     "loc_it": "Invisibilità (Hidden Body), Luce (Cast Light), Ripara (Repair), Arma Invisibile (Hidden Weapon), Camaleonte (Chameleon) — evocala col segno dopo il salvataggio. Se la perdi, Sapere del saggio salta per questo ciclo."
+    },
+    {
+     "text": "Talk to Alvina the cat (twice) and join — 🏆 Covenant: Forest Hunter.",
+     "loc": "Darkroot Garden, behind the Crest of Artorias door (20k from Andre) — the crest door is also the fast lane to Sif every cycle.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Covenant: Forest Hunter",
+       "label_it": "🏆 Patto: Cacciatore della Foresta"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Parla con la gatta Alvina (due volte) e unisciti — 🏆 Patto: Cacciatore della Foresta.",
+     "loc_it": "Giardino Radiceoscura, dietro la porta del Cimiero di Artorias (20k da Andre): quella porta è anche la corsia preferenziale verso Sif a ogni ciclo."
+    },
+    {
+     "text": "Kill Great Grey Wolf Sif — bank Soul of Sif #1 and pick up the Covenant of Artorias ring — 🏆 Art of Abysswalking. NEVER lose this ring: it's mandatory for the Four Kings.",
+     "loc": "Darkroot Garden. Sif is needed x3 (Greatsword of Artorias, Cursed version, Greatshield) — THE reason NG++ exists. Stay under the wolf and hit the hind legs.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Art of Abysswalking",
+       "label_it": "🏆 Arte del Cammino Abissale"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: Sif soul 1/3",
+       "label_it": "🏆 Onore del cavaliere: anima di Sif 1/3"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi Sif, il Grande Lupo Grigio — metti da parte l'Anima di Sif n.1 e raccogli l'anello Patto di Artorias (Covenant of Artorias) — 🏆 Arte del Cammino Abissale. Non perdere MAI questo anello: è obbligatorio per i Quattro Re.",
+     "loc_it": "Giardino Radiceoscura. Sif serve x3 (Spadone di Artorias, versione Maledetta, Scudo Grande): IL motivo per cui esiste NG++. Resta sotto il lupo e colpisci le zampe posteriori."
+    },
+    {
+     "text": "The Great Hollow: Cloranthy Ring + crystal lizards (good chance at an early Titanite Slab per Fextralife's farming page).",
+     "loc": "Illusory wall chest behind Blighttown's lowest bonfire → hollow tree descent. Kill every crystal lizard on the way down; they don't respawn but there are many.",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Il Grande Vuoto (The Great Hollow): Anello di Cloranthy (Cloranthy Ring) + lucertole di cristallo (buone probabilità di una Lastra di Titanite anticipata, secondo la pagina di farming di Fextralife).",
+     "loc_it": "Forziere dietro il muro illusorio presso il falò più basso della Città Infame → discesa nell'albero cavo. Uccidi ogni lucertola di cristallo lungo la discesa: non ricompaiono, ma sono tante."
+    },
+    {
+     "text": "Ash Lake: cut the friendly Stone Dragon's TAIL (it doesn't aggro) → Dragon Greatsword, then speak to it and join — 🏆 Covenant: Path of the Dragon.",
+     "loc": "End of Ash Lake. Cutting the tail does NOT break the covenant offer. Tail weapon 4/6.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Covenant: Path of the Dragon",
+       "label_it": "🏆 Patto: Via del Drago"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: tail 4/6",
+       "label_it": "🏆 Onore del cavaliere: coda 4/6"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Lago di Cenere: taglia la CODA al Drago di Pietra (Stone Dragon) pacifico, che non ti attacca → Dragon Greatsword, poi parlagli e unisciti — 🏆 Patto: Via del Drago.",
+     "loc_it": "Fondo del Lago di Cenere. Tagliare la coda NON annulla l'offerta del patto. Arma da coda 4/6."
+    },
+    {
+     "text": "Grab GREAT MAGIC BARRIER on the tree root near the Stone Dragon before homeward-boning out — the miracle-checklist item almost everyone forgets.",
+     "loc": "Ash Lake, up a root branch past the dragon. Fextralife lists it among the world-pickup miracles for Prayer of a Maiden.",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prendi BARRIERA MAGICA RINFORZATA (Great Magic Barrier) sulla radice vicino al Drago di Pietra prima di tornare indietro con un Homeward Bone: è l'oggetto della checklist dei miracoli che quasi tutti dimenticano.",
+     "loc_it": "Lago di Cenere, su un ramo di radice oltre il drago. Fextralife lo elenca tra i miracoli da raccogliere nel mondo per Preghiera di una fanciulla."
+    }
+   ],
+   "title_it": "Fase 3 — Radiceoscura, Grande Vuoto e Lago di Cenere (NG)",
+   "note_it": "Anima di Sif 1/3, deviazioni per tre patti e i raccolti del Lago di Cenere che tutti dimenticano."
+  },
+  {
+   "title": "Phase 4 — Sen's Fortress & Anor Londo (NG)",
+   "note": "Kill Smough LAST here; take the Lordvessel but do not place it.",
+   "steps": [
+    {
+     "text": "Sen's Fortress: find the Cage Key near the top and FREE BIG HAT LOGAN. Buy his full Firelink stock over time — required chain for White Dragon Breath.",
+     "loc": "Logan's cage is on the upper walkway. Also ring the gong for Siegmeyer's questline. Skipping Logan = no Wisdom of a Sage this cycle.",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "quest"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Fortezza di Sen: trova la Cage Key vicino alla cima e LIBERA LOGAN GRANCAPPELLO (Big Hat Logan). Compra col tempo tutto il suo assortimento al Santuario del Legame del Fuoco: è la catena obbligatoria per il Soffio del Drago Bianco.",
+     "loc_it": "La gabbia di Logan è sul camminamento superiore. Suona anche il gong per la quest di Siegmeyer di Catarina. Saltare Logan = niente Sapere del saggio in questo ciclo."
+    },
+    {
+     "text": "Kill the Iron Golem — bank Core of an Iron Golem #1 (→ Golem Axe). Needed x2 (Dragon Bone Fist in NG+).",
+     "loc": "Top of Sen's. Stagger its legs to topple it off the ledge for a fast kill.",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: Golem core 1/2",
+       "label_it": "🏆 Onore del cavaliere: nucleo del Golem 1/2"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Uccidi il Golem di Ferro (Iron Golem) — metti da parte il Core of an Iron Golem n.1 (→ Ascia del Golem). Serve x2 (Pugno d'Osso di Drago in NG+).",
+     "loc_it": "Cima della Fortezza di Sen. Sbilancia le gambe per farlo cadere dal cornicione: uccisione rapida."
+    },
+    {
+     "text": "Arrive in Anor Londo — 🏆 Reach Anor Londo. Meet the Giant Blacksmith: he sells Large/Green Titanite and does ALL boss-soul ascensions plus the Lightning/Crystal paths.",
+     "loc": "Anor Londo. Farm the Silver Knights here (straight sword + spear for Knight's Honor) while passing through — 410 Discovery setup.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Reach Anor Londo",
+       "label_it": "🏆 Raggiungi Anor Londo"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: Silver Knight arms",
+       "label_it": "🏆 Onore del cavaliere: armi dei Cavalieri d'Argento"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Arriva ad Anor Londo — 🏆 Raggiungi Anor Londo. Incontra il Fabbro Gigante (Giant Blacksmith): vende Large/Green Titanite ed esegue TUTTE le ascensioni con anime di boss, più i percorsi Fulmine/Cristallo.",
+     "loc_it": "Anor Londo. Farma qui i Cavalieri d'Argento (Spada Leggera del Cavaliere d'Argento + Lancia del Cavaliere d'Argento per Onore del cavaliere) mentre passi — con setup a 410 di Discovery."
+    },
+    {
+     "text": "Ornstein & Smough: KILL SMOUGH LAST → Soul of Smough (→ Smough's Hammer). Summon Solaire — it keeps his quest on track and eases the fight.",
+     "loc": "You need Ornstein's soul too, but that comes from killing HIM last in NG+. Pillar-hug Smough, punish Ornstein's dash. Classic run-killer — get Claymore +10 first.",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: Smough soul",
+       "label_it": "🏆 Onore del cavaliere: anima di Smough"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Ornstein e Smough: UCCIDI SMOUGH PER ULTIMO → Anima di Smough (→ Martello di Smough). Evoca Solaire: mantiene in carreggiata la sua quest e alleggerisce lo scontro.",
+     "loc_it": "Ti serve anche l'anima di Ornstein, ma arriva uccidendo LUI per ultimo in NG+. Sfrutta le colonne contro Smough, punisci lo scatto di Ornstein. Classico ammazza-run: prima porta la Claymore a +10."
+    },
+    {
+     "text": "Talk to Gwynevere: receive the Lordvessel — 🏆 Lordvessel. DO NOT place it. Join her covenant — 🏆 Covenant: Princess's Guard.",
+     "loc": "Anor Londo chamber. Placing the vessel before Four Kings permanently locks Covenant: Darkwraith this cycle — the single most infamous platinum killer.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Lordvessel + Princess's Guard",
+       "label_it": "🏆 Ricettacolo dei Lord + Guardia della Principessa"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Parla con Gwynevere: ricevi il Ricettacolo dei Lord (Lordvessel) — 🏆 Ricettacolo dei Lord. NON posizionarlo. Unisciti al suo patto — 🏆 Patto: Guardia della Principessa.",
+     "loc_it": "Camera di Anor Londo. Posizionare il ricettacolo prima dei Quattro Re blocca in modo permanente il Patto: Spettro Oscuro per questo ciclo: il più famigerato ammazza-platino di tutti."
+    },
+    {
+     "text": "Grab GREAT MAGIC WEAPON (chandelier drop in the cathedral) and continue Siegmeyer's quest for EMIT FORCE.",
+     "loc": "Both are checklist spells (Wisdom of a Sage / Prayer of a Maiden). Siegmeyer sits outside the main hall after Sen's.",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "quest"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prendi ARMA MAGICA MIGLIORATA (Great Magic Weapon), saltando sul lampadario della cattedrale, e prosegui la quest di Siegmeyer per ONDA DI FORZA (Emit Force).",
+     "loc_it": "Sono entrambi incantesimi della checklist (Sapere del saggio / Preghiera di una fanciulla). Dopo la Fortezza di Sen, Siegmeyer si trova fuori dalla sala principale."
+    },
+    {
+     "text": "Return to Firelink: Lautrec has murdered Anastacia. Take the Black Eye Orb, invade him in Anor Londo's great hall, kill him → RING OF FAVOR AND PROTECTION + Fire Keeper Soul (revive Anastacia).",
+     "loc": "Invade from the hall before the O&S cathedral. FaP = +20% HP/stamina/equip load — wear it and never remove it (it breaks). Core ring of the build with Havel's.",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      },
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "quest"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Torna al Santuario del Legame del Fuoco: Lautrec ha ucciso Anastacia. Prendi il Black Eye Orb, invadilo nel salone di Anor Londo e uccidilo → ANELLO DELLA PROTEZIONE (Ring of Favor and Protection) + Fire Keeper Soul (per far rivivere Anastacia).",
+     "loc_it": "Invadi dalla sala prima della cattedrale di Ornstein e Smough. L'Anello della Protezione = +20% a PS/stamina/carico dell'equipaggiamento — indossalo e non toglierlo mai (si rompe). Anello portante della build insieme a quello di Havel."
+    },
+    {
+     "text": "BUILD checkpoint: SL ~55 — VIT 30 / END 36 / STR 28. Claymore +10, Elite Knight or mixed Havel pieces, 53+ poise, mid-roll.",
+     "loc": "From here every remaining NG boss is comfortably farmable for the multi-cycle grind ahead.",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Checkpoint BUILD: SL ~55 — VIT 30 / END 36 / STR 28. Claymore +10, Elite Knight o pezzi misti di Havel, 53+ poise, capriola media.",
+     "loc_it": "Da qui in poi ogni boss rimasto in NG è comodamente farmabile per il grind multi-ciclo che ti aspetta."
+    }
+   ],
+   "title_it": "Fase 4 — Fortezza di Sen e Anor Londo (NG)",
+   "note_it": "Qui uccidi Smough per ULTIMO; prendi il Ricettacolo dei Lord ma non posizionarlo."
+  },
+  {
+   "title": "Phase 5 — Asylum Revisit & Painted World (NG)",
+   "note": "Slab #1, the Dark Ember, souvenir farming and Priscilla's two prizes.",
+   "steps": [
+    {
+     "text": "Fly back to the Asylum (Parish elevator roof → crow's nest). Kill the Stray Demon → guaranteed TITANITE SLAB #1. Grab the PECULIAR DOLL from your old cell.",
+     "loc": "Fextralife confirms the Stray Demon's guaranteed slab. The doll is the only way into the Painted World — without it you lose Priscilla, the Dark Ember and Vow of Silence this cycle.",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      },
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Torna in volo al Rifugio dei Non Morti (tetto dell'ascensore della Undead Parish → nido del corvo). Uccidi il Demone Vagante (Stray Demon) → LASTRA DI TITANITE n.1 garantita. Prendi la Peculiar Doll dalla tua vecchia cella.",
+     "loc_it": "Fextralife conferma la lastra garantita del Demone Vagante. La bambola è l'unico accesso al Mondo Dipinto di Ariamis: senza di essa perdi Priscilla, il Tizzone Oscuro e il Voto del Silenzio per questo ciclo."
+    },
+    {
+     "text": "Painted World: get the Annex Key (egghead zombie area), then loot the DARK EMBER (enables Occult at Andre) and VELKA'S RAPIER in the Annex.",
+     "loc": "The Dark Ember is required for the Occult Weapon trophy — the Painted World is one-way (exit only via Priscilla), so sweep everything in one visit.",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: Velka's Rapier",
+       "label_it": "🏆 Onore del cavaliere: Stocco di Velka"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Mondo Dipinto di Ariamis: procurati la Annex Key (zona degli zombie con la testa a uovo), poi saccheggia il TIZZONE OSCURO (Dark Ember), che abilita l'Occulto da Andre, e lo STOCCO DI VELKA (Velka's Rapier) nell'annesso.",
+     "loc_it": "Il Tizzone Oscuro è necessario per il trofeo Arma occulta: il Mondo Dipinto è a senso unico (si esce solo tramite Priscilla), quindi ripulisci tutto in un'unica visita."
+    },
+    {
+     "text": "Pick up ACID SURGE (corpse) and VOW OF SILENCE (Annex) — pyromancy + miracle checklist items.",
+     "loc": "Both are Painted World exclusives per the Fextralife achievement guides — missing them means a full revisit in NG+.",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Raccogli ONDATA ACIDA (Acid Surge), su un cadavere, e VOTO DEL SILENZIO (Vow of Silence), nell'annesso: oggetti della checklist di piromanzie e miracoli.",
+     "loc_it": "Secondo le guide agli achievement di Fextralife sono entrambi esclusivi del Mondo Dipinto: perderli significa una visita completa in NG+."
+    },
+    {
+     "text": "Farm the Crow Demons for 10 SOUVENIRS OF REPRISAL (Darkmoon Blade later).",
+     "loc": "Painted World rooftops. 10 humanity + Covetous Gold Serpent Ring. Offline-safe — no invasions needed, confirmed by every trophy roadmap.",
+     "tags": [],
+     "trophy": false,
+     "text_it": "Farma i Crow Demon per 10 SOUVENIRS OF REPRISAL (serviranno per la Lama della Luna Oscura).",
+     "loc_it": "Tetti del Mondo Dipinto. 10 di umanità + Anello d'Oro del Serpente. Si fa offline, senza invasioni: lo confermano tutte le roadmap dei trofei."
+    },
+    {
+     "text": "Priscilla: hit her once to start the fight, CUT HER TAIL → Priscilla's Dagger (tail 5/6). Track her by snow footprints when invisible.",
+     "loc": "Tower courtyard. If you kill her without the cut, the dagger waits until NG+ — flag it done now.",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: tail 5/6",
+       "label_it": "🏆 Onore del cavaliere: coda 5/6"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Priscilla Mezzosangue: colpiscila una volta per iniziare lo scontro, TAGLIALE LA CODA → Pugnale di Priscilla (coda 5/6). Quando è invisibile, seguila dalle impronte sulla neve.",
+     "loc_it": "Cortile della torre. Se la uccidi senza tagliare, il pugnale slitta a NG+: chiudi la questione adesso."
+    },
+    {
+     "text": "Kill Priscilla — 🏆 Defeat Crossbreed Priscilla. Bank Soul of Priscilla (→ Lifehunt Scythe). Drop out via her tower.",
+     "loc": "Only needed once across all cycles. Her soul weapon is forged at the Giant Blacksmith from a +10 halberd/whip.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Defeat Crossbreed Priscilla",
+       "label_it": "🏆 Sconfiggi Priscilla Mezzosangue"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: Priscilla soul",
+       "label_it": "🏆 Onore del cavaliere: anima di Priscilla"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi Priscilla — 🏆 Sconfiggi Priscilla Mezzosangue. Metti da parte l'Anima di Priscilla (→ Lifehunt Scythe). Esci lasciandoti cadere dalla sua torre.",
+     "loc_it": "Serve una sola volta in tutti i cicli. La sua arma d'anima si forgia dal Fabbro Gigante partendo da un'alabarda/frusta +10."
+    }
+   ],
+   "title_it": "Fase 5 — Ritorno al Rifugio e Mondo Dipinto (NG)",
+   "note_it": "Lastra n.1, il Tizzone Oscuro, il farm dei souvenir e i due premi di Priscilla."
+  },
+  {
+   "title": "Phase 6 — Catacombs & Tomb of the Giants (NG)",
+   "note": "Gravelord + Darkmoon prep, Rhea's fragile questline and the Divine/Occult forge.",
+   "steps": [
+    {
+     "text": "Catacombs: grab the DARKMOON SEANCE RING (illusory wall) and TRANQUIL WALK OF PEACE. Meet Blacksmith Vamos (he'll do Fire/Chaos once given the embers).",
+     "loc": "The Seance Ring is mandatory to even join Blade of the Darkmoon. Necromancers first, or the skeletons never stay down.",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Catacombe: prendi il DARKMOON SEANCE RING (muro illusorio) e la CAMMINATA PACIFICA (Tranquil Walk of Peace). Incontra Vamos il Fabbro (farà Fuoco/Caos una volta ricevuti i tizzoni).",
+     "loc_it": "Il Darkmoon Seance Ring è obbligatorio anche solo per entrare nella Lama della Luna Oscura. Prima i Necromancer, altrimenti gli scheletri non restano giù."
+    },
+    {
+     "text": "Kill Pinwheel — 🏆 Rite of Kindling. You can now kindle bonfires to 20 Estus.",
+     "loc": "Catacombs bottom. Easiest boss in the game — plunge from the ledge and burst him before he clones.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Rite of Kindling",
+       "label_it": "🏆 Arte dell'Accensione"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi Girandola (Pinwheel) — 🏆 Arte dell'Accensione. Ora puoi rinvigorire i falò fino a 20 Estus.",
+     "loc_it": "Fondo delle Catacombe. Il boss più facile del gioco: attacco in picchiata dal cornicione e abbattilo prima che si cloni."
+    },
+    {
+     "text": "Loot the 3 Eyes of Death chest, then lie in the empty coffin (~30s) to join — 🏆 Covenant: Gravelord Servant (grants Gravelord Sword Dance + Gravelord Sword). Offer 10 Eyes → Gravelord Greatsword Dance.",
+     "loc": "Coffin cave before Pinwheel. Farm the 7 missing Eyes from Depths/Great Hollow basilisks with 410 Discovery — fully offline-friendly gravelording.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Covenant: Gravelord Servant",
+       "label_it": "🏆 Patto: Servitore del Re Tombale"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: Gravelord Sword",
+       "label_it": "🏆 Onore del cavaliere: Spadone del Re Tombale"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Saccheggia il forziere con 3 Occhi della Morte, poi sdraiati nella bara vuota (~30s) per unirti — 🏆 Patto: Servitore del Re Tombale (concede Spada Danzante del Re Tombale e Spadone del Re Tombale). Offri 10 Occhi → Spadone Danzante del Re Tombale.",
+     "loc_it": "Grotta della bara prima di Girandola. Farma i 7 Occhi mancanti dai basilischi delle Profondità/del Grande Vuoto con 410 di Discovery: gravelording del tutto praticabile offline."
+    },
+    {
+     "text": "Tomb of the Giants: RESCUE RHEA (kill her hollowed guards Vince & Nico), then buy ALL her miracles at Undead Parish (Great Heal, Wrath of the Gods, Magic Barrier, Replenishment...).",
+     "loc": "She's in the pit Patches kicks you into. Buy everything BEFORE entering the Duke's Archives or she can die/vanish — Wrath of the Gods is sold by no one else.",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "quest"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Tomba dei Giganti: SALVA RHEA di Thorolund (uccidi le sue guardie diventate hollow, Vince e Nico), poi compra TUTTI i suoi miracoli alla Undead Parish (Great Heal, Ira degli Dei, Barriera Magica, Rigenerazione...).",
+     "loc_it": "Si trova nella fossa in cui ti spinge Patches la Iena. Compra tutto PRIMA di entrare negli Archivi del Duca, altrimenti può morire o sparire: Ira degli Dei non la vende nessun altro."
+    },
+    {
+     "text": "Grab the LARGE DIVINE EMBER (giant-skeleton pit) and the WHITE TITANITE SLAB (narrow cavern before Nito's fog gate).",
+     "loc": "Bring the Sunlight Maggot helm or Cast Light for the darkness. The white slab feeds Occult +5.",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prendi il TIZZONE DIVINO GIGANTE (Large Divine Ember, fossa degli scheletri giganti) e la LASTRA DI TITANITE BIANCA (White Titanite Slab, caverna stretta prima della porta di nebbia di Nito).",
+     "loc_it": "Porta l'elmo Sunlight Maggot o la Luce (Cast Light) per l'oscurità. La lastra bianca serve per Occulto +5."
+    },
+    {
+     "text": "Be HUMAN at Nito's fog gate: Paladin Leeroy invades → kill him for GRANT + SANCTUS (2 Knight's Honor uniques).",
+     "loc": "He spawns near the final descent (Lordvessel must be placed for his invasion in some setups — if he doesn't show now, he's repeatable in NG+; grab them there).",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: Grant & Sanctus",
+       "label_it": "🏆 Onore del cavaliere: Concessione e Sanctus"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Presentati UMANO alla porta di nebbia di Nito: Paladino Leeroy ti invade → uccidilo per CONCESSIONE (Grant) e SANCTUS (2 pezzi unici di Onore del cavaliere).",
+     "loc_it": "Compare vicino alla discesa finale (in alcune configurazioni la sua invasione richiede che il Ricettacolo dei Lord sia già posizionato — se non si presenta ora, è ripetibile in NG+; prendili lì)."
+    },
+    {
+     "text": "Kill Gravelord Nito — 🏆 Defeat Gravelord Nito (Lord Soul #1 banked for the vessel).",
+     "loc": "Kill the small skeletons first; a divine weapon stops the respawners. Nito's AoE punishes hugging — bait, roll, punish.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Defeat Gravelord Nito",
+       "label_it": "🏆 Sconfiggi Nito Re Tombale"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi Nito il Re Tombale — 🏆 Sconfiggi Nito Re Tombale (Anima di Lord n.1 messa da parte per il ricettacolo).",
+     "loc_it": "Uccidi prima gli scheletri piccoli; un'arma divina ferma quelli che ricompaiono. L'AoE di Nito punisce chi gli sta addosso: esca, capriola, contrattacco."
+    },
+    {
+     "text": "Andre forge: Divine +10 on a spare weapon — 🏆 Divine Weapon; then Occult +5 (Dark Ember + white chunks from Pinwheel Servants + the white slab) — 🏆 Occult Weapon.",
+     "loc": "Undead Parish. Cheap blanks (Reinforced Club, Longsword) keep titanite costs low — the standard trophy-hunter economy trick.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Divine + Occult Weapon",
+       "label_it": "🏆 Arma divina + Arma occulta"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Forgia da Andre: Divina +10 su un'arma di scorta — 🏆 Arma divina; poi Occulta +5 (Tizzone Oscuro + pezzi di titanite bianca dai Pinwheel Servant + la lastra bianca) — 🏆 Arma occulta.",
+     "loc_it": "Undead Parish. Basi economiche (Reinforced Club, Longsword) tengono bassi i costi in titanite: il classico trucco economico dei cacciatori di trofei."
+    }
+   ],
+   "title_it": "Fase 6 — Catacombe e Tomba dei Giganti (NG)",
+   "note_it": "Preparativi per il Re Tombale e la Luna Oscura, la fragile quest di Rhea e le forgiature Divina/Occulta."
+  },
+  {
+   "title": "Phase 7 — Darkmoon, New Londo, Four Kings & Darkwraith (NG)",
+   "note": "The order-critical heart of the platinum: Darkmoon first, then Four Kings BEFORE the vessel is placed.",
+   "steps": [
+    {
+     "text": "Equip the Darkmoon Seance Ring at Gwyndolin's illusory statue (below Anor Londo's rotating bridge) and join — 🏆 Covenant: Blade of the Darkmoon.",
+     "loc": "Join BEFORE fighting him. Do not attack the fog until your souvenir business is done.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Covenant: Blade of the Darkmoon",
+       "label_it": "🏆 Patto: Lama della Luna Oscura"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Indossa il Darkmoon Seance Ring davanti alla statua illusoria di Gwendolin (sotto il ponte girevole di Anor Londo) e unisciti — 🏆 Patto: Lama della Luna Oscura.",
+     "loc_it": "Unisciti PRIMA di affrontarlo. Non attraversare la nebbia finché non hai chiuso la faccenda dei souvenir."
+    },
+    {
+     "text": "Offer 10 Souvenirs of Reprisal → DARKMOON BLADE miracle. THEN kill Gwyndolin — 🏆 Defeat the Dark Sun Gwyndolin — bank soul #1 (→ Darkmoon Bow) and open the chest after for SUNLIGHT BLADE.",
+     "loc": "Gwyndolin's corridor: sprint between volleys. His soul is needed x2 (Tin Darkmoon Catalyst in NG+). Killing him before ranking = no Darkmoon Blade this cycle.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Defeat the Dark Sun Gwyndolin",
+       "label_it": "🏆 Sconfiggi Gwendolin"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: Gwyndolin soul 1/2",
+       "label_it": "🏆 Onore del cavaliere: anima di Gwendolin 1/2"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Offri 10 Souvenirs of Reprisal → miracolo LAMA DELLA LUNA OSCURA. SOLO DOPO uccidi Gwendolin — 🏆 Sconfiggi Gwendolin — metti da parte l'anima n.1 (→ Arco della Luna Oscura) e apri il forziere successivo per la SPADA DEL SOLE (Sunlight Blade).",
+     "loc_it": "Corridoio di Gwendolin: scatta tra una raffica e l'altra. La sua anima serve x2 (Catalizzatore di Latta Luna Oscura in NG+). Ucciderlo prima di salire di rango = niente Lama della Luna Oscura in questo ciclo."
+    },
+    {
+     "text": "New Londo: get RESIST CURSE from Ingward on the rooftops, take the Key to the Seal (he hands it over since you hold the Lordvessel) and drain the ruins.",
+     "loc": "Resist Curse is the last easily-forgotten sorcery. Cursed weapons NOT needed — your Greatsword of Artorias (Sif) handles the ghosts if you fight any.",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Petite Londo: prendi ANNULLA MALEDIZIONI (Resist Curse) da Ingward sui tetti, fatti dare la Key to the Seal (te la consegna perché possiedi il Ricettacolo dei Lord) e prosciuga le rovine.",
+     "loc_it": "Annulla Maledizione è l'ultima stregoneria che si dimentica facilmente. Le armi maledette NON servono: lo Spadone di Artorias (dall'anima di Sif) gestisce i fantasmi, se decidi di affrontarli."
+    },
+    {
+     "text": "Loot the VERY LARGE EMBER in drained lower New Londo, then Claymore +15 at Andre (chunks + the Stray Demon slab) — 🏆 Strongest Weapon.",
+     "loc": "The ember chest is guarded by Darkwraiths. Chunks: farm the Darkwraiths themselves — the game's best chunk piñatas, with rare bonus slabs.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Strongest Weapon",
+       "label_it": "🏆 Arma più forte"
+      },
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Saccheggia il TIZZONE GIGANTE (Very Large Ember) nella parte bassa prosciugata di Petite Londo, poi Claymore +15 da Andre (pezzi di titanite + la lastra del Demone Vagante) — 🏆 Arma più forte.",
+     "loc_it": "Il forziere del tizzone è sorvegliato dagli Spettri Oscuri. Pezzi di titanite: farma proprio gli Spettri Oscuri, le migliori piñate di pezzi del gioco, con rare lastre come bonus."
+    },
+    {
+     "text": "Lightning +5 a spare +10 weapon at the Giant Blacksmith — 🏆 Lightning Weapon (regular slab #2: Great Hollow lizards, Siegmeyer's quest reward, or the Darkwraith farm).",
+     "loc": "Fextralife slab sources: Stray Demon, Siegmeyer, Great Hollow lizards, Darkwraiths. You need 3 regular slabs total across cycles (+15 / Lightning / Crystal) — Crystal waits for NG+'s Stray Demon.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Lightning Weapon",
+       "label_it": "🏆 Arma del fulmine"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Porta un'arma di scorta +10 a Fulmine +5 dal Fabbro Gigante — 🏆 Arma del fulmine (lastra normale n.2: lucertole del Grande Vuoto, ricompensa della quest di Siegmeyer o farm degli Spettri Oscuri).",
+     "loc_it": "Fonti di lastre secondo Fextralife: Demone Vagante, Siegmeyer, lucertole del Grande Vuoto, Spettri Oscuri. Ti servono 3 lastre normali in totale lungo i cicli (+15 / Fulmine / Cristallo): quella per il Cristallo aspetta il Demone Vagante di NG+."
+    },
+    {
+     "text": "FOUR KINGS — with the Lordvessel still unplaced. Equip Covenant of Artorias, Havel's armor + FaP, stack magic defense, and burst each King solo — 🏆 Defeat the Four Kings.",
+     "loc": "The Abyss. Community consensus: DPS race — two-hand Claymore +15, face-tank in Havel's, kill each King in ~40s before they stack. The platinum's scariest mandatory order constraint.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Defeat the Four Kings",
+       "label_it": "🏆 Sconfiggi i Quattro Re"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": true,
+     "text_it": "QUATTRO RE — con il Ricettacolo dei Lord ancora non posizionato. Indossa il Patto di Artorias, l'armatura di Havel + l'Anello della Protezione, accumula difesa magica e abbatti ogni Re uno alla volta — 🏆 Sconfiggi i Quattro Re.",
+     "loc_it": "L'Abisso. Consenso della community: gara di DPS — Claymore +15 a due mani, incassa in armatura di Havel, uccidi ogni Re in ~40s prima che si accumulino. Il vincolo d'ordine obbligatorio più temuto del platino."
+    },
+    {
+     "text": "Talk to Darkstalker Kaathe in the Abyss: join — 🏆 Covenant: Darkwraith (grants the DARK HAND). Place the Lordvessel through Kaathe's altar.",
+     "loc": "If you placed the vessel first, Kaathe never appears — the lockout everyone warns about on r/darksouls.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Covenant: Darkwraith",
+       "label_it": "🏆 Patto: Spettro Oscuro"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: Dark Hand",
+       "label_it": "🏆 Onore del cavaliere: Mano Oscura"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Parla con Kaathe l'Oscuro nell'Abisso: unisciti — 🏆 Patto: Spettro Oscuro (concede la MANO OSCURA, Dark Hand). Posiziona il Ricettacolo dei Lord tramite l'altare di Kaathe.",
+     "loc_it": "Se hai posizionato prima il ricettacolo, Kaathe non compare mai: il blocco di cui tutti avvertono su r/darksouls."
+    },
+    {
+     "text": "Valley of Drakes sweep: ASTORA'S STRAIGHT SWORD + Dragon Crest Shield (corpse near the undead dragon).",
+     "loc": "Knight's Honor guaranteed-loot list. Also buy Patches' CRESCENT AXE when he sets up at Firelink — the most-overlooked purchase per the guides.",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: Astora's SS / Crescent Axe",
+       "label_it": "🏆 Onore del cavaliere: Astora's SS / Ascia Crescente"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Ripulita della Valle dei Draghi (Valley of Drakes): ASTORA'S STRAIGHT SWORD + Scudo Cimiero del Drago (Dragon Crest Shield), sul cadavere vicino al drago non morto.",
+     "loc_it": "Lista del bottino garantito per Onore del cavaliere. Compra anche l'ASCIA CRESCENTE (Crescent Axe) da Patches quando si sistema al Santuario del Legame del Fuoco: secondo le guide, l'acquisto più trascurato."
+    }
+   ],
+   "title_it": "Fase 7 — Luna Oscura, Petite Londo, Quattro Re e Spettro Oscuro (NG)",
+   "note_it": "Il cuore del platino, dove l'ordine è tutto: prima la Luna Oscura, poi i Quattro Re PRIMA di posizionare il ricettacolo."
+  },
+  {
+   "title": "Phase 8 — Demon Ruins & Lost Izalith (NG)",
+   "note": "Pyromancy central: Quelana, 30 humanity, Solaire's rescue and both red-slab forges.",
+   "steps": [
+    {
+     "text": "Kill Ceaseless Discharge (drains the lava): loot the LARGE FLAME EMBER in the drained field (watch the Taurus Demons).",
+     "loc": "Demon Ruins. Cheese: run back to the fog after the pickup that wakes him and hit his arm as he clings — instant kill.",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Uccidi Scarica Infinita (Ceaseless Discharge), che prosciuga la lava: saccheggia il TIZZONE DEL FUOCO GIGANTE (Large Flame Ember) nel campo prosciugato (attento ai Demoni Toro).",
+     "loc_it": "Rovine del Demone. Cheese: dopo aver preso l'oggetto che lo risveglia, torna di corsa verso la nebbia e colpiscigli il braccio mentre si aggrappa — uccisione istantanea."
+    },
+    {
+     "text": "Upgrade your Pyromancy Flame to +10 → QUELANA appears in Blighttown's swamp. Buy ALL 5 of her pyromancies (Great Fireball, Great Combustion, Firestorm, Fire Whip, Undead Rapport).",
+     "loc": "Flame upgrades cost souls only, no stats. Fextralife: she won't teach below flame +10. Keep her alive — Fire Tempest depends on her.",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "quest"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Porta la Pyromancy Flame a +10 → QUELANA di Izalith compare nella palude della Città Infame. Compra TUTTE e 5 le sue piromanzie (Palla di Fuoco Migliorata, Combustione Migliorata, Tempesta di Fuoco, Frusta Infuocata, Ammaliamento non morti).",
+     "loc_it": "I potenziamenti della fiamma costano solo anime, nessuna statistica. Fextralife: non insegna nulla sotto fiamma +10. Tienila viva: Bufera di Fuoco (Fire Tempest) dipende da lei."
+    },
+    {
+     "text": "Offer 30 humanity to the Daughter of Chaos → Chaos Servant rank +2: CHAOS STORM + the Lost Izalith shortcut door opens.",
+     "loc": "Farm rats in the Depths with the Gold Serpent Ring and pop stored humanity items. The platinum's most-hated grind — bank humanity all game for it.",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Offri 30 di umanità alla Figlia del Caos → rango +2 del Servitore del Caos: TEMPESTA DEL CAOS (Chaos Storm) e apertura della porta scorciatoia per Lost Izalith.",
+     "loc_it": "Farma i ratti nelle Profondità con l'Anello d'Oro del Serpente e consuma le umanità che hai accumulato. Il grind più odiato del platino: metti da parte umanità per tutto il gioco."
+    },
+    {
+     "text": "Inside the shortcut tunnel: KILL THE SUNLIGHT MAGGOT bug → Solaire survives his madness and stays summonable for Gwyn. Farm the Chaos Bugs here for 10 SUNLIGHT MEDALS → Great Lightning Spear at the altar.",
+     "loc": "Kill the maggot BEFORE crossing to Lost Izalith after Centipede Demon. The same bugs drop Sunlight Medals — offline medal farm confirmed by the trophy roadmaps.",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "quest"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Dentro il tunnel della scorciatoia: UCCIDI l'insetto SUNLIGHT MAGGOT → Solaire sopravvive alla follia e resta evocabile per Gwyn. Farma qui i Chaos Bug per 10 SUNLIGHT MEDAL → Lancia del Fulmine Migliorata (Great Lightning Spear) all'altare.",
+     "loc_it": "Uccidi il maggot PRIMA di passare a Lost Izalith dopo il Demone Centipede. Gli stessi insetti lasciano cadere le Sunlight Medal: farm offline confermato dalle roadmap dei trofei."
+    },
+    {
+     "text": "Demon Firesage → CHAOS FLAME EMBER nearby; Centipede Demon → Orange Charred Ring. Deliver both fire embers to Vamos.",
+     "loc": "Demon Ruins. The ring lets you walk Lost Izalith's lava for the slab detour ahead.",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Demon Firesage → TIZZONE FIAMMA DEL CAOS (Chaos Flame Ember) lì vicino; Demone Centipede (Centipede Demon) → Orange Charred Ring. Consegna entrambi i tizzoni del fuoco a Vamos.",
+     "loc_it": "Rovine del Demone. L'anello ti permette di camminare sulla lava di Lost Izalith per la deviazione verso la lastra che ti aspetta."
+    },
+    {
+     "text": "Lost Izalith: RED TITANITE SLAB (chest in the sewer by the Bed of Chaos) + CHAOS FIRE WHIP (chest before the boss corridor). Kick Siegmeyer's pit quest along (Chaos Eaters drop red chunks).",
+     "loc": "Fextralife: red slab guaranteed in the Izalith sewer chest; Chaos Eaters ~0.3% for extras. Siegmeyer's chain can also end in a regular Titanite Slab.",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      },
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "quest"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Lost Izalith: LASTRA DI TITANITE ROSSA (forziere nella fogna vicino alla Culla del Caos) + FRUSTA INFUOCATA DEL CAOS (Chaos Fire Whip, forziere prima del corridoio del boss). Fai avanzare la quest di Siegmeyer nella fossa (i Chaos Eater lasciano cadere pezzi di titanite rossa).",
+     "loc_it": "Fextralife: lastra rossa garantita nel forziere della fogna di Izalith; i Chaos Eater danno extra con ~0,3%. La catena di Siegmeyer può concludersi anche con una Lastra di Titanite normale."
+    },
+    {
+     "text": "Kill the Bed of Chaos — 🏆 Defeat Bed of Chaos — then return to Quelana for FIRE TEMPEST → 🏆 Bond of a Pyromancer (with all other pyromancies bought/found).",
+     "loc": "Homeward Bone between the orb runs; progress saves between deaths. DLC pyromancies are NOT required for the trophy.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Bed of Chaos + Bond of a Pyromancer",
+       "label_it": "🏆 Sconfiggi Culla del Caos + Legame del piromante"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi la Culla del Caos — 🏆 Sconfiggi Culla del Caos — poi torna da Quelana per BUFERA DI FUOCO (Fire Tempest) → 🏆 Legame del piromante (con tutte le altre piromanzie comprate/trovate).",
+     "loc_it": "Usa un Homeward Bone tra una corsa e l'altra verso l'orbo; i progressi restano salvati tra una morte e l'altra. Le piromanzie del DLC NON servono per il trofeo."
+    },
+    {
+     "text": "Vamos forge: Fire +10 — 🏆 Fire Weapon — and Chaos +5 — 🏆 Chaos Weapon. The 2nd red slab: upgrade a Pyromancy Flame to +15, ASCEND it, then trade the ascended +0 flame to Snuggly the crow — or farm Chaos Eaters.",
+     "loc": "Fire +9→+10 and Chaos +4→+5 EACH eat a Red Titanite Slab (Fextralife). Snuggly only accepts the ASCENDED flame at +0 — a plain flame gives just a red chunk.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Fire + Chaos Weapon",
+       "label_it": "🏆 Arma del fuoco + Arma del caos"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Forgia da Vamos: Fuoco +10 — 🏆 Arma del fuoco — e Caos +5 — 🏆 Arma del caos. La 2ª lastra rossa: porta una Pyromancy Flame a +15, FALLA ASCENDERE, poi scambia la fiamma ascesa a +0 con il corvo Snuggly — oppure farma i Chaos Eater.",
+     "loc_it": "Fuoco +9→+10 e Caos +4→+5 consumano CIASCUNO una Lastra di Titanite Rossa (Fextralife). Snuggly accetta solo la fiamma ASCESA a +0: una fiamma normale dà soltanto un pezzo di titanite rossa."
+    }
+   ],
+   "title_it": "Fase 8 — Rovine del Demone e Lost Izalith (NG)",
+   "note_it": "Centrale della piromanzia: Quelana, 30 di umanità, il salvataggio di Solaire ed entrambe le forgiature con lastra rossa."
+  },
+  {
+   "title": "Phase 9 — Duke's Archives, Crystal Cave & NG Finale (NG)",
+   "note": "Logan's endgame, Seath's tail, the big forge session, then link the fire.",
+   "steps": [
+    {
+     "text": "Duke's Archives: survive the scripted Seath capture, escape the prison, find LOGAN in his cell and buy his remaining sorceries (Soul Spear line, Crystal sorceries...).",
+     "loc": "You must have bought out his Firelink stock. He later moves to the experiment chamber behind the giant cell.",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "quest"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Archivi del Duca: sopravvivi alla cattura scriptata di Seath, evadi dalla prigione, trova LOGAN nella sua cella e compra le stregonerie che gli restano (linea della Lancia dell'Anima, stregonerie cristallizzate...).",
+     "loc_it": "Devi aver già svuotato il suo assortimento al Santuario del Legame del Fuoco. Più avanti si sposta nella camera degli esperimenti dietro la cella gigante."
+    },
+    {
+     "text": "Prison sweep: LARGE MAGIC EMBER (past the Pisaca pit) and the two weeping Pisaca → guaranteed SOOTHING SUNLIGHT + BOUNTIFUL SUNLIGHT miracles.",
+     "loc": "Fextralife confirms both miracles are guaranteed Pisaca drops in the Duke's prison. Pisaca also drop the blue titanite you need.",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Ripulita della prigione: TIZZONE MAGICO GIGANTE (Large Magic Ember), oltre la fossa dei Pisaca, e i due Pisaca piangenti → miracoli garantiti TEPORE LENITIVO (Soothing Sunlight) e TEPORE CURATIVO (Bountiful Sunlight).",
+     "loc_it": "Fextralife conferma che entrambi i miracoli sono drop garantiti dei Pisaca nella prigione del Duca. I Pisaca lasciano cadere anche la titanite blu che ti serve."
+    },
+    {
+     "text": "Archives proper: CRYSTAL EMBER (garden chest) + STRONG MAGIC SHIELD. Farm the respawning Channelers for the CHANNELER'S TRIDENT — the notorious Knight's Honor grind.",
+     "loc": "410 Item Discovery mandatory; the Steam checklist calls the Trident 'an ungodly amount of time'. Do it while human-farming here, not in NG++ panic.",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: Channeler's Trident",
+       "label_it": "🏆 Onore del cavaliere: Channeler's Trident"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Archivi veri e propri: TIZZONE DI CRISTALLO (Crystal Ember, forziere nel giardino) + SCUDO MAGICO MIGLIORATO (Strong Magic Shield). Farma i Channeler che ricompaiono per il CHANNELER'S TRIDENT: il famigerato grind di Onore del cavaliere.",
+     "loc_it": "410 di Item Discovery è obbligatorio; la checklist di Steam definisce il Trident 'una quantità di tempo disumana'. Fallo mentre farmi qui da umano, non nel panico di NG++."
+    },
+    {
+     "text": "Find maddened Logan in the experiment chamber and buy WHITE DRAGON BREATH → 🏆 Wisdom of a Sage (with Griggs', Dusk's, Ingward's and all world sorceries owned).",
+     "loc": "Only appears if you bought his entire stock. DLC dark sorceries are explicitly NOT required — Fextralife confirms base-game-only.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Wisdom of a Sage",
+       "label_it": "🏆 Sapere del saggio"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Trova Logan impazzito nella camera degli esperimenti e compra il SOFFIO DEL DRAGO BIANCO (White Dragon Breath) → 🏆 Sapere del saggio (con tutte le stregonerie di Griggs, Dusk, Ingward e quelle sparse nel mondo in tuo possesso).",
+     "loc_it": "Compare solo se hai comprato tutto il suo assortimento. Le stregonerie oscure del DLC NON sono richieste: Fextralife conferma che basta il gioco base."
+    },
+    {
+     "text": "Crystal Cave: BLUE TITANITE SLAB via the long invisible path (crystal lizard marker), then Seath: CUT THE MIDDLE TAIL → Moonlight Greatsword (tail 6/6), then kill him — 🏆 Defeat Seath the Scaleless.",
+     "loc": "Break the Primordial Crystal first or he's immortal. Middle tail only — the side tentacles give nothing. Snowfall sparkle reveals the invisible walkway.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Defeat Seath the Scaleless",
+       "label_it": "🏆 Sconfiggi Seath il Senzascaglie"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: tail 6/6",
+       "label_it": "🏆 Onore del cavaliere: coda 6/6"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Caverna di Cristallo: LASTRA DI TITANITE BLU lungo il lungo sentiero invisibile (segnalato dalla lucertola di cristallo), poi Seath: TAGLIA LA CODA CENTRALE → Spadone della Luna (Moonlight Greatsword, coda 6/6), quindi uccidilo — 🏆 Sconfiggi Seath il Senzascaglie.",
+     "loc_it": "Distruggi prima il Primordial Crystal o è immortale. Solo la coda centrale: i tentacoli laterali non danno nulla. Il luccichio della neve rivela la passerella invisibile."
+    },
+    {
+     "text": "Rickert forge (New Londo): Magic +10 — 🏆 Magic Weapon — and Enchanted +5 — 🏆 Enchanted Weapon (blue chunks from Pisaca + the Crystal Cave blue slab).",
+     "loc": "Enchanted ascends from Magic +5, so one blank can walk the whole line.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Magic + Enchanted Weapon",
+       "label_it": "🏆 Arma magica + Arma incantata"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Forgia da Rickert (Petite Londo): Magica +10 — 🏆 Arma magica — e Incantata +5 — 🏆 Arma incantata (pezzi di titanite blu dai Pisaca + la lastra blu della Caverna di Cristallo).",
+     "loc_it": "L'Incantata ascende da Magica +5, quindi una sola base può percorrere tutta la linea."
+    },
+    {
+     "text": "Giant Blacksmith NG batch — ascend from +10 blanks: Quelaag's Furysword, Golem Axe, Smough's Hammer, Moonlight Butterfly Horn, Darkmoon Bow, Greatsword of Artorias, Lifehunt Scythe.",
+     "loc": "Anor Londo. 7 boss-soul weapons banked in NG — the Knight's Honor tracker is roughly two-thirds done if tails/drops are in.",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: NG boss weapons",
+       "label_it": "🏆 Onore del cavaliere: armi da boss NG"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Lotto NG dal Fabbro Gigante — ascendi partendo da basi +10: Spada della Furia di Quelaag, Ascia del Golem, Martello di Smough, Moonlight Butterfly Horn, Arco della Luna Oscura, Spadone di Artorias, Lifehunt Scythe.",
+     "loc_it": "Anor Londo. 7 armi da anima di boss messe da parte in NG: il conteggio di Onore del cavaliere è a circa due terzi se code e drop sono in cassaforte."
+    },
+    {
+     "text": "Rare-drop sweep before the end: Black Knight weapons (Kiln respawners), Stone Greatsword/Greatshield (Darkroot), Demon weapons incl. Titanite Catch Pole (Titanite Demons), Demon's Spear (Anor Londo batwings).",
+     "loc": "Kiln Black Knights drop all four BK weapons and rarely Titanite Slabs — the best combined farm in the game with 410 Discovery.",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: drop farm",
+       "label_it": "🏆 Onore del cavaliere: farm dei drop"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Ripulita dei drop rari prima della fine: armi dei Cavalieri Neri (i respawn nella Fornace), Spadone di Pietra/Scudo Grande di Pietra (Radiceoscura), armi dei demoni compreso il Titanite Catch Pole (Titanite Demon), Demon's Spear (i batwing di Anor Londo).",
+     "loc_it": "I Cavalieri Neri della Fornace della Prima Fiamma lasciano cadere tutte e quattro le armi BK e raramente Lastre di Titanite: il miglior farm combinato del gioco con 410 di Discovery."
+    },
+    {
+     "text": "Kiln of the First Flame: kill Gwyn (shield-tank or learn the parry) and TOUCH THE BONFIRE — 🏆 To Link the Fire. NG+ starts INSTANTLY — triple-check your NG checklist first.",
+     "loc": "Gwyn is fully parryable — even no-parry players can turtle with Greatshield/Havel's. His soul carries into NG+ for Sunlight Spear. All 9 covenants, 9 of 10 forge trophies and all NG souls must be done.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 To Link the Fire",
+       "label_it": "🏆 Legame del Fuoco"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Fornace della Prima Fiamma: uccidi Gwyn (tank con lo scudo o impara il parry) e TOCCA IL FALÒ — 🏆 Legame del Fuoco. NG+ inizia ISTANTANEAMENTE: ricontrolla tre volte la tua checklist NG prima.",
+     "loc_it": "Gwyn è completamente parabile, ma anche chi non para può fare la testuggine con uno scudo grande/l'armatura di Havel. La sua anima passa a NG+ per Sunlight Spear. Devono essere fatti tutti e 9 i patti, 9 dei 10 trofei di forgiatura e tutte le anime di NG."
+    }
+   ],
+   "title_it": "Fase 9 — Archivi del Duca, Caverna di Cristallo e finale NG (NG)",
+   "note_it": "L'epilogo di Logan, la coda di Seath, la grande sessione di forgiatura e poi il legame del fuoco."
+  },
+  {
+   "title": "Phase 10 — NG+: Second Harvest",
+   "note": "Targeted re-run: duplicate boss souls, opposite O&S kill, opposite ending. NG+ enemies hit ~2x — respect the Four Kings.",
+   "steps": [
+    {
+     "text": "Rejoin Warrior of Sunlight (FAI 25, or 3 quick co-op assists) and ascend Gwyn's soul at the Sunlight Altar → SUNLIGHT SPEAR → 🏆 Prayer of a Maiden.",
+     "loc": "Requires Sunlight rank +1 (your 10 NG medals persist). This is why Gwyn soul #1 must never be consumed.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Prayer of a Maiden",
+       "label_it": "🏆 Preghiera di una fanciulla"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Rientra nel Guerriero del Sole (FAI 25, oppure 3 rapide assistenze in co-op) e fai ascendere l'anima di Gwyn all'Altare del Sole → SUNLIGHT SPEAR → 🏆 Preghiera di una fanciulla.",
+     "loc_it": "Richiede il rango +1 del Guerriero del Sole (le tue 10 medaglie di NG restano). È per questo che l'anima di Gwyn n.1 non va mai consumata."
+    },
+    {
+     "text": "Prep +10 blanks for the NG+ soul weapons: katana (Chaos Blade), spear (Dragonslayer Spear), caestus (Dragon Bone Fist), TWO shields (Crystal Ring Shield now, Greatshield of Artorias in NG++), plus a spare sword.",
+     "loc": "Uchigatana from the Undead Merchant, Caestus from Andre. Cheap +10s — your titanite stockpile from Darkwraith farming pays off here.",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prepara basi +10 per le armi d'anima di NG+: katana (Lama del Caos), lancia (Lancia dell'Ammazzadraghi), caestus (Pugno d'Osso di Drago), DUE scudi (Scudo ad Anelli di Cristallo ora, Scudo Grande di Artorias in NG++), più una spada di scorta.",
+     "loc_it": "Uchigatana dal Mercante Non Morto, Caestus da Andre. Basi +10 economiche: qui ripaga la scorta di titanite accumulata farmando gli Spettri Oscuri."
+    },
+    {
+     "text": "Blitz Burg→Parish: Gargoyles, bell 1. Detour: Moonlight Butterfly soul #2 (→ Crystal Ring Shield).",
+     "loc": "At SL ~85+ with Claymore +15 the early game evaporates. Re-cut any tail you missed in NG now.",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: Butterfly soul 2/2",
+       "label_it": "🏆 Onore del cavaliere: anima della Farfalla 2/2"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Blitz dal Borgo dei Non Morti alla Undead Parish: Gargoyle della Campana, campana 1. Deviazione: anima della Farfalla della Luna n.2 (→ Scudo ad Anelli di Cristallo).",
+     "loc_it": "A SL ~85+ con Claymore +15 la prima parte del gioco evapora. Ritaglia adesso qualsiasi coda tu abbia mancato in NG."
+    },
+    {
+     "text": "Sif #2 → soul banked for the CURSED Greatsword of Artorias.",
+     "loc": "Crest of Artorias door → straight to the arena. Two Sif souls down, one to go.",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: Sif soul 2/3",
+       "label_it": "🏆 Onore del cavaliere: anima di Sif 2/3"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Sif n.2 → anima messa da parte per lo Spadone di Artorias MALEDETTO.",
+     "loc_it": "Porta del Cimiero di Artorias → dritto all'arena. Due anime di Sif fatte, ne manca una."
+    },
+    {
+     "text": "Quelaag #2 (→ Chaos Blade) and ring bell 2.",
+     "loc": "Master Key shortcut through Valley of Drakes into lower Blighttown skips the whole descent.",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: Quelaag soul 2/2",
+       "label_it": "🏆 Onore del cavaliere: anima di Quelaag 2/2"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Quelaag n.2 (→ Lama del Caos) e suona la campana 2.",
+     "loc_it": "La scorciatoia con la Master Key attraverso la Valle dei Draghi fino alla Città Infame bassa salta tutta la discesa."
+    },
+    {
+     "text": "Asylum revisit: Stray Demon again → regular Titanite Slab #3 (reserved for Crystal +5).",
+     "loc": "The same guaranteed drop each cycle — the cleanest source for the third slab per the slab guides.",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Ritorno al Rifugio dei Non Morti: di nuovo il Demone Vagante → Lastra di Titanite normale n.3 (riservata a Cristallo +5).",
+     "loc_it": "Lo stesso drop garantito a ogni ciclo: secondo le guide sulle lastre, la fonte più pulita per la terza."
+    },
+    {
+     "text": "Sen's: Iron Golem core #2 (→ Dragon Bone Fist). Then Anor Londo: O&S — KILL ORNSTEIN LAST → Soul of Ornstein (→ Dragonslayer Spear). Gwyndolin #2 → Tin Darkmoon Catalyst.",
+     "loc": "Ornstein-last is the harder order (super-Ornstein) — pillars split them; Solaire/phantom help is legal. The Seance Ring reopens Gwyndolin.",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: Ornstein + Gwyndolin #2",
+       "label_it": "🏆 Onore del cavaliere: Ornstein + Gwendolin n.2"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Fortezza di Sen: nucleo del Golem di Ferro n.2 (→ Pugno d'Osso di Drago). Poi Anor Londo: Ornstein e Smough — UCCIDI ORNSTEIN PER ULTIMO → Anima di Ornstein (→ Lancia dell'Ammazzadraghi). Gwendolin n.2 → Catalizzatore di Latta Luna Oscura.",
+     "loc_it": "Ornstein per ultimo è l'ordine più difficile (super-Ornstein): le colonne li separano, e l'aiuto di Solaire o di un fantasma è lecito. Il Darkmoon Seance Ring riapre l'accesso a Gwendolin."
+    },
+    {
+     "text": "Giant Blacksmith NG+ batch: Chaos Blade, Cursed Greatsword of Artorias, Crystal Ring Shield, Dragon Bone Fist, Dragonslayer Spear, Tin Darkmoon Catalyst. Also Crystal +5 — 🏆 Crystal Weapon (slab #3).",
+     "loc": "After this only TWO Knight's Honor items remain: Greatshield of Artorias and Great Lord Greatsword — both NG++.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Crystal Weapon",
+       "label_it": "🏆 Arma di cristallo"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: NG+ boss weapons",
+       "label_it": "🏆 Onore del cavaliere: armi da boss NG+"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Lotto NG+ dal Fabbro Gigante: Lama del Caos, Spadone di Artorias (Versione Maledetta), Scudo ad Anelli di Cristallo, Pugno d'Osso di Drago, Lancia dell'Ammazzadraghi, Catalizzatore di Latta Luna Oscura. Inoltre Cristallo +5 — 🏆 Arma di cristallo (lastra n.3).",
+     "loc_it": "Dopo questo restano solo DUE oggetti per Onore del cavaliere: Scudo Grande di Artorias e Spadone del Grande Lord — entrambi in NG++."
+    },
+    {
+     "text": "Re-clear the Lord Souls to open the Kiln: Four Kings (place the vessel freely this cycle), Nito, Bed of Chaos, Seath.",
+     "loc": "NG+ Four Kings is the community's #1 flagged danger: they hit for 800+ — Havel's + FaP + magic-defense buffs, burst one King at a time. No tails or covenant order needed this cycle.",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ CAUTION",
+       "label_it": "⚠ ATTENZIONE"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Ripulisci di nuovo le Anime dei Lord per aprire la Fornace: Quattro Re (in questo ciclo puoi posizionare il ricettacolo liberamente), Nito, Culla del Caos, Seath.",
+     "loc_it": "I Quattro Re in NG+ sono il pericolo n.1 segnalato dalla community: colpiscono per 800+ — armatura di Havel + Anello della Protezione + buff di difesa magica, e abbatti un Re alla volta. In questo ciclo non servono code né ordine dei patti."
+    },
+    {
+     "text": "Kiln: kill Gwyn, then WALK OUT of the arena without touching the bonfire — 🏆 Dark Lord. Gwyn soul #2 banked.",
+     "loc": "Leaving through the exit triggers the Dark Lord ending. NG++ starts — only a short victory lap remains.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Dark Lord",
+       "label_it": "🏆 Lord Oscuro"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ MISSABLE",
+       "label_it": "⚠ PERDIBILE"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Fornace della Prima Fiamma: uccidi Gwyn, poi ESCI a piedi dall'arena senza toccare il falò — 🏆 Lord Oscuro. Anima di Gwyn n.2 messa da parte.",
+     "loc_it": "Uscire dall'uscita attiva il finale del Lord Oscuro. Inizia NG++: resta solo un breve giro d'onore."
+    }
+   ],
+   "title_it": "Fase 10 — NG+: seconda raccolta",
+   "note_it": "Rigiocata mirata: anime di boss duplicate, ordine di uccisione invertito per Ornstein e Smough, finale opposto. I nemici in NG+ colpiscono ~2x: rispetta i Quattro Re."
+  },
+  {
+   "title": "Phase 11 — NG++: Knight's Honor & Platinum",
+   "note": "Partial run only: Sif's third soul and a road to the Giant Blacksmith. No Four Kings needed.",
+   "steps": [
+    {
+     "text": "NG++ start: rush Darkroot via the Crest door and kill Sif #3 → final Soul of Sif (→ Greatshield of Artorias).",
+     "loc": "Sif is reachable without ringing any bell — do it first. Your +10 shield blank should already be in the inventory from NG+ prep.",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: Sif soul 3/3",
+       "label_it": "🏆 Onore del cavaliere: anima di Sif 3/3"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Inizio NG++: corri a Radiceoscura passando per la porta del Cimiero e uccidi Sif n.3 → ultima Anima di Sif (→ Scudo Grande di Artorias).",
+     "loc_it": "Sif è raggiungibile senza suonare alcuna campana: fallo per primo. La tua base di scudo +10 dovrebbe già essere nell'inventario dalla preparazione di NG+."
+    },
+    {
+     "text": "Ring both bells (Gargoyles, Quelaag) and climb Sen's Fortress to the Iron Golem — the only way to reach the Giant Blacksmith.",
+     "loc": "At SL ~100+ this is a 2-3 hour victory lap. This partial NG++ is exactly what the roadmaps prescribe — the route never touches NG++ Four Kings.",
+     "tags": [],
+     "trophy": false,
+     "text_it": "Suona entrambe le campane (Gargoyle della Campana, Quelaag) e scala la Fortezza di Sen fino al Golem di Ferro: è l'unico modo per raggiungere il Fabbro Gigante.",
+     "loc_it": "A SL ~100+ è un giro d'onore di 2-3 ore. Questo NG++ parziale è esattamente ciò che prescrivono le roadmap: il percorso non tocca mai i Quattro Re di NG++."
+    },
+    {
+     "text": "Giant Blacksmith: ascend GREATSHIELD OF ARTORIAS (+10 shield + Sif soul) and GREAT LORD GREATSWORD (+10 sword + Gwyn soul #2) — 🏆 Knight's Honor.",
+     "loc": "Anor Londo. Pops the moment the final rare weapon of the full checklist enters your inventory.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Knight's Honor",
+       "label_it": "🏆 Onore del cavaliere"
+      },
+      {
+       "type": "coll",
+       "label": "🏆 Knight's Honor: COMPLETE",
+       "label_it": "🏆 Onore del cavaliere: COMPLETO"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Fabbro Gigante: fai ascendere lo SCUDO GRANDE DI ARTORIAS (scudo +10 + anima di Sif) e lo SPADONE DEL GRANDE LORD (spada +10 + anima di Gwyn n.2) — 🏆 Onore del cavaliere.",
+     "loc_it": "Anor Londo. Scatta nell'istante in cui l'ultima arma rara dell'intera checklist entra nel tuo inventario."
+    },
+    {
+     "text": "With all 40 trophies earned — 🏆 THE DARK SOUL. Platinum complete. Praise the sun.",
+     "loc": "If it doesn't pop, cross-check the 10 forge trophies and 9 covenants — the usual stragglers, all fixable in the current cycle.",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 The Dark Soul — PLATINUM",
+       "label_it": "🏆 L'Anima Oscura — PLATINO"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Con tutti e 40 i trofei ottenuti — 🏆 L'ANIMA OSCURA. Platino completato. Loda il sole.",
+     "loc_it": "Se non scatta, ricontrolla i 10 trofei di forgiatura e i 9 patti: i soliti ritardatari, tutti recuperabili nel ciclo attuale."
+    }
+   ],
+   "title_it": "Fase 11 — NG++: Onore del cavaliere e platino",
+   "note_it": "Solo run parziale: la terza anima di Sif e una strada fino al Fabbro Gigante. I Quattro Re non servono."
+  }
+ ],
+ "playthroughs_it": "NG + NG+ + NG++ parziale (solo fino a Sif e al Fabbro Gigante ad Anor Londo)",
+ "hours_it": "80-120 ore",
+ "build_summary_it": "Cavaliere (SL5) spada e scudo: Broadsword finché non prendi la Claymore sul ponte del Drago Nibbio Infernale (Hellkite Drake), poi Claymore +15 come arma definitiva dietro uno scudo 100% fisico (Tower Kite; Grass Crest sulla schiena per la stamina). Set Elite Knight dal Giardino Radiceoscura (Darkroot Garden) per il poise; Anello di Havel (Havel's Ring) + Anello della Protezione (Ring of Favor and Protection) reggono il carico dell'equipaggiamento. Quality con tendenza alla Forza: VIT 40 / END 40 / STR 40, la DEX resta vicina alla base (la Claymore richiede solo 16/10) — INT/FAI non servono mai, i trofei degli incantesimi richiedono solo di ACQUISIRE gli incantesimi, non di lanciarli.",
+ "golden_rules_it": [
+  "Non consumare MAI un'anima di boss. Nell'arco dei cicli ti servono: Sif x3, Quelaag x2, Farfalla della Luna (Moonlight Butterfly) x2, Golem di Ferro (Iron Golem) x2, Gwendolin x2, Gwyn x2 (una per il MIRACOLO Sunlight Spear, una per lo Spadone del Grande Lord), più l'anima di Ornstein una volta e quella di Smough una volta.",
+  "Uccidi i Quattro Re PRIMA di posizionare il Ricettacolo dei Lord (Lordvessel), poi incontra Kaathe: posizionare il ricettacolo tramite Frampt blocca il Patto: Spettro Oscuro per l'intero ciclo.",
+  "Taglia ogni coda prima di uccidere: Drago Nibbio Infernale (Hellkite Drake), Gargoyle della Campana n.1, Drago Famelico (Gaping Dragon), Drago di Pietra (Stone Dragon), Priscilla e la coda CENTRALE di Seath.",
+  "Ornstein e Smough: uccidi Smough per ultimo in NG (per la sua anima), Ornstein per ultimo in NG+ (Lancia dell'Ammazzadraghi) — ti servono entrambe le anime per Onore del cavaliere.",
+  "Compra TUTTO da ogni NPC di incantesimi prima di far avanzare la sua quest (Griggs, Logan, Dusk, Laurentius, Quelana, Rhea): Rhea e il Soffio del Drago Bianco (White Dragon Breath) di Logan sono perdibili in modo permanente.",
+  "Uccidere Gwyn avvia istantaneamente il ciclo successivo: completa PRIMA tutte le forgiature, il farming e le offerte ai patti. Raggiungi il rango +1 del Guerriero del Sole (10 medaglie) in NG così che l'anima di Gwyn possa diventare Sunlight Spear."
+ ],
+ "stat_table_it": {
+  "note": "Cavaliere quality orientato alla Forza; prima VIT/END ai loro soft cap di 40, poi la Forza — la DEX resta bassa perché la Claymore richiede solo 16 STR / 10 DEX.",
+  "columns": [
+   "SL",
+   "VIT",
+   "END",
+   "STR",
+   "DEX",
+   "Traguardo"
+  ],
+  "rows": [
+   [
+    "5",
+    "14",
+    "10",
+    "11",
+    "11",
+    "Inizio da Cavaliere — Broadsword + Tower Kite Shield"
+   ],
+   [
+    "20",
+    "18",
+    "17",
+    "16",
+    "11",
+    "Prima dei Gargoyle della Campana — Claymore utilizzabile (a 2 mani), coda per l'ascia tagliata"
+   ],
+   [
+    "30",
+    "22",
+    "22",
+    "20",
+    "12",
+    "Prima del Demone Capra/Profondità — Claymore +5, Tizzone Grande messo al sicuro"
+   ],
+   [
+    "45",
+    "28",
+    "28",
+    "24",
+    "14",
+    "Prima della Fortezza di Sen — Claymore +10, set Elite Knight"
+   ],
+   [
+    "55",
+    "30",
+    "36",
+    "28",
+    "14",
+    "Prima di Ornstein e Smough — Anello di Havel + Anello della Protezione, 53+ poise, capriola media"
+   ],
+   [
+    "70",
+    "36",
+    "40",
+    "32",
+    "14",
+    "Prima dei Quattro Re pre-Ricettacolo — Claymore +15, tank in armatura di Havel"
+   ],
+   [
+    "80",
+    "40",
+    "40",
+    "36",
+    "14",
+    "Gwyn in NG / finale — tank quality completo"
+   ],
+   [
+    "95+",
+    "45+",
+    "40",
+    "40",
+    "16",
+    "Pulizia NG+/NG++ — comodo per ripetere le Anime dei Lord"
+   ]
+  ]
+ },
+ "glossary_it": {
+  "The Dark Soul": "L'Anima Oscura",
+  "To Link the Fire": "Legame del Fuoco",
+  "Dark Lord": "Lord Oscuro",
+  "Knight's Honor": "Onore del cavaliere",
+  "Wisdom of a Sage": "Sapere del saggio",
+  "Bond of a Pyromancer": "Legame del piromante",
+  "Prayer of a Maiden": "Preghiera di una fanciulla",
+  "Covenant: Way of White": "Patto: Via Bianca",
+  "Covenant: Princess's Guard": "Patto: Guardia della Principessa",
+  "Covenant: Blade of the Darkmoon": "Patto: Lama della Luna Oscura",
+  "Covenant: Warrior of Sunlight": "Patto: Guerriero del Sole",
+  "Covenant: Forest Hunter": "Patto: Cacciatore della Foresta",
+  "Covenant: Darkwraith": "Patto: Spettro Oscuro",
+  "Covenant: Path of the Dragon": "Patto: Via del Drago",
+  "Covenant: Gravelord Servant": "Patto: Servitore del Re Tombale",
+  "Covenant: Chaos Servant": "Patto: Servitore del Caos",
+  "Strongest Weapon": "Arma più forte",
+  "Crystal Weapon": "Arma di cristallo",
+  "Lightning Weapon": "Arma del fulmine",
+  "Raw Weapon": "Arma grezza",
+  "Magic Weapon": "Arma magica",
+  "Enchanted Weapon": "Arma incantata",
+  "Divine Weapon": "Arma divina",
+  "Occult Weapon": "Arma occulta",
+  "Fire Weapon": "Arma del fuoco",
+  "Chaos Weapon": "Arma del caos",
+  "Enkindle": "Ardere",
+  "Estus Flask": "Fiaschetta Estus",
+  "Reach Lordran": "Raggiungi Lordran",
+  "Ring the Bell (Undead Church)": "Campana (Chiesa dei Non Morti)",
+  "Ring the Bell (Quelaag's Domain)": "Campana (Dominio di Quelaag)",
+  "Rite of Kindling": "Arte dell'Accensione",
+  "Art of Abysswalking": "Arte del Cammino Abissale",
+  "Reach Anor Londo": "Raggiungi Anor Londo",
+  "Lordvessel": "Ricettacolo dei Lord",
+  "Defeat Gravelord Nito": "Sconfiggi Nito Re Tombale",
+  "Defeat Bed of Chaos": "Sconfiggi Culla del Caos",
+  "Defeat the Four Kings": "Sconfiggi i Quattro Re",
+  "Defeat Seath the Scaleless": "Sconfiggi Seath il Senzascaglie",
+  "Defeat the Dark Sun Gwyndolin": "Sconfiggi Gwendolin",
+  "Defeat Crossbreed Priscilla": "Sconfiggi Priscilla Mezzosangue",
+  "Covenant": "Patto",
+  "bonfire": "falò",
+  "Bell of Awakening": "Campana del Risveglio",
+  "Undead": "Non Morti",
+  "Soul": "Anima",
+  "Soul Lord": "Lord dell'Anima",
+  "Lord Souls": "Anime dei Lord",
+  "sorceries": "stregonerie",
+  "pyromancies": "piromanzie",
+  "miracles": "miracoli",
+  "rare weapons": "armi rare",
+  "Humanity": "Umanità",
+  "Ember": "Tizzone",
+  "Vitality": "Vitalità",
+  "Attunement": "Volontà",
+  "Strength": "Forza",
+  "Dexterity": "Destrezza",
+  "Resistance": "Resistenza",
+  "Intelligence": "Intelligenza",
+  "Faith": "Fede",
+  "Knight (class)": "Cavaliere",
+  "Northern Undead Asylum": "Rifugio dei Non Morti settentrionale",
+  "Undead Asylum": "Rifugio dei Non Morti",
+  "Firelink Shrine": "Santuario del Legame del Fuoco",
+  "Lordran": "Lordran",
+  "Undead Burg": "Borgo dei Non Morti",
+  "Undead Church": "Chiesa dei Non Morti",
+  "Depths": "Profondità",
+  "Blighttown": "Città Infame",
+  "Quelaag's Domain": "Dominio di Quelaag",
+  "Darkroot Garden": "Giardino Radiceoscura",
+  "Darkroot Basin": "Bacino Radiceoscura",
+  "The Great Hollow": "Grande Vuoto",
+  "Ash Lake": "Lago di Cenere",
+  "Sen's Fortress": "Fortezza di Sen",
+  "Anor Londo": "Anor Londo",
+  "Sunlight Altar": "Altare del Sole",
+  "Painted World of Ariamis": "Mondo Dipinto di Ariamis",
+  "Catacombs": "Catacombe",
+  "Tomb of the Giants": "Tomba dei Giganti",
+  "New Londo (Ruins)": "Petite Londo (Rovine di Petite Londo)",
+  "The Abyss": "Abisso",
+  "Valley of Drakes": "Valle dei Draghi",
+  "Demon Ruins": "Rovine del Demone",
+  "Duke's Archives": "Archivi del Duca",
+  "Crystal Cave": "Caverna di Cristallo",
+  "Kiln of the First Flame": "Fornace della Prima Fiamma",
+  "Daughter of Chaos (bonfire)": "Figlia del Caos",
+  "Asylum Demon": "Demone del Rifugio",
+  "Taurus Demon": "Demone Toro",
+  "Hellkite Drake": "Drago Nibbio Infernale",
+  "Bell Gargoyle": "Gargoyle della Campana",
+  "Capra Demon": "Demone Capra",
+  "Gaping Dragon": "Drago Famelico",
+  "Chaos Witch Quelaag": "Quelaag, la Strega del Caos",
+  "Moonlight Butterfly": "Farfalla della Luna",
+  "Great Grey Wolf Sif": "Sif, il Grande Lupo Grigio",
+  "Iron Golem": "Golem di Ferro",
+  "Ornstein & Smough": "Ornstein e Smough",
+  "Stray Demon": "Demone Vagante",
+  "Pinwheel": "Girandola",
+  "Gravelord Nito": "Nito il Re Tombale",
+  "Ceaseless Discharge": "Scarica Infinita",
+  "Centipede Demon": "Demone Centipede",
+  "Bed of Chaos": "Culla del Caos",
+  "Seath the Scaleless": "Seath il Senzascaglie",
+  "Dark Sun Gwyndolin": "Gwendolin il Sole Oscuro",
+  "Gwyn, Lord of Cinder": "Gwyn, Lord dei Tizzoni",
+  "Stone Dragon": "Drago di Pietra",
+  "Crossbreed Priscilla": "Priscilla Mezzosangue",
+  "Oscar of Astora": "Oscar di Astora",
+  "Petrus of Thorolund": "Petrus di Thorolund",
+  "Anastacia of Astora": "Anastacia di Astora",
+  "Solaire of Astora": "Solaire di Astora",
+  "Andre of Astora": "Andre di Astora",
+  "Oswald of Carim": "Oswald di Carim",
+  "Griggs of Vinheim": "Griggs di Vinheim",
+  "Laurentius of the Great Swamp": "Laurentius della Grande Palude",
+  "Big Hat Logan": "Logan Grancappello",
+  "Dusk of Oolacile": "Dusk di Oolacile",
+  "Quelana of Izalith": "Quelana di Izalith",
+  "Siegmeyer of Catarina": "Siegmeyer di Catarina",
+  "Rhea of Thorolund": "Rhea di Thorolund",
+  "Rickert of Vinheim": "Rickert di Vinheim",
+  "Blacksmith Vamos": "Vamos il Fabbro",
+  "Giant Blacksmith": "Fabbro Gigante",
+  "Patches": "Patches la Iena",
+  "Paladin Leeroy": "Paladino Leeroy",
+  "Darkstalker Kaathe": "Kaathe l'Oscuro",
+  "Frampt": "Frampt il Cercatore di Re",
+  "Daughter of Chaos": "Figlia del Caos",
+  "Silver Knight": "Cavaliere d'Argento",
+  "Black Knight": "Cavaliere Nero",
+  "Darkwraith (enemy)": "Spettro Oscuro",
+  "Titanite Chunk": "Pezzo di Titanite",
+  "Titanite Slab": "Lastra di Titanite",
+  "Red Titanite Slab": "Lastra di Titanite Rossa",
+  "White Titanite Slab": "Lastra di Titanite Bianca",
+  "Blue Titanite Slab": "Lastra di Titanite Blu",
+  "Large Ember": "Tizzone Grande",
+  "Very Large Ember": "Tizzone Gigante",
+  "Divine Ember": "Tizzone Divino",
+  "Large Divine Ember": "Tizzone Divino Gigante",
+  "Enchanted Ember": "Tizzone Incantato",
+  "Large Magic Ember": "Tizzone Magico Gigante",
+  "Crystal Ember": "Tizzone di Cristallo",
+  "Dark Ember": "Tizzone Oscuro",
+  "Large Flame Ember": "Tizzone del Fuoco Gigante",
+  "Chaos Flame Ember": "Tizzone Fiamma del Caos",
+  "Eyes of Death": "Occhi della Morte",
+  "Crest of Artorias": "Cimiero di Artorias",
+  "Havel's Ring": "Anello di Havel",
+  "Ring of Favor and Protection": "Anello della Protezione",
+  "Cloranthy Ring": "Anello di Cloranthy",
+  "Covetous Gold Serpent Ring": "Anello d'Oro del Serpente",
+  "Covenant of Artorias": "Patto di Artorias",
+  "Drake Sword": "Spada Leggera del Drago",
+  "Dragon King Greataxe": "Ascia Bipenne del Re Drago",
+  "Velka's Rapier": "Stocco di Velka",
+  "Priscilla's Dagger": "Pugnale di Priscilla",
+  "Crescent Axe": "Ascia Crescente",
+  "Dark Hand": "Mano Oscura",
+  "Grant": "Concessione",
+  "Sanctus": "Sanctus",
+  "Gravelord Sword": "Spadone del Re Tombale",
+  "Moonlight Greatsword": "Spadone della Luna",
+  "Dragon Crest Shield": "Scudo Cimiero del Drago",
+  "Stone Greatsword": "Spadone di Pietra",
+  "Stone Greatshield": "Scudo Grande di Pietra",
+  "Silver Knight Straight Sword": "Spada Leggera del Cavaliere d'Argento",
+  "Silver Knight Spear": "Lancia del Cavaliere d'Argento",
+  "Quelaag's Furysword": "Spada della Furia di Quelaag",
+  "Chaos Blade": "Lama del Caos",
+  "Golem Axe": "Ascia del Golem",
+  "Dragon Bone Fist": "Pugno d'Osso di Drago",
+  "Smough's Hammer": "Martello di Smough",
+  "Dragonslayer Spear": "Lancia dell'Ammazzadraghi",
+  "Darkmoon Bow": "Arco della Luna Oscura",
+  "Tin Darkmoon Catalyst": "Catalizzatore di Latta Luna Oscura",
+  "Crystal Ring Shield": "Scudo ad Anelli di Cristallo",
+  "Greatsword of Artorias": "Spadone di Artorias",
+  "Cursed Greatsword of Artorias": "Spadone di Artorias (Versione Maledetta)",
+  "Greatshield of Artorias": "Scudo Grande di Artorias",
+  "Great Lord Greatsword": "Spadone del Grande Lord",
+  "Karmic Justice": "Giustizia Vendicativa",
+  "Tranquil Walk of Peace": "Camminata Pacifica",
+  "Emit Force": "Onda di Forza",
+  "Wrath of the Gods": "Ira degli Dei",
+  "Magic Barrier": "Barriera Magica",
+  "Great Magic Barrier": "Barriera Magica Rinforzata",
+  "Replenishment": "Rigenerazione",
+  "Vow of Silence": "Voto del Silenzio",
+  "Soothing Sunlight": "Tepore Lenitivo",
+  "Bountiful Sunlight": "Tepore Curativo",
+  "Darkmoon Blade": "Lama della Luna Oscura",
+  "Sunlight Blade": "Spada del Sole",
+  "Great Lightning Spear": "Lancia del Fulmine Migliorata",
+  "Gravelord Sword Dance": "Spada Danzante del Re Tombale",
+  "Gravelord Greatsword Dance": "Spadone Danzante del Re Tombale",
+  "Remedy": "Rimedio",
+  "Resist Curse": "Annulla Maledizione",
+  "Great Magic Weapon": "Arma Magica Migliorata",
+  "Strong Magic Shield": "Scudo Magico Migliorato",
+  "White Dragon Breath": "Soffio del Drago Bianco",
+  "Soul Spear": "Lancia dell'Anima",
+  "Hidden Body": "Invisibilità",
+  "Cast Light": "Luce",
+  "Repair": "Ripara",
+  "Hidden Weapon": "Arma Invisibile",
+  "Chameleon": "Camaleonte",
+  "Power Within": "Forza Interiore",
+  "Poison Mist": "Nebbia Velenosa",
+  "Toxic Mist": "Nebbia Tossica",
+  "Great Fireball": "Palla di Fuoco Migliorata",
+  "Great Combustion": "Combustione Migliorata",
+  "Firestorm": "Tempesta di Fuoco",
+  "Fire Tempest": "Bufera di Fuoco",
+  "Fire Whip": "Frusta Infuocata",
+  "Undead Rapport": "Ammaliamento non morti",
+  "Chaos Fire Whip": "Frusta Infuocata del Caos",
+  "Acid Surge": "Ondata Acida",
+  "Chaos Storm": "Tempesta del Caos",
+  "Great Chaos Fireball": "Palla di Fuoco Migliorata Caos"
+ },
+ "unverified_it": [
+  "Undead Parish",
+  "Lost Izalith",
+  "Broadsword",
+  "Claymore",
+  "Longsword",
+  "Uchigatana",
+  "Caestus",
+  "Reinforced Club",
+  "Zweihander",
+  "Short Bow",
+  "Wood Arrows",
+  "Tower Kite Shield",
+  "Grass Crest Shield",
+  "Elite Knight set",
+  "Gargoyle Tail Axe",
+  "Dragon Greatsword",
+  "Astora's Straight Sword",
+  "Moonlight Butterfly Horn",
+  "Lifehunt Scythe",
+  "Channeler's Trident",
+  "Titanite Catch Pole",
+  "Demon's Spear",
+  "Sunlight Spear",
+  "Great Heal",
+  "Titanite Shard",
+  "Large Titanite Shard",
+  "Green Titanite Shard",
+  "Master Key",
+  "Residence Key",
+  "Depths Key",
+  "Cage Key",
+  "Annex Key",
+  "Key to the Seal",
+  "Black Eye Orb",
+  "Fire Keeper Soul",
+  "Peculiar Doll",
+  "Egg Vermifuge",
+  "Blooming Purple Moss",
+  "Homeward Bone",
+  "Primordial Crystal",
+  "Pyromancy Flame",
+  "Sunlight Maggot",
+  "Sunlight Medal",
+  "Souvenir of Reprisal",
+  "Darkmoon Seance Ring",
+  "Orange Charred Ring",
+  "Core of an Iron Golem",
+  "Snuggly",
+  "Witch Beatrice",
+  "Ingward",
+  "Eingyi",
+  "Alvina",
+  "Gwynevere",
+  "Lautrec",
+  "Havel",
+  "Vince & Nico",
+  "Channeler",
+  "Pisaca",
+  "Chaos Eater",
+  "Chaos Bug",
+  "Crow Demon",
+  "Egg Burrower",
+  "Necromancer",
+  "Parasitic Wall Hugger",
+  "Pinwheel Servant",
+  "Titanite Demon",
+  "Hydra",
+  "Demon Firesage",
+  "poise",
+  "Item Discovery"
+ ],
+ "build_bullets": [
+  {
+   "h": "Core",
+   "t": "Knight (SL5) sword-and-board."
+  },
+  {
+   "h": "Stats",
+   "t": "STR-leaning quality: VIT 40 / END 40 / STR 40, DEX stays near base (Claymore needs only 16/10)."
+  },
+  {
+   "h": "No magic",
+   "t": "INT/FAI never needed, spell trophies only require ACQUIRING spells, not casting them."
+  },
+  {
+   "h": "Early weapon",
+   "t": "Broadsword until you grab the Claymore on the Hellkite bridge."
+  },
+  {
+   "h": "Main weapon",
+   "t": "Then Claymore +15 as your forever weapon, behind a 100%-physical shield (Tower Kite; Grass Crest on back for stamina)."
+  },
+  {
+   "h": "Armour",
+   "t": "Elite Knight set from Darkroot for poise."
+  },
+  {
+   "h": "Rings",
+   "t": "Havel's Ring + Ring of Favor and Protection carry your equip load."
+  }
+ ],
+ "build_bullets_it": [
+  {
+   "h": "Il cuore",
+   "t": "Cavaliere (SL5) spada e scudo."
+  },
+  {
+   "h": "Statistiche",
+   "t": "Quality con tendenza alla Forza: VIT 40 / END 40 / STR 40, la DEX resta vicina alla base (la Claymore richiede solo 16/10)."
+  },
+  {
+   "h": "Niente magia",
+   "t": "INT/FAI non servono mai, i trofei degli incantesimi richiedono solo di ACQUISIRE gli incantesimi, non di lanciarli."
+  },
+  {
+   "h": "Arma iniziale",
+   "t": "Broadsword finché non prendi la Claymore sul ponte del Drago Nibbio Infernale (Hellkite Drake)."
+  },
+  {
+   "h": "Arma principale",
+   "t": "Poi Claymore +15 come arma definitiva, dietro uno scudo 100% fisico (Tower Kite; Grass Crest sulla schiena per la stamina)."
+  },
+  {
+   "h": "Armatura",
+   "t": "Set Elite Knight dal Giardino Radiceoscura (Darkroot Garden) per il poise."
+  },
+  {
+   "h": "Anelli",
+   "t": "Anello di Havel (Havel's Ring) + Anello della Protezione (Ring of Favor and Protection) reggono il carico dell'equipaggiamento."
+  }
+ ]
+}

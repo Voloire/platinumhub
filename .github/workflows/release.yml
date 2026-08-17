@@ -1,0 +1,173 @@
+name: Release
+
+# Fires only on version tags, e.g. v3.3.0
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+# Default is read-only. contents: write is granted to the single job
+# that actually creates the GitHub Release.
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  PYTHON_VERSION: "3.12"
+
+jobs:
+
+  # 1) The full CI must be green. If anything here fails the release job
+  #    never starts, so a broken build can never be published.
+  test:
+    name: CI completa
+    uses: ./.github/workflows/ci.yml
+    permissions:
+      contents: read
+
+  # 2) Build, package, publish. Everything on windows-latest so that the
+  #    .exe is produced and smoke-tested on the same OS it ships to.
+  release:
+    name: Build .exe e pubblica la Release
+    needs: test
+    runs-on: windows-latest
+    permissions:
+      contents: write   # required: creates the GitHub Release and uploads the zip
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+
+      - name: Install dev dependencies
+        run: python -m pip install --disable-pip-version-check -r requirements-dev.txt
+
+      - name: Ricava la versione dal tag
+        id: ver
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag="${GITHUB_REF_NAME}"
+          version="${tag#v}"
+          echo "tag=$tag"         >> "$GITHUB_OUTPUT"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "zip=PlatinumHub-${tag}-win-x64.zip" >> "$GITHUB_OUTPUT"
+          echo "Rilascio $tag (versione $version)"
+
+      # Fail fast, before spending five minutes on PyInstaller.
+      - name: Estrai le note di rilascio dal CHANGELOG
+        shell: bash
+        run: |
+          set -euo pipefail
+          python tools/changelog_extract.py "${{ steps.ver.outputs.version }}" > RELEASE_NOTES.md
+          echo "--- note di rilascio ---"
+          cat RELEASE_NOTES.md
+
+      - name: Build PyInstaller (one-folder)
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          $iconArgs = @()
+          if (Test-Path "assets/icon.ico") { $iconArgs = @("--icon", "assets/icon.ico") }
+          python -m PyInstaller `
+            --noconfirm --clean --onedir --console `
+            --name PlatinumHub `
+            --add-data "data;data" `
+            --add-data "fonts;fonts" `
+            --add-data "standalone-html;standalone-html" `
+            --add-data "CHANGELOG.md;." `
+            --add-data "ISTRUZIONI.txt;." `
+            @iconArgs `
+            app.py
+          if (-not (Test-Path "dist/PlatinumHub/PlatinumHub.exe")) {
+            throw "PyInstaller non ha prodotto dist/PlatinumHub/PlatinumHub.exe"
+          }
+
+      - name: Aggiungi la documentazione utente accanto all'exe
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          foreach ($f in @("ISTRUZIONI.txt", "README.txt", "LICENSE")) {
+            if (Test-Path $f) { Copy-Item $f "dist/PlatinumHub/" }
+          }
+
+      # The packaged .exe must start and answer HTTP before we publish it.
+      - name: Smoke test dell'eseguibile
+        shell: pwsh
+        run: python tools/smoke_check.py --exe "dist/PlatinumHub/PlatinumHub.exe"
+
+      - name: Crea lo zip
+        id: pack
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          $zip = "${{ steps.ver.outputs.zip }}"
+          # Zip the folder itself, so the user unpacks a PlatinumHub\ directory.
+          Compress-Archive -Path "dist/PlatinumHub" -DestinationPath $zip -CompressionLevel Optimal
+          $hash = (Get-FileHash $zip -Algorithm SHA256).Hash.ToLower()
+          $size = [math]::Round((Get-Item $zip).Length / 1MB, 1)
+          "sha256=$hash" | Out-File -FilePath $env:GITHUB_OUTPUT -Append -Encoding utf8
+          "size=$size"   | Out-File -FilePath $env:GITHUB_OUTPUT -Append -Encoding utf8
+          Write-Host "$zip  $size MB  sha256=$hash"
+
+      - name: Componi il corpo della Release
+        shell: bash
+        run: |
+          set -euo pipefail
+          {
+            cat RELEASE_NOTES.md
+            echo
+            echo "---"
+            echo
+            echo "## Download"
+            echo
+            echo '**`${{ steps.ver.outputs.zip }}`** (${{ steps.pack.outputs.size }} MB) — Windows 10/11 64 bit, Python non richiesto.'
+            echo
+            echo "Scompatta lo zip in una cartella qualsiasi e avvia \`PlatinumHub.exe\`."
+            echo
+            echo "### Verifica del file (SHA256)"
+            echo
+            echo '```'
+            echo "${{ steps.pack.outputs.sha256 }}  ${{ steps.ver.outputs.zip }}"
+            echo '```'
+            echo
+            echo "In PowerShell: \`Get-FileHash .\\${{ steps.ver.outputs.zip }} -Algorithm SHA256\`"
+            echo
+            echo "### Avviso di Windows"
+            echo
+            echo "L'eseguibile **non è firmato** (un certificato di code signing richiede una società e un costo annuale)."
+            echo "Al primo avvio Windows SmartScreen può mostrare \"PC protetto da Windows\": *Ulteriori informazioni* → *Esegui comunque*."
+            echo "Confronta l'hash qui sopra se vuoi essere certo che il file sia quello pubblicato da questa Action."
+            echo
+            echo "_Build automatica dal tag \`${{ steps.ver.outputs.tag }}\` — commit \`${{ github.sha }}\`._"
+          } > RELEASE_BODY.md
+          cat RELEASE_BODY.md
+
+      - name: Pubblica la GitHub Release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # automatic, nothing to configure
+        run: |
+          set -euo pipefail
+          gh release create "${{ steps.ver.outputs.tag }}" \
+            "${{ steps.ver.outputs.zip }}" \
+            --title "Platinum Hub ${{ steps.ver.outputs.tag }}" \
+            --notes-file RELEASE_BODY.md \
+            --verify-tag
+
+      - name: Conserva lo zip come artefatto della run
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: ${{ steps.ver.outputs.zip }}
+          path: ${{ steps.ver.outputs.zip }}
+          if-no-files-found: warn
+          retention-days: 30

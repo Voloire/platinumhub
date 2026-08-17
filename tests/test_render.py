@@ -1,0 +1,180 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Rendering di tutte le pagine, per tutte e 10 le route, in entrambe le lingue.
+
+Il controllo che conta davvero: il numero di caselle di spunta nell'HTML deve
+coincidere con il numero di passi della route, ed essere lo stesso in italiano
+e in inglese. Se cambia, la stringa posizionale dei progressi non corrisponde
+piu' alla checklist e le spunte finiscono sui passi sbagliati.
+"""
+
+import os
+import re
+import sys
+import unittest
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import harness  # noqa: E402
+
+# Le caselle della checklist sono <input type="checkbox" id="s1">, s2, s3...
+CHECKBOX_RE = re.compile(r'<input type="checkbox" id="s(\d+)">')
+# Nella guida esportata i passi diventano <div class="step done|todo">.
+EXPORT_STEP_RE = re.compile(r'<div class="step (?:done|todo)">')
+
+LANGS = ("it", "en")
+PAGES = ("/run/%s", "/episodes/%s", "/session/%s", "/export/%s", "/selftest/%s", "/overlay/%s")
+
+
+class RenderTest(harness.ServerTestCase, unittest.TestCase):
+
+    @classmethod
+    def setUpClass(cls):
+        super(RenderTest, cls).setUpClass()
+        cls.steps = {os.path.splitext(f)[0]: harness.route_step_count(harness.load_route(f))
+                     for f in harness.route_files()}
+
+    def tearDown(self):
+        self.server.set_lang("it")
+
+    # ------------------------------------------------------------------ pagine
+    def test_home_page_renders_in_both_languages(self):
+        for lg in LANGS:
+            self.server.set_lang(lg)
+            with self.subTest(lang=lg):
+                code, html = self.server.get_text("/")
+                self.assertEqual(code, 200)
+                self.assertIn('<html lang="%s"' % lg, html)
+                self.assertIn("PLATINUM HUB", html)
+                for rid in self.steps:
+                    self.assertIn('href="/run/%s"' % rid, html,
+                                  "la home non elenca la run %s" % rid)
+
+    def test_every_page_answers_200_for_every_run_in_both_languages(self):
+        for lg in LANGS:
+            self.server.set_lang(lg)
+            for rid in sorted(self.steps):
+                for pattern in PAGES:
+                    path = pattern % rid
+                    with self.subTest(lang=lg, page=path):
+                        code, html = self.server.get_text(path)
+                        self.assertEqual(code, 200, "%s ha risposto %d" % (path, code))
+                        self.assertGreater(len(html), 500, "%s ha restituito una pagina vuota" % path)
+                        self.assertNotIn("Traceback (most recent call last)", html)
+
+    def test_pages_declare_the_selected_language(self):
+        for lg in LANGS:
+            self.server.set_lang(lg)
+            for rid in sorted(self.steps):
+                for pattern in ("/run/%s", "/episodes/%s", "/session/%s", "/export/%s"):
+                    with self.subTest(lang=lg, page=pattern % rid):
+                        code, html = self.server.get_text(pattern % rid)
+                        self.assertIn('lang="%s"' % lg, html)
+
+    # ----------------------------------------------------- caselle di spunta
+    def test_checkbox_count_matches_the_route_step_count(self):
+        for lg in LANGS:
+            self.server.set_lang(lg)
+            for rid, expected in sorted(self.steps.items()):
+                with self.subTest(lang=lg, run=rid):
+                    code, html = self.server.get_text("/run/%s" % rid)
+                    self.assertEqual(code, 200)
+                    ids = CHECKBOX_RE.findall(html)
+                    self.assertEqual(len(ids), expected,
+                                     "%s in %s: %d caselle per %d passi"
+                                     % (rid, lg, len(ids), expected))
+                    self.assertEqual([int(i) for i in ids], list(range(1, expected + 1)),
+                                     "%s in %s: gli id delle caselle non sono consecutivi"
+                                     % (rid, lg))
+
+    def test_checkbox_count_is_identical_in_both_languages(self):
+        """Il test che protegge dalla corruzione silenziosa dei salvataggi."""
+        for rid in sorted(self.steps):
+            counts = {}
+            for lg in LANGS:
+                self.server.set_lang(lg)
+                code, html = self.server.get_text("/run/%s" % rid)
+                counts[lg] = len(CHECKBOX_RE.findall(html))
+            with self.subTest(run=rid):
+                self.assertEqual(counts["it"], counts["en"],
+                                 "%s: %d caselle in italiano, %d in inglese"
+                                 % (rid, counts["it"], counts["en"]))
+
+    def test_exported_guide_lists_every_step(self):
+        for lg in LANGS:
+            self.server.set_lang(lg)
+            for rid, expected in sorted(self.steps.items()):
+                with self.subTest(lang=lg, run=rid):
+                    code, html = self.server.get_text("/export/%s" % rid)
+                    self.assertEqual(code, 200)
+                    self.assertEqual(len(EXPORT_STEP_RE.findall(html)), expected,
+                                     "%s in %s: la guida esportata non ha tutti i passi" % (rid, lg))
+
+    def test_export_is_downloaded_as_a_file(self):
+        code, headers, _ = self.server.get("/export/kz")
+        self.assertEqual(code, 200)
+        self.assertIn("attachment", headers.get("Content-Disposition", ""))
+        self.assertIn(".html", headers.get("Content-Disposition", ""))
+
+    # -------------------------------------------------------------- contenuti
+    def test_run_page_shows_the_localised_texts(self):
+        route = harness.load_route("kz.json")
+        first = route["phases"][0]["steps"][0]
+        self.server.set_lang("en")
+        code, html = self.server.get_text("/run/kz")
+        self.assertIn(first["text"][:40].split("(")[0].strip()[:25], html)
+        self.server.set_lang("it")
+        code, html = self.server.get_text("/run/kz")
+        self.assertIn(first["text_it"][:40].split("(")[0].strip()[:25], html)
+
+    def test_glossary_is_rendered_only_in_italian(self):
+        self.server.set_lang("it")
+        code, html = self.server.get_text("/run/kz")
+        self.assertIn("Glossario", html + "GLOS")
+        self.assertIn("GLOS", html, "il glossario non compare nella versione italiana")
+        self.server.set_lang("en")
+        code, html = self.server.get_text("/run/kz")
+        self.assertNotIn("📖 GLOS", html, "il glossario compare anche in inglese")
+
+    def test_stat_table_has_the_expected_number_of_rows(self):
+        for lg, key in (("en", "stat_table"), ("it", "stat_table_it")):
+            self.server.set_lang(lg)
+            for name in harness.route_files():
+                rid = os.path.splitext(name)[0]
+                table = harness.load_route(name)[key]
+                with self.subTest(lang=lg, run=rid):
+                    code, html = self.server.get_text("/run/%s" % rid)
+                    body = html.split('<table class="stats">')[1].split("</table>")[0]
+                    self.assertEqual(body.count("<tr>"), len(table["rows"]) + 1,
+                                     "%s in %s: righe della tabella statistiche errate" % (rid, lg))
+
+    def test_streamer_mode_adds_the_session_bar(self):
+        self.server.post_json("/api/pref", {"mode": "gamer"})
+        code, html = self.server.get_text("/run/kz")
+        self.assertNotIn('class="sessionbar"', html)
+        self.server.post_json("/api/pref", {"mode": "streamer"})
+        code, html = self.server.get_text("/run/kz")
+        self.assertIn('class="sessionbar"', html)
+        self.server.post_json("/api/pref", {"mode": "gamer"})
+
+    def test_progress_is_reflected_in_the_exported_guide(self):
+        code, res = self.server.get_json("/api/progress?run=kz")
+        n = res["total"]
+        self.server.post_json("/api/progress", {"run": "kz", "bits": "1" * 3 + "0" * (n - 3)})
+        code, html = self.server.get_text("/export/kz")
+        self.assertEqual(html.count('<div class="step done">'), 3)
+        self.assertEqual(html.count('<div class="step todo">'), n - 3)
+        self.server.post_json("/api/run/reset", {"run": "kz"})
+
+    def test_fonts_are_served(self):
+        code, headers, body = self.server.get("/fonts/roboto-400.woff2")
+        self.assertEqual(code, 200)
+        self.assertEqual(headers.get("Content-Type"), "font/woff2")
+
+    def test_zz_no_traceback_reached_stderr(self):
+        self.assertEqual(self.server.tracebacks(), [],
+                         "il server ha stampato un traceback durante il rendering")
+
+
+if __name__ == "__main__":
+    unittest.main(verbosity=2)

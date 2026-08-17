@@ -1,0 +1,420 @@
+==========================================================
+ PLATINUM HUB  ·  by Voloirex   ·   v3.2
+ ISTRUZIONI - leggi questo per primo
+==========================================================
+
+
+IN DUE RIGHE
+------------
+Non si apre un HTML: si fa doppio click su  run.bat
+Si apre una finestra nera (e' l'app, lasciala aperta) e poi il browser
+da solo sulla pagina con i dieci giochi. Spunti le caselle e basta: si
+salva tutto da solo.
+
+
+AVVIO - PASSO PASSO (Windows 11)
+--------------------------------
+1) Tasto destro sullo zip -> "Estrai tutto..." -> Estrai.
+   IMPORTANTE: estrai davvero. Se apri lo zip con un doppio click e
+   lanci run.bat da li' dentro, Windows lo esegue in una cartella
+   temporanea e il salvataggio va perso. Mettila dove vuoi:
+   Desktop, Documenti, D:\Giochi... e' indifferente.
+
+2) Entra nella cartella PlatinumHub e fai doppio click su  run.bat
+
+3) Si apre una finestra nera del prompt dei comandi. Dopo un secondo
+   si apre il browser su  http://127.0.0.1:8787/
+
+4) Scegli il gioco, apri le fasi, spunta le caselle mentre giochi.
+   Accanto ai pulsanti compare "salvato" ogni volta che salva.
+
+5) Quando hai finito, chiudi la finestra nera (o Ctrl+C li' dentro).
+   La volta dopo: di nuovo doppio click su run.bat, riprendi da dove
+   eri rimasto.
+
+La finestra nera E' l'app. Se la chiudi mentre stai giocando, la pagina
+smette di salvare e te lo scrive in rosso: riapri run.bat e rispunta
+la casella.
+
+
+LINGUA - ITALIANO O INGLESE
+---------------------------
+Il selettore  [ Lingua  ITA  ENG ]  sta in DUE posti, cosi' non lo
+puoi mancare: in alto a destra di ogni pagina, e dentro la barra
+degli strumenti di ogni checklist, accanto ad "Azzera la run".
+La lingua attiva e' quella col riquadro dorato pieno.
+
+SE NON LO VEDI: stai quasi sicuramente lanciando una cartella
+vecchia. Controlla la prima riga della finestra nera: deve dire
+"PLATINUM HUB v3.2". Se dice un'altra versione, cancella la vecchia
+cartella PlatinumHub (dopo aver copiato via platinum.db, se ci hai
+gia' dei progressi) ed estrai di nuovo lo zip.
+
+I due pulsanti
+Cambiano TUTTO: l'interfaccia e il contenuto della checklist, nomi
+degli oggetti compresi. La scelta resta salvata anche dopo aver
+chiuso l'app. Di serie parte in italiano.
+
+Sui nomi del gioco: in italiano vengono usati i nomi UFFICIALI della
+localizzazione italiana, ricavati dalle liste trofei italiane
+ufficiali e dalle guide che trascrivono il testo di gioco. Dove non
+e' stato possibile verificare il nome italiano, il nome resta in
+INGLESE apposta. Non e' una dimenticanza: meglio un nome inglese
+giusto che un nome italiano inventato che poi non trovi nel gioco.
+Quando un oggetto ha entrambi i nomi, alla prima citazione lo trovi
+scritto cosi':  Nome Italiano (English Name).
+
+In fondo a ogni checklist, in modalita' italiana, c'e' anche un
+GLOSSARIO EN <-> IT con tutte le coppie verificate: comodo quando
+segui un video o una guida in inglese.
+
+
+COSA C'E' NELLA BARRA IN ALTO
+-----------------------------
+  filtra i passi...      scrivi qualsiasi cosa (un oggetto, un boss,
+                         un'area) e restano solo i passi che la
+                         contengono, con le fasi aperte in automatico.
+                         Scorciatoia: premi  /  e il cursore va li'.
+  nascondi i fatti       toglie di mezzo tutto quello che hai gia'
+                         spuntato. Verso fine run e' la differenza tra
+                         scorrere 5 righe e scorrerne 150.
+  solo missabili         mostra solo i passi che puoi perdere per
+                         sempre. Usalo prima di chiudere una zona.
+  Dove ero rimasto       salta al primo passo non spuntato, apre la sua
+                         fase e lo evidenzia. Lo fa anche da solo
+                         quando riapri una run gia' iniziata.
+  Apri tutto/Chiudi tutto  apre o chiude tutte le fasi insieme.
+  Azzera la run          azzera COMPLETAMENTE quel gioco: spunte,
+                         episodi registrati con i loro URL video,
+                         marker con i timestamp e note personali.
+                         Gli altri giochi non vengono toccati.
+                         Chiede conferma elencando cosa cancella.
+
+Le impostazioni di filtro e lingua restano salvate tra una sessione e
+l'altra.
+
+
+LA PRIMA VOLTA: SERVE PYTHON 3
+------------------------------
+Se run.bat ti dice che non trova Python, installalo una volta sola.
+E' gratis e ci vogliono 30 secondi:
+
+  - il modo piu' semplice: apri il Microsoft Store, cerca "Python 3.12",
+    premi Installa
+  - oppure: https://www.python.org/downloads/  e nell'installer metti
+    la spunta su "Add python.exe to PATH"
+
+Poi ridai doppio click su run.bat. Non serve altro: niente pip, niente
+librerie, niente dipendenze. L'app usa solo quello che c'e' gia' dentro
+Python.
+
+
+PROBLEMI TIPICI
+---------------
+"Windows ha protetto il PC" (schermata blu di SmartScreen)
+   -> clicca "Ulteriori informazioni" -> "Esegui comunque".
+      E' solo Windows che non conosce il file, non c'e' niente di
+      strano dentro: run.bat sono venti righe che avviano Python.
+
+La finestra nera lampeggia e si chiude subito
+   -> quasi sempre manca Python. Aprila da prompt per leggere l'errore:
+      tasto destro nella cartella -> "Apri nel terminale" -> scrivi
+      run.bat  e premi Invio.
+
+Il browser non si apre da solo
+   -> nella finestra nera c'e' scritto l'indirizzo (di solito
+      http://127.0.0.1:8787/ ). Copialo nel browser a mano.
+
+L'antivirus si lamenta della porta / firewall chiede il permesso
+   -> puoi negare tranquillamente l'accesso alla rete pubblica.
+      L'app parla solo con il tuo PC (127.0.0.1), non esce su internet
+      e non e' raggiungibile da fuori.
+
+La porta 8787 e' occupata
+   -> se ne prende un'altra da sola (8788, 8789...). L'indirizzo giusto
+      e' sempre quello scritto nella finestra nera.
+
+
+DOVE FINISCONO I PROGRESSI E COME SI FA IL BACKUP
+-------------------------------------------------
+DA v4.0 il database NON sta piu' accanto all'app: sta nella tua
+cartella utente, in
+
+  C:\Users\<tuonome>\AppData\Local\PlatinumHub\platinum.db
+
+Il percorso esatto te lo stampa la finestra nera all'avvio. Il motivo
+e' pratico: cosi' puoi scompattare una versione nuova sopra quella
+vecchia, o installare l'app in Programmi, senza perdere niente. Se
+avevi un platinum.db della v3.x accanto ad app.py viene importato da
+solo al primo avvio (l'originale resta li' rinominato .migrated).
+
+E' un database SQLite normale, si crea da solo al primo avvio. Dentro
+ci sono i progressi di tutte e dieci le run, le note e le preferenze.
+
+  - Backup veloce         -> copia platinum.db da qualche parte
+  - Backup datato         -> nella pagina principale, "Scarica backup":
+                             ti salva un file .json con dentro tutto
+  - Ripristino            -> "Ripristina backup..." e scegli quel file
+                             (chiede conferma: sostituisce tutto)
+  - Portarlo su un altro PC -> "Scarica backup" qui, "Ripristina" la'.
+                             Oppure copia il platinum.db nella stessa
+                             posizione sull'altro PC
+  - Modo portatile        -> se vuoi i progressi accanto all'app (per
+                             esempio su una chiavetta), avvia con la
+                             variabile PLATINUM_HUB_DATA impostata
+                             sulla cartella che vuoi
+  - Ricominciare un gioco -> apri quel gioco e premi "Azzera la run"
+  - Ricominciare tutto    -> cancella platinum.db (si ricrea vuoto)
+
+In fondo a ogni checklist c'e' anche un riquadro NOTE personale (dove
+ti sei fermato, quale boss ti sta ammazzando): si salva nello stesso
+database.
+
+
+LA CARTELLA standalone-html
+---------------------------
+Sono le stesse sette checklist come file HTML singoli, anche loro
+bilingui coi pulsanti ITA/ENG. Quelli SI' che si aprono con un doppio
+click, senza Python e senza app. Il rovescio della medaglia: non
+salvano da soli, perche' un file HTML da solo non ha un database.
+Prima di chiudere la pagina devi premere "Copia codice progressi" e
+tenerti il codice in un file di testo, poi "Carica codice" la volta
+dopo.
+
+Usali per condividere una checklist (Drive, telefono, un amico) o come
+scorta. Per giocare usa l'hub, che salva da solo: e' esattamente per
+questo che nell'hub i pulsanti dei codici non ci sono piu'.
+
+
+COSA C'E' DENTRO
+----------------
+  Elden Ring                   Vagabond, spada e scudo, tutti e 42 i
+                               trofei, tutti e 3 i finali in una sola
+                               partita con il backup del salvataggio
+  Dark Souls Remastered        Knight
+  Dark Souls III               Knight
+  Stellar Blade                Eve, run completa dei collezionabili
+  The First Berserker: Khazan  spadone, finale vero
+  Lies of P + Overture         build forza (Motivity), 42 achievement
+                               base + 11 della DLC Overture = 53 su Steam
+  Beast of Reincarnation       Emma e Kuu, parry-tank
+  Black Myth: Wukong           tank in posizione Smash, finale segreto,
+                               un ciclo NG+ per i 36 trofei
+  Nioh 3                       samurai con odachi, 51 trofei, una sola
+                               run, nessun missabile
+  NieR: Automata               2B, 9S, A2 - i 48 trofei guadagnati
+                               giocando, mai comprati al negozio segreto
+
+
+NOTE PER LA RUN E AVVERTENZE
+----------------------------
+Il riquadro arancione sopra le fasi e' CHIUSO di serie: contiene le
+regole d'oro (gli errori che ti costano un trofeo) e la build spiegata
+a punti. Aprilo una volta prima di partire, poi puoi richiuderlo e
+dimenticartene.
+
+In tutta la checklist, i nomi in MAIUSCOLO - statistiche, armi,
+oggetti, aree - sono colorati di azzurro: servono a farti trovare al
+volo l'oggetto della frase senza doverla leggere tutta.
+
+
+DUE MODALITA': GAMER E STREAMER
+-------------------------------
+In alto a destra, accanto alla lingua, c'e' il selettore  [ Modalita'
+GAMER  STREAMER ].  Di serie parte in GAMER.
+
+GAMER e' l'esperienza essenziale: checklist, filtri, note. Niente
+sessioni, niente OBS, nessun marker. Se qualcuno ti passa una
+checklist gia' registrata, in Gamer restano solo i link ▶ verso i
+video - che sono il motivo per cui l'ha scaricata.
+
+STREAMER aggiunge la barra sessione e due schede, Episodi e Sessione.
+
+
+COME REGISTRARE I TIMESTAMP MENTRE GIOCHI
+-----------------------------------------
+1) In OBS: Strumenti -> Impostazioni WebSocket -> spunta "Abilita
+   server WebSocket" e copia la password.
+2) Nell'hub: scheda Sessione -> incolla la password -> Verifica.
+   Deve diventare verde.
+3) Premi "Avvia episodio" quando parte la diretta o la registrazione.
+4) Gioca e spunta le caselle come sempre. Non devi fare altro.
+
+Quando spunti il task 3, l'app registra due cose insieme: task 3
+COMPLETATO adesso, e task 4 INIZIATO adesso. Cosi' ogni task ha sia
+l'inizio sia la fine, e i capitoli si generano dall'inizio - che e'
+il punto giusto dove mandare chi clicca.
+
+Se salti l'ordine, doppio click su una riga per dire "in realta'
+adesso sto facendo questo".
+
+SENZA OBS funziona lo stesso: l'app usa un cronometro interno che
+parte con "Avvia episodio". Meno preciso se metti in pausa la
+registrazione, ma i marker li prendi comunque. Ogni marker salva due
+tempi, quello di OBS e l'ora reale, cosi' non si perde niente.
+
+
+SCORCIATOIE DA TASTIERA - SENZA ALT+TAB
+---------------------------------------
+Il problema: la pagina dell'hub NON riceve i tasti quando il gioco e'
+in primo piano. Nessuna pagina web li riceve. Per questo le
+scorciatoie le registra direttamente l'applicazione a livello di
+Windows, e funzionano anche mentre stai giocando a schermo intero.
+
+  Ctrl+Alt+F9    avvia la registrazione in OBS + apre l'episodio
+                 (ripremuto: ferma la registrazione e chiude l'episodio)
+  Ctrl+Alt+F10   task fatto -> passa al prossimo
+  Ctrl+Alt+F8    annulla l'ultima spunta (per quando sbagli tasto)
+  Ctrl+Alt+F11   segnaposto libero, per un momento da ritrovare dopo
+
+Le vedi elencate anche nella finestra nera all'avvio: se una
+combinazione e' gia' occupata da un altro programma, li' te lo dice.
+
+CONFERMA A SCHERMO: non stai guardando l'app, quindi la conferma
+arriva sull'OVERLAY: il riquadro cambia task da solo, e per un paio
+di secondi compare in basso una scritta con quello che hai appena
+fatto. Se l'overlay non e' in scena, l'unica conferma e' il fatto
+che OBS parte a registrare.
+
+CAMBIARE LE COMBINAZIONI: scheda Sessione -> Scorciatoie globali.
+Il formato e' "combinazione:azione", separate da virgola. Le azioni
+sono rec, next, undo, mark. Serve almeno un modificatore (ctrl, alt,
+shift, win). Dopo aver salvato, RIAVVIA l'app.
+
+TRE COSE DA SAPERE
+- Serve che la pagina dell'hub sia aperta nel browser: e' lei ad
+  avere il collegamento con OBS e lo stato della checklist. Il tasto
+  mette solo il comando in coda.
+- Su un gioco in "schermo intero esclusivo" alcune combinazioni
+  possono non arrivare. In finestra senza bordi (come fa la maggior
+  parte dei giochi moderni) funzionano sempre.
+- Se giochi su PS5 e la tastiera del PC ce l'hai lontana, la strada
+  giusta non sono i tasti: apri la checklist sul telefono. L'app
+  risponde in HTTP, quindi basta un secondo schermo appoggiato
+  accanto al monitor.
+
+
+QUANDO HAI PUBBLICATO IL VIDEO
+------------------------------
+Il link di solito NON ce l'hai quando chiudi la registrazione: ce
+l'hai dopo, quando il video e' online. Quindi l'app non te lo chiede
+in quel momento - se lo ricorda.
+
+DOVE LO INCOLLI (un posto solo, impossibile da mancare):
+nella barra sessione, sotto ai pulsanti, compare in arancione
+
+   > 1 episodio/i ancora senza link al video
+
+con una riga per ogni episodio: numero, data, quanti task ci sono
+dentro, e un campo dove incollare. Incolli, premi Invio (o il
+dischetto), la riga sparisce. Quando non ce ne sono piu', la lista
+non si vede.
+
+Accetta qualsiasi formato - youtube.com/watch?v=..., youtu.be/...,
+youtube.com/live/..., o anche solo l'ID - e lo normalizza da solo.
+
+Se invece il link ce l'hai gia' (con una diretta YouTube l'indirizzo
+esiste da subito), puoi incollarlo mentre l'episodio e' aperto nel
+campo "URL del video" della barra sessione.
+
+NOTA: l'URL del video NON si puo' leggere da OBS. Il protocollo
+WebSocket espone solo server e stream key, mai l'ID del video di
+YouTube: e' una richiesta aperta dal 2021 e mai implementata. Per
+questo l'unico modo e' incollarlo, ed e' anche il motivo per cui
+l'ho reso un gesto solo.
+
+In alternativa, scheda Sessione -> incolli l'URL di YouTube e dici da che secondo di
+registrazione parte il montato (l'intro tagliata). Un solo numero.
+Da quel momento tutte le targhette dell'episodio diventano link
+cliccabili al minuto esatto.
+
+C'e' anche l'ANTICIPO (di serie 15 secondi): la casella la spunti
+DOPO che la cosa e' successa, quindi il link punta poco prima. Senza,
+chi clicca si becca la schermata dei souvenir invece della kill.
+
+Nella scheda Episodi trovi la timeline di ogni episodio e due
+pulsanti: "Copia capitoli YouTube" (solo i passi con trofeo, gia'
+pronti per la descrizione) e "Copia elenco task" (tutto).
+
+Non devi assegnare niente a mano: una sessione e' un episodio, quindi
+un task sta nell'episodio in cui l'hai spuntato.
+
+
+OVERLAY SU OBS
+--------------
+Scheda Sessione -> in fondo c'e' un indirizzo tipo
+  http://127.0.0.1:8787/overlay/er
+In OBS: aggiungi una sorgente "Browser", incolla quell'indirizzo e
+lascia lo sfondo trasparente.
+
+REGOLA UNICA SULLE DIMENSIONI: larghezza e altezza della sorgente
+devono essere IDENTICHE al canvas di OBS, che trovi in
+Impostazioni > Video > "Risoluzione di base (inquadratura)".
+Se il canvas e' 2560x1080, la sorgente e' 2560x1080. Se e' 1920x1080,
+1920x1080. E POI NON RIDIMENSIONARLA nella scena: il riquadro si
+posiziona da solo, stirarlo sfoca soltanto il testo.
+
+La larghezza del pannello e' il 44% del canvas, quindi resta
+proporzionato su qualsiasi monitor: 16:9, 21:9, 32:9.
+
+SE UN GIOCO NON SUPPORTA L'ULTRAWIDE e gira in 16:9 dentro un canvas
+piu' largo, ai lati restano bande nere (su 2560x1080 sono 320 px per
+lato). In quel caso aggiungi  &pad=340  per far partire il pannello
+dove inizia l'immagine, oppure lascia il margine di serie e te lo
+tieni nella banda nera, che non copre niente del gioco.
+
+CONSIGLIO: nelle proprieta' della sorgente Browser spunta "Usa
+frequenza fotogrammi personalizzata" e metti 5 FPS. L'overlay si
+aggiorna ogni secondo e mezzo, quindi 5 bastano e avanzano, e ti
+risparmi CPU durante la diretta.
+
+La sorgente va aggiunta in OGNI scena in cui la vuoi. Se hai piu'
+scene, creala una volta e nelle altre usa "Aggiungi esistente".
+
+Da quel momento sul video compare il task che stai facendo, preso
+dalla checklist, con la fase, il luogo, il trofeo che sbloccherai e
+il prossimo passo. Si aggiorna da solo quando spunti una casella.
+Finisce sia nella diretta sia nel file su disco.
+
+DI SERIE L'OVERLAY DURA 10 SECONDI: compare quando cambi task, poi
+sfuma via da solo, cosi' non copre stabilmente nessuna parte della UI
+del gioco. Se preferisci averlo sempre a schermo, aggiungi &hold=0.
+
+Puoi cambiarne aspetto aggiungendo all'indirizzo:
+  &hold=10    secondi di permanenza (0 = sempre visibile)
+  ?pos=bl     angolo (bl = basso sx, br, top, tr)
+  &size=l     dimensione (s, m, l)
+  &next=0     nascondi il "POI"
+  &progress=0 nascondi il contatore trofei
+
+
+PUBBLICARE LA GUIDA CLICCABILE
+------------------------------
+Scheda Episodi -> in fondo, "Pubblica la guida cliccabile".
+
+Scarica un unico file HTML che e' una FOTOGRAFIA della run in quel
+momento: tutti i passi con il loro stato (fatto / da fare), l'elenco
+degli episodi con i link ai video, le regole d'oro, la build a punti,
+e su ogni passo completato una targhetta cliccabile che porta al
+minuto esatto del video giusto.
+
+Serve per metterla sul sito o darla a qualcuno. E' HTML semplice e
+autonomo: lo apri, lo carichi dove vuoi, e se serve lo modifichi a
+mano con un editor di testo - in cima al file c'e' un commento che
+spiega come sono fatti i link.
+
+Rifallo quando vuoi: ogni esportazione e' una nuova fotografia.
+
+
+LEGENDA DEI TAG
+---------------
+  bordo oro pieno        il trofeo scatta esattamente su quel passo
+  bordo oro tratteggiato conta per un trofeo collezione (es. 4/9
+                         armi leggendarie) - il numero e' nel tag
+  BUILD                  roba di build: arma, armatura, talismano,
+                         punti statistica
+  quest                  questline, NPC, lore
+  MISSABILE              lo puoi perdere per sempre: non saltarlo
+
+
+                Una run. Tutti i trofei. Buona fortuna.

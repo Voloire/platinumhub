@@ -1,0 +1,28 @@
+# ============================================================================
+#  Platinum Hub — dipendenze di SOLO SVILUPPO
+# ----------------------------------------------------------------------------
+#  L'applicazione ha ZERO dipendenze a runtime: gira sulla sola standard
+#  library di Python 3. Nessuno di questi pacchetti deve mai essere importato
+#  da app.py o dal codice che finisce nell'eseguibile.
+#
+#  Versioni fissate di proposito: la CI deve dare lo stesso risultato oggi e
+#  fra sei mesi. Gli aggiornamenti arrivano via Dependabot, come pull request.
+#
+#  Aggiornamento manuale:  python -m pip install -r requirements-dev.txt
+# ============================================================================
+
+# Costruisce l'eseguibile Windows (one-folder) in release.yml
+pyinstaller==6.22.1
+
+# Lint. Configurato in ruff.toml
+ruff==0.16.3
+
+# Test. Convenzione del progetto: python -m pytest  (vedi docs/CI.md)
+pytest==9.1.1
+pytest-timeout==2.5.0
+
+# Test end-to-end headless della pagina /selftest e del finto server OBS
+playwright==1.62.0
+
+# Controllo delle vulnerabilità note su queste stesse dipendenze
+pip-audit==2.10.1
