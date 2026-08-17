@@ -382,7 +382,7 @@ Ogni gioco è un JSON in `data/`. Schema:
 `type` del tag: `trophy`, `coll`, `build`, `quest`, `miss`. Il flag `trophy: true` va **solo** sul passo dove il trofeo scatta davvero — è quello che alimenta la barra dorata.
 
 ### Aggiungere un gioco
-Metti il JSON in `data/`, aggiungi una riga alla lista `RUNS` in cima ad `app.py` (`id`, `file`, `short`, `tagline`, `accent`), riavvia. Non serve altro.
+Metti il JSON in `data/`, aggiungi una riga alla lista `RUNS` in `platinumhub/routes.py` (`id`, `file`, `short`, `tagline`, `accent`), riavvia. Non serve altro.
 
 ### Attenzione all'ordine degli step
 I progress code sono **posizionali**. Se aggiungi o togli caselle a una checklist, i codici vecchi si disallineano. Modifiche di solo testo: sicure sempre. Il database interno si auto-adatta in lunghezza (pad a destra), ma anche lì aggiungere step *in mezzo* sposta tutto quello che viene dopo — se devi farlo, aggiungi in fondo alla fase.

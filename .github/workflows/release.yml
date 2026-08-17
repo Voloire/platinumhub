@@ -62,9 +62,9 @@ jobs:
           echo "zip=PlatinumHub-${tag}-win-x64.zip" >> "$GITHUB_OUTPUT"
           echo "Rilascio $tag (versione $version)"
 
-      # Il tag e la costante VERSION di app.py devono dire la stessa cosa.
+      # Il tag e la costante VERSION di platinumhub/config.py devono dire la stessa cosa.
       #
-      # Il workflow potrebbe riscrivere app.py partendo dal tag, e per un attimo
+      # Il workflow potrebbe riscrivere il file partendo dal tag, e per un attimo
       # sembra la soluzione elegante: nessuno se ne dimentica piu'. Scartata,
       # perche' il binario pubblicato non verrebbe piu' esattamente dal codice
       # committato -- ed e' l'unica promessa verificabile che facciamo su un exe
@@ -81,10 +81,10 @@ jobs:
         run: |
           set -euo pipefail
           want="${{ steps.ver.outputs.version }}"
-          have="$(python -c 'import io, re; print(re.search(r"^VERSION\s*=\s*\"([^\"]+)\"", io.open("app.py", encoding="utf-8").read(), re.M).group(1))')"
+          have="$(python -c 'import io, re; print(re.search(r"^VERSION\s*=\s*\"([^\"]+)\"", io.open("platinumhub/config.py", encoding="utf-8").read(), re.M).group(1))')"
           if [ "$have" != "$want" ]; then
-            echo "::error::Il tag dice $want ma VERSION in app.py dice $have."
-            echo "Aggiorna VERSION in cima ad app.py, committa su main, poi ricrea il tag."
+            echo "::error::Il tag dice $want ma VERSION in platinumhub/config.py dice $have."
+            echo "Aggiorna VERSION in cima a platinumhub/config.py, committa su main, poi ricrea il tag."
             exit 1
           fi
           echo "OK: VERSION = $have, uguale al tag."

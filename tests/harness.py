@@ -106,22 +106,27 @@ def make_sandbox(port=None):
     """
     Crea una copia isolata dell'app in una cartella temporanea.
 
-    Copiamo solo cio' che serve (app.py, data/, fonts/) e NON il database reale.
-    PORT_START viene riscritto sulla porta indicata, cosi' i test non litigano
-    ne' con l'istanza reale sulla 8787 ne' fra di loro.
+    Copiamo solo cio' che serve (app.py, platinumhub/, data/, fonts/) e NON il
+    database reale. PORT_START viene riscritto sulla porta indicata, cosi' i
+    test non litigano ne' con l'istanza reale sulla 8787 ne' fra di loro.
     """
     if port is None:
         port = free_port()
     root = tempfile.mkdtemp(prefix="platinumhub-test-")
     _SANDBOXES.append(root)
 
-    with open(os.path.join(APP_DIR, "app.py"), "r", encoding="utf-8") as f:
+    shutil.copy2(os.path.join(APP_DIR, "app.py"), os.path.join(root, "app.py"))
+    shutil.copytree(os.path.join(APP_DIR, "platinumhub"), os.path.join(root, "platinumhub"),
+                    ignore=shutil.ignore_patterns("__pycache__"))
+    cfg = os.path.join(root, "platinumhub", "config.py")
+    with open(cfg, "r", encoding="utf-8") as f:
         src = f.read()
     patched, n = re.subn(r"^PORT_START = \d+$", "PORT_START = %d" % port, src, count=1,
                          flags=re.MULTILINE)
     if n != 1:
-        raise RuntimeError("PORT_START non trovato in app.py: la sandbox non e' isolabile")
-    with open(os.path.join(root, "app.py"), "w", encoding="utf-8") as f:
+        raise RuntimeError("PORT_START non trovato in platinumhub/config.py: "
+                           "la sandbox non e' isolabile")
+    with open(cfg, "w", encoding="utf-8") as f:
         f.write(patched)
 
     shutil.copytree(DATA_DIR, os.path.join(root, "data"))
@@ -138,19 +143,25 @@ def drop_sandbox(root):
         _SANDBOXES.remove(root)
 
 
-def import_app_module(sandbox=None):
+def import_app_module(submodule, sandbox=None):
     """
-    Importa app.py dalla sandbox come modulo, per testare le funzioni pure
-    (parse_hotkeys, push_cmd/take_cmds, fmt_tc...) senza avviare il server.
+    Importa un modulo del package platinumhub dalla sandbox (es. "hotkeys",
+    "i18n", "thumbs"), per testare le funzioni pure senza avviare il server.
+
+    Il package intero viene registrato sotto un nome unico, cosi' import
+    relativi e stato di modulo restano isolati fra un test e l'altro.
     """
     if sandbox is None:
         sandbox, _ = make_sandbox()
-    path = os.path.join(sandbox, "app.py")
-    name = "platinumhub_under_test_%d" % (len(sys.modules),)
-    spec = importlib.util.spec_from_file_location(name, path)
-    module = importlib.util.module_from_spec(spec)
-    sys.modules[name] = module
-    spec.loader.exec_module(module)
+    pkg_name = "platinumhub_under_test_%d" % (len(sys.modules),)
+    pkg_path = os.path.join(sandbox, "platinumhub")
+    spec = importlib.util.spec_from_file_location(
+        pkg_name, os.path.join(pkg_path, "__init__.py"),
+        submodule_search_locations=[pkg_path])
+    pkg = importlib.util.module_from_spec(spec)
+    sys.modules[pkg_name] = pkg
+    spec.loader.exec_module(pkg)
+    module = importlib.import_module("%s.%s" % (pkg_name, submodule))
     return module, sandbox
 
 

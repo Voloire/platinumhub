@@ -72,7 +72,7 @@ Se stampa la sezione giusta, il rilascio non si fermerà lì.
 
 ## 3. Allinea la versione nel codice
 
-**Un posto solo.** La costante `VERSION` in cima ad `app.py`:
+**Un posto solo.** La costante `VERSION` in cima a `platinumhub/config.py`:
 
 ```python
 VERSION = "3.3.0"
@@ -83,7 +83,7 @@ controllo aggiornamenti, le pagine. Non c'è nessun altro numero da cercare.
 
 **Se te ne dimentichi, il rilascio si ferma.** `release.yml` confronta `VERSION`
 con il tag *prima* di compilare, e fallisce con l'errore
-`Il tag dice 3.3.0 ma VERSION in app.py dice 3.2.0`.
+`Il tag dice 3.3.0 ma VERSION in platinumhub/config.py dice 3.2.0`.
 
 > **Perché il workflow non la ricava dal tag da sé**, che sarebbe più comodo e
 > per un attimo sembra la soluzione elegante. Perché il binario pubblicato deve
