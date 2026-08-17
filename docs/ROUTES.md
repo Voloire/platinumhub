@@ -101,7 +101,7 @@ Per questo il test `tests/test_data_integrity.py` è il più importante della su
 3. Scrivi il blocco `meta` (id, tagline, accent, thumb) direttamente nel file.
 4. Metti il file in `data/<sigla>.json` e lancia `python tools/assign_sids.py <sigla>.json`
    per assegnare i sid ai passi. **Mai riassegnare un sid esistente.**
-5. Registra il gioco nella lista `RUNS` in cima ad `app.py`: `id`, `file`, `accent`,
+5. Registra il gioco nella lista `RUNS` in `platinumhub/routes.py`: `id`, `file`, `accent`,
    `tagline` — devono coincidere con il `meta` (un test lo verifica). *Questo passo
    sparirà quando l'app leggerà i registri dal `meta` dei JSON.*
 6. `python -m pytest tests/test_data_integrity.py` — se passa, la struttura regge.

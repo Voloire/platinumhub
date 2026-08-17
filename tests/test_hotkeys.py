@@ -31,7 +31,7 @@ class HotkeyParserTest(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.app, cls.sandbox = harness.import_app_module()
+        cls.app, cls.sandbox = harness.import_app_module("hotkeys")
 
     @classmethod
     def tearDownClass(cls):
@@ -116,7 +116,7 @@ class CommandQueueUnitTest(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.app, cls.sandbox = harness.import_app_module()
+        cls.app, cls.sandbox = harness.import_app_module("hotkeys")
 
     @classmethod
     def tearDownClass(cls):
@@ -295,15 +295,16 @@ class HotkeyPanelRenderTest(harness.ServerTestCase, unittest.TestCase):
     def test_every_action_has_a_description_in_both_languages(self):
         """Se si aggiunge un'azione senza tradurla, hk_panel() alza KeyError e
         OGNI pagina risponde 500. Meglio scoprirlo qui."""
-        app, sandbox = harness.import_app_module()
+        hotkeys, sandbox = harness.import_app_module("hotkeys")
         try:
+            i18n, _ = harness.import_app_module("i18n", sandbox)
             for lg in ("it", "en"):
-                for action in app.HOTKEY_ACTIONS:
+                for action in hotkeys.HOTKEY_ACTIONS:
                     with self.subTest(lang=lg, action=action):
                         key = "hk_act_" + action
-                        self.assertIn(key, app.T[lg],
+                        self.assertIn(key, i18n.T[lg],
                                       "manca la traduzione %s in %s" % (key, lg))
-                        self.assertTrue(str(app.T[lg][key]).strip())
+                        self.assertTrue(str(i18n.T[lg][key]).strip())
         finally:
             harness.drop_sandbox(sandbox)
 

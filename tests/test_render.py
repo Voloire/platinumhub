@@ -230,7 +230,7 @@ class ThumbnailTest(harness.ServerTestCase, unittest.TestCase):
     def test_every_design_icon_exists_in_the_art_js(self):
         """Un design che nomina un'icona inesistente cadrebbe sul ripiego senza
         che nessuno se ne accorga: meglio un test rosso."""
-        app, sandbox = harness.import_app_module()
+        app, sandbox = harness.import_app_module("thumbs")
         try:
             for rid, design in app.THUMB_DESIGNS.items():
                 with self.subTest(run=rid):

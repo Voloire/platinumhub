@@ -46,19 +46,25 @@ ACCENT_RE = re.compile(r"^#[0-9a-f]{6}$")
 GLOW_RE = re.compile(r"^\d{1,3},\d{1,3},\d{1,3}$")
 
 
+# Dove vivono i registri hardcoded dentro il package.
+APP_LITERALS = {"RUNS": os.path.join("platinumhub", "routes.py"),
+                "THUMB_DESIGNS": os.path.join("platinumhub", "thumbs.py")}
+
+
 def app_literal(name):
     """
-    Estrae una costante di primo livello da app.py senza eseguirlo,
-    per confrontare i registri hardcoded con i meta dei JSON.
+    Estrae una costante di primo livello dal modulo che la ospita senza
+    eseguirlo, per confrontare i registri hardcoded con i meta dei JSON.
     """
-    with open(os.path.join(harness.APP_DIR, "app.py"), "r", encoding="utf-8") as f:
+    path = os.path.join(harness.APP_DIR, APP_LITERALS[name])
+    with open(path, "r", encoding="utf-8") as f:
         tree = ast.parse(f.read())
     for node in tree.body:
         if isinstance(node, ast.Assign) and len(node.targets) == 1 \
                 and isinstance(node.targets[0], ast.Name) \
                 and node.targets[0].id == name:
             return ast.literal_eval(node.value)
-    raise AssertionError("costante %s non trovata in app.py" % name)
+    raise AssertionError("costante %s non trovata in %s" % (name, path))
 
 # Coppie di liste che devono avere la stessa lunghezza nelle due lingue.
 PARALLEL_LISTS = (("golden_rules", "golden_rules_it"),
