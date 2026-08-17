@@ -11,6 +11,16 @@ la numerazione segue [Semantic Versioning](https://semver.org/lang/it/).
 
 ## [Non rilasciato]
 
+### Aggiunto
+- **Le scorciatoie da tastiera si vedono dentro l'app.** Un pulsante ⌨ in alto a
+  destra di ogni pagina — o il tasto <kbd>?</kbd> — apre un pannello che elenca
+  ogni combinazione e cosa fa, in italiano e in inglese. Non è documentazione
+  incollata: legge lo stato vero e ti dice **quali combinazioni Windows ha
+  registrato davvero e quali gli ha rubato un altro programma**, con il nome dei
+  soliti colpevoli (l'overlay di GeForce Experience, Discord, la Xbox Game Bar).
+  Prima quell'informazione esisteva solo nella finestra nera all'avvio e in fondo
+  a un file di testo.
+
 ## [4.0.0] - 2026-08-17
 
 Prima versione distribuita come **applicazione Windows**: si scarica uno zip, si
