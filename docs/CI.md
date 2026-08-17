@@ -26,7 +26,10 @@ i workflow usano solo il `GITHUB_TOKEN` che GitHub genera da sé a ogni run.
 
 ---
 
-## `ci.yml` — cinque job in parallelo
+## `ci.yml` — cinque job in parallelo, sette controlli
+
+Cinque definizioni di job, ma `test` e `smoke` girano in matrice su Ubuntu e su
+Windows: nell'elenco dei controlli obbligatori di `main` compaiono **sette** nomi.
 
 ### `lint` — ruff
 
@@ -109,9 +112,19 @@ Il contenuto, oggi: 130 test in sei file.
   `test_hotkeys.py` — API, episodi e capitoli, rendering nelle due lingue,
   input malformati, scorciatoie.
 
-Tre test sono **fallimenti attesi** (`xfail`): sono difetti noti di `app.py`
-descritti in `test_robustness.py`. Se uno di quelli inizia a *passare*, vuol
-dire che il difetto è stato corretto: togli l'`xfail`.
+**Nessun `xfail` residuo.** I tre difetti che erano segnati come fallimenti
+attesi sono stati corretti: la classe che li conteneva ora si chiama
+`FixedInV4Test` e i test passano davvero. Se ne aggiungerai altri con
+`@unittest.expectedFailure`, `run_all.py` li conta a parte e segnala da solo
+l'*unexpected success* quando il difetto viene chiuso.
+
+**Il job `test` gira su Ubuntu e su Windows.** Non è simmetria per gusto:
+girava solo su Ubuntu e questo ha lasciato passare un difetto vero
+(`allow_reuse_address`, vedi `CHANGELOG.md` 4.0.0), che `test_robustness.py`
+scopriva già ma solo eseguendolo su Windows — l'unica piattaforma su cui girano
+gli utenti. I test di interfaccia con Playwright restano solo su Ubuntu:
+guardano il rendering, che non dipende dal sistema, e `--with-deps` installa
+pacchetti apt che su Windows non hanno equivalente.
 
 Dettagli che vale la pena conoscere:
 

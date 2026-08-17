@@ -7,10 +7,14 @@ Regola dell'app: qualunque cosa arrivi, il server deve rispondere con un codice
 HTTP sensato e non deve mai stampare un traceback ne' chiudere la connessione
 senza risposta.
 
-La classe KnownDefectsTest in fondo contiene i casi in cui questa regola
-oggi NON e' rispettata: sono segnati con @unittest.expectedFailure e
-documentati riga per riga. Quando il difetto viene corretto, unittest segnala
-"unexpected success" e il marcatore va tolto.
+La classe FixedInV4Test in fondo raccoglie i casi in cui questa regola una
+volta NON era rispettata: erano segnati con @unittest.expectedFailure, i
+difetti sono stati corretti e ora quei test passano davvero. Restano lì come
+prova che non tornino indietro.
+
+PortSelectionTest e' l'unico gruppo che dipende dal sistema operativo: su
+Windows SO_REUSEADDR permetteva di legarsi a una porta gia' in ascolto, quindi
+falliva solo la'. E' il motivo per cui la CI esegue questo file anche su Windows.
 """
 
 import json

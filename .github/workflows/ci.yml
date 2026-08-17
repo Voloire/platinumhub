@@ -117,9 +117,22 @@ jobs:
         run: python -m pip_audit --strict --progress-spinner=off -r requirements-dev.txt
 
   # ---------------------------------------------------------------- tests
+  # Girava solo su ubuntu, e questo ha lasciato passare un difetto vero:
+  # allow_reuse_address su Windows permette di legarsi a una porta GIA' in
+  # ascolto, quindi pick_port() non scattava mai e due istanze finivano
+  # entrambe sull'8787. Il test che lo scopriva c'era gia' -- girava sul
+  # sistema sbagliato. Windows e' l'unica piattaforma su cui girano gli utenti.
   test:
-    name: Test (ubuntu)
-    runs-on: ubuntu-latest
+    name: Test (${{ matrix.label }})
+    strategy:
+      fail-fast: false          # un sistema rosso non deve annullare l'altro
+      matrix:
+        include:
+          - os: ubuntu-latest
+            label: ubuntu
+          - os: windows-latest
+            label: windows
+    runs-on: ${{ matrix.os }}
     permissions:
       contents: read
     env:
@@ -152,16 +165,24 @@ jobs:
       # Slow lane: the browser tests. They live in tests/optional_playwright_ui.py,
       # a file deliberately named so that pytest and run_all.py do NOT collect it
       # (the base suite must stay standard-library only). Here we run it on purpose.
+      #
+      # Solo su ubuntu, di proposito: questi test guardano il rendering, che non
+      # dipende dal sistema, e --with-deps installa pacchetti apt che su Windows
+      # non hanno equivalente. Su Windows serve provare il codice Python, ed e'
+      # quello che fanno i due passi qui sopra.
       - name: Install Playwright Chromium
+        if: matrix.os == 'ubuntu-latest'
         run: python -m playwright install --with-deps chromium
       - name: Test di interfaccia (Playwright)
+        if: matrix.os == 'ubuntu-latest'
         run: python tests/optional_playwright_ui.py
 
       - name: Upload test artifacts
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
-          name: test-artifacts-ubuntu
+          # un nome per sistema: upload-artifact rifiuta due artifact omonimi
+          name: test-artifacts-${{ matrix.label }}
           path: |
             diagnostica.txt
             test-results/

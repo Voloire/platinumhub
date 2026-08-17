@@ -73,7 +73,7 @@ Tutte da **Settings** del repository:
 
 ## 4. Guarda girare la pipeline
 
-Il push ha già fatto partire la CI. Vai nella scheda **Actions**: devi vedere `ci.yml` con sei lavori (lint, igiene dei file, pip-audit, test, avvio su Ubuntu, avvio su Windows).
+Il push ha già fatto partire la CI. Vai nella scheda **Actions**: devi vedere `ci.yml` con sette lavori (lint, igiene dei file, pip-audit, test su Ubuntu, test su Windows, avvio su Ubuntu, avvio su Windows).
 
 **Se qualcosa è rosso, fermati qui e mandami il log.** Il primo giro è quello che scopre le differenze fra il mio ambiente Linux e i runner veri — in particolare il ramo Windows, che non ho potuto provare.
 
@@ -84,7 +84,7 @@ Il push ha già fatto partire la CI. Vai nella scheda **Actions**: devi vedere `
 **Settings → Branches → Add branch protection rule**, pattern `main`:
 
 - ✅ Require a pull request before merging
-- ✅ Require status checks to pass before merging → cerca e seleziona: `Lint (ruff)`, `Hygiene (file vietati + gitleaks)`, `pip-audit (dipendenze di sviluppo)`, `Test (ubuntu)`, `Avvio app (ubuntu-latest)`, `Avvio app (windows-latest)`
+- ✅ Require status checks to pass before merging → cerca e seleziona: `Lint (ruff)`, `Hygiene (file vietati + gitleaks)`, `pip-audit (dipendenze di sviluppo)`, `Test (ubuntu)`, `Test (windows)`, `Avvio app (ubuntu-latest)`, `Avvio app (windows-latest)`
 
 I nomi compaiono nell'elenco **solo dopo la prima esecuzione**: è per questo che questo passo viene dopo il 4.
 
