@@ -23,7 +23,8 @@ CHECKBOX_RE = re.compile(r'<input type="checkbox" id="s(\d+)">')
 EXPORT_STEP_RE = re.compile(r'<div class="step (?:done|todo)">')
 
 LANGS = ("it", "en")
-PAGES = ("/run/%s", "/episodes/%s", "/session/%s", "/export/%s", "/selftest/%s", "/overlay/%s")
+PAGES = ("/run/%s", "/episodes/%s", "/session/%s", "/export/%s", "/selftest/%s", "/overlay/%s",
+         "/thumb/%s")
 
 
 class RenderTest(harness.ServerTestCase, unittest.TestCase):
@@ -174,6 +175,66 @@ class RenderTest(harness.ServerTestCase, unittest.TestCase):
     def test_zz_no_traceback_reached_stderr(self):
         self.assertEqual(self.server.tracebacks(), [],
                          "il server ha stampato un traceback durante il rendering")
+
+
+class ThumbnailTest(harness.ServerTestCase, unittest.TestCase):
+    """La pagina thumbnail e l'arte delle card in home.
+
+    L'immagine la disegna il browser, quindi qui si verifica cio' che il server
+    puo' garantire: che la pagina esista per ogni run, che porti il canvas e la
+    configurazione, che il numero di trofei nel canvas venga dalla route (la
+    thumbnail non deve poter mentire), e che ogni card della home abbia la sua
+    tela con un run id valido.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        super(ThumbnailTest, cls).setUpClass()
+        cls.routes = {os.path.splitext(f)[0]: harness.load_route(f)
+                      for f in harness.route_files()}
+
+    def tearDown(self):
+        self.server.set_lang("it")
+
+    def test_thumb_page_carries_canvas_and_config_for_every_run(self):
+        for lg in LANGS:
+            self.server.set_lang(lg)
+            for rid, route in sorted(self.routes.items()):
+                with self.subTest(lang=lg, run=rid):
+                    code, html = self.server.get_text("/thumb/%s" % rid)
+                    self.assertEqual(code, 200)
+                    self.assertIn('id="thumbCanvas"', html)
+                    self.assertIn("var CFG = ", html)
+                    self.assertIn('"%s"' % route["trophy_total"], html.split("var CFG = ")[1][:400],
+                                  "il numero di trofei nel canvas non viene dalla route")
+
+    def test_thumb_page_of_unknown_run_is_404(self):
+        code, _ = self.server.get_text("/thumb/questa-run-non-esiste")
+        self.assertEqual(code, 404)
+
+    def test_home_has_one_card_canvas_per_run(self):
+        for lg in LANGS:
+            self.server.set_lang(lg)
+            with self.subTest(lang=lg):
+                code, html = self.server.get_text("/")
+                self.assertEqual(code, 200)
+                found = set(re.findall(r'class="cardart" data-run="([a-z0-9]+)"', html))
+                self.assertEqual(found, set(self.routes),
+                                 "card della home e route non coincidono")
+                self.assertIn("var ART = ", html)
+
+    def test_every_design_icon_exists_in_the_art_js(self):
+        """Un design che nomina un'icona inesistente cadrebbe sul ripiego senza
+        che nessuno se ne accorga: meglio un test rosso."""
+        app, sandbox = harness.import_app_module()
+        try:
+            for rid, design in app.THUMB_DESIGNS.items():
+                with self.subTest(run=rid):
+                    self.assertIn("\n" + design["icon"] + ": function(", app.THUMB_ART_JS,
+                                  "l'icona '%s' non esiste nel JS" % design["icon"])
+            self.assertIn("\ntrophy: function(", app.THUMB_ART_JS)
+        finally:
+            harness.drop_sandbox(sandbox)
 
 
 if __name__ == "__main__":

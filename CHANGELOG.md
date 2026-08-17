@@ -11,6 +11,21 @@ la numerazione segue [Semantic Versioning](https://semver.org/lang/it/).
 
 ## [Non rilasciato]
 
+## [4.2.0] - 2026-08-17
+
+La serie ha una faccia: le thumbnail. E le fa l'app.
+
+### Aggiunto
+- **Thumbnail YouTube dentro l'app.** Nuova scheda 🖼 in modalità streamer:
+  per ogni gioco l'app disegna la miniatura della serie — stessa struttura,
+  icona e colore propri per gioco — con una riga variabile per episodio
+  (es. *LA QUEST DI RANNI*) e il numero di puntata. Si scarica in JPG
+  1280×720, sempre molto sotto il limite di 2 MB di YouTube. L'immagine si
+  disegna nel browser: nessun caricamento, niente esce dal tuo computer, e
+  il numero di trofei viene dalla route — la thumbnail non può mentire.
+- **La home ha cambiato faccia**: le card delle run mostrano l'arte della
+  thumbnail del gioco al posto della vecchia descrizione testuale.
+
 ## [4.1.0] - 2026-08-17
 
 Una funzione sola, ma è quella che serviva: **non devi più aprire un file di testo
