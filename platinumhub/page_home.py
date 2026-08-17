@@ -82,6 +82,12 @@ def render_home():
         p.append("</a>")
     p.append("</div>")
     p.append(f'<div class="hubnote">{t["hubnote"]}</div>')
+    # il catalogo delle route: la lista la riempie il JS da /api/routes/status,
+    # cosi' il check silenzioso dell'avvio e il pulsante condividono la strada
+    p.append(f'<div class="hubnote" id="catBox"><h3>🧭 {t["cat_title"]}</h3>{t["cat_note"]}'
+             f'<div class="btns"><button id="catBtn" onclick="catCheck()">🔎 {t["cat_check"]}</button>'
+             f'<span id="catState" style="font-size:.8em;color:var(--muted)"></span></div>'
+             f'<div id="catList"></div></div>')
     p.append(f'<div class="hubnote"><h3>💾 {t["backup_title"]}</h3>{t["backup_note"]}'
              f'<div class="btns"><a class="btn" href="/api/export">⬇ {t["download_backup"]}</a>'
              f'<button onclick="document.getElementById(\'impf\').click()">⬆ {t["restore_backup"]}</button>'
@@ -115,6 +121,63 @@ document.getElementById('impf').addEventListener('change', function(){
   };
   fr.readAsText(f);
 });
+
+/* ------------------------- catalogo delle route -------------------------
+   All'apertura si legge lo stato del check silenzioso fatto all'avvio: se
+   non c'e' niente (o non c'era rete) il box resta muto, per contratto.
+   Il pulsante rifa' il controllo per davvero e in piu' dice "niente di
+   nuovo" quando e' cosi', perche' a un click si risponde sempre. */
+var CATS = %s;
+function catRow(e){
+  var row = document.createElement('div');
+  row.className = 'btns';
+  row.style.marginTop = '8px';
+  var b = document.createElement('b');
+  b.textContent = e.game;
+  var info = document.createElement('span');
+  info.style.cssText = 'color:var(--muted);font-size:.85em';
+  info.textContent = ' v' + e.version + ' · ' +
+    (e.installed != null ? CATS.upd : CATS.nuova) +
+    (e.steps ? ' · ' + e.steps + ' ' + CATS.steps : '') +
+    (e.trophy_total ? ' · ' + e.trophy_total + ' 🏆' : '');
+  var btn = document.createElement('button');
+  btn.textContent = '⬇ ' + CATS.install;
+  btn.onclick = function(){
+    btn.disabled = true; btn.textContent = CATS.installing;
+    fetch('/api/routes/install', {method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({id: e.id})})
+      .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+      .then(function(){ location.reload(); })
+      .catch(function(){ btn.disabled = false; btn.textContent = CATS.fail; });
+  };
+  row.appendChild(b); row.appendChild(info); row.appendChild(btn);
+  return row;
+}
+function catPaint(av, saidNothing){
+  var list = document.getElementById('catList');
+  list.textContent = '';
+  document.getElementById('catState').textContent =
+    (av.length === 0 && saidNothing) ? CATS.none : '';
+  av.forEach(function(e){ list.appendChild(catRow(e)); });
+}
+function catCheck(){
+  var btn = document.getElementById('catBtn');
+  btn.disabled = true;
+  fetch('/api/routes/check', {method:'POST', headers:{'Content-Type':'application/json'}, body: '{}'})
+    .then(function(r){ return r.json(); })
+    .then(function(j){ btn.disabled = false; catPaint(j.available || [], true); })
+    .catch(function(){ btn.disabled = false; catPaint([], true); });
+}
+fetch('/api/routes/status').then(function(r){ return r.json(); })
+  .then(function(j){ catPaint(j.available || [], false); }).catch(function(){});
 </script></body></html>""" % (json.dumps(T[lg]["confirm_import"]), json.dumps(T[lg]["import_ok"]),
-                              json.dumps(T[lg]["import_bad"])))
+                              json.dumps(T[lg]["import_bad"]),
+                              json.dumps({"install": T[lg]["cat_install"],
+                                          "installing": T[lg]["cat_installing"],
+                                          "nuova": T[lg]["cat_new"],
+                                          "upd": T[lg]["cat_upd"],
+                                          "none": T[lg]["cat_none"],
+                                          "fail": T[lg]["cat_fail"],
+                                          "steps": T[lg]["cat_steps"]},
+                                         ensure_ascii=False)))
     return "\n".join(p)

@@ -12,6 +12,7 @@ import threading
 import urllib.parse
 import webbrowser
 
+from .catalog import CATALOG, check_catalog, install_route
 from .config import (BASE, CUR_PORT, DATA, DB, PORT_START, UPDATE, VERSION,
                      migrate_legacy_db)
 from .hotkeys import (HOTKEYS_DEFAULT, HOTKEY_STATE, get_toast, parse_hotkeys,
@@ -168,6 +169,10 @@ class Handler(http.server.BaseHTTPRequestHandler):
         if path == "/api/pending":
             rid = (q.get("run") or [""])[0]
             return self._json({"cmds": take_cmds(), "run": rid})
+
+        if path == "/api/routes/status":
+            return self._json({"checked": CATALOG["checked"],
+                               "available": CATALOG["available"]})
 
         if path == "/api/version":
             return self._json({"version": VERSION, "latest": UPDATE["latest"],
@@ -346,6 +351,17 @@ class Handler(http.server.BaseHTTPRequestHandler):
             con.commit()
             con.close()
             return self._json({"ok": True})
+
+        if u.path == "/api/routes/check":
+            # il pulsante "Cerca nuove run": stessa strada del check silenzioso,
+            # ma su richiesta esplicita e con la risposta in mano alla pagina
+            check_catalog()
+            return self._json({"checked": CATALOG["checked"],
+                               "available": CATALOG["available"]})
+
+        if u.path == "/api/routes/install":
+            ok, msg = install_route(payload.get("id"))
+            return self._json({"ok": ok, "msg": msg}, 200 if ok else 400)
 
         if u.path == "/api/cmd":
             action = str(payload.get("action") or "").lower()
@@ -549,6 +565,9 @@ def main():
     if moved:
         print("   (progressi della versione precedente importati da %s)" % moved)
     threading.Thread(target=check_update, daemon=True).start()
+    # Anche il catalogo delle route si controlla all'avvio, in silenzio:
+    # se non c'e' rete non compare niente, per contratto.
+    threading.Thread(target=check_catalog, daemon=True).start()
     start_hotkeys(port)
     if HOTKEY_STATE["active"]:
         print("   Scorciatoie globali attive (funzionano anche a gioco aperto):")

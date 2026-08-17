@@ -12,6 +12,7 @@ cosa, e nessuna richiede una release dell'applicazione.
 import hashlib
 import json
 import os
+import re
 import sqlite3
 
 from .config import DATA, DB
@@ -21,6 +22,14 @@ from .config import DATA, DB
 ROUTE_FORMAT = 1
 
 ROUTES = {}
+
+# Vincoli di forma sui valori che finiscono in attributi HTML o in classi CSS:
+# per il bundle sono garanzie dei test, per una route scaricata sono l'unica
+# barriera fra il contenuto remoto e la pagina.
+_SID_RE = re.compile(r"^s\d{3,}$")
+_ACCENT_RE = re.compile(r"^#[0-9a-f]{6}$")
+_GLOW_RE = re.compile(r"^\d{1,3},\d{1,3},\d{1,3}$")
+_TAG_TYPES = {"trophy", "miss", "coll", "build", "quest"}
 
 
 def structure_hash(route):
@@ -61,6 +70,50 @@ def route_ok(d):
             if not isinstance(s.get("sid"), str):
                 return False
     return True
+
+
+def validate_route(d):
+    """Validazione severa per una route che arriva dalla RETE.
+
+    route_ok() e' la rete di sicurezza minima per il bundle (fidato, coperto
+    dai test); questa e' la barriera per il catalogo. Ritorna la lista dei
+    problemi: vuota se la route e' installabile. Ogni valore che finisce in
+    un attributo HTML o in una classe CSS ha qui il suo vincolo di forma.
+    """
+    problems = []
+    if not route_ok(d):
+        return ["struttura di base non valida (meta/fasi/passi)"]
+    meta = d["meta"]
+    if not _ACCENT_RE.match(str(meta.get("accent", ""))):
+        problems.append("meta.accent non e' #rrggbb")
+    if not isinstance(meta.get("order"), int):
+        problems.append("meta.order mancante o non intero")
+    tagline = meta.get("tagline") or {}
+    if not (isinstance(tagline, dict)
+            and str(tagline.get("en", "")).strip() and str(tagline.get("it", "")).strip()):
+        problems.append("meta.tagline incompleta")
+    thumb = meta.get("thumb") or {}
+    if not isinstance(thumb, dict) or not _GLOW_RE.match(str(thumb.get("glow", ""))) \
+            or not isinstance(thumb.get("seed"), int):
+        problems.append("meta.thumb non valido")
+    if not isinstance(d.get("game"), str) or not d["game"].strip():
+        problems.append("titolo del gioco mancante")
+    if not isinstance(d.get("trophy_total"), int):
+        problems.append("trophy_total mancante")
+    if type(d.get("glossary_it")).__name__ != "dict":
+        problems.append("glossary_it non e' un dizionario")
+    sids = []
+    for pi, p in enumerate(d["phases"]):
+        for si, s in enumerate(p["steps"]):
+            if not _SID_RE.match(str(s.get("sid"))):
+                problems.append("fase %d passo %d: sid malformato" % (pi, si))
+            sids.append(s.get("sid"))
+            for tag in s.get("tags") or []:
+                if not isinstance(tag, dict) or tag.get("type") not in _TAG_TYPES:
+                    problems.append("fase %d passo %d: tipo tag non ammesso" % (pi, si))
+    if len(sids) != len(set(sids)):
+        problems.append("sid duplicati")
+    return problems
 
 
 def _routes_table(con):
