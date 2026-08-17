@@ -184,11 +184,13 @@ class AppServer(object):
         self._opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
 
     # ------------------------------------------------------------- ciclo di vita
-    def start(self, sandbox=None, port=None):
+    def start(self, sandbox=None, port=None, env=None):
         """Avvia il server. Passare una sandbox gia' pronta (da make_sandbox)
         permette di pre-seminare un platinum.db, p.es. con lo schema vecchio
-        per collaudare la migrazione."""
+        per collaudare la migrazione. 'env' aggiunge variabili d'ambiente,
+        p.es. PLATINUM_HUB_CATALOG per un catalogo locale di prova."""
         _LIVE_SERVERS.append(self)
+        self._extra_env = dict(env or {})
         if sandbox is None:
             self.sandbox, self.port = make_sandbox()
         else:
@@ -202,6 +204,7 @@ class AppServer(object):
         # toccherebbero i progressi veri dell'utente.
         env["PLATINUM_HUB_DATA"] = self.sandbox
         env["PLATINUM_HUB_NO_UPDATE"] = "1"   # nessuna chiamata di rete nei test
+        env.update(self._extra_env)
         env.pop("http_proxy", None)
         env.pop("https_proxy", None)
         env.pop("HTTP_PROXY", None)

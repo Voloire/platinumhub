@@ -61,6 +61,18 @@ T = {
         "restore_backup": "Restore backup…",
         "import_ok": "Backup restored.",
         "import_bad": "That file is not a valid Platinum Hub backup.",
+        "cat_title": "New runs from the catalog",
+        "cat_note": ("New checklists are published as files, separately from the app: "
+                     "no update needed. Installing takes one click, then everything is "
+                     "local as usual. Your progress is never touched."),
+        "cat_check": "Look for new runs",
+        "cat_none": "Nothing new: you already have everything.",
+        "cat_install": "Install",
+        "cat_installing": "installing…",
+        "cat_new": "new",
+        "cat_upd": "update of the installed one",
+        "cat_fail": "installation failed",
+        "cat_steps": "steps",
         "footer": ('Platinum Hub v%s - by Voloirex' % VERSION + '  · routes verified against PowerPyx, Fextralife, Game8, '
                    'PSNProfiles and community sources, cross-checked by independent fact-checks'),
         "footer_run": ('Checklist v%s - by Voloirex' % VERSION + '  · route verified against PowerPyx, Fextralife, Game8, '
@@ -240,6 +252,18 @@ T = {
         "restore_backup": "Ripristina backup…",
         "import_ok": "Backup ripristinato.",
         "import_bad": "Quel file non è un backup valido di Platinum Hub.",
+        "cat_title": "Nuove run dal catalogo",
+        "cat_note": ("Le checklist nuove vengono pubblicate come file, separate dall'app: "
+                     "nessun aggiornamento necessario. Installare è un click, poi è tutto "
+                     "locale come sempre. I tuoi progressi non vengono mai toccati."),
+        "cat_check": "Cerca nuove run",
+        "cat_none": "Nessuna novità: hai già tutto.",
+        "cat_install": "Installa",
+        "cat_installing": "installo…",
+        "cat_new": "nuova",
+        "cat_upd": "aggiornamento di quella installata",
+        "cat_fail": "installazione fallita",
+        "cat_steps": "passi",
         "footer": ('Platinum Hub v%s - di Voloirex' % VERSION + '  · percorsi verificati su PowerPyx, Fextralife, Game8, PSNProfiles '
                    'e fonti della community, ricontrollati da fact-check indipendenti'),
         "footer_run": ('Checklist v%s - di Voloirex' % VERSION + '  · percorso verificato su PowerPyx, Fextralife, Game8, PSNProfiles '
