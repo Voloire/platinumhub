@@ -11,6 +11,41 @@ la numerazione segue [Semantic Versioning](https://semver.org/lang/it/).
 
 ## [Non rilasciato]
 
+## [5.0.0] - 2026-08-17
+
+Le checklist nuove non richiedono più un aggiornamento dell'app: **si scaricano
+dall'app**, dal [catalogo pubblico](https://github.com/Voloire/platinumhub-routes),
+con un click. E i salvataggi hanno un formato nuovo che rende ogni aggiornamento
+di checklist sicuro per sempre.
+
+### Aggiunto
+- **Il catalogo delle run.** All'avvio l'app controlla in silenzio se ci sono
+  checklist nuove o aggiornate (se non c'è rete, semplicemente non compare
+  nulla). In home, il pulsante **Cerca nuove run** le elenca e le installa con
+  un click: il file viene verificato contro l'impronta SHA256 pubblicata dal
+  catalogo e validato prima di entrare nel database. Da lì in poi è tutto
+  locale, come sempre. Niente si scarica mai da solo.
+- **Aggiornare una checklist non tocca i progressi.** Ogni passo ha un
+  identificatore stabile e ogni spunta è legata a quello, non alla posizione:
+  i passi nuovi arrivano vuoti, quelli spuntati restano spuntati, e un passo
+  rimosso lascia la sua spunta al sicuro nel database.
+
+### Cambiato
+- **Formato dei salvataggi nuovo (per questo è una versione maggiore).** Un
+  `platinum.db` della 3.x o della 4.x viene convertito da solo al primo avvio,
+  senza perdere niente: spunte, marker, episodi e note. La tabella vecchia
+  resta nel file come copia di sicurezza.
+- I backup esportati ora usano il formato nuovo; il ripristino accetta anche
+  i backup delle versioni precedenti.
+- L'applicazione è stata riorganizzata in moduli (era un file solo da 4.000
+  righe). Per chi la usa non cambia nulla; per chi legge il codice, tutto.
+
+### Sicurezza
+- Le route che arrivano dalla rete passano una validazione severa prima di
+  toccare il database, e ogni pagina fa l'escape dei contenuti: una route
+  ostile non si installa, e anche se ci riuscisse non eseguirebbe niente.
+- Induriti il redirect di lingua/modalità e il percorso dei font serviti.
+
 ## [4.2.0] - 2026-08-17
 
 La serie ha una faccia: le thumbnail. E le fa l'app.

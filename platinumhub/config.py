@@ -14,7 +14,7 @@ import sys
 # Va aggiornata A MANO prima di creare il tag -- e se te ne dimentichi il
 # rilascio si ferma prima di compilare, perche' release.yml confronta questa
 # costante con il tag e rifiuta di procedere se divergono.
-VERSION = "4.2.0"
+VERSION = "5.0.0"
 REPO = "Voloire/platinumhub"            # per il controllo aggiornamenti
 RELEASES_API = "https://api.github.com/repos/%s/releases/latest" % REPO
 RELEASES_PAGE = "https://github.com/%s/releases/latest" % REPO
