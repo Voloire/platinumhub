@@ -88,8 +88,18 @@ def load_route(name):
 
 
 def route_step_count(route):
-    """Numero di passi della route: e' la lunghezza della stringa di bit dei progressi."""
+    """Numero di passi della route."""
     return sum(len(p["steps"]) for p in route["phases"])
+
+
+def route_sids(route):
+    """I sid dei passi in ordine di pagina: la chiave dei progressi dal v2."""
+    return [s["sid"] for p in route["phases"] for s in p["steps"]]
+
+
+def sids_of(rid):
+    """Scorciatoia: i sid della run <rid> letti dal suo file JSON."""
+    return route_sids(load_route(rid + ".json"))
 
 
 def make_sandbox(port=None):
@@ -163,9 +173,15 @@ class AppServer(object):
         self._opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
 
     # ------------------------------------------------------------- ciclo di vita
-    def start(self):
+    def start(self, sandbox=None, port=None):
+        """Avvia il server. Passare una sandbox gia' pronta (da make_sandbox)
+        permette di pre-seminare un platinum.db, p.es. con lo schema vecchio
+        per collaudare la migrazione."""
         _LIVE_SERVERS.append(self)
-        self.sandbox, self.port = make_sandbox()
+        if sandbox is None:
+            self.sandbox, self.port = make_sandbox()
+        else:
+            self.sandbox, self.port = sandbox, port
         env = dict(os.environ)
         env["PYTHONUNBUFFERED"] = "1"
         env["PYTHONIOENCODING"] = "utf-8"

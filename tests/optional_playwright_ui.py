@@ -69,7 +69,8 @@ class ChecklistBrowserTest(harness.ServerTestCase, unittest.TestCase):
         self.page.check("#s1")
         self.page.wait_for_timeout(1200)                     # il salvataggio e' differito
         code, res = self.server.get_json("/api/progress?run=kz")
-        self.assertTrue(res["bits"].startswith("1"), "la spunta non e' arrivata al server")
+        self.assertIn(harness.sids_of("kz")[0], res["done"],
+                      "la spunta non e' arrivata al server")
 
     def test_progress_survives_a_reload(self):
         self.page.goto(self.server.url("/run/kz"))
@@ -96,9 +97,11 @@ class ChecklistBrowserTest(harness.ServerTestCase, unittest.TestCase):
         """Esegue davvero chapters() nel browser e legge la textarea prodotta."""
         code, res = self.server.post_json("/api/session/start", {"run": "kz"})
         sid = res["session"]["id"]
+        kz_sids = harness.sids_of("kz")
         for step, tc in enumerate((5, 10, 16, 40, 3700)):
             self.server.post_json("/api/marker", {"run": "kz", "session": sid,
-                                                  "kind": "done", "step": step, "tc": tc})
+                                                  "kind": "done", "sid": kz_sids[step],
+                                                  "tc": tc})
         self.server.post_json("/api/session/update",
                               {"id": sid, "video_url": "https://youtu.be/TEST"})
         self.server.post_json("/api/session/stop", {"id": sid})

@@ -3,12 +3,13 @@
 """
 IL TEST PIU' IMPORTANTE DELLA SUITE.
 
-I progressi di Platinum Hub sono una stringa posizionale di '0' e '1' lunga
-quanto la checklist della route. Non esiste nessun identificativo di passo:
-la posizione E' il passo. Di conseguenza, se un file di data/ perde un campo,
-cambia forma o presenta un numero di elementi diverso fra inglese e italiano,
-i salvataggi si spostano di posizione e si corrompono in silenzio: nessun
-errore a schermo, solo spunte sbagliate.
+I progressi di Platinum Hub sono salvati PER SID: ogni passo porta un
+identificativo stabile e ogni spunta e' una riga (run_id, sid) nel database.
+Il sid e' quindi il punto piu' delicato dei dati: un sid mancante e' un passo
+che non si puo' spuntare, un sid duplicato e' due passi che scrivono sulla
+stessa riga, un sid RIASSEGNATO e' il progresso di un utente attribuito al
+passo sbagliato. E il blocco meta e' cio' che rendera' le route distribuibili
+come file: un meta rotto e' una card rotta in home per chi la scarica.
 
 Questi test confrontano OGNI file di data/ con la forma della route di
 riferimento (kz.json) e con gli invarianti che l'app da' per scontati.

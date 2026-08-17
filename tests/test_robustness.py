@@ -48,7 +48,8 @@ class RobustnessTest(harness.ServerTestCase, unittest.TestCase):
                 self.assertIn(code, (400, 404), "%s ha risposto %d al corpo vuoto" % (path, code))
 
     def test_body_with_wrong_content_type_is_still_parsed(self):
-        code, _, _ = self.server.post_raw("/api/progress", json.dumps({"run": "kz", "bits": "1"}),
+        code, _, _ = self.server.post_raw("/api/progress",
+                                          json.dumps({"run": "kz", "done": []}),
                                           ctype="text/plain")
         self.assertEqual(code, 200)
 
@@ -56,7 +57,7 @@ class RobustnessTest(harness.ServerTestCase, unittest.TestCase):
         for path in RUN_POST_ENDPOINTS:
             for rid in ("", "nope", "../../etc/passwd", "kz ", "KZ", None, 5):
                 with self.subTest(path=path, run=repr(rid)):
-                    code, _ = self.server.post_json(path, {"run": rid, "bits": "1", "body": "x"})
+                    code, _ = self.server.post_json(path, {"run": rid, "done": [], "body": "x"})
                     self.assertEqual(code, 404, "%s con run=%r ha risposto %d" % (path, rid, code))
 
     def test_unknown_get_endpoints_are_404(self):
@@ -163,14 +164,12 @@ class RobustnessTest(harness.ServerTestCase, unittest.TestCase):
         self.assertEqual(len(results), 20)
         self.assertTrue(all(r == 200 for r in results), "risposte anomale: %s" % set(results))
 
-    def test_parallel_progress_writes_keep_the_string_length(self):
-        code, res = self.server.get_json("/api/progress?run=sb")
-        n = res["total"]
+    def test_parallel_progress_writes_leave_a_consistent_state(self):
+        sids = harness.sids_of("sb")
 
         def write(i):
-            bits = ("1" * (i + 1)).ljust(n, "0")
             try:
-                self.server.post_json("/api/progress", {"run": "sb", "bits": bits})
+                self.server.post_json("/api/progress", {"run": "sb", "done": sids[:i + 1]})
             except Exception:
                 pass
 
@@ -180,8 +179,13 @@ class RobustnessTest(harness.ServerTestCase, unittest.TestCase):
         for t in threads:
             t.join(timeout=30)
         code, res = self.server.get_json("/api/progress?run=sb")
-        self.assertEqual(len(res["bits"]), n, "la stringa dei progressi ha cambiato lunghezza")
-        self.assertTrue(all(c in "01" for c in res["bits"]))
+        self.assertEqual(code, 200)
+        # lo stato finale e' quello di UNO dei writer, mai un ibrido corrotto:
+        # l'insieme deve essere un prefisso della lista dei sid
+        got = set(res["done"])
+        self.assertIn(len(got), range(1, 11))
+        self.assertEqual(got, set(sids[:len(got)]),
+                         "lo stato salvato non corrisponde a nessuna delle scritture")
 
     # -------------------------------------------------------------- verifica
     def test_zz_no_traceback_reached_stderr(self):
@@ -210,6 +214,11 @@ class PortSelectionTest(unittest.TestCase):
         env = dict(os.environ)
         env["PYTHONUNBUFFERED"] = "1"
         env["BROWSER"] = "/bin/true"
+        # Senza questa riga l'app aprirebbe il database REALE dell'utente in
+        # %LOCALAPPDATA%: e' gia' successo (la migrazione di schema e' partita
+        # sul db vero durante i test). La sandbox e' obbligatoria, sempre.
+        env["PLATINUM_HUB_DATA"] = sandbox
+        env["PLATINUM_HUB_NO_UPDATE"] = "1"
         proc = subprocess.Popen([sys.executable, "-u", os.path.join(sandbox, "app.py")],
                                 cwd=sandbox, env=env, stdin=subprocess.DEVNULL,
                                 stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -276,15 +285,16 @@ class FixedInV4Test(harness.ServerTestCase, unittest.TestCase):
         """
         code, res = self.server.post_json("/api/session/start", {"run": "kz"})
         sid = res["session"]["id"]
+        kz = harness.sids_of("kz")
         cases = [("/api/session/stop", {"id": "abc"}),
                  ("/api/session/update", {"id": sid, "video_offset": "abc"}),
                  ("/api/session/delete", {"id": "abc"}),
                  ("/api/marker", {"run": "kz", "session": sid, "kind": "done",
-                                  "step": "abc", "tc": 1}),
+                                  "sid": 123, "tc": 1}),
                  ("/api/marker", {"run": "kz", "session": sid, "kind": "done",
-                                  "step": 1, "tc": "abc"}),
-                 ("/api/marker/delete", {"session": "abc", "step": 1}),
-                 ("/api/current", {"run": "kz", "step": "abc"})]
+                                  "sid": kz[1], "tc": "abc"}),
+                 ("/api/marker/delete", {"session": "abc", "sid": kz[1]}),
+                 ("/api/current", {"run": "kz", "sid": 42})]
         for path, payload in cases:
             code, _ = self.server.post_json(path, payload)
             self.assertEqual(code, 400, "%s con %r ha risposto %s" % (path, payload, code))
@@ -306,10 +316,12 @@ class FixedInV4Test(harness.ServerTestCase, unittest.TestCase):
         self.server.post_json("/api/run/reset", {"run": "bor"})
         code, res = self.server.post_json("/api/session/start", {"run": "bor"})
         sid = res["session"]["id"]
+        # sid ben formato ma assente dalla route: e' l'orfano che nasce da solo
+        # quando un aggiornamento toglie un passo
         self.server.post_json("/api/marker", {"run": "bor", "session": sid,
-                                              "kind": "done", "step": 99999, "tc": 10})
+                                              "kind": "done", "sid": "s999999", "tc": 10})
         code, html = self.server.get_text("/episodes/bor")
-        self.assertEqual(code, 200, "la pagina episodi non sopravvive a un marker fuori range")
+        self.assertEqual(code, 200, "la pagina episodi non sopravvive a un marker orfano")
 
 
 if __name__ == "__main__":

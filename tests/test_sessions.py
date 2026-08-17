@@ -125,7 +125,8 @@ class SessionLifecycleTest(harness.ServerTestCase, unittest.TestCase):
         code, res = self.server.post_json("/api/session/start", {"run": self.RUN})
         sid = res["session"]["id"]
         self.server.post_json("/api/marker", {"run": self.RUN, "session": sid,
-                                              "kind": "done", "step": 0, "tc": 10})
+                                              "kind": "done",
+                                              "sid": harness.sids_of(self.RUN)[0], "tc": 10})
         code, _ = self.server.post_json("/api/session/delete", {"id": sid})
         self.assertEqual(code, 200)
         code, eps = self.server.get_json("/api/episodes?run=%s" % self.RUN)
@@ -144,38 +145,40 @@ class SessionLifecycleTest(harness.ServerTestCase, unittest.TestCase):
 
 
 class MarkerTest(harness.ServerTestCase, unittest.TestCase):
-    """Scrittura dei marker e loro validazione."""
+    """Scrittura dei marker e loro validazione. Dal v2 i marker puntano al sid del passo."""
 
     RUN = "n3"
 
     def setUp(self):
         self.server.post_json("/api/run/reset", {"run": self.RUN})
         code, res = self.server.post_json("/api/session/start", {"run": self.RUN, "lead": 0})
-        self.sid = res["session"]["id"]
+        self.ses = res["session"]["id"]
+        self.sids = harness.sids_of(self.RUN)
 
     def test_markers_are_returned_ordered_by_timecode(self):
         for tc in (90.0, 12.0, 45.5, 3.0):
             code, _ = self.server.post_json("/api/marker", {
-                "run": self.RUN, "session": self.sid, "kind": "done",
-                "step": int(tc) % 20, "tc": tc})
+                "run": self.RUN, "session": self.ses, "kind": "done",
+                "sid": self.sids[int(tc) % 20], "tc": tc})
             self.assertEqual(code, 200)
         code, eps = self.server.get_json("/api/episodes?run=%s" % self.RUN)
         tcs = [m["tc"] for m in eps[0]["markers"]]
         self.assertEqual(tcs, sorted(tcs), "i marker non arrivano in ordine di tempo")
 
     def test_re_marking_the_same_step_replaces_the_previous_marker(self):
-        self.server.post_json("/api/marker", {"run": self.RUN, "session": self.sid,
-                                              "kind": "done", "step": 5, "tc": 10})
-        self.server.post_json("/api/marker", {"run": self.RUN, "session": self.sid,
-                                              "kind": "done", "step": 5, "tc": 99})
+        self.server.post_json("/api/marker", {"run": self.RUN, "session": self.ses,
+                                              "kind": "done", "sid": self.sids[5], "tc": 10})
+        self.server.post_json("/api/marker", {"run": self.RUN, "session": self.ses,
+                                              "kind": "done", "sid": self.sids[5], "tc": 99})
         code, eps = self.server.get_json("/api/episodes?run=%s" % self.RUN)
-        same = [m for m in eps[0]["markers"] if m["step"] == 5 and m["kind"] == "done"]
+        same = [m for m in eps[0]["markers"]
+                if m["sid"] == self.sids[5] and m["kind"] == "done"]
         self.assertEqual(len(same), 1, "marker duplicato per lo stesso passo")
         self.assertEqual(same[0]["tc"], 99)
 
     def test_free_marker_keeps_its_note(self):
         code, _ = self.server.post_json("/api/marker", {
-            "run": self.RUN, "session": self.sid, "kind": "free", "tc": 33.0,
+            "run": self.RUN, "session": self.ses, "kind": "free", "tc": 33.0,
             "note": "morte stupida"})
         self.assertEqual(code, 200)
         code, eps = self.server.get_json("/api/episodes?run=%s" % self.RUN)
@@ -184,26 +187,37 @@ class MarkerTest(harness.ServerTestCase, unittest.TestCase):
         self.assertEqual(free[0]["note"], "morte stupida")
 
     def test_marker_delete_removes_the_step(self):
-        self.server.post_json("/api/marker", {"run": self.RUN, "session": self.sid,
-                                              "kind": "done", "step": 2, "tc": 7})
-        code, _ = self.server.post_json("/api/marker/delete", {"session": self.sid, "step": 2})
+        self.server.post_json("/api/marker", {"run": self.RUN, "session": self.ses,
+                                              "kind": "done", "sid": self.sids[2], "tc": 7})
+        code, _ = self.server.post_json("/api/marker/delete",
+                                        {"session": self.ses, "sid": self.sids[2]})
         self.assertEqual(code, 200)
         code, eps = self.server.get_json("/api/episodes?run=%s" % self.RUN)
-        self.assertEqual([m for m in eps[0]["markers"] if m["step"] == 2], [])
+        self.assertEqual([m for m in eps[0]["markers"] if m["sid"] == self.sids[2]], [])
 
     def test_bad_kind_is_rejected(self):
         code, res = self.server.post_json("/api/marker", {
-            "run": self.RUN, "session": self.sid, "kind": "banana", "step": 1, "tc": 1})
+            "run": self.RUN, "session": self.ses, "kind": "banana",
+            "sid": self.sids[1], "tc": 1})
         self.assertEqual(code, 400)
+
+    def test_malformed_sid_is_rejected(self):
+        for bad in ("banana", "s1", 7, ""):
+            with self.subTest(sid=repr(bad)):
+                code, _ = self.server.post_json("/api/marker", {
+                    "run": self.RUN, "session": self.ses, "kind": "done",
+                    "sid": bad, "tc": 1})
+                self.assertEqual(code, 400)
 
     def test_marker_without_session_is_rejected(self):
         code, res = self.server.post_json("/api/marker", {
-            "run": self.RUN, "kind": "done", "step": 1, "tc": 1})
+            "run": self.RUN, "kind": "done", "sid": self.sids[1], "tc": 1})
         self.assertEqual(code, 400)
 
     def test_marker_on_unknown_run_is_404(self):
         code, res = self.server.post_json("/api/marker", {
-            "run": "nope", "session": self.sid, "kind": "done", "step": 1, "tc": 1})
+            "run": "nope", "session": self.ses, "kind": "done",
+            "sid": self.sids[1], "tc": 1})
         self.assertEqual(code, 404)
 
 
@@ -228,9 +242,10 @@ class YoutubeChaptersTest(harness.ServerTestCase, unittest.TestCase):
         self.server.post_json("/api/run/reset", {"run": self.RUN})
         code, res = self.server.post_json("/api/session/start", {"run": self.RUN, "lead": lead})
         sid = res["session"]["id"]
+        sids = harness.sids_of(self.RUN)
         for step, tc in enumerate(timecodes):
             self.server.post_json("/api/marker", {"run": self.RUN, "session": sid,
-                                                  "kind": "done", "step": step, "tc": tc})
+                                                  "kind": "done", "sid": sids[step], "tc": tc})
         # lead viene riscritto qui: /api/session/start tratta lead=0 come "non indicato"
         # e ricade sul valore di default (15).
         self.server.post_json("/api/session/update", {
