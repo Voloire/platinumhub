@@ -347,15 +347,27 @@ class SandboxIsolationTest(harness.ServerTestCase, unittest.TestCase):
     """
     Guardia sulla regola piu' importante della suite: i test non devono
     scrivere niente nella cartella reale dell'applicazione.
+
+    I confronti fra percorsi passano tutti da _norm(). Su Windows la cartella
+    temporanea puo' arrivare in forma 8.3 (C:\\Users\\RUNNER~1\\...) mentre
+    realpath() restituisce la forma lunga (C:\\Users\\runneradmin\\...): due
+    nomi dello stesso posto, che uno startswith fra stringhe grezze giudica
+    diversi. E' cosi' che questi test fallivano solo sul runner Windows.
     """
+
+    @staticmethod
+    def _norm(path):
+        return os.path.normcase(os.path.realpath(path))
 
     def test_the_database_lives_in_the_sandbox(self):
         self.server.post_json("/api/progress", {"run": "kz", "bits": "1"})
         self.assertTrue(os.path.isfile(self.server.db_path()),
                         "il database della sandbox non e' stato creato")
-        self.assertTrue(self.server.db_path().startswith(os.path.realpath(
-            os.path.dirname(self.server.db_path()))))
-        self.assertNotEqual(os.path.dirname(self.server.db_path()), harness.APP_DIR)
+        db = self._norm(self.server.db_path())
+        self.assertTrue(db.startswith(self._norm(self.server.sandbox)),
+                        "il database e' fuori dalla sandbox: %s" % db)
+        self.assertFalse(db.startswith(self._norm(harness.APP_DIR)),
+                         "il database e' dentro la cartella reale dell'app: %s" % db)
 
     def test_the_real_database_is_never_created_or_touched(self):
         real_db = os.path.join(harness.APP_DIR, "platinum.db")
@@ -370,7 +382,7 @@ class SandboxIsolationTest(harness.ServerTestCase, unittest.TestCase):
         code, res = self.server.post_json("/api/selftest", {"text": "riga di prova"})
         self.assertEqual(code, 200)
         self.assertTrue(res["ok"])
-        self.assertTrue(res["path"].startswith(self.server.sandbox),
+        self.assertTrue(self._norm(res["path"]).startswith(self._norm(self.server.sandbox)),
                         "diagnostica.txt scritta fuori dalla sandbox: %s" % res["path"])
         self.assertFalse(os.path.exists(os.path.join(harness.APP_DIR, "diagnostica.txt")),
                          "diagnostica.txt e' finita nella cartella reale dell'app")
