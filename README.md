@@ -6,6 +6,8 @@ Platinum Hub è l'app che tiene il filo al posto tuo: dieci run platino verifica
 
 Gira sul tuo PC. Non chiede un account, non manda niente a nessuno, non ha pubblicità. È gratis.
 
+**→ [voloire.github.io/platinumhub](https://voloire.github.io/platinumhub/)** — la pagina di presentazione, se ti serve un link da condividere.
+
 <p align="center">
   <img src="docs/img/hub-home.jpg" alt="La pagina principale con le dieci run" width="820">
 </p>
