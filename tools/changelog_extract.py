@@ -79,7 +79,23 @@ def main(argv=None) -> int:
     with open(args.file, encoding="utf-8") as fh:
         body = fh.read()
 
-    sys.stdout.write(extract(body, args.version) + "\n")
+    # Si scrive UTF-8 e basta, senza fidarsi del default della piattaforma.
+    #
+    # Su Windows -- che e' il sistema su cui gira il rilascio -- stdout usa
+    # cp1252 se nessuno dice il contrario, e cp1252 non sa rappresentare un
+    # emoji: la prima riga di changelog con un simbolo fuori tabella faceva
+    # morire il rilascio con UnicodeEncodeError. E' successo davvero con la
+    # 4.1.0, su un carattere solo.
+    #
+    # La destinazione e' `gh release create --notes-file`, cioe' UTF-8: scriverlo
+    # in un'altra codifica sarebbe sbagliato comunque, non solo su Windows.
+    text = (extract(body, args.version) + "\n").encode("utf-8")
+    out = getattr(sys.stdout, "buffer", None)
+    if out is None:                      # stdout sostituito (test, cattura in processo)
+        sys.stdout.write(text.decode("utf-8"))
+    else:
+        out.write(text)
+        out.flush()
     return 0
 
 
