@@ -1,4 +1,30 @@
 {
+ "meta": {
+  "id": "kz",
+  "format": 1,
+  "version": 1,
+  "accent": "#6aa8a0",
+  "tagline": {
+   "en": "Greatsword Khazan - true ending gates handled",
+   "it": "Khazan con spadone - i gate del finale vero gestiti"
+  },
+  "thumb": {
+   "icon": "slashes",
+   "glow": "105,25,25",
+   "seed": 14,
+   "stats": [
+    [
+     "1",
+     "RUN"
+    ],
+    [
+     "",
+     "EXPERT"
+    ]
+   ],
+   "tag": null
+  }
+ },
  "game": "The First Berserker: Khazan",
  "prefix": "KZ",
  "playthroughs": "1 full run on the higher difficulty (launch 'Normal' = current 'Expert') + a save-backup re-kill of the final boss on the lower difficulty + starting NG+ (A New Path). No full second playthrough needed.",
@@ -107,7 +133,8 @@
      ],
      "trophy": false,
      "text_it": "Seleziona la difficoltà più alta ('Normal' al lancio, oggi 'Expert'). Puoi abbassarla in seguito ma non potrai mai alzarla — e abbassarla invalida Viaggio dell'esperto (The Expert's Journey) per questa run.",
-     "loc_it": "Inizio partita — selezione difficoltà"
+     "loc_it": "Inizio partita — selezione difficoltà",
+     "sid": "s001"
     },
     {
      "text": "Banished Hero: learn guard & Brink Guard (perfect block). Throw a javelin (Piercing Power), use a consumable (Combat Essentials), then kill Yetuga — Ruler of the Frozen Mountain.",
@@ -121,7 +148,8 @@
      ],
      "trophy": true,
      "text_it": "Banished Hero: impara la guardia e il Brink Guard (parata perfetta). Lancia un giavellotto (trofeo Potere perforante / Piercing Power), usa un consumabile (Fondamenti di combattimento / Combat Essentials), poi uccidi Yetuga — Sovrano del monte glaciale (Ruler of the Frozen Mountain).",
-     "loc_it": "Banished Hero — Charnak Mountain Range"
+     "loc_it": "Banished Hero — Charnak Mountain Range",
+     "sid": "s002"
     },
     {
      "text": "Commit to the Greatsword as your run identity: tanky brink-guard playstyle. Learn your first skill (Skilled Combatant); grab Armor Breaker in the guard branch first.",
@@ -140,7 +168,8 @@
      ],
      "trophy": true,
      "text_it": "Scegli lo Spadone (Greatsword) come identità della run: stile tank basato sul brink guard. Impara la tua prima abilità (Abile combattente / Skilled Combatant); nel ramo Guardia prendi per prima Distruttore di Armature (Armor Breaker).",
-     "loc_it": "Menu abilità — albero Spadone"
+     "loc_it": "Menu abilità — albero Spadone",
+     "sid": "s003"
     },
     {
      "text": "Spend Lacrima on a stat at any Blade Nexus (Upgrade Stats trophy). Opening split: Endurance > Vitality > Strength — guarding costs stamina, so END is literally your shield.",
@@ -159,7 +188,8 @@
      ],
      "trophy": true,
      "text_it": "Spendi Stille (Lacrima) su una statistica a un qualsiasi Blade Nexus (Blade Nexus) per il trofeo Potenziamento valori (Upgrade Stats). Distribuzione iniziale: Endurance > Vitality > Strength — tenere la guardia costa stamina, quindi END è letteralmente il tuo scudo.",
-     "loc_it": "Un qualsiasi Blade Nexus"
+     "loc_it": "Un qualsiasi Blade Nexus",
+     "sid": "s004"
     },
     {
      "text": "Trials of the Frozen Mountain: the Blade Phantom swaps weapons mid-string — your Brink Guard tutorial exam. Kill him (Combative Phantom of the Netherworld); the Pact trophy follows in story.",
@@ -173,7 +203,8 @@
      ],
      "trophy": true,
      "text_it": "Trials of the Frozen Mountain: lo Spettro della Lama (Blade Phantom) cambia arma a metà combo — è il tuo esame sul Brink Guard. Uccidilo (Spettro guerriero degli Inferi); il trofeo Patto (Pact) arriva con la storia.",
-     "loc_it": "Trials of the Frozen Mountain — Stormpass"
+     "loc_it": "Trials of the Frozen Mountain — Stormpass",
+     "sid": "s005"
     },
     {
      "text": "Organic trophies: die and reclaim your Lacrima (Tears of the Soul), kill with a breakfall attack (Ambush), Brutal Attack a stamina-broken elite (Finishing Strike).",
@@ -187,7 +218,8 @@
      ],
      "trophy": true,
      "text_it": "Trofei che arrivano da soli: muori e recupera le tue Stille (Lacrime dell'anima / Tears of the Soul), uccidi con uno schianto verticale (Imboscata / Ambush), esegui un Attacco Brutale su un'élite con la stamina spezzata (Colpo di grazia / Finishing Strike).",
-     "loc_it": "Qualsiasi missione di Charnak"
+     "loc_it": "Qualsiasi missione di Charnak",
+     "sid": "s006"
     },
     {
      "text": "Reach the Crevice hub. Equip gear in every slot for Fully Equipped. NEVER touch the golden Spirit of Advocacy sign at boss doors — Standing Alone tracks the whole run.",
@@ -206,7 +238,8 @@
      ],
      "trophy": true,
      "text_it": "Raggiungi l'hub The Crevice. Equipaggia un pezzo in ogni slot per Equipaggiamento completo (Fully Equipped). Non toccare MAI il segno dorato dello spirito di sostegno (Spirit of Advocacy) alle porte dei boss — In solitaria (Standing Alone) tiene conto dell'intera run.",
-     "loc_it": "The Crevice (hub)"
+     "loc_it": "The Crevice (hub)",
+     "sid": "s007"
     }
    ],
    "title_it": "Fase 1 — Charnak Ascent: preparazione e fondamentali della guardia",
@@ -233,7 +266,8 @@
      ],
      "trophy": true,
      "text_it": "Forgotten Temple: Viper è il primo grande muro. Blocca in guardia le combo della sua glaive, esegui il Brink Guard sui caricamenti prima della trasformazione in progenie di drago, punisci le aperture quando resta senza stamina.",
-     "loc_it": "Forgotten Temple"
+     "loc_it": "Forgotten Temple",
+     "sid": "s008"
     },
     {
      "text": "Bonus missions unlock after main missions. Clear ALL of them across the run — Countless Tales needs every one (24), and two are true-ending requirements.",
@@ -252,7 +286,8 @@
      ],
      "trophy": false,
      "text_it": "Le missioni bonus si sbloccano dopo le missioni principali. Completale TUTTE nel corso della run — Infiniti racconti (Countless Tales) le richiede tutte (24), e due sono requisiti per il vero finale.",
-     "loc_it": "The Crevice — bacheca delle missioni"
+     "loc_it": "The Crevice — bacheca delle missioni",
+     "sid": "s009"
     },
     {
      "text": "Blacksmith's Heirloom bonus mission: beat Bearius and recruit Qazumaka. Craft any gear (Skilled Blacksmith) and dismantle junk (Blacksmith's Resolve).",
@@ -271,7 +306,8 @@
      ],
      "trophy": true,
      "text_it": "Missione bonus Blacksmith's Heirloom: batti Bearius e recluta Qazumaka. Forgia un equipaggiamento qualsiasi (Mastro della fucina / Skilled Blacksmith) e smantella la robaccia (Fabbro determinato / Blacksmith's Resolve).",
-     "loc_it": "Bonus: Blacksmith's Heirloom → The Crevice"
+     "loc_it": "Bonus: Blacksmith's Heirloom → The Crevice",
+     "sid": "s010"
     },
     {
      "text": "Do Jar Enthusiasts NOW: the 44 Jarlings only spawn in missions after completing it. Smash your first Jarling for Danjin's Jars; collect the rest as you go.",
@@ -295,7 +331,8 @@
      ],
      "trophy": true,
      "text_it": "Fai Jar Enthusiasts ORA: i 44 vasi di Danjin (Jarlings) compaiono solo nelle missioni successive al suo completamento. Rompi il tuo primo vaso per Vasi di Danjin (Danjin's Jars); raccogli gli altri strada facendo.",
-     "loc_it": "Bonus: Jar Enthusiasts"
+     "loc_it": "Bonus: Jar Enthusiasts",
+     "sid": "s011"
     },
     {
      "text": "Crevice services: buy and sell with Duimuk (Resourceful Merchant, Merchant's Wisdom); at Oksana alter a gear attribute (Kaleido) and extract Lacrima from spare gear (Remnants of the Soul).",
@@ -309,7 +346,8 @@
      ],
      "trophy": true,
      "text_it": "Servizi della Crevice: compra e vendi da Duimuk (Mercante intraprendente, Saggezza da mercante); da Oksana altera un attributo dell'equipaggiamento (Iridescenza / Kaleido) ed estrai Stille dall'equipaggiamento superfluo (Vestigi dell'anima / Remnants of the Soul).",
-     "loc_it": "The Crevice — Duimuk e Oksana"
+     "loc_it": "The Crevice — Duimuk e Oksana",
+     "sid": "s012"
     },
     {
      "text": "First Act of Revenge: Volbaino floods the arena with lava — change platform levels on the AOE, guard the hammer slams.",
@@ -323,7 +361,8 @@
      ],
      "trophy": true,
      "text_it": "First Act of Revenge: Volbaino inonda l'arena di lava — cambia livello sulle piattaforme quando parte l'AOE e blocca in guardia le martellate.",
-     "loc_it": "First Act of Revenge — Phraugh"
+     "loc_it": "First Act of Revenge — Phraugh",
+     "sid": "s013"
     },
     {
      "text": "Strange Stench: Aratra — break the poisoned limbs to shrink its threat range. Underleveled? Farm the giant spider at the Poisoned Depths nexus: ~1,960 Lacrima per ~30s loop.",
@@ -342,7 +381,8 @@
      ],
      "trophy": true,
      "text_it": "Strange Stench: Aratra — distruggi gli arti avvelenati per ridurne la portata. Sottolivellato? Farma il ragno gigante al nexus di Poisoned Depths: ~1,960 Stille ogni ciclo di ~30s.",
-     "loc_it": "Strange Stench — Skoffa Cave / Blade Nexus di Poisoned Depths"
+     "loc_it": "Strange Stench — Skoffa Cave / Blade Nexus di Poisoned Depths",
+     "sid": "s014"
     },
     {
      "text": "Skills: take Savage Momentum (charged swift attacks) and Helm Break; in the universal tree grab Reflection (guard counter) and Brutal Attack upgrades — the guard-tank core.",
@@ -356,7 +396,8 @@
      ],
      "trophy": false,
      "text_it": "Abilità: prendi Slancio Selvaggio (Savage Momentum, attacchi rapidi caricati) e Spaccare Elmo (Helm Break); nell'albero delle Abilità Comuni prendi Riflessione (Reflection, il contrattacco in guardia) e i potenziamenti di Attacco Brutale (Brutal Attack) — il cuore del guard tank.",
-     "loc_it": "Menu abilità — alberi Spadone + Abilità Comuni"
+     "loc_it": "Menu abilità — alberi Spadone + Abilità Comuni",
+     "sid": "s015"
     },
     {
      "text": "Start destroying Soulstones in every mission (100 total for Agent of the Netherworld). Use the netherworld power they grant (Soulstone Unleashed) and wake a dormant ghost (Awakened Ghost).",
@@ -375,7 +416,8 @@
      ],
      "trophy": true,
      "text_it": "Inizia a distruggere Pietranime (Soulstones) in ogni missione (100 in totale per Emissario degli Inferi / Agent of the Netherworld). Usa il potere degli Inferi che concedono (Pietranima liberata / Soulstone Unleashed) e sveglia un fantasma dormiente (Risveglio del fantasma / Awakened Ghost).",
-     "loc_it": "Tutte le missioni — Pietranime"
+     "loc_it": "Tutte le missioni — Pietranime",
+     "sid": "s016"
     }
    ],
    "title_it": "Fase 2 — Charnak Revenge: il muro Viper e l'economia della Crevice",
@@ -397,7 +439,8 @@
      ],
      "trophy": true,
      "text_it": "Traitor Revealed: Rangkus (ibrido mazza/balestra) recupera stamina in fretta — stagli incollato addosso e mantieni la pressione tra una guardia e l'altra.",
-     "loc_it": "Traitor Revealed — Palemion Citadel"
+     "loc_it": "Traitor Revealed — Palemion Citadel",
+     "sid": "s017"
     },
     {
      "text": "Stormpass' Phantom of Combat bonus: Keshta the Unyielding is the community's favorite repeat farm — ~4,320 Lacrima per kill plus set gear and skill points.",
@@ -416,7 +459,8 @@
      ],
      "trophy": false,
      "text_it": "Missione bonus Stormpass' Phantom of Combat: Keshta the Unyielding è il farm ripetibile preferito dalla community — ~4,320 Stille a uccisione, più pezzi di set e punti abilità.",
-     "loc_it": "Bonus: Stormpass' Phantom of Combat"
+     "loc_it": "Bonus: Stormpass' Phantom of Combat",
+     "sid": "s018"
     },
     {
      "text": "Clear Night of Tragedy (Specter of Bhangau) and the other new bonus missions; sweep their Soulstones and Jarlings while you're there.",
@@ -435,7 +479,8 @@
      ],
      "trophy": false,
      "text_it": "Completa Night of Tragedy (Specter of Bhangau) e le altre nuove missioni bonus; già che ci sei, raccogli le loro Pietranime e i loro vasi di Danjin.",
-     "loc_it": "Bonus: Night of Tragedy"
+     "loc_it": "Bonus: Night of Tragedy",
+     "sid": "s019"
     },
     {
      "text": "Craft a defensive set from Scrolls at Qazumaka — the Cleric set (guard stamina reduction + stamina up) fits the guard tank perfectly. Special Scroll and Artisanship pop from scroll crafting.",
@@ -454,7 +499,8 @@
      ],
      "trophy": true,
      "text_it": "Forgia un set difensivo dalle pergamene da Qazumaka — il set Cleric (riduzione della stamina consumata in guardia + stamina aumentata) calza a pennello al guard tank. Pergamena speciale (Special Scroll) e Artigianato (Artisanship) scattano creando dalle pergamene.",
-     "loc_it": "The Crevice — creazione da Qazumaka"
+     "loc_it": "The Crevice — creazione da Qazumaka",
+     "sid": "s020"
     },
     {
      "text": "Veiled Knives: Maluca transforms into a chaos form in phase 2 — respect the new strings, punish his stamina-recovery windows.",
@@ -468,7 +514,8 @@
      ],
      "trophy": true,
      "text_it": "Veiled Knives: nella fase 2 Maluca si trasforma in una forma caotica — rispetta le nuove combo, punisci le finestre in cui recupera stamina.",
-     "loc_it": "Veiled Knives — Throne of the Veil"
+     "loc_it": "Veiled Knives — Throne of the Veil",
+     "sid": "s021"
     },
     {
      "text": "Use gear inheritance at the blacksmith to carry good attributes onto higher-level pieces (Indomitable). Rarity: Common→Uncommon→Rare→Unique→Epic (Epic = 3 random + 1 fixed bonus).",
@@ -487,7 +534,8 @@
      ],
      "trophy": true,
      "text_it": "Usa l'ereditarietà dell'equipaggiamento dal fabbro per trasferire i buoni attributi su pezzi di livello più alto (Indomito / Indomitable). Rarità: Common→Uncommon→Rare→Unique→Epic (Epic = 3 bonus casuali + 1 fisso).",
-     "loc_it": "The Crevice — Qazumaka"
+     "loc_it": "The Crevice — Qazumaka",
+     "sid": "s022"
     },
     {
      "text": "Stat checkpoint: ~END 20 / VIT 15 / STR 18. If Maluca breaks your guard constantly, buy 3-4 more END levels off a Keshta farm session.",
@@ -501,7 +549,8 @@
      ],
      "trophy": false,
      "text_it": "Checkpoint statistiche: ~END 20 / VIT 15 / STR 18. Se Maluca ti rompe la guardia di continuo, comprati 3-4 livelli di END in più con una sessione di farming su Keshta.",
-     "loc_it": "Blade Nexus — distribuzione statistiche"
+     "loc_it": "Blade Nexus — distribuzione statistiche",
+     "sid": "s023"
     }
    ],
    "title_it": "Fase 3 — Pell Los Plateau I: la cittadella e il Velo",
@@ -523,7 +572,8 @@
      ],
      "trophy": true,
      "text_it": "Devoured Village: Elamein, il protettore caduto di Phraugh — uno scontro paziente da contrattacchi in guardia; non fare l'ingordo oltre i due colpi di punizione.",
-     "loc_it": "Devoured Village"
+     "loc_it": "Devoured Village",
+     "sid": "s024"
     },
     {
      "text": "Escaping Linon Mine bonus: rescue your wrongfully accused subordinates (Desperate Escape) and beat Yeturak. Follow-up mine missions hold more collectibles.",
@@ -542,7 +592,8 @@
      ],
      "trophy": true,
      "text_it": "Missione bonus Escaping Linon Mine: salva i tuoi seguaci accusati ingiustamente (Fuga precipitosa / Desperate Escape) e batti Yeturak. Le missioni successive nella miniera contengono altri collezionabili.",
-     "loc_it": "Bonus: Escaping Linon Mine"
+     "loc_it": "Bonus: Escaping Linon Mine",
+     "sid": "s025"
     },
     {
      "text": "Human Xilence bonus chain: defeat Xaldin, then let Xilence find peace for the Human Xilence trophy.",
@@ -561,7 +612,8 @@
      ],
      "trophy": true,
      "text_it": "Catena bonus Human Xilence: sconfiggi Xaldin, poi permetti a Xilence di trovare finalmente pace per il trofeo Xilence l'umano (Human Xilence).",
-     "loc_it": "Bonus: Human Xilence"
+     "loc_it": "Bonus: Human Xilence",
+     "sid": "s026"
     },
     {
      "text": "Inconceivable Truth: Shactuka's relentless combos — hold guard and punish the opening after he slams into walls.",
@@ -575,7 +627,8 @@
      ],
      "trophy": true,
      "text_it": "Inconceivable Truth: le combo incessanti di Shactuka — tieni la guardia e punisci l'apertura dopo che sbatte contro le pareti.",
-     "loc_it": "Inconceivable Truth"
+     "loc_it": "Inconceivable Truth",
+     "sid": "s027"
     },
     {
      "text": "Read every document and exhaust NPC dialogue in bonus missions — story-secret trophies (Traces of Two, Undying Loyalty, The Bard's Lamentations) come from this content, not the critical path.",
@@ -594,7 +647,8 @@
      ],
      "trophy": true,
      "text_it": "Leggi ogni documento ed esaurisci i dialoghi degli NPC nelle missioni bonus — i trofei sui segreti della storia (Doppia traccia, Lealtà incrollabile, I lamenti del bardo) arrivano da questi contenuti, non dal percorso principale.",
-     "loc_it": "Missioni bonus e NPC della Crevice"
+     "loc_it": "Missioni bonus e NPC della Crevice",
+     "sid": "s028"
     },
     {
      "text": "Summon a Soul of the Rift once (Wandering Soul). Guides confirm only Spirit of Advocacy boss-helpers void Standing Alone — rift souls and Phantom skills are safe.",
@@ -613,7 +667,8 @@
      ],
      "trophy": true,
      "text_it": "Evoca un'Anima del Varco (Soul of the Rift) una volta (Anima errante / Wandering Soul). Le guide confermano che solo gli aiutanti spirito di sostegno alle porte dei boss invalidano In solitaria — le anime del varco e le abilità Fantasma sono sicure.",
-     "loc_it": "Qualsiasi missione — segno del varco"
+     "loc_it": "Qualsiasi missione — segno del varco",
+     "sid": "s029"
     },
     {
      "text": "Sweep Soulstones/Jarlings in Veiled Knives, Human Xilence and Escaping Linon Mine now while your level matches — missions are replayable but re-runs cost time.",
@@ -627,7 +682,8 @@
      ],
      "trophy": false,
      "text_it": "Raccogli Pietranime e vasi di Danjin in Veiled Knives, Human Xilence ed Escaping Linon Mine adesso, finché il livello è adeguato — le missioni sono rigiocabili, ma ripeterle costa tempo.",
-     "loc_it": "Missioni di Pell Los — setaccio dei collezionabili"
+     "loc_it": "Missioni di Pell Los — setaccio dei collezionabili",
+     "sid": "s030"
     }
    ],
    "title_it": "Fase 4 — Pell Los Plateau II: Devoured Lands",
@@ -649,7 +705,8 @@
      ],
      "trophy": true,
      "text_it": "Witch's Castle: Trokka si nasconde dietro incantesimi di gelo e scudi di meduse — esegui il Brink Guard sui suoi proiettili, poi scaricale addosso il danno a bruciapelo durante il recupero.",
-     "loc_it": "Witch's Castle"
+     "loc_it": "Witch's Castle",
+     "sid": "s031"
     },
     {
      "text": "Hermit Mountains: Bellerian, the dark elf researcher. Magic-heavy — keep stamina above half so a guarded barrage never breaks you.",
@@ -663,7 +720,8 @@
      ],
      "trophy": true,
      "text_it": "Hermit Mountains: Bellerian, il ricercatore elfo oscuro. Molto magico — tieni la stamina sopra la metà così una raffica bloccata in guardia non ti spezza mai.",
-     "loc_it": "Hermit Mountains"
+     "loc_it": "Hermit Mountains",
+     "sid": "s032"
     },
     {
      "text": "Skill spike: Mortal Blow + Bloodshed for one of the best AoE cleaves in the game; Phantom: Night's Veil as your spirit-gauge spender/charged-attack buff.",
@@ -677,7 +735,8 @@
      ],
      "trophy": false,
      "text_it": "Picco di abilità: Colpo Mortale (Mortal Blow) + Bloodshed per una delle migliori sventagliate ad area del gioco; Fantasma: Velo Notturno (Phantom: Night's Veil) come consumatore della barra spirito e potenziamento degli attacchi caricati.",
-     "loc_it": "Menu abilità — albero Spadone"
+     "loc_it": "Menu abilità — albero Spadone",
+     "sid": "s033"
     },
     {
      "text": "Register a discovered item collection for Traces of a Stranger while combing documents.",
@@ -691,7 +750,8 @@
      ],
      "trophy": true,
      "text_it": "Registra una raccolta di oggetti scoperta per Tracce misteriose (Traces of a Stranger) mentre spulci i documenti.",
-     "loc_it": "Menu raccolte / oggetti raccolti nelle missioni"
+     "loc_it": "Menu raccolte / oggetti raccolti nelle missioni",
+     "sid": "s034"
     },
     {
      "text": "Witch's Castle is dense with Soulstones and Jarlings — full-clear it before moving on.",
@@ -705,7 +765,8 @@
      ],
      "trophy": false,
      "text_it": "Witch's Castle è densa di Pietranime e vasi di Danjin — completala del tutto prima di andare avanti.",
-     "loc_it": "Witch's Castle — collezionabili"
+     "loc_it": "Witch's Castle — collezionabili",
+     "sid": "s035"
     },
     {
      "text": "Stat checkpoint: ~VIT 25 / END 30 / STR 32, sprinkling Proficiency for stamina damage — faster stamina breaks mean more Brutal Attacks.",
@@ -719,7 +780,8 @@
      ],
      "trophy": false,
      "text_it": "Checkpoint statistiche: ~VIT 25 / END 30 / STR 32, con qualche punto in Proficiency per il danno alla stamina — rompere prima la stamina significa più Attacchi Brutali.",
-     "loc_it": "Blade Nexus — distribuzione statistiche"
+     "loc_it": "Blade Nexus — distribuzione statistiche",
+     "sid": "s036"
     }
    ],
    "title_it": "Fase 5 — Heart of Pell Los I: la strega e l'eremita",
@@ -741,7 +803,8 @@
      ],
      "trophy": true,
      "text_it": "Corruptors' Fortress: Skalpel, il tuo ex seguace corrotto — aggressivo e sempre addosso; i contrattacchi Riflessione (Reflection) spengono le sue combo.",
-     "loc_it": "Corruptors' Fortress"
+     "loc_it": "Corruptors' Fortress",
+     "sid": "s037"
     },
     {
      "text": "Strange Melody: Princess Ilyna's rapier is fast but linear — hold guard, Brink Guard the flurry enders.",
@@ -755,7 +818,8 @@
      ],
      "trophy": true,
      "text_it": "Strange Melody: lo stocco della principessa Ilyna è rapido ma lineare — tieni la guardia ed esegui il Brink Guard sui colpi che chiudono le raffiche.",
-     "loc_it": "Strange Melody"
+     "loc_it": "Strange Melody",
+     "sid": "s038"
     },
     {
      "text": "Story-secret trophies The Order (Ilyna & Skalpel's fate) and The Hidden Laboratory (El Ravaca's lab) unlock from documents/areas in this arc — read everything.",
@@ -774,7 +838,8 @@
      ],
      "trophy": true,
      "text_it": "I trofei sui segreti della storia L'Ordine (The Order — il destino di Ilyna e Skalpel) e Laboratorio segreto (The Hidden Laboratory — il laboratorio di El Ravaca) si sbloccano da documenti e aree di questo arco — leggi tutto.",
-     "loc_it": "Corruptors' Fortress / contenuti del laboratorio di El Ravaca"
+     "loc_it": "Corruptors' Fortress / contenuti del laboratorio di El Ravaca",
+     "sid": "s039"
     },
     {
      "text": "Complete the Charon's Chains content — Tool of the Netherworld trophy. TRUE-ENDING HARD REQUIREMENT 1/2: without it Daphrona never offers the final choice.",
@@ -793,7 +858,8 @@
      ],
      "trophy": true,
      "text_it": "Completa il contenuto Charon's Chains — trofeo Strumento degli Inferi (Tool of the Netherworld). REQUISITO ASSOLUTO PER IL VERO FINALE 1/2: senza, Daphrona non ti offrirà mai la scelta finale.",
-     "loc_it": "Contenuto secondario: Charon's Chains"
+     "loc_it": "Contenuto secondario: Charon's Chains",
+     "sid": "s040"
     },
     {
      "text": "Transcendental Sword bonus mission: rematch the Blade Phantom trial (Trial of the Sword). TRUE-ENDING HARD REQUIREMENT 2/2.",
@@ -812,7 +878,8 @@
      ],
      "trophy": true,
      "text_it": "Missione bonus Transcendental Sword: rivincita nella prova dello Spettro della Lama (Prova della spada / Trial of the Sword). REQUISITO ASSOLUTO PER IL VERO FINALE 2/2.",
-     "loc_it": "Bonus: Transcendental Sword"
+     "loc_it": "Bonus: Transcendental Sword",
+     "sid": "s041"
     },
     {
      "text": "Complete The Vow bonus mission — needed for Countless Tales (all 24 bonus missions); guides often bundle it with true-ending prep, but the hard gate is the two missions above + the 15 journal pages.",
@@ -826,7 +893,8 @@
      ],
      "trophy": false,
      "text_it": "Completa la missione bonus The Vow — serve per Infiniti racconti (tutte e 24 le missioni bonus); le guide la accorpano spesso alla preparazione del vero finale, ma il requisito vero e proprio sono le due missioni qui sopra + le 15 pagine del diario.",
-     "loc_it": "Bonus: The Vow"
+     "loc_it": "Bonus: The Vow",
+     "sid": "s042"
     },
     {
      "text": "Gear endgame: farm Keshta/bosses for Unique→Epic pieces, keep the Cleric (or Guardian) set bonus live, reroll bad substats at Oksana, inherit attributes upward at Qazumaka.",
@@ -840,7 +908,8 @@
      ],
      "trophy": false,
      "text_it": "Equipaggiamento endgame: farma Keshta e i boss per pezzi Unique→Epic, tieni attivo il bonus del set Cleric (o Guardian), ritira le sottostatistiche scadenti da Oksana, eredita gli attributi verso l'alto da Qazumaka.",
-     "loc_it": "The Crevice — Qazumaka/Oksana + farming dei boss"
+     "loc_it": "The Crevice — Qazumaka/Oksana + farming dei boss",
+     "sid": "s043"
     },
     {
      "text": "Stat checkpoint: ~VIT 30 / END 35 / STR 40 / PRO 15. If bosses two-shot you, trade STR levels for VIT — the guard tank wins by attrition.",
@@ -854,7 +923,8 @@
      ],
      "trophy": false,
      "text_it": "Checkpoint statistiche: ~VIT 30 / END 35 / STR 40 / PRO 15. Se i boss ti uccidono in due colpi, sposta livelli da STR a VIT — il guard tank vince per logoramento.",
-     "loc_it": "Blade Nexus — distribuzione statistiche"
+     "loc_it": "Blade Nexus — distribuzione statistiche",
+     "sid": "s044"
     }
    ],
    "title_it": "Fase 6 — Heart of Pell Los II: i Corruptors e le chiavi del vero finale",
@@ -876,7 +946,8 @@
      ],
      "trophy": true,
      "text_it": "Fall of the Empire: Hismar il drago furente — blocca in guardia il soffio di fulmine/caos, colpisci la testa quando è a terra; i giavellotti aiutano tra una fase e l'altra.",
-     "loc_it": "Fall of the Empire — Vitalon"
+     "loc_it": "Fall of the Empire — Vitalon",
+     "sid": "s045"
     },
     {
      "text": "Bloodied Sanctuary: Reese, the corrupted priestess; her backstory documents also unlock Reese's Past.",
@@ -890,7 +961,8 @@
      ],
      "trophy": true,
      "text_it": "Bloodied Sanctuary: Reese, la sacerdotessa corrotta; i documenti sul suo passato sbloccano anche Il passato di Reese (Reese's Past).",
-     "loc_it": "Bloodied Sanctuary"
+     "loc_it": "Bloodied Sanctuary",
+     "sid": "s046"
     },
     {
      "text": "Collect all 15 Ozma journal pages across the game (Ozma's Past). Required for the true ending — replay missions for stragglers now.",
@@ -914,7 +986,8 @@
      ],
      "trophy": true,
      "text_it": "Raccogli tutte e 15 le pagine del diario di Ozma sparse per il gioco (Il passato di Ozma / Ozma's Past). Richieste per il vero finale — rigioca ora le missioni per quelle rimaste indietro.",
-     "loc_it": "Tutte le regioni — pagine del diario di Ozma (15)"
+     "loc_it": "Tutte le regioni — pagine del diario di Ozma (15)",
+     "sid": "s047"
     },
     {
      "text": "Finish ALL 24 bonus missions (Countless Tales). Late unlocks like Last Sentinel, Crimson Trace and Unrequited Love appear in this window.",
@@ -933,7 +1006,8 @@
      ],
      "trophy": true,
      "text_it": "Completa TUTTE le 24 missioni bonus (Infiniti racconti). In questa finestra compaiono sblocchi tardivi come Last Sentinel, Crimson Trace e Unrequited Love.",
-     "loc_it": "The Crevice — bacheca delle missioni"
+     "loc_it": "The Crevice — bacheca delle missioni",
+     "sid": "s048"
     },
     {
      "text": "Close out 100/100 Soulstones (Agent of the Netherworld) and 44/44 Jarlings (Jar Enthusiast) via mission replay with a collectible guide.",
@@ -952,7 +1026,8 @@
      ],
      "trophy": true,
      "text_it": "Chiudi 100/100 Pietranime (Emissario degli Inferi) e 44/44 vasi di Danjin (Appassionato di vasi / Jar Enthusiast) rigiocando le missioni con una guida ai collezionabili.",
-     "loc_it": "Rigioca le missioni — pulizia dei collezionabili"
+     "loc_it": "Rigioca le missioni — pulizia dei collezionabili",
+     "sid": "s049"
     },
     {
      "text": "Audit the run: zero Spirit of Advocacy summons used, difficulty never lowered. Both Standing Alone and The Expert's Journey ride on the next boss kill.",
@@ -966,7 +1041,8 @@
      ],
      "trophy": false,
      "text_it": "Verifica la run: zero evocazioni di spirito di sostegno, difficoltà mai abbassata. Sia In solitaria sia Viaggio dell'esperto dipendono dalla prossima uccisione del boss.",
-     "loc_it": "Verifica pre-finale"
+     "loc_it": "Verifica pre-finale",
+     "sid": "s050"
     },
     {
      "text": "Final prep: ~level 80+, full set bonus, Epic weapon, stamina-regen accessories. Stock healing and guard-stamina consumables from Duimuk.",
@@ -980,7 +1056,8 @@
      ],
      "trophy": false,
      "text_it": "Preparativi finali: ~livello 80+, bonus di set completo, arma Epic, accessori con rigenerazione della stamina. Fai scorta di cure e di consumabili per la stamina in guardia da Duimuk.",
-     "loc_it": "The Crevice — equipaggiamento finale"
+     "loc_it": "The Crevice — equipaggiamento finale",
+     "sid": "s051"
     }
    ],
    "title_it": "Fase 7 — Vitalon, capitale dell'Impero: il drago e il santuario",
@@ -1002,7 +1079,8 @@
      ],
      "trophy": false,
      "text_it": "FAI IL BACKUP DEL SALVATAGGIO (upload su cloud PS+ o su USB) prima di iniziare Master of Chaos. Lo ricaricherai per il doppio colpo di Viaggio dello sfidante (The Challenger's Journey).",
-     "loc_it": "Prima di Master of Chaos — backup del salvataggio"
+     "loc_it": "Prima di Master of Chaos — backup del salvataggio",
+     "sid": "s052"
     },
     {
      "text": "Verify the Daphrona gate: Charon's Chains + Transcendental Sword complete (hard gate) and 15/15 journal pages — plus all 24 bonus missions if you want Countless Tales done before the finale.",
@@ -1016,7 +1094,8 @@
      ],
      "trophy": false,
      "text_it": "Verifica il requisito di Daphrona: Charon's Chains + Transcendental Sword completate (requisito assoluto) e 15/15 pagine del diario — più tutte e 24 le missioni bonus se vuoi chiudere Infiniti racconti prima del finale.",
-     "loc_it": "Checklist — flag del vero finale"
+     "loc_it": "Checklist — flag del vero finale",
+     "sid": "s053"
     },
     {
      "text": "BEFORE the fight, at the Corrupted Lounge Blade Nexus, choose 'I must know the truth' with Daphrona — this locks the true ending. After the kill, examine Ozma's diary/picture for the full epilogue.",
@@ -1030,7 +1109,8 @@
      ],
      "trophy": false,
      "text_it": "PRIMA dello scontro, al Blade Nexus del Corrupted Lounge, scegli 'I must know the truth' con Daphrona — questo fissa il vero finale. Dopo l'uccisione, esamina il diario/la foto di Ozma per l'epilogo completo.",
-     "loc_it": "Master of Chaos — nexus del Corrupted Lounge"
+     "loc_it": "Master of Chaos — nexus del Corrupted Lounge",
+     "sid": "s054"
     },
     {
      "text": "Master of Chaos: Ozma. With the true-ending flags set this is a 3-phase marathon — never guard below ~30% stamina, take 1-2 hits per opening, save Phantom: Night's Veil for phase openers.",
@@ -1049,7 +1129,8 @@
      ],
      "trophy": true,
      "text_it": "Master of Chaos: Ozma. Con i flag del vero finale attivi è una maratona a 3 fasi — non tenere mai la guardia sotto il ~30% di stamina, prendi 1-2 colpi per apertura, tieni Fantasma: Velo Notturno per l'inizio di ogni fase.",
-     "loc_it": "Master of Chaos — Ozma"
+     "loc_it": "Master of Chaos — Ozma",
+     "sid": "s055"
     },
     {
      "text": "The true-ending trophy 🏆 THE FIRST BERSERKER pops with the ending; The Expert's Journey (difficulty kept) and Standing Alone (zero Advocacy summons) cascade with it.",
@@ -1063,7 +1144,8 @@
      ],
      "trophy": true,
      "text_it": "Il trofeo del vero finale 🏆 THE FIRST BERSERKER scatta con il finale; Viaggio dell'esperto (difficoltà mantenuta) e In solitaria (zero evocazioni di sostegno) arrivano a cascata insieme a lui.",
-     "loc_it": "Finale — cascata di trofei"
+     "loc_it": "Finale — cascata di trofei",
+     "sid": "s056"
     },
     {
      "text": "Let the credits and epilogue scenes finish fully before touching menus — ending flags register at the credits.",
@@ -1077,7 +1159,8 @@
      ],
      "trophy": false,
      "text_it": "Lascia scorrere fino in fondo i titoli di coda e le scene dell'epilogo prima di toccare i menu — i flag del finale si registrano ai titoli di coda.",
-     "loc_it": "Titoli di coda"
+     "loc_it": "Titoli di coda",
+     "sid": "s057"
     }
    ],
    "title_it": "Fase 8 — Master of Chaos: Ozma e il vero finale",
@@ -1104,7 +1187,8 @@
      ],
      "trophy": true,
      "text_it": "Ricarica il salvataggio di backup, abbassa la difficoltà nelle impostazioni (scendere è consentito) e riuccidi Ozma per Viaggio dello sfidante (The Challenger's Journey) — nessuna seconda partita necessaria.",
-     "loc_it": "Salvataggio ricaricato — Master of Chaos a difficoltà più bassa"
+     "loc_it": "Salvataggio ricaricato — Master of Chaos a difficoltà più bassa",
+     "sid": "s058"
     },
     {
      "text": "If any trophy is still missing (a bonus mission, jarling, soulstone or vendor action), mop it up via mission replay on this reloaded save.",
@@ -1118,7 +1202,8 @@
      ],
      "trophy": false,
      "text_it": "Se manca ancora qualche trofeo (una missione bonus, un vaso, una pietranima o un'azione presso un mercante), recuperalo rigiocando le missioni su questo salvataggio ricaricato.",
-     "loc_it": "Rigioca le missioni — setaccio finale"
+     "loc_it": "Rigioca le missioni — setaccio finale",
+     "sid": "s059"
     },
     {
      "text": "After finishing the story, talk to the Blade Phantom in the Crevice to begin New Game Plus — A New Path pops the moment NG+ starts.",
@@ -1132,7 +1217,8 @@
      ],
      "trophy": true,
      "text_it": "Dopo aver finito la storia, parla con lo Spettro della Lama nella Crevice per iniziare il New Game Plus — Nuovo cammino (A New Path) scatta nel momento in cui parte il NG+.",
-     "loc_it": "The Crevice — Spettro della Lama (NG+)"
+     "loc_it": "The Crevice — Spettro della Lama (NG+)",
+     "sid": "s060"
     },
     {
      "text": "🏆 KHAZAN platinum unlocks. Optional victory lap: NG+ adds transmog and higher-tier gear if you want to keep playing the guard tank.",
@@ -1146,7 +1232,8 @@
      ],
      "trophy": true,
      "text_it": "🏆 Si sblocca il platino KHAZAN. Giro d'onore facoltativo: il NG+ aggiunge il transmog ed equipaggiamento di fascia superiore se vuoi continuare a giocare il guard tank.",
-     "loc_it": "Platino — KHAZAN"
+     "loc_it": "Platino — KHAZAN",
+     "sid": "s061"
     }
    ],
    "title_it": "Fase 9 — Pulizia: secondo finale e platino in NG+",

@@ -1,4 +1,26 @@
 {
+ "meta": {
+  "id": "na",
+  "format": 1,
+  "version": 1,
+  "accent": "#7f86d8",
+  "tagline": {
+   "en": "2B, 9S, A2 - 48 trophies earned, never bought from the shop",
+   "it": "2B, 9S, A2 - 48 trofei guadagnati, mai comprati al negozio"
+  },
+  "thumb": {
+   "icon": "cube",
+   "glow": "85,78,60",
+   "seed": 19,
+   "stats": [
+    [
+     "3",
+     "ROUTE"
+    ]
+   ],
+   "tag": null
+  }
+ },
  "game": "NieR: Automata",
  "prefix": "NA",
  "playthroughs": "3 story playthroughs on one save (A as 2B, B as 9S, C/D as A2 and 9S) + chapter-select cleanup for endings E and F-Z; the DLC arenas add no trophies",
@@ -102,7 +124,8 @@
      ],
      "trophy": false,
      "text_it": "Completa il raid iniziale alla fabbrica in UNA sola sessione — dall'avvio fino al Bunker non si salva. Il segmento in aeroscheletro conta già per Signore dei cieli (Ruler of the Skies, 255 uccisioni), quindi spara a tutto.",
-     "loc_it": "Fabbrica abbandonata (prologo)"
+     "loc_it": "Fabbrica abbandonata (prologo)",
+     "sid": "s001"
     },
     {
      "text": "On the Bunker after the prologue, walk to the observation window and gaze at Earth — RESUSCITATED BODY pops. Immediately open System > Network and enable online features so player bodies spawn in your world.",
@@ -121,7 +144,8 @@
      ],
      "trophy": true,
      "text_it": "Sul Bunker, dopo il prologo, avvicinati alla vetrata di osservazione e contempla la Terra — scatta Corpo rianimato (Resuscitated Body). Apri subito Sistema > Rete e attiva le funzioni online, così i corpi degli altri giocatori compariranno nel tuo mondo.",
-     "loc_it": "Bunker — vetrata di osservazione"
+     "loc_it": "Bunker — vetrata di osservazione",
+     "sid": "s002"
     },
     {
      "text": "Descend to Earth and touch down in the ruined city — VESTIGES OF PROSPERITY unlocks on arrival.",
@@ -135,7 +159,8 @@
      ],
      "trophy": true,
      "text_it": "Scendi sulla Terra e metti piede nelle rovine della città — Vestigia di prosperità (Vestiges of Prosperity) si sblocca all'arrivo.",
-     "loc_it": "Rovine della città"
+     "loc_it": "Rovine della città",
+     "sid": "s003"
     },
     {
      "text": "At the Resistance Camp, accept and finish any first side quest from the board or an NPC — FIRST ERRAND pops. From now on, do every side quest you see; The Mercenary needs 48 of 60 by the end.",
@@ -154,7 +179,8 @@
      ],
      "trophy": true,
      "text_it": "All'accampamento della Resistenza accetta e completa una prima missione secondaria qualsiasi, dalla bacheca o da un NPC — scatta Prima commissione (First Errand). Da qui in poi fai ogni secondaria che incontri: Mercenario (The Mercenary) ne vuole 48 su 60 entro la fine.",
-     "loc_it": "Accampamento della Resistenza"
+     "loc_it": "Accampamento della Resistenza",
+     "sid": "s004"
     },
     {
      "text": "The first time you die, run back and touch your corpse to retrieve it — THE CIRCLE OF DEATH. For the rest of the game, retrieve or repair every glowing android body you pass: 100 of them earns Cherish Our Resources later.",
@@ -173,7 +199,8 @@
      ],
      "trophy": true,
      "text_it": "La prima volta che muori, torna sul posto e tocca il tuo cadavere per recuperarlo — Cerchio della morte (The Circle of Death). Per il resto del gioco recupera o ripara ogni corpo di androide luminoso che incroci: al centesimo arriva Risorse preziose (Cherish Our Resources).",
-     "loc_it": "Ovunque — il punto della tua morte"
+     "loc_it": "Ovunque — il punto della tua morte",
+     "sid": "s005"
     },
     {
      "text": "Stand still and tilt the camera up 2B's skirt until she shoves it away — repeat 10 times for WHAT ARE YOU DOING?.",
@@ -187,7 +214,8 @@
      ],
      "trophy": true,
      "text_it": "Stai fermo e inclina la telecamera sotto la gonna di 2B finché non la scaccia via — ripeti 10 volte per Che cosa fai? (What Are You Doing?).",
-     "loc_it": "Rovine della città — un angolo tranquillo"
+     "loc_it": "Rovine della città — un angolo tranquillo",
+     "sid": "s006"
     },
     {
      "text": "When Emil's singing van drives past, shoot it with your Pod to make him stop, then buy any item — COME TAKE A LOOK!. Remember him: when parked at the Resistance Camp he sells the TYPE-3 FISTS and ANGEL'S FOLLY weapons plus rare materials you need later.",
@@ -206,7 +234,8 @@
      ],
      "trophy": true,
      "text_it": "Quando il furgone canterino di Emil ti passa accanto, colpiscilo con il Pod per farlo fermare, poi compra un oggetto qualsiasi — Dai un'occhiata! (Come Take a Look!). Ricordati di lui: quando parcheggia all'accampamento della Resistenza vende le armi TYPE-3 FISTS e ANGEL'S FOLLY più materiali rari che ti serviranno dopo.",
-     "loc_it": "Rovine della città — il negozio itinerante di Emil"
+     "loc_it": "Rovine della città — il negozio itinerante di Emil",
+     "sid": "s007"
     },
     {
      "text": "Clear the Desert Zone story missions — IT'S A HEALTHY BABY BOY! pops after the Adam reveal. While here, dig up the PHOENIX DAGGER at the buried-treasure spot and grab POD C out on the dunes near the oil field — it doesn't glow, so home in on its high-pitched beeping (quicksand fishing can also dredge it up).",
@@ -225,7 +254,8 @@
      ],
      "trophy": true,
      "text_it": "Completa le missioni principali del deserto — È un maschietto! (It's a Healthy Baby Boy!) scatta dopo la rivelazione di Adam. Già che ci sei, dissotterra il PHOENIX DAGGER al punto del tesoro sepolto e recupera il POD C tra le dune vicino al giacimento di petrolio — non brilla, quindi orientati con il suo bip acuto (può saltare fuori anche pescando nelle sabbie mobili).",
-     "loc_it": "Deserto"
+     "loc_it": "Deserto",
+     "sid": "s008"
     },
     {
      "text": "Take the sewer passage toward the park and grab the VIRTUOUS DIGNITY spear on the way, then finish the Amusement Park story through the opera boss — WE AWAIT YOUR NEXT VISIT.",
@@ -244,7 +274,8 @@
      ],
      "trophy": true,
      "text_it": "Prendi il passaggio nelle fogne verso il luna park e raccogli lungo la strada la lancia Virtuous Dignity (Virtuous Dignity), poi completa la storia del luna park fino al boss dell'opera — Ti aspettiamo presto! (We Await Your Next Visit).",
-     "loc_it": "Fogne / Luna park"
+     "loc_it": "Fogne / Luna park",
+     "sid": "s009"
     },
     {
      "text": "Keep clearing 2B-era side quests between missions, and make sure IMPROVING COMMUNICATIONS is done before Chapter 05-02 — it is the easiest quest in the game to lock yourself out of.",
@@ -263,7 +294,8 @@
      ],
      "trophy": false,
      "text_it": "Tra una missione e l'altra continua a chiudere le secondarie dell'era 2B, e assicurati di completare IMPROVING COMMUNICATIONS prima del capitolo 05-02 — è la missione con cui è più facile tagliarsi fuori in tutto il gioco.",
-     "loc_it": "Rovine della città / Accampamento della Resistenza"
+     "loc_it": "Rovine della città / Accampamento della Resistenza",
+     "sid": "s010"
     }
    ],
    "title_it": "Fase 1 — Route A: dal prologo al luna park (2B)",
@@ -290,7 +322,8 @@
      ],
      "trophy": true,
      "text_it": "Avvia I RICORDI DI EMIL (Emil's Memories): segui le Lacrime lunari tra zona della foresta, complesso residenziale del deserto, luna park e città sommersa, poi entra nella grotta dei ricordi sotto l'ex centro commerciale — Lacrima lunare (Lunar Tear) scatta al campo di fiori; la missione ti consegna la ELEVATOR KEY (l'ascensore del centro commerciale verso la baracca di Kainé) ed è il prerequisito di entrambi gli scontri con Emil più avanti.",
-     "loc_it": "Rovine della città — grotta sotto l'ex centro commerciale"
+     "loc_it": "Rovine della città — grotta sotto l'ex centro commerciale",
+     "sid": "s011"
     },
     {
      "text": "Before accepting the main mission MISSILE SUPPLY MISSION, sweep the remaining 2B-side quests — THE WANDERING COUPLE and 11B'S MEMENTO (which hands you the YORHA-ISSUE BLADE weapon) especially — because the mission shelves most quests for the rest of Route A.",
@@ -309,7 +342,8 @@
      ],
      "trophy": false,
      "text_it": "Prima di accettare la missione principale MISSILE SUPPLY MISSION, spazza le secondarie di 2B rimaste — soprattutto LA COPPIA ERRANTE (The Wandering Couple) e 11B'S MEMENTO (che ti mette in mano l'arma YORHA-ISSUE BLADE) — perché la missione congela quasi tutte le quest per il resto della Route A.",
-     "loc_it": "Rovine della città / Accampamento della Resistenza"
+     "loc_it": "Rovine della città / Accampamento della Resistenza",
+     "sid": "s012"
     },
     {
      "text": "Board and clear the crashed alien ship with the Adam and Eve confrontation — CREATION AND INSURRECTION.",
@@ -323,7 +357,8 @@
      ],
      "trophy": true,
      "text_it": "Sali sull'astronave aliena precipitata e chiudi il confronto con Adam ed Eve — Creazione e insurrezione (Creation and Insurrection).",
-     "loc_it": "Astronave aliena (deserto)"
+     "loc_it": "Astronave aliena (deserto)",
+     "sid": "s013"
     },
     {
      "text": "Fight through the Forest Kingdom to the castle's inner chamber — THE MECHANICAL KINGDOM. Note the forge one level below the Royal Chamber access point: that is MASAMUNE, the only smith who does level 4 weapon upgrades.",
@@ -342,7 +377,8 @@
      ],
      "trophy": true,
      "text_it": "Combatti attraverso il regno della foresta fino alla sala interna del castello — Regno meccanico (The Mechanical Kingdom). Segnati la forgia un livello sotto l'accesso alla camera reale: è MASAMUNE, l'unico fabbro che fa i potenziamenti al livello 4.",
-     "loc_it": "Castello nella foresta"
+     "loc_it": "Castello nella foresta",
+     "sid": "s014"
     },
     {
      "text": "Fish off the Flooded City coast until POD B bites — with A, B and C all held, POD HUNTER unlocks. Log your fish too: every new species counts toward A Round by the Pond.",
@@ -361,7 +397,8 @@
      ],
      "trophy": true,
      "text_it": "Pesca al largo della città sommersa finché non abbocca il POD B — con A, B e C in tasca si sblocca Cacciatore di Pod (Pod Hunter). Registra anche i pesci: ogni nuova specie conta per Giro allo stagno (A Round by the Pond).",
-     "loc_it": "Città sommersa — pesca sulla costa"
+     "loc_it": "Città sommersa — pesca sulla costa",
+     "sid": "s015"
     },
     {
      "text": "Complete the Flooded City assault — the flight-unit battle against Grün feeds RULER OF THE SKIES kills — and RULER OF THE DEEP pops at the end.",
@@ -375,7 +412,8 @@
      ],
      "trophy": true,
      "text_it": "Completa l'assalto alla città sommersa — la battaglia in aeroscheletro contro Grün alimenta le uccisioni di Signore dei cieli — e alla fine scatta Signore degli abissi (Ruler of the Deep).",
-     "loc_it": "Città sommersa"
+     "loc_it": "Città sommersa",
+     "sid": "s016"
     },
     {
      "text": "Chase Adam into the white ghost town and beat him — THOSE WHO LOVE HUMANS pops when the Copied City concludes.",
@@ -389,7 +427,8 @@
      ],
      "trophy": true,
      "text_it": "Insegui Adam nella città fantasma bianca e sconfiggilo — Passione per gli umani (Those Who Love Humans) scatta alla conclusione della città clone.",
-     "loc_it": "Città clone"
+     "loc_it": "Città clone",
+     "sid": "s017"
     },
     {
      "text": "Return to the Abandoned Factory for the machine-cult sequence and escape — IRON SOUL.",
@@ -403,7 +442,8 @@
      ],
      "trophy": true,
      "text_it": "Torna alla fabbrica abbandonata per la sequenza del culto delle biomacchine e fuggi — Anima di ferro (Iron Soul).",
-     "loc_it": "Fabbrica abbandonata"
+     "loc_it": "Fabbrica abbandonata",
+     "sid": "s018"
     },
     {
      "text": "Buy ANIMAL BAIT from a vendor and start riding boars and moose whenever you cross the map — the 5 km for ANIMAL RIDER is cumulative, so commuting on animal-back finishes it painlessly.",
@@ -417,7 +457,8 @@
      ],
      "trophy": false,
      "text_it": "Compra l'ANIMAL BAIT da un mercante e inizia a cavalcare cinghiali e alci ogni volta che attraversi la mappa — i 5 km di Cavalcare a pelo (Animal Rider) sono cumulativi, quindi fare il pendolare in sella lo chiude senza pensarci.",
-     "loc_it": "Rovine della città / Zona della foresta"
+     "loc_it": "Rovine della città / Zona della foresta",
+     "sid": "s019"
     },
     {
      "text": "Finish Route A's finale against Eve — ONE BATTLE ENDS for ending A. Save, then start the second playthrough from the same save.",
@@ -431,7 +472,8 @@
      ],
      "trophy": true,
      "text_it": "Chiudi il gran finale della Route A contro Eve — La fine di una battaglia (One Battle Ends) per il finale A. Salva, poi avvia la seconda run dallo stesso salvataggio.",
-     "loc_it": "Rovine della città — battaglia finale"
+     "loc_it": "Rovine della città — battaglia finale",
+     "sid": "s020"
     }
    ],
    "title_it": "Fase 2 — Route A: da Emil's Memories al finale A (2B)",
@@ -453,7 +495,8 @@
      ],
      "trophy": true,
      "text_it": "Apri la Route B e attiva la prima manomissione di trama — Non mi piace combattere (Fighting's Not My Thing) scatta al primo minigioco di manomissione.",
-     "loc_it": "Prologo della Route B"
+     "loc_it": "Prologo della Route B",
+     "sid": "s021"
     },
     {
      "text": "Make hacking your default kill: destroying machines from inside the hacking game racks up A SCANNER'S POWER (100 hack kills), which should pop naturally before Route B ends.",
@@ -467,7 +510,8 @@
      ],
      "trophy": true,
      "text_it": "Fai della manomissione la tua uccisione di default: distruggere le biomacchine dall'interno del minigioco alimenta Potenza dello Scanner (A Scanner's Power, 100 uccisioni tramite manomissione), che dovrebbe scattare da solo prima della fine della Route B.",
-     "loc_it": "Ovunque nella Route B"
+     "loc_it": "Ovunque nella Route B",
+     "sid": "s022"
     },
     {
      "text": "After winning a hack, pick REMOTE CONTROL instead of destroying: steer the machine into its friends and detonate. Fifty remote-control kills earns MACHINES VS. MACHINES — small stubby groups in the Desert melt this counter.",
@@ -481,7 +525,8 @@
      ],
      "trophy": true,
      "text_it": "Dopo aver vinto una manomissione scegli il CONTROLLO A DISTANZA invece di distruggere: guida la biomacchina in mezzo alle sue compagne e falla detonare. Cinquanta uccisioni con il controllo a distanza valgono Macchine VS macchine (Machines vs. Machines) — i gruppetti di biomacchine tozze nel deserto sciolgono il contatore.",
-     "loc_it": "Deserto / Rovine della città"
+     "loc_it": "Deserto / Rovine della città",
+     "sid": "s023"
     },
     {
      "text": "Sweep the 9S-exclusive quests as they unlock: AMNESIA, IDIOT SAVANT (Machine Core reward), DATA ANALYSIS FREAK 1-2, GAME DEV MACHINE LV 1-3, GATHERING KEEPSAKES, RECONNAISSANCE SQUAD and THE RECLUSE chain — they only exist on this route and pad you well past the 80% quest bar.",
@@ -500,7 +545,8 @@
      ],
      "trophy": false,
      "text_it": "Spazza le quest esclusive di 9S man mano che si sbloccano: AMNESIA, IDIOT SAVANT (premio: un Machine Core), DATA ANALYSIS FREAK 1-2, GAME DEV MACHINE LV 1-3, GATHERING KEEPSAKES, RECONNAISSANCE SQUAD e la catena THE RECLUSE — esistono solo su questa route e ti portano ben oltre la soglia dell'80% delle quest.",
-     "loc_it": "Tutte le zone — bacheca e NPC"
+     "loc_it": "Tutte le zone — bacheca e NPC",
+     "sid": "s024"
     },
     {
      "text": "Keep funding the HALF-WIT INVENTOR every time he asks — nine escalating payments totalling about 140,000 G, the last one a single 100,000 G handover (saving up for it also banks Desire Without Emotion). Once fully funded his shop sells METEORITE SHARDS, and after ending C/D true METEORITES at 6,000 G — the material that gates 19 final weapon upgrades. This investment is the cheapest grind insurance in the route.",
@@ -519,7 +565,8 @@
      ],
      "trophy": false,
      "text_it": "Continua a finanziare l'INVENTORE SVITATO (Half-Wit Inventor) ogni volta che chiede — nove versamenti crescenti per circa 140.000 G totali, l'ultimo un colpo secco da 100.000 G (mettere da parte la cifra ti fa incassare di passaggio Desiderio senza emozioni). Una volta finanziato del tutto, il suo negozio vende METEORITE SHARDS e, dopo il finale C/D, veri METEORITES a 6.000 G — il materiale che blocca 19 potenziamenti finali. Questo investimento è l'assicurazione anti-grind più economica della route.",
-     "loc_it": "Villaggio di Pascal — Half-Wit Inventor"
+     "loc_it": "Villaggio di Pascal — Half-Wit Inventor",
+     "sid": "s025"
     },
     {
      "text": "Somewhere outside the Bunker, hold L3+R3 to self-destruct: the blast blows off 9S's pants. Play a cumulative hour in that state — NOT THAT I MIND... pops on the hour mark, so trigger it early and just keep playing.",
@@ -533,7 +580,8 @@
      ],
      "trophy": true,
      "text_it": "Da qualche parte fuori dal Bunker, tieni premuti L3+R3 per autodistruggerti: l'esplosione fa saltare i pantaloni di 9S. Gioca un'ora cumulativa in quello stato — Non che m'importi... (Not That I Mind...) scatta allo scoccare dell'ora, quindi attivalo presto e continua semplicemente a giocare.",
-     "loc_it": "Rovine della città (per ora non autodistruggerti mai dentro il Bunker)"
+     "loc_it": "Rovine della città (per ora non autodistruggerti mai dentro il Bunker)",
+     "sid": "s026"
     },
     {
      "text": "Shoot aggressively through Route B's flight-unit sections (prologue and Flooded City) — every kill banks toward the 255 needed for Ruler of the Skies.",
@@ -547,7 +595,8 @@
      ],
      "trophy": false,
      "text_it": "Spara con aggressività in tutte le sezioni in aeroscheletro della Route B (prologo e città sommersa) — ogni uccisione va in banca verso le 255 di Signore dei cieli.",
-     "loc_it": "Segmenti di trama in aeroscheletro"
+     "loc_it": "Segmenti di trama in aeroscheletro",
+     "sid": "s027"
     },
     {
      "text": "Finish Route B — A NEW BATTLE BEGINS for ending B, and the save rolls straight into the real second half of the game.",
@@ -561,7 +610,8 @@
      ],
      "trophy": true,
      "text_it": "Chiudi la Route B — L'inizio di una battaglia (A New Battle Begins) per il finale B, e il salvataggio scivola dritto nella vera seconda metà del gioco.",
-     "loc_it": "Finale della Route B"
+     "loc_it": "Finale della Route B",
+     "sid": "s028"
     }
    ],
    "title_it": "Fase 3 — Route B: la run di 9S",
@@ -583,7 +633,8 @@
      ],
      "trophy": true,
      "text_it": "Gioca l'apertura della Route C fino all'ultima scena di 2B nelle rovine della città — Ultimo desiderio (Final Wish) scatta mentre la guardi morire.",
-     "loc_it": "Rovine della città — apertura della Route C"
+     "loc_it": "Rovine della città — apertura della Route C",
+     "sid": "s029"
     },
     {
      "text": "Take control of A2 for the first time — TREACHEROUS BLADE unlocks immediately.",
@@ -597,7 +648,8 @@
      ],
      "trophy": true,
      "text_it": "Prendi il controllo di A2 per la prima volta — Lama infida (Treacherous Blade) si sblocca all'istante.",
-     "loc_it": "Rovine della città"
+     "loc_it": "Rovine della città",
+     "sid": "s030"
     },
     {
      "text": "As A2, trigger Berserk (B) Mode on packs of small machines and keep healing chips slotted — it drains HP constantly. Fifty kills inside B-Mode earns THE POWER OF HATE; grouped stubbies in the City Ruins finish it in minutes.",
@@ -616,7 +668,8 @@
      ],
      "trophy": true,
      "text_it": "Nei panni di A2, attiva la modalità furia sui branchi di biomacchine piccole e tieni i chip di cura equipaggiati — la furia drena HP di continuo. Cinquanta uccisioni in modalità furia valgono Potere dell'odio (The Power of Hate); i gruppetti di tozze nelle rovine della città lo chiudono in pochi minuti.",
-     "loc_it": "Rovine della città con A2"
+     "loc_it": "Rovine della città con A2",
+     "sid": "s031"
     },
     {
      "text": "After the factory tragedy, Pascal begs you for release: choose EITHER to kill him or to wipe his memories — FAREWELL, PASCAL pops for both. Walking away silently is the one answer that forfeits the trophy.",
@@ -635,7 +688,8 @@
      ],
      "trophy": true,
      "text_it": "Dopo la tragedia della fabbrica, Pascal ti implora di dargli la liberazione: scegli di ucciderlo O di cancellargli la memoria — Addio, Pascal (Farewell, Pascal) scatta in entrambi i casi. Andarsene in silenzio è l'unica risposta che brucia il trofeo.",
-     "loc_it": "Villaggio di Pascal / Fabbrica abbandonata"
+     "loc_it": "Villaggio di Pascal / Fabbrica abbandonata",
+     "sid": "s032"
     },
     {
      "text": "Before touching the Tower assault, clear the Route C quest block: DEVOLA'S REQUEST, POPOLA'S ERRAND (Meteorite reward), THE TWINS' REQUEST, SORTING TROUBLE 2-3, STORAGE ELEMENT, VANQUISH THE BAD BOT and PLAY WITH US! — the Tower ends their availability for this playthrough.",
@@ -654,7 +708,8 @@
      ],
      "trophy": false,
      "text_it": "Prima di toccare l'assalto alla Torre, chiudi il blocco di quest della Route C: DEVOLA'S REQUEST, POPOLA'S ERRAND (premio: un Meteorite), THE TWINS' REQUEST, SORTING TROUBLE 2-3, STORAGE ELEMENT, VANQUISH THE BAD BOT e PLAY WITH US! — la Torre ne chiude la disponibilità per questa run.",
-     "loc_it": "Accampamento della Resistenza / tutte le zone"
+     "loc_it": "Accampamento della Resistenza / tutte le zone",
+     "sid": "s033"
     },
     {
      "text": "Play the OBTAIN KEYS chapters: 9S shuts down the Amusement Park resource recovery unit, then A2 finishes the last one — JUSTICE unlocks on the loading screen after the mission wraps.",
@@ -668,7 +723,8 @@
      ],
      "trophy": true,
      "text_it": "Gioca i capitoli OBTAIN KEYS: 9S disattiva l'unità di recupero risorse del luna park, poi A2 finisce l'ultima — Giustizia (Justice) si sblocca alla schermata di caricamento a missione conclusa.",
-     "loc_it": "Unità di recupero di luna park / città sommersa / deserto"
+     "loc_it": "Unità di recupero di luna park / città sommersa / deserto",
+     "sid": "s034"
     },
     {
      "text": "At the Tower's base, witness Devola and Popola's last stand while 9S hacks the door — CRIME AND PUNISHMENT pops after their final moments.",
@@ -682,7 +738,8 @@
      ],
      "trophy": true,
      "text_it": "Alla base della Torre, assisti all'ultima resistenza di Devola e Popola mentre 9S manomette la porta — Delitto e castigo (Crime and Punishment) scatta dopo i loro ultimi istanti.",
-     "loc_it": "Ingresso della Torre"
+     "loc_it": "Ingresso della Torre",
+     "sid": "s035"
     },
     {
      "text": "Climb the Tower and open every chest on the way — this is the best natural source of METEORITES and POWERUP PARTS, and its records feed the archive percentage.",
@@ -696,7 +753,8 @@
      ],
      "trophy": false,
      "text_it": "Scala la Torre aprendo ogni forziere lungo la salita — è la miglior fonte naturale di METEORITES e POWERUP PARTS, e i suoi documenti alimentano la percentuale degli archivi.",
-     "loc_it": "La Torre (capitolo 17)"
+     "loc_it": "La Torre (capitolo 17)",
+     "sid": "s036"
     },
     {
      "text": "At the final confrontation choose A2 — beat the fight for ending C and BEAUTIFUL WORLD. Chapter select unlocks from here, which makes the entire rest of the platinum freely revisitable.",
@@ -710,7 +768,8 @@
      ],
      "trophy": true,
      "text_it": "Allo scontro finale scegli A2 — vinci la battaglia per il finale C e Splendido mondo (Beautiful World). Da qui si sblocca la selezione capitoli, che rende liberamente rivisitabile tutto il resto del platino.",
-     "loc_it": "Cima della Torre"
+     "loc_it": "Cima della Torre",
+     "sid": "s037"
     }
    ],
    "title_it": "Fase 4 — Route C/D: A2, 9S e la Torre",
@@ -732,7 +791,8 @@
      ],
      "trophy": true,
      "text_it": "Usa la SELEZIONE CAPITOLI per ricaricare la battaglia finale e stavolta scegli 9S — completare il suo lato dà il finale D e Per un nuovo mondo (Leaving for the New World).",
-     "loc_it": "Selezione capitoli — battaglia finale"
+     "loc_it": "Selezione capitoli — battaglia finale",
+     "sid": "s038"
     },
     {
      "text": "Do NOT skip the credits that follow: answer the Pods' questions, then survive the credits bullet-hell (accept the offers of help — rescue comes fast). THE MINDS THAT EMERGED (gold) pops when the true final credits finish. This is ending E.",
@@ -746,7 +806,8 @@
      ],
      "trophy": true,
      "text_it": "NON saltare i riconoscimenti che seguono: rispondi alle domande dei Pod, poi sopravvivi allo sparatutto dei titoli di coda (accetta le offerte di aiuto — i soccorsi arrivano in fretta). Menti emerse (The Minds That Emerged, oro) scatta alla fine dei veri titoli di coda. Questo è il finale E.",
-     "loc_it": "Sequenza dei riconoscimenti del finale E"
+     "loc_it": "Sequenza dei riconoscimenti del finale E",
+     "sid": "s039"
     },
     {
      "text": "When the game then asks you to sacrifice your save data to help another player: SAY NO. The trophy is already yours — deletion is optional and would erase every save on this profile. The route replays this moment AFTER the platinum for the real goodbye.",
@@ -760,7 +821,8 @@
      ],
      "trophy": false,
      "text_it": "Quando poi il gioco ti chiede di sacrificare i tuoi dati di salvataggio per aiutare un altro giocatore: DI' DI NO. Il trofeo è già tuo — la cancellazione è facoltativa e spazzerebbe via ogni salvataggio del profilo. Questa route rigioca quel momento DOPO il platino, per il vero addio.",
-     "loc_it": "Prompt dopo il finale E"
+     "loc_it": "Prompt dopo il finale E",
+     "sid": "s040"
     }
    ],
    "title_it": "Fase 5 — Finali D ed E (e la decisione sul salvataggio)",
@@ -787,7 +849,8 @@
      ],
      "trophy": true,
      "text_it": "Fai l'inventario del registro missioni e porta le secondarie completate a 48 su 60 per Mercenario (The Mercenary) — con i blocchi esclusivi di 9S e A2 già fatti restano solo gli avanzi; usa la selezione capitoli per raggiungere qualsiasi quest ancora legata a uno stato precedente della storia.",
-     "loc_it": "Menu missioni / selezione capitoli"
+     "loc_it": "Menu missioni / selezione capitoli",
+     "sid": "s041"
     },
     {
      "text": "Fish every distinct water type — City Ruins pond and sewer, Desert quicksand, Flooded City sea, Forest riverbed, Amusement Park moat, Pascal's Village pond — until the encyclopedia shows 20 species: A ROUND BY THE POND.",
@@ -801,7 +864,8 @@
      ],
      "trophy": true,
      "text_it": "Pesca in ogni tipo d'acqua — stagno e fogne delle rovine della città, sabbie mobili del deserto, mare della città sommersa, fiume della foresta, fossato del luna park, stagno del villaggio di Pascal — finché l'enciclopedia non mostra 20 specie: Giro allo stagno (A Round by the Pond).",
-     "loc_it": "Tutti i punti di pesca"
+     "loc_it": "Tutti i punti di pesca",
+     "sid": "s042"
     },
     {
      "text": "Finish the ANIMAL RIDER odometer: bait a moose in the Forest Zone or a boar in the City Ruins and ride laps until the cumulative 5 km pops the trophy.",
@@ -815,7 +879,8 @@
      ],
      "trophy": true,
      "text_it": "Chiudi l'odometro di Cavalcare a pelo (Animal Rider): adesca un alce nella zona della foresta o un cinghiale nelle rovine della città e macina giri finché i 5 km cumulativi non fanno scattare il trofeo.",
-     "loc_it": "Zona della foresta / Rovine della città"
+     "loc_it": "Zona della foresta / Rovine della città",
+     "sid": "s043"
     },
     {
      "text": "Gather from 10 HIDDEN HARVEST POINTS — the faint gold shimmer spots (Forest Zone and City Ruins outskirts have reliable ones). Save, reload, and re-gather the same spots if you run short: HARVEST KING.",
@@ -829,7 +894,8 @@
      ],
      "trophy": true,
      "text_it": "Raccogli materiali da 10 PUNTI DI RACCOLTA SEGRETI — i punti con il tenue luccichio dorato (zona della foresta e periferia delle rovine della città ne hanno di affidabili). Salva, ricarica e riraccogli gli stessi punti se sei corto: Re del raccolto (Harvest King).",
-     "loc_it": "Punti luccicanti di foresta / rovine della città"
+     "loc_it": "Punti luccicanti di foresta / rovine della città",
+     "sid": "s044"
     },
     {
      "text": "Cut down 10 peaceful machines — the docile crowd at the Amusement Park is ideal — for WAIT! DON'T KILL ME!. Do it away from Pascal's Village so no story flags get bruised (wiping the whole village is its own ending, not this).",
@@ -843,7 +909,8 @@
      ],
      "trophy": true,
      "text_it": "Abbatti 10 biomacchine pacifiche — la folla docile del luna park è l'ideale — per Non uccidermi! (Wait! Don't Kill Me!). Fallo lontano dal villaggio di Pascal, così nessun flag di trama si ammacca (sterminare l'intero villaggio è un finale a sé, non questo).",
-     "loc_it": "Luna park"
+     "loc_it": "Luna park",
+     "sid": "s045"
     },
     {
      "text": "Open Intel > Archives and fill to 80%: story documents, Tower records and pickup intel across all zones count — INFORMATION MASTER pops from sweeping areas you already visit for weapons and chests.",
@@ -862,7 +929,8 @@
      ],
      "trophy": true,
      "text_it": "Apri Informazioni > Archivi e riempi fino all'80%: documenti di trama, registri della Torre e informazioni raccolte in tutte le zone contano — Genio informativo (Information Master) scatta setacciando le aree che visiti comunque per armi e forzieri.",
-     "loc_it": "Menu informazioni / tutte le zone"
+     "loc_it": "Menu informazioni / tutte le zone",
+     "sid": "s046"
     },
     {
      "text": "Fill Unit Data to 80% by killing every machine variant you're missing (check Intel > Unit Data for gaps — small golds, boss variants and route-specific units are the usual holes; chapter select reaches all of them): DESTRUCTION IS MY JOB.",
@@ -881,7 +949,8 @@
      ],
      "trophy": true,
      "text_it": "Porta i dati unità all'80% uccidendo ogni variante di biomacchina che ti manca (controlla i buchi in Informazioni > Dati unità — piccole dorate, varianti dei boss e unità legate a una singola route sono le lacune tipiche; la selezione capitoli le raggiunge tutte): Distruggere è il mio mestiere (Destruction is My Job).",
-     "loc_it": "Menu informazioni / selezione capitoli"
+     "loc_it": "Menu informazioni / selezione capitoli",
+     "sid": "s047"
     },
     {
      "text": "Collect 80% of all plug-in chip TYPES for CHIP COLLECTOR: buy out vendor and Emil chip stock, and keep drops from farming — you will cross the bar during the weapon grind if you never dismantle unique types.",
@@ -895,7 +964,8 @@
      ],
      "trophy": true,
      "text_it": "Colleziona l'80% dei TIPI di chip inseribili per Collezionista di chip (Chip Collector): svuota lo stock di chip dei mercanti e di Emil e conserva i drop del farming — supererai la soglia durante il grind delle armi, se non smonti mai i tipi unici.",
-     "loc_it": "Negozi / furgone di Emil"
+     "loc_it": "Negozi / furgone di Emil",
+     "sid": "s048"
     },
     {
      "text": "Hold 100,000 G at one time — DESIRE WITHOUT EMOTION. Time it BEFORE the Masamune spending spree: sell surplus junk and duplicate low-tier chips, never the rare upgrade materials.",
@@ -914,7 +984,8 @@
      ],
      "trophy": true,
      "text_it": "Tieni 100.000 G in tasca in un colpo solo — Desiderio senza emozioni (Desire Without Emotion). Sincronizzalo PRIMA della spesa folle da Masamune: vendi cianfrusaglie e chip doppioni di bassa lega, mai i materiali rari di potenziamento.",
-     "loc_it": "Ovunque — controlla il portafogli"
+     "loc_it": "Ovunque — controlla il portafogli",
+     "sid": "s049"
     },
     {
      "text": "Confirm the body counter: your 100th retrieved or repaired android corpse pops CHERISH OUR RESOURCES. If you're short, hotspots where players die constantly (the level 99 Emil arena, late-route bosses) are littered with bodies.",
@@ -928,7 +999,8 @@
      ],
      "trophy": true,
      "text_it": "Verifica il contatore dei corpi: il centesimo cadavere di androide recuperato o riparato fa scattare Risorse preziose (Cherish Our Resources). Se sei corto, i punti dove i giocatori muoiono di continuo (l'arena di Emil livello 99, i boss delle route avanzate) sono disseminati di corpi.",
-     "loc_it": "Zone ad alta mortalità, rete attiva"
+     "loc_it": "Zone ad alta mortalità, rete attiva",
+     "sid": "s050"
     }
    ],
    "title_it": "Fase 6 — Pulizia: quest, record di mondo e i contatori divertenti",
@@ -950,7 +1022,8 @@
      ],
      "trophy": false,
      "text_it": "Fai una checklist completa delle 40 armi e compra o recupera tutto ciò che manca: stock dei negozi all'accampamento della Resistenza e al villaggio di Pascal, la sosta di Emil al campo (TYPE-3 FISTS, ANGEL'S FOLLY), premi delle quest, punti di scavo e forzieri da manomettere con 9S. Diversi pezzi compaiono solo nelle route avanzate o come 9S — la selezione capitoli li recupera tutti, quindi qui niente è permanentemente mancabile.",
-     "loc_it": "Tutte le zone / tutti i negozi"
+     "loc_it": "Tutte le zone / tutti i negozi",
+     "sid": "s051"
     },
     {
      "text": "With EMIL'S MEMORIES done, talk to Emil to learn his address, then drop through the pipe under the tree roots near the City Ruins sewer entrance into EMIL'S RESIDENCE. Take Emil's Mask, report back to him, then return WITH 9S and hack his locked chest — the LEVEL 99 EMIL fight triggers as you leave. Drop to Easy, stack defense, and win: he surrenders the EMIL HEADS weapon, which IS required for Inorganic Blade.",
@@ -969,7 +1042,8 @@
      ],
      "trophy": false,
      "text_it": "Con I RICORDI DI EMIL completata, parla con Emil per farti dare il suo indirizzo, poi calati nel tubo sotto le radici dell'albero vicino all'ingresso delle fogne delle rovine della città, fino alla residenza di Emil. Prendi la maschera di Emil, riferisci a lui, poi torna CON 9S e manometti il suo forziere chiuso — lo scontro con EMIL LIVELLO 99 parte mentre esci. Scendi a Facile, impila difesa e vinci: ti consegna l'arma Emil Heads (Emil Heads), che È richiesta per Lama inorganica.",
-     "loc_it": "Rovine della città — residenza di Emil (tubo sotto le radici vicino alle fogne)"
+     "loc_it": "Rovine della città — residenza di Emil (tubo sotto le radici vicino alle fogne)",
+     "sid": "s052"
     },
     {
      "text": "Stockpile METEORITES: buy from the Half-Wit Inventor (his stock opens after his quest chain plus Route C), collect the quest rewards (Popola's Errand, Storage Element, Gathering Keepsakes, Reconnaissance Squad), and re-run Tower chests via chapter select. Nineteen final upgrades want them.",
@@ -988,7 +1062,8 @@
      ],
      "trophy": false,
      "text_it": "Fai scorta di METEORITES: compra dall'Half-Wit Inventor (lo stock si apre dopo la sua catena più la Route C), incassa i premi delle quest (Popola's Errand, Storage Element, Gathering Keepsakes, Reconnaissance Squad) e rifai i forzieri della Torre con la selezione capitoli. Diciannove potenziamenti finali li reclamano.",
-     "loc_it": "Half-Wit Inventor / La Torre"
+     "loc_it": "Half-Wit Inventor / La Torre",
+     "sid": "s053"
     },
     {
      "text": "Take your first weapon to level 4 at MASAMUNE's forge below the Forest Castle Royal Chamber access point — TOOLS OF THE TRADE.",
@@ -1002,7 +1077,8 @@
      ],
      "trophy": true,
      "text_it": "Porta la tua prima arma al livello 4 alla forgia di MASAMUNE, sotto l'accesso alla camera reale del castello nella foresta — Attrezzi del mestiere (Tools of the Trade).",
-     "loc_it": "Castello nella foresta — forgia di Masamune"
+     "loc_it": "Castello nella foresta — forgia di Masamune",
+     "sid": "s054"
     },
     {
      "text": "Grind the remaining materials (Machine Cores from Goliath Tanks and the gold park rabbit, Pyrite from Desert stubbies, Moldavite in the Flooded City) and push ALL 39 upgradeable weapons to level 4 — Bare Fists can't be upgraded and doesn't count. INORGANIC BLADE pops on the last one.",
@@ -1021,7 +1097,8 @@
      ],
      "trophy": true,
      "text_it": "Farma i materiali restanti (Machine Cores dai carri armati Goliath e dal coniglio dorato del luna park, Pyrite dalle biomacchine tozze del deserto, Moldavite nella città sommersa) e spingi TUTTE le 39 armi potenziabili al livello 4 — i Bare Fists non si potenziano e non contano. Lama inorganica (Inorganic Blade) scatta sull'ultima.",
-     "loc_it": "Forgia di Masamune / circuiti di farming"
+     "loc_it": "Forgia di Masamune / circuiti di farming",
+     "sid": "s055"
     },
     {
      "text": "Close the POD PROGRAM checklist: the programs sit in chests across the Desert, Flooded City, Forest and Tower, with a few as quest rewards — all reachable via chapter select. WEAPONS MANIAC pops with the full set.",
@@ -1035,7 +1112,8 @@
      ],
      "trophy": true,
      "text_it": "Chiudi la checklist dei PROGRAMMI POD: stanno nei forzieri di deserto, città sommersa, foresta e Torre, con qualcuno come premio di quest — tutti raggiungibili in selezione capitoli. Fanatico di armi (Weapons Maniac) scatta a set completo.",
-     "loc_it": "Giro dei forzieri / premi delle quest"
+     "loc_it": "Giro dei forzieri / premi delle quest",
+     "sid": "s056"
     },
     {
      "text": "Max all three pods at any maintenance shop (Bunker or Resistance Camp): each tier eats gathered goods — Tree Sap, Giant Eggs, Dye, Machine Oil — plus one POWERUP PART S/M/L per level. The Part L trio is the bottleneck; Tower and late-route chests carry them. SUPREME SUPPORT WEAPONS pops when Pod C's last bar fills.",
@@ -1054,7 +1132,8 @@
      ],
      "trophy": true,
      "text_it": "Porta al massimo tutti e tre i Pod a un banco di manutenzione qualsiasi (Bunker o accampamento della Resistenza): ogni livello divora materiali raccolti — Tree Sap, Giant Eggs, Dye, Machine Oil — più un POWERUP PART S/M/L a livello. Il trio di Part L è il collo di bottiglia; li trovi nei forzieri della Torre e delle route avanzate. Le migliori armi di supporto (Supreme Support Weapons) scatta quando si riempie l'ultima barra del Pod C.",
-     "loc_it": "Banchi di manutenzione"
+     "loc_it": "Banchi di manutenzione",
+     "sid": "s057"
     },
     {
      "text": "Replay flight-unit chapters (the prologue run and the Flooded City assault are fastest) until the lifetime counter hits 255 — RULER OF THE SKIES. Kills only bank when you SAVE after the segment, so never quit to the title screen mid-farm, and don't count on the ending E credits shooter — real flight-unit segments are what feed the counter.",
@@ -1068,7 +1147,8 @@
      ],
      "trophy": true,
      "text_it": "Rigioca i capitoli in aeroscheletro (la corsa del prologo e l'assalto alla città sommersa sono i più rapidi) finché il contatore a vita non tocca 255 — Signore dei cieli (Ruler of the Skies). Le uccisioni vanno in banca solo se SALVI dopo il segmento, quindi mai uscire al titolo a metà farm, e non contare sullo sparatutto dei titoli del finale E — sono i veri segmenti in aeroscheletro a nutrire il contatore.",
-     "loc_it": "Selezione capitoli — segmenti di volo"
+     "loc_it": "Selezione capitoli — segmenti di volo",
+     "sid": "s058"
     }
    ],
    "title_it": "Fase 7 — L'arsenale: 40 armi, tutto a livello 4, 3 Pod al massimo",
@@ -1090,7 +1170,8 @@
      ],
      "trophy": false,
      "text_it": "Con tutte le armi al massimo e Emil's Memories completata, parla con Emil per innescare LA DETERMINAZIONE DI EMIL (Emil's Determination): casa sua è stata svaligiata e la pista porta nel deserto, dove ondate di CLONI DI EMIL ti tendono un'imboscata prima che compaia il vero boss Emil Heads.",
-     "loc_it": "Ex centro commerciale → Deserto"
+     "loc_it": "Ex centro commerciale → Deserto",
+     "sid": "s059"
     },
     {
      "text": "FIRST ATTEMPT — take ENDING Y: fight until Emil begins his self-destruct countdown, then let it blow. Ending Y registers and boots you to the title screen with nothing saved. Doing the kill first and saving can lock this ending out — this is the platinum's one true missable moment.",
@@ -1109,7 +1190,8 @@
      ],
      "trophy": false,
      "text_it": "PRIMO TENTATIVO — prenditi il FINALE Y: combatti finché Emil non avvia il conto alla rovescia dell'autodistruzione, poi lascialo esplodere. Il finale Y si registra e ti riporta al titolo senza salvare nulla. Ucciderlo prima e salvare può chiuderti fuori da questo finale — è l'unico vero momento mancabile del platino.",
-     "loc_it": "Deserto — scontro con Emil Heads"
+     "loc_it": "Deserto — scontro con Emil Heads",
+     "sid": "s060"
     },
     {
      "text": "Reload and refight: this time burn Emil down BEFORE the countdown ends — NAUGHTY CHILDREN (gold) for destroying him.",
@@ -1123,7 +1205,8 @@
      ],
      "trophy": true,
      "text_it": "Ricarica e rifai lo scontro: stavolta brucia Emil PRIMA che il conto alla rovescia finisca — Bimbi cattivi (Naughty Children, oro) per averlo distrutto.",
-     "loc_it": "Deserto — rivincita con Emil Heads"
+     "loc_it": "Deserto — rivincita con Emil Heads",
+     "sid": "s061"
     },
     {
      "text": "Open the joke-ending sweep via chapter select — each one kicks to the title WITHOUT saving, so they cost minutes each. Batch 1: W (die to the prologue laser), F (let the timer expire against Engels), G (walk away from the crane objective as 9S), H (ignore the Goliath interception order), I (leave 9S behind after the Copied City), J (attack the peaceful factory machines).",
@@ -1137,7 +1220,8 @@
      ],
      "trophy": false,
      "text_it": "Apri lo sweep dei finali scherzosi in selezione capitoli — ognuno ti butta al titolo SENZA salvare, quindi costano pochi minuti l'uno. Blocco 1: W (muori contro il laser del prologo), F (lascia scadere il timer contro Engels), G (allontanati dall'obiettivo della gru come 9S), H (ignora l'ordine di intercettare il Goliath), I (abbandona 9S dopo la città clone), J (attacca le biomacchine pacifiche della fabbrica).",
-     "loc_it": "Selezione capitoli"
+     "loc_it": "Selezione capitoli",
+     "sid": "s062"
     },
     {
      "text": "Batch 2: K (eat the mackerel item), L (desert the Resistance Camp during the attack), M (skip defending Pascal's Village as A2), N (destroy every machine in Pascal's Village), O (in the final chapter as 9S, turn back toward the Factory instead of marching on the City Ruins), P (let 2B's virus infection finish), Q (ignore 2B's distress near the commercial facility).",
@@ -1151,7 +1235,8 @@
      ],
      "trophy": false,
      "text_it": "Blocco 2: K (mangia il pesce mackerel, lo sgombro), L (diserta l'accampamento della Resistenza durante l'attacco), M (salta la difesa del villaggio di Pascal come A2), N (distruggi ogni biomacchina del villaggio di Pascal), O (nel capitolo finale come 9S, torna verso la fabbrica invece di marciare sulle rovine della città), P (lascia che l'infezione virale di 2B faccia il suo corso), Q (ignora il segnale di soccorso di 2B vicino al centro commerciale).",
-     "loc_it": "Selezione capitoli"
+     "loc_it": "Selezione capitoli",
+     "sid": "s063"
     },
     {
      "text": "Batch 3: R (attack Pascal's peaceful machines), S (abandon Devola and Popola at the Tower), T (unequip your OS Chip — instant death), U (self-destruct inside the Bunker), V (fight beside the twins instead of hacking the Tower door), X (flee instead of helping as A2), Z (as A2, cut Pascal down at your very first meeting).",
@@ -1165,7 +1250,8 @@
      ],
      "trophy": false,
      "text_it": "Blocco 3: R (attacca le biomacchine pacifiche di Pascal), S (abbandona Devola e Popola alla Torre), T (rimuovi il chip OS — morte istantanea), U (autodistruggiti dentro il Bunker), V (combatti al fianco delle gemelle invece di manomettere la porta della Torre), X (fuggi invece di aiutare come A2), Z (come A2, abbatti Pascal al vostro primissimo incontro).",
-     "loc_it": "Selezione capitoli"
+     "loc_it": "Selezione capitoli",
+     "sid": "s064"
     },
     {
      "text": "The 26th letter completes the alphabet — TRANSCENDENT BEING pops on your final missing ending.",
@@ -1179,7 +1265,8 @@
      ],
      "trophy": true,
      "text_it": "La ventiseiesima lettera completa l'alfabeto — Essere trascendente (Transcendent Being) scatta sul tuo ultimo finale mancante.",
-     "loc_it": "Selezione capitoli — ultimo finale"
+     "loc_it": "Selezione capitoli — ultimo finale",
+     "sid": "s065"
     }
    ],
    "title_it": "Fase 8 — Emil's Determination e lo sweep dei 26 finali",
@@ -1201,7 +1288,8 @@
      ],
      "trophy": true,
      "text_it": "Con tutti i 47 trofei guadagnati sul campo, Ultime parole (Final Words) — il platino — si sblocca. Ogni contatore, finale e potenziamento di questa lista è passato dal gioco stesso; la Strange Resistance Woman non ti ha mai venduto niente.",
-     "loc_it": "Lista trofei"
+     "loc_it": "Lista trofei",
+     "sid": "s066"
     },
     {
      "text": "Optional epilogue for the series finale: replay ending E via chapter select and this time ACCEPT the save-data sacrifice on camera. Your trophies are permanent — only the save dies, the way the game always intended.",
@@ -1215,7 +1303,8 @@
      ],
      "trophy": false,
      "text_it": "Epilogo facoltativo per il congedo dalla serie: rigioca il finale E in selezione capitoli e stavolta ACCETTA il sacrificio dei dati di salvataggio, in diretta. I tuoi trofei sono permanenti — muore solo il salvataggio, come il gioco ha sempre voluto.",
-     "loc_it": "Selezione capitoli — finale E"
+     "loc_it": "Selezione capitoli — finale E",
+     "sid": "s067"
     }
    ],
    "title_it": "Fase 9 — Ultime parole",

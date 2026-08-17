@@ -1,4 +1,26 @@
 {
+ "meta": {
+  "id": "bor",
+  "format": 1,
+  "version": 1,
+  "accent": "#7fc98a",
+  "tagline": {
+   "en": "Emma & Koo - parry-tank, story mode, NG+ clear",
+   "it": "Emma e Kuu - parry-tank, story mode, clear in NG+"
+  },
+  "thumb": {
+   "icon": "paw",
+   "glow": "100,50,30",
+   "seed": 16,
+   "stats": [
+    [
+     "2",
+     "RUN"
+    ]
+   ],
+   "tag": null
+  }
+ },
  "game": "Beast of Reincarnation",
  "prefix": "BOR",
  "playthroughs": "2 (full story run + a fast New Game+ clear — 'Reincarnated' requires finishing NG+, and one blade plus the final skill-tree tiers only exist in NG+)",
@@ -83,7 +105,8 @@
      ],
      "trophy": false,
      "text_it": "Inizia a Easy o Story Mode — tutti i 46 trofei sono ottenibili a qualsiasi difficoltà, nessuno mancabile, nessuno buggato, nessun online richiesto.",
-     "loc_it": "Menu della difficoltà a inizio partita; modificabile in qualsiasi momento"
+     "loc_it": "Menu della difficoltà a inizio partita; modificabile in qualsiasi momento",
+     "sid": "s001"
     },
     {
      "text": "Drill the parry in the prologue: every clean parry blocks damage and refills Koo's Fluorescence Points (FP) that power his Bloom Arts. This is your 'shield'.",
@@ -97,7 +120,8 @@
      ],
      "trophy": false,
      "text_it": "Allena il parry nel prologo: ogni parry pulito blocca i danni e ricarica i Fluorescence Points (FP) di Kuu che alimentano le sue Arti fiorite. Questo è il tuo 'scudo'.",
-     "loc_it": "Tutorial del prologo, Zona cuscinetto di Ogouchi"
+     "loc_it": "Tutorial del prologo, Zona cuscinetto di Ogouchi",
+     "sid": "s002"
     },
     {
      "text": "Light your first campsite — save point, fast-travel hub, rest/cook spot. There are 119 total; light every one you pass all game.",
@@ -116,7 +140,8 @@
      ],
      "trophy": true,
      "text_it": "Accendi il tuo primo accampamento — punto di salvataggio, hub per il viaggio rapido, luogo per riposare/cucinare. Sono 119 in totale; accendi ognuno che incontri per tutto il gioco.",
-     "loc_it": "Village Surroundings Camp, Zona cuscinetto di Ogouchi"
+     "loc_it": "Village Surroundings Camp, Zona cuscinetto di Ogouchi",
+     "sid": "s003"
     },
     {
      "text": "Enhance an attribute for the first time — put your first points into Vitality for the defensive build (HP now, gates Helm Splitter later).",
@@ -135,7 +160,8 @@
      ],
      "trophy": true,
      "text_it": "Potenzia un attributo per la prima volta — metti i primi punti in Vitality per la build difensiva (HP subito, sblocca Helm Splitter più avanti).",
-     "loc_it": "Qualsiasi accampamento / menu abilità dell'Albero gigante"
+     "loc_it": "Qualsiasi accampamento / menu abilità dell'Albero gigante",
+     "sid": "s004"
     },
     {
      "text": "Feed Koo a treat for the first time — also starts his rapport meter, maxed later for 'Closest Companion'.",
@@ -154,7 +180,8 @@
      ],
      "trophy": true,
      "text_it": "Dai uno snack a Kuu per la prima volta — avvia anche il suo indicatore di legame, da massimizzare più avanti per 'Compagno più fedele'.",
-     "loc_it": "Menu di interazione con Kuu, ovunque"
+     "loc_it": "Menu di interazione con Kuu, ovunque",
+     "sid": "s005"
     },
     {
      "text": "Entangle with Emma and Koo for the first time (the shared power-link mechanic).",
@@ -168,7 +195,8 @@
      ],
      "trophy": true,
      "text_it": "Intrecciati con Emma e Kuu per la prima volta (la meccanica di collegamento del potere condiviso).",
-     "loc_it": "Sbloccato tramite il tutorial iniziale della storia"
+     "loc_it": "Sbloccato tramite il tutorial iniziale della storia",
+     "sid": "s006"
     },
     {
      "text": "Discover your first shrine. 40 shrines total — uniquely, shrines are the only collectible that persists into NG+, so they can never be lost.",
@@ -187,7 +215,8 @@
      ],
      "trophy": true,
      "text_it": "Scopri il tuo primo santuario. 40 santuari in totale — caso unico, i santuari sono l'unico collezionabile che persiste nel NG+, quindi non possono mai andare persi.",
-     "loc_it": "Primo santuario sul percorso di Ogouchi"
+     "loc_it": "Primo santuario sul percorso di Ogouchi",
+     "sid": "s007"
     },
     {
      "text": "Have your first deep talk with Koo at a campsite — do this at every rest stop from now on to build rapport.",
@@ -201,7 +230,8 @@
      ],
      "trophy": true,
      "text_it": "Fai il tuo primo discorso a cuore aperto con Kuu a un accampamento — fallo a ogni sosta d'ora in poi per aumentare il legame.",
-     "loc_it": "Menu di riposo dell'accampamento"
+     "loc_it": "Menu di riposo dell'accampamento",
+     "sid": "s008"
     },
     {
      "text": "Look up at the crescent moon when prompted/visible for an easy hidden trophy.",
@@ -215,7 +245,8 @@
      ],
      "trophy": true,
      "text_it": "Osserva la luna crescente quando compare il prompt o è visibile, per un facile trofeo nascosto.",
-     "loc_it": "Cielo notturno, esplorazione iniziale"
+     "loc_it": "Cielo notturno, esplorazione iniziale",
+     "sid": "s009"
     },
     {
      "text": "Adopt the collect-everything habit now: documents (22), lore paintings (9), seedlings (11), cookbooks/crop books (25). Follow Koo's cues — he points to chests and items.",
@@ -229,7 +260,8 @@
      ],
      "trophy": false,
      "text_it": "Prendi subito l'abitudine di raccogliere tutto: documenti (22), dipinti della storia (9), piantine (11), libri di cucina e di coltivazione (25). Segui i segnali di Kuu — indica forzieri e oggetti.",
-     "loc_it": "Ovunque; l'abilità Detect Hidden Item di Kuu aiuta più avanti"
+     "loc_it": "Ovunque; l'abilità Detect Hidden Item di Kuu aiuta più avanti",
+     "sid": "s010"
     },
     {
      "text": "Boss: Rangifer (Lv 9, rematch Lv 12) — the first Nushi. Parry its charges to feed FP, taunt with Koo, punish staggers with Lethals.",
@@ -243,7 +275,8 @@
      ],
      "trophy": true,
      "text_it": "Boss: Rangifer (Lv 9, rivincita Lv 12) — il primo Nushi. Para le sue cariche per alimentare gli FP, usa Taunt con Kuu, punisci gli stordimenti con i Lethal.",
-     "loc_it": "Arena del Nushi nella Zona cuscinetto di Ogouchi"
+     "loc_it": "Arena del Nushi nella Zona cuscinetto di Ogouchi",
+     "sid": "s011"
     },
     {
      "text": "Story flashback: fight the Nue Malefact (Lv 16). Scripted difficulty — just survive with parries and spacing.",
@@ -257,7 +290,8 @@
      ],
      "trophy": false,
      "text_it": "Flashback della storia: affronta il Nue Malefact (Lv 16). Difficoltà scriptata — sopravvivi e basta con parry e gestione delle distanze.",
-     "loc_it": "Flashback a Ogouchi Colony"
+     "loc_it": "Flashback a Ogouchi Colony",
+     "sid": "s012"
     }
    ],
    "title_it": "Fase 1 — Prologo e Kanto: Zona cuscinetto di Ogouchi (Ogouchi Buffer Zone) (Cap. 1 'Seedling')",
@@ -279,7 +313,8 @@
      ],
      "trophy": false,
      "text_it": "Traguardo build: compra Pounce Lv2 di Kuu e poi Taunt — Taunt attira l'aggro dei nemici su Kuu così Emma difensiva può riposizionarsi e curarsi. Il cuore dello stile tank.",
-     "loc_it": "Albero gigante di Kuu (richiede investimento in Strength)"
+     "loc_it": "Albero gigante di Kuu (richiede investimento in Strength)",
+     "sid": "s013"
     },
     {
      "text": "Have your first deep talk with Kagura aboard the Cleanse Walker; eat her cooked meals before bosses (hunger meters enable out-of-combat HP regen).",
@@ -298,7 +333,8 @@
      ],
      "trophy": true,
      "text_it": "Fai il tuo primo discorso a cuore aperto con Kagura a bordo della Cleanse Walker; mangia i suoi pasti cucinati prima dei boss (gli indicatori della fame abilitano la rigenerazione HP fuori dal combattimento).",
-     "loc_it": "Cleanse Walker (base mobile)"
+     "loc_it": "Cleanse Walker (base mobile)",
+     "sid": "s014"
     },
     {
      "text": "Craft items with Koo at every campsite — 'Busy Paws' needs 30 crafts total, trivial if you batch-craft arrows/consumables all game.",
@@ -317,7 +353,8 @@
      ],
      "trophy": false,
      "text_it": "Crea oggetti con Kuu a ogni accampamento — 'Zampe indaffarate' richiede 30 creazioni totali, banale se produci frecce/consumabili in blocco per tutto il gioco.",
-     "loc_it": "Menu di crafting dell'accampamento"
+     "loc_it": "Menu di crafting dell'accampamento",
+     "sid": "s015"
     },
     {
      "text": "Equip Spirit Stones (accessory drops from malefacts) as soon as you get them; combine complementary bonuses rather than leaving slots empty.",
@@ -331,7 +368,8 @@
      ],
      "trophy": false,
      "text_it": "Equipaggia le Spirit Stones (accessori che cadono dai malefici) appena le ottieni; combina bonus complementari invece di lasciare slot vuoti.",
-     "loc_it": "Menu equipaggiamento; drop in tutto il Kanto"
+     "loc_it": "Menu equipaggiamento; drop in tutto il Kanto",
+     "sid": "s016"
     },
     {
      "text": "Boss: Lacerta (Lv 13, rematch Lv 16). Its quick combos are parry practice — each deflection charges Blade Arts; don't hoard them, spend them.",
@@ -345,7 +383,8 @@
      ],
      "trophy": true,
      "text_it": "Boss: Lacerta (Lv 13, rivincita Lv 16). Le sue combo rapide sono esercizio di parry — ogni deviazione carica le Arti della lama; non accumularle, usale.",
-     "loc_it": "Arena del Nushi nell'Ancient Civilization Zone"
+     "loc_it": "Arena del Nushi nell'Ancient Civilization Zone",
+     "sid": "s017"
     },
     {
      "text": "Kill counters run all game: 300 malefacts ('The Sealer') and 300 golems ('Repose for the Departed'). Fight, don't sneak past — both finish naturally by NG+.",
@@ -359,7 +398,8 @@
      ],
      "trophy": false,
      "text_it": "I contatori di uccisioni corrono per tutto il gioco: 300 malefici ('L'isolante') e 300 golem ('Riposo ai caduti'). Combatti, non aggirare — entrambi si completano naturalmente entro il NG+.",
-     "loc_it": "Tutte le regioni; riposa agli accampamenti per far riapparire i gruppi"
+     "loc_it": "Tutte le regioni; riposa agli accampamenti per far riapparire i gruppi",
+     "sid": "s018"
     }
    ],
    "title_it": "Fase 2 — Kanto: Ancient Civilization Zone (Cap. 2 'Creeping Tendrils')",
@@ -381,7 +421,8 @@
      ],
      "trophy": true,
      "text_it": "Boss: Nue Malefact (Lv 20), poi Shidou e Nue (Lv 20) — il duello con il purificatore. Più veloce di qualsiasi Nushi: resta paziente, para le serie da 3-4 colpi, non scambiare mai colpi.",
-     "loc_it": "Great Wall Terraces"
+     "loc_it": "Great Wall Terraces",
+     "sid": "s019"
     },
     {
      "text": "Start upgrading blades at the Cleanse Walker using golem parts (Memory Chips, Electronic Brains, Facility Modules, Generator Devices). Loot every golem wreck.",
@@ -400,7 +441,8 @@
      ],
      "trophy": false,
      "text_it": "Inizia a potenziare le lame alla Cleanse Walker usando i pezzi dei golem (Memory Chips, Electronic Brains, Facility Modules, Generator Devices). Saccheggia ogni relitto di golem.",
-     "loc_it": "Officina della Cleanse Walker"
+     "loc_it": "Officina della Cleanse Walker",
+     "sid": "s020"
     },
     {
      "text": "Build milestone: with ~12 VIT unlock Helm Splitter (aerial slam, big stagger); pick up Expand Entanglement Gauge (9 STR) for longer Blade Art uptime.",
@@ -414,7 +456,8 @@
      ],
      "trophy": false,
      "text_it": "Traguardo build: con ~12 VIT sblocca Helm Splitter (schianto aereo, grande stordimento); prendi Expand Entanglement Gauge (9 STR) per tenere attive più a lungo le Arti della lama.",
-     "loc_it": "Albero gigante di Emma"
+     "loc_it": "Albero gigante di Emma",
+     "sid": "s021"
     },
     {
      "text": "Obtain the Purifier's outfit through story progression in the mid-game.",
@@ -428,7 +471,8 @@
      ],
      "trophy": true,
      "text_it": "Ottieni l'abito del purificatore avanzando nella storia a metà gioco.",
-     "loc_it": "Abito assegnato dalla storia"
+     "loc_it": "Abito assegnato dalla storia",
+     "sid": "s022"
     },
     {
      "text": "Boss: Taurus (Lv 26, rematch Lv 29). Use Koo's Bloom Arts (menu slows time) to build its Down Gauge, then Lethal-finish the stagger windows.",
@@ -442,7 +486,8 @@
      ],
      "trophy": true,
      "text_it": "Boss: Taurus (Lv 26, rivincita Lv 29). Usa le Arti fiorite di Kuu (il menu rallenta il tempo) per caricare la sua Down Gauge, poi chiudi con i Lethal nelle finestre di stordimento.",
-     "loc_it": "Arena del Nushi nella Pilgrim's Zone"
+     "loc_it": "Arena del Nushi nella Pilgrim's Zone",
+     "sid": "s023"
     },
     {
      "text": "Use Mikoto's free attribute reset once for the trophy (and any time your VIT-heavy spread needs a respec).",
@@ -461,7 +506,8 @@
      ],
      "trophy": true,
      "text_it": "Usa una volta il reset gratuito degli attributi di Mikoto per il trofeo (e ogni volta che la tua distribuzione sbilanciata su VIT ha bisogno di un respec).",
-     "loc_it": "Mikoto, Cleanse Walker"
+     "loc_it": "Mikoto, Cleanse Walker",
+     "sid": "s024"
     }
    ],
    "title_it": "Fase 3 — Mountainous: Great Wall Terraces e Pilgrim's Zone (Cap. 3-4)",
@@ -483,7 +529,8 @@
      ],
      "trophy": false,
      "text_it": "Rivincita boss: Rangifer (Lv 32) a Matsukawa — nessun trofeo nuovo, ma progressi gratis sui contatori e potenziamenti dei poteri dei boss.",
-     "loc_it": "Matsukawa Zone"
+     "loc_it": "Matsukawa Zone",
+     "sid": "s025"
     },
     {
      "text": "Boss rematch: Nue Malefact (Lv 32) then Shidou & Nue (Lv 35) at Fuji Frontier. Same duel, more damage — Koo's Taunt + your parries carry it.",
@@ -497,7 +544,8 @@
      ],
      "trophy": false,
      "text_it": "Rivincita boss: Nue Malefact (Lv 32) poi Shidou e Nue (Lv 35) a Fuji Frontier. Stesso duello, più danni — Taunt di Kuu + i tuoi parry risolvono.",
-     "loc_it": "Fuji Frontier Zone"
+     "loc_it": "Fuji Frontier Zone",
+     "sid": "s026"
     },
     {
      "text": "Duel every Elite Golem you find (34 total, purple/named wanderers) — they count toward 'Wandering Duelist' and drop the best upgrade parts.",
@@ -511,7 +559,8 @@
      ],
      "trophy": false,
      "text_it": "Sfida ogni golem d'élite che trovi (34 in totale, vagabondi viola/con nome) — contano per 'Duellante errante' e rilasciano i migliori pezzi per i potenziamenti.",
-     "loc_it": "Vagabondi nell'open world, tutte le regioni"
+     "loc_it": "Vagabondi nell'open world, tutte le regioni",
+     "sid": "s027"
     },
     {
      "text": "Collect arrow & bolt manuals (12 total) and keep buying every cooking/crop book from vendors and chests (25 total).",
@@ -525,7 +574,8 @@
      ],
      "trophy": false,
      "text_it": "Raccogli i manuali di frecce e dardi (12 in totale) e continua a comprare ogni libro di cucina e di coltivazione da mercanti e forzieri (25 in totale).",
-     "loc_it": "Forzieri, mercanti, colonie"
+     "loc_it": "Forzieri, mercanti, colonie",
+     "sid": "s028"
     },
     {
      "text": "Build milestone: unlock Roll (12 FLO, after Tracking Shot Lv2) — a double-evade escape that fixes bad spacing, your second defensive pillar after the parry.",
@@ -539,7 +589,8 @@
      ],
      "trophy": false,
      "text_it": "Traguardo build: sblocca Roll (12 FLO, dopo Tracking Shot Lv2) — una doppia schivata di fuga che corregge le distanze sbagliate, il tuo secondo pilastro difensivo dopo il parry.",
-     "loc_it": "Albero gigante di Emma"
+     "loc_it": "Albero gigante di Emma",
+     "sid": "s029"
     }
    ],
    "title_it": "Fase 4 — Mountainous: Matsukawa Zone e Fuji Frontier (Cap. 5-6)",
@@ -561,7 +612,8 @@
      ],
      "trophy": false,
      "text_it": "Parla con ogni golem custode che trovi — 'Chi lo trova se lo tiene' richiede 30 conversazioni e il conteggio persiste nel NG+.",
-     "loc_it": "Golem amichevoli, dalla regione Drowned in poi"
+     "loc_it": "Golem amichevoli, dalla regione Drowned in poi",
+     "sid": "s030"
     },
     {
      "text": "Boss: Corvus (Lv 38). Aerial Nushi — Tracking Shot arrows and Koo's Sakura: Javelin cover the air game while you parry the dives.",
@@ -575,7 +627,8 @@
      ],
      "trophy": true,
      "text_it": "Boss: Corvus (Lv 38). Nushi aereo — le frecce Tracking Shot e Sakura: Javelin di Kuu coprono il gioco aereo mentre tu pari le picchiate.",
-     "loc_it": "Arena del Nushi nella Giant Tree Zone"
+     "loc_it": "Arena del Nushi nella Giant Tree Zone",
+     "sid": "s031"
     },
     {
      "text": "Keep collecting blades — 20 of the 21 exist in this playthrough (the 21st, Kanzashi, is NG+-only, so 'Blade Collector' finishes there).",
@@ -589,7 +642,8 @@
      ],
      "trophy": false,
      "text_it": "Continua a raccogliere lame — 20 delle 21 esistono in questa partita (la 21ª, Kanzashi, è esclusiva del NG+, quindi 'Collezionista di lame' si completa lì).",
-     "loc_it": "Forzieri, boss, ricompense della storia"
+     "loc_it": "Forzieri, boss, ricompense della storia",
+     "sid": "s032"
     },
     {
      "text": "Rapport check-in: deep talk with Koo and Kagura after every chapter, keep feeding treats — both max-rapport trophies should be near done by the finale.",
@@ -603,7 +657,8 @@
      ],
      "trophy": false,
      "text_it": "Controllo legame: discorsi a cuore aperto con Kuu e Kagura dopo ogni capitolo, continua a dare snack — entrambi i trofei del legame massimo dovrebbero essere quasi completi al finale.",
-     "loc_it": "Accampamenti e Cleanse Walker"
+     "loc_it": "Accampamenti e Cleanse Walker",
+     "sid": "s033"
     }
    ],
    "title_it": "Fase 5 — Drowned Region: Giant Tree Zone (Cap. 7 'Root Rot')",
@@ -630,7 +685,8 @@
      ],
      "trophy": false,
      "text_it": "Accendi l'accampamento Crater: Outskirt e segnati lo spawn del Withered Beast a ovest — uccidi, torna col viaggio rapido, riposa per farlo riapparire, ripeti più avanti per il farming al Lv100.",
-     "loc_it": "Crater Zone, Wasteland"
+     "loc_it": "Crater Zone, Wasteland",
+     "sid": "s034"
     },
     {
      "text": "Boss rematch: Taurus (Lv 44) in the Crater Zone.",
@@ -644,7 +700,8 @@
      ],
      "trophy": false,
      "text_it": "Rivincita boss: Taurus (Lv 44) nella Crater Zone.",
-     "loc_it": "Crater Zone"
+     "loc_it": "Crater Zone",
+     "sid": "s035"
     },
     {
      "text": "Boss: Kunai & Kirin (Lv 45) — a two-target fight. Koo Taunts one while you parry-duel the other; Bloom Art time-slow keeps the pair readable.",
@@ -658,7 +715,8 @@
      ],
      "trophy": true,
      "text_it": "Boss: Kunai e Kirin (Lv 45) — uno scontro a due bersagli. Kuu usa Taunt su uno mentre tu duelli a colpi di parry con l'altro; il rallentamento del tempo delle Arti fiorite tiene la coppia leggibile.",
-     "loc_it": "Crater Zone"
+     "loc_it": "Crater Zone",
+     "sid": "s036"
     },
     {
      "text": "Boss: Crimson Malefact (Lv 45) along the Inumaki River — heavy damage output; this is where Easy difficulty and a fat VIT pool pay off.",
@@ -672,7 +730,8 @@
      ],
      "trophy": false,
      "text_it": "Boss: Crimson Malefact (Lv 45) lungo l'Inumaki River — danni molto alti; è qui che la difficoltà Easy e una riserva di VIT abbondante ripagano.",
-     "loc_it": "Inumaki River Zone"
+     "loc_it": "Inumaki River Zone",
+     "sid": "s037"
     },
     {
      "text": "Boss: Ursa (Lv 46) at Starfall Tower. Huge slow swings = free parries; players call the Wasteland stretch the hardest wall of the first run.",
@@ -686,7 +745,8 @@
      ],
      "trophy": true,
      "text_it": "Boss: Ursa (Lv 46) alla Starfall Tower. Fendenti enormi e lenti = parry gratis; i giocatori considerano il tratto della Wasteland il muro più duro della prima run.",
-     "loc_it": "Starfall Tower Zone"
+     "loc_it": "Starfall Tower Zone",
+     "sid": "s038"
     },
     {
      "text": "Stockpile golem parts and amber here — the weapon-upgrade trophies cost roughly 500-600k amber total, and Wasteland golems drop the high-tier parts.",
@@ -700,7 +760,8 @@
      ],
      "trophy": false,
      "text_it": "Fai scorta di pezzi dei golem e di ambra qui — i trofei di potenziamento armi costano all'incirca 500-600k di ambra in totale, e i golem della Wasteland rilasciano i pezzi di alto livello.",
-     "loc_it": "Gruppi di golem e casseforti della Wasteland"
+     "loc_it": "Gruppi di golem e casseforti della Wasteland",
+     "sid": "s039"
     }
    ],
    "title_it": "Fase 6 — Wasteland: Crater, Inumaki River e Starfall Tower (Cap. 8-10)",
@@ -722,7 +783,8 @@
      ],
      "trophy": false,
      "text_it": "Rivincita boss: Shidou e Nue (Lv 48) al Mount Hiei — il duello finale con il purificatore.",
-     "loc_it": "Mount Hiei Zone, regione Capital"
+     "loc_it": "Mount Hiei Zone, regione Capital",
+     "sid": "s040"
     },
     {
      "text": "Boss: Erymanth (Lv 47), the last new Nushi.",
@@ -736,7 +798,8 @@
      ],
      "trophy": true,
      "text_it": "Boss: Erymanth (Lv 47), l'ultimo Nushi inedito.",
-     "loc_it": "Capital Zone"
+     "loc_it": "Capital Zone",
+     "sid": "s041"
     },
     {
      "text": "Boss rematch: Kunai & Kirin (Lv 49) — same two-target plan: Taunt splits them, parries feed your gauges.",
@@ -750,7 +813,8 @@
      ],
      "trophy": false,
      "text_it": "Rivincita boss: Kunai e Kirin (Lv 49) — stesso piano a due bersagli: Taunt li divide, i parry alimentano i tuoi indicatori.",
-     "loc_it": "Capital Zone"
+     "loc_it": "Capital Zone",
+     "sid": "s042"
     },
     {
      "text": "Boss: Koo's Nushi Form — the emotional late-story fight. Defeat it for the hidden trophy.",
@@ -764,7 +828,8 @@
      ],
      "trophy": true,
      "text_it": "Boss: forma Nushi di Kuu — lo scontro emotivo del finale di storia. Sconfiggilo per il trofeo nascosto.",
-     "loc_it": "Sequenza avanzata della storia nel Capital"
+     "loc_it": "Sequenza avanzata della storia nel Capital",
+     "sid": "s043"
     },
     {
      "text": "Final boss: the Beast of Reincarnation — multi-phase; parry everything, dump every Blade Art and Bloom Art on stagger windows.",
@@ -778,7 +843,8 @@
      ],
      "trophy": true,
      "text_it": "Boss finale: la Bestia della reincarnazione (Beast of Reincarnation) — multi-fase; para tutto, scarica ogni Arte della lama e Arte fiorita nelle finestre di stordimento.",
-     "loc_it": "Capital Zone, arena finale"
+     "loc_it": "Capital Zone, arena finale",
+     "sid": "s044"
     },
     {
      "text": "Watch the ending ('Bearing Fruit' epilogue) for the story-completion trophy, then reload into post-game free roam.",
@@ -792,7 +858,8 @@
      ],
      "trophy": true,
      "text_it": "Guarda il finale (epilogo 'Bearing Fruit') per il trofeo di completamento storia, poi ricarica nel free roam post-game.",
-     "loc_it": "Titoli di coda / epilogo"
+     "loc_it": "Titoli di coda / epilogo",
+     "sid": "s045"
     }
    ],
    "title_it": "Fase 7 — The Capital (Cap. 11-13)",
@@ -814,7 +881,8 @@
      ],
      "trophy": false,
      "text_it": "ATTENZIONE: fai ora la raccolta completa dei collezionabili — il NG+ azzera accampamenti, documenti, dipinti, piantine, libri e manuali; solo i santuari persistono. Non è mancabile, ma evita di rifare il lavoro.",
-     "loc_it": "Free roam post-game, prima di iniziare il NG+"
+     "loc_it": "Free roam post-game, prima di iniziare il NG+",
+     "sid": "s046"
     },
     {
      "text": "Light all 119 campsites — use region completion tallies and fast travel to sweep zone by zone.",
@@ -833,7 +901,8 @@
      ],
      "trophy": true,
      "text_it": "Accendi tutti i 119 accampamenti — usa i conteggi di completamento delle regioni e il viaggio rapido per ripulire zona per zona.",
-     "loc_it": "Tutte e cinque le regioni"
+     "loc_it": "Tutte e cinque le regioni",
+     "sid": "s047"
     },
     {
      "text": "Discover all 40 shrines (these persist into NG+ regardless).",
@@ -852,7 +921,8 @@
      ],
      "trophy": true,
      "text_it": "Scopri tutti i 40 santuari (questi persistono nel NG+ in ogni caso).",
-     "loc_it": "Tutte e cinque le regioni"
+     "loc_it": "Tutte e cinque le regioni",
+     "sid": "s048"
     },
     {
      "text": "Read all 22 documents and find all 9 lore paintings — location maps exist for both (PowerPyx/Game8 have full lists).",
@@ -866,7 +936,8 @@
      ],
      "trophy": true,
      "text_it": "Leggi tutti i 22 documenti e trova tutti i 9 dipinti della storia — esistono mappe delle posizioni per entrambi (PowerPyx/Game8 hanno le liste complete).",
-     "loc_it": "Tutte le regioni; ripulita con l'aiuto delle guide"
+     "loc_it": "Tutte le regioni; ripulita con l'aiuto delle guide",
+     "sid": "s049"
     },
     {
      "text": "Collect all 11 seedling types and all 25 cooking/crop books.",
@@ -880,7 +951,8 @@
      ],
      "trophy": true,
      "text_it": "Raccogli tutti gli 11 tipi di piantina e tutti i 25 libri di cucina e di coltivazione.",
-     "loc_it": "Campi, mercanti e forzieri in tutte le regioni"
+     "loc_it": "Campi, mercanti e forzieri in tutte le regioni",
+     "sid": "s050"
     },
     {
      "text": "Obtain all 12 arrow & bolt manuals.",
@@ -894,7 +966,8 @@
      ],
      "trophy": true,
      "text_it": "Ottieni tutti i 12 manuali di frecce e dardi.",
-     "loc_it": "Forzieri e mercanti in tutte le regioni"
+     "loc_it": "Forzieri e mercanti in tutte le regioni",
+     "sid": "s051"
     },
     {
      "text": "Hunt down and defeat all 34 Elite Golems.",
@@ -913,7 +986,8 @@
      ],
      "trophy": true,
      "text_it": "Dai la caccia e sconfiggi tutti i 34 golem d'élite.",
-     "loc_it": "Vagabondi con nome, tutte le regioni"
+     "loc_it": "Vagabondi con nome, tutte le regioni",
+     "sid": "s052"
     },
     {
      "text": "XP farm: kill the Withered Beast west of Crater: Outskirt, rest to respawn, repeat until Emma AND Koo hit Level 100.",
@@ -932,7 +1006,8 @@
      ],
      "trophy": true,
      "text_it": "Farm di XP: uccidi il Withered Beast a ovest di Crater: Outskirt, riposa per farlo riapparire, ripeti finché Emma E Kuu non raggiungono il livello 100.",
-     "loc_it": "Crater Zone, Wasteland"
+     "loc_it": "Crater Zone, Wasteland",
+     "sid": "s053"
     },
     {
      "text": "Max rapport: keep deep-talking, feeding Koo treats and finishing Kagura's projects until both meters cap.",
@@ -946,7 +1021,8 @@
      ],
      "trophy": true,
      "text_it": "Legame al massimo: continua con i discorsi a cuore aperto, dai snack a Kuu e completa i progetti di Kagura finché entrambi gli indicatori non sono al massimo.",
-     "loc_it": "Accampamenti e Cleanse Walker"
+     "loc_it": "Accampamenti e Cleanse Walker",
+     "sid": "s054"
     },
     {
      "text": "Batch-craft with Koo to close out 30 total crafts.",
@@ -960,7 +1036,8 @@
      ],
      "trophy": true,
      "text_it": "Crea in blocco con Kuu per chiudere le 30 creazioni totali.",
-     "loc_it": "Qualsiasi menu di crafting dell'accampamento"
+     "loc_it": "Qualsiasi menu di crafting dell'accampamento",
+     "sid": "s055"
     },
     {
      "text": "Amber farm for upgrades: equip the Big Dipper blade (Lucky 1.2x perk) plus Koo's Amber Boost Charm — they stack; the boost window is 60 seconds, activate at the farm spot.",
@@ -974,7 +1051,8 @@
      ],
      "trophy": false,
      "text_it": "Farm di ambra per i potenziamenti: equipaggia la lama Big Dipper (perk Lucky 1.2x) più l'Amber Boost Charm di Kuu — si sommano; la finestra del boost dura 60 secondi, attivalo sul posto di farming.",
-     "loc_it": "Qualsiasi accampamento nemico affollato; le casseforti rendono ~4x rispetto ai drop normali"
+     "loc_it": "Qualsiasi accampamento nemico affollato; le casseforti rendono ~4x rispetto ai drop normali",
+     "sid": "s056"
     },
     {
      "text": "Fully upgrade every ranged weapon plus all arrow and bolt types (up to +14).",
@@ -988,7 +1066,8 @@
      ],
      "trophy": true,
      "text_it": "Potenzia al massimo ogni arma a distanza più tutti i tipi di frecce e di dardi (fino a +14).",
-     "loc_it": "Officina della Cleanse Walker; ~500-600k di ambra insieme alle lame"
+     "loc_it": "Officina della Cleanse Walker; ~500-600k di ambra insieme alle lame",
+     "sid": "s057"
     },
     {
      "text": "Upgrade the 20 first-run blades to max (+3) — 'Blade Enthusiast' completes in NG+ once Kanzashi is upgraded too.",
@@ -1007,7 +1086,8 @@
      ],
      "trophy": false,
      "text_it": "Potenzia le 20 lame della prima run al massimo (+3) — 'Appassionato di lame' si completa nel NG+ una volta potenziata anche Kanzashi.",
-     "loc_it": "Officina della Cleanse Walker"
+     "loc_it": "Officina della Cleanse Walker",
+     "sid": "s058"
     },
     {
      "text": "Check the 300 malefact / 300 golem counters — top off any shortfall while farming; otherwise they finish in NG+.",
@@ -1021,7 +1101,8 @@
      ],
      "trophy": true,
      "text_it": "Controlla i contatori 300 malefici / 300 golem — colma eventuali mancanze mentre farmi; altrimenti si completano nel NG+.",
-     "loc_it": "Qualsiasi zona con nemici che riappaiono"
+     "loc_it": "Qualsiasi zona con nemici che riappaiono",
+     "sid": "s059"
     }
    ],
    "title_it": "Fase 8 — Pulizia post-game (free roam, prima del NG+)",
@@ -1048,7 +1129,8 @@
      ],
      "trophy": true,
      "text_it": "Inizia il NG+: ricevi subito la lama Kanzashi e i Beastial Memories (danno le Blossoms of Reincarnation per i rami bloccati dell'albero di Kuu).",
-     "loc_it": "Inizio NG+, inventario"
+     "loc_it": "Inizio NG+, inventario",
+     "sid": "s060"
     },
     {
      "text": "Unlock Rejuvenating Barrier (NG+-exclusive Emma skill) plus every remaining node on Emma's Giant Tree.",
@@ -1067,7 +1149,8 @@
      ],
      "trophy": true,
      "text_it": "Sblocca Rejuvenating Barrier (abilità di Emma esclusiva del NG+) più ogni nodo rimanente sull'Albero gigante di Emma.",
-     "loc_it": "Albero gigante di Emma, NG+"
+     "loc_it": "Albero gigante di Emma, NG+",
+     "sid": "s061"
     },
     {
      "text": "Spend Blossoms of Reincarnation to open Koo's final skill-tree portion and learn every Koo skill.",
@@ -1081,7 +1164,8 @@
      ],
      "trophy": true,
      "text_it": "Spendi le Blossoms of Reincarnation per aprire la parte finale dell'albero delle abilità di Kuu e impara ogni abilità di Kuu.",
-     "loc_it": "Albero gigante di Kuu, NG+"
+     "loc_it": "Albero gigante di Kuu, NG+",
+     "sid": "s062"
     },
     {
      "text": "Fully upgrade all Blade Arts & Finishers (2,552 points for Emma) and all Bloom Arts (1,023 for Koo) — these art points cannot be reset, so route farming toward them.",
@@ -1095,7 +1179,8 @@
      ],
      "trophy": true,
      "text_it": "Potenzia al massimo tutte le Arti della lama e i colpi finali (2,552 punti per Emma) e tutte le Arti fiorite (1,023 per Kuu) — questi punti arte non possono essere resettati, quindi indirizza il farming verso di essi.",
-     "loc_it": "Menu di potenziamento delle arti; farma i punti combattendo"
+     "loc_it": "Menu di potenziamento delle arti; farma i punti combattendo",
+     "sid": "s063"
     },
     {
      "text": "Upgrade Kanzashi to max to finish fully upgrading every blade.",
@@ -1109,7 +1194,8 @@
      ],
      "trophy": true,
      "text_it": "Potenzia Kanzashi al massimo per completare il potenziamento di tutte le lame.",
-     "loc_it": "Officina della Cleanse Walker, NG+"
+     "loc_it": "Officina della Cleanse Walker, NG+",
+     "sid": "s064"
     },
     {
      "text": "Talk to any Keeper Golems still missing — the counter carries from run one, so top off to 30.",
@@ -1123,7 +1209,8 @@
      ],
      "trophy": true,
      "text_it": "Parla con i golem custodi ancora mancanti — il contatore si trascina dalla prima run, quindi arriva a 30.",
-     "loc_it": "Punti dei golem custodi, le due run sommate"
+     "loc_it": "Punti dei golem custodi, le due run sommate",
+     "sid": "s065"
     },
     {
      "text": "Blitz the NG+ story to the final boss and clear it — kill counters and any leftovers finish along the way.",
@@ -1137,7 +1224,8 @@
      ],
      "trophy": true,
      "text_it": "Corri attraverso la storia del NG+ fino al boss finale e completalo — i contatori di uccisioni e gli avanzi si chiudono strada facendo.",
-     "loc_it": "Campagna NG+ completa, dal Kanto al Capital"
+     "loc_it": "Campagna NG+ completa, dal Kanto al Capital",
+     "sid": "s066"
     },
     {
      "text": "With all 45 other trophies done, the Platinum pops. Duty fulfilled, Sealer.",
@@ -1151,7 +1239,8 @@
      ],
      "trophy": true,
      "text_it": "Con tutti gli altri 45 trofei ottenuti, scatta il Platino. Dovere assolto, isolante.",
-     "loc_it": "Automatico all'ultimo trofeo"
+     "loc_it": "Automatico all'ultimo trofeo",
+     "sid": "s067"
     }
    ],
    "title_it": "Fase 9 — New Game+ ('Reincarnation+')",
