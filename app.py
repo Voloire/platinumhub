@@ -28,8 +28,13 @@ import urllib.request
 
 # ------------------------------------------------------------------- versione
 # UNICA fonte di verita' del numero di versione: tutto il resto la interpola.
-# In release il workflow la riscrive partendo dal tag git, cosi' non puo'
-# divergere da quello che e' stato pubblicato.
+#
+# Il workflow di release NON riscrive questa riga, di proposito: il binario
+# pubblicato deve venire esattamente dal codice committato, che e' l'unica
+# promessa verificabile che possiamo fare su un eseguibile non firmato.
+# Va aggiornata A MANO prima di creare il tag -- e se te ne dimentichi il
+# rilascio si ferma prima di compilare, perche' release.yml confronta questa
+# costante con il tag e rifiuta di procedere se divergono.
 VERSION = "4.0.0"
 REPO = "Voloire/platinumhub"            # per il controllo aggiornamenti
 RELEASES_API = "https://api.github.com/repos/%s/releases/latest" % REPO
