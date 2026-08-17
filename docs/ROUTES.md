@@ -29,6 +29,20 @@ Sui dieci giochi attuali, questo quarto passaggio ha eliminato 24 traduzioni che
 
 ```jsonc
 {
+  "meta": {                          // la carta d'identità della route: la rende
+    "id": "sigla",                   //   autodescrittiva e distribuibile come file
+    "format": 1,                     // versione del formato: l'app rifiuta i formati che non conosce
+    "version": 1,                    // versione del contenuto: cresce a ogni correzione pubblicata
+    "accent": "#c8a24a",             // colore della card (un colore che non somigli a quelli già usati)
+    "tagline": {"en": "...", "it": "..."},
+    "thumb": {                       // parametri della thumbnail disegnata dall'app
+      "icon": "trophy",              // una delle icone implementate in THUMB_ART_JS (fallback: trophy)
+      "glow": "110,80,25",           // "r,g,b"
+      "seed": 5,                     // intero: fissa il pattern delle particelle
+      "stats": [["3", "FINALI"]],    // coppie [numero, etichetta] mostrate nella thumbnail
+      "tag": null                    // riga piccola sotto il titolo, o null per il default
+    }
+  },
   "game": "Titolo ufficiale del gioco",
   "prefix": "SIGLA",                 // prefisso dei codici progresso della checklist singola
   "playthroughs": "una riga sulla struttura della run",
@@ -44,6 +58,8 @@ Sui dieci giochi attuali, questo quarto passaggio ha eliminato 24 traduzioni che
       "note": "cosa ottiene questa fase",
       "steps": [
         {
+          "sid": "s001",             // identificativo STABILE del passo: assegnato una volta
+                                     //   da tools/assign_sids.py, non cambia MAI più
           "text": "Imperativo, specifico, autosufficiente.",
           "loc": "Dove — area / menu / PNG",
           "tags": [{"type": "trophy", "label": "🏆 Nome del trofeo", "label_it": "🏆 Nome italiano"}],
@@ -82,8 +98,12 @@ Per questo il test `tests/test_data_integrity.py` è il più importante della su
 
 1. Produci il draft inglese seguendo il formato qui sopra (passaggi 1 e 2 del metodo).
 2. Aggiungi il livello italiano (passaggi 3 e 4).
-3. Metti il file in `data/<sigla>.json`.
-4. Registra il gioco nella lista `RUNS` in cima ad `app.py`: `id`, `file`, `accent` (un colore che non somigli a quelli già usati), `tagline` in entrambe le lingue.
-5. `python -m pytest tests/test_data_integrity.py` — se passa, la struttura regge.
-6. `python tools/generate_standalone.py` per rigenerare le checklist HTML singole.
-7. Aggiorna il conteggio dei giochi nel README e la voce in `CHANGELOG.md`.
+3. Scrivi il blocco `meta` (id, tagline, accent, thumb) direttamente nel file.
+4. Metti il file in `data/<sigla>.json` e lancia `python tools/assign_sids.py <sigla>.json`
+   per assegnare i sid ai passi. **Mai riassegnare un sid esistente.**
+5. Registra il gioco nella lista `RUNS` in cima ad `app.py`: `id`, `file`, `accent`,
+   `tagline` — devono coincidere con il `meta` (un test lo verifica). *Questo passo
+   sparirà quando l'app leggerà i registri dal `meta` dei JSON.*
+6. `python -m pytest tests/test_data_integrity.py` — se passa, la struttura regge.
+7. `python tools/generate_standalone.py` per rigenerare le checklist HTML singole.
+8. Aggiorna il conteggio dei giochi nel README e la voce in `CHANGELOG.md`.

@@ -1,4 +1,30 @@
 {
+ "meta": {
+  "id": "n3",
+  "format": 1,
+  "version": 1,
+  "accent": "#8fae4e",
+  "tagline": {
+   "en": "Odachi samurai - 51 trophies, one playthrough, zero missables",
+   "it": "Samurai con odachi - 51 trofei, una sola run, nessun missabile"
+  },
+  "thumb": {
+   "icon": "hitodama",
+   "glow": "40,55,115",
+   "seed": 18,
+   "stats": [
+    [
+     "0",
+     "MISSABILI"
+    ],
+    [
+     "1",
+     "RUN"
+    ]
+   ],
+   "tag": null
+  }
+ },
  "game": "Nioh 3",
  "prefix": "N3",
  "playthroughs": "1 playthrough on the fixed default difficulty - no NG+, no online trophies, zero missables; the two story DLCs add separate trophy packs, not needed here",
@@ -108,7 +134,8 @@
      ],
      "trophy": false,
      "text_it": "Gioca l'apertura a Edo Castle nei panni di TOKUGAWA TAKECHIYO. Sfrutta il tutorial per fare pratica col passaggio al volo tra stile SAMURAI e stile NINJA — ti serviranno entrambi per tutto il gioco.",
-     "loc_it": "Edo Castle — prologo"
+     "loc_it": "Edo Castle — prologo",
+     "sid": "s001"
     },
     {
      "text": "Finish the opening sequence and travel through time for the first time — 'Wanderer in Time' pops automatically.",
@@ -122,7 +149,8 @@
      ],
      "trophy": true,
      "text_it": "Completa la sequenza iniziale e viaggia nel tempo per la prima volta — 'Viaggio nel tempo' (Wanderer in Time) scatta in automatico.",
-     "loc_it": "Prologo — storia"
+     "loc_it": "Prologo — storia",
+     "sid": "s002"
     },
     {
      "text": "Follow the story until II NAOTORA hands you the Guiding Mirror, unlocking free travel between eras.",
@@ -136,7 +164,8 @@
      ],
      "trophy": true,
      "text_it": "Segui la storia finché II NAOTORA non ti consegna lo Specchio guida, sbloccando il viaggio libero tra le epoche.",
-     "loc_it": "Storia — Ii Naotora"
+     "loc_it": "Storia — Ii Naotora",
+     "sid": "s003"
     },
     {
      "text": "Commit to the build: main-hand an ODACHI in Samurai style, level Stamina and Constitution first, and equip the heaviest armor you can move in.",
@@ -150,7 +179,8 @@
      ],
      "trophy": false,
      "text_it": "Blinda la build: ODACHI in mano principale in stile Samurai, livella prima Stamina e Constitution, ed equipaggia l'armatura più pesante con cui riesci ancora a muoverti.",
-     "loc_it": "Santuario — menu di livellamento"
+     "loc_it": "Santuario — menu di livellamento",
+     "sid": "s004"
     },
     {
      "text": "Reach character level 10 through normal play — 'Budding Talent' unlocks at the shrine.",
@@ -164,7 +194,8 @@
      ],
      "trophy": true,
      "text_it": "Raggiungi il livello 10 giocando normalmente — 'Talento emergente' (Budding Talent) si sblocca al santuario.",
-     "loc_it": "Santuario — livellamento"
+     "loc_it": "Santuario — livellamento",
+     "sid": "s005"
     },
     {
      "text": "Kill 10 enemies with Strong Attacks or Martial Arts — with an Odachi this happens almost by accident.",
@@ -178,7 +209,8 @@
      ],
      "trophy": true,
      "text_it": "Uccidi 10 nemici con Attacchi forti o mosse (Martial Arts) — con un Odachi succede quasi per caso.",
-     "loc_it": "Un combattimento qualsiasi"
+     "loc_it": "Un combattimento qualsiasi",
+     "sid": "s006"
     }
    ],
    "title_it": "Fase 1 — Prologo a Edo e preparazione",
@@ -205,7 +237,8 @@
      ],
      "trophy": true,
      "text_it": "All'arrivo, dai priorità al livello di esplorazione della regione raccogliendo collezionabili: il livello 2 rimuove la nebbia dalla mappa, il livello 4 segna automaticamente tutti i collezionabili rimanenti e fa scattare 'Esplorazione' (Explorer).",
-     "loc_it": "Warring States — campo aperto"
+     "loc_it": "Warring States — campo aperto",
+     "sid": "s007"
     },
     {
      "text": "Make shrine-touching a reflex: physically walk up to every named shrine and Bodhisattva Statue so it registers for the 156/156 'Devotee' count — including ones inside story missions.",
@@ -224,7 +257,8 @@
      ],
      "trophy": false,
      "text_it": "Fai del toccare i santuari un riflesso: avvicinati fisicamente a ogni santuario con un nome e a ogni statua di Bodhisattva perché venga registrato nel conteggio 156/156 di 'Seguace' (Devotee) — comprese quelle dentro le missioni della storia.",
-     "loc_it": "Ovunque"
+     "loc_it": "Ovunque",
+     "sid": "s008"
     },
     {
      "text": "Guide your first KODAMA home and start ticking the region's 92-total Kodama checklist as you roam.",
@@ -238,7 +272,8 @@
      ],
      "trophy": false,
      "text_it": "Riporta a casa il tuo primo KODAMA e comincia a spuntare la lista dei 92 Kodama totali mentre giri la regione.",
-     "loc_it": "Warring States — campo aperto"
+     "loc_it": "Warring States — campo aperto",
+     "sid": "s009"
     },
     {
      "text": "Pet your first CHIJIKO critter for 'Keen-Eyed' and bathe in your first hot spring for 'Spa Healer'.",
@@ -252,7 +287,8 @@
      ],
      "trophy": true,
      "text_it": "Accarezza il tuo primo CHIJIKO per 'Occhio esperto' (Keen-Eyed) e immergiti nella tua prima sorgente termale per 'Passione per le sorgenti' (Spa Healer).",
-     "loc_it": "Warring States — campo aperto"
+     "loc_it": "Warring States — campo aperto",
+     "sid": "s010"
     },
     {
      "text": "Purify a Soul Core dropped by a strong yokai at any shrine — 'Soul Core Owner'.",
@@ -266,7 +302,8 @@
      ],
      "trophy": true,
      "text_it": "Purifica a un santuario qualsiasi un Nucleo d'anima lasciato cadere da uno Yokai potente — 'Custode di Nuclei d'anima' (Soul Core Owner).",
-     "loc_it": "Santuario — gestione Nuclei d'anima"
+     "loc_it": "Santuario — gestione Nuclei d'anima",
+     "sid": "s011"
     },
     {
      "text": "Equip that Soul Core, assign its Summoning Seal to a shortcut and summon the yokai once in combat — 'Yokai Manipulator'.",
@@ -280,7 +317,8 @@
      ],
      "trophy": true,
      "text_it": "Equipaggia quel Nucleo d'anima, assegna il suo sigillo di evocazione a una scorciatoia ed evoca lo Yokai una volta in combattimento — 'Manipolazione di Yokai' (Yokai Manipulator).",
-     "loc_it": "Un combattimento qualsiasi"
+     "loc_it": "Un combattimento qualsiasi",
+     "sid": "s012"
     },
     {
      "text": "Capture your first enemy base ('Base Captured') and purify your first Lesser Crucible ('Lesser Crucible Cleanser') — both are open-field icons; there are 26 bases and 23 crucibles game-wide.",
@@ -299,7 +337,8 @@
      ],
      "trophy": true,
      "text_it": "Conquista la tua prima base nemica ('Base conquistata' / Base Captured) e purifica il tuo primo Crogiolo minore ('Purificazione del Crogiolo minore' / Lesser Crucible Cleanser) — entrambi sono icone del campo aperto; in tutto il gioco ci sono 26 basi e 23 Crogioli.",
-     "loc_it": "Warring States — basi/Crogioli"
+     "loc_it": "Warring States — basi/Crogioli",
+     "sid": "s013"
     },
     {
      "text": "Pick up a Crucible weapon from purification rewards and learn the Martial Art it carries — 'Crucible Arts Adopter'.",
@@ -313,7 +352,8 @@
      ],
      "trophy": true,
      "text_it": "Recupera un'arma del Crogiolo dalle ricompense di purificazione e impara la mossa che porta con sé — 'Custode delle arti del Crogiolo' (Crucible Arts Adopter).",
-     "loc_it": "Inventario — arma del Crogiolo"
+     "loc_it": "Inventario — arma del Crogiolo",
+     "sid": "s014"
     },
     {
      "text": "Swap to NINJA style and kill 10 enemies with Ninjutsu (shurikens, tools) — 'Ninjutsu'. Keep the Tonfa leveled while you are at it.",
@@ -332,7 +372,8 @@
      ],
      "trophy": true,
      "text_it": "Passa allo stile NINJA e uccidi 10 nemici con i Ninjutsu (shuriken, strumenti) — 'Ninjutsu'. Già che ci sei, tieni livellato il Tonfa.",
-     "loc_it": "Un combattimento qualsiasi — stile Ninja"
+     "loc_it": "Un combattimento qualsiasi — stile Ninja",
+     "sid": "s015"
     },
     {
      "text": "Trigger Burst Break 10 times against enemy burst attacks ('Burst Break'), then land one using a Guardian Spirit Skill for 'Guardian Spirit's Aid'.",
@@ -346,7 +387,8 @@
      ],
      "trophy": true,
      "text_it": "Attiva il Contrattacco esplosivo 10 volte contro gli attacchi burst nemici ('Contrattacco esplosivo' / Burst Break), poi mettine a segno uno con un'abilità dello Spirito Guardiano per 'Aiuto dello Spirito Guardiano' (Guardian Spirit's Aid).",
-     "loc_it": "Un combattimento qualsiasi"
+     "loc_it": "Un combattimento qualsiasi",
+     "sid": "s016"
     },
     {
      "text": "Duel and beat your first MASTER (golden duel icons in the field) — 'Masterful Pupil'. There are 13 masters total; fight the ones at your level, leave the rest for post-story.",
@@ -365,7 +407,8 @@
      ],
      "trophy": true,
      "text_it": "Sfida e batti il tuo primo MAESTRO (le icone dorate di duello sul campo) — 'Tirocinante prodigio' (Masterful Pupil). I maestri sono 13 in totale; affronta quelli al tuo livello e lascia il resto al post-storia.",
-     "loc_it": "Warring States — duello con un maestro"
+     "loc_it": "Warring States — duello con un maestro",
+     "sid": "s017"
     },
     {
      "text": "Note the DEMON OF PRIDE golden-chest marker at IINOYA — it is one of three hidden Kunimatsu bosses. It is tuned high; skip it now and return post-story unless you are overleveled.",
@@ -379,7 +422,8 @@
      ],
      "trophy": false,
      "text_it": "Segnati il marcatore col forziere dorato del DEMONE DELLA SUPERBIA a IINOYA — è uno dei tre boss nascosti di Kunimatsu. È tarato alto; per ora saltalo e torna dopo la storia, a meno che tu non sia sovralivellato.",
-     "loc_it": "Warring States — Iinoya"
+     "loc_it": "Warring States — Iinoya",
+     "sid": "s018"
     },
     {
      "text": "Clear whatever MYTHS (map-marked mini-quests) you cross — 39 exist game-wide and all are needed later for the gold 'Answering to the People'.",
@@ -393,7 +437,8 @@
      ],
      "trophy": false,
      "text_it": "Completa i MITI (mini-incarichi segnati sulla mappa) che incroci — in tutto il gioco ce ne sono 39 e più avanti servono tutti per l'oro 'Al servizio del popolo' (Answering to the People).",
-     "loc_it": "Warring States — marcatori dei Miti"
+     "loc_it": "Warring States — marcatori dei Miti",
+     "sid": "s019"
     },
     {
      "text": "Finish the Warring States story arc — 'The Old Tiger Departs' pops at the region finale.",
@@ -407,7 +452,8 @@
      ],
      "trophy": true,
      "text_it": "Concludi l'arco narrativo del Warring States — 'Congedo della tigre' (The Old Tiger Departs) scatta al finale di regione.",
-     "loc_it": "Warring States — missione finale della storia"
+     "loc_it": "Warring States — missione finale della storia",
+     "sid": "s020"
     }
    ],
    "title_it": "Fase 2 — Warring States (regione 1)",
@@ -434,7 +480,8 @@
      ],
      "trophy": true,
      "text_it": "Nella missione della storia SANTUARIO DELLA PIUMA NERA (Black Feather Sanctuary), colpisci con l'arco i 3 corvi appollaiati sui torii PRIMA di avvicinarti, poi sconfiggi l'OTOROSHI — 'Tumulto nel santuario' (Ruckus in the Sanctuary). Farlo adesso ti evita una replica via Battle Scroll.",
-     "loc_it": "Heian — Santuario della piuma nera (santuario di Matsuo-taisha)"
+     "loc_it": "Heian — Santuario della piuma nera (santuario di Matsuo-taisha)",
+     "sid": "s021"
     },
     {
      "text": "Defeat the GREAT TENGU boss to unlock the Myth 'Memories in the Blade'; complete it and find the 3 hidden swords to restore the blacksmith's memory — 'Senji Toyo'.",
@@ -453,7 +500,8 @@
      ],
      "trophy": true,
      "text_it": "Sconfiggi il boss GREAT TENGU per sbloccare il Mito 'Memories in the Blade'; completalo e trova le 3 spade nascoste per restituire la memoria al fabbro — 'Senji Toyo'.",
-     "loc_it": "Heian — Mito: Memories in the Blade"
+     "loc_it": "Heian — Mito: Memories in the Blade",
+     "sid": "s022"
     },
     {
      "text": "With the smithy open, forge any item ('Latest Masterpiece'), perform one Soul Match ('Match Made in Heaven') and remodel one piece ('Remodeler') — three trophies in one menu visit.",
@@ -472,7 +520,8 @@
      ],
      "trophy": true,
      "text_it": "Con la fucina aperta, forgia un oggetto qualsiasi ('Capolavoro all'avanguardia' / Latest Masterpiece), esegui un'Affinità d'anima ('Anima gemella' / Match Made in Heaven) e modifica un pezzo ('Rimodellazione' / Remodeler) — tre trofei in un'unica visita al menu.",
-     "loc_it": "Fabbro — Senji Toyo"
+     "loc_it": "Fabbro — Senji Toyo",
+     "sid": "s023"
     },
     {
      "text": "Complete the Myth 'Putrid Paradise' in the HACHIJO area, then meet TATSUMARO THE DUNG LOVER in the Eternal Rift and start turning in Dung Balls (30 needed total — pick them up from enemies as you go).",
@@ -486,7 +535,8 @@
      ],
      "trophy": false,
      "text_it": "Completa il Mito 'Putrid Paradise' nella zona di HACHIJO, poi incontra TATSUMARO IL CULTORE DELLO STERCO nella Fossa eterna e inizia a consegnargli i Dung Ball (ne servono 30 in totale — raccoglili dai nemici strada facendo).",
-     "loc_it": "Heian — Hachijo / Fossa eterna"
+     "loc_it": "Heian — Hachijo / Fossa eterna",
+     "sid": "s024"
     },
     {
      "text": "While in the ETERNAL RIFT, trade a furball with a Scampuss — 'A Scampuss's Best Friend'.",
@@ -500,7 +550,8 @@
      ],
      "trophy": true,
      "text_it": "Mentre sei nella FOSSA ETERNA, scambia una palla di pelo con un Incespigatto — 'Amicizia con gli Incespigatti' (A Scampuss's Best Friend).",
-     "loc_it": "Fossa eterna — Incespigatto"
+     "loc_it": "Fossa eterna — Incespigatto",
+     "sid": "s025"
     },
     {
      "text": "Visit the dojo trainers: clear the Novice and Adept training missions with YAGYU MUNENORI (Samurai) and HATTORI HANZO (Ninja) as they unlock — the Veteran tier comes later in Bakumatsu.",
@@ -514,7 +565,8 @@
      ],
      "trophy": false,
      "text_it": "Passa dagli istruttori del dojo: completa le missioni di addestramento Novice e Adept con YAGYU MUNENORI (Samurai) e HATTORI HANZO (Ninja) man mano che si sbloccano — le missioni avanzate arrivano più tardi, nel Bakumatsu.",
-     "loc_it": "Dojo — Munenori e Hanzo"
+     "loc_it": "Dojo — Munenori e Hanzo",
+     "sid": "s026"
     },
     {
      "text": "Keep the collectible sweep running: Kodama, hot springs, Chijiko, Scampuss, Six Jizo, bases and crucibles all continue in Heian — push Exploration Level 4 here too. While sweeping, start the hidden Myth 'YOKAI HORDE PICTURE SCROLL' at KAMO VILLAGE (it never appears on the map).",
@@ -533,7 +585,8 @@
      ],
      "trophy": false,
      "text_it": "Tieni in moto il setaccio dei collezionabili: Kodama, sorgenti termali, Chijiko, Incespigatti, Sei Jizo, basi e Crogioli proseguono anche in Heian — porta il livello di esplorazione a 4 anche qui. Nel frattempo avvia il Mito nascosto 'YOKAI HORDE PICTURE SCROLL' a KAMO VILLAGE (non compare mai sulla mappa).",
-     "loc_it": "Heian — campo aperto / Kamo Village"
+     "loc_it": "Heian — campo aperto / Kamo Village",
+     "sid": "s027"
     },
     {
      "text": "The DEMON OF ENVY waits at ANNEIBO TEMPLE in Hachijo (climb the scaffolding to the hidden cave) — same rule as Pride: post-story unless comfortably strong.",
@@ -547,7 +600,8 @@
      ],
      "trophy": false,
      "text_it": "Il DEMONE DELL'INVIDIA aspetta ad ANNEIBO TEMPLE a Hachijo (arrampicati sulle impalcature fino alla grotta nascosta) — stessa regola della Superbia: post-storia, a meno che tu non sia comodamente forte.",
-     "loc_it": "Heian — Hachijo, Anneibo Temple"
+     "loc_it": "Heian — Hachijo, Anneibo Temple",
+     "sid": "s028"
     },
     {
      "text": "Finish the Heian story arc — 'Unbreakable Cause' pops at the region finale.",
@@ -561,7 +615,8 @@
      ],
      "trophy": true,
      "text_it": "Concludi l'arco narrativo di Heian — 'Determinazione indomita' (Unbreakable Cause) scatta al finale di regione.",
-     "loc_it": "Heian — missione finale della storia"
+     "loc_it": "Heian — missione finale della storia",
+     "sid": "s029"
     }
    ],
    "title_it": "Fase 3 — Heian (regione 2)",
@@ -588,7 +643,8 @@
      ],
      "trophy": false,
      "text_it": "Durante la missione della storia RADICI OSCURE, immergiti nella sorgente termale insieme a HIMIKO — è il passaggio 1 di 2 per 'Memorie del passato' (Distant Memories); la ricompensa arriva più avanti, in una replica di missione.",
-     "loc_it": "Antiquity — Radici oscure"
+     "loc_it": "Antiquity — Radici oscure",
+     "sid": "s030"
     },
     {
      "text": "Sweep Antiquity's collectibles and bases to Exploration Level 4; the region is compact, so finish its Kodama/springs/Chijiko lists in one pass.",
@@ -602,7 +658,8 @@
      ],
      "trophy": false,
      "text_it": "Setaccia collezionabili e basi di Antiquity fino al livello di esplorazione 4; la regione è compatta, quindi chiudi le sue liste di Kodama/sorgenti/Chijiko in un solo passaggio.",
-     "loc_it": "Antiquity — campo aperto"
+     "loc_it": "Antiquity — campo aperto",
+     "sid": "s031"
     },
     {
      "text": "Fight any masters and clear any Myths available in the region — every one done now shrinks the endgame checklist.",
@@ -616,7 +673,8 @@
      ],
      "trophy": false,
      "text_it": "Affronta i maestri e completa i Miti disponibili nella regione — ognuno fatto adesso accorcia la checklist dell'endgame.",
-     "loc_it": "Antiquity — marcatori di Miti/maestri"
+     "loc_it": "Antiquity — marcatori di Miti/maestri",
+     "sid": "s032"
     },
     {
      "text": "Check your build: Stamina ~40, Constitution ~30, Crimson General pieces Soul Matched up to your level, Bolting Boar and Defense Mastery II learned.",
@@ -630,7 +688,8 @@
      ],
      "trophy": false,
      "text_it": "Controlla la build: Stamina ~40, Constitution ~30, pezzi del Crimson General adeguati al tuo livello con l'Affinità d'anima, Bolting Boar e Defense Mastery II imparate.",
-     "loc_it": "Santuario — livellamento / Fabbro"
+     "loc_it": "Santuario — livellamento / Fabbro",
+     "sid": "s033"
     },
     {
      "text": "Finish the Antiquity story arc — 'The Queen's Eyes Open' pops at the region finale.",
@@ -644,7 +703,8 @@
      ],
      "trophy": true,
      "text_it": "Concludi l'arco narrativo di Antiquity — 'Risveglio della regina' (The Queen's Eyes Open) scatta al finale di regione.",
-     "loc_it": "Antiquity — missione finale della storia"
+     "loc_it": "Antiquity — missione finale della storia",
+     "sid": "s034"
     }
    ],
    "title_it": "Fase 4 — Antiquity (regione 3)",
@@ -666,7 +726,8 @@
      ],
      "trophy": true,
      "text_it": "Completa le missioni di addestramento AVANZATE appena sbloccate sia con Yagyu Munenori sia con Hattori Hanzo — completare ogni livello con entrambi gli istruttori fa scattare 'Apprendimento concluso' (Nothing Left to Learn).",
-     "loc_it": "Dojo — missioni avanzate"
+     "loc_it": "Dojo — missioni avanzate",
+     "sid": "s035"
     },
     {
      "text": "If you skipped it in Heian, first clear the hidden Myth 'YOKAI HORDE PICTURE SCROLL' at KAMO VILLAGE (Heian) — it unlocks 'SEEKING RARE YOKAI' near KIYOMIZU here in Bakumatsu: fetch the KUSANAGI painting from Himiko at Shichijo temple and satisfy TORIYAMA SEKIEN for 'Like-Minded Friends'. Neither Myth auto-marks on the map.",
@@ -685,7 +746,8 @@
      ],
      "trophy": true,
      "text_it": "Se l'hai saltato in Heian, completa prima il Mito nascosto 'YOKAI HORDE PICTURE SCROLL' a KAMO VILLAGE (Heian) — sblocca 'IN CERCA DI YOKAI RARI' (Seeking Rare Yokai) vicino a KIYOMIZU qui nel Bakumatsu: recupera il ritratto di KUSANAGI da Himiko a Shichijo temple e soddisfa TORIYAMA SEKIEN per 'Spiriti affini' (Like-Minded Friends). Nessuno dei due Miti è segnato sulla mappa.",
-     "loc_it": "Heian — Kamo Village / Bakumatsu — Kiyomizu"
+     "loc_it": "Heian — Kamo Village / Bakumatsu — Kiyomizu",
+     "sid": "s036"
     },
     {
      "text": "Summon AI Acolytes from blue graves (or bring story NPC companions) and complete 3 missions with them — 'Teamwork' is fully solo/offline.",
@@ -699,7 +761,8 @@
      ],
      "trophy": true,
      "text_it": "Evoca Accoliti IA dalle Blue Graves (o porta con te i PNG della storia) e completa 3 missioni insieme a loro — 'Lavoro di squadra' (Teamwork) è completabile del tutto in solitaria e offline.",
-     "loc_it": "Blue Graves — missioni qualsiasi"
+     "loc_it": "Blue Graves — missioni qualsiasi",
+     "sid": "s037"
     },
     {
      "text": "Bakumatsu is huge: grind its Exploration Level to 4 early so the remaining collectibles self-mark, then sweep Kodama, springs, Chijiko, Scampuss, Jizo, bases and crucibles.",
@@ -713,7 +776,8 @@
      ],
      "trophy": false,
      "text_it": "Il Bakumatsu è enorme: porta presto il livello di esplorazione a 4 così i collezionabili rimanenti si segnano da soli, poi setaccia Kodama, sorgenti, Chijiko, Incespigatti, Jizo, basi e Crogioli.",
-     "loc_it": "Bakumatsu — campo aperto"
+     "loc_it": "Bakumatsu — campo aperto",
+     "sid": "s038"
     },
     {
      "text": "Note the DEMON OF OBSESSION at the NIJO CASTLE golden-chest marker — third and last Kunimatsu demon, best left for the post-story pass.",
@@ -727,7 +791,8 @@
      ],
      "trophy": false,
      "text_it": "Segnati il DEMONE DELL'OSSESSIONE al marcatore col forziere dorato di NIJO CASTLE — terzo e ultimo demone di Kunimatsu, meglio lasciarlo alla passata post-storia.",
-     "loc_it": "Bakumatsu — Nijo Castle"
+     "loc_it": "Bakumatsu — Nijo Castle",
+     "sid": "s039"
     },
     {
      "text": "Keep feeding Dung Balls to Tatsumaro whenever you pass the Eternal Rift — aim to be at or near 30/30 before the finale.",
@@ -741,7 +806,8 @@
      ],
      "trophy": false,
      "text_it": "Continua a consegnare Dung Ball a Tatsumaro ogni volta che passi dalla Fossa eterna — punta ad arrivare a 30/30 o quasi prima del finale.",
-     "loc_it": "Fossa eterna — Tatsumaro"
+     "loc_it": "Fossa eterna — Tatsumaro",
+     "sid": "s040"
     },
     {
      "text": "Finish the Bakumatsu story arc — 'What Must Be Done' pops at the region finale.",
@@ -755,7 +821,8 @@
      ],
      "trophy": true,
      "text_it": "Concludi l'arco narrativo del Bakumatsu — 'Senso del dovere' (What Must Be Done) scatta al finale di regione.",
-     "loc_it": "Bakumatsu — missione finale della storia"
+     "loc_it": "Bakumatsu — missione finale della storia",
+     "sid": "s041"
     }
    ],
    "title_it": "Fase 5 — Bakumatsu (regione 4)",
@@ -782,7 +849,8 @@
      ],
      "trophy": true,
      "text_it": "Nella missione finale UNA FINE SINISTRA (A Sinister End), colpisci con l'arco l'uccello di MURAKUMO che scaglia fulmini ogni volta che compare, per respingerne gli attacchi — 'Lontano da me!' (Pain, Pain, Go Away); è permissivo e si sblocca per quasi tutti quelli che continuano a colpire l'uccello.",
-     "loc_it": "Missione finale — Una fine sinistra"
+     "loc_it": "Missione finale — Una fine sinistra",
+     "sid": "s042"
     },
     {
      "text": "Defeat the final boss and finish the mission — 'Delusion Destroyed'.",
@@ -796,7 +864,8 @@
      ],
      "trophy": true,
      "text_it": "Sconfiggi il boss finale e completa la missione — 'Ossessione infranta' (Delusion Destroyed).",
-     "loc_it": "Missione finale — boss"
+     "loc_it": "Missione finale — boss",
+     "sid": "s043"
     },
     {
      "text": "Watch the ending: Takechiyo is appointed third shogun of the Edo Shogunate — 'As Shogun' (gold).",
@@ -810,7 +879,8 @@
      ],
      "trophy": true,
      "text_it": "Goditi il finale: Takechiyo viene proclamato terzo shogun dello shogunato Edo — 'In veste di shogun' (As Shogun, oro).",
-     "loc_it": "Filmato finale"
+     "loc_it": "Filmato finale",
+     "sid": "s044"
     }
    ],
    "title_it": "Fase 6 — Finale: Una fine sinistra",
@@ -832,7 +902,8 @@
      ],
      "trophy": true,
      "text_it": "Torna a IINOYA (Warring States) e uccidi il DEMONE DELLA SUPERBIA al marcatore col forziere dorato — 'Superbia di Kunimatsu' (Kunimatsu's Pride). I livelli post-storia rendono i tre demoni molto più gestibili.",
-     "loc_it": "Warring States — Iinoya"
+     "loc_it": "Warring States — Iinoya",
+     "sid": "s045"
     },
     {
      "text": "Kill the DEMON OF ENVY at ANNEIBO TEMPLE in Hachijo (Heian) — 'Kunimatsu's Envy'.",
@@ -846,7 +917,8 @@
      ],
      "trophy": true,
      "text_it": "Uccidi il DEMONE DELL'INVIDIA ad ANNEIBO TEMPLE a Hachijo (Heian) — 'Invidia di Kunimatsu' (Kunimatsu's Envy).",
-     "loc_it": "Heian — Hachijo, Anneibo Temple"
+     "loc_it": "Heian — Hachijo, Anneibo Temple",
+     "sid": "s046"
     },
     {
      "text": "Kill the DEMON OF OBSESSION at Nijo Castle in Bakumatsu — 'Kunimatsu's Obsession'.",
@@ -860,7 +932,8 @@
      ],
      "trophy": true,
      "text_it": "Uccidi il DEMONE DELL'OSSESSIONE a Nijo Castle nel Bakumatsu — 'Ossessione di Kunimatsu' (Kunimatsu's Obsession).",
-     "loc_it": "Bakumatsu — Nijo Castle"
+     "loc_it": "Bakumatsu — Nijo Castle",
+     "sid": "s047"
     },
     {
      "text": "Duel every remaining MASTER until all 13 are down — 'A God Among Men' (these duels are the hardest single-player content in the run, so bring your full tank kit).",
@@ -874,7 +947,8 @@
      ],
      "trophy": true,
      "text_it": "Sfida ogni MAESTRO rimasto finché tutti e 13 non sono a terra — 'Abilità impareggiabili' (A God Among Men); questi duelli sono il contenuto single player più duro della run, quindi presentati col kit da tank al completo.",
-     "loc_it": "Tutte le regioni — duelli con i maestri"
+     "loc_it": "Tutte le regioni — duelli con i maestri",
+     "sid": "s048"
     },
     {
      "text": "Finish all 39 MYTHS, remembering the two hidden ones count too (Kamo Village in Heian, then Kiyomizu in Bakumatsu) — 'Answering to the People' (gold).",
@@ -888,7 +962,8 @@
      ],
      "trophy": true,
      "text_it": "Completa tutti e 39 i MITI, ricordando che contano anche i due nascosti (Kamo Village in Heian, poi Kiyomizu nel Bakumatsu) — 'Al servizio del popolo' (Answering to the People, oro).",
-     "loc_it": "Tutte le regioni — marcatori dei Miti"
+     "loc_it": "Tutte le regioni — marcatori dei Miti",
+     "sid": "s049"
     },
     {
      "text": "Guide the last of the 92 KODAMA home — 'Kodama Leader'. Exploration Level 4 auto-marks any you are missing.",
@@ -907,7 +982,8 @@
      ],
      "trophy": true,
      "text_it": "Riporta a casa l'ultimo dei 92 KODAMA — 'Leader dei Kodama' (Kodama Leader). Il livello di esplorazione 4 segna automaticamente quelli che ti mancano.",
-     "loc_it": "Tutte le regioni"
+     "loc_it": "Tutte le regioni",
+     "sid": "s050"
     },
     {
      "text": "Bathe in all 26 hot springs — 'Spa Lover'.",
@@ -926,7 +1002,8 @@
      ],
      "trophy": true,
      "text_it": "Immergiti in tutte e 26 le sorgenti termali — 'Amante delle sorgenti' (Spa Lover).",
-     "loc_it": "Tutte le regioni"
+     "loc_it": "Tutte le regioni",
+     "sid": "s051"
     },
     {
      "text": "Pet all 43 CHIJIKO — 'Eagle-Eyed' — and all 16 SCAMPUSS — 'Scampuss Enthusiast'.",
@@ -945,7 +1022,8 @@
      ],
      "trophy": true,
      "text_it": "Accarezza tutti i 43 CHIJIKO — 'Occhio d'aquila' (Eagle-Eyed) — e tutti i 16 INCESPIGATTI — 'Passione per gli Incespigatti' (Scampuss Enthusiast).",
-     "loc_it": "Tutte le regioni"
+     "loc_it": "Tutte le regioni",
+     "sid": "s052"
     },
     {
      "text": "Pray at all 20 SIX JIZO statue groups — 'Visiting the Six Jizo'.",
@@ -964,7 +1042,8 @@
      ],
      "trophy": true,
      "text_it": "Prega presso tutti e 20 i gruppi di statue dei SEI JIZO — 'Visita ai Sei Jizo' (Visiting the Six Jizo).",
-     "loc_it": "Tutte le regioni"
+     "loc_it": "Tutte le regioni",
+     "sid": "s053"
     },
     {
      "text": "Capture the last of the 26 enemy bases — 'Total Control' — and purify all 23 Lesser Crucibles — 'Lesser Crucible Eradicator'.",
@@ -978,7 +1057,8 @@
      ],
      "trophy": true,
      "text_it": "Conquista l'ultima delle 26 basi nemiche — 'Dominio assoluto' (Total Control) — e purifica tutti e 23 i Crogioli minori — 'Distruzione del Crogiolo minore' (Lesser Crucible Eradicator).",
-     "loc_it": "Tutte le regioni"
+     "loc_it": "Tutte le regioni",
+     "sid": "s054"
     },
     {
      "text": "Complete the shrine/Bodhisattva list to 156/156 — 'Devotee'. Any mission-only shrines you skipped must be revisited by replaying that mission from a Battle Scroll.",
@@ -997,7 +1077,8 @@
      ],
      "trophy": true,
      "text_it": "Completa la lista di santuari e Bodhisattva fino a 156/156 — 'Seguace' (Devotee). Ogni santuario solo in missione che hai saltato va rivisitato rigiocando quella missione da un Battle Scroll.",
-     "loc_it": "Tutte le regioni + repliche via Battle Scroll"
+     "loc_it": "Tutte le regioni + repliche via Battle Scroll",
+     "sid": "s055"
     },
     {
      "text": "Replay THE APPARITION OF RYOTAN TEMPLE via Battle Scroll and bathe in the backyard pond hot spring to recall Naotora's incident — 'Distant Memories' (requires the Dark Roots bath from Phase 4).",
@@ -1011,7 +1092,8 @@
      ],
      "trophy": true,
      "text_it": "Rigioca APPARIZIONE AL TEMPIO DI RYOTAN (The Apparition of Ryotan Temple) via Battle Scroll e immergiti nella sorgente termale del laghetto sul retro per ricordare quanto accaduto con Naotora — 'Memorie del passato' (Distant Memories; richiede il bagno in Radici oscure della Fase 4).",
-     "loc_it": "Battle Scroll — Apparizione al tempio di Ryotan (Warring States)"
+     "loc_it": "Battle Scroll — Apparizione al tempio di Ryotan (Warring States)",
+     "sid": "s056"
     },
     {
      "text": "Hand Tatsumaro his 30th Dung Ball to reunite him with Takechiyo — 'Dung Ball Roller'. Wasp-type enemies are the fastest farm if you are short.",
@@ -1025,7 +1107,8 @@
      ],
      "trophy": true,
      "text_it": "Consegna a Tatsumaro il suo trentesimo Dung Ball per riavvicinarlo a Takechiyo — 'Appallottolatore di sterco' (Dung Ball Roller). I nemici di tipo vespa sono il farm più rapido se sei a corto.",
-     "loc_it": "Fossa eterna — Tatsumaro"
+     "loc_it": "Fossa eterna — Tatsumaro",
+     "sid": "s057"
     },
     {
      "text": "With all nine story Guardian Spirits unlocked, make sure you have used every Spirit Vein traversal type at least once — 'Unimpeded' usually pops naturally during this cleanup.",
@@ -1039,7 +1122,8 @@
      ],
      "trophy": true,
      "text_it": "Con tutti e nove gli Spiriti Guardiani della storia sbloccati, assicurati di aver usato almeno una volta ogni metodo di attraversamento delle Vene spirituali — 'Inarrestabile' (Unimpeded) di solito scatta da solo durante questa pulizia.",
-     "loc_it": "Tutte le regioni — Vene spirituali"
+     "loc_it": "Tutte le regioni — Vene spirituali",
+     "sid": "s058"
     },
     {
      "text": "Complete a full armor set (your Crimson General set is likely already there) and equip every piece to light up all its set bonuses — 'Armor's Real Value'.",
@@ -1058,7 +1142,8 @@
      ],
      "trophy": true,
      "text_it": "Completa un set d'armatura (il tuo Crimson General con ogni probabilità è già al completo) ed equipaggia ogni pezzo per accendere tutti i suoi bonus set — 'Armatura al suo massimo' (Armor's Real Value).",
-     "loc_it": "Inventario — set completo equipaggiato"
+     "loc_it": "Inventario — set completo equipaggiato",
+     "sid": "s059"
     },
     {
      "text": "Hit character level 100 — 'Grizzled Veteran'. The Amrita from masters, demons and the collectible sweep gets you most of the way; replay high-level Battle Scrolls if a few levels remain.",
@@ -1072,7 +1157,8 @@
      ],
      "trophy": true,
      "text_it": "Arriva al livello 100 — 'Combattente di cento battaglie' (Grizzled Veteran). L'Amrita di maestri, demoni e setaccio dei collezionabili ti porta quasi in fondo; se mancano pochi livelli, rigioca Battle Scroll di alto livello.",
-     "loc_it": "Santuario — livellamento"
+     "loc_it": "Santuario — livellamento",
+     "sid": "s060"
     }
    ],
    "title_it": "Fase 7 — Pulizia post-storia e grind",
@@ -1094,7 +1180,8 @@
      ],
      "trophy": true,
      "text_it": "Con tutti e 50 i trofei in cassaforte si sblocca 'Tu sei Nioh' (You Are Nioh) — il platino. Niente NG+, niente online, nessun DLC richiesto.",
-     "loc_it": "Lista trofei"
+     "loc_it": "Lista trofei",
+     "sid": "s061"
     }
    ],
    "title_it": "Fase 8 — Platino",

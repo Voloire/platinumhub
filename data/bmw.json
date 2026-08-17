@@ -1,4 +1,30 @@
 {
+ "meta": {
+  "id": "bmw",
+  "format": 1,
+  "version": 1,
+  "accent": "#c8483f",
+  "tagline": {
+   "en": "Smash-stance tank - 36 trophies, secret ending, one NG+ cycle",
+   "it": "Tank in posizione Smash - 36 trofei, finale segreto, un ciclo NG+"
+  },
+  "thumb": {
+   "icon": "staff",
+   "glow": "110,70,20",
+   "seed": 17,
+   "stats": [
+    [
+     "1",
+     "RUN"
+    ],
+    [
+     "",
+     "NG+"
+    ]
+   ],
+   "tag": null
+  }
+ },
  "game": "Black Myth: Wukong",
  "prefix": "BMW",
  "playthroughs": "1 full playthrough (all missables, all four secret areas, the secret ending) + a partial NG+ for the 6 trophies that cannot exist in one cycle",
@@ -91,7 +117,8 @@
      ],
      "trophy": true,
      "text_it": "Gioca il duello del prologo contro ERLANG, LA DIVINITÀ SACRA (scriptato — sopravvivi e piazza colpi, perdere fa parte della storia). Quando la vecchia scimmia finisce il suo racconto e prendi il controllo del Destined One, scatta il primo trofeo.",
-     "loc_it": "Prologo → Black Wind Mountain"
+     "loc_it": "Prologo → Black Wind Mountain",
+     "sid": "s001"
     },
     {
      "text": "Open the Self-Advance menu at the first Keeper's Shrine and buy any skill — put your first Sparks into Foundation stamina and the Smash Stance line.",
@@ -110,7 +137,8 @@
      ],
      "trophy": true,
      "text_it": "Apri il menu Self-Advance al primo Keeper's Shrine e compra un'abilità qualsiasi — metti le prime Sparks nella stamina di Foundation e nella linea della Smash Stance.",
-     "loc_it": "Qualsiasi santuario — menu Self-Advance"
+     "loc_it": "Qualsiasi santuario — menu Self-Advance",
+     "sid": "s002"
     },
     {
      "text": "In the Forest of Wolves, hunt the WANDERING WIGHT — the huge-headed ghost wandering near the path — and absorb its spirit. He vanishes for the whole run the moment the third ancient bell rings, so bag him before touching any bell; Fickle Forms dies with him.",
@@ -129,7 +157,8 @@
      ],
      "trophy": false,
      "text_it": "Nella Forest of Wolves dai la caccia a WANDERING WIGHT — il fantasma dalla testa enorme che vaga vicino al sentiero — e assorbi il suo spirito. Sparisce per l'intera run nel momento in cui suona la terza campana antica, quindi mettilo in saccoccia prima di toccare qualsiasi campana; Forme instabili muore con lui.",
-     "loc_it": "Front Hills / Forest of Wolves"
+     "loc_it": "Front Hills / Forest of Wolves",
+     "sid": "s003"
     },
     {
      "text": "Ring all three ancient bells hidden across the chapter (one early near Front Hills, the others tucked off the story path — sweep every side trail). With the third ring, the ANCIENT GUANYIN TEMPLE secret area opens.",
@@ -148,7 +177,8 @@
      ],
      "trophy": false,
      "text_it": "Suona tutte e tre le campane antiche nascoste nel capitolo (una presto vicino alle Front Hills, le altre fuori dal percorso principale — setaccia ogni sentiero secondario). Al terzo rintocco si apre l'area segreta dell'ANCIENT GUANYIN TEMPLE.",
-     "loc_it": "Capitolo 1 — campane fuori dal sentiero principale"
+     "loc_it": "Capitolo 1 — campane fuori dal sentiero principale",
+     "sid": "s004"
     },
     {
      "text": "Enter the Ancient Guanyin Temple and burn down ELDER JINCHI (his flame pillars punish greed — Rock Solid his lunges). Afterwards interact with the hanging body to claim the FIREPROOF MANTLE, vessel 1 of 4.",
@@ -167,7 +197,8 @@
      ],
      "trophy": true,
      "text_it": "Entra nell'Ancient Guanyin Temple e riduci in cenere ELDER JINCHI (le sue colonne di fiamme puniscono l'ingordigia — Rock Solid sugli affondi). Poi interagisci con il corpo appeso per reclamare il FIREPROOF MANTLE, vessel 1 di 4.",
-     "loc_it": "Ancient Guanyin Temple (area segreta)"
+     "loc_it": "Ancient Guanyin Temple (area segreta)",
+     "sid": "s005"
     },
     {
      "text": "Down the stairs from the Back Hills shrine, duck into the cave (it shares a meditation spot) and find the HORSE GUAI — exhaust every dialogue line, because meeting him in all five chapters is the whole Urge Unfulfilled quest.",
@@ -186,7 +217,8 @@
      ],
      "trophy": false,
      "text_it": "Giù per le scale dal santuario delle Back Hills, infilati nella grotta (condivide un punto di meditazione) e trova HORSE GUAI — esaurisci ogni riga di dialogo, perché incontrarlo in tutti e cinque i capitoli è l'intera quest di Impresa incompiuta.",
-     "loc_it": "Back Hills — grotta sotto il santuario"
+     "loc_it": "Back Hills — grotta sotto il santuario",
+     "sid": "s006"
     },
     {
      "text": "Still in the Bamboo Grove, drink with the OLD MAN on the Snake Trail to receive your first gourd upgrade, and duel the frog BAW-LI-GUHH-LANG by the river (frog 1 of 6). Kill GUANGMOU the snake for the RED TIDES transformation.",
@@ -205,7 +237,8 @@
      ],
      "trophy": false,
      "text_it": "Sempre nel Bamboo Grove, bevi con l'OLD MAN sullo Snake Trail per il primo potenziamento della fiasca, e duella con la rana BAW-LI-GUHH-LANG lungo il fiume (rana 1 di 6). Uccidi il serpente GUANGMOU per la trasformazione RED TIDES.",
-     "loc_it": "Bamboo Grove — Snake Trail"
+     "loc_it": "Bamboo Grove — Snake Trail",
+     "sid": "s007"
     },
     {
      "text": "Once the SHEN MONKEY tends your gourd at shrines, open the Brew menu and add any Soak to your drink — a one-minute trophy that also starts your defensive flask setup.",
@@ -224,7 +257,8 @@
      ],
      "trophy": true,
      "text_it": "Quando lo SHEN MONKEY inizia a occuparsi della tua fiasca ai santuari, apri il menu Brew e aggiungi un Soak qualsiasi alla bevanda — un trofeo da un minuto che avvia anche il tuo assetto difensivo da fiasca.",
-     "loc_it": "Santuario — menu Brew dello Shen Monkey"
+     "loc_it": "Santuario — menu Brew dello Shen Monkey",
+     "sid": "s008"
     },
     {
      "text": "Sit at the chapter's three Meditation Spots as you pass them and loot every golden-glow CELESTIAL PILL chest — pill pickups are a running tally you cannot afford to skip.",
@@ -238,7 +272,8 @@
      ],
      "trophy": false,
      "text_it": "Siediti ai tre Meditation Spot del capitolo man mano che li incroci e saccheggia ogni forziere dal bagliore dorato con le CELESTIAL PILL — il conteggio delle pillole è una tabella di marcia che non puoi permetterti di saltare.",
-     "loc_it": "Capitolo 1 — 3 meditation spot"
+     "loc_it": "Capitolo 1 — 3 meditation spot",
+     "sid": "s009"
     },
     {
      "text": "With the Wight captured and both NPCs exhausted, kill the BLACK BEAR GUAI atop the mountain — Immobilize his dive-bomb recovery and punish with charged heavies. The chapter closes and its world state locks.",
@@ -257,7 +292,8 @@
      ],
      "trophy": true,
      "text_it": "Con Wandering Wight catturato ed entrambi gli NPC spremuti, uccidi il GUAI ORSO NERO in cima alla montagna — Immobilize sul recupero della sua picchiata e punisci coi pesanti caricati. Il capitolo si chiude e il suo stato del mondo si blocca.",
-     "loc_it": "Vetta della Black Wind Mountain"
+     "loc_it": "Vetta della Black Wind Mountain",
+     "sid": "s010"
     }
    ],
    "title_it": "Fase 1 — Capitolo 1: Black Wind Mountain",
@@ -284,7 +320,8 @@
      ],
      "trophy": false,
      "text_it": "Ripulisci Sandgate Village dall'EARTH WOLF, poi libera il HORSE GUAI legato lì vicino e spremilo di dialoghi — incontro 2 di 5.",
-     "loc_it": "Sandgate Village — Village Entrance"
+     "loc_it": "Sandgate Village — Village Entrance",
+     "sid": "s011"
     },
     {
      "text": "Drop off the bridge beside the Village Entrance shrine and follow the tunnel to XU DOG — meeting him switches on medicine crafting at every shrine, and he points you at the frog that swallowed his formula.",
@@ -298,7 +335,8 @@
      ],
      "trophy": false,
      "text_it": "Scendi dal ponte accanto al santuario della Village Entrance e segui il tunnel fino a XU DOG — incontrarlo attiva la creazione di medicine a ogni santuario, e lui ti indirizza verso la rana che ha ingoiato la sua formula.",
-     "loc_it": "Sandgate Village — tunnel sotto la Village Entrance"
+     "loc_it": "Sandgate Village — tunnel sotto la Village Entrance",
+     "sid": "s012"
     },
     {
      "text": "Drop into the flooded ravine past Xu Dog's tunnel and beat the frog LANG-LI-GUHH-BAW — frog 2 of 6 — to recover Xu Dog's swallowed formula, then craft any Medicine at a shrine.",
@@ -317,7 +355,8 @@
      ],
      "trophy": true,
      "text_it": "Cala nel burrone allagato oltre il tunnel di Xu Dog e batti la rana LANG-LI-GUHH-BAW — rana 2 di 6 — per recuperare la formula ingoiata, poi crea una Medicina qualsiasi a un santuario.",
-     "loc_it": "Sandgate Village — burrone allagato"
+     "loc_it": "Sandgate Village — burrone allagato",
+     "sid": "s013"
     },
     {
      "text": "From the Valley of Despair shrine take the left cave, kill the FIRST PRINCE OF THE FLOWING SANDS, then smash the cracked left wall — the WANDERING WIGHT's spirit slam or the AZURE DUST transformation's finisher cracks it, and sometimes the Prince breaks it himself — and loot the chest for the LOONG SCALES key item — the ticket to all four Loong bosses.",
@@ -336,7 +375,8 @@
      ],
      "trophy": false,
      "text_it": "Dal santuario della Valley of Despair prendi la grotta a sinistra, uccidi il FIRST PRINCE OF THE FLOWING SANDS, poi sfonda la parete crepata a sinistra — la spallata dello spirito di Wandering Wight o il finisher della trasformazione AZURE DUST la aprono, e a volte è il Prince stesso a romperla — e saccheggia il forziere con le LOONG SCALES, l'oggetto chiave che fa da biglietto per tutti e quattro i boss Loong.",
-     "loc_it": "Sandgate Village — grotta della Valley of Despair"
+     "loc_it": "Sandgate Village — grotta della Valley of Despair",
+     "sid": "s014"
     },
     {
      "text": "In the duo fight against KING OF FLOWING SANDS and the SECOND RAT PRINCE, kill the big KING FIRST: only if the Second Rat Prince dies last does he leave his spirit, and Fickle Forms needs it.",
@@ -355,7 +395,8 @@
      ],
      "trophy": false,
      "text_it": "Nello scontro in coppia contro KING OF FLOWING SANDS e SECOND RAT PRINCE, uccidi PRIMA il grosso KING: solo se il Second Rat Prince muore per ultimo lascia il suo spirito, e Forme instabili ne ha bisogno.",
-     "loc_it": "Sandgate Village — arena del duo di ratti"
+     "loc_it": "Sandgate Village — arena del duo di ratti",
+     "sid": "s015"
     },
     {
      "text": "Begin the Kingdom of Sahali unlock chain at Fright Cliff: free the MAN IN STONE (his quest also awards the AZURE DUST transformation) and buy his SOBERING STONE, run the DRUNK BOAR's errands from the clearing near Rockrest Flat — the stone first, then a JADE LOTUS at Crouching Tiger Temple — and beat the YELLOW-ROBED SQUIRE where you first met the boar to open the stone gate.",
@@ -374,7 +415,8 @@
      ],
      "trophy": false,
      "text_it": "Avvia la catena di sblocco del Kingdom of Sahali a Fright Cliff: libera il MAN IN STONE (la sua quest premia anche la trasformazione AZURE DUST) e compra la sua SOBERING STONE, sbriga le commissioni del DRUNK BOAR dalla radura vicino a Rockrest Flat — prima la pietra, poi un JADE LOTUS al Crouching Tiger Temple — e batti lo YELLOW-ROBED SQUIRE dove hai incontrato il cinghiale la prima volta, per aprire il cancello di pietra.",
-     "loc_it": "Fright Cliff — Man in Stone e Drunk Boar"
+     "loc_it": "Fright Cliff — Man in Stone e Drunk Boar",
+     "sid": "s016"
     },
     {
      "text": "Climb the stairs right of the Rockrest Flat shrine and present the Loong Scales at the sand-fall: the BLACK LOONG erupts out. His lightning slams hit like trucks — Rock Solid the tail sweeps and heal inside Cloud Step.",
@@ -388,7 +430,8 @@
      ],
      "trophy": false,
      "text_it": "Sali le scale a destra del santuario di Rockrest Flat e presenta le Loong Scales alla cascata di sabbia: ne erompe il LOONG NERO. Le sue schiacciate di fulmine colpiscono come camion — Rock Solid sulle spazzate di coda e curati dentro Cloud Step.",
-     "loc_it": "Fright Cliff — cascata di sabbia di Rockrest Flat"
+     "loc_it": "Fright Cliff — cascata di sabbia di Rockrest Flat",
+     "sid": "s017"
     },
     {
      "text": "Travel back to Chapter 1's Forest of Wolves, take the left fork to the waterfall and use the Scales there for the RED LOONG — Loong 2 of 4.",
@@ -402,7 +445,8 @@
      ],
      "trophy": false,
      "text_it": "Torna alla Forest of Wolves del Capitolo 1, prendi il bivio a sinistra verso la cascata e usa lì le Scales per il LOONG ROSSO — Loong 2 di 4.",
-     "loc_it": "Cap. 1 — cascata della Forest of Wolves"
+     "loc_it": "Cap. 1 — cascata della Forest of Wolves",
+     "sid": "s018"
     },
     {
      "text": "At Crouching Tiger Temple, meet the OLD MAN in the cellar for gourd upgrade 2, then break the TIGER VANGUARD in the courtyard — Immobilize interrupts his blood-pool dive.",
@@ -416,7 +460,8 @@
      ],
      "trophy": false,
      "text_it": "Al Crouching Tiger Temple incontra l'OLD MAN in cantina per il potenziamento 2 della fiasca, poi spezza la TIGRE GUARDIANA nel cortile — Immobilize interrompe il suo tuffo nella pozza di sangue.",
-     "loc_it": "Crouching Tiger Temple"
+     "loc_it": "Crouching Tiger Temple",
+     "sid": "s019"
     },
     {
      "text": "With the Man in Stone and Drunk Boar quests done, cross into the KINGDOM OF SAHALI secret area and squash FUBAN, the burrowing beetle — bait its charge and punish the emergence. The WIND TAMER vessel (2 of 4) follows.",
@@ -440,7 +485,8 @@
      ],
      "trophy": true,
      "text_it": "Con le quest del Man in Stone e del Drunk Boar completate, passa nell'area segreta del KINGDOM OF SAHALI e schiaccia FUBAN, lo scarabeo scavatore — attira la sua carica e punisci l'emersione. Segue il vessel WIND TAMER (2 di 4).",
-     "loc_it": "Kingdom of Sahali (area segreta)"
+     "loc_it": "Kingdom of Sahali (area segreta)",
+     "sid": "s020"
     },
     {
      "text": "Sweep the chapter's six Meditation Spots and remaining pill chests before the finale.",
@@ -454,7 +500,8 @@
      ],
      "trophy": false,
      "text_it": "Spazza i sei Meditation Spot del capitolo e i forzieri di pillole rimanenti prima del finale.",
-     "loc_it": "Capitolo 2 — 6 meditation spot"
+     "loc_it": "Capitolo 2 — 6 meditation spot",
+     "sid": "s021"
     },
     {
      "text": "Kill the YELLOW WIND SAGE — equip the Wind Tamer vessel to cancel his sandstorm phase and feed him charged heavies during the stagger. Chapter 2 locks behind you.",
@@ -473,7 +520,8 @@
      ],
      "trophy": true,
      "text_it": "Uccidi il SAGGIO DEL VENTO GIALLO — equipaggia il vessel Wind Tamer per annullare la sua fase di tempesta di sabbia e riempilo di pesanti caricati durante lo stagger. Il Capitolo 2 si chiude alle tue spalle.",
-     "loc_it": "Yellow Wind Formation"
+     "loc_it": "Yellow Wind Formation",
+     "sid": "s022"
     }
    ],
    "title_it": "Fase 2 — Capitolo 2: Yellow Wind Ridge",
@@ -500,7 +548,8 @@
      ],
      "trophy": false,
      "text_it": "Alla PRIMA visita alla North Shore del Bitter Lake, aspetta la picchiata del PIPISTRELLO APRAMANA e uccidilo lì — una volta acceso il santuario dopo la scena di Zhu Bajie, il pipistrello, il suo spirito e la sua voce di diario (e con loro Bozzetti perfetti e Forme instabili) spariscono per tutta la run.",
-     "loc_it": "Bitter Lake — North Shore"
+     "loc_it": "Bitter Lake — North Shore",
+     "sid": "s023"
     },
     {
      "text": "Left of the North Shore shrine, rescue the TREASURE HUNTER from the three Cyan Bats on the temple grounds and exhaust his dialogue — this quest chain is a hard prerequisite for Mount Mei and the secret ending.",
@@ -519,7 +568,8 @@
      ],
      "trophy": false,
      "text_it": "A sinistra del santuario della North Shore, salva il TREASURE HUNTER dai tre Cyan Bats sui terreni del tempio ed esaurisci i suoi dialoghi — questa catena di quest è un prerequisito rigido per Mount Mei e il finale segreto.",
-     "loc_it": "Bitter Lake — terreni del tempio"
+     "loc_it": "Bitter Lake — terreni del tempio",
+     "sid": "s024"
     },
     {
      "text": "With Red and Black Loongs dead, approach the dragon statue on Turtle Island: it animates into the CYAN LOONG (Loong 3 of 4). Clones from A Pluck of Many make his water arena much kinder.",
@@ -533,7 +583,8 @@
      ],
      "trophy": false,
      "text_it": "Con Loong Rosso e Loong Nero morti, avvicinati alla statua del drago su Turtle Island: si anima nel LOONG CIANO (Loong 3 di 4). I cloni di A Pluck of Many rendono la sua arena d'acqua molto più gentile.",
-     "loc_it": "Bitter Lake — Turtle Island"
+     "loc_it": "Bitter Lake — Turtle Island",
+     "sid": "s025"
     },
     {
      "text": "In the ZODIAC VILLAGE hub, plant seeds at CHEN LOONG's field and harvest the grown crop after progressing — Happy Harvest pops on the harvest.",
@@ -552,7 +603,8 @@
      ],
      "trophy": true,
      "text_it": "Nell'hub ZODIAC VILLAGE, pianta i semi nel campo di CHEN LOONG e mieti il raccolto cresciuto dopo aver progredito — Raccolto abbondante scatta alla mietitura.",
-     "loc_it": "Zodiac Village — campo di Chen Loong"
+     "loc_it": "Zodiac Village — campo di Chen Loong",
+     "sid": "s026"
     },
     {
      "text": "At YIN TIGER's forge in the same village, upgrade any armor piece — and make this a habit every chapter; upgraded armor is the backbone of the tank build.",
@@ -571,7 +623,8 @@
      ],
      "trophy": true,
      "text_it": "Alla forgia di YIN TIGER nello stesso villaggio, potenzia un pezzo d'armatura qualsiasi — e fanne un'abitudine a ogni capitolo: l'armatura potenziata è la spina dorsale della build tank.",
-     "loc_it": "Zodiac Village — Yin Tiger"
+     "loc_it": "Zodiac Village — Yin Tiger",
+     "sid": "s027"
     },
     {
      "text": "Through the Pagoda Realm prison, execute all NINE LANTERN WARDENS (the big lantern-headed jailers) BEFORE fighting CAPTAIN WISE-VOICE — they despawn after him and take a curio, and A Curious Collection, with them. The Old Man's third meeting happens automatically in the Warding Temple scene.",
@@ -590,7 +643,8 @@
      ],
      "trophy": false,
      "text_it": "Attraverso la prigione del Pagoda Realm, giustizia tutti e NOVE i LANTERN WARDENS (i grossi carcerieri con la testa a lanterna) PRIMA di affrontare CAPTAIN WISE-VOICE — dopo di lui despawnano e si portano via un curio, e con esso Una raccolta unica. Il terzo incontro con l'Old Man avviene automaticamente nella scena del Warding Temple.",
-     "loc_it": "Pagoda Realm — celle della prigione"
+     "loc_it": "Pagoda Realm — celle della prigione",
+     "sid": "s028"
     },
     {
      "text": "At the New Thunderclap Temple, climb to the second floor of the side building and find the HORSE GUAI standing beside the hanging bell — meeting 3 of 5, exhaust every line.",
@@ -609,7 +663,8 @@
      ],
      "trophy": false,
      "text_it": "Al New Thunderclap Temple, sali al secondo piano dell'edificio laterale e trova HORSE GUAI in piedi accanto alla campana sospesa — incontro 3 di 5, esaurisci ogni riga.",
-     "loc_it": "New Thunderclap Temple — secondo piano, campana sospesa"
+     "loc_it": "New Thunderclap Temple — secondo piano, campana sospesa",
+     "sid": "s029"
     },
     {
      "text": "Continue the Treasure Hunter: warm him with RING OF FIRE at the Towers of Karma shrine, then follow his melon-field hint below the Brook of Bliss and defeat the GREEN-CAPPED MARTIALIST at the Melon Field — the SPELL BINDER spell is yours and the quest closes.",
@@ -628,7 +683,8 @@
      ],
      "trophy": false,
      "text_it": "Prosegui col Treasure Hunter: scaldalo con RING OF FIRE al santuario delle Towers of Karma, poi segui il suo indizio sul campo di meloni sotto il Brook of Bliss e sconfiggi il GREEN-CAPPED MARTIALIST al Melon Field — la magia SPELL BINDER è tua e la quest si chiude.",
-     "loc_it": "Valley of Ecstasy — Melon Field"
+     "loc_it": "Valley of Ecstasy — Melon Field",
+     "sid": "s030"
     },
     {
      "text": "Grab frog 3 of 6, LANG-LI-GUHH-LANG, in the cave behind the Forest of Felicity shrine, plus the chapter's five Meditation Spots and pill chests.",
@@ -642,7 +698,8 @@
      ],
      "trophy": false,
      "text_it": "Prendi la rana 3 di 6, LANG-LI-GUHH-LANG, nella grotta dietro il santuario della Forest of Felicity, più i cinque Meditation Spot del capitolo e i forzieri di pillole.",
-     "loc_it": "Forest of Felicity + giro del capitolo"
+     "loc_it": "Forest of Felicity + giro del capitolo",
+     "sid": "s031"
     },
     {
      "text": "Topple YELLOWBROW at the New Thunderclap Temple — Spell Binder is legitimate here if you prefer raw stats over spell juggling. Chapter 3's state locks on the kill.",
@@ -661,7 +718,8 @@
      ],
      "trophy": true,
      "text_it": "Abbatti YELLOWBROW al New Thunderclap Temple — Spell Binder qui è legittimo, se preferisci statistiche pure al giocoliere di magie. Lo stato del Capitolo 3 si blocca con l'uccisione.",
-     "loc_it": "New Thunderclap Temple"
+     "loc_it": "New Thunderclap Temple",
+     "sid": "s032"
     }
    ],
    "title_it": "Fase 3 — Capitolo 3: The New West",
@@ -688,7 +746,8 @@
      ],
      "trophy": false,
      "text_it": "Dopo che il CENTIPEDE GUAI cade nel Bonevault, colpisci il gigantesco bozzolo di ragno lì vicino per liberare HORSE GUAI — incontro 4 di 5, spremilo di dialoghi.",
-     "loc_it": "Webbed Hollow — Bonevault, dopo il Centipede Guai"
+     "loc_it": "Webbed Hollow — Bonevault, dopo il Centipede Guai",
+     "sid": "s033"
     },
     {
      "text": "Fight the VENOM DAOIST at his first Webbed Hollow appearance and drive him off — this encounter arms his Temple of Yellow Flowers rematch, which gates the whole secret area.",
@@ -702,7 +761,8 @@
      ],
      "trophy": false,
      "text_it": "Affronta il VENOM DAOIST alla sua prima apparizione nella Webbed Hollow e mettilo in fuga — questo incontro arma la sua rivincita al Temple of Yellow Flowers, che fa da cancello all'intera area segreta.",
-     "loc_it": "Webbed Hollow — Venom Daoist"
+     "loc_it": "Webbed Hollow — Venom Daoist",
+     "sid": "s034"
     },
     {
      "text": "Squeeze through the wall crack in the Lower Hollow tunnel for frog 4 of 6, BAW-LI-GUHH-BAW.",
@@ -716,7 +776,8 @@
      ],
      "trophy": false,
      "text_it": "Infilati nella crepa nel muro del tunnel della Lower Hollow per la rana 4 di 6, BAW-LI-GUHH-BAW.",
-     "loc_it": "Webbed Hollow — Lower Hollow"
+     "loc_it": "Webbed Hollow — Lower Hollow",
+     "sid": "s035"
     },
     {
      "text": "With the other three Loongs dead, the YELLOW LOONG waits at the Relief of the Fallen Loong. He is a genuine skill check: clones up, Immobilize his charge-up, and tank his lightning with maxed defense. The trophy pops with his fall.",
@@ -735,7 +796,8 @@
      ],
      "trophy": true,
      "text_it": "Con gli altri tre Loong morti, il LOONG GIALLO ti aspetta al Relief of the Fallen Loong. È un vero skill check: cloni attivi, Immobilize sul suo caricamento e incassa i fulmini con la difesa al massimo. Il trofeo scatta con la sua caduta.",
-     "loc_it": "Webbed Hollow — Relief of the Fallen Loong"
+     "loc_it": "Webbed Hollow — Relief of the Fallen Loong",
+     "sid": "s036"
     },
     {
      "text": "At the Temple of Yellow Flowers entrance, take the back stairs for OLD MAN meeting 4 and another gourd charge.",
@@ -749,7 +811,8 @@
      ],
      "trophy": false,
      "text_it": "All'ingresso del Temple of Yellow Flowers, prendi le scale sul retro per l'incontro 4 con l'OLD MAN e un'altra carica della fiasca.",
-     "loc_it": "Temple of Yellow Flowers — ingresso"
+     "loc_it": "Temple of Yellow Flowers — ingresso",
+     "sid": "s037"
     },
     {
      "text": "In the VENOM DAOIST rematch, break ALL of his extra arms before landing the killing blow — the VENOMOUS ARMGUARD armor piece drops only this way, and without it Mantled with Might is dead until another full cycle. His defeat opens PURPLE CLOUD MOUNTAIN.",
@@ -773,7 +836,8 @@
      ],
      "trophy": false,
      "text_it": "Nella rivincita col VENOM DAOIST, spezza TUTTE le sue braccia extra prima del colpo di grazia — il pezzo d'armatura VENOMOUS ARMGUARD droppa solo così, e senza di esso Ammantato di potenza resta morto fino a un altro ciclo completo. La sua sconfitta apre PURPLE CLOUD MOUNTAIN.",
-     "loc_it": "Temple of Yellow Flowers — rivincita col Venom Daoist"
+     "loc_it": "Temple of Yellow Flowers — rivincita col Venom Daoist",
+     "sid": "s038"
     },
     {
      "text": "Inside Purple Cloud Mountain, climb the stairs past the Petalfall Hamlet shrine to DAOIST MI: fetch him the VIOLET HAIL item off the yellow-robed guai nearby, then put him down when he turns hostile — his VIOLET HAIL transformation and journal entry are erased once you step into DUSKVEIL's arena.",
@@ -792,7 +856,8 @@
      ],
      "trophy": false,
      "text_it": "Dentro Purple Cloud Mountain, sali le scale oltre il santuario di Petalfall Hamlet fino a DAOIST MI: portagli l'oggetto VIOLET HAIL preso dal guai in veste gialla lì accanto, poi abbattilo quando diventa ostile — la sua trasformazione VIOLET HAIL e la voce di diario vengono cancellate appena metti piede nell'arena di VELO DEL CREPUSCOLO.",
-     "loc_it": "Purple Cloud Mountain — Petalfall Hamlet"
+     "loc_it": "Purple Cloud Mountain — Petalfall Hamlet",
+     "sid": "s039"
     },
     {
      "text": "Likewise kill SCORPIONLORD at the Bounds of Deity's Abode before approaching Duskveil: he yields the STAINED JADE GOURD for Brewer's Bounty, the DEATHSTINGER armor material and a journal entry — merely entering Duskveil's arena wipes him from the run.",
@@ -811,7 +876,8 @@
      ],
      "trophy": false,
      "text_it": "Allo stesso modo uccidi SCORPIONE SOVRANO ai Bounds of Deity's Abode prima di avvicinarti a Velo del Crepuscolo: lascia la STAINED JADE GOURD per Bottino del preparatore, il materiale d'armatura DEATHSTINGER e una voce di diario — il solo entrare nell'arena lo cancella dalla run.",
-     "loc_it": "Purple Cloud Mountain — Bounds of Deity's Abode"
+     "loc_it": "Purple Cloud Mountain — Bounds of Deity's Abode",
+     "sid": "s040"
     },
     {
      "text": "Now face DUSKVEIL atop Purple Cloud Mountain — a rooster of pure aggression; Rock Solid his flurries and trade during his landing recoveries. Collect the WEAVER'S NEEDLE vessel (3 of 4) in the aftermath.",
@@ -835,7 +901,8 @@
      ],
      "trophy": true,
      "text_it": "Ora affronta VELO DEL CREPUSCOLO in cima a Purple Cloud Mountain — un gallo di pura aggressione; Rock Solid sulle sue raffiche e scambia colpi durante i recuperi degli atterraggi. Raccogli il vessel WEAVER'S NEEDLE (3 di 4) subito dopo.",
-     "loc_it": "Purple Cloud Mountain (area segreta)"
+     "loc_it": "Purple Cloud Mountain (area segreta)",
+     "sid": "s041"
     },
     {
      "text": "Sweep the chapter's six Meditation Spots (one, The Ledge, is inside the secret area) and every pill chest.",
@@ -849,7 +916,8 @@
      ],
      "trophy": false,
      "text_it": "Spazza i sei Meditation Spot del capitolo (uno, The Ledge, è dentro l'area segreta) e ogni forziere di pillole.",
-     "loc_it": "Capitolo 4 — 6 meditation spot"
+     "loc_it": "Capitolo 4 — 6 meditation spot",
+     "sid": "s042"
     },
     {
      "text": "End the chapter against the HUNDRED-EYED DAOIST MASTER — his needle rain is why you stacked defense; heal inside Cloud Step and chip with heavies. Chapter 4 locks.",
@@ -868,7 +936,8 @@
      ],
      "trophy": true,
      "text_it": "Chiudi il capitolo contro il MAESTRO DAOISTA CENTOCCHI — la sua pioggia di aghi è il motivo per cui hai accumulato difesa; curati dentro Cloud Step e logoralo coi pesanti. Il Capitolo 4 si blocca.",
-     "loc_it": "Temple of Yellow Flowers — finale"
+     "loc_it": "Temple of Yellow Flowers — finale",
+     "sid": "s043"
     }
    ],
    "title_it": "Fase 4 — Capitolo 4: The Webbed Hollow",
@@ -895,7 +964,8 @@
      ],
      "trophy": false,
      "text_it": "Alla Valley Entrance, segui la voce fino a HORSE GUAI incastrato in un Element Cart rotto — incontro 5 di 5. Esaurisci i suoi dialoghi; la sua ultima richiesta si apre solo una volta sistemati il KEEPER OF THE FLAMING MOUNTAINS e lo YIN-YANG FISH, quindi ricordati questo carro.",
-     "loc_it": "Furnace Valley — Valley Entrance"
+     "loc_it": "Furnace Valley — Valley Entrance",
+     "sid": "s044"
     },
     {
      "text": "Run the FIVE ELEMENT CARTS quest: speak with the PALE-AXE STALWART at his three spots and destroy the cart bosses as the story serves them up — the fifth waits behind an ice barrier later.",
@@ -914,7 +984,8 @@
      ],
      "trophy": false,
      "text_it": "Svolgi la quest dei FIVE ELEMENT CARTS: parla col PALE-AXE STALWART nei suoi tre punti e distruggi i boss dei carri man mano che la storia te li serve — il quinto aspetta più avanti dietro una barriera di ghiaccio.",
-     "loc_it": "Furnace Valley — Pale-Axe Stalwart"
+     "loc_it": "Furnace Valley — Pale-Axe Stalwart",
+     "sid": "s045"
     },
     {
      "text": "Once the carts quest opens the way into Bishui Cave, slip past the shattered ice wall and down the slope to flatten frog 5 of 6, BAW-LANG-LANG, on the water to the left.",
@@ -928,7 +999,8 @@
      ],
      "trophy": false,
      "text_it": "Quando la quest dei carri apre la via nella Bishui Cave, sgattaiola oltre il muro di ghiaccio infranto e giù per il pendio per spiaccicare la rana 5 di 6, BAW-LANG-LANG, sull'acqua a sinistra.",
-     "loc_it": "Bishui Cave — oltre il muro di ghiaccio (Cooling Slope)"
+     "loc_it": "Bishui Cave — oltre il muro di ghiaccio (Cooling Slope)",
+     "sid": "s046"
     },
     {
      "text": "Enter BISHUI CAVE: survive the spinning-sphere duo TOP TAKES BOTTOM, BOTTOM TAKES TOP (hit whichever twin drops its shield), then kill the BISHUI GOLDEN-EYED BEAST with the FIREPROOF MANTLE equipped against his flame spam. His fall unlocks the BULL KING armor set — your endgame tank shell.",
@@ -952,7 +1024,8 @@
      ],
      "trophy": true,
      "text_it": "Entra nella BISHUI CAVE: sopravvivi al duo di sfere rotanti TOP TAKES BOTTOM, BOTTOM TAKES TOP (colpisci il gemello che abbassa lo scudo), poi uccidi la BISHUI GOLDEN-EYED BEAST con il FIREPROOF MANTLE equipaggiato contro il suo spam di fiamme. La sua caduta sblocca il set BULL KING — il tuo guscio da tank endgame.",
-     "loc_it": "Bishui Cave (area segreta)"
+     "loc_it": "Bishui Cave (area segreta)",
+     "sid": "s047"
     },
     {
      "text": "Meet the OLD MAN in the Rakshasa Palace for his final gourd blessing — with every earlier meeting done and the gourd at its 10-charge maximum, the trophy pops here.",
@@ -971,7 +1044,8 @@
      ],
      "trophy": true,
      "text_it": "Incontra l'OLD MAN nel Rakshasa Palace per la sua benedizione finale della fiasca — con tutti gli incontri precedenti fatti e la fiasca al massimo di 10 cariche, il trofeo scatta qui.",
-     "loc_it": "Furnace Valley — Rakshasa Palace"
+     "loc_it": "Furnace Valley — Rakshasa Palace",
+     "sid": "s048"
     },
     {
      "text": "Clear the chapter's four Meditation Spots (The Screen hides in the secret area) and the pill chests.",
@@ -985,7 +1059,8 @@
      ],
      "trophy": false,
      "text_it": "Completa i quattro Meditation Spot del capitolo (The Screen si nasconde nell'area segreta) e i forzieri di pillole.",
-     "loc_it": "Capitolo 5 — 4 meditation spot"
+     "loc_it": "Capitolo 5 — 4 meditation spot",
+     "sid": "s049"
     },
     {
      "text": "With the KEEPER OF THE FLAMING MOUNTAINS and YIN-YANG FISH down, return to the Element Cart at the Valley Entrance and pull the whip out forcefully for the Horse Guai's farewell — the quest trophy pops and his DARK THUNDER transformation joins your Fickle Forms tally. Do this before the chapter finale to be safe.",
@@ -1004,7 +1079,8 @@
      ],
      "trophy": true,
      "text_it": "Con KEEPER OF THE FLAMING MOUNTAINS e YIN-YANG FISH a terra, torna all'Element Cart della Valley Entrance ed estrai la frusta con forza per l'addio di Horse Guai — il trofeo della quest scatta e la sua trasformazione DARK THUNDER si aggiunge al conteggio di Forme instabili. Fallo prima del finale del capitolo, per stare tranquillo.",
-     "loc_it": "Furnace Valley — il carro di Horse Guai"
+     "loc_it": "Furnace Valley — il carro di Horse Guai",
+     "sid": "s050"
     },
     {
      "text": "Defeat the YAKSHA KING to close the chapter — his fire cones barely tickle through the Bull King set and a fire-warding soak.",
@@ -1023,7 +1099,8 @@
      ],
      "trophy": true,
      "text_it": "Sconfiggi lo YAKSHA KING per chiudere il capitolo — i suoi coni di fuoco fanno appena il solletico attraverso il set Bull King e un soak anti-fuoco.",
-     "loc_it": "Flaming Mountains — finale"
+     "loc_it": "Flaming Mountains — finale",
+     "sid": "s051"
     },
     {
      "text": "The PLANTAIN FAN — the only story-granted vessel — arrives with the chapter's end. Holding the Fireproof Mantle, Wind Tamer and Weaver's Needle already, the full set completes now.",
@@ -1042,7 +1119,8 @@
      ],
      "trophy": true,
      "text_it": "Il PLANTAIN FAN — l'unico vessel donato dalla storia — arriva con la fine del capitolo. Con Fireproof Mantle, Wind Tamer e Weaver's Needle già in tasca, il set completo si chiude adesso.",
-     "loc_it": "Fine Capitolo 5 — ricompensa vessel"
+     "loc_it": "Fine Capitolo 5 — ricompensa vessel",
+     "sid": "s052"
     }
    ],
    "title_it": "Fase 5 — Capitolo 5: Flaming Mountains",
@@ -1064,7 +1142,8 @@
      ],
      "trophy": false,
      "text_it": "Prendi i cieli di Mount Huaguo sulla nuvola-capriola e ripulisci il percorso delle Foothills dai re opzionali (mantide, rinoceronte, cervo, il SUPREME INSPECTOR e compagnia) — ognuno è una voce di diario che Bozzetti perfetti pretenderà, e l'Inspector droppa la formula dell'ASCENSION POWDER che serve a Custode delle pagine.",
-     "loc_it": "Mount Huaguo — Foothills"
+     "loc_it": "Mount Huaguo — Foothills",
+     "sid": "s053"
     },
     {
      "text": "Fly the cloud down to the pool below the GOLDEN ARMORED RHINO's arena, near where the SUPREME INSPECTOR fell, for the last frog, LANG-BAW-BAW — six of six, and the frog chorus trophy sings.",
@@ -1083,7 +1162,8 @@
      ],
      "trophy": true,
      "text_it": "Vola con la nuvola giù alla pozza sotto l'arena del GOLDEN ARMORED RHINO, vicino a dove è caduto il SUPREME INSPECTOR, per l'ultima rana, LANG-BAW-BAW — sei su sei, e il trofeo del coro di rane canta.",
-     "loc_it": "Mount Huaguo — pozza sotto l'arena del Rhino"
+     "loc_it": "Mount Huaguo — pozza sotto l'arena del Rhino",
+     "sid": "s054"
     },
     {
      "text": "Follow the story into the Water Curtain Cave until the Destined One takes up JINGUBANG — the full kit is assembled and the trophy is automatic.",
@@ -1097,7 +1177,8 @@
      ],
      "trophy": true,
      "text_it": "Segui la storia nella Water Curtain Cave finché il Destined One non impugna JINGUBANG — il kit completo è assemblato e il trofeo è automatico.",
-     "loc_it": "Water Curtain Cave"
+     "loc_it": "Water Curtain Cave",
+     "sid": "s055"
     },
     {
      "text": "STOP before the final arena. Audit the run: four secret areas cleared, Treasure Hunter quest done, all Loongs dead, journal gaps closed. Everything on this list must be true for the next two steps to work in this cycle.",
@@ -1111,7 +1192,8 @@
      ],
      "trophy": false,
      "text_it": "FERMATI prima dell'arena finale. Verifica la run: quattro aree segrete completate, quest del Treasure Hunter chiusa, tutti i Loong morti, buchi del diario colmati. Tutto su questa lista deve essere vero perché i prossimi due passi funzionino in questo ciclo.",
-     "loc_it": "Capitolo 6 — checkpoint pre-finale"
+     "loc_it": "Capitolo 6 — checkpoint pre-finale",
+     "sid": "s056"
     },
     {
      "text": "Travel to Chapter 3's Snow-Veiled Trail, cross the bridge to the GREAT PAGODA and touch the glowing mural — you are carried to MOUNT MEI. Climb to its shrine and challenge ERLANG, THE SACRED DIVINITY.",
@@ -1125,7 +1207,8 @@
      ],
      "trophy": false,
      "text_it": "Viaggia fino allo Snow-Veiled Trail del Capitolo 3, attraversa il ponte verso la GREAT PAGODA e tocca il murale luminoso — vieni trasportato a MOUNT MEI. Sali al suo santuario e sfida ERLANG, LA DIVINITÀ SACRA.",
-     "loc_it": "Pagoda Realm → Great Pagoda → Mount Mei"
+     "loc_it": "Pagoda Realm → Great Pagoda → Mount Mei",
+     "sid": "s057"
     },
     {
      "text": "Beat ERLANG — the platinum's hardest fight. Clones hold his attention, Immobilize cancels his axe transformation windows, and ten gourd charges forgive your mistakes. Sturdiness wins where reflexes falter.",
@@ -1139,7 +1222,8 @@
      ],
      "trophy": false,
      "text_it": "Batti ERLANG — lo scontro più duro del platino. I cloni tengono la sua attenzione, Immobilize cancella le finestre della sua trasformazione con l'ascia, e dieci cariche di fiasca perdonano i tuoi errori. La solidità vince dove i riflessi vacillano.",
-     "loc_it": "Mount Mei — Erlang, la Divinità Sacra"
+     "loc_it": "Mount Mei — Erlang, la Divinità Sacra",
+     "sid": "s058"
     },
     {
      "text": "Return to the Birthstone and finish THE GREAT SAGE'S BROKEN SHELL. With Erlang defeated, the secret ending plays over the credits — two trophies land together.",
@@ -1158,7 +1242,8 @@
      ],
      "trophy": true,
      "text_it": "Torna alla Birthstone e finisci THE GREAT SAGE'S BROKEN SHELL. Con Erlang sconfitto, il finale segreto gira sui titoli di coda — due trofei atterrano insieme.",
-     "loc_it": "Mount Huaguo — finale della Birthstone"
+     "loc_it": "Mount Huaguo — finale della Birthstone",
+     "sid": "s059"
     },
     {
      "text": "Do NOT accept New Game+ yet. Reload your clear save — chapter travel reopens with the whole world intact for cleanup.",
@@ -1172,7 +1257,8 @@
      ],
      "trophy": false,
      "text_it": "NON accettare ancora il New Game+. Ricarica il salvataggio post-finale — il viaggio tra capitoli si riapre con il mondo intero intatto per la pulizia.",
-     "loc_it": "Menu principale — carica il salvataggio del finale"
+     "loc_it": "Menu principale — carica il salvataggio del finale",
+     "sid": "s060"
     }
    ],
    "title_it": "Fase 6 — Capitolo 6: Mount Huaguo e i due finali",
@@ -1199,7 +1285,8 @@
      ],
      "trophy": true,
      "text_it": "Lavora il diario capitolo per capitolo: ogni voce Lesser Yaoguai, Chief, King e Character. Le schermate di negozio e codex segnalano i buchi — i ritardatari soliti sono nemici una tantum nelle grotte dei Capitoli 2 e 4.",
-     "loc_it": "Tutti i capitoli — giro del diario"
+     "loc_it": "Tutti i capitoli — giro del diario",
+     "sid": "s061"
     },
     {
      "text": "Capture the remaining spirits (repeatable mini-bosses respawn at shrines) and confirm every transformation — Red Tides, Azure Dust, Dark Thunder, Violet Hail, Daoist Mi's and the rest. The shapeshifter trophy closes the set.",
@@ -1218,7 +1305,8 @@
      ],
      "trophy": true,
      "text_it": "Cattura gli spiriti rimanenti (i mini-boss ripetibili respawnano ai santuari) e verifica ogni trasformazione — Red Tides, Azure Dust, Dark Thunder, Violet Hail, quella di Daoist Mi e le altre. Il trofeo del mutaforma chiude il set.",
-     "loc_it": "Tutti i capitoli — caccia agli spiriti"
+     "loc_it": "Tutti i capitoli — caccia agli spiriti",
+     "sid": "s062"
     },
     {
      "text": "Buy out the curio stock at the Zodiac Village traders and Shen Monkey, and collect the last world-drop curios — with the Lantern Warden curio banked in Chapter 3, the collection completes.",
@@ -1237,7 +1325,8 @@
      ],
      "trophy": true,
      "text_it": "Svuota lo stock di curio dei mercanti di Zodiac Village e dello Shen Monkey, e recupera gli ultimi curio da drop nel mondo — con il curio dei Lantern Wardens messo in banca nel Capitolo 3, la collezione si completa.",
-     "loc_it": "Zodiac Village + venditori"
+     "loc_it": "Zodiac Village + venditori",
+     "sid": "s063"
     },
     {
      "text": "Gather every seed type — world pickups plus Chen Loong's field harvests — and the seed pouch trophy pops.",
@@ -1256,7 +1345,8 @@
      ],
      "trophy": true,
      "text_it": "Raccogli ogni tipo di seme — pickup nel mondo più le mietiture del campo di Chen Loong — e il trofeo del sacchetto di semi scatta.",
-     "loc_it": "Zodiac Village — Chen Loong + mondo"
+     "loc_it": "Zodiac Village — Chen Loong + mondo",
+     "sid": "s064"
     },
     {
      "text": "Sit at any of the 24 Meditation Spots still unvisited — several hide in the secret areas, so this only finishes after all four are open.",
@@ -1270,7 +1360,8 @@
      ],
      "trophy": true,
      "text_it": "Siediti a ognuno dei 24 Meditation Spot ancora non visitati — parecchi si nascondono nelle aree segrete, quindi questo si chiude solo dopo che tutte e quattro sono aperte.",
-     "loc_it": "Tutti i capitoli — 24 meditation spot"
+     "loc_it": "Tutti i capitoli — 24 meditation spot",
+     "sid": "s065"
     },
     {
      "text": "Tally the CELESTIAL PILLS: 5 each of Jade Lotus (health), Taiyi (mana) and Nonary (stamina), physical pickups only. Any shortfall carries into NG+ — the counter is cumulative across cycles.",
@@ -1289,7 +1380,8 @@
      ],
      "trophy": true,
      "text_it": "Fai i conti delle CELESTIAL PILL: 5 ciascuna di Jade Lotus (salute), Taiyi (mana) e Nonary (stamina), solo raccolte fisiche. Ogni ammanco passa nel NG+ — il contatore è cumulativo tra i cicli.",
-     "loc_it": "Tutti i capitoli — forzieri dorati di pillole"
+     "loc_it": "Tutti i capitoli — forzieri dorati di pillole",
+     "sid": "s066"
     }
    ],
    "title_it": "Fase 7 — Pulizia della prima run",
@@ -1316,7 +1408,8 @@
      ],
      "trophy": true,
      "text_it": "Avvia il NEW GAME+. Durante la sequenza di Erlang del prologo, il gioco fa l'inventario delle reliquie e delle magie che ti porti dietro — due trofei scattano uno dietro l'altro prima ancora che tu piazzi un colpo.",
-     "loc_it": "NG+ — prologo"
+     "loc_it": "NG+ — prologo",
+     "sid": "s067"
     },
     {
      "text": "Buy the SOUL REMIGRATION PILL formula from XU DOG in the Crouching Tiger Temple cellar — it is sold only in NG+ — to complete the formula compendium.",
@@ -1335,7 +1428,8 @@
      ],
      "trophy": true,
      "text_it": "Compra la formula della SOUL REMIGRATION PILL da XU DOG nella cantina del Crouching Tiger Temple — è in vendita solo nel NG+ — per completare il compendio delle formule.",
-     "loc_it": "NG+ — Xu Dog, cantina del Crouching Tiger Temple"
+     "loc_it": "NG+ — Xu Dog, cantina del Crouching Tiger Temple",
+     "sid": "s068"
     },
     {
      "text": "Buy the GUANYIN'S WILLOW LEAF soak from the Shen Monkey's NG+ stock; with every gourd, drink and soak from run one already owned, the brewer's trophy pours.",
@@ -1354,7 +1448,8 @@
      ],
      "trophy": true,
      "text_it": "Compra il soak GUANYIN'S WILLOW LEAF dallo stock NG+ dello Shen Monkey; con ogni fiasca, bevanda e soak della prima run già in tuo possesso, il trofeo del preparatore si versa da solo.",
-     "loc_it": "NG+ — stock Brew dello Shen Monkey"
+     "loc_it": "NG+ — stock Brew dello Shen Monkey",
+     "sid": "s069"
     },
     {
      "text": "Replay the chapters far enough to refarm the rare boss materials (several drop only a few times per cycle) and forge every remaining staff at YIN TIGER's anvil.",
@@ -1373,7 +1468,8 @@
      ],
      "trophy": true,
      "text_it": "Rigioca i capitoli quanto basta per rifarmare i materiali rari dei boss (parecchi droppano solo poche volte per ciclo) e forgia ogni bastone rimanente all'incudine di YIN TIGER.",
-     "loc_it": "NG+ — forgia di Yin Tiger"
+     "loc_it": "NG+ — forgia di Yin Tiger",
+     "sid": "s070"
     },
     {
      "text": "Craft the last armor pieces the same way — the Venomous Armguard from run one was the only permanently missable piece; everything else is materials math. If a material still refuses to drop, a short NG++ hop covers it.",
@@ -1392,7 +1488,8 @@
      ],
      "trophy": true,
      "text_it": "Crea allo stesso modo gli ultimi pezzi d'armatura — il Venomous Armguard della prima run era l'unico pezzo missabile per sempre; il resto è matematica di materiali. Se un materiale continua a non droppare, una breve capatina in NG++ lo copre.",
-     "loc_it": "NG+ — forgia di Yin Tiger"
+     "loc_it": "NG+ — forgia di Yin Tiger",
+     "sid": "s071"
     },
     {
      "text": "With all 35 trophies banked, the platinum crowns the Destined One — the journey west is complete.",
@@ -1406,7 +1503,8 @@
      ],
      "trophy": true,
      "text_it": "Con tutti e 35 i trofei in banca, il platino incorona il Destined One — il viaggio in Occidente è completo.",
-     "loc_it": "Lista trofei"
+     "loc_it": "Lista trofei",
+     "sid": "s072"
     }
    ],
    "title_it": "Fase 8 — New Game+ e platino",

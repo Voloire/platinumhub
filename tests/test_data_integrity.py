@@ -16,6 +16,7 @@ riferimento (kz.json) e con gli invarianti che l'app da' per scontati.
 Non serve nessun server: si leggono solo i file JSON (in sola lettura).
 """
 
+import ast
 import os
 import re
 import sys
@@ -28,9 +29,35 @@ import harness  # noqa: E402
 ALLOWED_TAG_TYPES = {"trophy", "miss", "coll", "build", "quest"}
 
 # Campi obbligatori per ciascun livello della struttura.
-STEP_FIELDS = ("text", "loc", "tags", "trophy", "text_it", "loc_it")
+STEP_FIELDS = ("sid", "text", "loc", "tags", "trophy", "text_it", "loc_it")
 TAG_FIELDS = ("type", "label", "label_it")
 PHASE_FIELDS = ("title", "note", "title_it", "note_it")
+
+# Formato del sid: 's' piu' cifre, assegnato da tools/assign_sids.py.
+# Il sid e' la chiave dei progressi nel database: opaco e stabile per sempre.
+SID_RE = re.compile(r"^s\d{3,}$")
+
+# Campi obbligatori del blocco meta: la carta d'identita' della route,
+# cio' che permette di distribuirla come file senza toccare il codice.
+META_FIELDS = ("id", "format", "version", "accent", "tagline", "thumb")
+META_THUMB_FIELDS = ("icon", "glow", "seed", "stats", "tag")
+ACCENT_RE = re.compile(r"^#[0-9a-f]{6}$")
+GLOW_RE = re.compile(r"^\d{1,3},\d{1,3},\d{1,3}$")
+
+
+def app_literal(name):
+    """
+    Estrae una costante di primo livello da app.py senza eseguirlo,
+    per confrontare i registri hardcoded con i meta dei JSON.
+    """
+    with open(os.path.join(harness.APP_DIR, "app.py"), "r", encoding="utf-8") as f:
+        tree = ast.parse(f.read())
+    for node in tree.body:
+        if isinstance(node, ast.Assign) and len(node.targets) == 1 \
+                and isinstance(node.targets[0], ast.Name) \
+                and node.targets[0].id == name:
+            return ast.literal_eval(node.value)
+    raise AssertionError("costante %s non trovata in app.py" % name)
 
 # Coppie di liste che devono avere la stessa lunghezza nelle due lingue.
 PARALLEL_LISTS = (("golden_rules", "golden_rules_it"),
@@ -293,6 +320,100 @@ class RouteShapeTest(unittest.TestCase):
             with self.subTest(file=name):
                 found = PLACEHOLDER_RE.findall(raw)
                 self.assertEqual(found, [], "%s contiene segnaposto: %s" % (name, found[:5]))
+
+    # ------------------------------------------------------------------- sid
+    def test_every_step_has_a_wellformed_sid(self):
+        """
+        Il sid e' la chiave con cui i progressi vengono salvati: un passo senza
+        sid non puo' essere spuntato, un sid malformato inquina il database.
+        """
+        for name, route in self.routes.items():
+            for pi, phase in enumerate(route["phases"]):
+                for si, step in enumerate(phase["steps"]):
+                    with self.subTest(file=name, phase=pi, step=si):
+                        self.assertTrue(SID_RE.match(str(step.get("sid"))),
+                                        "%s fase %d passo %d: sid '%s' malformato"
+                                        % (name, pi, si, step.get("sid")))
+
+    def test_sids_are_unique_within_each_route(self):
+        """
+        Un sid duplicato fa scrivere due passi sulla stessa riga di progresso:
+        e' la corruzione silenziosa che i sid esistono per impedire.
+        """
+        for name, route in self.routes.items():
+            sids = [s["sid"] for p in route["phases"] for s in p["steps"]]
+            dupes = sorted({x for x in sids if sids.count(x) > 1})
+            with self.subTest(file=name):
+                self.assertEqual(dupes, [], "%s: sid duplicati: %s" % (name, dupes))
+
+    # ------------------------------------------------------------------ meta
+    def test_meta_block_is_present_and_wellformed(self):
+        """
+        Il meta rende la route autodescrittiva: e' cio' che permettera' di
+        scaricarla dal catalogo senza rilasciare l'app. Ogni campo mancante
+        o malformato qui e' una card rotta in home per chi la scarica.
+        """
+        for name, route in self.routes.items():
+            meta = route.get("meta")
+            with self.subTest(file=name, what="presenza"):
+                self.assertIsInstance(meta, dict, "%s: blocco meta mancante" % name)
+            for field in META_FIELDS:
+                with self.subTest(file=name, field=field):
+                    self.assertIn(field, meta, "%s: meta senza '%s'" % (name, field))
+            with self.subTest(file=name, what="tipi"):
+                self.assertEqual(meta["id"], os.path.splitext(name)[0],
+                                 "%s: meta.id '%s' non coincide col nome del file"
+                                 % (name, meta["id"]))
+                self.assertIsInstance(meta["format"], int)
+                self.assertGreaterEqual(meta["format"], 1)
+                self.assertIsInstance(meta["version"], int)
+                self.assertGreaterEqual(meta["version"], 1)
+                self.assertTrue(ACCENT_RE.match(str(meta["accent"])),
+                                "%s: accent '%s' non e' un colore #rrggbb"
+                                % (name, meta["accent"]))
+            with self.subTest(file=name, what="tagline"):
+                tagline = meta["tagline"]
+                self.assertIsInstance(tagline, dict)
+                for lang in ("en", "it"):
+                    self.assertTrue(str(tagline.get(lang, "")).strip(),
+                                    "%s: tagline %s vuota" % (name, lang))
+            with self.subTest(file=name, what="thumb"):
+                thumb = meta["thumb"]
+                self.assertIsInstance(thumb, dict)
+                for field in META_THUMB_FIELDS:
+                    self.assertIn(field, thumb, "%s: thumb senza '%s'" % (name, field))
+                self.assertTrue(GLOW_RE.match(str(thumb["glow"])),
+                                "%s: glow '%s' non e' 'r,g,b'" % (name, thumb["glow"]))
+                self.assertIsInstance(thumb["seed"], int)
+                self.assertIsInstance(thumb["stats"], list)
+                for stat in thumb["stats"]:
+                    self.assertIsInstance(stat, list)
+                    self.assertEqual(len(stat), 2)
+                self.assertIsInstance(thumb["tag"], (str, type(None)))
+
+    def test_meta_matches_the_hardcoded_registries(self):
+        """
+        TRANSITORIO: finche' RUNS e THUMB_DESIGNS vivono in app.py, i meta dei
+        JSON devono dire le stesse cose, altrimenti l'app mostra una cosa e il
+        catalogo ne distribuira' un'altra. Quando i registri hardcoded
+        spariranno, questo test sparira' con loro.
+        """
+        runs = {r["id"]: r for r in app_literal("RUNS")}
+        thumbs = app_literal("THUMB_DESIGNS")
+        for name, route in self.routes.items():
+            meta = route.get("meta") or {}
+            rid = meta.get("id")
+            with self.subTest(file=name, what="RUNS"):
+                self.assertIn(rid, runs, "%s: id '%s' non e' in RUNS" % (name, rid))
+                self.assertEqual(meta.get("accent"), runs[rid]["accent"])
+                self.assertEqual(meta.get("tagline"), runs[rid]["tagline"])
+            with self.subTest(file=name, what="THUMB_DESIGNS"):
+                self.assertIn(rid, thumbs)
+                expected = dict(thumbs[rid])
+                got = dict(meta.get("thumb") or {})
+                # json non ha le tuple: le stats di app.py si confrontano come liste
+                expected["stats"] = [list(x) for x in expected["stats"]]
+                self.assertEqual(got, expected)
 
     def test_glossary_entries_are_non_empty_strings(self):
         for name, route in self.routes.items():
