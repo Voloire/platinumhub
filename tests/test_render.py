@@ -17,8 +17,9 @@ import unittest
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import harness  # noqa: E402
 
-# Le caselle della checklist sono <input type="checkbox" id="s1">, s2, s3...
-CHECKBOX_RE = re.compile(r'<input type="checkbox" id="s(\d+)">')
+# Le caselle della checklist sono <input type="checkbox" id="s1" data-sid="s001">...
+# il data-sid e' la chiave con cui la pagina dichiara i progressi al server.
+CHECKBOX_RE = re.compile(r'<input type="checkbox" id="s(\d+)" data-sid="(s\d+)">')
 # Nella guida esportata i passi diventano <div class="step done|todo">.
 EXPORT_STEP_RE = re.compile(r'<div class="step (?:done|todo)">')
 
@@ -80,13 +81,16 @@ class RenderTest(harness.ServerTestCase, unittest.TestCase):
                 with self.subTest(lang=lg, run=rid):
                     code, html = self.server.get_text("/run/%s" % rid)
                     self.assertEqual(code, 200)
-                    ids = CHECKBOX_RE.findall(html)
-                    self.assertEqual(len(ids), expected,
+                    found = CHECKBOX_RE.findall(html)
+                    self.assertEqual(len(found), expected,
                                      "%s in %s: %d caselle per %d passi"
-                                     % (rid, lg, len(ids), expected))
-                    self.assertEqual([int(i) for i in ids], list(range(1, expected + 1)),
+                                     % (rid, lg, len(found), expected))
+                    self.assertEqual([int(i) for i, _ in found], list(range(1, expected + 1)),
                                      "%s in %s: gli id delle caselle non sono consecutivi"
                                      % (rid, lg))
+                    self.assertEqual([s for _, s in found], harness.sids_of(rid),
+                                     "%s in %s: i data-sid della pagina non sono i sid "
+                                     "della route, nell'ordine della route" % (rid, lg))
 
     def test_checkbox_count_is_identical_in_both_languages(self):
         """Il test che protegge dalla corruzione silenziosa dei salvataggi."""
@@ -159,9 +163,9 @@ class RenderTest(harness.ServerTestCase, unittest.TestCase):
         self.server.post_json("/api/pref", {"mode": "gamer"})
 
     def test_progress_is_reflected_in_the_exported_guide(self):
-        code, res = self.server.get_json("/api/progress?run=kz")
-        n = res["total"]
-        self.server.post_json("/api/progress", {"run": "kz", "bits": "1" * 3 + "0" * (n - 3)})
+        sids = harness.sids_of("kz")
+        n = len(sids)
+        self.server.post_json("/api/progress", {"run": "kz", "done": sids[:3]})
         code, html = self.server.get_text("/export/kz")
         self.assertEqual(html.count('<div class="step done">'), 3)
         self.assertEqual(html.count('<div class="step todo">'), n - 3)

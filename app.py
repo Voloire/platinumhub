@@ -519,14 +519,30 @@ def load_routes():
             d = json.load(f)
         d["_steps"] = sum(len(p["steps"]) for p in d["phases"])
         d["_tsteps"] = sum(1 for p in d["phases"] for s in p["steps"] if s.get("trophy"))
+        # I sid in ordine di pagina: la chiave dei progressi e dei marker.
+        d["_sids"] = [s.get("sid") for p in d["phases"] for s in p["steps"]]
+        d["_sidset"] = set(d["_sids"])
+        d["_trophy_sids"] = {s.get("sid") for p in d["phases"]
+                             for s in p["steps"] if s.get("trophy")}
         ROUTES[r["id"]] = d
 
 
 # ---------------------------------------------------------------------- SQLite
+# I progressi si salvano PER SID, non per posizione: ogni spunta e' una riga
+# (run_id, sid). Aggiornare una route non puo' piu' spostare le spunte di
+# nessuno, e una riga il cui sid non esiste piu' nella route resta nel database
+# (orfana ma intatta): un progresso non si cancella mai per effetto collaterale.
+SID_OK = re.compile(r"^s\d{3,}$")
+
+
 def db():
     con = sqlite3.connect(DB)
-    con.execute("""CREATE TABLE IF NOT EXISTS progress(
-        run_id TEXT PRIMARY KEY, bits TEXT NOT NULL,
+    con.execute("""CREATE TABLE IF NOT EXISTS progress_steps(
+        run_id TEXT NOT NULL, sid TEXT NOT NULL,
+        done_at TEXT NOT NULL DEFAULT (datetime('now')),
+        PRIMARY KEY(run_id, sid))""")
+    con.execute("""CREATE TABLE IF NOT EXISTS progress_runs(
+        run_id TEXT PRIMARY KEY,
         updated_at TEXT NOT NULL DEFAULT (datetime('now')))""")
     con.execute("""CREATE TABLE IF NOT EXISTS notes(
         run_id TEXT PRIMARY KEY, body TEXT NOT NULL,
@@ -548,14 +564,81 @@ def db():
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         session_id INTEGER NOT NULL,
         run_id TEXT NOT NULL,
-        step INTEGER,
+        sid TEXT,
         kind TEXT NOT NULL,
         tc REAL NOT NULL,
         wall TEXT NOT NULL,
         note TEXT NOT NULL DEFAULT '')""")
-    con.execute("CREATE INDEX IF NOT EXISTS ix_mark ON markers(session_id, step, kind)")
+    con.commit()
+    upgrade_v1_db(con)
+    # DOPO la migrazione: in un database vecchio la colonna sid nasce solo li',
+    # e creare l'indice prima farebbe morire l'avvio con "no such column".
+    con.execute("CREATE INDEX IF NOT EXISTS ix_mark2 ON markers(session_id, sid, kind)")
     con.commit()
     return con
+
+
+def upgrade_v1_db(con):
+    """Converte in blocco un database 3.x/4.x (progressi posizionali) al formato per sid.
+
+    La mappa posizione->sid e' deterministica: la struttura delle route 3.x/4.x
+    e' quella dei JSON in bundle, e i sid sono stati assegnati proprio in
+    quell'ordine. La tabella vecchia non si cancella: si rinomina in
+    progress_v1 e resta li', e' la copia di sicurezza dell'utente.
+
+    Se le route non sono ancora caricate si rimanda: la tabella 'progress'
+    resta al suo posto e la conversione avverra' alla prima chiamata utile.
+    """
+    if get_pref_con(con, "schema_v") == "2":
+        return
+    tables = {r[0] for r in con.execute(
+        "SELECT name FROM sqlite_master WHERE type='table'")}
+    marker_cols = {r[1] for r in con.execute("PRAGMA table_info(markers)")}
+    if "markers" in tables and "sid" not in marker_cols:
+        # ALTER e' idempotente grazie al controllo sopra; le righe vecchie
+        # tengono la colonna step, quelle nuove scrivono solo sid.
+        con.execute("ALTER TABLE markers ADD COLUMN sid TEXT")
+        con.execute("CREATE INDEX IF NOT EXISTS ix_mark2 ON markers(session_id, sid, kind)")
+        con.commit()
+        marker_cols.add("sid")
+    # 'step' nelle colonne dei marker e' l'impronta di un database vecchio:
+    # nei database nuovi la colonna non esiste proprio.
+    if "progress" not in tables and "step" not in marker_cols:
+        con.execute("INSERT OR REPLACE INTO prefs(k,v) VALUES('schema_v','2')")
+        con.commit()
+        return
+    if not ROUTES:
+        return          # niente flag: si riprova quando le route ci saranno
+    for rid, d in ROUTES.items():
+        sids = d["_sids"]
+        if "progress" in tables:
+            row = con.execute("SELECT bits, updated_at FROM progress WHERE run_id=?",
+                              (rid,)).fetchone()
+            if row:
+                bits, when = row[0] or "", row[1]
+                done = [(rid, sids[i], when) for i, c in enumerate(bits[:len(sids)]) if c == "1"]
+                con.executemany("INSERT OR IGNORE INTO progress_steps(run_id,sid,done_at) "
+                                "VALUES(?,?,?)", done)
+                con.execute("INSERT OR IGNORE INTO progress_runs(run_id,updated_at) VALUES(?,?)",
+                            (rid, when))
+        if "step" in marker_cols:
+            for i, s in enumerate(sids):
+                con.execute("UPDATE markers SET sid=? WHERE run_id=? AND step=? AND sid IS NULL",
+                            (s, rid, i))
+        cur = get_pref_con(con, "cur_" + rid)
+        if cur is not None and cur.lstrip("-").isdigit():
+            i = int(cur)
+            con.execute("UPDATE prefs SET v=? WHERE k=?",
+                        (sids[i] if 0 <= i < len(sids) else "", "cur_" + rid))
+    if "progress" in tables:
+        con.execute("ALTER TABLE progress RENAME TO progress_v1")
+    con.execute("INSERT OR REPLACE INTO prefs(k,v) VALUES('schema_v','2')")
+    con.commit()
+
+
+def get_pref_con(con, k):
+    row = con.execute("SELECT v FROM prefs WHERE k=?", (k,)).fetchone()
+    return row[0] if row else None
 
 
 # --------------------------------------------------------------- sessions
@@ -588,17 +671,17 @@ def sessions_of(run_id):
 
 
 def step_stamps(run_id):
-    """{step_index: {'done': {...}, 'start': {...}}} with episode + link data."""
+    """{sid: {'done': {...}, 'start': {...}}} with episode + link data."""
     con = db()
     con.row_factory = sqlite3.Row
-    rows = con.execute("""SELECT m.step, m.kind, m.tc, s.number, s.video_url, s.video_offset, s.lead
+    rows = con.execute("""SELECT m.sid, m.kind, m.tc, s.number, s.video_url, s.video_offset, s.lead
                           FROM markers m JOIN sessions s ON s.id = m.session_id
-                          WHERE m.run_id=? AND m.step IS NOT NULL
+                          WHERE m.run_id=? AND m.sid IS NOT NULL
                           ORDER BY m.id""", (run_id,)).fetchall()
     con.close()
     out = {}
     for r in rows:
-        d = out.setdefault(r["step"], {})
+        d = out.setdefault(r["sid"], {})
         secs = max(0, int(round(r["tc"] - r["video_offset"] - r["lead"])))
         d[r["kind"]] = {"ep": r["number"], "tc": r["tc"], "url": r["video_url"], "t": secs}
     return out
@@ -636,21 +719,42 @@ def lang():
     return l if l in ("it", "en") else "it"
 
 
-def get_bits(run_id, length):
+def done_sids(run_id):
+    """L'insieme dei sid spuntati per una run, orfani inclusi."""
     con = db()
-    row = con.execute("SELECT bits FROM progress WHERE run_id=?", (run_id,)).fetchone()
+    out = {r[0] for r in con.execute(
+        "SELECT sid FROM progress_steps WHERE run_id=?", (run_id,))}
     con.close()
-    bits = row[0] if row else ""
-    if len(bits) < length:
-        bits += "0" * (length - len(bits))
-    return bits[:length]
+    return out
 
 
-def set_bits(run_id, bits):
+def progress_updated_at(run_id):
     con = db()
-    con.execute("""INSERT INTO progress(run_id,bits,updated_at) VALUES(?,?,datetime('now'))
-                   ON CONFLICT(run_id) DO UPDATE SET bits=excluded.bits, updated_at=datetime('now')""",
-                (run_id, bits))
+    row = con.execute("SELECT updated_at FROM progress_runs WHERE run_id=?",
+                      (run_id,)).fetchone()
+    con.close()
+    return row[0] if row else None
+
+
+def save_done(run_id, posted, route_sids):
+    """Salva lo stato dichiarato dalla pagina.
+
+    'posted' e' l'insieme completo dei sid spuntati secondo la pagina. Si
+    tolgono SOLO le spunte dei sid che la route attuale conosce: una riga
+    orfana (il suo passo non esiste piu') non viene mai toccata da un
+    salvataggio, perche' la pagina non puo' dichiarare cio' che non mostra.
+    Un sid dichiarato ma non piu' in route si conserva comunque: meglio un
+    progresso in piu' che uno in meno.
+    """
+    posted = set(posted)
+    con = db()
+    to_clear = [(run_id, s) for s in route_sids - posted]
+    con.executemany("DELETE FROM progress_steps WHERE run_id=? AND sid=?", to_clear)
+    con.executemany("INSERT OR IGNORE INTO progress_steps(run_id,sid) VALUES(?,?)",
+                    [(run_id, s) for s in posted])
+    con.execute("""INSERT INTO progress_runs(run_id,updated_at) VALUES(?,datetime('now'))
+                   ON CONFLICT(run_id) DO UPDATE SET updated_at=datetime('now')""",
+                (run_id,))
     con.commit()
     con.close()
 
@@ -675,14 +779,11 @@ def stats(run_id):
     d = ROUTES.get(run_id)
     if not d:
         return (0, 0, 0, 0, None)
-    con = db()
-    row = con.execute("SELECT updated_at FROM progress WHERE run_id=?", (run_id,)).fetchone()
-    con.close()
-    bits = get_bits(run_id, d["_steps"])
-    flags = [bool(s.get("trophy")) for p in d["phases"] for s in p["steps"]]
-    done = sum(1 for c in bits if c == "1")
-    tdone = sum(1 for i, c in enumerate(bits) if c == "1" and flags[i])
-    return (done, d["_steps"], tdone, d["_tsteps"], row[0] if row else None)
+    # I conteggi guardano solo i sid della route attuale: le righe orfane
+    # restano nel database ma non falsano le percentuali.
+    done_set = done_sids(run_id) & d["_sidset"]
+    tdone = len(done_set & d["_trophy_sids"])
+    return (len(done_set), d["_steps"], tdone, d["_tsteps"], progress_updated_at(run_id))
 
 
 # ------------------------------------------------------------------------- CSS
@@ -1172,11 +1273,17 @@ document.getElementById('impf').addEventListener('change', function(){
 CHECKLIST_JS = r"""
 var RUN = __RUN__, S = __STR__;
 var items = Array.prototype.slice.call(document.querySelectorAll('label.item input'));
-var ids = items.map(function(i){return i.id;});
 var stateEl = document.getElementById('saveState');
 var saveTimer = null, firstLoad = true;
 
-function bitstring(){ return ids.map(function(id){ return document.getElementById(id).checked ? '1':'0'; }).join(''); }
+/* Ogni casella porta il sid del suo passo: e' la chiave con cui il progresso
+   vive nel database. La posizione serve solo dentro questa pagina. */
+function sidOf(i){ return items[i] ? (items[i].getAttribute('data-sid') || null) : null; }
+function doneSids(){
+  return items.filter(function(cb){ return cb.checked; })
+              .map(function(cb){ return cb.getAttribute('data-sid'); })
+              .filter(function(s){ return !!s; });
+}
 function flag(txt, cls){ stateEl.textContent = txt; stateEl.className = cls || ''; }
 
 function refresh(){
@@ -1202,7 +1309,7 @@ function refresh(){
 function push(){
   flag(S.saving, 'pending');
   fetch('/api/progress', {method:'POST', headers:{'Content-Type':'application/json'},
-    body: JSON.stringify({run: RUN, bits: bitstring()})})
+    body: JSON.stringify({run: RUN, done: doneSids()})})
     .then(function(r){ if(!r.ok) throw 0; flag(S.saved); })
     .catch(function(){ flag(S.save_failed, 'err'); });
 }
@@ -1301,11 +1408,12 @@ if(noteEl){
 
 /* ---- boot ---- */
 fetch('/api/progress?run=' + RUN).then(function(r){ return r.json(); }).then(function(j){
-  var bits = j.bits || '';
-  ids.forEach(function(id, i){ document.getElementById(id).checked = bits.charAt(i) === '1'; });
+  var done = {};
+  (j.done || []).forEach(function(s){ done[s] = true; });
+  items.forEach(function(cb){ cb.checked = !!done[cb.getAttribute('data-sid')]; });
   refresh(); applyView(); firstLoad = false;
   flag(j.updated_at ? S.loaded + ' (' + j.updated_at + ')' : S.new_run);
-  if(bits.indexOf('1') >= 0) setTimeout(resume, 250);
+  if((j.done || []).length) setTimeout(resume, 250);
 }).catch(function(){ refresh(); applyView(); firstLoad = false; flag(S.offline, 'err'); });
 
 /* ============================ sessioni e marker ============================ */
@@ -1339,17 +1447,17 @@ function setCurrent(i, alsoMark){
   CUR = i;
   paintCurrent();
   fetch('/api/current', {method:'POST', headers:{'Content-Type':'application/json'},
-    body: JSON.stringify({run: RUN, step: (i === null ? -1 : i)})}).catch(function(){});
+    body: JSON.stringify({run: RUN, sid: (i === null ? null : sidOf(i))})}).catch(function(){});
   if(alsoMark && SES && i !== null){
     var n = nowTc();
     startedAt = n.tc;
-    postMarker(i, 'start', n.tc);
+    postMarker(sidOf(i), 'start', n.tc);
   }
 }
-function postMarker(step, kind, tc, note){
+function postMarker(sid, kind, tc, note){
   if(!SES) return;
   fetch('/api/marker', {method:'POST', headers:{'Content-Type':'application/json'},
-    body: JSON.stringify({run: RUN, session: SES.id, step: step, kind: kind, tc: tc, note: note||''})})
+    body: JSON.stringify({run: RUN, session: SES.id, sid: sid, kind: kind, tc: tc, note: note||''})})
     .catch(function(){});
 }
 function startSession(){
@@ -1442,12 +1550,12 @@ function onTickMarker(idx, checked){
   if(!SES) return;
   var n = nowTc();
   if(checked){
-    postMarker(idx, 'done', n.tc);
+    postMarker(sidOf(idx), 'done', n.tc);
     var nx = firstUnchecked(0);
     setCurrent(nx, true);
   } else {
     fetch('/api/marker/delete', {method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({session: SES.id, step: idx})}).catch(function(){});
+      body: JSON.stringify({session: SES.id, sid: sidOf(idx)})}).catch(function(){});
     setCurrent(firstUnchecked(0), false);
   }
 }
@@ -1688,8 +1796,9 @@ def render_run(run_id):
             tg = "".join(f'<span class="tag {x["type"]}">{esc(L(x, "label", lg))}</span>' for x in tags)
             if tg:
                 tg = " " + tg
-            sh = stamp_html(stamps.get(n - 1, {}), lg) if stamps.get(n - 1) else ""
-            p.append(f'<label class="item"{dt}{dm}><input type="checkbox" id="s{n}">'
+            step_sid = st.get("sid") or ""
+            sh = stamp_html(stamps.get(step_sid, {}), lg) if stamps.get(step_sid) else ""
+            p.append(f'<label class="item"{dt}{dm}><input type="checkbox" id="s{n}" data-sid="{esc(step_sid)}">'
                      f'<span class="txt">{hl(L(st, "text", lg))}{tg}{sh}'
                      f'<span class="loc">{esc(L(st, "loc", lg))}</span></span></label>')
         p.append("</div></section>")
@@ -2057,16 +2166,14 @@ def current_state(run_id):
     for pi, ph in enumerate(d["phases"]):
         for st in ph["steps"]:
             steps.append((pi, ph, st))
-    bits = get_bits(run_id, d["_steps"])
-    try:
-        cur = int(get_pref("cur_" + run_id, "-1"))
-    except ValueError:
-        cur = -1
-    if cur < 0 or cur >= len(steps) or bits[cur] == "1":
-        cur = bits.find("0")
-    done = sum(1 for c in bits if c == "1")
-    flags = [bool(s.get("trophy")) for _, _, s in steps]
-    tdone = sum(1 for i, c in enumerate(bits) if c == "1" and flags[i])
+    done_set = done_sids(run_id) & d["_sidset"]
+    undone = [i for i, s in enumerate(d["_sids"]) if s not in done_set]
+    cur_sid = get_pref("cur_" + run_id, "")
+    cur = d["_sids"].index(cur_sid) if cur_sid in d["_sidset"] else -1
+    if cur < 0 or d["_sids"][cur] in done_set:
+        cur = undone[0] if undone else -1
+    done = len(done_set)
+    tdone = len(done_set & d["_trophy_sids"])
 
     def pack(i):
         if i is None or i < 0 or i >= len(steps):
@@ -2079,10 +2186,7 @@ def current_state(run_id):
                 "trophy_label": next((L(t, "label", lg) for t in tags if t["type"] == "trophy"), ""),
                 "missable": any(t["type"] == "miss" for t in tags)}
 
-    nxt = None
-    if cur is not None and cur >= 0:
-        j = bits.find("0", cur + 1)
-        nxt = j if j >= 0 else None
+    nxt = next((i for i in undone if i > cur), None) if cur >= 0 else None
     ses = open_session(run_id)
     return {"run": run_id, "game": d["game"], "lang": lg,
             "current": pack(cur if cur >= 0 else None), "next": pack(nxt),
@@ -2315,17 +2419,19 @@ def active_path(active):
 def render_episodes(run_id):
     lg, t = lang(), T[lang()]
     d = ROUTES[run_id]
-    steps = [s for p in d["phases"] for s in p["steps"]]
+    # Un marker il cui sid non e' piu' nella route (orfano) non deve rompere
+    # la pagina: si salta e basta. E' il vecchio IndexError del 2.10, che coi
+    # sid non puo' piu' nemmeno presentarsi come indice fuori scala.
+    by_sid = {s["sid"]: s for p in d["phases"] for s in p["steps"]}
     eps = sessions_of(run_id)
     p = [page_head(lg, d["game"], run_id, "eps", t["eps_title"])]
     if not eps:
         p.append(f'<div class="hubnote">{t["no_eps"]}</div>')
     for e in eps:
         marks = [m for m in e["markers"]]
-        ntask = len({m["step"] for m in marks if m["kind"] == "done"})
-        ntro = len({m["step"] for m in marks if m["kind"] == "done"
-                    and m["step"] is not None and 0 <= m["step"] < len(steps)
-                    and steps[m["step"]].get("trophy")})
+        ntask = len({m["sid"] for m in marks if m["kind"] == "done"})
+        ntro = len({m["sid"] for m in marks if m["kind"] == "done"
+                    and m["sid"] in by_sid and by_sid[m["sid"]].get("trophy")})
         dur = max([m["tc"] for m in marks] or [0])
         state = (f'<a class="chip ok" href="{esc(e["video_url"])}" target="_blank">▶ {esc(e["video_url"])[:44]} · {t["linked"]}</a>'
                  if e["video_url"] else f'<span class="chip bad">⚠ {t["no_video"]}</span>')
@@ -2351,7 +2457,7 @@ def render_episodes(run_id):
             if m["kind"] == "free":
                 p.append(f'<div class="t">{shown}</div><div class="d">📍 {esc(m["note"] or "—")}</div>')
             else:
-                st = steps[m["step"]] if m["step"] is not None and m["step"] < len(steps) else None
+                st = by_sid.get(m["sid"])
                 if not st:
                     continue
                 txt = L(st, "text", lg)
@@ -2405,7 +2511,7 @@ function delEp(id){
 def episodes_js(run_id):
     lg = lang()
     d = ROUTES[run_id]
-    steps = [s for p in d["phases"] for s in p["steps"]]
+    by_sid = {s["sid"]: s for p in d["phases"] for s in p["steps"]}
     out = {}
     for e in sessions_of(run_id):
         marks = []
@@ -2413,8 +2519,8 @@ def episodes_js(run_id):
             if m["kind"] == "free":
                 marks.append({"kind": "free", "tc": m["tc"], "label": "📍 " + (m["note"] or ""),
                               "trophy": True})
-            elif m["kind"] == "done" and m["step"] is not None and m["step"] < len(steps):
-                st = steps[m["step"]]
+            elif m["kind"] == "done" and m["sid"] in by_sid:
+                st = by_sid[m["sid"]]
                 tro = next((L(x, "label", lg) for x in st.get("tags", []) if x["type"] == "trophy"), "")
                 lab = (tro or L(st, "text", lg))
                 lab = re.sub(r"^🏆\s*", "", lab)[:80]
@@ -3099,13 +3205,11 @@ footer{text-align:center;color:var(--muted);font-size:.8em;padding:28px 16px;fon
 def render_export(run_id):
     lg, t = lang(), T[lang()]
     d = ROUTES[run_id]
-    steps = [(pi, ph, st) for pi, ph in enumerate(d["phases"]) for st in ph["steps"]]
-    bits = get_bits(run_id, d["_steps"])
+    done_set = done_sids(run_id) & d["_sidset"]
     stamps = step_stamps(run_id)
     eps = sorted(sessions_of(run_id), key=lambda e: e["number"])
-    done = sum(1 for c in bits if c == "1")
-    flags = [bool(st.get("trophy")) for _, _, st in steps]
-    tdone = sum(1 for i, c in enumerate(bits) if c == "1" and flags[i])
+    done = len(done_set)
+    tdone = len(done_set & d["_trophy_sids"])
     when = datetime.datetime.now().strftime("%d/%m/%Y")
     IT = lg == "it"
 
@@ -3139,7 +3243,7 @@ def render_export(run_id):
     if linked:
         p.append('<h2 class="sec">%s</h2><div class="eps">' % ("Gli episodi" if IT else "The episodes"))
         for e in linked:
-            n_done = len({m["step"] for m in e["markers"] if m["kind"] == "done"})
+            n_done = len({m["sid"] for m in e["markers"] if m["kind"] == "done"})
             p.append('<div class="ep"><b>%s %d</b>%s<span class="m">%s %s</span>'
                      '<span style="flex:1"></span><a href="%s" target="_blank">%s</a></div>'
                      % ("EPISODIO" if IT else "EPISODE", e["number"],
@@ -3163,10 +3267,9 @@ def render_export(run_id):
     p.append('</div>')
 
     p.append('<h2 class="sec">%s</h2>' % ("Il percorso" if IT else "The route"))
-    n = 0
     for pi, ph in enumerate(d["phases"]):
         cnt = len(ph["steps"])
-        dn = sum(1 for j in range(n, n + cnt) if bits[j] == "1")
+        dn = sum(1 for st in ph["steps"] if st.get("sid") in done_set)
         p.append('<section class="phase"><div class="ph"><span class="num">P%d</span>'
                  '<h3>%s</h3><span class="mini">%d/%d</span></div><div class="body">'
                  % (pi + 1, esc(L(ph, "title", lg)), dn, cnt))
@@ -3174,11 +3277,11 @@ def render_export(run_id):
         if note:
             p.append('<div class="note">%s</div>' % hl(note))
         for st in ph["steps"]:
-            ok = bits[n] == "1"
+            ok = st.get("sid") in done_set
             tags = "".join('<span class="tag %s">%s</span>' % (x["type"], esc(L(x, "label", lg)))
                            for x in st.get("tags", []))
             at = ""
-            sm = stamps.get(n, {})
+            sm = stamps.get(st.get("sid"), {})
             dnm = sm.get("done")
             if dnm and dnm.get("url"):
                 at = ('<a class="at" href="%s" target="_blank"><span class="epn">%s %d</span> · %s ▶</a>'
@@ -3187,7 +3290,6 @@ def render_export(run_id):
                      '<span class="loc">%s</span></span></div>'
                      % ("done" if ok else "todo", "&#10003;" if ok else "&#9675;",
                         hl(L(st, "text", lg)), tags, at, esc(L(st, "loc", lg))))
-            n += 1
         p.append('</div></section>')
 
     p.append('</div><footer>%s · %s</footer></body></html>'
@@ -3211,7 +3313,8 @@ def render_selftest(run_id):
     p.append(f'<footer>{t["footer_run"]}</footer></div>')
     cfg = {"run": run_id, "obs_url": get_pref("obs_url", "ws://127.0.0.1:4455"),
            "obs_pass": get_pref("obs_pass", ""), "prefer": get_pref("obs_prefer", "auto"),
-           "port": CUR_PORT[0], "saved": t["diag_save"]}
+           "port": CUR_PORT[0], "saved": t["diag_save"],
+           "sids": d["_sids"][:2]}
     p.append("<script>\nvar D = " + json.dumps(cfg, ensure_ascii=False) + ";\n" + OBS_JS + DIAG_JS
              + "\n</script></body></html>")
     return "\n".join(p)
@@ -3286,9 +3389,9 @@ async function runDiag(){
     sid = r.session.id;
     var tc = (obsTime() ? obsTime().tc : 42);
     await fetch('/api/marker', {method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({run: D.run, session: sid, step: 0, kind: 'done', tc: tc})});
+      body: JSON.stringify({run: D.run, session: sid, sid: D.sids[0], kind: 'done', tc: tc})});
     await fetch('/api/marker', {method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({run: D.run, session: sid, step: 1, kind: 'start', tc: tc + 1})});
+      body: JSON.stringify({run: D.run, session: sid, sid: D.sids[1], kind: 'start', tc: tc + 1})});
     var eps = await (await fetch('/api/episodes?run=' + D.run)).json();
     var mine = eps.filter(function(e){ return e.id === sid; })[0];
     var kinds = mine ? mine.markers.map(function(m){ return m.kind; }).join(',') : '';
@@ -3403,11 +3506,12 @@ class Handler(http.server.BaseHTTPRequestHandler):
             rid = (q.get("run") or [""])[0]
             if rid not in ROUTES:
                 return self._json({"error": "unknown run"}, 404)
-            con = db()
-            row = con.execute("SELECT updated_at FROM progress WHERE run_id=?", (rid,)).fetchone()
-            con.close()
-            return self._json({"run": rid, "bits": get_bits(rid, ROUTES[rid]["_steps"]),
-                               "updated_at": row[0] if row else None, "total": ROUTES[rid]["_steps"]})
+            # si dichiarano solo i sid che la route attuale conosce: gli
+            # orfani restano nel database ma non appartengono alla pagina
+            done = sorted(done_sids(rid) & ROUTES[rid]["_sidset"])
+            return self._json({"run": rid, "done": done,
+                               "updated_at": progress_updated_at(rid),
+                               "total": ROUTES[rid]["_steps"]})
 
         if path == "/api/notes":
             rid = (q.get("run") or [""])[0]
@@ -3532,11 +3636,22 @@ class Handler(http.server.BaseHTTPRequestHandler):
 
         if path == "/api/export":
             con = db()
+            runs = [r[0] for r in con.execute(
+                "SELECT DISTINCT run_id FROM progress_steps "
+                "UNION SELECT run_id FROM progress_runs")]
             payload = {
-                "app": "PlatinumHub", "version": 2,
+                "app": "PlatinumHub", "version": 3,
                 "exported_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                "progress": [{"run_id": a, "bits": b, "updated_at": c}
-                             for a, b, c in con.execute("SELECT run_id,bits,updated_at FROM progress")],
+                # per sid, orfani compresi: il backup e' una copia fedele,
+                # non una vista filtrata
+                "progress": [{"run_id": r,
+                              "done": [s[0] for s in con.execute(
+                                  "SELECT sid FROM progress_steps WHERE run_id=? ORDER BY sid",
+                                  (r,))],
+                              "updated_at": next((u[0] for u in con.execute(
+                                  "SELECT updated_at FROM progress_runs WHERE run_id=?",
+                                  (r,))), None)}
+                             for r in runs],
                 "notes": [{"run_id": a, "body": b, "updated_at": c}
                           for a, b, c in con.execute("SELECT run_id,body,updated_at FROM notes")],
                 "prefs": {a: b for a, b in con.execute("SELECT k,v FROM prefs")},
@@ -3606,7 +3721,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
                                "obs" if payload.get("source") == "obs" else "clock",
                                int(15 if payload.get("lead") is None else payload.get("lead"))))
             sid = cur.lastrowid
-            con.execute("""INSERT INTO markers(session_id,run_id,step,kind,tc,wall)
+            con.execute("""INSERT INTO markers(session_id,run_id,sid,kind,tc,wall)
                            VALUES(?,?,NULL,'session_start',0,datetime('now'))""", (sid, rid))
             con.commit()
             con.close()
@@ -3666,21 +3781,22 @@ class Handler(http.server.BaseHTTPRequestHandler):
             rid = payload.get("run")
             if rid not in ROUTES:
                 return self._json({"error": "unknown run"}, 404)
-            sid = payload.get("session")
-            if not sid:
+            ses = payload.get("session")
+            if not ses:
                 return self._json({"error": "no session"}, 400)
             kind = payload.get("kind")
             if kind not in ("start", "done", "free"):
                 return self._json({"error": "bad kind"}, 400)
-            step = payload.get("step")
-            step = int(step) if step is not None else None
+            msid = payload.get("sid")
+            if msid is not None and not (isinstance(msid, str) and SID_OK.match(msid)):
+                return self._json({"error": "bad sid"}, 400)
             con = db()
-            if step is not None:
-                con.execute("DELETE FROM markers WHERE session_id=? AND step=? AND kind=?",
-                            (sid, step, kind))
-            con.execute("""INSERT INTO markers(session_id,run_id,step,kind,tc,wall,note)
+            if msid is not None:
+                con.execute("DELETE FROM markers WHERE session_id=? AND sid=? AND kind=?",
+                            (ses, msid, kind))
+            con.execute("""INSERT INTO markers(session_id,run_id,sid,kind,tc,wall,note)
                            VALUES(?,?,?,?,?,datetime('now'),?)""",
-                        (sid, rid, step, kind, float(payload.get("tc") or 0),
+                        (ses, rid, msid, kind, float(payload.get("tc") or 0),
                          str(payload.get("note") or "")[:300]))
             con.commit()
             con.close()
@@ -3697,16 +3813,20 @@ class Handler(http.server.BaseHTTPRequestHandler):
             con.execute("DELETE FROM markers WHERE run_id=?", (rid,))
             con.execute("DELETE FROM sessions WHERE run_id=?", (rid,))
             con.execute("DELETE FROM notes WHERE run_id=?", (rid,))
-            con.execute("DELETE FROM progress WHERE run_id=?", (rid,))
+            con.execute("DELETE FROM progress_steps WHERE run_id=?", (rid,))
+            con.execute("DELETE FROM progress_runs WHERE run_id=?", (rid,))
             con.execute("DELETE FROM prefs WHERE k=?", ("cur_" + rid,))
             con.commit()
             con.close()
             return self._json({"ok": True, "markers": n_mark, "sessions": n_ses, "notes": n_note})
 
         if u.path == "/api/marker/delete":
+            msid = payload.get("sid")
+            if not (isinstance(msid, str) and SID_OK.match(msid)):
+                return self._json({"error": "bad sid"}, 400)
             con = db()
-            con.execute("DELETE FROM markers WHERE session_id=? AND step=?",
-                        (int(payload.get("session") or 0), int(payload.get("step") or -1)))
+            con.execute("DELETE FROM markers WHERE session_id=? AND sid=?",
+                        (int(payload.get("session") or 0), msid))
             con.commit()
             con.close()
             return self._json({"ok": True})
@@ -3715,7 +3835,10 @@ class Handler(http.server.BaseHTTPRequestHandler):
             rid = payload.get("run")
             if rid not in ROUTES:
                 return self._json({"error": "unknown run"}, 404)
-            set_pref("cur_" + rid, str(int(payload.get("step") or 0)))
+            msid = payload.get("sid")
+            if msid is not None and not (isinstance(msid, str) and SID_OK.match(msid)):
+                return self._json({"error": "bad sid"}, 400)
+            set_pref("cur_" + rid, msid or "")
             return self._json({"ok": True})
 
         if u.path == "/api/selftest":
@@ -3741,10 +3864,21 @@ class Handler(http.server.BaseHTTPRequestHandler):
             rows = payload.get("progress") or []
             for row in rows:
                 rid = row.get("run_id")
-                bits = str(row.get("bits") or "")
-                if rid in ROUTES and all(c in "01" for c in bits):
-                    total = ROUTES[rid]["_steps"]
-                    set_bits(rid, (bits + "0" * total)[:total])
+                if rid not in ROUTES:
+                    continue
+                if isinstance(row.get("done"), list):
+                    # backup v3: gia' per sid
+                    done = [s for s in row["done"]
+                            if isinstance(s, str) and SID_OK.match(s)]
+                else:
+                    # backup v2 (bits posizionali): la posizione si mappa al
+                    # sid nell'ordine della route in bundle, come in migrazione
+                    bits = str(row.get("bits") or "")
+                    if not all(c in "01" for c in bits):
+                        continue
+                    sids = ROUTES[rid]["_sids"]
+                    done = [sids[i] for i, c in enumerate(bits[:len(sids)]) if c == "1"]
+                save_done(rid, done, ROUTES[rid]["_sidset"])
             for row in payload.get("notes") or []:
                 if row.get("run_id") in ROUTES:
                     set_note(row["run_id"], str(row.get("body") or "")[:100000])
@@ -3758,13 +3892,13 @@ class Handler(http.server.BaseHTTPRequestHandler):
             return self._json({"error": "unknown run"}, 404)
 
         if u.path == "/api/progress":
-            bits = str(payload.get("bits") or "")
-            if not all(c in "01" for c in bits):
-                return self._json({"error": "bits must be 0/1"}, 400)
-            total = ROUTES[rid]["_steps"]
-            bits = (bits + "0" * total)[:total]
-            set_bits(rid, bits)
-            return self._json({"ok": True, "saved": sum(1 for c in bits if c == "1"), "total": total})
+            done = payload.get("done")
+            if not isinstance(done, list) or not all(
+                    isinstance(s, str) and SID_OK.match(s) for s in done):
+                return self._json({"error": "done must be a list of sids"}, 400)
+            save_done(rid, done, ROUTES[rid]["_sidset"])
+            saved = len(set(done) & ROUTES[rid]["_sidset"])
+            return self._json({"ok": True, "saved": saved, "total": ROUTES[rid]["_steps"]})
 
         if u.path == "/api/notes":
             set_note(rid, str(payload.get("body") or "")[:100000])

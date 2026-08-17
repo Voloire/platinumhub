@@ -308,16 +308,16 @@ class HotkeyPanelRenderTest(harness.ServerTestCase, unittest.TestCase):
             harness.drop_sandbox(sandbox)
 
     def test_the_panel_adds_no_checklist_checkbox(self):
-        """La regola dura (CLAUDE.md 2.4): i progressi sono una stringa
-        posizionale lunga quanto la checklist, e i bit vengono dalle caselle
-        <input type="checkbox" id="sN">. Qualunque casella nuova nella pagina
-        della run sposterebbe le spunte di chiunque abbia una run in corso."""
+        """Le caselle della checklist portano il data-sid con cui la pagina
+        dichiara i progressi al server. Una casella estranea che si infilasse
+        nel selettore delle checkbox inquinerebbe lo stato dichiarato: il
+        pannello delle scorciatoie non deve aggiungerne nemmeno una."""
         expected = harness.route_step_count(harness.load_route("kz.json"))
         for lg in ("it", "en"):
             self.server.set_lang(lg)
             with self.subTest(lang=lg):
                 code, html = self.server.get_text("/run/kz")
-                found = len(re.findall(r'<input type="checkbox" id="s\d+">', html))
+                found = len(re.findall(r'<input type="checkbox" id="s\d+" data-sid="s\d+">', html))
                 self.assertEqual(found, expected,
                                  "il pannello ha alterato il numero di caselle della checklist")
 
