@@ -3,6 +3,7 @@
   "id": "dsr",
   "format": 1,
   "version": 1,
+  "order": 20,
   "accent": "#b8642e",
   "tagline": {
    "en": "Knight - the original grind, done in the right order",

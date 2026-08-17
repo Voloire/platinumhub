@@ -3,6 +3,7 @@
   "id": "bmw",
   "format": 1,
   "version": 1,
+  "order": 80,
   "accent": "#c8483f",
   "tagline": {
    "en": "Smash-stance tank - 36 trophies, secret ending, one NG+ cycle",

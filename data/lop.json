@@ -3,6 +3,7 @@
   "id": "lop",
   "format": 1,
   "version": 1,
+  "order": 60,
   "accent": "#a06ad0",
   "tagline": {
    "en": "Motivity strength build - 42 base + 11 Overture achievements",
