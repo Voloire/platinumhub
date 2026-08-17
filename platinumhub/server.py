@@ -56,8 +56,9 @@ class Handler(http.server.BaseHTTPRequestHandler):
 
     def _redirect(self, to):
         # niente caratteri di controllo nella Location: un %0d%0a decodificato
-        # da parse_qs diventerebbe una riga di header scritta dal client
-        to = re.sub(r"[\x00-\x1f\x7f]", "", str(to))
+        # da parse_qs diventerebbe una riga di header scritta dal client.
+        # quote() li ricodifica tutti, lasciando passare i percorsi normali.
+        to = urllib.parse.quote(str(to), safe="/?&=%~")
         self.send_response(303)
         self.send_header("Location", to)
         self.send_header("Content-Length", "0")
@@ -246,12 +247,16 @@ class Handler(http.server.BaseHTTPRequestHandler):
                               extra={"Content-Disposition": 'attachment; filename="%s"' % fname})
 
         if path.startswith("/fonts/"):
-            # whitelist stretta: nessun separatore puo' entrare nel nome,
-            # quindi il join non puo' uscire dalla cartella fonts/
+            # whitelist stretta sul nome PIU' contenimento verificato del
+            # percorso risolto: il file servito sta dentro fonts/, provato,
+            # non dedotto dalla forma del nome
             name = os.path.basename(path)
             if not re.match(r"^[A-Za-z0-9_-]+\.woff2$", name):
                 return self._send(b"", "font/woff2", 404)
-            fp = os.path.join(BASE, "fonts", name)
+            fonts_dir = os.path.realpath(os.path.join(BASE, "fonts"))
+            fp = os.path.realpath(os.path.join(fonts_dir, name))
+            if not fp.startswith(fonts_dir + os.sep):
+                return self._send(b"", "font/woff2", 404)
             if os.path.isfile(fp):
                 with open(fp, "rb") as f:
                     data = f.read()
