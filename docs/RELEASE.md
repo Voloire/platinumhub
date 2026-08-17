@@ -72,19 +72,32 @@ Se stampa la sezione giusta, il rilascio non si fermerà lì.
 
 ## 3. Allinea la versione nel codice
 
-Finché la versione non sta in un posto solo (Fase 1 della roadmap), è scritta a
-mano in più file. Cercala e aggiornala **tutta**:
+**Un posto solo.** La costante `VERSION` in cima ad `app.py`:
 
-```bash
-grep -rn "3\.2" --include="*.py" --include="*.txt" --include="*.bat" --include="*.md" .
+```python
+VERSION = "3.3.0"
 ```
 
-Riguarda almeno: la stringa `footer` in `app.py` (in italiano **e** in inglese),
-`README.txt`, `ISTRUZIONI.txt`.
+Tutto il resto la interpola — i footer nelle due lingue, lo `User-Agent` del
+controllo aggiornamenti, le pagine. Non c'è nessun altro numero da cercare.
 
-> Il modo definitivo di chiudere questo problema è ricavare la versione dal tag
-> in fase di build. Finché non lo fai, questo passo va fatto a mano e la CI non
-> può accorgersi se lo dimentichi.
+**Se te ne dimentichi, il rilascio si ferma.** `release.yml` confronta `VERSION`
+con il tag *prima* di compilare, e fallisce con l'errore
+`Il tag dice 3.3.0 ma VERSION in app.py dice 3.2.0`.
+
+> **Perché il workflow non la ricava dal tag da sé**, che sarebbe più comodo e
+> per un attimo sembra la soluzione elegante. Perché il binario pubblicato deve
+> venire *esattamente* dal codice committato: è l'unica promessa verificabile che
+> possiamo fare su un eseguibile non firmato, ed è quella su cui si reggono la
+> sezione del README e lo SHA256 pubblicato nella Release. Meglio un rilascio
+> che si ferma di un binario che non corrisponde al proprio sorgente.
+>
+> Il controllo esiste perché il difetto era reale: senza, taggare `v4.1.0`
+> lasciando `VERSION = "4.0.0"` avrebbe prodotto uno zip chiamato 4.1.0 con
+> dentro un'app che si dichiara 4.0.0 — e siccome il controllo aggiornamenti
+> confronta il tag della Release con `VERSION`, **ogni copia aggiornata avrebbe
+> mostrato per sempre l'avviso "c'è una versione nuova"**, invitando a scaricare
+> quella già installata.
 
 ## 4. Committa e spingi
 
