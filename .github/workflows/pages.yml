@@ -1,0 +1,73 @@
+name: Pages
+
+# Pubblica la pagina di presentazione su https://voloire.github.io/platinumhub/
+#
+# Perche' una cartella dedicata (site/) e non /docs come vuole la modalita'
+# classica di Pages: in docs/ ci sono ROADMAP.md, STATO-PROGETTO.md e il resto
+# della documentazione interna. Servirla dal sito vetrina vorrebbe dire
+# pubblicare la roadmap e il confine del tier a pagamento su un indirizzo fatto
+# per essere condiviso. Cosi' finisce online SOLO quello che sta in site/.
+#
+# Gira solo quando site/ cambia: la pagina non dipende dal codice, e non ha
+# senso ridistribuirla a ogni commit su app.py.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+# Il token di default resta in sola lettura; i permessi di scrittura su Pages
+# li chiede il singolo job, che e' l'unico che ne ha bisogno.
+permissions:
+  contents: read
+
+# Un deploy alla volta, e senza annullare quello in corso: interrompere a metà
+# una pubblicazione di Pages lascia il sito in uno stato indefinito.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Pubblica la pagina
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Configure Pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+
+      # Rete di sicurezza: in site/ non deve finire niente di privato. La cartella
+      # e' scritta a mano, ma un giorno qualcuno (io, fra sei mesi) ci copiera'
+      # dentro un export "solo per provare".
+      - name: Nessun file privato in site/
+        shell: bash
+        run: |
+          set -euo pipefail
+          bad="$(find site -type f \( -iname '*.db' -o -iname '*.log' -o -iname 'diagnostica.txt' -o -iname 'CLAUDE.md' \) || true)"
+          if [ -n "$bad" ]; then
+            echo "::error::File che non devono essere pubblicati:"
+            echo "$bad"
+            exit 1
+          fi
+          echo "OK: solo pagina e immagini."
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: site
+
+      - name: Deploy
+        id: deploy
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0

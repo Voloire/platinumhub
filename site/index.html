@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Platinum Hub — checklist verificate e capitoli YouTube per le tue platinum run</title>
+<meta name="description" content="App gratuita per Windows che accompagna una platinum run dall'inizio alla fine: dieci checklist verificate in italiano e inglese, progressi salvati in locale e — se registri o streammi — ogni spunta diventa un timestamp del video e un capitolo YouTube.">
+<link rel="canonical" href="https://voloire.github.io/platinumhub/">
+<meta name="author" content="Voloirex">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#12151c">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Platinum Hub">
+<meta property="og:locale" content="it_IT">
+<meta property="og:url" content="https://voloire.github.io/platinumhub/">
+<meta property="og:title" content="Platinum Hub — il platino, un passo alla volta">
+<meta property="og:description" content="Dieci checklist platino verificate, bilingui, con i missabili segnalati prima del punto di non ritorno. Se streammi, ogni spunta diventa un capitolo YouTube. Gratis, gira sul tuo PC, non manda niente a nessuno.">
+<meta property="og:image" content="https://voloire.github.io/platinumhub/img/hub-home.jpg">
+<meta property="og:image:alt" content="La pagina principale di Platinum Hub con le dieci run">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Platinum Hub — il platino, un passo alla volta">
+<meta name="twitter:description" content="Dieci checklist platino verificate, bilingui. Se streammi, ogni spunta diventa un capitolo YouTube. Gratis.">
+<meta name="twitter:image" content="https://voloire.github.io/platinumhub/img/hub-home.jpg">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%8F%86%3C/text%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://voloire.github.io/platinumhub/#app",
+      "name": "Platinum Hub",
+      "applicationCategory": "GameApplication",
+      "applicationSubCategory": "Trophy and achievement checklist tracker",
+      "operatingSystem": "Windows 10, Windows 11",
+      "softwareVersion": "4.0.0",
+      "inLanguage": ["it", "en"],
+      "description": "Applicazione locale che accompagna una platinum run dall'inizio alla fine: dieci checklist verificate passo per passo in italiano e inglese, progressi salvati in un database SQLite locale, e per chi registra o streamma ogni spunta diventa un timestamp del video, un capitolo YouTube e una guida cliccabile che porta al minuto esatto.",
+      "url": "https://voloire.github.io/platinumhub/",
+      "downloadUrl": "https://github.com/Voloire/platinumhub/releases/latest",
+      "installUrl": "https://github.com/Voloire/platinumhub/releases/latest",
+      "codeRepository": "https://github.com/Voloire/platinumhub",
+      "programmingLanguage": "Python",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Voloirex",
+        "url": "https://github.com/Voloire"
+      },
+      "featureList": [
+        "Dieci route platino verificate: 865 passi, 389 dei quali fanno scattare un trofeo",
+        "Interfaccia e contenuti bilingui italiano/inglese, con 1.137 termini di gioco verificati sulle liste trofei italiane",
+        "Avviso sui missabili prima del punto di non ritorno",
+        "Progressi salvati in locale in SQLite, senza account e senza cloud",
+        "Collegamento a OBS via obs-websocket v5 per leggere il timecode reale",
+        "Capitoli YouTube generati dai marker, pronti da incollare",
+        "Overlay trasparente per OBS con il task in corso e il successivo",
+        "Scorciatoie da tastiera globali, utilizzabili con il gioco in primo piano",
+        "Esportazione di una guida HTML con ogni passo linkato al minuto esatto del video",
+        "Nessuna telemetria, nessun aggiornamento automatico, zero dipendenze a runtime"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://voloire.github.io/platinumhub/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Platinum Hub è gratis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì, è gratuito e non ha pubblicità, account, abbonamenti o acquisti interni. Il repository è pubblico ma il progetto non è open source: il codice è visibile perché tu possa controllare cosa fa il programma prima di eseguirlo, mentre i diritti restano all'autore."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Serve installare Python?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Si scarica uno zip dalle GitHub Release, si scompatta in una cartella qualsiasi e si avvia PlatinumHub.exe. Esiste anche la versione a cartella con app.py per chi ha già Python 3 e preferisce avviare run.bat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Perché Windows mostra un avviso quando avvio il programma?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Perché l'eseguibile non è firmato: un certificato di code signing costa un canone annuale e richiede un'identità aziendale verificata, e questo è il progetto gratuito di una persona sola. Su SmartScreen si scegli Ulteriori informazioni e poi Esegui comunque. In compenso ogni release pubblica lo SHA256 dello zip e il file è costruito da una GitHub Action di cui puoi leggere il log riga per riga."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I miei dati vengono mandati da qualche parte?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. I progressi stanno in un file SQLite nella tua cartella utente, in %LOCALAPPDATA%\\PlatinumHub\\platinum.db. Non c'è telemetria, non c'è cloud, non c'è account. L'unica connessione in uscita è il controllo della versione all'avvio, che chiede a GitHub se esiste una release più recente e non scarica niente da solo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Funziona con la PlayStation 5?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì, ed è il caso d'uso per cui è nato: si gioca su console e si tiene Platinum Hub aperto sul PC Windows accanto, insieme a OBS. L'app non si collega alla console e non legge i trofei: le caselle le spunti tu, o le spunta una scorciatoia da tastiera mentre stai giocando."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Serve OBS per usarlo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Senza OBS le checklist e i progressi funzionano esattamente come prima, e la modalità streamer usa un cronometro interno invece del timecode reale. OBS serve solo per leggere il tempo esatto della registrazione o della diretta e per avviare e fermare la registrazione da scorciatoia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quali giochi sono coperti?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dieci: Elden Ring, Dark Souls Remastered, Dark Souls III, Lies of P con l'espansione Overture, Stellar Blade, The First Berserker: Khazan, Black Myth: Wukong, Beast of Reincarnation, Nioh 3 e NieR: Automata."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg:        #ffffff;
+    --bg-soft:   #f4f5f7;
+    --bg-card:   #ffffff;
+    --ink:       #14171d;
+    --ink-soft:  #545b68;
+    --ink-faint: #7c8492;
+    --line:      #e2e5ea;
+    --accent:    #6b4cc4;
+    --accent-ink:#5a3db0;
+    --gold:      #9a7207;
+    --gold-bg:   #fdf6e3;
+    --radius:    14px;
+    --shadow:    0 1px 2px rgba(20,23,29,.06), 0 8px 28px rgba(20,23,29,.07);
+    --maxw:      1080px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0f1218;
+      --bg-soft:   #151a22;
+      --bg-card:   #161b24;
+      --ink:       #e9ecf1;
+      --ink-soft:  #a8b1bf;
+      --ink-faint: #7d869a;
+      --line:      #262d39;
+      --accent:    #a894f0;
+      --accent-ink:#bcadf7;
+      --gold:      #e0b344;
+      --gold-bg:   #221c0c;
+      --shadow:    0 1px 2px rgba(0,0,0,.4), 0 10px 34px rgba(0,0,0,.35);
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+  a { color: var(--accent-ink); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:hover { text-decoration-thickness: 2px; }
+  h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 .5em; }
+  h1 { font-size: clamp(2.3rem, 6vw, 3.6rem); font-weight: 800; }
+  h2 { font-size: clamp(1.5rem, 3.4vw, 2.1rem); font-weight: 750; margin-top: 0; }
+  h3 { font-size: 1.12rem; font-weight: 700; }
+  p  { margin: 0 0 1em; }
+  strong { font-weight: 680; }
+  code, .mono {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: .88em;
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    padding: .1em .35em;
+  }
+
+  /* ---------------------------------------------------------- hero */
+  .hero {
+    background:
+      radial-gradient(1100px 480px at 12% -10%, color-mix(in oklab, var(--accent) 15%, transparent), transparent 70%),
+      radial-gradient(760px 380px at 92% 0%, color-mix(in oklab, var(--gold) 12%, transparent), transparent 70%),
+      var(--bg-soft);
+    border-bottom: 1px solid var(--line);
+    padding: clamp(48px, 9vw, 96px) 0 clamp(40px, 7vw, 72px);
+  }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: .55em;
+    font-size: .8rem; font-weight: 650; letter-spacing: .07em; text-transform: uppercase;
+    color: var(--ink-soft);
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: .38em 1em;
+    margin-bottom: 1.4em;
+  }
+  .lede {
+    font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+    font-weight: 620;
+    max-width: 30ch;
+    margin-bottom: 1.1em;
+  }
+  .hero p.sub { font-size: 1.06rem; color: var(--ink-soft); max-width: 62ch; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; margin: 2em 0 1.4em; }
+  .btn {
+    display: inline-flex; align-items: center; gap: .5em;
+    font: inherit; font-weight: 660;
+    padding: .78em 1.5em;
+    border-radius: 11px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: var(--accent); color: #fff; box-shadow: var(--shadow); }
+  @media (prefers-color-scheme: dark) { .btn-primary { color: #14121d; } }
+  .btn-ghost { background: var(--bg-card); color: var(--ink); border-color: var(--line); }
+  .facts { display: flex; flex-wrap: wrap; gap: .5em 1.5em; font-size: .93rem; color: var(--ink-soft); list-style: none; padding: 0; margin: 0; }
+  .facts li::before { content: "✓"; color: var(--accent-ink); font-weight: 700; margin-right: .45em; }
+
+  /* ------------------------------------------------------ sections */
+  section { padding: clamp(52px, 8vw, 88px) 0; border-bottom: 1px solid var(--line); }
+  section > .wrap > p, section > .wrap > ul { max-width: 68ch; }
+  .kicker { font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent-ink); margin-bottom: .7em; }
+
+  figure { margin: 2.2em 0 0; }
+  figure img {
+    display: block; width: 100%; height: auto;
+    border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); background: var(--bg-soft);
+  }
+  figcaption { font-size: .9rem; color: var(--ink-faint); margin-top: .8em; }
+
+  .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(268px, 1fr)); margin-top: 2em; }
+  .card {
+    background: var(--bg-card); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 24px;
+  }
+  .card h3 { margin-bottom: .45em; }
+  .card p { margin: 0; color: var(--ink-soft); font-size: .97rem; }
+  .card .ico { font-size: 1.5rem; line-height: 1; display: block; margin-bottom: .6em; }
+
+  .stats { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); margin: 2em 0 0; padding: 0; list-style: none; }
+  .stats li { background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; }
+  .stats b { display: block; font-size: 2rem; font-weight: 780; letter-spacing: -.03em; }
+  .stats span { font-size: .9rem; color: var(--ink-soft); }
+
+  .tablewrap { overflow-x: auto; margin-top: 2em; border: 1px solid var(--line); border-radius: var(--radius); }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; min-width: 560px; }
+  th, td { text-align: left; padding: .8em 1.1em; border-bottom: 1px solid var(--line); }
+  th { font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); background: var(--bg-soft); font-weight: 700; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  tbody tr:last-child td { border-bottom: 0; }
+
+  .note {
+    background: var(--gold-bg); border: 1px solid color-mix(in oklab, var(--gold) 35%, var(--line));
+    border-left-width: 4px; border-radius: 10px;
+    padding: 18px 22px; margin: 2em 0 0; max-width: 68ch;
+  }
+  .note strong { color: var(--gold); }
+  .note p:last-child { margin-bottom: 0; }
+
+  details {
+    border-bottom: 1px solid var(--line); padding: 1.05em 0;
+  }
+  details summary {
+    cursor: pointer; font-weight: 650; list-style: none;
+    display: flex; justify-content: space-between; gap: 1em; align-items: baseline;
+  }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::after { content: "+"; color: var(--accent-ink); font-weight: 700; font-size: 1.3em; line-height: 1; }
+  details[open] summary::after { content: "–"; }
+  details > div { padding-top: .7em; color: var(--ink-soft); max-width: 68ch; }
+  details > div p:last-child { margin-bottom: 0; }
+
+  footer { padding: 48px 0 60px; color: var(--ink-faint); font-size: .88rem; }
+  footer a { color: var(--ink-soft); }
+  footer .disclaimer { max-width: 78ch; margin-top: 1.4em; line-height: 1.6; }
+  .footlinks { display: flex; flex-wrap: wrap; gap: .6em 1.6em; padding: 0; margin: 0 0 1em; list-style: none; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .btn { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">🏆 Gratis · Windows · v4.0.0</span>
+    <h1>Platinum Hub</h1>
+    <p class="lede">Il platino non si perde per bravura. Si perde perché a metà del gioco non ti ricordi più cosa hai fatto.</p>
+    <p class="sub">
+      Platinum Hub tiene il filo al posto tuo: <strong>dieci run platino verificate passo per passo</strong>,
+      i progressi che si salvano da soli, e — se registri o streammi — ogni casella che spunti diventa un
+      timestamp del video, un capitolo YouTube e una guida cliccabile che porta al minuto esatto in cui
+      quella cosa è successa.
+    </p>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://github.com/Voloire/platinumhub/releases/latest">Scarica per Windows</a>
+      <a class="btn btn-ghost" href="https://github.com/Voloire/platinumhub">Leggi il codice su GitHub</a>
+    </div>
+    <ul class="facts">
+      <li>Gira sul tuo PC</li>
+      <li>Nessun account</li>
+      <li>Nessuna telemetria</li>
+      <li>Nessuna pubblicità</li>
+      <li>Italiano e inglese</li>
+    </ul>
+  </div>
+</header>
+
+<section id="perche">
+  <div class="wrap">
+    <p class="kicker">Perché esiste</p>
+    <h2>Trenta ore fa avevi un piano</h2>
+    <p>
+      Una platinum run dura fra le trenta e le centoventi ore, spalmate su settimane. In mezzo c'è la vita
+      vera. Quando riaccendi la console il martedì sera le domande sono sempre le stesse: <em>dove ero
+      rimasto, cosa non devo dimenticare qui, e questa cosa la posso ancora fare o l'ho persa per sempre?</em>
+    </p>
+    <p>
+      Le guide online rispondono, ma sono muri di testo che non sanno niente di te. Un foglio di calcolo sa
+      dove sei ma non sa cosa succede dopo. <strong>Platinum Hub fa le due cose insieme</strong>, e a chi
+      registra la propria run risparmia il lavoro peggiore: rimettere in fila i tempi a video finito.
+    </p>
+    <ul class="stats">
+      <li><b>10</b><span>run complete, verificate a mano</span></li>
+      <li><b>865</b><span>passi, di cui 389 fanno scattare un trofeo</span></li>
+      <li><b>1.137</b><span>termini di gioco verificati in italiano</span></li>
+      <li><b>0</b><span>dipendenze da installare</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="checklist">
+  <div class="wrap">
+    <p class="kicker">Le checklist</p>
+    <h2>Ogni passo sa dove sei, cosa fare e cosa scatta</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="ico">📍</span>
+        <h3>Posizione e trofeo</h3>
+        <p>Ogni passo dice dove sei, cosa devi fare e quale trofeo fa scattare. Niente cronologie da ricostruire a mente.</p>
+      </div>
+      <div class="card">
+        <span class="ico">⚠️</span>
+        <h3>Missabili segnalati prima</h3>
+        <p>L'avviso arriva <strong>prima</strong> del punto di non ritorno, non nel paragrafo dopo, quando la porta si è già chiusa.</p>
+      </div>
+      <div class="card">
+        <span class="ico">🌍</span>
+        <h3>Bilingue davvero</h3>
+        <p>Interfaccia <em>e</em> contenuti in italiano e inglese, con i nomi ufficiali delle liste trofei italiane di Sony.</p>
+      </div>
+      <div class="card">
+        <span class="ico">🎯</span>
+        <h3>Route per giocatori normali</h3>
+        <p>Niente glitch, niente skip, nessuna build copiata da una tier list. Ogni route è pensata per essere rifatta davvero.</p>
+      </div>
+      <div class="card">
+        <span class="ico">🔎</span>
+        <h3>Filtri, ricerca, «dove ero rimasto»</h3>
+        <p>Più note libere per ogni run e una sezione richiudibile con le regole d'oro e la build spiegata a punti.</p>
+      </div>
+      <div class="card">
+        <span class="ico">📄</span>
+        <h3>Anche senza avviare niente</h3>
+        <p>Le dieci checklist esistono come file HTML singoli: doppio clic e si aprono, senza far partire l'applicazione.</p>
+      </div>
+    </div>
+
+    <div class="note">
+      <p>
+        <strong>Sulle traduzioni.</strong> Dove il nome italiano ufficiale non era verificabile è rimasto
+        l'inglese, di proposito: un nome inglese giusto ti fa trovare l'oggetto, uno italiano inventato te lo
+        fa cercare a vuoto. Sui dieci giochi attuali questo controllo ha scartato 24 traduzioni plausibili ma
+        non ufficiali.
+      </p>
+    </div>
+
+    <figure>
+      <img src="img/hub-home.jpg" width="1400" height="1564" alt="La pagina principale di Platinum Hub: le dieci run con la percentuale di completamento di ciascuna" loading="lazy" decoding="async">
+      <figcaption>La pagina principale: le dieci run, con i progressi di ognuna.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="giochi">
+  <div class="wrap">
+    <p class="kicker">I dieci giochi</p>
+    <h2>Cosa c'è dentro, in numeri</h2>
+    <p>
+      Le ore sono la stima per arrivare al platino partendo da zero. I passi sono i punti della checklist:
+      non coincidono con i trofei, perché un trofeo può richiedere più passi e un passo può non dare nessun
+      trofeo ma servire a non perderne uno dopo.
+    </p>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Gioco</th>
+            <th scope="col">Ore stimate</th>
+            <th scope="col" class="num">Fasi</th>
+            <th scope="col" class="num">Passi</th>
+            <th scope="col" class="num">Trofei</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Lies of P + Overture</td><td>60–75 h</td><td class="num">15</td><td class="num">159</td><td class="num">53</td></tr>
+          <tr><td>Elden Ring</td><td>90–120 h</td><td class="num">13</td><td class="num">150</td><td class="num">42</td></tr>
+          <tr><td>Dark Souls Remastered</td><td>80–120 h</td><td class="num">11</td><td class="num">87</td><td class="num">41</td></tr>
+          <tr><td>Stellar Blade</td><td>50–65 h</td><td class="num">10</td><td class="num">73</td><td class="num">45</td></tr>
+          <tr><td>Black Myth: Wukong</td><td>40–60 h</td><td class="num">8</td><td class="num">72</td><td class="num">36</td></tr>
+          <tr><td>Dark Souls III</td><td>90–120 h</td><td class="num">11</td><td class="num">68</td><td class="num">43</td></tr>
+          <tr><td>Beast of Reincarnation</td><td>30–45 h</td><td class="num">9</td><td class="num">67</td><td class="num">46</td></tr>
+          <tr><td>NieR: Automata</td><td>26–35 h</td><td class="num">9</td><td class="num">67</td><td class="num">48</td></tr>
+          <tr><td>The First Berserker: Khazan</td><td>50–60 h</td><td class="num">9</td><td class="num">61</td><td class="num">58</td></tr>
+          <tr><td>Nioh 3</td><td>40–60 h</td><td class="num">8</td><td class="num">61</td><td class="num">51</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="streamer">
+  <div class="wrap">
+    <p class="kicker">Se registri o streammi</p>
+    <h2>Spunti una casella, nasce un timestamp</h2>
+    <p>
+      Questa è la parte che non trovi altrove. Platinum Hub si collega a <strong>OBS</strong> e legge il
+      timecode reale della registrazione o della diretta: quando segni un task come fatto, l'app scrive
+      <em>quando</em> è successo. Il task successivo parte da quel momento — così ogni task ha un inizio, che
+      è il punto giusto dove mandare chi clicca.
+    </p>
+    <div class="grid">
+      <div class="card">
+        <span class="ico">🎬</span>
+        <h3>Capitoli YouTube pronti</h3>
+        <p>Generati dai marker, già in ordine e con i nomi ufficiali dei trofei. Si copiano e si incollano nella descrizione.</p>
+      </div>
+      <div class="card">
+        <span class="ico">🖥️</span>
+        <h3>Overlay per OBS</h3>
+        <p>Una sorgente Browser trasparente col task in corso e il successivo. Qualsiasi risoluzione, ultrawide compresi.</p>
+      </div>
+      <div class="card">
+        <span class="ico">⌨️</span>
+        <h3>Scorciatoie globali</h3>
+        <p>Avvia la registrazione, segna un task fatto, annulla, metti un segnaposto — <strong>senza alt+tab</strong>, col gioco in primo piano.</p>
+      </div>
+      <div class="card">
+        <span class="ico">🔗</span>
+        <h3>Guida pubblicabile</h3>
+        <p>Un pulsante e ottieni una pagina HTML autonoma con ogni passo linkato al minuto esatto del video giusto.</p>
+      </div>
+      <div class="card">
+        <span class="ico">⏱️</span>
+        <h3>Due tempi per ogni marker</h3>
+        <p>Il timecode di OBS e l'ora reale. Se OBS cambia protocollo si perde la precisione sulle pause, non i dati.</p>
+      </div>
+      <div class="card">
+        <span class="ico">🔌</span>
+        <h3>OBS è opzionale</h3>
+        <p>Senza OBS tutto funziona come prima e la modalità streamer usa un cronometro interno.</p>
+      </div>
+    </div>
+
+    <figure>
+      <img src="img/streamer.jpg" width="1400" height="1340" alt="La modalità streamer di Platinum Hub, con la barra della sessione e i marker registrati" loading="lazy" decoding="async">
+      <figcaption>La modalità streamer: barra della sessione, timecode di OBS e marker registrati.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="img/guida.jpg" width="1400" height="896" alt="La guida cliccabile esportata da Platinum Hub, con ogni passo linkato al minuto del video" loading="lazy" decoding="async">
+      <figcaption>La guida esportata: ogni passo è un link al minuto esatto in cui è successo.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="comefatto">
+  <div class="wrap">
+    <p class="kicker">Com'è fatto</p>
+    <h2>Locale, e progettato per restare tale</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="ico">📦</span>
+        <h3>Zero dipendenze</h3>
+        <p>Solo la libreria standard di Python 3. Niente da installare, niente da aggiornare, niente che si rompe fra sei mesi.</p>
+      </div>
+      <div class="card">
+        <span class="ico">🔒</span>
+        <h3>I tuoi dati restano tuoi</h3>
+        <p>Un file SQLite nella tua cartella utente. Nessun cloud, nessun account, nessuna telemetria. Backup con un pulsante.</p>
+      </div>
+      <div class="card">
+        <span class="ico">🚫</span>
+        <h3>Nessun aggiornamento automatico</h3>
+        <p>Il controllo versione avvisa e basta. Su un eseguibile non firmato, un aggiornamento che si installa da solo è indistinguibile da un malware.</p>
+      </div>
+      <div class="card">
+        <span class="ico">🔍</span>
+        <h3>Verificabile</h3>
+        <p>L'eseguibile è costruito da una GitHub Action di cui puoi leggere il log, e ogni release pubblica lo SHA256 dello zip.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="scarica">
+  <div class="wrap">
+    <p class="kicker">Scaricalo</p>
+    <h2>Uno zip, una cartella, un doppio clic</h2>
+    <p>
+      Prendi <code>PlatinumHub-vX.Y.Z-win-x64.zip</code> dalle Release, scompattalo in una cartella qualsiasi
+      e avvia <code>PlatinumHub.exe</code>. Non serve installare Python. I progressi stanno nella cartella
+      utente, quindi puoi scompattare la versione nuova sopra la vecchia senza perdere niente.
+    </p>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://github.com/Voloire/platinumhub/releases/latest">Vai alle Release</a>
+      <a class="btn btn-ghost" href="https://github.com/Voloire/platinumhub/blob/main/ISTRUZIONI.txt">Leggi le istruzioni</a>
+    </div>
+    <div class="note">
+      <p>
+        <strong>Windows mostrerà un avviso al primo avvio</strong> («Windows ha protetto il PC»):
+        <em>Ulteriori informazioni</em> → <em>Esegui comunque</em>. L'eseguibile non è firmato, perché un
+        certificato di code signing costa un canone annuale e richiede un'identità aziendale verificata — e
+        questo è il progetto gratuito di una persona sola.
+      </p>
+      <p>
+        In compenso ogni release pubblica lo <strong>SHA256</strong> dello zip, e il file è costruito da una
+        GitHub Action di cui puoi leggere il log riga per riga: puoi verificare che il binario venga
+        esattamente dal codice che stai leggendo.
+      </p>
+    </div>
+    <p style="margin-top:1.6em">
+      In alternativa c'è la cartella con <code>app.py</code> e il doppio clic su <code>run.bat</code>:
+      serve solo Python 3.
+    </p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <p class="kicker">Domande</p>
+    <h2>Quello che si chiede sempre</h2>
+
+    <details>
+      <summary>È gratis? C'è una versione a pagamento?</summary>
+      <div>
+        <p>
+          È gratuito, senza pubblicità, senza account, senza abbonamenti e senza acquisti interni. Il
+          repository è pubblico ma <strong>il progetto non è open source</strong>: il codice è visibile perché
+          tu possa controllare cosa fa il programma prima di eseguirlo, e i diritti restano all'autore. Puoi
+          usarlo e studiarne il codice; non puoi ridistribuirlo, rivenderlo o pubblicarne una tua versione.
+        </p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Funziona con la PlayStation 5?</summary>
+      <div>
+        <p>
+          Sì, ed è il caso d'uso per cui è nato: si gioca su console e si tiene Platinum Hub aperto sul PC
+          Windows accanto, insieme a OBS. <strong>L'app non si collega alla console e non legge i trofei</strong>:
+          le caselle le spunti tu, o le spunta una scorciatoia da tastiera mentre stai giocando.
+        </p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Serve OBS?</summary>
+      <div>
+        <p>
+          No. Senza OBS le checklist e i progressi funzionano esattamente come prima, e la modalità streamer
+          usa un cronometro interno invece del timecode reale. OBS serve per leggere il tempo esatto della
+          registrazione o della diretta e per avviare e fermare la registrazione da scorciatoia. Il
+          collegamento usa obs-websocket v5 e resta tutto sul tuo computer.
+        </p>
+      </div>
+    </details>
+
+    <details>
+      <summary>I miei dati vengono mandati da qualche parte?</summary>
+      <div>
+        <p>
+          No. I progressi stanno in un file SQLite in <code>%LOCALAPPDATA%\PlatinumHub\platinum.db</code>.
+          Nessuna telemetria, nessun cloud, nessun account. L'unica connessione in uscita è il controllo
+          della versione all'avvio, che chiede a GitHub se esiste una release più recente: se non c'è rete
+          l'app parte comunque, e non scarica mai niente da sola.
+        </p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Serve installare Python?</summary>
+      <div>
+        <p>
+          No, non per l'eseguibile: si scompatta lo zip e si fa doppio clic. Esiste anche la versione a
+          cartella con <code>app.py</code> per chi ha già Python 3 e preferisce avviare <code>run.bat</code>.
+        </p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Posso proporre un gioco, o correggere un passo sbagliato?</summary>
+      <div>
+        <p>
+          Le segnalazioni sui contenuti sono la cosa più utile che puoi fare: se giocando trovi un passo
+          impreciso, un nome sbagliato o un missabile non segnalato,
+          <a href="https://github.com/Voloire/platinumhub/issues">aprire una issue</a> vale più di dieci righe
+          di codice. Le pull request sul codice, invece, non vengono accettate.
+        </p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Su quali versioni di Windows gira?</summary>
+      <div>
+        <p>
+          È sviluppato e provato su Windows 11, e la pipeline verifica a ogni modifica che l'applicazione
+          parta e risponda anche su Windows e su Linux. Non c'è una build per macOS.
+        </p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <ul class="footlinks">
+      <li><a href="https://github.com/Voloire/platinumhub">Codice</a></li>
+      <li><a href="https://github.com/Voloire/platinumhub/releases/latest">Release</a></li>
+      <li><a href="https://github.com/Voloire/platinumhub/blob/main/CHANGELOG.md">Cosa è cambiato</a></li>
+      <li><a href="https://github.com/Voloire/platinumhub/issues">Segnalazioni</a></li>
+      <li><a href="https://github.com/Voloire/platinumhub/blob/main/LICENSE">Licenza</a></li>
+    </ul>
+    <p>Platinum Hub — di <a href="https://github.com/Voloire">Voloirex</a>. Gratuito, non open source.</p>
+    <p class="disclaimer">
+      Platinum Hub è un progetto indipendente. Non è affiliato né approvato da FromSoftware, Bandai Namco,
+      Team Ninja, Square Enix, Game Science, Shift Up, Neowiz, Sony Interactive Entertainment, Valve o OBS
+      Project. I nomi dei giochi e dei trofei appartengono ai rispettivi proprietari e sono citati a scopo
+      descrittivo.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
