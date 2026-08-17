@@ -76,8 +76,13 @@ jobs:
           set -euo pipefail
           base="https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}"
           tarball="gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz"
-          curl -sSfL --retry 3 -o "$tarball" "$base/$tarball"
-          curl -sSfL --retry 3 -o checksums.txt "$base/gitleaks_${GITLEAKS_VERSION}_checksums.txt"
+          # --retry da solo non basta: curl considera "transitori" solo timeout,
+          # 408, 429 e 5xx, quindi un "connection reset by peer" (exit 35) fa
+          # fallire il job al primo colpo. E' successo davvero al primo push.
+          # --retry-all-errors estende il ritento anche a quelli.
+          retry_curl() { curl -sSfL --retry 5 --retry-all-errors --retry-delay 2 --connect-timeout 15 "$@"; }
+          retry_curl -o "$tarball" "$base/$tarball"
+          retry_curl -o checksums.txt "$base/gitleaks_${GITLEAKS_VERSION}_checksums.txt"
           # Integrity check against the checksum file published with the release.
           grep " $tarball\$" checksums.txt | sha256sum -c -
           tar -xzf "$tarball" gitleaks
