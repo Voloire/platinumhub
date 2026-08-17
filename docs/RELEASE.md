@@ -79,7 +79,15 @@ VERSION = "3.3.0"
 ```
 
 Tutto il resto la interpola — i footer nelle due lingue, lo `User-Agent` del
-controllo aggiornamenti, le pagine. Non c'è nessun altro numero da cercare.
+controllo aggiornamenti, le pagine. Non c'è nessun altro numero da cercare
+**dentro l'app**.
+
+**C'è però la pagina di presentazione**: `site/index.html` (pubblicata su
+<https://voloire.github.io/platinumhub/> a ogni merge) porta il numero di
+versione in due punti (il badge in alto e il `softwareVersion` dei dati
+strutturati) e delle affermazioni fattuali su cosa fa l'app. **A ogni rilascio
+va aggiornata**: numero di versione sempre, e i testi ogni volta che il
+rilascio cambia qualcosa che la pagina afferma.
 
 **Se te ne dimentichi, il rilascio si ferma.** `release.yml` confronta `VERSION`
 con il tag *prima* di compilare, e fallisce con l'errore

@@ -185,8 +185,15 @@ background:var(--panel);border:1px solid var(--gold-dim);border-radius:8px;paddi
 .modesel a{padding:4px 11px;border:1px solid var(--line);border-radius:5px;color:var(--muted);font-weight:bold}
 .modesel a:hover{border-color:var(--gold);color:var(--gold)}
 .modesel a.on{background:var(--gold-dim);border-color:var(--gold);color:#12141c}
-.topright{position:absolute;top:14px;right:16px;z-index:30;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-@media(max-width:820px){.topright{position:static;justify-content:center;margin-bottom:10px}}
+/* I controlli dell'header stanno nel flusso, sopra il titolo: cosi' non
+   possono MAI coprirlo, a nessuna larghezza. L'overlay assoluto accanto al
+   titolo (che risparmia una riga) si riattiva solo dove ci sta per certo:
+   il titolo piu' lungo (~750px centrato) + i tre controlli (~600px) + i
+   margini entrano senza toccarsi solo da ~2000px in su. A 1920 si
+   sovrapponevano gia' di 37px, a 1366 di 313. */
+.topright{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end;margin-bottom:10px}
+@media(min-width:2000px){.topright{position:absolute;top:14px;right:16px;z-index:30;margin-bottom:0}}
+@media(max-width:820px){.topright{justify-content:center}}
 /* pannello delle scorciatoie: si apre da un pulsante o col tasto ? */
 .hkbtn{font-size:.8em;letter-spacing:1px;padding:5px 11px;background:var(--panel);
 border:1px solid var(--gold-dim);border-radius:8px;color:var(--muted);cursor:pointer}

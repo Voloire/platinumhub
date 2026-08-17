@@ -11,6 +11,16 @@ la numerazione segue [Semantic Versioning](https://semver.org/lang/it/).
 
 ## [Non rilasciato]
 
+## [5.0.1] - 2026-08-17
+
+### Corretto
+- **I controlli dell'header non coprono più il titolo.** I pulsanti in alto a
+  destra (Scorciatoie, Modalità, Lingua) erano sovrapposti al titolo della
+  pagina su ogni schermo più stretto di ~2000px — su un 1920×1080 di 37px, su
+  un portatile 1366×768 di oltre 300. Ora stanno nel flusso della pagina, sopra
+  il titolo, e l'affiancamento si riattiva solo dove lo spazio c'è per certo.
+  Sugli ultrawide non cambia niente.
+
 ## [5.0.0] - 2026-08-17
 
 Le checklist nuove non richiedono più un aggiornamento dell'app: **si scaricano
