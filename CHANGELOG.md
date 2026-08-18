@@ -32,6 +32,12 @@ la numerazione segue [Semantic Versioning](https://semver.org/lang/it/).
 - I conteggi pubblici aggiornati: 12 giochi, 1.062 passi (486 con trofeo),
   1.420 termini italiani verificati.
 
+### Corretto
+- **Se il browser non si apre, l'app non stampa più un traceback.** L'indirizzo
+  resta scritto a schermo e si incolla a mano: aprire la pagina da soli è una
+  cortesia, non un requisito, e un errore lì sembrava un difetto grave e non lo
+  era.
+
 ## [5.0.1] - 2026-08-17
 
 ### Corretto

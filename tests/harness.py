@@ -198,7 +198,12 @@ class AppServer(object):
         env = dict(os.environ)
         env["PYTHONUNBUFFERED"] = "1"
         env["PYTHONIOENCODING"] = "utf-8"
-        env["BROWSER"] = "/bin/true"        # niente browser aperto durante i test
+        # Niente browser aperto durante i test. Il valore DEVE essere un comando
+        # che esiste davvero: webbrowser prova la voce di BROWSER e, se fallisce,
+        # ripiega su quella di sistema. Su Windows "/bin/true" non esiste, quindi
+        # il ripiego apriva Edge a ogni avvio -- decine di finestre per suite, e
+        # processi orfani sul runner. Stesso trucco di tools/smoke_check.py.
+        env["BROWSER"] = "cmd /c rem" if os.name == "nt" else "/bin/true"
         # Da v4.0 il database sta nella cartella dati utente: la forziamo dentro
         # la sandbox, altrimenti i test si scriverebbero addosso a vicenda e
         # toccherebbero i progressi veri dell'utente.
@@ -322,8 +327,20 @@ class AppServer(object):
         return os.path.join(self.sandbox, "platinum.db")
 
     def tracebacks(self):
-        """Righe di traceback finite su stderr: devono restare zero."""
-        return [l for l in self.stderr if "Traceback" in l or "Exception happened" in l]
+        """Traceback finiti su stderr: devono restare zero.
+
+        Ogni occorrenza torna col suo BLOCCO, non con la sola riga "Traceback":
+        un fallimento raro che si vede solo in CI, senza il testo vero, non e'
+        diagnosticabile. E' gia' costato un rilascio.
+        """
+        blocks, covered = [], -1
+        for i, line in enumerate(self.stderr):
+            if i <= covered:
+                continue
+            if "Traceback" in line or "Exception happened" in line:
+                blocks.append("\n".join(self.stderr[max(0, i - 1):i + 15]))
+                covered = i + 15
+        return blocks
 
 
 class _NoRedirect(urllib.request.HTTPRedirectHandler):
