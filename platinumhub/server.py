@@ -525,6 +525,17 @@ class Server(socketserver.ThreadingTCPServer):
     daemon_threads = True
 
 
+def _open_browser(url):
+    """Aprire il browser e' una cortesia, non un requisito: se fallisce,
+    l'indirizzo e' gia' stampato a schermo e l'utente lo incolla a mano.
+    Gira in un thread, e un'eccezione non gestita li' finirebbe su stderr
+    come traceback -- rumore che sembra un difetto dell'app e non lo e'."""
+    try:
+        webbrowser.open(url)
+    except Exception:
+        pass
+
+
 def pick_port():
     for port in range(PORT_START, PORT_START + 25):
         try:
@@ -583,7 +594,7 @@ def main():
     print("   Lascia questa finestra aperta mentre usi l'hub.")
     print("   Chiudila (o Ctrl+C) quando hai finito.")
     print()
-    threading.Timer(0.8, lambda: webbrowser.open(url)).start()
+    threading.Timer(0.8, _open_browser, args=(url,)).start()
     try:
         srv.serve_forever()
     except KeyboardInterrupt:
