@@ -24,9 +24,11 @@ from __future__ import annotations
 import argparse
 import contextlib
 import os
+import shutil
 import socket
 import subprocess
 import sys
+import tempfile
 import threading
 import time
 import urllib.error
@@ -43,15 +45,22 @@ PORT_RANGE = 25
 BOOT_TIMEOUT_S = 90.0
 
 
-def _no_browser_env() -> dict:
-    """Environment that stops webbrowser.open() from launching anything.
+def _child_env(sandbox: str) -> dict:
+    """Environment for the app under test: no browser, no network, no real database.
 
     A no-op command is used rather than an invalid one: webbrowser.open()
     walks the whole browser list until one of them succeeds, so the no-op
     has to actually succeed.
+
+    PLATINUM_HUB_DATA is the important one. Without it the smoke check opens
+    the *real* user database in %LOCALAPPDATA% and seeds the bundle routes
+    into it -- which is how it behaved until 5.1.0, and it did happen. A check
+    that answers "does the app boot?" has no business touching anyone's saves.
     """
     env = dict(os.environ)
     env["BROWSER"] = "cmd /c rem" if os.name == "nt" else "true"
+    env["PLATINUM_HUB_DATA"] = sandbox
+    env.setdefault("PLATINUM_HUB_NO_UPDATE", "1")
     env["PYTHONUNBUFFERED"] = "1"
     env["PYTHONIOENCODING"] = "utf-8"
     return env
@@ -135,10 +144,11 @@ def start_app(exe: str | None = None, cwd: str | None = None):
         run_cwd = cwd
 
     already_busy = _ports_in_use()
+    sandbox = tempfile.mkdtemp(prefix="platinum-smoke-")
     proc = subprocess.Popen(
         cmd,
         cwd=run_cwd,
-        env=_no_browser_env(),
+        env=_child_env(sandbox),
         stdin=subprocess.DEVNULL,
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
@@ -165,6 +175,7 @@ def start_app(exe: str | None = None, cwd: str | None = None):
                 proc.kill()
                 proc.wait(timeout=15)
         reader.join(timeout=5)
+        shutil.rmtree(sandbox, ignore_errors=True)
 
 
 # --------------------------------------------------------------------- checks
