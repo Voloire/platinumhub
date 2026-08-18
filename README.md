@@ -1,6 +1,6 @@
 # Platinum Hub
 
-**Il platino non si perde per bravura. Si perde perché a metà del gioco non ti ricordi più cosa hai fatto.**
+**Il platino non si perde per mancanza di bravura. Si perde perché a metà del gioco non ti ricordi più cosa hai fatto.**
 
 Platinum Hub è l'app che tiene il filo al posto tuo: dodici run platino verificate passo per passo, i progressi che si salvano da soli, e — se registri o streammi — ogni casella che spunti diventa un timestamp del video, un capitolo YouTube e una guida cliccabile che porta al minuto esatto in cui quella cosa è successa.
 
