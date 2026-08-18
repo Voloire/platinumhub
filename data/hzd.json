@@ -1,0 +1,2190 @@
+{
+ "meta": {
+  "id": "hzd",
+  "format": 1,
+  "version": 1,
+  "order": 120,
+  "accent": "#5fb8d4",
+  "tagline": {
+   "en": "One relaxed run plus an Ultra Hard NG+ lap - allies flagged before the point of no return",
+   "it": "Una run rilassata più il giro NG+ a Ultra difficile - gli alleati in cassaforte prima del punto di non ritorno"
+  },
+  "thumb": {
+   "icon": "bow",
+   "glow": "25,90,115",
+   "seed": 22,
+   "stats": [
+    [
+     "1",
+     "RUN"
+    ],
+    [
+     "1",
+     "NG+ UH"
+    ]
+   ],
+   "tag": null
+  }
+ },
+ "game": "Horizon Zero Dawn Remastered",
+ "prefix": "HZD",
+ "playthroughs": "1 full playthrough on any difficulty (the platinum needs only the 56 base-list trophies - there are no difficulty trophies) with The Frozen Wilds cleared inside the same run, + 1 shorter story-only New Game+ run on Ultra Hard for the two NG+ trophies. The route covers all 79 trophies. No trophy auto-pop from imported PS4 saves: start a fresh game.",
+ "hours": "55-75 hours",
+ "trophy_total": 79,
+ "build_summary": "Defensive trapper-sniper. Concentration plus the Hunter and Sharpshot bows do the damage; the Tripcaster opens every hard fight with pre-laid shock wire; the Ropecaster ties down anything big enough to scare you; elemental states (fire, freeze, shock) feed the Vulnerable-kills trophy and double your damage windows. Override what you can ride, fight from tall grass, never facetank. Endgame: Lodge weapons after the Blazing Suns push, the improved Frozen Wilds weapons (Stormslinger, Icerail, Forgefire) from Varga, and the Shield-Weaver outfit for the finale and the Ultra Hard NG+ lap.",
+ "golden_rules": [
+  "All allies joined is the only trophy you can miss: every optional ally quest must be done BEFORE resting during The Looming Shadow - the safe habit is to finish them before starting that quest at all. The optional chains: the Hunters Lodge line through Redmaw (Talanah), Traitor's Bounty → Queen's Gambit (Uthid - it only unlocks at Sunfall, during Deep Secrets of the Earth), A Daughter's Vengeance (Nakoa), Sunstone Rock (Janeva), Heap of Trouble (Petra), plus A Moment's Peace, Honor the Fallen and Sun and Shadow. Sona and Erend join through mandatory main quests. Worst case, the post-credits rewind drops you back before The Looming Shadow to mop up.",
+  "There are no difficulty trophies on the base list: play the main run on whatever difficulty is fun. Save Ultra Hard for NG+ - one Ultra Hard NG+ run pops both New Game+ trophies at once.",
+  "Never select Ultra Hard on the first playthrough - once chosen it cannot be lowered again on that save.",
+  "The platinum needs only the 56 base-list trophies. The Frozen Wilds (21 trophies) and New Game+ (2 trophies) packs are extra - the route clears them anyway, and the Cut's weapons make the base-game endgame much easier.",
+  "Buy the four collectible maps from the Meridian map vendor as soon as you arrive - they mark every Vantage, Metal Flower, Banuk Figure and Ancient Vessel for pocket change.",
+  "Trophies do NOT auto-pop from an imported PS4 save: everything must be earned fresh in the Remastered, so begin with a new game."
+ ],
+ "stat_table": {
+  "note": "Horizon has no build stats - this table tracks level and loadout instead. Levels assume you pick up side quests as they appear; The Frozen Wilds alone is worth several levels and the level cap is 60 with the expansion installed.",
+  "columns": [
+   "Phase",
+   "Level",
+   "Loadout checkpoint",
+   "Milestone"
+  ],
+  "rows": [
+   [
+    "Embrace (P1-2)",
+    "1-12",
+    "Carja Hunter Bow, Tripcaster, first coils",
+    "Proving won; first Tallneck, Cauldron SIGMA, Nora trials"
+   ],
+   [
+    "Westward (P3-4)",
+    "12-25",
+    "Shadow Sharpshot + Ropecaster",
+    "Meridian reached; Erend chain done, Lodge chain started"
+   ],
+   [
+    "Open world (P5-6)",
+    "25-32",
+    "Full Shadow loadout, purple mods",
+    "All 4 Cauldrons, camps, zones; ally quests banked (Uthid's chain waits for Sunfall)"
+   ],
+   [
+    "Ancient past (P7)",
+    "32-40",
+    "Tearblast arrows stocked",
+    "Maker's End, Grave-Hoard, Eclipse network down"
+   ],
+   [
+    "The Cut (P8-9)",
+    "35-50",
+    "Improved Stormslinger / Icerail / Forgefire",
+    "Frozen Wilds story + 100% of the Cut"
+   ],
+   [
+    "Cleanup (P10-11)",
+    "48-50",
+    "Lodge weapons",
+    "Blazing Suns gold + all four collectible sets"
+   ],
+   [
+    "Finale (P12)",
+    "50",
+    "Shield-Weaver outfit",
+    "All allies joined, final battle, PLATINUM"
+   ],
+   [
+    "NG+ Ultra Hard (P13)",
+    "50-60",
+    "Everything carried over",
+    "Both NG+ trophies + Reached Level 60"
+   ]
+  ]
+ },
+ "phases": [
+  {
+   "title": "Phase 1 — Embrace: Childhood to the Proving",
+   "note": "Main quests: A Gift from the Past through The Womb of the Mountain. Lock in the right difficulty decision on minute one; everything else here flows with the story.",
+   "steps": [
+    {
+     "text": "Start a fresh game on Normal or below. Ultra Hard cannot be lowered once picked - save it for the NG+ run, where both New Game+ trophies pop together. An imported PS4 save will NOT auto-pop anything.",
+     "loc": "New game — difficulty select",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ Ultra Hard is one-way",
+       "label_it": "⚠ Ultra difficile è senza ritorno"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Inizia una partita nuova a difficoltà normale o più bassa. Ultra difficile non si può più abbassare una volta scelta - tienila per la run NG+, dove i due trofei del New Game+ scattano insieme. Un salvataggio PS4 importato NON sblocca niente.",
+     "loc_it": "Nuova partita — selezione difficoltà",
+     "sid": "s001"
+    },
+    {
+     "text": "Play the childhood prologue and complete every one of Rost's tutorials across A Gift from the Past and Lessons of the Wild.",
+     "loc": "Embrace — All-Mother lands",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Followed Rost's teachings",
+       "label_it": "🏆 Insegnamenti di Rost seguiti"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Gioca il prologo dell'infanzia e completa fino all'ultimo i tutorial di Rost tra Un dono dal passato e La lezione della Natura.",
+     "loc_it": "L'Abbraccio — le terre della Madre",
+     "sid": "s002"
+    },
+    {
+     "text": "The Point of the Spear: hunt the requested machines, then bring down the Sawtooth - fire arrows and a pre-laid trap line make it a formality.",
+     "loc": "Embrace — The Point of the Spear",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Defeated the Sawtooth",
+       "label_it": "🏆 Secodonte sconfitto"
+      }
+     ],
+     "trophy": true,
+     "text_it": "La punta della lancia: caccia le macchine richieste, poi abbatti il Secodonte - frecce incendiarie e una linea di trappole già stesa lo riducono a una formalità.",
+     "loc_it": "L'Abbraccio — La punta della lancia",
+     "sid": "s003"
+    },
+    {
+     "text": "Slot your first coil into a weapon (or a weave into an outfit) from the inventory crafting screen.",
+     "loc": "Inventory — modifications",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 First Modification",
+       "label_it": "🏆 Prima modifica"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Innesta la tua prima bobina in un'arma (o un tessuto in un abito) dalla schermata delle modifiche nell'inventario.",
+     "loc_it": "Inventario — modifiche",
+     "sid": "s004"
+    },
+    {
+     "text": "Win the Proving at Mother's Heart - take first place; the story handles the aftermath.",
+     "loc": "Mother's Heart — The Proving",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Triumphed in the Proving",
+       "label_it": "🏆 Trionfo nella Prova"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Vinci la Prova a Cuore della Madre - arriva prima; al dopo pensa la storia.",
+     "loc_it": "Cuore della Madre — La Prova",
+     "sid": "s005"
+    },
+    {
+     "text": "The Womb of the Mountain: when Aloy wakes, detour into the side room before leaving for Power Cell 1/5 - the mountain only reopens very late in the story, so grab it now.",
+     "loc": "All-Mother Mountain — The Womb of the Mountain",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Power Cell 1/5",
+       "label_it": "Power Cell 1/5"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Il ventre della montagna: quando Aloy si sveglia, devia nella stanza laterale prima di uscire e prendi la Power Cell 1/5 - la montagna riapre solo molto avanti nella storia, quindi falla tua ora.",
+     "loc_it": "La montagna della Madre — Il ventre della montagna",
+     "sid": "s006"
+    },
+    {
+     "text": "Build the early skill core: Silent Strike, Concentration, Critical Hit, Lure Call. Start stealth-killing machines from tall grass - the 10 kills arrive on their own.",
+     "loc": "Skill menu — Prowler / Hunter trees",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Stealth killed 10 machines",
+       "label_it": "🏆 Uccisione furtiva su 10 Macchine"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Costruisci il nucleo di abilità iniziale: Colpo silenzioso, Concentrazione, Critical Hit, Lure Call. Inizia a uccidere le macchine in furtività dall'erba alta - le 10 uccisioni arrivano da sole.",
+     "loc_it": "Menu abilità — alberi Prowler / Hunter",
+     "sid": "s007"
+    }
+   ],
+   "title_it": "Fase 1 — L'Abbraccio: dall'infanzia alla Prova",
+   "note_it": "Missioni principali: da Un dono dal passato a Il ventre della montagna. Prendi la decisione giusta sulla difficoltà al minuto uno; tutto il resto qui scorre con la storia."
+  },
+  {
+   "title": "Phase 2 — Nora Lands: First Tallneck, Cauldron and Trials",
+   "note": "Free roam opens around Devil's Thirst. Every activity here teaches a system you will repeat across the whole map - learn them at low stakes.",
+   "steps": [
+    {
+     "text": "Start the main quest A Seeker at the Gates: Aloy's Seeker rights open the Embrace gate and the whole Sacred Land. The quest requires clearing two Corrupted Zones before Daytower lets you through - the first one you finish pops the trophy.",
+     "loc": "Main quest — A Seeker at the Gates",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 First Corrupted Zone cleared",
+       "label_it": "🏆 Prima zona corrotta ripulita"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Avvia la missione principale Una Cercatrice alle porte: i diritti da Cercatrice aprono ad Aloy il cancello dell'Abbraccio e tutta la Terra Sacra. La missione chiede di ripulire due zone corrotte prima che Torre Giorno ti lasci passare - la prima che chiudi fa scattare il trofeo.",
+     "loc_it": "Missione principale — Una Cercatrice alle porte",
+     "sid": "s008"
+    },
+    {
+     "text": "Climb and override the Devil's Thirst Tallneck - watch its circuit, jump onto the antler ledge, ride it up.",
+     "loc": "Devil's Thirst — Tallneck",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 First Tallneck Overridden",
+       "label_it": "🏆 Primo Override su Collolungo"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Scala il Collolungo di Sete del Demone e usa l'Override - studia il suo giro, salta sulla sporgenza delle corna e cavalcalo fino in cima.",
+     "loc_it": "Sete del Demone — Collolungo",
+     "sid": "s009"
+    },
+    {
+     "text": "Grab Power Cell 2/5 inside the ruin Aloy explored as a child, southwest of Mother's Watch - pry open the door and smash the stalactite barrier near where she found the Focus.",
+     "loc": "Sacred Land — Aloy's childhood ruin",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Power Cell 2/5",
+       "label_it": "Power Cell 2/5"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Recupera la Power Cell 2/5 nella rovina che Aloy esplorava da bambina, a sud-ovest di Veglia della Madre - forza la porta e sfonda la barriera di stalattiti vicino al punto dove trovò il Focus.",
+     "loc_it": "Terra Sacra — la rovina d'infanzia di Aloy",
+     "sid": "s010"
+    },
+    {
+     "text": "Clear your first bandit camp in Nora territory. Use Concentration headshots on the humans - the 30-headshot counter starts climbing here.",
+     "loc": "Nora lands — bandit camp",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 First Bandit Camp cleared",
+       "label_it": "🏆 Primo campo di banditi sgomberato"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sgombera il tuo primo campo di banditi in territorio Nora. Usa i colpi alla testa in Concentrazione sugli umani - il contatore dei 30 comincia a salire qui.",
+     "loc_it": "Terre Nora — campo di banditi",
+     "sid": "s011"
+    },
+    {
+     "text": "Run Cauldron SIGMA (recommended level ~8-10): a linear dungeon ending in a core that unlocks new override classes.",
+     "loc": "Cauldron SIGMA",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 First Core Overridden",
+       "label_it": "🏆 Primo Override su nucleo"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Affronta il Calderone SIGMA (livello consigliato ~8-10): un dungeon lineare che finisce in un nucleo e sblocca nuove classi di Override.",
+     "loc_it": "Calderone SIGMA",
+     "sid": "s012"
+    },
+    {
+     "text": "Nora Hunting Grounds: run all three trials to at least a Half Sun. The Blazing Sun pass comes much later with endgame gear - do not sweat it now.",
+     "loc": "Nora Hunting Grounds",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 All Suns at one Ground",
+       "label_it": "🏆 Tutti i Soli in un terreno"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Terreni di caccia Nora: porta tutte e tre le sfide almeno al Mezzo Sole. Il passaggio a Sole Ardente arriva molto più tardi con l'equipaggiamento endgame - non sudarci adesso.",
+     "loc_it": "Terreni di caccia Nora",
+     "sid": "s013"
+    },
+    {
+     "text": "Knock over all 23 Grazer training dummies with a map guide now - every one of them stands in the Nora/Embrace region, and it is cheaper to sweep them before the story pulls you west.",
+     "loc": "Nora lands — Grazer dummies (23)",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Dummies /23",
+       "label_it": "Fantocci /23"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Downed 23 Grazer dummies",
+       "label_it": "🏆 23 Cervaviti-fantoccio abbattuti"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Abbatti tutti e 23 i fantocci dei Cervaviti con una mappa alla mano - stanno tutti nella regione Nora/Abbraccio, e costa meno spazzarli via prima che la storia ti tiri a ovest.",
+     "loc_it": "Terre Nora — fantocci dei Cervaviti (23)",
+     "sid": "s014"
+    },
+    {
+     "text": "Sona's arc is main story, not a side chain: The War-Chief's Trail (it opens during A Seeker at the Gates), then Revenge of the Nora in Devil's Grief - Sona and Varl join the final defense through these automatically.",
+     "loc": "Main quests — The War-Chief's Trail → Revenge of the Nora",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Victorious with the War-Chief",
+       "label_it": "🏆 Hai vinto col Capoguerra"
+      }
+     ],
+     "trophy": true,
+     "text_it": "L'arco di Sona è storia principale, non una catena secondaria: La via del Capoguerra (si apre durante Una Cercatrice alle porte), poi La vendetta dei Nora a Pena del Demone - Sona e Varl entrano nella difesa finale da soli, attraverso queste.",
+     "loc_it": "Missioni principali — La via del Capoguerra → La vendetta dei Nora",
+     "sid": "s015"
+    },
+    {
+     "text": "Level 10 lands around here. Buy the Tripcaster and a Sharpshot bow from merchants and mod them - your two workhorse weapons for the whole run.",
+     "loc": "Merchants — Nora lands",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Reached level 10",
+       "label_it": "🏆 Livello 10 raggiunto"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Il livello 10 arriva da queste parti. Compra lancia-trappole e arco di precisione dai mercanti e moddali - i tuoi due cavalli da tiro per l'intera run.",
+     "loc_it": "Mercanti — terre Nora",
+     "sid": "s016"
+    },
+    {
+     "text": "Kill 3 enemies with Strike from Above as you roam - ledges above machine patrol routes are everywhere in the Embrace.",
+     "loc": "Anywhere — Strike from Above",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 3 Strikes From Above",
+       "label_it": "🏆 3 Colpi dall'alto"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Uccidi 3 nemici con Colpo dall'alto mentre giri - nell'Abbraccio le sporgenze sopra i percorsi delle macchine sono ovunque.",
+     "loc_it": "Ovunque — Colpo dall'alto",
+     "sid": "s017"
+    }
+   ],
+   "title_it": "Fase 2 — Terre Nora: primo Collolungo, Calderone e sfide",
+   "note_it": "Il free roam si apre attorno a Sete del Demone. Ogni attività qui ti insegna un sistema che ripeterai su tutta la mappa - impararli ora costa poco."
+  },
+  {
+   "title": "Phase 3 — A Seeker at the Gates: Westward",
+   "note": "The map opens toward Daytower and Carja territory. Start every collectible habit here; close them out later with the Meridian maps.",
+   "steps": [
+    {
+     "text": "Finish A Seeker at the Gates at Daytower: with both Corrupted Zones cleared the Carja commander opens the gate west, and the trophy pops as he thanks you.",
+     "loc": "Main quest — A Seeker at the Gates (Daytower)",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Fought back the corruption",
+       "label_it": "🏆 Hai sradicato la corruzione"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Concludi Una Cercatrice alle porte a Torre Giorno: con entrambe le zone corrotte ripulite il comandante Carja apre il cancello a ovest, e il trofeo scatta mentre ti ringrazia.",
+     "loc_it": "Missione principale — Una Cercatrice alle porte (Torre Giorno)",
+     "sid": "s018"
+    },
+    {
+     "text": "Pick up your first of each collectible type as you travel: a Vantage datapoint, a Metal Flower, a Banuk Figure and an Ancient Vessel - four quick trophies in one sweep.",
+     "loc": "Open world — first collectibles",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "First of each set",
+       "label_it": "Uno per serie"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 First Vantage found",
+       "label_it": "🏆 Primo osservatorio trovato"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 First Metal Flower found",
+       "label_it": "🏆 Primo fiore di metallo trovato"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 First Banuk Figure found",
+       "label_it": "🏆 Prima statuetta Banuk trovata"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 First Ancient Vessel found",
+       "label_it": "🏆 Primo recipiente antico trovato"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Raccogli il primo esemplare di ogni collezionabile mentre viaggi: un osservatorio, un fiore di metallo, una statuetta Banuk e un recipiente antico - quattro trofei rapidi in un'unica passata.",
+     "loc_it": "Mondo aperto — primi collezionabili",
+     "sid": "s019"
+    },
+    {
+     "text": "Clear the Corrupted Zones along your route while your level matches - the 11 zones range from level 15 to 34, so take them as you grow instead of backtracking.",
+     "loc": "Open world — Corrupted Zones",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Zones /11",
+       "label_it": "Zone /11"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Ripulisci le zone corrotte lungo la strada quando il livello regge - le 11 zone vanno dal livello 15 al 34, quindi prendile mentre cresci invece di tornare sui tuoi passi.",
+     "loc_it": "Mondo aperto — zone corrotte",
+     "sid": "s020"
+    },
+    {
+     "text": "Take side quests as they appear and clear them in clusters - they are short, they feed the level milestones, and several unlock the ally chains you will need later.",
+     "loc": "Open world — side quests",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Accetta le missioni secondarie man mano che compaiono e chiudile a grappoli - sono corte, alimentano i traguardi di livello, e parecchie sbloccano le catene degli alleati che ti serviranno dopo.",
+     "loc_it": "Mondo aperto — missioni secondarie",
+     "sid": "s021"
+    },
+    {
+     "text": "Run Cauldron RHO (recommended level ~11-14) when the map reveals it - it adds Ravager, Longleg, Shell-Walker, Snapmaw and Trampler to your override roster.",
+     "loc": "Cauldron RHO",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Affronta il Calderone RHO (livello consigliato ~11-14) quando la mappa lo rivela - aggiunge Razziatore, Longipede, Arcapode, Celermorso e Cheratauro al tuo roster di Override.",
+     "loc_it": "Calderone RHO",
+     "sid": "s022"
+    }
+   ],
+   "title_it": "Fase 3 — Una Cercatrice alle porte: verso ovest",
+   "note_it": "La mappa si apre verso Torre Giorno e il territorio Carja. Prendi qui ogni abitudine da collezionista; i conti li chiuderai più avanti con le mappe di Meridiana."
+  },
+  {
+   "title": "Phase 4 — Meridian: The City of the Sun",
+   "note": "The story hub of the mid-game. Buy the collectible maps the moment you arrive, then chew through Erend's chain and open the Hunters Lodge.",
+   "steps": [
+    {
+     "text": "Main quest: The City of the Sun - reach Meridian and follow the Olin lead.",
+     "loc": "Main quest — The City of the Sun",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Missione principale: La città del Sole - raggiungi Meridiana e segui la pista di Olin.",
+     "loc_it": "Missione principale — La città del Sole",
+     "sid": "s023"
+    },
+    {
+     "text": "Buy all four collectible maps from the Meridian map vendor - they mark every Vantage, Metal Flower, Banuk Figure and Ancient Vessel on your map for a handful of shards.",
+     "loc": "Meridian — map vendor",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Buy the 4 maps",
+       "label_it": "Compra le 4 mappe"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Compra tutte e quattro le mappe dei collezionabili dal venditore di mappe di Meridiana - segnano sulla tua mappa ogni osservatorio, fiore di metallo, statuetta Banuk e recipiente antico, e costano due spicci.",
+     "loc_it": "Meridiana — venditore di mappe",
+     "sid": "s024"
+    },
+    {
+     "text": "Erend's arc - The Field of the Fallen, Into the Borderlands, then The Sun Shall Fall - is main story too: beating Dervahl saves the city, and Erend backs you in the finale without any side quest.",
+     "loc": "Main quests — Erend's chain",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Saved Meridian from its foe",
+       "label_it": "🏆 Meridiana salvata dal suo nemico"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Anche l'arco di Erend - Il campo dei caduti, Le terre di confine, poi Il Sole cadrà - è storia principale: battere Dervahl salva la città, ed Erend ti copre nel finale senza bisogno di secondarie.",
+     "loc_it": "Missioni principali — la catena di Erend",
+     "sid": "s025"
+    },
+    {
+     "text": "Start the Hunters Lodge line: the side quest Hunters' Blind from Talanah, then the errands Hunting for the Lodge and Deadliest Game. The finale, Redmaw, is a level ~19 hunt - the route parks it in the ally block later.",
+     "loc": "Meridian — Hunters Lodge",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Avvia la linea della Loggia dei Cacciatori: la secondaria Rifugio di caccia da Talanah, poi le commissioni A Caccia per la Loggia e La preda più pericolosa. Il finale, Faucirosse, è una caccia da livello ~19 - la route la parcheggia più avanti, nel blocco degli alleati.",
+     "loc_it": "Meridiana — Loggia dei Cacciatori",
+     "sid": "s026"
+    },
+    {
+     "text": "Run Cauldron XI (recommended level ~18-20), southwest of Meridian near Sunstone Rock - Glinthawk, Stalker, Behemoth and Bellowback join your override roster on the way to the 7-types trophy.",
+     "loc": "Cauldron XI",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Affronta il Calderone XI (livello consigliato ~18-20), a sud-ovest di Meridiana vicino a Rocca Pietrasole - Smeriglio, Inseguitore, Colosso e Manticerio entrano nel roster di Override, sulla strada per il trofeo dei 7 tipi.",
+     "loc_it": "Calderone XI",
+     "sid": "s027"
+    },
+    {
+     "text": "Level 25 milestone - upgrade to Shadow-tier weapons (Sharpshot, Ropecaster, Tripcaster) from Meridian vendors as shards allow.",
+     "loc": "Meridian — vendors",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Reached level 25",
+       "label_it": "🏆 Livello 25 raggiunto"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Traguardo livello 25 - passa alle armi delle Ombre (arco di precisione, lancia-corde, lancia-trappole) dai venditori di Meridiana, man mano che puoi permettertele.",
+     "loc_it": "Meridiana — venditori",
+     "sid": "s028"
+    },
+    {
+     "text": "Work the elemental loop: burn machines weak to Fire and kill them while they burn, or freeze machines weak to Freeze and kill them frozen - 10 such kills clear the Vulnerable trophy (Shock states do not count for it) and teach you the best damage windows in the game.",
+     "loc": "Open world — elemental kills",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 10 Vulnerable machine kills",
+       "label_it": "🏆 10 uccisioni su Macchine vulnerabili"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Lavora il ciclo elementale: incendia le macchine deboli al fuoco e uccidile mentre bruciano, o congela quelle deboli al ghiaccio e uccidile congelate - 10 uccisioni così chiudono il trofeo delle Macchine vulnerabili (gli stati da fulmine NON contano) e ti insegnano le migliori finestre di danno del gioco.",
+     "loc_it": "Mondo aperto — uccisioni elementali",
+     "sid": "s029"
+    },
+    {
+     "text": "Use Sharpshot tearblast arrows to rip 10 components off machines mid-fight - aim for canisters, blaze containers and radar dishes; the parts fly off and the counter ticks.",
+     "loc": "Open world — component tearing",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Tore off 10 components",
+       "label_it": "🏆 10 componenti staccate"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Usa le frecce dirompenti dell'arco di precisione per strappare 10 componenti alle macchine in pieno scontro - mira a serbatoi, contenitori di Vampa e antenne radar; i pezzi volano via e il contatore sale.",
+     "loc_it": "Mondo aperto — staccare componenti",
+     "sid": "s030"
+    }
+   ],
+   "title_it": "Fase 4 — Meridiana: la Città del Sole",
+   "note_it": "L'hub della metà di gioco. Compra le mappe dei collezionabili nell'istante in cui arrivi, poi macina la catena di Erend e apri la Loggia dei Cacciatori."
+  },
+  {
+   "title": "Phase 5 — Open-World West: ZETA, Camps and Zones",
+   "note": "The systems block: finish the cauldrons, tallnecks, bandit camps and corrupted zones while the ally quests wait one phase ahead.",
+   "steps": [
+    {
+     "text": "Run Cauldron ZETA (recommended level ~20-25) - it unlocks the heavyweight overrides (Thunderjaw, Stormbird, Rockbreaker; Behemoth came with XI) and completes the set of four cores.",
+     "loc": "Cauldron ZETA",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 All Cores Overridden",
+       "label_it": "🏆 Override su tutti i nuclei"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Affronta il Calderone ZETA (livello consigliato ~20-25) - sblocca gli Override dei pesi massimi (Divoratuono, Avistempesta, Spezzaroccia; il Colosso è arrivato con XI) e completa il set dei quattro nuclei.",
+     "loc_it": "Calderone ZETA",
+     "sid": "s031"
+    },
+    {
+     "text": "Override 7 different machine TYPES in the field - mounts count, so a Strider, Broadhead, Charger plus four combat overrides after your cauldron haul does it in minutes.",
+     "loc": "Open world — overrides",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 7 types of machine overridden",
+       "label_it": "🏆 Override su 7 tipi di Macchine"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Usa l'Override su 7 TIPI diversi di macchina sul campo - le cavalcature contano, quindi un Corsiero, un Cornalunghe e un Ferrariete più quattro Override da combattimento dopo il bottino dei Calderoni chiudono la pratica in minuti.",
+     "loc_it": "Mondo aperto — Override",
+     "sid": "s032"
+    },
+    {
+     "text": "Override the remaining four Tallnecks: Copper Deeps, Sun-Steps, Rustwash and Spearshafts - each one needs a climbing route (a nearby ruin, a jump from a cliff), not brute force.",
+     "loc": "Open world — Tallnecks (5 total)",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Tallnecks /5",
+       "label_it": "Collilunghi /5"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 All Tallnecks Overridden",
+       "label_it": "🏆 Override su tutti i Collilunghi"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Usa l'Override sui quattro Collilunghi restanti: Muro di Rame, Scale del Sole, Acque Rosse e Punte di Freccia - ognuno vuole una via di scalata (una rovina vicina, un salto da una rupe), non la forza bruta.",
+     "loc_it": "Mondo aperto — Collilunghi (5 in totale)",
+     "sid": "s033"
+    },
+    {
+     "text": "Clear all six bandit camps. Keep landing Concentration headshots on the humans - the 30-headshot trophy finishes somewhere in these camps.",
+     "loc": "Open world — bandit camps (6)",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Cleared all the Bandit Camps",
+       "label_it": "🏆 Tutti i campi di banditi sgomberati"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Headshot 30 human enemies",
+       "label_it": "🏆 30 colpi alla testa su nemici umani"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sgombera tutti e sei i campi di banditi. Continua a piazzare colpi alla testa in Concentrazione sugli umani - il trofeo dei 30 si chiude da qualche parte in questi campi.",
+     "loc_it": "Mondo aperto — campi di banditi (6)",
+     "sid": "s034"
+    },
+    {
+     "text": "Finish all 11 Corrupted Zones - the toughest sit at level 32-34 (paired Rockbreakers, then Behemoths). Ropecaster plus fire arrows handles the corrupted heavies safely.",
+     "loc": "Open world — Corrupted Zones (11)",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 All Corrupted Zones cleared",
+       "label_it": "🏆 Tutte le zone corrotte ripulite"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Finisci tutte e 11 le zone corrotte - le più dure stanno a livello 32-34 (Spezzaroccia in coppia, poi Colossi). Lancia-corde più frecce incendiarie gestisce in sicurezza i pesi massimi corrotti.",
+     "loc_it": "Mondo aperto — zone corrotte (11)",
+     "sid": "s035"
+    },
+    {
+     "text": "Keep the Focus habit: scan every machine species the moment you first see it - the Notebook tracks the catalogue and you want zero stragglers later.",
+     "loc": "Open world — Notebook / catalogue",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Machine catalogue",
+       "label_it": "Catalogo macchine"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Mantieni l'abitudine del Focus: scansiona ogni specie di macchina la prima volta che la vedi - il menu Notebook tiene il catalogo e più avanti non vuoi ritardatari.",
+     "loc_it": "Mondo aperto — Notebook / catalogo",
+     "sid": "s036"
+    },
+    {
+     "text": "Side quests continue between activities - you want to be pushing level 30+ before the ally block and the Frozen Wilds.",
+     "loc": "Open world — side quests",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Le secondarie continuano tra un'attività e l'altra - vuoi superare il livello 30 prima del blocco alleati e di The Frozen Wilds.",
+     "loc_it": "Mondo aperto — missioni secondarie",
+     "sid": "s037"
+    }
+   ],
+   "title_it": "Fase 5 — L'ovest in mondo aperto: ZETA, campi e zone",
+   "note_it": "Il blocco dei sistemi: finisci Calderoni, Collilunghi, campi di banditi e zone corrotte mentre le missioni degli alleati aspettano una fase più avanti."
+  },
+  {
+   "title": "Phase 6 — All Allies Joined: the Recruitment Block",
+   "note": "THE missable of this list lives here. Everything below must be done before resting during The Looming Shadow - the route clears it all now. One exception cannot be helped: Uthid's chain only unlocks at Sunfall late in the story, so it is parked in the endgame phase with its own flag.",
+   "steps": [
+    {
+     "text": "Checkpoint the missable: All allies joined requires every optional ally quest finished BEFORE you rest during The Looming Shadow. Do the whole block now - Sona and Erend are covered by the main story, and Uthid's chain (Traitor's Bounty → Queen's Gambit) unlocks later at Sunfall: the route flags it in the endgame phase.",
+     "loc": "Quest log — ally audit",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ All allies joined",
+       "label_it": "⚠ Tutti gli alleati hanno partecipato"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Fissa il mancabile: Tutti gli alleati hanno partecipato richiede ogni missione alleata opzionale finita PRIMA di riposare durante L'ombra incombente. Fai l'intero blocco ora - Sona ed Erend sono coperti dalla storia principale, e la catena di Uthid (Caccia al traditore → Fuga di una regina) si sblocca più avanti a Tramonto: la route la segnala nella fase endgame.",
+     "loc_it": "Registro missioni — censimento alleati",
+     "sid": "s038"
+    },
+    {
+     "text": "A Daughter's Vengeance: rescue Nakoa - she joins the final defense.",
+     "loc": "Side quest — A Daughter's Vengeance",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "La vendetta di una figlia: salva Nakoa - si unirà alla difesa finale.",
+     "loc_it": "Secondaria — La vendetta di una figlia",
+     "sid": "s039"
+    },
+    {
+     "text": "Sunstone Rock: recapture the escaped prisoners for warden Janeva - another ally banked.",
+     "loc": "Side quest — Sunstone Rock",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Rocca Pietrasole: ricattura i prigionieri evasi per Janeva, che comanda la prigione - un altro alleato in cassaforte.",
+     "loc_it": "Secondaria — Rocca Pietrasole",
+     "sid": "s040"
+    },
+    {
+     "text": "Heap of Trouble: help Petra at Free Heap - she brings her cannon to the defense.",
+     "loc": "Side quest — Heap of Trouble (Free Heap)",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Un cumulo di guai: aiuta Petra al Cumulo Libero - porterà il suo cannone alla difesa.",
+     "loc_it": "Secondaria — Un cumulo di guai (Cumulo Libero)",
+     "sid": "s041"
+    },
+    {
+     "text": "Finish the Hunters Lodge: hunt Redmaw with Talanah (level ~19 - tearblast the disc launchers off, then turn them on him). Talanah is the last Lodge ally.",
+     "loc": "Side quest — Redmaw",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Hunted Redmaw with Talanah",
+       "label_it": "🏆 Faucirosse cacciato con Talanah"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Chiudi la Loggia dei Cacciatori: caccia Faucirosse con Talanah (livello ~19 - stacca i lancia-dischi con le frecce dirompenti, poi rivoltaglieli contro). Talanah è l'ultima alleata della Loggia.",
+     "loc_it": "Secondaria — Faucirosse",
+     "sid": "s042"
+    },
+    {
+     "text": "Do A Moment's Peace, Honor the Fallen and Sun and Shadow now too - the wiki counts all three toward the trophy (they bring the Banuk hunters, Namman and Elida to the defense). Each is minutes long.",
+     "loc": "Side quests — ally extras",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Fai adesso anche Un attimo di pace, Onore ai caduti e Sole e ombra - la wiki le conta tutte e tre per il trofeo (portano alla difesa i cacciatori Banuk, Namman ed Elida). Ognuna dura minuti.",
+     "loc_it": "Secondarie — alleati extra",
+     "sid": "s043"
+    }
+   ],
+   "title_it": "Fase 6 — Tutti gli alleati: il blocco reclutamento",
+   "note_it": "IL mancabile di questa lista vive qui. Tutto quello che segue va fatto prima di riposare durante L'ombra incombente - la route lo chiude tutto adesso. Un'eccezione è inevitabile: la catena di Uthid si sblocca solo a Tramonto, tardi nella storia, quindi è parcheggiata nella fase endgame col suo promemoria."
+  },
+  {
+   "title": "Phase 7 — Maker's End to the Eclipse Network",
+   "note": "Three main quests, two power cells and one Deathbringer scan. The story ramps up; your loadout should too.",
+   "steps": [
+    {
+     "text": "Maker's End: climb the Faro tower. Power Cell 3/5 is at the very top - from the conference room, climb up past the lift shaft and keep going above Faro's office until the tower runs out.",
+     "loc": "Main quest — Maker's End",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Power Cell 3/5",
+       "label_it": "Power Cell 3/5"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Learned of the ancient past",
+       "label_it": "🏆 Hai scoperto i segreti del passato"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Fine del Creatore: scala la torre di Faro. La Power Cell 3/5 è in cima assoluta - dalla sala conferenze, sali oltre il vano dell'ascensore e continua sopra l'ufficio di Faro finché la torre non finisce.",
+     "loc_it": "Missione principale — Fine del Creatore",
+     "sid": "s044"
+    },
+    {
+     "text": "The Grave-Hoard: fight through the bunker and take Power Cell 4/5 inside. Scan the Deathbringer you face at the end - it is one of the rarest catalogue entries.",
+     "loc": "Main quest — The Grave-Hoard",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Power Cell 4/5",
+       "label_it": "Power Cell 4/5"
+      },
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Il Tumulo: fatti strada nel bunker e prendi la Power Cell 4/5 all'interno. Scansiona lo Sterminatore che affronti alla fine - è una delle voci più rare del catalogo.",
+     "loc_it": "Missione principale — Il Tumulo",
+     "sid": "s045"
+    },
+    {
+     "text": "To Curse the Darkness: follow Sylens into the Eclipse camp and bring their network down.",
+     "loc": "Main quest — To Curse the Darkness",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Crashed the Eclipse network",
+       "label_it": "🏆 Rete dell'Eclissi distrutta"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Bandire l'oscurità: segui Sylens nell'accampamento dell'Eclissi e butta giù la loro rete.",
+     "loc_it": "Missione principale — Bandire l'oscurità",
+     "sid": "s046"
+    },
+    {
+     "text": "Level 40 milestone lands around this arc if you have kept up with side content.",
+     "loc": "Level milestone",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Reached level 40",
+       "label_it": "🏆 Livello 40 raggiunto"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Il traguardo del livello 40 cade attorno a questo arco, se sei stato dietro ai contenuti secondari.",
+     "loc_it": "Traguardo di livello",
+     "sid": "s047"
+    },
+    {
+     "text": "Loadout check: full Shadow-tier weapons with purple mods, tearblast and hardpoint arrows stocked, Ropecaster ready. The Frozen Wilds hits harder than anything so far.",
+     "loc": "Vendors — pre-DLC loadout",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Controllo loadout: armi delle Ombre al completo con mod viola, scorte di frecce dirompenti e devastanti, lancia-corde pronto. The Frozen Wilds picchia più forte di qualsiasi cosa vista finora.",
+     "loc_it": "Venditori — loadout pre-DLC",
+     "sid": "s048"
+    }
+   ],
+   "title_it": "Fase 7 — Da Fine del Creatore alla rete dell'Eclissi",
+   "note_it": "Tre missioni principali, due Power Cell e uno Sterminatore da scansionare. La storia accelera; il tuo loadout dovrebbe fare lo stesso."
+  },
+  {
+   "title": "Phase 8 — The Frozen Wilds: Into the Cut",
+   "note": "The expansion opens through the mountain pass in the far northeast (recommended level 30+; you are past that). None of this is needed for the platinum - but the Cut's weapons and XP repay the detour immediately.",
+   "steps": [
+    {
+     "text": "Travel into the Cut and complete the entry quest - your first Scorcher is the welcome party. Its kind counts toward a 15-kill trophy, so never run from one.",
+     "loc": "The Cut — entry pass",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Viaggia nello Squarcio e completa la missione d'ingresso - il comitato di benvenuto è il tuo primo Mastino. La sua specie conta per un trofeo da 15 uccisioni, quindi non scappare mai davanti a uno.",
+     "loc_it": "Lo Squarcio — passo d'ingresso",
+     "sid": "s049"
+    },
+    {
+     "text": "The Shaman's Path: survive the climb and find Ourea's retreat.",
+     "loc": "The Cut — The Shaman's Path",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Took the Shaman's Path",
+       "label_it": "🏆 Via dello sciamano seguita"
+      }
+     ],
+     "trophy": true,
+     "text_it": "La via dello sciamano: sopravvivi alla scalata e trova il rifugio di Ourea.",
+     "loc_it": "Lo Squarcio — La via dello sciamano",
+     "sid": "s050"
+    },
+    {
+     "text": "Errand: A Secret Shared - Kamut sends you into the abandoned drone hangar, and the reward box holds your first spear modification. Open the inventory and slot it into the spear.",
+     "loc": "The Cut — A Secret Shared (Kamut)",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 First Spear Modification",
+       "label_it": "🏆 Prima modifica per la lancia"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Commissione Un segreto condiviso: Kamut ti manda nell'hangar dei droni abbandonato, e la cassa premio contiene la tua prima modifica per la lancia. Apri l'inventario e innestala nella lancia.",
+     "loc_it": "Lo Squarcio — Un segreto condiviso (Kamut)",
+     "sid": "s051"
+    },
+    {
+     "text": "Spend Bluegleam on your first special weapon or outfit at the Cut's merchants - the story already hands you the Stormslinger and Icerail, so the Forgefire or a Banuk outfit is the natural first trade. Bluegleam drops from the Cut's machines and quests.",
+     "loc": "Song's Edge / Longnotch — Bluegleam vendors",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 First Bluegleam Trade",
+       "label_it": "🏆 Primo scambio di blubagliore"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Spendi blubagliore per la tua prima arma o abito speciale dai mercanti dello Squarcio - la storia ti ha già messo in mano Lanciatuono e Geliera, quindi la Forgiafuoco o un abito Banuk è il primo scambio naturale. Il blubagliore cade dalle macchine e dalle missioni dello Squarcio.",
+     "loc_it": "Ultimo Canto / Lungacrepa — venditori con blubagliore",
+     "sid": "s052"
+    },
+    {
+     "text": "For the Werak: challenge Aratak at the Frostfigures and win. Override the Frostfigures Tallneck while you are there - it counts toward the Cut's activities trophy.",
+     "loc": "The Cut — For the Werak / Frostfigures",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Won the Werak Challenge",
+       "label_it": "🏆 Sfida per il werak vinta"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Per il Werak: sfida Aratak ai Gelidi e vinci. Già che ci sei, usa l'Override sul Collolungo dei Gelidi - conta per il trofeo delle attività dello Squarcio.",
+     "loc_it": "Lo Squarcio — Per il Werak / i Gelidi",
+     "sid": "s053"
+    },
+    {
+     "text": "Firebreak: assault Thunder's Drum with the werak.",
+     "loc": "The Cut — Firebreak",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Completed the Second Expedition",
+       "label_it": "🏆 Seconda spedizione completata"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Firebreak: assalta il Rombo di tuono con il werak.",
+     "loc_it": "Lo Squarcio — Firebreak",
+     "sid": "s054"
+    },
+    {
+     "text": "The Forge of Winter: purge the threat inside the mountain and free CYAN. Fireclaws debut here - every kill counts toward the 6 needed later.",
+     "loc": "The Cut — The Forge of Winter",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Conquered the Mountain",
+       "label_it": "🏆 Montagna conquistata"
+      }
+     ],
+     "trophy": true,
+     "text_it": "La forgia dell'inverno: elimina la minaccia nel cuore della montagna e libera CYAN. Qui debuttano i Rogartigli - ogni uccisione conta per le 6 che serviranno dopo.",
+     "loc_it": "Lo Squarcio — La forgia dell'inverno",
+     "sid": "s055"
+    }
+   ],
+   "title_it": "Fase 8 — The Frozen Wilds: dentro lo Squarcio",
+   "note_it": "L'espansione si apre dal passo di montagna nell'estremo nord-est (livello consigliato 30+; ci sei già oltre). Niente di tutto questo serve al platino - ma le armi e gli XP dello Squarcio ripagano la deviazione all'istante."
+  },
+  {
+   "title": "Phase 9 — The Cut at 100%",
+   "note": "Everything else the expansion holds: 16 quests and errands, 9 Control Towers, 15 collectibles, three machine counters and a new skill tree.",
+   "steps": [
+    {
+     "text": "The Survivor: help Ikrie, the young Banuk hunter - her story continues at Snowchants.",
+     "loc": "The Cut — The Survivor",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "La sopravvissuta: aiuta Ikrie, la giovane cacciatrice Banuk - la sua storia continua a Canti di neve.",
+     "loc_it": "Lo Squarcio — La sopravvissuta",
+     "sid": "s056"
+    },
+    {
+     "text": "Snowchants Hunting Ground: push all three trials to Blazing Sun now (your Cut weapons are strong enough), then meet Ikrie again and take first place in her challenge.",
+     "loc": "The Cut — Snowchants Hunting Ground",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Won Ikrie's Challenge",
+       "label_it": "🏆 Sfida di Ikrie vinta"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Terreno di caccia dei Canti di neve: porta subito tutte e tre le sfide al Sole Ardente (le armi dello Squarcio bastano e avanzano), poi rincontra Ikrie e prenditi il primo posto nella sua sfida.",
+     "loc_it": "Lo Squarcio — terreno di caccia dei Canti di neve",
+     "sid": "s057"
+    },
+    {
+     "text": "Waterlogged: explore the Greycatch with Gildun and drain the floodwater completely.",
+     "loc": "The Cut — Waterlogged (Greycatch)",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Drained the Flood",
+       "label_it": "🏆 Allagamento prosciugato"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sott'acqua: esplora Predagrigia con Gildun e prosciuga l'allagamento fino all'ultima goccia.",
+     "loc_it": "Lo Squarcio — Sott'acqua (Predagrigia)",
+     "sid": "s058"
+    },
+    {
+     "text": "The three Geared Up errands: bring Varga the hunt loot she asks for and collect the improved Stormslinger, Icerail and Forgefire - the best special weapons in the game.",
+     "loc": "Longnotch — Varga's Geared Up errands",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      },
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Fully Improved Weapons",
+       "label_it": "🏆 Armi totalmente migliorate"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Le tre commissioni Geared Up: porta a Varga il bottino di caccia che chiede e ritira Lanciatuono, Geliera e Forgiafuoco migliorati - le migliori armi speciali del gioco.",
+     "loc_it": "Lungacrepa — le commissioni Geared Up di Varga",
+     "sid": "s059"
+    },
+    {
+     "text": "Sweep the remaining side quests and errands: Frontier Justice, The Hunters Three, The Claws Beneath (a Daemonic Rockbreaker - bring the Icerail) and Out of the Forge, whose escaped Fireclaws feed the kill counter.",
+     "loc": "The Cut — remaining quests",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Spazza le missioni e commissioni restanti: Giustizia di frontiera, I tre cacciatori, L'orrore dal profondo (uno Spezzaroccia demoniaco - porta la Geliera) e Fuori dalla forgia, i cui Rogartigli evasi alimentano il contatore.",
+     "loc_it": "Lo Squarcio — missioni restanti",
+     "sid": "s060"
+    },
+    {
+     "text": "With all 16 of the Cut's quests and errands done (the log counts nine side quests including the main line, plus seven errands), the quest-completion trophy drops.",
+     "loc": "The Cut — quest log",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 All Quests completed",
+       "label_it": "🏆 Tutte le missioni completate"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Con tutte e 16 le missioni e commissioni dello Squarcio a posto (il registro conta nove secondarie inclusa la linea principale, più sette commissioni), il trofeo di completamento cade da solo.",
+     "loc_it": "Lo Squarcio — registro missioni",
+     "sid": "s061"
+    },
+    {
+     "text": "Close the Cut's activities: the Stone Yield bandit camp, the Frostfigures Tallneck and Blazing Suns in all three Snowchants trials.",
+     "loc": "The Cut — activities",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 All Activities completed",
+       "label_it": "🏆 Tutte le attività completate"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Chiudi le attività dello Squarcio: il campo di banditi di Cavaroccia, il Collolungo dei Gelidi e i Soli Ardenti in tutte e tre le sfide di Canti di neve.",
+     "loc_it": "Lo Squarcio — attività",
+     "sid": "s062"
+    },
+    {
+     "text": "Disable all 9 Control Towers - override them from behind after clearing the guards, or just destroy them. Their shockwave stuns you and heals machines, so approach in stealth.",
+     "loc": "The Cut — Control Towers (9)",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Towers /9",
+       "label_it": "Torri /9"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 All Control Towers disabled",
+       "label_it": "🏆 Tutte le torri di controllo disattivate"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Disattiva tutte e 9 le torri di controllo - Override alle loro spalle dopo aver eliminato le guardie, o semplicemente distruggile. La loro onda d'urto ti stordisce e cura le macchine, quindi avvicinati in furtività.",
+     "loc_it": "Lo Squarcio — torri di controllo (9)",
+     "sid": "s063"
+    },
+    {
+     "text": "Collect the Cut's two sets with a map guide: 9 Pigments and 6 Animal Figurines.",
+     "loc": "The Cut — collectibles",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Pigments /9 + Figurines /6",
+       "label_it": "Pigmenti /9 + Statuette /6"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 All Pigments found",
+       "label_it": "🏆 Tutti i pigmenti trovati"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 All Animal Figurines found",
+       "label_it": "🏆 Tutte le statuette di animali trovate"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Raccogli le due serie dello Squarcio con una mappa alla mano: 9 pigmenti e 6 statuette di animali.",
+     "loc_it": "Lo Squarcio — collezionabili",
+     "sid": "s064"
+    },
+    {
+     "text": "Machine counters: 15 Scorchers, 10 Frostclaws, 6 Fireclaws. Their sites respawn on fast travel and the Snowchants trials feed Frostclaw kills - finish the tallies before leaving the Cut.",
+     "loc": "The Cut — machine sites",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Killed 15 Scorchers",
+       "label_it": "🏆 15 Mastini uccisi"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Killed 10 Frostclaws",
+       "label_it": "🏆 10 Gelartigli uccisi"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Killed 6 Fireclaws",
+       "label_it": "🏆 6 Rogartigli uccisi"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Contatori di macchine: 15 Mastini, 10 Gelartigli, 6 Rogartigli. I loro siti si ripopolano col viaggio rapido e le sfide di Canti di neve alimentano le uccisioni di Gelartigli - chiudi i conti prima di lasciare lo Squarcio.",
+     "loc_it": "Lo Squarcio — siti delle macchine",
+     "sid": "s065"
+    },
+    {
+     "text": "New skills: unlock the whole Frozen Wilds tree (Traveler), then kill 5 enemies with Dismount Strike and use Machine Repair or Mount Repair on 5 different machine types.",
+     "loc": "Skill menu — Frozen Wilds tree",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 All Frozen Wilds Skills",
+       "label_it": "🏆 Tutte le abilità di The Frozen Wilds"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 5 Dismount Strikes",
+       "label_it": "🏆 5 Colpi in discesa"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 5 Machine Types Repaired",
+       "label_it": "🏆 5 tipi di Macchine riparati"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Nuove abilità: sblocca l'intero albero di The Frozen Wilds (Traveler), poi uccidi 5 nemici con Colpo in discesa e usa Ripara-Macchine o Ripara-destrieri su 5 tipi diversi di macchina.",
+     "loc_it": "Menu abilità — albero di The Frozen Wilds",
+     "sid": "s066"
+    },
+    {
+     "text": "The Cut's XP is enormous - level 50 lands during this block.",
+     "loc": "Level milestone",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Reached level 50",
+       "label_it": "🏆 Livello 50 raggiunto"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Gli XP dello Squarcio sono enormi - il livello 50 cade durante questo blocco.",
+     "loc_it": "Traguardo di livello",
+     "sid": "s067"
+    }
+   ],
+   "title_it": "Fase 9 — Lo Squarcio al 100%",
+   "note_it": "Tutto il resto dell'espansione: 16 tra missioni e commissioni, 9 torri di controllo, 15 collezionabili, tre contatori di macchine e un nuovo albero di abilità."
+  },
+  {
+   "title": "Phase 10 — Blazing Suns and the Machine Ledger",
+   "note": "Return south armed like a one-woman army. The trials that felt tight at level 20 fold at level 50 with Frozen Wilds weapons.",
+   "steps": [
+    {
+     "text": "Blazing Sun pass, ground one: replay all three trials at the Nora or Valleymeet ground until every mark burns. Learn each trial's one intended trick (the right override, the right trap line) instead of brute-forcing the timer.",
+     "loc": "Hunting Grounds — first Blazing Sun set",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Blazing Suns at one Ground",
+       "label_it": "🏆 Soli Ardenti in un terreno"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Passata dei Soli Ardenti, terreno uno: rigioca tutte e tre le sfide al terreno Nora o della Valle finché ogni marchio non brucia. Impara il trucco pensato per ogni sfida (l'Override giusto, la linea di trappole giusta) invece di forzare il timer.",
+     "loc_it": "Terreni di caccia — prima serie di Soli Ardenti",
+     "sid": "s068"
+    },
+    {
+     "text": "Blazing Suns at the remaining grounds: Valleymeet, Greatrun, Spurflints and Sun Furrows. Pre-place Tripcaster wires before triggering a trial and open with Concentration - both trophies (silver and GOLD) land on the last mark.",
+     "loc": "Hunting Grounds — all 5 base grounds",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 All Suns at all Grounds",
+       "label_it": "🏆 Tutti i Soli in tutti i terreni"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Blazing Suns at all Grounds",
+       "label_it": "🏆 Soli Ardenti in tutti i terreni"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Soli Ardenti nei terreni restanti: della Valle, Grancaccia, Grandi Denti e Solchi del Sole. Stendi i fili del lancia-trappole prima di avviare la sfida e apri in Concentrazione - entrambi i trofei (argento e ORO) cadono sull'ultimo marchio.",
+     "loc_it": "Terreni di caccia — tutti e 5 i terreni base",
+     "sid": "s069"
+    },
+    {
+     "text": "Cash in at the Hunters Lodge: hand your 15 Blazing Sun marks to Aidaba (side quest Weapons of the Lodge) and she gives you the Lodge War Bow, Lodge Ropecaster and Lodge Blast Sling for free - they carry the finale and the NG+ lap.",
+     "loc": "Meridian — Hunters Lodge (Aidaba)",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Incassa alla Loggia dei Cacciatori: consegna i tuoi 15 marchi Sole Ardente ad Aidaba (secondaria Armi della Loggia) e ti regala arco da guerra, lancia-corde e fionda esplosiva della Loggia - reggono il finale e il giro NG+.",
+     "loc_it": "Meridiana — Loggia dei Cacciatori (Aidaba)",
+     "sid": "s070"
+    },
+    {
+     "text": "Machine ledger: kill at least one of every species in the four classes - Acquisition, Recon, Combat and Transport. The Notebook shows exactly which entries are still white; hunt them down.",
+     "loc": "Notebook — machine classes",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 All Acquisition machines killed",
+       "label_it": "🏆 Tutte le Macchine da acquisizione uccise"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 All Recon machines killed",
+       "label_it": "🏆 Tutte le Macchine da ricognizione uccise"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 All Combat machines killed",
+       "label_it": "🏆 Tutte le Macchine da combattimento uccise"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 All Transport machines killed",
+       "label_it": "🏆 Tutte le Macchine da trasporto uccise"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Registro delle macchine: uccidi almeno un esemplare di ogni specie nelle quattro classi - acquisizione, ricognizione, combattimento e trasporto. Il Notebook mostra esattamente quali voci sono ancora bianche; vai a caccia.",
+     "loc_it": "Notebook — classi di macchine",
+     "sid": "s071"
+    },
+    {
+     "text": "Finish the catalogue: scan any species you never Focus-checked. Corruptor and Deathbringer come from story fights - if you scanned them on the way, this is already done.",
+     "loc": "Notebook — catalogue",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 All machines catalogued",
+       "label_it": "🏆 Tutte le Macchine catalogate"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Completa il catalogo: scansiona qualsiasi specie mai esaminata col Focus. Corruttore e Sterminatore arrivano dagli scontri di storia - se li hai scansionati strada facendo, è già fatta.",
+     "loc_it": "Notebook — catalogo",
+     "sid": "s072"
+    },
+    {
+     "text": "Tear the disc launchers off Thunderjaws with tearblast arrows - the Sun Furrows trial Thunderjaw respawns every attempt, so five heavy weapons take three fights at most.",
+     "loc": "Sun Furrows — Thunderjaw farming",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Tore off 5 heavy weapons",
+       "label_it": "🏆 5 armi pesanti staccate"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Stacca i lancia-dischi dai Divoratuono con le frecce dirompenti - il Divoratuono della sfida dei Solchi del Sole si ripresenta a ogni tentativo, quindi cinque armi pesanti sono tre scontri al massimo.",
+     "loc_it": "Solchi del Sole — farming di Divoratuono",
+     "sid": "s073"
+    },
+    {
+     "text": "Spend your banked skill points: every skill in the three base trees (Prowler, Brave, Forager). The Frozen Wilds tree is tracked by its own trophy and is already done.",
+     "loc": "Skill menu — base trees",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 All Skills learned",
+       "label_it": "🏆 Tutte le abilità apprese"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Spendi i punti abilità accumulati: ogni abilità nei tre alberi base (Prowler, Brave, Forager). L'albero di The Frozen Wilds ha il suo trofeo dedicato ed è già fatto.",
+     "loc_it": "Menu abilità — alberi base",
+     "sid": "s074"
+    }
+   ],
+   "title_it": "Fase 10 — Soli Ardenti e il registro delle macchine",
+   "note_it": "Torna a sud armata come un esercito in una persona sola. Le sfide che a livello 20 sembravano strette, a livello 50 con le armi di The Frozen Wilds si piegano."
+  },
+  {
+   "title": "Phase 11 — Collectible Closeout",
+   "note": "Four map sweeps with the vendor maps active. None are missable - this is pure checklist work, best done while podcasting.",
+   "steps": [
+    {
+     "text": "Collect all 12 Vantage datapoints and listen to each - the maps mark them; most sit on climbable landmarks.",
+     "loc": "Open world — Vantages (12)",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Vantages /12",
+       "label_it": "Osservatori /12"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 All Vantages found",
+       "label_it": "🏆 Tutti gli osservatori trovati"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Raccogli tutti e 12 gli osservatori e ascolta ciascuno - le mappe li segnano; quasi tutti stanno su punti di riferimento scalabili.",
+     "loc_it": "Mondo aperto — osservatori (12)",
+     "sid": "s075"
+    },
+    {
+     "text": "Collect all 30 Metal Flowers - the biggest set; sweep region by region with the vendor map.",
+     "loc": "Open world — Metal Flowers (30)",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Flowers /30",
+       "label_it": "Fiori /30"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 All Metal Flowers found",
+       "label_it": "🏆 Tutti i fiori di metallo trovati"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Raccogli tutti e 30 i fiori di metallo - la serie più numerosa; spazza regione per regione con la mappa del venditore.",
+     "loc_it": "Mondo aperto — fiori di metallo (30)",
+     "sid": "s076"
+    },
+    {
+     "text": "Collect all 6 Banuk Figures - each one caps a marked climbing route; follow the painted handholds.",
+     "loc": "Open world — Banuk Figures (6)",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Figures /6",
+       "label_it": "Statuette /6"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 All Banuk Figures found",
+       "label_it": "🏆 Tutte le statuette Banuk trovate"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Raccogli tutte e 6 le statuette Banuk - ognuna corona una via di arrampicata segnata; segui gli appigli dipinti.",
+     "loc_it": "Mondo aperto — statuette Banuk (6)",
+     "sid": "s077"
+    },
+    {
+     "text": "Collect all 12 Ancient Vessels - and sell the doubles of everything to fund your final loadout.",
+     "loc": "Open world — Ancient Vessels (12)",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Vessels /12",
+       "label_it": "Recipienti /12"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 All Ancient Vessels found",
+       "label_it": "🏆 Tutti i recipienti antichi trovati"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Raccogli tutti e 12 i recipienti antichi - e vendi i doppioni di tutto per finanziare il loadout finale.",
+     "loc_it": "Mondo aperto — recipienti antichi (12)",
+     "sid": "s078"
+    }
+   ],
+   "title_it": "Fase 11 — Chiusura collezionabili",
+   "note_it": "Quattro passate di mappa con le mappe del venditore attive. Niente è mancabile - è puro lavoro da checklist, perfetto con un podcast in sottofondo."
+  },
+  {
+   "title": "Phase 12 — Endgame: Zero Dawn, Shield-Weaver, Platinum",
+   "note": "The story's final act, the fifth power cell, the armor of the ancients and the last audit before the point of no return.",
+   "steps": [
+    {
+     "text": "Deep Secrets of the Earth: descend into the Zero Dawn facility and learn what actually happened.",
+     "loc": "Main quest — Deep Secrets of the Earth",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Discovered the truth",
+       "label_it": "🏆 Hai scoperto la verità"
+      }
+     ],
+     "trophy": true,
+     "text_it": "I segreti più profondi della Terra: scendi nella struttura di Zero Dawn e scopri cosa è successo davvero.",
+     "loc_it": "Missione principale — I segreti più profondi della Terra",
+     "sid": "s079"
+    },
+    {
+     "text": "The Terror of the Sun: survive the Sun-Ring - the Behemoth fight rewards patience and the Ropecaster, not aggression.",
+     "loc": "Main quest — The Terror of the Sun",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Il Terrore del Sole: sopravvivi al Sun-Ring - lo scontro col Colosso premia la pazienza e il lancia-corde, non l'aggressività.",
+     "loc_it": "Missione principale — Il Terrore del Sole",
+     "sid": "s080"
+    },
+    {
+     "text": "Traitor's Bounty then Queen's Gambit: Vanasha's plan to get Uthid, Itamen and the dowager queen clear of the Shadow Carja unlocked when you reached Sunfall - it is the last optional ally chain, so close it the moment the Sun-Ring lets you back into free roam.",
+     "loc": "Side quests — Traitor's Bounty → Queen's Gambit",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Aided the defectors",
+       "label_it": "🏆 Disertori aiutati"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Caccia al traditore e poi Fuga di una regina: il piano di Vanasha per portare Uthid, Itamen e la regina vedova lontano dai Carja delle Ombre si è sbloccato quando hai raggiunto Tramonto - è l'ultima catena alleata opzionale, chiudila appena il Sun-Ring ti restituisce il free roam.",
+     "loc_it": "Secondarie — Caccia al traditore → Fuga di una regina",
+     "sid": "s081"
+    },
+    {
+     "text": "The Heart of the Nora: break the siege of All-Mother mountain and drive the Eclipse out.",
+     "loc": "Main quest — The Heart of the Nora",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Broke the siege of All-Mother",
+       "label_it": "🏆 Sventato l'assedio alla Madre"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Il cuore dei Nora: spezza l'assedio alla montagna della Madre e scaccia l'Eclissi.",
+     "loc_it": "Missione principale — Il cuore dei Nora",
+     "sid": "s082"
+    },
+    {
+     "text": "The Mountain That Fell: climb through GAIA Prime and take the master override. Pick up Power Cell 5/5 on the ledge below the descent path BEFORE finishing the area - the site stays revisitable, but do not make future-you climb it twice.",
+     "loc": "Main quest — The Mountain That Fell (GAIA Prime)",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Power Cell 5/5",
+       "label_it": "Power Cell 5/5"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Recovered a powerful weapon",
+       "label_it": "🏆 Arma potente recuperata"
+      }
+     ],
+     "trophy": true,
+     "text_it": "La Montagna che cadde: risali GAIA Prime e prendi l'Override principale. Raccogli la Power Cell 5/5 sulla sporgenza sotto il sentiero della discesa PRIMA di chiudere l'area - il sito resta rivisitabile, ma non costringere il te del futuro a scalarlo due volte.",
+     "loc_it": "Missione principale — La Montagna che cadde (GAIA Prime)",
+     "sid": "s083"
+    },
+    {
+     "text": "Take the five Power Cells to the Ancient Armory, solve the two dial-lock puzzles and claim the Shield-Weaver - the force-field outfit that trivializes the finale and the Ultra Hard lap.",
+     "loc": "Ancient Armory — Shield-Weaver",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Got the Shield-Weaver outfit",
+       "label_it": "🏆 Abito Tessitrice di scudi ottenuto"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Porta le cinque Power Cell all'Antica armeria, risolvi i due enigmi a manopole e ritira la Tessitrice di scudi - l'abito col campo di forza che banalizza il finale e il giro a Ultra difficile.",
+     "loc_it": "Antica armeria — Tessitrice di scudi",
+     "sid": "s084"
+    },
+    {
+     "text": "LAST CALL on the missable: open the quest log and verify every ally quest is complete - the Phase 6 block plus Traitor's Bounty → Queen's Gambit. The hard deadline is resting during The Looming Shadow; miss it and the post-credits rewind still lets you mop up and replay the quest, but do not plan on needing it.",
+     "loc": "Quest log — final ally audit",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ All allies joined",
+       "label_it": "⚠ Tutti gli alleati hanno partecipato"
+      }
+     ],
+     "trophy": false,
+     "text_it": "ULTIMA CHIAMATA sul mancabile: apri il registro missioni e verifica che ogni missione alleata sia completa - il blocco della Fase 6 più Caccia al traditore → Fuga di una regina. La scadenza dura è riposare durante L'ombra incombente; se la manchi, il rewind dopo i titoli di coda ti lascia comunque recuperare e rigiocare la missione, ma non pianificare di averne bisogno.",
+     "loc_it": "Registro missioni — censimento finale alleati",
+     "sid": "s085"
+    },
+    {
+     "text": "The Looming Shadow: speak with every gathered ally in Meridian, then rest - the trophy lands in the closing cutscene as your recruits assemble.",
+     "loc": "Main quest — The Looming Shadow",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 All allies joined",
+       "label_it": "🏆 Tutti gli alleati hanno partecipato"
+      }
+     ],
+     "trophy": true,
+     "text_it": "L'ombra incombente: parla con ogni alleato radunato a Meridiana, poi riposa - il trofeo arriva nella scena di chiusura, mentre le tue reclute si schierano.",
+     "loc_it": "Missione principale — L'ombra incombente",
+     "sid": "s086"
+    },
+    {
+     "text": "The Face of Extinction: the final battle. Shield-Weaver on, Ropecaster and tearblast for the Deathbringers, and let your allies tank. The gold pops at the end of the fight.",
+     "loc": "Main quest — The Face of Extinction",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Ended the war machine threat",
+       "label_it": "🏆 Fine della minaccia delle Macchine da guerra"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Il Volto dell'Estinzione: la battaglia finale. Tessitrice di scudi addosso, lancia-corde e frecce dirompenti per gli Sterminatori, e lascia che gli alleati assorbano i colpi. L'oro scatta a fine scontro.",
+     "loc_it": "Missione principale — Il Volto dell'Estinzione",
+     "sid": "s087"
+    },
+    {
+     "text": "🏆 All trophies obtained - the PLATINUM pops here if the rest of the base list is in (the Frozen Wilds and New Game+ packs are not required for it). After the credits the game rewinds to a save from just before The Looming Shadow, so nothing is lost.",
+     "loc": "Platinum — All trophies obtained",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 All trophies obtained",
+       "label_it": "🏆 Tutti i trofei"
+      }
+     ],
+     "trophy": true,
+     "text_it": "🏆 Tutti i trofei - il PLATINO scatta qui se il resto della lista base è dentro (i pacchetti The Frozen Wilds e New Game+ non gli servono). Dopo i titoli di coda il gioco torna a un salvataggio appena precedente a L'ombra incombente, quindi non si perde nulla.",
+     "loc_it": "Platino — Tutti i trofei",
+     "sid": "s088"
+    }
+   ],
+   "title_it": "Fase 12 — Endgame: Zero Dawn, Tessitrice di scudi, platino",
+   "note_it": "L'atto finale della storia, la quinta Power Cell, l'armatura degli antichi e l'ultimo censimento prima del punto di non ritorno."
+  },
+  {
+   "title": "Phase 13 — New Game+ on Ultra Hard: the 100% Lap",
+   "note": "Two trophies and roughly 10-15 hours of story-only play. One Ultra Hard run covers both - that is the whole trick.",
+   "steps": [
+    {
+     "text": "Start New Game+ from your finished save and pick ULTRA HARD at the prompt - finishing NG+ on Ultra Hard pops both NG+ trophies at once, so any lower pick costs you a third playthrough.",
+     "loc": "New Game+ — difficulty select",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ Pick Ultra Hard here",
+       "label_it": "⚠ Qui scegli Ultra difficile"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Avvia il New Game+ dal salvataggio completato e al prompt scegli ULTRA DIFFICILE - finire il NG+ a Ultra difficile sblocca insieme entrambi i trofei del New Game+, quindi qualsiasi scelta più bassa ti costa una terza partita.",
+     "loc_it": "New Game+ — selezione difficoltà",
+     "sid": "s089"
+    },
+    {
+     "text": "Story-only sprint: ignore side content and collectibles - they are done. Your levels, skills, weapons and the Shield-Weaver all carry over.",
+     "loc": "NG+ — main quests only",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Sprint di sola storia: ignora secondarie e collezionabili - sono fatti. Livelli, abilità, armi e la Tessitrice di scudi si trasferiscono tutti.",
+     "loc_it": "NG+ — solo missioni principali",
+     "sid": "s090"
+    },
+    {
+     "text": "Ultra Hard discipline: machines hit far harder and your presence is noticed sooner. Fight from range, re-lay trap lines before every set piece, keep the potion pouch full, and let overridden machines take the aggro.",
+     "loc": "NG+ — Ultra Hard tactics",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Disciplina da Ultra difficile: le macchine picchiano molto più forte e ti notano prima. Combatti dalla distanza, ristendi le linee di trappole prima di ogni scontro fisso, tieni piena la sacca delle pozioni e lascia l'aggro alle macchine in Override.",
+     "loc_it": "NG+ — tattiche per Ultra difficile",
+     "sid": "s091"
+    },
+    {
+     "text": "Level 60 (the raised cap with The Frozen Wilds installed) falls naturally during the lap if the Cut's XP did not already get you there.",
+     "loc": "NG+ — level milestone",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Reached Level 60",
+       "label_it": "🏆 Livello 60 raggiunto"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Il livello 60 (il tetto alzato con The Frozen Wilds installato) cade da solo durante il giro, se gli XP dello Squarcio non ti ci hanno già portato.",
+     "loc_it": "NG+ — traguardo di livello",
+     "sid": "s092"
+    },
+    {
+     "text": "Finish the NG+ story on Ultra Hard: both New Game+ trophies land on the final mission - 79 of 79, the Remastered is done.",
+     "loc": "NG+ — The Face of Extinction",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 New Game+ Completed",
+       "label_it": "🏆 Nuova partita+ completata"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Ultra Hard Completed",
+       "label_it": "🏆 Ultra difficile completata"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Finisci la storia del NG+ a Ultra difficile: entrambi i trofei del New Game+ cadono sulla missione finale - 79 su 79, la Remastered è chiusa.",
+     "loc_it": "NG+ — Il Volto dell'Estinzione",
+     "sid": "s093"
+    }
+   ],
+   "title_it": "Fase 13 — New Game+ a Ultra difficile: il giro del 100%",
+   "note_it": "Due trofei e circa 10-15 ore di sola storia. Una run a Ultra difficile li copre entrambi - il trucco è tutto qui."
+  }
+ ],
+ "build_bullets": [
+  {
+   "h": "Core damage",
+   "t": "Concentration plus the Hunter and Sharpshot bows - precision shots on glowing components beat raw damage everywhere."
+  },
+  {
+   "h": "Openers",
+   "t": "Pre-lay Tripcaster shock wire before every hard fight; a stunned machine is a free critical."
+  },
+  {
+   "h": "Crowd control",
+   "t": "The Ropecaster ties down Thunderjaws, Stormbirds and Behemoths - boring, safe, and exactly why it works."
+  },
+  {
+   "h": "Elements",
+   "t": "Fire and Freeze on machines weak to them feed the 10 Vulnerable machine kills trophy; Shock is still your best opener, it just does not count for that trophy."
+  },
+  {
+   "h": "Overrides",
+   "t": "Clear the four Cauldrons early - a ridden Broadhead is fast travel, and an overridden Ravager is a free ally in every zone."
+  },
+  {
+   "h": "Frozen Wilds upgrades",
+   "t": "Varga's improved Stormslinger, Icerail and Forgefire are the best specials in the game - the route grabs them before the base endgame."
+  },
+  {
+   "h": "Endgame armor",
+   "t": "Five Power Cells buy the Shield-Weaver outfit: a recharging force field that carries the finale and the Ultra Hard NG+ lap."
+  }
+ ],
+ "playthroughs_it": "1 partita completa a qualsiasi difficoltà (per il platino bastano i 56 trofei della lista base - non esistono trofei di difficoltà) con The Frozen Wilds chiuso nella stessa run, + 1 run New Game+ più corta, di sola storia, a Ultra difficile per i due trofei del NG+. La route copre tutti e 79 i trofei. Nessun trofeo si sblocca da solo importando un salvataggio PS4: parti da una partita nuova.",
+ "hours_it": "55-75 ore",
+ "build_summary_it": "Trapper-cecchino difensivo. Concentrazione più arco da caccia e arco di precisione fanno il danno; il lancia-trappole apre ogni scontro difficile con fili elettrici già stesi; il lancia-corde inchioda a terra qualsiasi cosa abbastanza grossa da farti paura; gli stati elementali (fuoco, gelo, fulmine) alimentano il trofeo delle uccisioni su Macchine vulnerabili e raddoppiano le tue finestre di danno. Usa l'Override su ciò che puoi cavalcare, combatti dall'erba alta, non incassare mai a viso aperto. Endgame: le armi della Loggia dopo la spinta ai Soli Ardenti, le armi migliorate di The Frozen Wilds (Lanciatuono, Geliera, Forgiafuoco) da Varga, e l'abito Tessitrice di scudi per il finale e il giro NG+ a Ultra difficile.",
+ "golden_rules_it": [
+  "Tutti gli alleati hanno partecipato è l'unico trofeo che puoi perdere: ogni missione alleata opzionale va chiusa PRIMA di riposare durante L'ombra incombente - l'abitudine sicura è finirle prima ancora di iniziare quella missione. Le catene opzionali: la linea della Loggia dei Cacciatori fino a Faucirosse (Talanah), Caccia al traditore → Fuga di una regina (Uthid - si sblocca solo a Tramonto, durante I segreti più profondi della Terra), La vendetta di una figlia (Nakoa), Rocca Pietrasole (Janeva), Un cumulo di guai (Petra), più Un attimo di pace, Onore ai caduti e Sole e ombra. Sona ed Erend si uniscono con le missioni principali obbligatorie. Male che vada, il rewind dopo i titoli di coda ti riporta prima de L'ombra incombente per recuperare.",
+  "Nella lista base non ci sono trofei di difficoltà: gioca la run principale alla difficoltà che ti diverte. Tieni Ultra difficile per il NG+ - una sola run NG+ a Ultra difficile sblocca entrambi i trofei del New Game+ in un colpo.",
+  "Non selezionare mai Ultra difficile alla prima partita - una volta scelta, su quel salvataggio non si può più abbassare.",
+  "Per il platino bastano i 56 trofei della lista base. I pacchetti The Frozen Wilds (21 trofei) e New Game+ (2 trofei) sono extra - la route li chiude comunque, e le armi dello Squarcio rendono molto più facile l'endgame del gioco base.",
+  "Compra le quattro mappe dei collezionabili dal venditore di mappe di Meridiana appena arrivi - segnano ogni osservatorio, fiore di metallo, statuetta Banuk e recipiente antico, e costano due spicci.",
+  "I trofei NON si sbloccano da soli importando un salvataggio PS4: nella Remastered va guadagnato tutto da capo, quindi comincia con una partita nuova."
+ ],
+ "stat_table_it": {
+  "note": "Horizon non ha statistiche da build - questa tabella traccia livello e loadout. I livelli presuppongono che tu raccolga le secondarie man mano che compaiono; The Frozen Wilds da solo vale diversi livelli e il tetto è 60 con l'espansione installata.",
+  "columns": [
+   "Fase",
+   "Livello",
+   "Checkpoint del loadout",
+   "Traguardo"
+  ],
+  "rows": [
+   [
+    "L'Abbraccio (F1-2)",
+    "1-12",
+    "Arco da caccia Carja, lancia-trappole, prime bobine",
+    "Prova vinta; primo Collolungo, Calderone SIGMA, sfide dei terreni Nora"
+   ],
+   [
+    "Verso ovest (F3-4)",
+    "12-25",
+    "Arco di precisione delle Ombre + lancia-corde",
+    "Meridiana raggiunta; catena di Erend chiusa, linea della Loggia avviata"
+   ],
+   [
+    "Mondo aperto (F5-6)",
+    "25-32",
+    "Loadout delle Ombre completo, mod viola",
+    "Tutti e 4 i Calderoni, campi, zone; missioni alleate in cassaforte (la catena di Uthid aspetta Tramonto)"
+   ],
+   [
+    "Il passato antico (F7)",
+    "32-40",
+    "Scorta di frecce dirompenti",
+    "Fine del Creatore, il Tumulo, rete dell'Eclissi giù"
+   ],
+   [
+    "Lo Squarcio (F8-9)",
+    "35-50",
+    "Lanciatuono / Geliera / Forgiafuoco migliorati",
+    "Storia di The Frozen Wilds + 100% dello Squarcio"
+   ],
+   [
+    "Pulizia (F10-11)",
+    "48-50",
+    "Armi della Loggia",
+    "Oro dei Soli Ardenti + tutte e quattro le serie di collezionabili"
+   ],
+   [
+    "Finale (F12)",
+    "50",
+    "Abito Tessitrice di scudi",
+    "Tutti gli alleati, battaglia finale, PLATINO"
+   ],
+   [
+    "NG+ Ultra difficile (F13)",
+    "50-60",
+    "Tutto si trasferisce",
+    "Entrambi i trofei NG+ + Livello 60 raggiunto"
+   ]
+  ]
+ },
+ "build_bullets_it": [
+  {
+   "h": "Danno di base",
+   "t": "Concentrazione più arco da caccia e arco di precisione - i colpi mirati alle componenti luminose battono il danno grezzo ovunque."
+  },
+  {
+   "h": "Aperture",
+   "t": "Stendi i fili elettrici del lancia-trappole prima di ogni scontro difficile; una macchina stordita è un critico gratis."
+  },
+  {
+   "h": "Controllo",
+   "t": "Il lancia-corde inchioda a terra Divoratuono, Avistempesta e Colossi - noioso, sicuro, ed è esattamente il motivo per cui funziona."
+  },
+  {
+   "h": "Elementi",
+   "t": "Fuoco e gelo sulle macchine che vi sono deboli alimentano il trofeo delle 10 uccisioni su Macchine vulnerabili; il fulmine resta la tua apertura migliore, solo non conta per quel trofeo."
+  },
+  {
+   "h": "Override",
+   "t": "Chiudi presto i quattro Calderoni - un Cornalunghe cavalcato è viaggio rapido, e un Razziatore in Override è un alleato gratis in ogni zona."
+  },
+  {
+   "h": "Upgrade di The Frozen Wilds",
+   "t": "Lanciatuono, Geliera e Forgiafuoco migliorati da Varga sono le migliori armi speciali del gioco - la route li prende prima dell'endgame base."
+  },
+  {
+   "h": "Armatura endgame",
+   "t": "Cinque Power Cell comprano l'abito Tessitrice di scudi: un campo di forza che si ricarica, e regge il finale e il giro NG+ a Ultra difficile."
+  }
+ ],
+ "glossary_it": {
+  "All trophies obtained": "Tutti i trofei",
+  "Followed Rost's teachings": "Insegnamenti di Rost seguiti",
+  "Defeated the Sawtooth": "Secodonte sconfitto",
+  "First Modification": "Prima modifica",
+  "Triumphed in the Proving": "Trionfo nella Prova",
+  "Stealth killed 10 machines": "Uccisione furtiva su 10 Macchine",
+  "First Corrupted Zone cleared": "Prima zona corrotta ripulita",
+  "First Tallneck Overridden": "Primo Override su Collolungo",
+  "First Bandit Camp cleared": "Primo campo di banditi sgomberato",
+  "First Core Overridden": "Primo Override su nucleo",
+  "All Suns at one Ground": "Tutti i Soli in un terreno",
+  "All Suns at all Grounds": "Tutti i Soli in tutti i terreni",
+  "Blazing Suns at one Ground": "Soli Ardenti in un terreno",
+  "Blazing Suns at all Grounds": "Soli Ardenti in tutti i terreni",
+  "Downed 23 Grazer dummies": "23 Cervaviti-fantoccio abbattuti",
+  "Victorious with the War-Chief": "Hai vinto col Capoguerra",
+  "Reached level 10": "Livello 10 raggiunto",
+  "Reached level 25": "Livello 25 raggiunto",
+  "Reached level 40": "Livello 40 raggiunto",
+  "Reached level 50": "Livello 50 raggiunto",
+  "Reached Level 60": "Livello 60 raggiunto",
+  "3 Strikes From Above": "3 Colpi dall'alto",
+  "Fought back the corruption": "Hai sradicato la corruzione",
+  "First Vantage found": "Primo osservatorio trovato",
+  "First Metal Flower found": "Primo fiore di metallo trovato",
+  "First Banuk Figure found": "Prima statuetta Banuk trovata",
+  "First Ancient Vessel found": "Primo recipiente antico trovato",
+  "All Vantages found": "Tutti gli osservatori trovati",
+  "All Metal Flowers found": "Tutti i fiori di metallo trovati",
+  "All Banuk Figures found": "Tutte le statuette Banuk trovate",
+  "All Ancient Vessels found": "Tutti i recipienti antichi trovati",
+  "Saved Meridian from its foe": "Meridiana salvata dal suo nemico",
+  "10 Vulnerable machine kills": "10 uccisioni su Macchine vulnerabili",
+  "Tore off 10 components": "10 componenti staccate",
+  "Tore off 5 heavy weapons": "5 armi pesanti staccate",
+  "All Cores Overridden": "Override su tutti i nuclei",
+  "7 types of machine overridden": "Override su 7 tipi di Macchine",
+  "All Tallnecks Overridden": "Override su tutti i Collilunghi",
+  "Cleared all the Bandit Camps": "Tutti i campi di banditi sgomberati",
+  "Headshot 30 human enemies": "30 colpi alla testa su nemici umani",
+  "All Corrupted Zones cleared": "Tutte le zone corrotte ripulite",
+  "Hunted Redmaw with Talanah": "Faucirosse cacciato con Talanah",
+  "Learned of the ancient past": "Hai scoperto i segreti del passato",
+  "Crashed the Eclipse network": "Rete dell'Eclissi distrutta",
+  "Discovered the truth": "Hai scoperto la verità",
+  "Broke the siege of All-Mother": "Sventato l'assedio alla Madre",
+  "Recovered a powerful weapon": "Arma potente recuperata",
+  "Got the Shield-Weaver outfit": "Abito Tessitrice di scudi ottenuto",
+  "All allies joined": "Tutti gli alleati hanno partecipato",
+  "Ended the war machine threat": "Fine della minaccia delle Macchine da guerra",
+  "All Skills learned": "Tutte le abilità apprese",
+  "All machines catalogued": "Tutte le Macchine catalogate",
+  "All Acquisition machines killed": "Tutte le Macchine da acquisizione uccise",
+  "All Recon machines killed": "Tutte le Macchine da ricognizione uccise",
+  "All Combat machines killed": "Tutte le Macchine da combattimento uccise",
+  "All Transport machines killed": "Tutte le Macchine da trasporto uccise",
+  "New Game+ Completed": "Nuova partita+ completata",
+  "Ultra Hard Completed": "Ultra difficile completata",
+  "Took the Shaman's Path": "Via dello sciamano seguita",
+  "Won the Werak Challenge": "Sfida per il werak vinta",
+  "Completed the Second Expedition": "Seconda spedizione completata",
+  "Conquered the Mountain": "Montagna conquistata",
+  "Drained the Flood": "Allagamento prosciugato",
+  "Won Ikrie's Challenge": "Sfida di Ikrie vinta",
+  "Fully Improved Weapons": "Armi totalmente migliorate",
+  "All Quests completed": "Tutte le missioni completate",
+  "All Activities completed": "Tutte le attività completate",
+  "First Spear Modification": "Prima modifica per la lancia",
+  "5 Dismount Strikes": "5 Colpi in discesa",
+  "5 Machine Types Repaired": "5 tipi di Macchine riparati",
+  "Killed 15 Scorchers": "15 Mastini uccisi",
+  "Killed 10 Frostclaws": "10 Gelartigli uccisi",
+  "Killed 6 Fireclaws": "6 Rogartigli uccisi",
+  "All Control Towers disabled": "Tutte le torri di controllo disattivate",
+  "All Pigments found": "Tutti i pigmenti trovati",
+  "All Animal Figurines found": "Tutte le statuette di animali trovate",
+  "First Bluegleam Trade": "Primo scambio di blubagliore",
+  "All Frozen Wilds Skills": "Tutte le abilità di The Frozen Wilds",
+  "Sawtooth": "Secodonte",
+  "Grazer": "Cervavito",
+  "Strider": "Corsiero",
+  "Broadhead": "Cornalunghe",
+  "Charger": "Ferrariete",
+  "Ravager": "Razziatore",
+  "Longleg": "Longipede",
+  "Shell-Walker": "Arcapode",
+  "Snapmaw": "Celermorso",
+  "Trampler": "Cheratauro",
+  "Glinthawk": "Smeriglio",
+  "Stalker": "Inseguitore",
+  "Behemoth": "Colosso",
+  "Bellowback": "Manticerio",
+  "Thunderjaw": "Divoratuono",
+  "Stormbird": "Avistempesta",
+  "Rockbreaker": "Spezzaroccia",
+  "Corruptor": "Corruttore",
+  "Deathbringer": "Sterminatore",
+  "Scorcher": "Mastino",
+  "Frostclaw": "Gelartiglio",
+  "Fireclaw": "Rogartiglio",
+  "Tallneck": "Collolungo",
+  "A Gift from the Past": "Un dono dal passato",
+  "Lessons of the Wild": "La lezione della Natura",
+  "The Point of the Spear": "La punta della lancia",
+  "The Proving": "La Prova",
+  "The Womb of the Mountain": "Il ventre della montagna",
+  "A Seeker at the Gates": "Una Cercatrice alle porte",
+  "The War-Chief's Trail": "La via del Capoguerra",
+  "Revenge of the Nora": "La vendetta dei Nora",
+  "The City of the Sun": "La città del Sole",
+  "The Field of the Fallen": "Il campo dei caduti",
+  "Into the Borderlands": "Le terre di confine",
+  "The Sun Shall Fall": "Il Sole cadrà",
+  "Hunters' Blind": "Rifugio di caccia",
+  "Hunting for the Lodge": "A Caccia per la Loggia",
+  "Deadliest Game": "La preda più pericolosa",
+  "Redmaw": "Faucirosse",
+  "A Daughter's Vengeance": "La vendetta di una figlia",
+  "Sunstone Rock": "Rocca Pietrasole",
+  "Heap of Trouble": "Un cumulo di guai",
+  "A Moment's Peace": "Un attimo di pace",
+  "Honor the Fallen": "Onore ai caduti",
+  "Sun and Shadow": "Sole e ombra",
+  "Traitor's Bounty": "Caccia al traditore",
+  "Queen's Gambit": "Fuga di una regina",
+  "Maker's End": "Fine del Creatore",
+  "The Grave-Hoard": "Il Tumulo",
+  "To Curse the Darkness": "Bandire l'oscurità",
+  "Deep Secrets of the Earth": "I segreti più profondi della Terra",
+  "The Terror of the Sun": "Il Terrore del Sole",
+  "The Heart of the Nora": "Il cuore dei Nora",
+  "The Mountain That Fell": "La Montagna che cadde",
+  "The Looming Shadow": "L'ombra incombente",
+  "The Face of Extinction": "Il Volto dell'Estinzione",
+  "Weapons of the Lodge": "Armi della Loggia",
+  "Ancient Armory": "Antica armeria",
+  "The Shaman's Path": "La via dello sciamano",
+  "A Secret Shared": "Un segreto condiviso",
+  "For the Werak": "Per il Werak",
+  "Firebreak": "Firebreak",
+  "The Forge of Winter": "La forgia dell'inverno",
+  "The Survivor": "La sopravvissuta",
+  "Waterlogged": "Sott'acqua",
+  "Frontier Justice": "Giustizia di frontiera",
+  "The Hunters Three": "I tre cacciatori",
+  "The Claws Beneath": "L'orrore dal profondo",
+  "Out of the Forge": "Fuori dalla forgia",
+  "The Embrace": "L'Abbraccio",
+  "Nora Sacred Land": "Terra Sacra",
+  "Mother's Heart": "Cuore della Madre",
+  "Mother's Watch": "Veglia della Madre",
+  "All-Mother": "la Madre",
+  "Devil's Thirst": "Sete del Demone",
+  "Devil's Grief": "Pena del Demone",
+  "Daytower": "Torre Giorno",
+  "Meridian": "Meridiana",
+  "Sunfall": "Tramonto",
+  "Free Heap": "Cumulo Libero",
+  "GAIA Prime": "GAIA Prime",
+  "The Cut": "Lo Squarcio",
+  "Longnotch": "Lungacrepa",
+  "Song's Edge": "Ultimo Canto",
+  "Snowchants": "Canti di neve",
+  "Thunder's Drum": "Rombo di tuono",
+  "Greycatch": "Predagrigia",
+  "Frostfigures": "i Gelidi",
+  "Stone Yield": "Cavaroccia",
+  "Copper Deeps": "Muro di Rame",
+  "Sun-Steps": "Scale del Sole",
+  "Rustwash": "Acque Rosse",
+  "Spearshafts": "Punte di Freccia",
+  "Nora Hunting Grounds": "Terreni di caccia Nora",
+  "Valleymeet Hunting Grounds": "Terreni di caccia della Valle",
+  "Greatrun Hunting Grounds": "Terreni di caccia di Grancaccia",
+  "Spurflints Hunting Grounds": "Terreni di caccia dei Grandi Denti",
+  "Sun Furrows Hunting Grounds": "Terreni di caccia dei Solchi del Sole",
+  "Hunter Bow": "arco da caccia",
+  "Sharpshot Bow": "arco di precisione",
+  "War Bow": "arco da guerra",
+  "Tripcaster": "lancia-trappole",
+  "Ropecaster": "lancia-corde",
+  "Blast Sling": "fionda esplosiva",
+  "Stormslinger": "Lanciatuono",
+  "Icerail": "Geliera",
+  "Forgefire": "Forgiafuoco",
+  "Lodge War Bow": "arco da guerra della Loggia",
+  "Lodge Ropecaster": "lancia-corde della Loggia",
+  "Lodge Blast Sling": "fionda esplosiva della Loggia",
+  "tearblast arrows": "frecce dirompenti",
+  "hardpoint arrows": "frecce devastanti",
+  "fire arrows": "frecce incendiarie",
+  "disc launcher": "lancia-dischi",
+  "Shadow (weapon tier)": "delle Ombre",
+  "Bluegleam": "blubagliore",
+  "Shield-Weaver": "Tessitrice di scudi",
+  "coil": "bobina",
+  "weave": "tessuto",
+  "Blaze": "Vampa",
+  "Focus": "Focus",
+  "Override": "Override",
+  "Cauldron": "Calderone",
+  "Corrupted Zone": "zona corrotta",
+  "Bandit Camp": "campo di banditi",
+  "Hunting Ground": "terreno di caccia",
+  "Vantage": "osservatorio",
+  "Metal Flower": "fiore di metallo",
+  "Banuk Figure": "statuetta Banuk",
+  "Ancient Vessel": "recipiente antico",
+  "Control Tower": "torre di controllo",
+  "Blazing Sun": "Sole Ardente",
+  "Half Sun": "Mezzo Sole",
+  "Grazer dummies": "fantocci dei Cervaviti",
+  "Pigments": "pigmenti",
+  "Animal Figurines": "statuette di animali",
+  "Hunters Lodge": "Loggia dei Cacciatori",
+  "War-Chief": "Capoguerra",
+  "Seeker": "Cercatrice",
+  "Eclipse": "Eclissi",
+  "Shadow Carja": "Carja delle Ombre",
+  "werak": "werak",
+  "Silent Strike": "Colpo silenzioso",
+  "Concentration": "Concentrazione",
+  "Strike from Above": "Colpo dall'alto",
+  "Dismount Strike": "Colpo in discesa",
+  "Machine Repair": "Ripara-Macchine",
+  "Mount Repair": "Ripara-destrieri",
+  "New Game+": "Nuova partita+",
+  "Ultra Hard": "Ultra difficile"
+ },
+ "unverified_it": [
+  "Power Cell (le 5 batterie per la Tessitrice di scudi) — 'cellula di energia' non compare in NESSUNA fonte italiana; le guide maggiori (Everyeye, GamerBrain, guida Steam ITA) scrivono tutte 'batterie', ma nessuna prova il nome esatto dell'oggetto in gioco: lasciato in inglese",
+  "Geared Up (le tre commissioni di Varga) — fonti in conflitto: la wiki fandom scrive 'Attrezzato: …', la guida VG247.it 'Miglioramento: …'; nessuna registrazione di gioco a dirimere, lasciato in inglese",
+  "Sun-Ring (l'arena di Tramonto) — nome italiano ufficiale non trovato; il testo lo lascia in inglese",
+  "Notebook (il menu del catalogo macchine) — nome italiano del menu non verificato",
+  "Prowler / Brave / Forager (alberi delle abilità base) — nessuna fonte affidabile per i nomi italiani; una guida amatoriale li traduce ma contraddice la terminologia ufficiale dei trofei",
+  "Traveler (albero abilità di The Frozen Wilds) — nome italiano non verificato",
+  "Critical Hit (abilità) — resa italiana trovata solo su una guida amatoriale, non sufficiente",
+  "Lure Call (abilità) — le fonti si contraddicono ('Richiamo' vs 'Chiamata di richiamo'); lasciato in inglese",
+  "CYAN (l'IA dello Squarcio) — la localizzazione italiana rinomina altre IA (HADES → ADE, HEPHAESTUS → EFESTO), quindi CYAN potrebbe avere una resa diversa: non verificata, lasciato CYAN",
+  "All-Mother Mountain — reso descrittivamente 'la montagna della Madre' sulla base dei testi ufficiali dei trofei ('assedio alla Madre', 'montagna sacra'); il nome completo del luogo non è verificato"
+ ]
+}

@@ -11,6 +11,27 @@ la numerazione segue [Semantic Versioning](https://semver.org/lang/it/).
 
 ## [Non rilasciato]
 
+## [5.1.0] - 2026-08-18
+
+### Aggiunto
+- **Due giochi nuovi: Sekiro: Shadows Die Twice e Horizon Zero Dawn Remastered.**
+  Sekiro: 104 passi in 15 fasi, tutti e 34 i trofei — i quattro finali in due run
+  con i backup del salvataggio spiegati passo per passo, i 40 grani di rosario,
+  tutti gli strumenti prostetici e il ramo Shura disinnescato in New Game+.
+  Horizon: 93 passi in 13 fasi, tutti e 79 i trofei inclusa l'espansione
+  The Frozen Wilds — con l'unico vero missabile del gioco ("Tutti gli alleati
+  riuniti") segnalato prima del punto di non ritorno. Come sempre: bilingui,
+  nomi verificati sulle liste trofei italiane, niente glitch.
+- **Due icone nuove** disegnate per le card: la katana con l'enso per Sekiro,
+  l'arco con la freccia per Horizon.
+
+### Cambiato
+- Gli screenshot nel README e nella pagina di presentazione ora mostrano
+  **l'app vera** (prima erano mockup di progetto rimasti dalla fase di design)
+  e le dodici run attuali.
+- I conteggi pubblici aggiornati: 12 giochi, 1.062 passi (486 con trofeo),
+  1.420 termini italiani verificati.
+
 ## [5.0.1] - 2026-08-17
 
 ### Corretto

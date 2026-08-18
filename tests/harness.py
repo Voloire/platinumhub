@@ -34,7 +34,7 @@ APP_DIR = os.environ.get("PLATINUM_HUB_DIR",
 DATA_DIR = os.path.join(APP_DIR, "data")
 
 # Identificativi delle run, ricavati dal registro RUNS di app.py.
-RUN_IDS = ("er", "dsr", "ds3", "sb", "kz", "lop", "bor", "bmw", "n3", "na")
+RUN_IDS = ("er", "dsr", "ds3", "sb", "kz", "lop", "bor", "bmw", "n3", "na", "sek", "hzd")
 
 # Route di riferimento: la forma di questo file definisce lo schema atteso.
 REFERENCE_ROUTE = "kz.json"

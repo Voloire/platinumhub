@@ -262,7 +262,9 @@ FILES = {'bmw.json':'Black Myth Wukong - Checklist (by Voloirex).html',
          'ds3.json':'Dark Souls III - Checklist (by Voloirex).html',
          'sb.json':'Stellar Blade - Checklist (by Voloirex).html',
          'kz.json':'The First Berserker Khazan - Checklist (by Voloirex).html',
-         'bor.json':'Beast of Reincarnation - Checklist (by Voloirex).html'}
+         'bor.json':'Beast of Reincarnation - Checklist (by Voloirex).html',
+         'sek.json':'Sekiro Shadows Die Twice - Checklist (by Voloirex).html',
+         'hzd.json':'Horizon Zero Dawn Remastered - Checklist (by Voloirex).html'}
 
 # percorsi relativi alla radice del repository, non a una sandbox
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

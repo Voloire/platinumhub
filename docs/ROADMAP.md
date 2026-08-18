@@ -14,8 +14,8 @@ Da affiancare a `PLATINUM-HUB.md`, che descrive il prodotto. Questo descrive **c
 | Righe di `app.py` | 2.569 |
 | Endpoint HTTP | ~35 |
 | Giochi | 10 |
-| Passi totali | 865, di cui 389 con trofeo |
-| Termini italiani verificati | 1.137 (944 lasciati in inglese perché non verificabili) |
+| Passi totali | 1.062, di cui 486 con trofeo |
+| Termini italiani verificati | 1.420 (981 lasciati in inglese perché non verificabili) |
 | Dati | `data/` 948 KB · `fonts/` 76 KB · `standalone-html/` 2,4 MB |
 | Dipendenze esterne | **zero** — solo standard library Python 3 |
 

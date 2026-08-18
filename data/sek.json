@@ -1,0 +1,2173 @@
+{
+ "meta": {
+  "id": "sek",
+  "format": 1,
+  "version": 1,
+  "order": 110,
+  "accent": "#d9803c",
+  "tagline": {
+   "en": "All four endings in two runs - Shura defused in NG+",
+   "it": "Tutti e quattro i finali in due run - Shura disinnescato in NG+"
+  },
+  "thumb": {
+   "icon": "katana",
+   "glow": "120,64,24",
+   "seed": 21,
+   "stats": [
+    [
+     "4",
+     "ENDINGS"
+    ],
+    [
+     "2",
+     "RUNS"
+    ]
+   ],
+   "tag": null
+  }
+ },
+ "game": "Sekiro: Shadows Die Twice",
+ "prefix": "SEK",
+ "playthroughs": "1 full completionist run (all beads, seeds, tools, both ending questlines, then 3 endings from one save backup at the final choice) + 1 NG+ run split by a second backup: the Shura branch first, then reload and continue to the endgame for the remaining Lapis Lazuli and the skill grind. No third playthrough needed.",
+ "hours": "60-70 hours",
+ "trophy_total": 34,
+ "build_summary": "Deflect-first 'shinobi tank'. Sekiro has no stats to allocate and no gear to farm - your build is skill order, prosthetic choice and discipline. Buy Mikiri Counter before anything else, then posture tools (Ichimonji: Double) and survivability (Breath of Life: Light, the Temple Arts passives). The Loaded Umbrella and its Phoenix/Suzaku upgrades are the closest thing the game has to a shield: raise it against arrow rain, terror beams and fire instead of gambling on dodges. Firecrackers stagger every beast boss, Snap Seeds break every illusion, Divine Confetti cuts every apparition. Attack Power comes only from boss Memories, health and posture only from Prayer Beads - the route keeps both on pace so no fight is a stat check.",
+ "golden_rules": [
+  "At the castle-top confrontation with Owl in playthrough 1, REFUSE the Iron Code and stay loyal to Kuro. Choosing 'Obey the Iron Code' fires the Shura ending on the spot, ends the playthrough and locks the other three endings for that run. Shura is scheduled for NG+ behind a save backup.",
+  "The Purification chain (eavesdrop on Kuro -> Emma at the temple -> Father's Bell Charm -> Owl (Father) in Hirata 2) locks forever once the Divine Dragon falls. Run the whole chain immediately after beating Great Shinobi - Owl, before entering Fountainhead Palace.",
+  "The Divine Child's Return questline (Rice -> persimmon -> Rice for Kuro -> Holy Chapter -> both Serpent Viscera -> Frozen Tears) has the same deadline as Purification: the special rice must reach Kuro BEFORE the Divine Dragon falls, or the chain dies for the cycle. With both questlines done, ONE save backup after the Sword Saint deathblow yields all three loyal endings.",
+  "Back up your save (PS+ cloud or USB) at the two branch points: right after the Sword Saint deathblow, before answering Kuro (playthrough 1), and before the castle-top Owl choice (NG+).",
+  "Cure Dragonrot with a Dragon's Blood Droplet whenever an NPC starts coughing - a sick NPC freezes the Emma and Divine Child questlines this route depends on.",
+  "Hoard Treasure Carp Scales all game and never waste Lapis Lazuli: full prosthetic mastery needs 10 lapis, only 6 exist per cycle, and two of them are sold by Pot Noble Koremori at 6 scales each."
+ ],
+ "stat_table": {
+  "note": "Sekiro has no levels: Attack Power (AP) rises only by consuming boss Memories at a Sculptor's Idol - do it after every boss. Vitality and Posture rise only by offering Prayer Bead necklaces (4 beads each, 40 beads = 10 necklaces). 'Beads' and 'Gourd' are the on-pace totals at the END of each block, not hard requirements.",
+  "columns": [
+   "Phase",
+   "AP",
+   "Beads",
+   "Gourd",
+   "Milestone"
+  ],
+  "rows": [
+   [
+    "Outskirts + Hirata (P1-4)",
+    "3",
+    "9",
+    "4",
+    "Gyoubu & Lady Butterfly down; 6 prosthetic tools fitted"
+   ],
+   [
+    "Ashina Castle (P5)",
+    "4",
+    "13",
+    "6",
+    "Genichiro beaten; Bloodsmoke Ninjutsu; three branches open"
+   ],
+   [
+    "Senpou Temple (P6)",
+    "5",
+    "15",
+    "7",
+    "Mortal Blade & Puppeteer; Divine Child questline started"
+   ],
+   [
+    "Sunken Valley (P7)",
+    "6",
+    "18",
+    "8",
+    "Guardian Ape severed; All Prosthetic Tools (10/10)"
+   ],
+   [
+    "Depths + Mibu (P8)",
+    "8",
+    "25",
+    "9",
+    "Corrupted Monk & Headless Ape; Shelter Stone; all 3 Ninjutsu"
+   ],
+   [
+    "Owl + Hirata 2 (P9-10)",
+    "10",
+    "30",
+    "9",
+    "Iron Code refused; Owl & Owl (Father); Aromatic Flower + Frozen Tears"
+   ],
+   [
+    "Fountainhead + invasion (P11-12)",
+    "13",
+    "40",
+    "10",
+    "Divine Dragon, Demon of Hatred, Peak Physical Strength"
+   ],
+   [
+    "Sword Saint + NG+ (P13-15)",
+    "14+",
+    "40",
+    "10",
+    "3 endings from one backup; Shura, Man Without Equal, grind, platinum"
+   ]
+  ]
+ },
+ "build_bullets": [
+  {
+   "h": "Deflect, don't dodge",
+   "t": "Posture is the real health bar on both sides. Hold guard by default, tap it on hit for deflects - a whiffed dodge costs more than a failed parry."
+  },
+  {
+   "h": "Mikiri Counter first",
+   "t": "Buy it with your first two skill points. Every thrust in the game becomes free posture damage, including half the boss roster's scariest moves."
+  },
+  {
+   "h": "The umbrella is your shield",
+   "t": "Loaded Umbrella (1,600 sen from Blackhat Badger) blocks arrow rain and gunfire outright; the Phoenix's Lilac upgrade stops terror, the Suzaku's Lotus stops fire."
+  },
+  {
+   "h": "Firecrackers for beasts",
+   "t": "Robert's Firecrackers stagger every animal boss - Gyoubu's horse, the Blazing Bull, the Guardian Ape - and buy you a free combo each flash."
+  },
+  {
+   "h": "Illusions and apparitions",
+   "t": "Snap Seeds break Lady Butterfly's and the Corrupted Monk's illusion phases; Divine Confetti makes Shichimen Warriors and other apparitions cuttable."
+  },
+  {
+   "h": "Posture skills",
+   "t": "Ichimonji: Double restores your posture mid-fight; Breath of Life: Light heals on deathblows. Both are core to the defensive loop."
+  },
+  {
+   "h": "Resurrection discipline",
+   "t": "Save the second bar for after a boss deathblow, not a panic button mid-phase - resurrecting into an active combo just feeds the boss."
+  }
+ ],
+ "phases": [
+  {
+   "title": "Phase 1 — Prologue & the Dilapidated Temple",
+   "note": "Three trophies fall out of the opening hours by themselves. Nothing here is missable.",
+   "steps": [
+    {
+     "text": "Play the prologue through Ashina Reservoir and take the Kusabimaru from Kuro in the Moon-view Tower - the first trophy lands mid-cutscene.",
+     "loc": "Prologue — Ashina Reservoir / Moon-view Tower",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Revered Blade",
+       "label_it": "🏆 Lama venerata"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Gioca il prologo attraverso l'Ashina Reservoir e ricevi la Kusabimaru da Kuro nella Moon-view Tower — il primo trofeo arriva a metà filmato.",
+     "loc_it": "Prologo — Ashina Reservoir / Moon-view Tower",
+     "sid": "s001"
+    },
+    {
+     "text": "Treat the scripted Genichiro duel as a deflect lesson - the outcome is fixed, so spend the health bar learning the parry rhythm instead of trying to win.",
+     "loc": "Prologue — Genichiro duel",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Tratta il duello obbligato con Genichiro come una lezione di deviazioni: l'esito è già scritto, quindi spendi la barra della vita per imparare il ritmo delle parate invece di provare a vincere.",
+     "loc_it": "Prologo — duello con Genichiro",
+     "sid": "s002"
+    },
+    {
+     "text": "Wake at the Dilapidated Temple and receive the Shinobi Prosthetic from the Sculptor; talk to Emma until she hands over the Healing Gourd.",
+     "loc": "Dilapidated Temple",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Shinobi Prosthetic",
+       "label_it": "🏆 Protesi shinobi"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Svegliati al Dilapidated Temple e ricevi la Protesi shinobi dallo Scultore; parla con Emma finché non ti consegna la Fiaschetta curativa.",
+     "loc_it": "Dilapidated Temple",
+     "sid": "s003"
+    },
+    {
+     "text": "Come back from your first death with Resurrection - it happens naturally in the opening area; no need to chase it.",
+     "loc": "Anywhere — first resurrection",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Resurrection",
+       "label_it": "🏆 Resurrezione"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Torna dalla tua prima morte con la Resurrezione — succede da sé nell'area iniziale; non serve andarsela a cercare.",
+     "loc_it": "Ovunque — prima resurrezione",
+     "sid": "s004"
+    },
+    {
+     "text": "Earn your first Skill Point to receive the Shinobi Esoteric Text from the Sculptor, then buy Mikiri Counter before anything else - it turns every thrust in the game into free posture damage.",
+     "loc": "Dilapidated Temple — skill menu",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Guadagna il tuo primo punto abilità per ricevere lo Shinobi Esoteric Text dallo Scultore, poi compra Contromossa Mikiri prima di ogni altra cosa: trasforma ogni affondo del gioco in danno di postura gratis.",
+     "loc_it": "Dilapidated Temple — menu abilità",
+     "sid": "s005"
+    },
+    {
+     "text": "Standing order for the run: hand every Gourd Seed to Emma the moment you find it. Nine exist, each adds one Healing Gourd charge, and the tenth charge is a trophy.",
+     "loc": "Emma — Dilapidated Temple / Kuro's room",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Gourd Seeds /9",
+       "label_it": "Semi di zucca /9"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Ordine permanente per la run: consegna a Emma ogni Seme di zucca nel momento in cui lo trovi. Ne esistono nove, ognuno aggiunge una carica alla Fiaschetta curativa, e la decima carica è un trofeo.",
+     "loc_it": "Emma — Dilapidated Temple / stanza di Kuro",
+     "sid": "s006"
+    }
+   ],
+   "title_it": "Fase 1 — Prologo e Dilapidated Temple",
+   "note_it": "Tre trofei cadono da soli nelle prime ore. Qui niente è missabile."
+  },
+  {
+   "title": "Phase 2 — Ashina Outskirts I: first beads and the Hirata bell",
+   "note": "Two minibosses, the first prosthetic tool, and the bell that opens the Hirata Estate memory.",
+   "steps": [
+    {
+     "text": "Kill General Naomori Kawarada past the Outskirts Wall - Gate Path idol: he drops your first Prayer Bead and your first Gourd Seed. Four beads make a necklace - offer them at any Sculptor's Idol for more Vitality and Posture.",
+     "loc": "Ashina Outskirts — Outskirts Wall - Gate Path",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Bead 1/40 + Gourd Seed 1/9",
+       "label_it": "Grano 1/40 + Seme di zucca 1/9"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Uccidi il generale Naomori Kawarada oltre l'idolo Outskirts Wall - Gate Path: lascia il tuo primo Grano di rosario e il tuo primo Seme di zucca. Quattro grani fanno una collana — offrili a un qualsiasi Idolo dello Scultore per più Vitalità e Postura.",
+     "loc_it": "Ashina Outskirts — Outskirts Wall - Gate Path",
+     "sid": "s007"
+    },
+    {
+     "text": "Grab the Shuriken Wheel from the shack beside the Gate Path idol and let the Sculptor fit the Loaded Shuriken - prosthetic tool 1/10.",
+     "loc": "Ashina Outskirts — shack near Gate Path idol",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Tools /10",
+       "label_it": "Strumenti /10"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prendi lo Shuriken Wheel nella capanna accanto all'idolo Gate Path e fatti montare il Loaded Shuriken dallo Scultore — strumento prostetico 1/10.",
+     "loc_it": "Ashina Outskirts — capanna presso l'idolo Gate Path",
+     "sid": "s008"
+    },
+    {
+     "text": "Take the Young Lord's Bell Charm from the old woman near the Outskirts Wall - Stairway idol and offer it to the Buddha at the Dilapidated Temple: the Hirata Estate memory opens.",
+     "loc": "Ashina Outskirts → Dilapidated Temple Buddha",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prendi lo Young Lord's Bell Charm dalla vecchia vicino all'idolo Outskirts Wall - Stairway e offrilo al Buddha del Dilapidated Temple: si apre il ricordo della tenuta Hirata.",
+     "loc_it": "Ashina Outskirts → Buddha del Dilapidated Temple",
+     "sid": "s009"
+    },
+    {
+     "text": "The Chained Ogre climbs the wall ahead. Fight him now or come back after Hirata with the Flame Vent - fire staggers him hard. Either way he guards a Prayer Bead; respect the grabs, they track dodges.",
+     "loc": "Ashina Outskirts — Outskirts Wall - Stairway",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Bead",
+       "label_it": "Grano"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Il Chained Ogre si arrampica sul muro più avanti. Affrontalo ora o torna dopo Hirata col Flame Vent — il fuoco lo fa barcollare pesantemente. In ogni caso custodisce un Grano di rosario; rispetta le prese, inseguono le schivate.",
+     "loc_it": "Ashina Outskirts — Outskirts Wall - Stairway",
+     "sid": "s010"
+    }
+   ],
+   "title_it": "Fase 2 — Ashina Outskirts I: i primi grani e la campanella di Hirata",
+   "note_it": "Due miniboss, il primo strumento prostetico e la campanella che apre il ricordo della tenuta Hirata."
+  },
+  {
+   "title": "Phase 3 — Hirata Estate: three tools and Lady Butterfly",
+   "note": "The memory can be revisited any time, so nothing inside is missable - but the three tools here carry the early game.",
+   "steps": [
+    {
+     "text": "Sneak around the bonfire mob in the courtyard and loot the Flame Barrel; the Sculptor turns it into the Flame Vent - tool 2/10 and the Chained Ogre's worst nightmare.",
+     "loc": "Hirata Estate — bonfire courtyard",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Tools /10",
+       "label_it": "Strumenti /10"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Aggira di soppiatto il gruppo attorno al falò nel cortile e razzia il Flame Barrel; lo Scultore lo trasforma nel Flame Vent — strumento 2/10 e incubo del Chained Ogre.",
+     "loc_it": "Tenuta Hirata — cortile del falò",
+     "sid": "s011"
+    },
+    {
+     "text": "Mikiri-counter Shinobi Hunter Enshin of Misen on the estate path - his spear exists to feed your new counter. Prayer Bead on the kill.",
+     "loc": "Hirata Estate — estate path",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Bead",
+       "label_it": "Grano"
+      },
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Contromossa Mikiri su Shinobi Hunter Enshin of Misen lungo il sentiero della tenuta: la sua lancia esiste per nutrire il tuo contrattacco nuovo. Grano di rosario all'uccisione.",
+     "loc_it": "Tenuta Hirata — sentiero della tenuta",
+     "sid": "s012"
+    },
+    {
+     "text": "Take the Shinobi Axe of the Monkey from the small shrine off the courtyard - tool 3/10; the axe cracks shields for the rest of the game.",
+     "loc": "Hirata Estate — shrine near the courtyard",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Tools /10",
+       "label_it": "Strumenti /10"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Prendi la Shinobi Axe of the Monkey nel piccolo santuario fuori dal cortile — strumento 3/10; l'ascia spacca gli scudi per il resto del gioco.",
+     "loc_it": "Tenuta Hirata — santuario presso il cortile",
+     "sid": "s013"
+    },
+    {
+     "text": "Talk to the samurai Nogami Gensai by the pond and let him tank Juzou the Drunkard while you thin the adds and flank - Prayer Bead on the kill.",
+     "loc": "Hirata Estate — pond before the Main Hall",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Bead",
+       "label_it": "Grano"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Parla col samurai Nogami Gensai vicino allo stagno e lascia che regga Juzou the Drunkard mentre tu sfoltisci gli scagnozzi e lo prendi ai fianchi — Grano di rosario all'uccisione.",
+     "loc_it": "Tenuta Hirata — stagno prima della Main Hall",
+     "sid": "s014"
+    },
+    {
+     "text": "Loot Mist Raven's Feathers from the lone shrine in the stream behind the estate buildings - tool 4/10, a get-out-of-jail teleport for the panic moments.",
+     "loc": "Hirata Estate — stream-side shrine",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Tools /10",
+       "label_it": "Strumenti /10"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Razzia le Mist Raven's Feathers al santuario isolato nel torrente dietro gli edifici della tenuta — strumento 4/10, un teletrasporto salva-vita per i momenti di panico.",
+     "loc_it": "Tenuta Hirata — santuario sul torrente",
+     "sid": "s015"
+    },
+    {
+     "text": "Break through the hidden wall by the Audience Chamber idol and open the chest behind it for another Prayer Bead before you touch the boss door.",
+     "loc": "Hirata Estate — Audience Chamber",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Bead",
+       "label_it": "Grano"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Sfonda la parete nascosta accanto all'idolo Audience Chamber e apri la cassa che nasconde per un altro Grano di rosario, prima di toccare la porta del boss.",
+     "loc_it": "Tenuta Hirata — Audience Chamber",
+     "sid": "s016"
+    },
+    {
+     "text": "The Phantom Lady Butterfly: deflect the kunai strings, pop a Snap Seed when the phase-2 illusions swarm, and never chase her onto the wires. Consume her Memory at an idol afterward - every boss Memory is +1 Attack Power.",
+     "loc": "Hirata Estate — Hidden Temple",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 The Phantom Lady Butterfly",
+       "label_it": "🏆 La Falena fantasma"
+      },
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": true,
+     "text_it": "La Falena fantasma: devia le sequenze di kunai, usa uno Snap Seed quando sciamano le illusioni della fase 2 e non inseguirla mai sui fili. Dopo, consuma il suo Memory a un idolo — ogni Memory di boss è +1 Attack Power.",
+     "loc_it": "Tenuta Hirata — Hidden Temple",
+     "sid": "s017"
+    }
+   ],
+   "title_it": "Fase 3 — Tenuta Hirata: tre strumenti e la Falena",
+   "note_it": "Il ricordo si può rivisitare quando vuoi, quindi lì dentro niente è missabile — ma i tre strumenti di questa fase reggono tutto l'inizio del gioco."
+  },
+  {
+   "title": "Phase 4 — Ashina Outskirts II: Gyoubu and the Tengu",
+   "note": "The horseback general, the firecrackers that carry every beast fight, and the Ashina Esoteric Text.",
+   "steps": [
+    {
+     "text": "Past the Stairway idol, clear the dog pack and loot Gourd Seed #2 from the building on the slope. A hole in that building's floor overlooks a courtyard of riflemen ruled by General Tenzen Yamauchi - drop in on his head for a Prayer Bead.",
+     "loc": "Ashina Outskirts — past Outskirts Wall - Stairway",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Gourd Seed 2/9 + Bead",
+       "label_it": "Seme di zucca 2/9 + Grano"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Oltre l'idolo Stairway, ripulisci il branco di cani e razzia il Seme di zucca n. 2 nell'edificio sul pendio. Un buco nel pavimento di quell'edificio dà su un cortile di fucilieri comandati dal generale Tenzen Yamauchi: calagli in testa per un Grano di rosario.",
+     "loc_it": "Ashina Outskirts — oltre Outskirts Wall - Stairway",
+     "sid": "s018"
+    },
+    {
+     "text": "Grapple up to the crow's nest before the battlefield: meeting the Memorial Mob there pops a trophy, and their Robert's Firecrackers (500 sen) become the Loaded Firecracker - tool 5/10 and a stagger button for every beast boss.",
+     "loc": "Ashina Outskirts — Crow's Bed Memorial Mob",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Memorial Mob",
+       "label_it": "🏆 Congrega memore"
+      },
+      {
+       "type": "coll",
+       "label": "Tools /10",
+       "label_it": "Strumenti /10"
+      },
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Sali col rampino al nido di corvi prima del campo di battaglia: incontrare lì la Congrega memore fa scattare un trofeo, e i loro Robert's Firecrackers (500 sen) diventano il Loaded Firecracker — strumento 5/10 e un pulsante di barcollamento per ogni boss bestiale.",
+     "loc_it": "Ashina Outskirts — Congrega memore di Crow's Bed",
+     "sid": "s019"
+    },
+    {
+     "text": "Gyoubu Masataka Oniwa: grapple to him every time he disengages and stay glued to the horse - his sweeps deflect cleanly and the firecracker freezes the mount. Memory to the idol afterward.",
+     "loc": "Ashina Outskirts — battlefield",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Gyoubu Masataka Oniwa",
+       "label_it": "🏆 Masataka Oniwa Gyoubu"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Masataka Oniwa Gyoubu: aggancialo col rampino ogni volta che si allontana e resta incollato al cavallo — le sue spazzate si deviano pulite e il petardo congela la cavalcatura. Poi il Memory all'idolo.",
+     "loc_it": "Ashina Outskirts — campo di battaglia",
+     "sid": "s020"
+    },
+    {
+     "text": "Buy Gourd Seed #3 from the Battlefield Memorial Mob (1,000 sen) before leaving the field.",
+     "loc": "Ashina Outskirts — Battlefield Memorial Mob",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Gourd Seed 3/9",
+       "label_it": "Seme di zucca 3/9"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Compra il Seme di zucca n. 3 dalla Congrega memore del campo di battaglia (1.000 sen) prima di lasciare il campo.",
+     "loc_it": "Ashina Outskirts — Congrega memore del campo di battaglia",
+     "sid": "s021"
+    },
+    {
+     "text": "Pick up Gyoubu's Broken Horn in the Ashina Castle Gate Fortress area and have the Sculptor forge the Loaded Spear - tool 6/10. The chest by the Tengu's fortress building holds a Prayer Bead.",
+     "loc": "Ashina Castle Gate Fortress",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Tools /10 + Bead",
+       "label_it": "Strumenti /10 + Grano"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Raccogli il Gyoubu's Broken Horn nell'area della Ashina Castle Gate Fortress e fatti forgiare la Loaded Spear dallo Scultore — strumento 6/10. La cassa accanto all'edificio del Tengu nasconde un Grano di rosario.",
+     "loc_it": "Ashina Castle Gate Fortress",
+     "sid": "s022"
+    },
+    {
+     "text": "Meet the Tengu of Ashina in the fortress building above the battlefield and take his 'rat problem': kill the hat-wearing assassins in the field just past the Ashina Castle Gate idol, then report back for the Ashina Esoteric Text.",
+     "loc": "Ashina Castle Gate Fortress — Tengu",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Incontra il Tengu of Ashina nell'edificio della fortezza sopra il campo di battaglia e accetta il suo 'problema di topi': uccidi gli assassini col cappello nel campo appena oltre l'idolo Ashina Castle Gate, poi torna a rapporto per l'Ashina Esoteric Text.",
+     "loc_it": "Ashina Castle Gate Fortress — Tengu",
+     "sid": "s023"
+    },
+    {
+     "text": "The Blazing Bull charges out past the fortress gate: firecracker its face, stay on the flank, never square up to the horns. Prayer Bead.",
+     "loc": "Ashina Castle Gate",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Bead",
+       "label_it": "Grano"
+      },
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Il Blazing Bull carica oltre il cancello della fortezza: petardo in faccia, resta sul fianco, mai piazzarti davanti alle corna. Grano di rosario.",
+     "loc_it": "Ashina Castle Gate",
+     "sid": "s024"
+    },
+    {
+     "text": "General Kuranosuke Matsumoto holds the courtyard beyond the gate - a clean deflect duel, another Prayer Bead.",
+     "loc": "Ashina Castle — courtyard",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Bead",
+       "label_it": "Grano"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Il generale Kuranosuke Matsumoto tiene il cortile oltre il cancello — un duello pulito di deviazioni, un altro Grano di rosario.",
+     "loc_it": "Castello di Ashina — cortile",
+     "sid": "s025"
+    }
+   ],
+   "title_it": "Fase 4 — Ashina Outskirts II: Gyoubu e il Tengu",
+   "note_it": "Il generale a cavallo, i petardi che reggono ogni scontro con le bestie e l'Ashina Esoteric Text."
+  },
+  {
+   "title": "Phase 5 — Ashina Castle: Genichiro on the roof",
+   "note": "The umbrella, Sabimaru, the only purchasable bead, and the fight that teaches you the whole game.",
+   "steps": [
+    {
+     "text": "Buy the Loaded Umbrella (1,600 sen) from Blackhat Badger holed up in the castle grounds - tool 7/10 and the closest thing Sekiro has to a shield. Its Phoenix and Suzaku upgrades carry this route's hardest fights.",
+     "loc": "Ashina Castle — Blackhat Badger",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Tools /10",
+       "label_it": "Strumenti /10"
+      },
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Compra il Loaded Umbrella (1.600 sen) da Blackhat Badger, rintanato nei terreni del castello — strumento 7/10 e la cosa più vicina a uno scudo che Sekiro abbia. I suoi potenziamenti Phoenix e Suzaku reggono gli scontri più duri di questa route.",
+     "loc_it": "Castello di Ashina — Blackhat Badger",
+     "sid": "s026"
+    },
+    {
+     "text": "Detour to the Ashina Reservoir where the game began: Seven Ashina Spears - Shikibu Toshikatsu Yamauchi commands the knoll by the Moon-view Tower. Thin his escort from stealth, then Mikiri the spear thrusts - Prayer Bead.",
+     "loc": "Ashina Castle — Ashina Reservoir",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Bead",
+       "label_it": "Grano"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Deviazione all'Ashina Reservoir dove il gioco è cominciato: Seven Ashina Spears - Shikibu Toshikatsu Yamauchi comanda il poggio presso la Moon-view Tower. Sfoltisci la scorta di soppiatto, poi Contromossa Mikiri sugli affondi di lancia — Grano di rosario.",
+     "loc_it": "Castello di Ashina — Ashina Reservoir",
+     "sid": "s027"
+    },
+    {
+     "text": "Detour to the Abandoned Dungeon entrance and buy the Prayer Bead from the Dungeon Memorial Mob (1,400 sen) - the only bead on sale in a normal run.",
+     "loc": "Abandoned Dungeon — Memorial Mob",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Bead",
+       "label_it": "Grano"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Deviazione all'ingresso dell'Abandoned Dungeon: compra il Grano di rosario dalla Congrega memore della prigione (1.400 sen) — l'unico grano in vendita in una run normale.",
+     "loc_it": "Abandoned Dungeon — Congrega memore",
+     "sid": "s028"
+    },
+    {
+     "text": "Inside the castle, open the chest on the floor patrolled by the two blue-robed guards for Sabimaru - tool 8/10; its poison shreds the Okami warriors and Snake Eyes later.",
+     "loc": "Ashina Castle — interior chest",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Tools /10",
+       "label_it": "Strumenti /10"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Dentro il castello, apri la cassa al piano pattugliato dalle due guardie in veste blu per Sabimaru — strumento 8/10; il suo veleno tritura i guerrieri Okami e le Snake Eyes più avanti.",
+     "loc_it": "Castello di Ashina — cassa all'interno",
+     "sid": "s029"
+    },
+    {
+     "text": "Open the chest one floor below the Upper Tower - Antechamber idol for Gourd Seed #4, and strike the false wall next to the idol itself: the hidden room's chest holds a Prayer Bead.",
+     "loc": "Ashina Castle — before Upper Tower - Antechamber",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Gourd Seed 4/9 + Bead",
+       "label_it": "Seme di zucca 4/9 + Grano"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Apri la cassa un piano sotto l'idolo Upper Tower - Antechamber per il Seme di zucca n. 4 e colpisci la parete finta accanto all'idolo stesso: la cassa della stanza nascosta contiene un Grano di rosario.",
+     "loc_it": "Castello di Ashina — prima di Upper Tower - Antechamber",
+     "sid": "s030"
+    },
+    {
+     "text": "Ashina Elite Jinsuke Saze waits in the dojo: deflect his lightning-fast two-slash draw and his posture shatters in seconds. Prayer Bead.",
+     "loc": "Ashina Castle — dojo",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Bead",
+       "label_it": "Grano"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Ashina Elite Jinsuke Saze aspetta nel dojo: devia la sua doppia sciabolata fulminea e la sua postura si frantuma in pochi secondi. Grano di rosario.",
+     "loc_it": "Castello di Ashina — dojo",
+     "sid": "s031"
+    },
+    {
+     "text": "Genichiro Ashina on the rooftop: deflect the long strings, Mikiri the thrusts, raise the umbrella against the arrow rain, and in the Way of Tomoe phase jump off his lightning to throw it back. Bloodsmoke Ninjutsu (1/3) is the reward.",
+     "loc": "Ashina Castle — rooftop",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Genichiro Ashina",
+       "label_it": "🏆 Genichiro Ashina"
+      },
+      {
+       "type": "coll",
+       "label": "Ninjutsu 1/3",
+       "label_it": "Ninjutsu 1/3"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Genichiro Ashina sul tetto: devia le sequenze lunghe, Contromossa Mikiri sugli affondi, alza l'ombrello contro la pioggia di frecce e nella fase Way of Tomoe salta sui suoi fulmini per rispedirglieli. La ricompensa è il Ninjutsu Bloodsmoke (1/3).",
+     "loc_it": "Castello di Ashina — tetto",
+     "sid": "s032"
+    },
+    {
+     "text": "Talk to Kuro and Emma until the incense quest opens the three branches (Senpou Temple, Sunken Valley, Ashina Depths). Fujioka the Info Broker now trades at the temple: buy Gourd Seed #5 (2,000 sen).",
+     "loc": "Kuro's room → Dilapidated Temple",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      },
+      {
+       "type": "coll",
+       "label": "Gourd Seed 5/9",
+       "label_it": "Seme di zucca 5/9"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Parla con Kuro ed Emma finché la quest dell'incenso non apre le tre diramazioni (Senpou Temple, Sunken Valley, Ashina Depths). Fujioka l'informatore ora commercia al tempio: compra il Seme di zucca n. 5 (2.000 sen).",
+     "loc_it": "Stanza di Kuro → Dilapidated Temple",
+     "sid": "s033"
+    },
+    {
+     "text": "From here on: if any NPC starts coughing, cure Dragonrot with a Dragon's Blood Droplet at an idol before doing anything else - a sick NPC freezes the Emma and Divine Child questlines this route depends on.",
+     "loc": "Any Sculptor's Idol — Dragonrot Restoration",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ Dragonrot stalls quests",
+       "label_it": "⚠ Il Dragonrot blocca le missioni"
+      }
+     ],
+     "trophy": false,
+     "text_it": "D'ora in poi: se un NPC inizia a tossire, cura il Dragonrot con una Dragon's Blood Droplet a un idolo prima di fare qualsiasi altra cosa — un NPC malato congela le questline di Emma e della Divine Child da cui questa route dipende.",
+     "loc_it": "Qualsiasi Idolo dello Scultore — cura del Dragonrot",
+     "sid": "s034"
+    }
+   ],
+   "title_it": "Fase 5 — Castello di Ashina: Genichiro sul tetto",
+   "note_it": "L'ombrello, Sabimaru, l'unico grano acquistabile e lo scontro che ti insegna l'intero gioco."
+  },
+  {
+   "title": "Phase 6 — Senpou Temple: the Mortal Blade",
+   "note": "The Folding Screen Monkeys, the Puppeteer Ninjutsu, and the start of the Divine Child questline that gates the Return ending.",
+   "steps": [
+    {
+     "text": "Pick up the Senpou Esoteric Text in the small shrine on the temple approach - the Temple Arts tree holds the healing passives a defensive run loves.",
+     "loc": "Senpou Temple — approach shrine",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Raccogli il Senpou Esoteric Text nel piccolo santuario lungo la salita al tempio — il ramo Temple Arts contiene le passive curative che una run difensiva adora.",
+     "loc_it": "Senpou Temple — santuario sulla salita",
+     "sid": "s035"
+    },
+    {
+     "text": "Loot Gourd Seed #6 in the cricket-infested hall near the first immortal monk on the way up.",
+     "loc": "Senpou Temple — Temple Grounds",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Gourd Seed 6/9",
+       "label_it": "Seme di zucca 6/9"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Razzia il Seme di zucca n. 6 nella sala infestata di grilli vicino al primo monaco immortale, salendo.",
+     "loc_it": "Senpou Temple — Temple Grounds",
+     "sid": "s036"
+    },
+    {
+     "text": "The Armored Warrior can't be cut: deflect everything until his posture snaps, then kick him through the balcony railing. Prayer Bead.",
+     "loc": "Senpou Temple — bridge gallery",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Bead",
+       "label_it": "Grano"
+      }
+     ],
+     "trophy": false,
+     "text_it": "L'Armored Warrior non si può tagliare: devia tutto finché la sua postura non cede, poi buttalo giù dalla balaustra con un calcio. Grano di rosario.",
+     "loc_it": "Senpou Temple — galleria del ponte",
+     "sid": "s037"
+    },
+    {
+     "text": "Long-arm Centipede Sen'un in the attic: hold guard, deflect the whole flurry, punish the pause at the end. Prayer Bead.",
+     "loc": "Senpou Temple — attic hall",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Bead",
+       "label_it": "Grano"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Long-arm Centipede Sen'un nel sottotetto: tieni la guardia, devia l'intera raffica e punisci la pausa alla fine. Grano di rosario.",
+     "loc_it": "Senpou Temple — sala del sottotetto",
+     "sid": "s038"
+    },
+    {
+     "text": "Folding Screen Monkeys in the Hall of Illusions: each monkey has a sense to exploit - the seer flees what it sees, the listener flees your steps, the invisible one leaves footprints. Puppeteer Ninjutsu (2/3), and the Divine Child grants the Mortal Blade.",
+     "loc": "Senpou Temple — Hall of Illusions",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Folding Screen Monkeys",
+       "label_it": "🏆 Scimmie del Tempio"
+      },
+      {
+       "type": "coll",
+       "label": "Ninjutsu 2/3",
+       "label_it": "Ninjutsu 2/3"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Scimmie del Tempio nella Hall of Illusions: ogni scimmia ha un senso da sfruttare — quella che vede fugge da ciò che vede, quella che sente fugge dai tuoi passi, quella invisibile lascia impronte. Ninjutsu Puppeteer (2/3), e la Divine Child ti affida la Lama Mortale.",
+     "loc_it": "Senpou Temple — Hall of Illusions",
+     "sid": "s039"
+    },
+    {
+     "text": "Start the Divine Child's questline NOW: ask her for Rice and keep re-asking whenever it runs out - this chain ends in the Frozen Tears that gate the Return ending.",
+     "loc": "Senpou Temple — Inner Sanctum",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ Return ending chain",
+       "label_it": "⚠ Catena del finale Ritorno"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Avvia SUBITO la questline della Divine Child: chiedile il riso e torna a chiederglielo ogni volta che finisce — questa catena termina nelle Frozen Tears che fanno da cancello al finale Ritorno.",
+     "loc_it": "Senpou Temple — Inner Sanctum",
+     "sid": "s040"
+    },
+    {
+     "text": "Activate the giant kite: use the Puppeteer Ninjutsu on the soldier at the winch mechanism - the kite is how you'll reach a serpent's back from the Sunken Valley side later.",
+     "loc": "Senpou Temple — kite mechanism",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Attiva l'aquilone gigante: usa il Ninjutsu Puppeteer sul soldato al meccanismo dell'argano — l'aquilone è il modo in cui più avanti raggiungerai la schiena di una serpe dal lato della Sunken Valley.",
+     "loc_it": "Senpou Temple — meccanismo dell'aquilone",
+     "sid": "s041"
+    },
+    {
+     "text": "Keep feeding the Rice chain between trips: when the Divine Child falls ill, bring her a persimmon (the Shugendo Memorial Mob on the temple approach hands one over free once you've met her; valley monkeys drop them too) and she recovers with Rice for Kuro - deliver it to Kuro BEFORE the Divine Dragon falls, rest, and collect his Sweet Rice Balls. The Holy Chapter: Infested comes later: it lies at the bottom of the Temple Grounds pond, out of reach until you can dive.",
+     "loc": "Senpou Temple ↔ Kuro's room",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ Return ending chain",
+       "label_it": "⚠ Catena del finale Ritorno"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Tieni viva la catena del riso tra un viaggio e l'altro: quando la Divine Child si ammala, portale un cachi (la Congrega memore di Shugendo sulla salita al tempio te ne regala uno una volta che la conosci; li lasciano anche le scimmie della valle) e lei si riprende con il Riso per Kuro — consegnalo a Kuro PRIMA che cada il Drago Divino, riposa e ritira i suoi dolcetti di riso (Sweet Rice Balls). L'Holy Chapter: Infested arriva dopo: giace sul fondo dello stagno dei Temple Grounds, fuori portata finché non sai immergerti.",
+     "loc_it": "Senpou Temple ↔ stanza di Kuro",
+     "sid": "s042"
+    }
+   ],
+   "title_it": "Fase 6 — Senpou Temple: la Lama Mortale",
+   "note_it": "Le Scimmie del Tempio, il Ninjutsu Puppeteer e l'avvio della questline della Divine Child che fa da cancello al finale Ritorno."
+  },
+  {
+   "title": "Phase 7 — Sunken Valley: the Lotus of the Palace",
+   "note": "Snipers, the Gun Fort, the serpent kill from the kite, and the last two prosthetic tools.",
+   "steps": [
+    {
+     "text": "Snake Eyes Shirafuji snipes across the valley: close the gap along the cliff wall and deflect the point-blank shots - her pistol whip is deflectable like a sword. Prayer Bead.",
+     "loc": "Sunken Valley — valley approach",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Bead",
+       "label_it": "Grano"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Snake Eyes Shirafuji ti cecchina da un capo all'altro della valle: accorcia le distanze lungo la parete di roccia e devia i colpi a bruciapelo — la sua pistolettata si devia come una spada. Grano di rosario.",
+     "loc_it": "Sunken Valley — approccio alla valle",
+     "sid": "s043"
+    },
+    {
+     "text": "Climb to the hut past the rifle line for Gourd Seed #7.",
+     "loc": "Sunken Valley — cliffside hut",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Gourd Seed 7/9",
+       "label_it": "Seme di zucca 7/9"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Arrampicati alla capanna oltre la linea dei fucilieri per il Seme di zucca n. 7.",
+     "loc_it": "Sunken Valley — capanna sul costone",
+     "sid": "s044"
+    },
+    {
+     "text": "Long-arm Centipede Giraffe inside the Gun Fort: the same deflect drill as Sen'un. Prayer Bead, and the Large Fan behind him becomes the Divine Abduction - tool 9/10. A hole in the fort's floor drops into a tunnel that hides another Prayer Bead.",
+     "loc": "Sunken Valley — Gun Fort",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Beads x2 + Tools /10",
+       "label_it": "Grani x2 + Strumenti /10"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Long-arm Centipede Giraffe dentro il Gun Fort: la stessa lezione di deviazioni di Sen'un. Grano di rosario, e il Large Fan alle sue spalle diventa la Divine Abduction — strumento 9/10. Un buco nel pavimento del forte scende in un cunicolo che nasconde un altro Grano di rosario.",
+     "loc_it": "Sunken Valley — Gun Fort",
+     "sid": "s045"
+    },
+    {
+     "text": "Grapple onto the kite from the Sunken Valley cliff and plunge-deathblow the Great Serpent in the gorge below: the trophy pops and the Fresh Serpent Viscera joins the Divine Child's quest.",
+     "loc": "Sunken Valley — kite crossing",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Great Serpent",
+       "label_it": "🏆 Grande Serpe"
+      },
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Aggancia l'aquilone col rampino dalla parete della Sunken Valley e piomba col colpo di grazia in picchiata sulla Grande Serpe nella gola sottostante: scatta il trofeo e i Fresh Serpent Viscera entrano nella quest della Divine Child.",
+     "loc_it": "Sunken Valley — traversata con l'aquilone",
+     "sid": "s046"
+    },
+    {
+     "text": "Guardian Ape, phase 1: firecrackers interrupt, stay on its flank. Phase 2 it rises headless - when the terror scream winds up, sprint out. Finish with the Mortal Blade deathblow to sever its immortality: two trophies in one arena.",
+     "loc": "Sunken Valley — Bodhisattva Valley",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Guardian Ape",
+       "label_it": "🏆 Scimmia guardiana"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Guardian Ape Immortality Severed",
+       "label_it": "🏆 Scimmia guardiana, immortalità recisa"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Scimmia guardiana, fase 1: i petardi la interrompono, resta sul suo fianco. Nella fase 2 si rialza senza testa — quando carica l'urlo di terrore, scatta via di corsa. Chiudi con il colpo di grazia della Lama Mortale per recidere la sua immortalità: due trofei nella stessa arena.",
+     "loc_it": "Sunken Valley — Bodhisattva Valley",
+     "sid": "s047"
+    },
+    {
+     "text": "Take the Lotus of the Palace, then bring the Slender Finger to the Sculptor: the Finger Whistle is tool 10/10 and All Prosthetic Tools pops at the workbench.",
+     "loc": "Bodhisattva Valley → Dilapidated Temple",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 All Prosthetic Tools",
+       "label_it": "🏆 Tutti gli strumenti prostetici"
+      },
+      {
+       "type": "coll",
+       "label": "Tools 10/10",
+       "label_it": "Strumenti 10/10"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Prendi il Lotus of the Palace, poi porta lo Slender Finger allo Scultore: il Finger Whistle è lo strumento 10/10 e Tutti gli strumenti prostetici scatta al banco di lavoro.",
+     "loc_it": "Bodhisattva Valley → Dilapidated Temple",
+     "sid": "s048"
+    }
+   ],
+   "title_it": "Fase 7 — Sunken Valley: il Lotus of the Palace",
+   "note_it": "Cecchini, il Gun Fort, l'uccisione della serpe dall'aquilone e gli ultimi due strumenti prostetici."
+  },
+  {
+   "title": "Phase 8 — Ashina Depths & Mibu Village: the Shelter Stone",
+   "note": "The Headless Ape rematch completes the Ninjutsu set; the Corrupted Monk guards the last incense ingredient.",
+   "steps": [
+    {
+     "text": "Snake Eyes Shirahagi in the poison pools: lure her onto firm ground, deflect the pistol whip, and don't trade hits standing in poison. Prayer Bead.",
+     "loc": "Ashina Depths — poison pools",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Bead",
+       "label_it": "Grano"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Snake Eyes Shirahagi nelle pozze velenose: attirala su terreno solido, devia la pistolettata e non scambiare colpi stando nel veleno. Grano di rosario.",
+     "loc_it": "Ashina Depths — pozze velenose",
+     "sid": "s049"
+    },
+    {
+     "text": "The Headless Ape returns in the Guardian Ape's Burrow with a mate: kill the partner first, then repeat the phase-2 dance. The fight pays two Prayer Beads and the Bestowal Ninjutsu (3/3) - All Ninjutsu Techniques pops here.",
+     "loc": "Ashina Depths — Guardian Ape's Burrow",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 All Ninjutsu Techniques",
+       "label_it": "🏆 Tutte le tecniche Ninjutsu"
+      },
+      {
+       "type": "coll",
+       "label": "Beads x2",
+       "label_it": "Grani x2"
+      }
+     ],
+     "trophy": true,
+     "text_it": "La Headless Ape torna nella Guardian Ape's Burrow in coppia: uccidi prima la compagna, poi ripeti la danza della fase 2. Lo scontro paga due Grani di rosario e il Ninjutsu Bestowal (3/3) — Tutte le tecniche Ninjutsu scatta qui.",
+     "loc_it": "Ashina Depths — Guardian Ape's Burrow",
+     "sid": "s050"
+    },
+    {
+     "text": "Rest after the apes and return to the burrow: a Shichimen Warrior now haunts it (he only spawns once the Finger Whistle is in your kit). Divine Confetti on the blade, umbrella against the terror - he drops the Malcontent's Ring, the one-per-cycle key to the Finger Whistle's final upgrade and thus to Master of the Prosthetic.",
+     "loc": "Ashina Depths — Guardian Ape's Burrow",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Malcontent's Ring",
+       "label_it": "Malcontent's Ring"
+      },
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Riposa dopo le scimmie e torna nella tana: ora la infesta uno Shichimen Warrior (compare solo con il Finger Whistle nel tuo arsenale). Coriandoli divini sulla lama, ombrello contro il terrore — lascia il Malcontent's Ring, la chiave unica-per-ciclo dell'ultimo potenziamento del Finger Whistle e quindi di Maestria della Protesi.",
+     "loc_it": "Ashina Depths — Guardian Ape's Burrow",
+     "sid": "s051"
+    },
+    {
+     "text": "In the serpent's cave on the Depths road, Puppeteer the mask-wearing monkey on the ledge: the possessed monkey lures the Great Serpent off its coil while you snatch the Dried Serpent Viscera from the shrine.",
+     "loc": "Sunken Valley Passage — serpent cave",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ Return ending chain",
+       "label_it": "⚠ Catena del finale Ritorno"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Nella grotta della serpe lungo la strada delle Depths, usa il Puppeteer sulla scimmia mascherata sulla sporgenza: la scimmia posseduta attira la Grande Serpe fuori dalle sue spire mentre tu sfili i Dried Serpent Viscera dal santuario.",
+     "loc_it": "Sunken Valley Passage — grotta della serpe",
+     "sid": "s052"
+    },
+    {
+     "text": "Cut down the Mist Noble in the Hidden Forest pagoda to burn away the illusion fog and open the way to Mibu Village. Tokujiro the Glutton and his pet monkeys prowl the forest on the way - Prayer Bead.",
+     "loc": "Hidden Forest — pagoda",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      },
+      {
+       "type": "coll",
+       "label": "Bead",
+       "label_it": "Grano"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Abbatti il Mist Noble nella pagoda della Hidden Forest per bruciare la nebbia d'illusione e aprire la strada verso Mibu Village. Tokujiro the Glutton e le sue scimmie battono la foresta lungo il percorso — Grano di rosario.",
+     "loc_it": "Hidden Forest — pagoda",
+     "sid": "s053"
+    },
+    {
+     "text": "O'Rin of the Water blocks the village path: keep guard up through her dance - her strings end in a readable pause; punish exactly once and reset. Prayer Bead.",
+     "loc": "Ashina Depths — before Mibu Village",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Bead",
+       "label_it": "Grano"
+      }
+     ],
+     "trophy": false,
+     "text_it": "O'Rin of the Water sbarra il sentiero del villaggio: guardia alta per tutta la sua danza — le sue sequenze finiscono in una pausa leggibile; punisci esattamente una volta e ricomincia. Grano di rosario.",
+     "loc_it": "Ashina Depths — prima di Mibu Village",
+     "sid": "s054"
+    },
+    {
+     "text": "Sweep Mibu Village: Gourd Seed #8 sits by the glowing tree in the village center, and the pond hides Treasure Carp Scales - start hoarding scales for Lapis Lazuli.",
+     "loc": "Mibu Village",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Gourd Seed 8/9",
+       "label_it": "Seme di zucca 8/9"
+      },
+      {
+       "type": "build",
+       "label": "BUILD scales",
+       "label_it": "BUILD squame"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Rastrella Mibu Village: il Seme di zucca n. 8 sta accanto all'albero luminoso al centro del villaggio, e lo stagno nasconde Treasure Carp Scales — comincia ad accumulare squame per i Lapislazzuli.",
+     "loc_it": "Mibu Village",
+     "sid": "s055"
+    },
+    {
+     "text": "Corrupted Monk on the Mibu bridge: stand your ground and deflect the naginata arcs - her posture barely recovers - and keep a Snap Seed ready for the illusion flurry. Take the Shelter Stone from the Wedding Cave behind her.",
+     "loc": "Mibu Village — Wedding Cave Door bridge",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Corrupted Monk",
+       "label_it": "🏆 Monaca corrotta"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Monaca corrotta sul ponte di Mibu: tieni la posizione e devia gli archi della naginata — la sua postura si ricarica appena — e tieni pronto uno Snap Seed per la raffica illusoria. Prendi la Shelter Stone nella Wedding Cave alle sue spalle.",
+     "loc_it": "Mibu Village — ponte della Wedding Cave Door",
+     "sid": "s056"
+    },
+    {
+     "text": "The Monk yields the Mibu Breathing Technique - you can dive now. Use it at once: the Mibu Village lake hides a Prayer Bead, and the Temple Grounds pond back at Senpou holds another bead plus the Holy Chapter: Infested on its floor. Hand the chapter to the Divine Child to push the Return chain to its serpent stage.",
+     "loc": "Mibu Village lake → Senpou Temple pond",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Beads x2",
+       "label_it": "Grani x2"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ Return ending chain",
+       "label_it": "⚠ Catena del finale Ritorno"
+      }
+     ],
+     "trophy": false,
+     "text_it": "La Monaca lascia la Mibu Breathing Technique — ora puoi immergerti. Usala subito: il lago di Mibu Village nasconde un Grano di rosario, e lo stagno dei Temple Grounds a Senpou un altro grano più l'Holy Chapter: Infested sul fondo. Consegna il capitolo alla Divine Child per spingere la catena del Ritorno alla sua tappa delle serpi.",
+     "loc_it": "Lago di Mibu Village → stagno del Senpou Temple",
+     "sid": "s057"
+    }
+   ],
+   "title_it": "Fase 8 — Ashina Depths e Mibu Village: la Shelter Stone",
+   "note_it": "La rivincita con la Headless Ape completa la serie dei Ninjutsu; la Monaca corrotta custodisce l'ultimo ingrediente dell'incenso."
+  },
+  {
+   "title": "Phase 9 — The Owl's ultimatum",
+   "note": "THE decision of the run. One wrong dialogue line here costs three endings.",
+   "steps": [
+    {
+     "text": "With the Mortal Blade, Lotus of the Palace and Shelter Stone in hand, head back to Kuro - the castle is now crawling with Lone Shadow ninjas. The Lone Shadow Longswordsman down the Ashina Reservoir well drops a Prayer Bead, and the second Chained Ogre waits below the Upper Tower - Antechamber: drop through the hole in the floor of the next room for another.",
+     "loc": "Ashina Castle — reservoir well & Upper Tower",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Beads x2",
+       "label_it": "Grani x2"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Con Lama Mortale, Lotus of the Palace e Shelter Stone in mano, torna da Kuro — il castello ora brulica di ninja Lone Shadow. Il Lone Shadow Longswordsman in fondo al pozzo dell'Ashina Reservoir lascia un Grano di rosario, e il secondo Chained Ogre aspetta sotto Upper Tower - Antechamber: calati dal buco nel pavimento della stanza successiva per un altro.",
+     "loc_it": "Castello di Ashina — pozzo del Reservoir e Upper Tower",
+     "sid": "s058"
+    },
+    {
+     "text": "Atop the castle, Owl demands you abandon Kuro. REFUSE - stay loyal to Kuro. Choosing 'Obey the Iron Code' here fires the Shura ending, ends the playthrough on the spot and locks the other three endings. Shura is scheduled for NG+ behind a backup.",
+     "loc": "Ashina Castle — top floor, Owl's choice",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ Shura locks 3 endings — refuse",
+       "label_it": "⚠ Shura blocca 3 finali — rifiuta"
+      }
+     ],
+     "trophy": false,
+     "text_it": "In cima al castello, il Gufo ti chiede di abbandonare Kuro. RIFIUTA — resta fedele a Kuro. Scegliere di obbedire al Codice di ferro ('Obey the Iron Code') fa scattare qui il finale Shura, chiude la partita sul posto e blocca gli altri tre finali. Shura è in programma in NG+, dietro un backup.",
+     "loc_it": "Castello di Ashina — ultimo piano, la scelta del Gufo",
+     "sid": "s059"
+    },
+    {
+     "text": "Great Shinobi - Owl: his poison smoke tag disables your healing - back off until it fades. Mikiri the thrust, firecracker the leaping slam, and never greed past two hits. Trophy and Memory.",
+     "loc": "Ashina Castle — top floor",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Great Shinobi - Owl",
+       "label_it": "🏆 Grande shinobi Gufo"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Grande shinobi Gufo: il suo fumo velenoso ti disattiva le cure — allontanati finché non svanisce. Contromossa Mikiri sull'affondo, petardo sulla piombata e mai avidità oltre i due colpi. Trofeo e Memory.",
+     "loc_it": "Castello di Ashina — ultimo piano",
+     "sid": "s060"
+    }
+   ],
+   "title_it": "Fase 9 — L'ultimatum del Gufo",
+   "note_it": "LA decisione della run. Una riga di dialogo sbagliata qui costa tre finali."
+  },
+  {
+   "title": "Phase 10 — Purification chain & Hirata Estate revisited",
+   "note": "Run this ENTIRE phase before entering Fountainhead Palace: the Divine Dragon's fall locks it forever.",
+   "steps": [
+    {
+     "text": "Immediately after Owl: rest, exhaust Kuro's and Emma's dialogue, then eavesdrop on Kuro from behind the altar wall of his room. Repeat rest-and-talk until Emma relocates to the Dilapidated Temple.",
+     "loc": "Kuro's room — eavesdrop spot",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ Locks after Divine Dragon",
+       "label_it": "⚠ Si chiude dopo il Drago Divino"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Subito dopo il Gufo: riposa, esaurisci i dialoghi di Kuro ed Emma, poi origlia Kuro da dietro la parete dell'altare della sua stanza. Ripeti riposa-e-parla finché Emma non si sposta al Dilapidated Temple.",
+     "loc_it": "Stanza di Kuro — punto d'ascolto",
+     "sid": "s061"
+    },
+    {
+     "text": "Between rest-and-talk loops, clear the castle's newest tenant: Lone Shadow Vilehand has claimed the dojo where Jinsuke Saze fought - one more Lone Shadow duel, one more Prayer Bead.",
+     "loc": "Ashina Castle — Upper Tower dojo",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Bead",
+       "label_it": "Grano"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Tra un giro di riposa-e-parla e l'altro, sistema il nuovo inquilino del castello: Lone Shadow Vilehand ha occupato il dojo dove combatteva Jinsuke Saze — un altro duello Lone Shadow, un altro Grano di rosario.",
+     "loc_it": "Castello di Ashina — dojo della Upper Tower",
+     "sid": "s062"
+    },
+    {
+     "text": "At the temple, listen to Emma and the Sculptor through the hole in the back wall, then press Emma - ask about what you overheard, then what she's hiding - until she hands over the Father's Bell Charm.",
+     "loc": "Dilapidated Temple — back wall",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ Locks after Divine Dragon",
+       "label_it": "⚠ Si chiude dopo il Drago Divino"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Al tempio, ascolta Emma e lo Scultore attraverso il buco nella parete di fondo, poi incalza Emma — chiedile di ciò che hai origliato, poi di ciò che nasconde — finché non ti consegna il Father's Bell Charm.",
+     "loc_it": "Dilapidated Temple — parete di fondo",
+     "sid": "s063"
+    },
+    {
+     "text": "Offer the Father's Bell Charm to the temple Buddha: the burning Hirata Estate memory opens - the only door to the last two Prayer Beads and the Aromatic Flower.",
+     "loc": "Dilapidated Temple — Buddha",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Offri il Father's Bell Charm al Buddha del tempio: si apre il ricordo della tenuta Hirata in fiamme — l'unica porta verso gli ultimi due Grani di rosario e l'Aromatic Flower.",
+     "loc_it": "Dilapidated Temple — Buddha",
+     "sid": "s064"
+    },
+    {
+     "text": "Lone Shadow Masanaga the Spear-Bearer prowls the slope past the Bamboo Thicket: interrupt the whistle or his beasts join in. Prayer Bead.",
+     "loc": "Hirata Estate (second memory) — Bamboo Thicket Slope",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Bead",
+       "label_it": "Grano"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Lone Shadow Masanaga the Spear-Bearer batte il pendio oltre il Bamboo Thicket: interrompi il fischio o le sue bestie entrano nella mischia. Grano di rosario.",
+     "loc_it": "Tenuta Hirata (secondo ricordo) — Bamboo Thicket Slope",
+     "sid": "s065"
+    },
+    {
+     "text": "Juzou the Drunkard is back by the pond with a bigger entourage: thin the adds from stealth, then duel him on dry land. With a clean sweep you now stand at 30 of 40 beads - the rest wait in Fountainhead Palace, the burning Ashina and the leftover chests.",
+     "loc": "Hirata Estate (second memory) — pond",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Bead",
+       "label_it": "Grano"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Juzou the Drunkard è tornato allo stagno con una scorta più numerosa: sfoltisci gli scagnozzi di soppiatto, poi duella con lui sulla terraferma. Con un percorso pulito sei ora a 30 grani su 40 — il resto aspetta nel Fountainhead Palace, nella Ashina in fiamme e nelle casse rimaste.",
+     "loc_it": "Tenuta Hirata (secondo ricordo) — stagno",
+     "sid": "s066"
+    },
+    {
+     "text": "Owl (Father) in the Main Hall - the hardest duel of the run: deflect everything, jump the sweep-into-firecracker trick, and in phase 2 watch for the owl dive. Father Surpassed, plus the Aromatic Flower that unlocks the Purification ending.",
+     "loc": "Hirata Estate (second memory) — Main Hall",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Father Surpassed",
+       "label_it": "🏆 Migliore di Papà"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ Purification key",
+       "label_it": "⚠ Chiave di Purificazione"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Owl (Father) nella Main Hall — il duello più duro della run: devia tutto, salta la spazzata seguita dal petardo e nella fase 2 occhio alla picchiata del gufo. Migliore di Papà, più l'Aromatic Flower che sblocca il finale Purificazione.",
+     "loc_it": "Tenuta Hirata (secondo ricordo) — Main Hall",
+     "sid": "s067"
+    },
+    {
+     "text": "Close the Return chain: the Divine Child has moved to the cave mouth on the way to the Hall of Illusions - pick up the Holy Chapter: Dragon's Return inside, hand her both Serpent Viscera, rest, and collect the Frozen Tears. Both ending keys are now in your inventory.",
+     "loc": "Senpou Temple — Inner Sanctum",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      },
+      {
+       "type": "miss",
+       "label": "⚠ Return key",
+       "label_it": "⚠ Chiave del Ritorno"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Chiudi la catena del Ritorno: la Divine Child si è spostata all'imbocco della grotta verso la Hall of Illusions — raccogli dentro l'Holy Chapter: Dragon's Return, consegnale entrambi i Serpent Viscera, riposa e ritira le Frozen Tears. Le due chiavi dei finali sono ora nel tuo inventario.",
+     "loc_it": "Senpou Temple — Inner Sanctum",
+     "sid": "s068"
+    }
+   ],
+   "title_it": "Fase 10 — La catena della Purificazione e la tenuta Hirata rivisitata",
+   "note_it": "Completa TUTTA questa fase prima di entrare nel Fountainhead Palace: la caduta del Drago Divino la chiude per sempre."
+  },
+  {
+   "title": "Phase 11 — Fountainhead Palace: the Divine Dragon",
+   "note": "The last region: the ninth seed, the carp, four of the six lapis, and the Memory Man Without Equal will ask for.",
+   "steps": [
+    {
+     "text": "Return to Kuro, complete the incense rite, then present yourself at the Wedding Cave Door beyond the Corrupted Monk's bridge - the palanquin carries you to Fountainhead Palace.",
+     "loc": "Wedding Cave Door → Fountainhead Palace",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Torna da Kuro, completa il rito dell'incenso, poi presentati alla Wedding Cave Door oltre il ponte della Monaca corrotta — il palanchino ti porta al Fountainhead Palace.",
+     "loc_it": "Wedding Cave Door → Fountainhead Palace",
+     "sid": "s069"
+    },
+    {
+     "text": "Sakura Bull of the Palace: the Blazing Bull's script in a prettier arena - firecracker, flank, finish. Prayer Bead.",
+     "loc": "Fountainhead Palace — palace grounds",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Bead",
+       "label_it": "Grano"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Sakura Bull of the Palace: il copione del Blazing Bull in un'arena più elegante — petardo, fianco, chiusura. Grano di rosario.",
+     "loc_it": "Fountainhead Palace — terreni del palazzo",
+     "sid": "s070"
+    },
+    {
+     "text": "Okami Leader Shizu on the rooftops: close the distance before the lightning volleys start and she folds to pressure. Prayer Bead.",
+     "loc": "Fountainhead Palace — rooftops",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Bead",
+       "label_it": "Grano"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Okami Leader Shizu sui tetti: chiudi la distanza prima che partano le raffiche di fulmini e crolla sotto pressione. Grano di rosario.",
+     "loc_it": "Fountainhead Palace — tetti",
+     "sid": "s071"
+    },
+    {
+     "text": "Open the chest by the Palace Grounds idol for Gourd Seed #9 and hand it to Emma: the Healing Gourd hits 10 charges and Ultimate Healing Gourd pops.",
+     "loc": "Fountainhead Palace — Palace Grounds",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Ultimate Healing Gourd",
+       "label_it": "🏆 Fiaschetta curativa definitiva"
+      },
+      {
+       "type": "coll",
+       "label": "Gourd Seed 9/9",
+       "label_it": "Seme di zucca 9/9"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Apri la cassa presso l'idolo Palace Grounds per il Seme di zucca n. 9 e consegnalo a Emma: la Fiaschetta curativa arriva a 10 cariche e scatta Fiaschetta curativa definitiva.",
+     "loc_it": "Fountainhead Palace — Palace Grounds",
+     "sid": "s072"
+    },
+    {
+     "text": "Buy BOTH Lapis Lazuli from Pot Noble Koremori (6 Treasure Carp Scales each) BEFORE taking his Truly Precious Bait - the bait quest ends his shopkeeping. Only 6 lapis exist per cycle and mastery needs 10 - waste none.",
+     "loc": "Fountainhead Palace — Pot Noble Koremori",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Lapis Lazuli",
+       "label_it": "Lapislazzuli"
+      },
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Compra ENTRAMBI i Lapislazzuli da Pot Noble Koremori (6 Treasure Carp Scales l'uno) PRIMA di prendere la sua Truly Precious Bait — la quest dell'esca chiude il suo negozio. Esistono solo 6 Lapislazzuli per ciclo e la maestria ne chiede 10: non sprecarne nessuno.",
+     "loc_it": "Fountainhead Palace — Pot Noble Koremori",
+     "sid": "s073"
+    },
+    {
+     "text": "Feed the Truly Precious Bait at the Feeding Grounds: the Great Colored Carp dies - trophy - and a Lapis Lazuli appears beside the pot of the noble whose bait you fed. Dive the waters below for a last haul of scales, a Prayer Bead on the lakebed, and the sunken chest by the giant fish skeleton - another bead, watched by an underwater Headless.",
+     "loc": "Fountainhead Palace — Feeding Grounds",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Great Colored Carp",
+       "label_it": "🏆 Grande Carpa Colorata"
+      },
+      {
+       "type": "coll",
+       "label": "Lapis Lazuli + Beads x2",
+       "label_it": "Lapislazzuli + Grani x2"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Dai in pasto la Truly Precious Bait ai Feeding Grounds: la Grande Carpa Colorata muore — trofeo — e un Lapislazzuli compare accanto alla giara del nobile di cui hai usato l'esca. Immergiti nelle acque sottostanti per un ultimo raccolto di squame, un Grano di rosario sul fondale e la cassa sommersa presso lo scheletro del pesce gigante — un altro grano, sorvegliato da un Headless subacqueo.",
+     "loc_it": "Fountainhead Palace — Feeding Grounds",
+     "sid": "s074"
+    },
+    {
+     "text": "The Shichimen Warrior in the waterfall lake: Divine Confetti on the blade, Phoenix's Lilac Umbrella against the terror beams, and he crumbles. One more Lapis Lazuli.",
+     "loc": "Fountainhead Palace — waterfall lakebed",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Lapis Lazuli",
+       "label_it": "Lapislazzuli"
+      },
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Lo Shichimen Warrior nel lago della cascata: Coriandoli divini sulla lama, Phoenix's Lilac Umbrella contro i raggi di terrore, e si sbriciola. Un altro Lapislazzuli.",
+     "loc_it": "Fountainhead Palace — fondale della cascata",
+     "sid": "s075"
+    },
+    {
+     "text": "True Corrupted Monk on the great bridge: no trophy, but the Memory is mandatory for Man Without Equal. Deflect the naginata rhythm you already know, and in the illusion phase grapple the treetops for an intended free deathblow.",
+     "loc": "Fountainhead Palace — great bridge",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Memory (Man Without Equal)",
+       "label_it": "Memory (Uomo senza pari)"
+      }
+     ],
+     "trophy": false,
+     "text_it": "True Corrupted Monk sul grande ponte: niente trofeo, ma il Memory è obbligatorio per Uomo senza pari. Devia il ritmo di naginata che già conosci e nella fase delle illusioni aggancia le cime degli alberi per un colpo di grazia gratuito previsto dal gioco.",
+     "loc_it": "Fountainhead Palace — grande ponte",
+     "sid": "s076"
+    },
+    {
+     "text": "Sweep every idol you've never touched - Abandoned Dungeon depths, the Demon Bell, Bodhisattva Valley, both Hirata memories: Ashina Traveler wants every region trodden and usually pops around here.",
+     "loc": "All regions — idol sweep",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Ashina Traveler",
+       "label_it": "🏆 Viaggiatore d'Ashina"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Passa da ogni idolo che non hai mai toccato — le profondità dell'Abandoned Dungeon, la Demon Bell, Bodhisattva Valley, entrambi i ricordi di Hirata: Viaggiatore d'Ashina vuole ogni regione calpestata e di solito scatta più o meno qui.",
+     "loc_it": "Tutte le regioni — giro degli idoli",
+     "sid": "s077"
+    },
+    {
+     "text": "LAST CALL: confirm the Purification chain is DONE (Aromatic Flower in inventory) and the Frozen Tears are in the bag - the Divine Dragon's fall locks both questlines for this cycle.",
+     "loc": "Checklist — before the Divine Dragon",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ Point of lock-out",
+       "label_it": "⚠ Punto di blocco"
+      }
+     ],
+     "trophy": false,
+     "text_it": "ULTIMA CHIAMATA: verifica che la catena della Purificazione sia CHIUSA (Aromatic Flower nell'inventario) e che le Frozen Tears siano nella borsa — la caduta del Drago Divino blocca entrambe le questline per questo ciclo.",
+     "loc_it": "Checklist — prima del Drago Divino",
+     "sid": "s078"
+    },
+    {
+     "text": "Divine Dragon: clear the Old Dragons crowd with the sweeping attacks, then grapple the lightning-struck trees and hurl the bolts back into the god. Gracious Gift of Tears, and the Divine Dragon's Tears join your key items.",
+     "loc": "Fountainhead Palace — Divine Realm",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Gracious Gift of Tears",
+       "label_it": "🏆 Dono delle Lacrime"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Drago Divino: spazza via la folla di Old Dragons con gli attacchi ad area, poi aggancia gli alberi colpiti dai fulmini e riscaglia le saette nel dio. Dono delle Lacrime, e le Lacrime di Drago entrano tra i tuoi oggetti chiave.",
+     "loc_it": "Fountainhead Palace — Divine Realm",
+     "sid": "s079"
+    }
+   ],
+   "title_it": "Fase 11 — Fountainhead Palace: il Drago Divino",
+   "note_it": "L'ultima regione: il nono seme, la carpa, quattro dei sei Lapislazzuli e il Memory che Uomo senza pari verrà a chiederti."
+  },
+  {
+   "title": "Phase 12 — Ashina ablaze: the last sweep",
+   "note": "The Interior Ministry invasion rearranges every zone - and delivers the final beads and the Demon of Hatred.",
+   "steps": [
+    {
+     "text": "Ashina is burning and the map has new minibosses. Work the invasion for the final Prayer Beads - Seven Ashina Spears - Shume Masaji Oniwa at the reservoir, Ashina Elite Ujinari Mizuo in the dojo, Shigekichi of the Red Guard in the outskirts - then mop up whatever the checklist still shows (the Sunken Valley chests, the bead atop the poison-pool Buddha head). Any miniboss the flames removed leaves his bead on sale in the Offering Box next to Hanbei.",
+     "loc": "Ashina Castle & Outskirts — invasion",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Beads → 40/40",
+       "label_it": "Grani → 40/40"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Ashina brucia e la mappa ha miniboss nuovi. Lavora l'invasione per gli ultimi Grani di rosario — Seven Ashina Spears - Shume Masaji Oniwa al reservoir, Ashina Elite Ujinari Mizuo nel dojo, Shigekichi of the Red Guard negli outskirts — poi ripulisci ciò che la checklist ancora segna (le casse della Sunken Valley, il grano in cima alla testa di Buddha delle pozze velenose). Ogni miniboss cancellato dalle fiamme lascia il suo grano in vendita nell'Offering Box accanto a Hanbei.",
+     "loc_it": "Castello di Ashina e Outskirts — invasione",
+     "sid": "s080"
+    },
+    {
+     "text": "Offer the tenth necklace at an idol: Vitality and Posture cap out and Peak Physical Strength pops.",
+     "loc": "Any Sculptor's Idol",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Peak Physical Strength",
+       "label_it": "🏆 Ottima forma"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Offri la decima collana a un idolo: Vitalità e Postura arrivano al massimo e scatta Ottima forma.",
+     "loc_it": "Qualsiasi Idolo dello Scultore",
+     "sid": "s081"
+    },
+    {
+     "text": "Demon of Hatred on the old battlefield: an endurance duel, not a posture race. Suzaku's Lotus Umbrella eats the fireballs, sprint out of the phase-3 flame ring, and chip between charges. Memory plus TWO Lapis Lazuli.",
+     "loc": "Ashina Outskirts — battlefield (invasion)",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Demon of Hatred",
+       "label_it": "🏆 Demone dell'odio"
+      },
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Demone dell'odio sul vecchio campo di battaglia: un duello di resistenza, non una gara di postura. Il Suzaku's Lotus Umbrella si mangia le palle di fuoco, esci di corsa dall'anello di fiamme della fase 3 e rosicchia tra una carica e l'altra. Memory più DUE Lapislazzuli.",
+     "loc_it": "Ashina Outskirts — campo di battaglia (invasione)",
+     "sid": "s082"
+    },
+    {
+     "text": "Fit your first lazulite upgrade at the Sculptor - Lazulite Shuriken or Lazulite Sabimaru, 2 lapis each: Lazuline Upgrade pops. Bank the leftovers: NG+ still has to fund the other of those two (2) plus the Lazulite Axe (3) and Lazulite Sacred Flame (3), and Master of the Prosthetic wants every lower-tier upgrade bought too - keep forging as materials come in.",
+     "loc": "Dilapidated Temple — upgrade menu",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Lazuline Upgrade",
+       "label_it": "🏆 Potenziamento al Lapislazzuli"
+      },
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Monta il tuo primo potenziamento al lapislazzuli dallo Scultore — Lazulite Shuriken o Lazulite Sabimaru, 2 Lapislazzuli l'uno: scatta Potenziamento al Lapislazzuli. Metti in banca gli avanzi: il NG+ deve ancora finanziare l'altro dei due (2) più la Lazulite Axe (3) e la Lazulite Sacred Flame (3), e Maestria della Protesi vuole comprato anche ogni potenziamento di grado inferiore — continua a forgiare man mano che arrivano i materiali.",
+     "loc_it": "Dilapidated Temple — menu potenziamenti",
+     "sid": "s083"
+    },
+    {
+     "text": "Spend spare XP into the Ashina Arts tree toward Ashina Cross - every point banked now shortens the NG+ grind for Height of Technique.",
+     "loc": "Skill menu",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD",
+       "label_it": "BUILD"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Investi gli XP avanzati nel ramo Ashina Arts verso l'Ashina Cross — ogni punto messo in banca ora accorcia il grind in NG+ per Avanguardia della tecnica.",
+     "loc_it": "Menu abilità",
+     "sid": "s084"
+    }
+   ],
+   "title_it": "Fase 12 — Ashina in fiamme: l'ultimo rastrellamento",
+   "note_it": "L'invasione dell'Interior Ministry rimescola ogni zona — e consegna gli ultimi grani e il Demone dell'odio."
+  },
+  {
+   "title": "Phase 13 — Sword Saint and three endings in one night",
+   "note": "One backup, three trophies. The final boss ends the cycle - audit everything first.",
+   "steps": [
+    {
+     "text": "Point-of-no-return audit: Demon of Hatred dead, 40/40 beads offered, 10/10 gourd, 10/10 tools, Aromatic Flower AND Frozen Tears in the inventory. Beating the final boss rolls this world into NG+.",
+     "loc": "Checklist — before the final field",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ Final audit",
+       "label_it": "⚠ Verifica finale"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Verifica del punto di non ritorno: Demone dell'odio morto, 40/40 grani offerti, fiaschetta 10/10, strumenti 10/10, Aromatic Flower E Frozen Tears nell'inventario. Battere il boss finale fa rotolare questo mondo nel NG+.",
+     "loc_it": "Checklist — prima del campo finale",
+     "sid": "s085"
+    },
+    {
+     "text": "Sword Saint Isshin Ashina, after a Genichiro warm-up: phase 1 is pure kenjutsu - deflect the strings; phase 2 adds spear and pistol - Mikiri the charge, umbrella the gunfire; phase 3 adds lightning - jump it and throw it back. Take it at full 10-gourd and full posture.",
+     "loc": "Final battlefield — silvergrass field",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Sword Saint, Isshin Ashina",
+       "label_it": "🏆 Maestro della Spada, Isshin Ashina"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Maestro della Spada Isshin Ashina, dopo un riscaldamento con Genichiro: la fase 1 è puro kenjutsu — devia le sequenze; la fase 2 aggiunge lancia e pistola — Contromossa Mikiri sulla carica, ombrello sui colpi di pistola; la fase 3 aggiunge i fulmini — saltali e riscagliali. Affrontalo con la fiaschetta piena a 10 e la postura al massimo.",
+     "loc_it": "Campo di battaglia finale — distesa d'erba argentata",
+     "sid": "s086"
+    },
+    {
+     "text": "THE MOMENT the final deathblow lands, do NOT answer Kuro: back up your save now (PS+ cloud upload or USB copy). This single backup converts into all three loyal endings.",
+     "loc": "Final battlefield — before the last dialogue",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ Backup point 1",
+       "label_it": "⚠ Punto di backup 1"
+      }
+     ],
+     "trophy": false,
+     "text_it": "NELL'ISTANTE in cui il colpo di grazia finale va a segno, NON rispondere a Kuro: fai il backup del salvataggio adesso (upload sul cloud PS+ o copia su USB). Questo singolo backup si converte in tutti e tre i finali leali.",
+     "loc_it": "Campo di battaglia finale — prima dell'ultimo dialogo",
+     "sid": "s087"
+    },
+    {
+     "text": "Answer Kuro with the Divine Dragon's Tears alone - Immortal Severance. Watch the credits through; the trophy lands with the ending.",
+     "loc": "Ending 1 — Immortal Severance",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Immortal Severance",
+       "label_it": "🏆 Recisione immortale"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Rispondi a Kuro con le sole Lacrime di Drago — Recisione immortale. Guarda i titoli di coda fino in fondo; il trofeo arriva col finale.",
+     "loc_it": "Finale 1 — Recisione immortale",
+     "sid": "s088"
+    },
+    {
+     "text": "Restore the backup and answer with the Aromatic Flower's option instead - the Purification ending, where Wolf pays the price in Kuro's place.",
+     "loc": "Ending 2 — Purification (from backup)",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Purification",
+       "label_it": "🏆 Purificazione"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Ripristina il backup e rispondi invece con l'opzione dell'Aromatic Flower — il finale Purificazione, dove Wolf paga il prezzo al posto di Kuro.",
+     "loc_it": "Finale 2 — Purificazione (da backup)",
+     "sid": "s089"
+    },
+    {
+     "text": "Restore once more and offer the Frozen Tears alongside the Dragon's Tears - the Return ending, Dragon's Homecoming. Let THIS save roll into New Game Plus.",
+     "loc": "Ending 3 — Return (from backup)",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Dragon's Homecoming",
+       "label_it": "🏆 Il Drago torna a casa"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Ripristina ancora una volta e offri le Frozen Tears insieme alle Lacrime di Drago — il finale Ritorno, Il Drago torna a casa. Lascia che QUESTO salvataggio roli nel New Game Plus.",
+     "loc_it": "Finale 3 — Ritorno (da backup)",
+     "sid": "s090"
+    }
+   ],
+   "title_it": "Fase 13 — Maestro della Spada e tre finali in una notte",
+   "note_it": "Un backup, tre trofei. Il boss finale chiude il ciclo — prima controlla tutto."
+  },
+  {
+   "title": "Phase 14 — NG+: the Shura branch",
+   "note": "The vile ending, quarantined behind the second backup. Emma and Isshin's Memories complete the Man Without Equal set.",
+   "steps": [
+    {
+     "text": "Start NG+: when Kuro offers to take back his Charm, KEEP IT, and leave the Demon Bell alone - this route stays defensive. Every skill, tool, bead and gourd charge carries over.",
+     "loc": "NG+ start — Kuro's Charm choice",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD — keep the Charm",
+       "label_it": "BUILD — tieni l'amuleto"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Avvia il NG+: quando Kuro si offre di riprendersi il suo amuleto (Kuro's Charm), TIENILO, e lascia stare la Demon Bell — questa route resta difensiva. Ogni abilità, strumento, grano e carica della fiaschetta si porta dietro.",
+     "loc_it": "Inizio NG+ — la scelta dell'amuleto di Kuro",
+     "sid": "s091"
+    },
+    {
+     "text": "Speed-run the spine you already know: Gyoubu, Genichiro, then the three branches again for the Mortal Blade, Lotus of the Palace and Shelter Stone. Your carry-over power flattens all of it.",
+     "loc": "NG+ — main path",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Corri lungo la spina dorsale che già conosci: Gyoubu, Genichiro, poi di nuovo le tre diramazioni per Lama Mortale, Lotus of the Palace e Shelter Stone. La potenza che ti porti dietro spiana tutto.",
+     "loc_it": "NG+ — percorso principale",
+     "sid": "s092"
+    },
+    {
+     "text": "No lapis exists this side of the Owl choice - what Hirata and Mibu DO offer is Treasure Carp Scales. Farm the ponds up to 12 scales so Koremori's two lapis are buyable the moment Fountainhead reopens.",
+     "loc": "NG+ — Hirata & Mibu ponds",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD scales",
+       "label_it": "BUILD squame"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Da questo lato della scelta del Gufo non esiste nessun Lapislazzuli — quello che Hirata e Mibu offrono sono Treasure Carp Scales. Farma gli stagni fino a 12 squame, così i due Lapislazzuli di Koremori saranno comprabili nell'istante in cui il Fountainhead riapre.",
+     "loc_it": "NG+ — stagni di Hirata e Mibu",
+     "sid": "s093"
+    },
+    {
+     "text": "Backup point 2: with all three items in hand, BEFORE climbing to the castle top, quit the game and back up the save again - you are about to spend this timeline on Shura.",
+     "loc": "NG+ — before the Owl choice",
+     "tags": [
+      {
+       "type": "miss",
+       "label": "⚠ Backup point 2",
+       "label_it": "⚠ Punto di backup 2"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Punto di backup 2: con tutti e tre gli oggetti in mano, PRIMA di salire in cima al castello, esci dal gioco e rifai il backup del salvataggio — stai per spendere questa linea temporale in Shura.",
+     "loc_it": "NG+ — prima della scelta del Gufo",
+     "sid": "s094"
+    },
+    {
+     "text": "At the top, choose 'Obey the Iron Code'. Emma, the Gentle Blade steps in first: she duels clean - mirror her deflects and Mikiri the thrust. Her Memory joins the collection.",
+     "loc": "NG+ — Ashina Castle top, Shura branch",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Memory (Man Without Equal)",
+       "label_it": "Memory (Uomo senza pari)"
+      }
+     ],
+     "trophy": false,
+     "text_it": "In cima, scegli di obbedire al Codice di ferro ('Obey the Iron Code'). Emma, the Gentle Blade scende in campo per prima: duella pulita — rispecchia le sue deviazioni e Contromossa Mikiri sull'affondo. Il suo Memory entra in collezione.",
+     "loc_it": "NG+ — cima del Castello di Ashina, ramo Shura",
+     "sid": "s095"
+    },
+    {
+     "text": "Isshin Ashina - the living man, not the saint: relentless Ashina-style strings, then a flame-wreathed phase 2 the Suzaku umbrella defuses. The trophy pops on the kill, and the instant his Memory hits your inventory Man Without Equal joins it.",
+     "loc": "NG+ — Ashina Castle top, Shura branch",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Isshin Ashina",
+       "label_it": "🏆 Isshin Ashina"
+      },
+      {
+       "type": "trophy",
+       "label": "🏆 Man Without Equal",
+       "label_it": "🏆 Uomo senza pari"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Isshin Ashina — l'uomo vivo, non il santo della spada: sequenze incessanti in stile Ashina, poi una fase 2 avvolta dalle fiamme che l'ombrello Suzaku disinnesca. Il trofeo scatta all'uccisione, e nell'istante in cui il suo Memory tocca l'inventario Uomo senza pari lo segue.",
+     "loc_it": "NG+ — cima del Castello di Ashina, ramo Shura",
+     "sid": "s096"
+    },
+    {
+     "text": "Watch Ashina burn: the Shura ending caps the branch. The worst ending in the game just happened to a COPY of your save.",
+     "loc": "NG+ — Shura ending",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Shura",
+       "label_it": "🏆 Shura"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Guarda Ashina bruciare: il finale Shura chiude il ramo. Il finale peggiore del gioco è appena successo a una COPIA del tuo salvataggio.",
+     "loc_it": "NG+ — finale Shura",
+     "sid": "s097"
+    }
+   ],
+   "title_it": "Fase 14 — NG+: il ramo Shura",
+   "note_it": "Il finale vile, in quarantena dietro il secondo backup. I Memory di Emma e Isshin completano la serie di Uomo senza pari."
+  },
+  {
+   "title": "Phase 15 — NG+ restored: mastery grind and the platinum",
+   "note": "Reload, refuse the Iron Code, and close the two mastery golds. Roughly 2 hours of farming ends the run.",
+   "steps": [
+    {
+     "text": "Restore backup 2, climb back up and REFUSE the Iron Code this time. Kill Great Shinobi - Owl again and continue the story as normal.",
+     "loc": "NG+ (restored) — Ashina Castle top",
+     "tags": [
+      {
+       "type": "quest",
+       "label": "quest",
+       "label_it": "missione"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Ripristina il backup 2, risali in cima e stavolta RIFIUTA il Codice di ferro. Uccidi di nuovo il Grande shinobi Gufo e prosegui la storia come al solito.",
+     "loc_it": "NG+ (ripristinato) — cima del Castello di Ashina",
+     "sid": "s098"
+    },
+    {
+     "text": "Retrace to Fountainhead Palace: Pot Noble Koremori's two lapis (6 scales each), the waterfall Shichimen's lapis, then the Divine Dragon to trigger the invasion.",
+     "loc": "NG+ — Fountainhead Palace",
+     "tags": [
+      {
+       "type": "coll",
+       "label": "Lapis Lazuli",
+       "label_it": "Lapislazzuli"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Ripercorri la strada fino al Fountainhead Palace: i due Lapislazzuli di Pot Noble Koremori (6 squame l'uno), il Lapislazzuli dello Shichimen della cascata, poi il Drago Divino per innescare l'invasione.",
+     "loc_it": "NG+ — Fountainhead Palace",
+     "sid": "s099"
+    },
+    {
+     "text": "Demon of Hatred's two Lapis Lazuli fund the last forgings: the remaining one of Lazulite Shuriken/Sabimaru (2), the Lazulite Axe (3) and Lazulite Sacred Flame (3). With every lower-tier upgrade already bought - Malcontent's Ring included - Master of the Prosthetic pops at the workbench.",
+     "loc": "NG+ — invasion → Dilapidated Temple",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Master of the Prosthetic",
+       "label_it": "🏆 Maestria della Protesi"
+      }
+     ],
+     "trophy": true,
+     "text_it": "I due Lapislazzuli del Demone dell'odio finanziano le ultime forge: quello che resta fra Lazulite Shuriken/Sabimaru (2), la Lazulite Axe (3) e la Lazulite Sacred Flame (3). Con ogni potenziamento di grado inferiore già comprato — Malcontent's Ring incluso — Maestria della Protesi scatta al banco di lavoro.",
+     "loc_it": "NG+ — invasione → Dilapidated Temple",
+     "sid": "s100"
+    },
+    {
+     "text": "Park at the Outskirts Wall - Stairway idol and farm the invasion mob loop: stealth-kill the packs, rest, repeat - roughly 9,000 XP a minute in NG+; budget 2-4 hours for every remaining skill.",
+     "loc": "NG+ — Outskirts Wall - Stairway (invasion)",
+     "tags": [
+      {
+       "type": "build",
+       "label": "BUILD farm",
+       "label_it": "BUILD farming"
+      }
+     ],
+     "trophy": false,
+     "text_it": "Piazzati all'idolo Outskirts Wall - Stairway e farma il giro dei gruppi dell'invasione: uccisioni furtive, riposo, ripeti — circa 9.000 XP al minuto in NG+; metti in conto 2-4 ore per ogni abilità mancante.",
+     "loc_it": "NG+ — Outskirts Wall - Stairway (invasione)",
+     "sid": "s101"
+    },
+    {
+     "text": "The first skill tree you complete unlocks its secret 'mystery' technique - Ashina Cross is the classic pick: learn it and Master of the Arts pops.",
+     "loc": "Skill menu — first completed tree",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Master of the Arts",
+       "label_it": "🏆 Maestria delle arti"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Il primo albero di abilità che completi sblocca la sua tecnica segreta 'misteriosa' — l'Ashina Cross è la scelta classica: imparala e scatta Maestria delle arti.",
+     "loc_it": "Menu abilità — primo albero completato",
+     "sid": "s102"
+    },
+    {
+     "text": "Collect the Mushin Esoteric Text from the Tengu at the Great Serpent Shrine idol - he hands it over once you know a secret technique (Emma keeps a spare after Fountainhead) - then buy out every remaining skill across all five trees; the expensive Mushin latents go last, and Height of Technique closes the grind.",
+     "loc": "Skill menu — all trees",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Height of Technique",
+       "label_it": "🏆 Avanguardia della tecnica"
+      }
+     ],
+     "trophy": true,
+     "text_it": "Ritira il Mushin Esoteric Text dal Tengu all'idolo Great Serpent Shrine — te lo consegna quando conosci una tecnica segreta (Emma ne tiene una di scorta dopo il Fountainhead) — poi compra ogni abilità rimasta nei cinque alberi; le costose latenti Mushin per ultime, e Avanguardia della tecnica chiude il grind.",
+     "loc_it": "Menu abilità — tutti gli alberi",
+     "sid": "s103"
+    },
+    {
+     "text": "🏆 Sekiro - the platinum. You are left standing in a maxed-out NG+ with every tool lazulite-plated: the perfect state for a victory-lap boss rush, if Ashina calls you back.",
+     "loc": "Platinum — Sekiro",
+     "tags": [
+      {
+       "type": "trophy",
+       "label": "🏆 Sekiro",
+       "label_it": "🏆 Sekiro"
+      }
+     ],
+     "trophy": true,
+     "text_it": "🏆 Sekiro — il platino. Resti in piedi in un NG+ al massimo, con ogni strumento placcato al lapislazzuli: lo stato perfetto per un giro d'onore tra i boss, se Ashina ti richiama.",
+     "loc_it": "Platino — Sekiro",
+     "sid": "s104"
+    }
+   ],
+   "title_it": "Fase 15 — NG+ ripristinato: il grind delle maestrie e il platino",
+   "note_it": "Ricarica, rifiuta il Codice di ferro e chiudi i due ori delle maestrie. Circa 2 ore di farming chiudono la run."
+  }
+ ],
+ "playthroughs_it": "1 run completista (tutti i grani, i semi, gli strumenti, entrambe le questline dei finali, poi 3 finali da un solo backup del salvataggio alla scelta finale) + 1 run in NG+ divisa da un secondo backup: prima il ramo Shura, poi ricarichi e prosegui fino all'endgame per i Lapislazzuli rimanenti e il grind delle abilità. Nessuna terza partita necessaria.",
+ "hours_it": "60-70 ore",
+ "build_summary_it": "«Shinobi tank» tutto deviazioni. Sekiro non ha statistiche da distribuire né equipaggiamento da farmare: la tua build è l'ordine delle abilità, la scelta degli strumenti prostetici e la disciplina. Compra Contromossa Mikiri (Mikiri Counter) prima di ogni altra cosa, poi le abilità per la postura (Ichimonji: Double) e la sopravvivenza (Breath of Life: Light, le passive del ramo Temple Arts). Il Loaded Umbrella e i suoi potenziamenti Phoenix/Suzaku sono la cosa più vicina a uno scudo che il gioco offra: alzalo contro le piogge di frecce, i raggi di terrore e il fuoco invece di scommettere sulle schivate. I petardi (Firecrackers) fanno barcollare ogni boss bestiale, gli Snap Seeds spezzano ogni illusione, i Coriandoli divini tagliano ogni apparizione. L'Attack Power sale solo consumando i Memory dei boss, vita e postura solo con i Grani di rosario — la route tiene entrambi al passo, così nessuno scontro è uno scoglio di statistiche.",
+ "golden_rules_it": [
+  "Al confronto col Gufo in cima al castello nella prima run, RIFIUTA il Codice di ferro e resta fedele a Kuro. Scegliere di obbedire al Codice ('Obey the Iron Code') fa scattare il finale Shura sul posto, chiude la partita e blocca gli altri tre finali per quella run. Shura è in programma in NG+, dietro un backup del salvataggio.",
+  "La catena della Purificazione (origlia Kuro -> Emma al tempio -> Father's Bell Charm -> Owl (Father) a Hirata 2) si chiude per sempre quando cade il Drago Divino. Falla tutta subito dopo aver battuto il Grande shinobi Gufo, prima di entrare nel Fountainhead Palace.",
+  "La questline del Ritorno della Divine Child (riso -> cachi -> Riso per Kuro -> Holy Chapter -> entrambi i Serpent Viscera -> Frozen Tears) ha la stessa scadenza della Purificazione: il riso speciale deve arrivare a Kuro PRIMA che cada il Drago Divino, o la catena muore per il ciclo. Con entrambe le questline chiuse, UN solo backup dopo il colpo di grazia al Maestro della Spada vale tutti e tre i finali leali.",
+  "Fai il backup del salvataggio (cloud PS+ o USB) nei due punti di diramazione: subito dopo il colpo di grazia al Maestro della Spada, prima di rispondere a Kuro (prima run), e prima della scelta del Gufo in cima al castello (NG+).",
+  "Cura il Dragonrot con una Dragon's Blood Droplet appena un NPC inizia a tossire: un NPC malato congela le questline di Emma e della Divine Child da cui questa route dipende.",
+  "Accumula Treasure Carp Scales per tutto il gioco e non sprecare mai i Lapislazzuli: la maestria completa della protesi ne chiede 10, ne esistono solo 6 per ciclo, e due li vende Pot Noble Koremori a 6 squame l'uno."
+ ],
+ "stat_table_it": {
+  "note": "Sekiro non ha livelli: l'Attack Power (AP) sale solo consumando i Memory dei boss a un Idolo dello Scultore — fallo dopo ogni boss. Vitalità e Postura salgono solo offrendo collane di Grani di rosario (4 grani l'una, 40 grani = 10 collane). 'Grani' e 'Fiaschetta' sono i totali attesi alla FINE di ogni blocco, non requisiti rigidi.",
+  "columns": [
+   "Fase",
+   "AP",
+   "Grani",
+   "Fiaschetta",
+   "Traguardo"
+  ],
+  "rows": [
+   [
+    "Outskirts + Hirata (F1-4)",
+    "3",
+    "9",
+    "4",
+    "Gyoubu e la Falena abbattuti; 6 strumenti prostetici montati"
+   ],
+   [
+    "Castello di Ashina (F5)",
+    "4",
+    "13",
+    "6",
+    "Genichiro battuto; Ninjutsu Bloodsmoke; tre diramazioni aperte"
+   ],
+   [
+    "Senpou Temple (F6)",
+    "5",
+    "15",
+    "7",
+    "Lama Mortale e Puppeteer; questline della Divine Child avviata"
+   ],
+   [
+    "Sunken Valley (F7)",
+    "6",
+    "18",
+    "8",
+    "Scimmia guardiana recisa; Tutti gli strumenti prostetici (10/10)"
+   ],
+   [
+    "Depths + Mibu (F8)",
+    "8",
+    "25",
+    "9",
+    "Monaca corrotta e Headless Ape; Shelter Stone; tutti e 3 i Ninjutsu"
+   ],
+   [
+    "Gufo + Hirata 2 (F9-10)",
+    "10",
+    "30",
+    "9",
+    "Codice di ferro rifiutato; Gufo e Owl (Father); Aromatic Flower + Frozen Tears"
+   ],
+   [
+    "Fountainhead + invasione (F11-12)",
+    "13",
+    "40",
+    "10",
+    "Drago Divino, Demone dell'odio, Ottima forma"
+   ],
+   [
+    "Maestro della Spada + NG+ (F13-15)",
+    "14+",
+    "40",
+    "10",
+    "3 finali da un backup; Shura, Uomo senza pari, grind, platino"
+   ]
+  ]
+ },
+ "build_bullets_it": [
+  {
+   "h": "Devia, non schivare",
+   "t": "La postura è la vera barra della vita, da entrambe le parti. Tieni la guardia di default e premila al momento dell'impatto per deviare — una schivata a vuoto costa più di una parata fallita."
+  },
+  {
+   "h": "Prima di tutto, Contromossa Mikiri",
+   "t": "Comprala coi primi due punti abilità. Ogni affondo del gioco diventa danno di postura gratis, comprese metà delle mosse più temibili del roster dei boss."
+  },
+  {
+   "h": "L'ombrello è il tuo scudo",
+   "t": "Il Loaded Umbrella (1.600 sen da Blackhat Badger) blocca in pieno piogge di frecce e colpi d'arma da fuoco; il potenziamento Phoenix's Lilac ferma il terrore, il Suzaku's Lotus ferma il fuoco."
+  },
+  {
+   "h": "Petardi per le bestie",
+   "t": "I Robert's Firecrackers fanno barcollare ogni boss animale — il cavallo di Gyoubu, il Blazing Bull, la Scimmia guardiana — e ogni lampo ti compra una combo gratis."
+  },
+  {
+   "h": "Illusioni e apparizioni",
+   "t": "Gli Snap Seeds spezzano le fasi illusorie della Falena e della Monaca corrotta; i Coriandoli divini rendono tagliabili gli Shichimen Warrior e le altre apparizioni."
+  },
+  {
+   "h": "Abilità di postura",
+   "t": "Ichimonji: Double ti ricarica la postura a metà scontro; Breath of Life: Light cura a ogni colpo di grazia. Sono il cuore del ciclo difensivo."
+  },
+  {
+   "h": "Disciplina della resurrezione",
+   "t": "Tieni la seconda barra per il dopo colpo di grazia su un boss, non come pulsante antipanico a metà fase: resuscitare dentro una combo attiva è solo cibo per il boss."
+  }
+ ],
+ "glossary_it": {
+  "Sekiro": "Sekiro",
+  "Revered Blade": "Lama venerata",
+  "Shinobi Prosthetic": "Protesi shinobi",
+  "Memorial Mob": "Congrega memore",
+  "Resurrection": "Resurrezione",
+  "Gyoubu Masataka Oniwa": "Masataka Oniwa Gyoubu",
+  "The Phantom Lady Butterfly": "La Falena fantasma",
+  "Genichiro Ashina": "Genichiro Ashina",
+  "Guardian Ape": "Scimmia guardiana",
+  "Guardian Ape Immortality Severed": "Scimmia guardiana, immortalità recisa",
+  "Folding Screen Monkeys": "Scimmie del Tempio",
+  "Great Shinobi - Owl": "Grande shinobi Gufo",
+  "Father Surpassed": "Migliore di Papà",
+  "Corrupted Monk": "Monaca corrotta",
+  "Gracious Gift of Tears": "Dono delle Lacrime",
+  "Isshin Ashina": "Isshin Ashina",
+  "Demon of Hatred": "Demone dell'odio",
+  "Great Serpent": "Grande Serpe",
+  "Great Colored Carp": "Grande Carpa Colorata",
+  "All Prosthetic Tools": "Tutti gli strumenti prostetici",
+  "All Ninjutsu Techniques": "Tutte le tecniche Ninjutsu",
+  "Peak Physical Strength": "Ottima forma",
+  "Ultimate Healing Gourd": "Fiaschetta curativa definitiva",
+  "Immortal Severance": "Recisione immortale",
+  "Purification": "Purificazione",
+  "Dragon's Homecoming": "Il Drago torna a casa",
+  "Shura": "Shura",
+  "Sword Saint, Isshin Ashina": "Maestro della Spada, Isshin Ashina",
+  "Master of the Arts": "Maestria delle arti",
+  "Lazuline Upgrade": "Potenziamento al Lapislazzuli",
+  "Man Without Equal": "Uomo senza pari",
+  "Ashina Traveler": "Viaggiatore d'Ashina",
+  "Master of the Prosthetic": "Maestria della Protesi",
+  "Height of Technique": "Avanguardia della tecnica",
+  "Kusabimaru": "Kusabimaru",
+  "Mortal Blade": "Lama Mortale",
+  "Healing Gourd": "Fiaschetta curativa",
+  "Prayer Bead": "Grano di rosario",
+  "Gourd Seed": "Seme di zucca",
+  "Prosthetic Tool": "Strumento prostetico",
+  "Sculptor's Idol": "Idolo dello Scultore",
+  "Sculptor": "Scultore",
+  "Owl": "Gufo",
+  "Lady Butterfly": "Falena",
+  "Divine Dragon": "Drago Divino",
+  "Lapis Lazuli": "Lapislazzuli",
+  "Divine Confetti": "Coriandoli divini",
+  "Divine Dragon's Tears": "Lacrime di Drago",
+  "Mikiri Counter": "Contromossa Mikiri",
+  "Iron Code": "Codice di ferro",
+  "Hirata Estate": "tenuta Hirata",
+  "Ashina Castle": "Castello di Ashina",
+  "Vitality": "Vitalità",
+  "Posture": "Postura",
+  "Return (ending)": "Ritorno"
+ },
+ "unverified_it": [
+  "Dragonrot — le fonti italiane oscillano fra 'Mal di drago', 'Mal del drago' e 'Marciume del drago': nessuna variante accertata come ufficiale",
+  "Dragon's Blood Droplet — la resa 'Goccia di sangue di drago' compare solo su siti tradotti automaticamente; le testate italiane (everyeye, gamesoul, player.it) parlano della cura del Mal di/del Drago senza un nome dell'oggetto concorde: demolita al passaggio 4",
+  "Tengu of Ashina — 'Tengu di Ashina' non ha alcun riscontro italiano documentabile: la ricerca a frase esatta restituisce solo fonti in inglese; demolita al passaggio 4",
+  "Divine Child (of Rejuvenation) — un'unica fonte dà 'Fanciulla dell'Acqua del Ringiovanimento', non riscontrata altrove",
+  "Dilapidated Temple — 'Tempio in Rovina' e 'Tempio Diroccato' convivono nelle guide: nome ufficiale non accertato",
+  "Ashina Outskirts — 'Periferia di Ashina' (GameLegends) contro 'Dintorni di Ashina' (Tom's Hardware): in conflitto",
+  "Senpou Temple — 'Tempio Senpou' e 'Tempio di Senpou' si alternano perfino nello stesso articolo",
+  "Sunken Valley — nessuna resa italiana riscontrata in modo affidabile",
+  "Ashina Depths — 'Profondità di Ashina' solo su GameLegends: fonte singola",
+  "Mibu Village — 'Villaggio di Mibu' e 'Villaggio Mibu' in conflitto",
+  "Fountainhead Palace — 'Palazzo della Sorgente' solo su GameLegends: fonte singola",
+  "Hidden Forest — 'Foresta Nascosta' solo su GameLegends: fonte singola",
+  "Abandoned Dungeon, Ashina Reservoir, Bodhisattva Valley, Gun Fort, Moon-view Tower, Hall of Illusions, Inner Sanctum, Temple Grounds, Wedding Cave, Divine Realm, Feeding Grounds, Demon Bell, Great Serpent Shrine, Hidden Temple, silvergrass field (luoghi) — nessuna fonte italiana affidabile",
+  "Nomi degli idoli (Outskirts Wall - Gate Path, Upper Tower - Antechamber ecc.) — nessuna lista italiana verificabile",
+  "Strumenti prostetici: Loaded Shuriken, Flame Vent, Shinobi Axe of the Monkey, Mist Raven's Feathers, Loaded Umbrella (e Phoenix's Lilac / Suzaku's Lotus), Loaded Firecracker / Robert's Firecrackers, Loaded Spear, Sabimaru, Divine Abduction, Finger Whistle, serie Lazulite — nomi italiani non verificati",
+  "Snap Seed — nessuna resa italiana riscontrata",
+  "Treasure Carp Scale — 'Scaglie della Carpa del Tesoro' e 'Squame di carpa' in conflitto",
+  "Memory (dei boss) e Attack Power — nomi di menu non verificati",
+  "Esoteric Text (Shinobi/Ashina/Senpou/Mushin) — una sola fonte dà 'Tomo Mushin'/'Tomo Shinobi', non riscontrata",
+  "Abilità: Ichimonji: Double, Breath of Life: Light, Ashina Cross, Temple Arts, Ashina Arts, Mibu Breathing Technique, Way of Tomoe — nomi italiani non verificati",
+  "Ninjutsu: Bloodsmoke, Puppeteer, Bestowal — nomi italiani non verificati",
+  "Oggetti delle questline: Young Lord's Bell Charm, Father's Bell Charm, Aromatic Flower, Frozen Tears, Rice / Rice for Kuro / Sweet Rice Balls, Holy Chapter: Infested / Dragon's Return, Fresh/Dried Serpent Viscera, Lotus of the Palace, Shelter Stone, Slender Finger, Gyoubu's Broken Horn, Shuriken Wheel, Flame Barrel, Large Fan, Truly Precious Bait, Malcontent's Ring, Kuro's Charm — verificati solo in inglese",
+  "Miniboss senza trofeo: Chained Ogre, General Naomori Kawarada, General Tenzen Yamauchi, General Kuranosuke Matsumoto, Shinobi Hunter Enshin of Misen, Juzou the Drunkard, Blazing Bull, Seven Ashina Spears (Shikibu/Shume), Ashina Elite (Jinsuke Saze/Ujinari Mizuo), Long-arm Centipede (Sen'un/Giraffe), Armored Warrior, Snake Eyes (Shirafuji/Shirahagi), Tokujiro the Glutton, Mist Noble, O'Rin of the Water, Shichimen Warrior, Lone Shadow (Longswordsman/Vilehand/Masanaga), Sakura Bull of the Palace, Okami Leader Shizu, Headless, Headless Ape, True Corrupted Monk, Old Dragons, Emma the Gentle Blade (titolo da boss) — nomi italiani non verificati",
+  "NPC: Blackhat Badger ('Tasso Testanera' su una sola fonte), Pot Noble Koremori, Fujioka the Info Broker, Hanbei, Nogami Gensai — non verificati",
+  "Interior Ministry — fazione, resa italiana non verificata",
+  "'Obey the Iron Code' — il Codice di ferro è verificato, la formulazione esatta delle opzioni di dialogo no",
+  "Qualificatori delle Congreghe memori (Crow's Bed / Battlefield / Dungeon / Shugendo) — 'Congrega memore' è ufficiale, i nomi di zona no"
+ ]
+}

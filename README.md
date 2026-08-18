@@ -2,14 +2,14 @@
 
 **Il platino non si perde per bravura. Si perde perché a metà del gioco non ti ricordi più cosa hai fatto.**
 
-Platinum Hub è l'app che tiene il filo al posto tuo: dieci run platino verificate passo per passo, i progressi che si salvano da soli, e — se registri o streammi — ogni casella che spunti diventa un timestamp del video, un capitolo YouTube e una guida cliccabile che porta al minuto esatto in cui quella cosa è successa.
+Platinum Hub è l'app che tiene il filo al posto tuo: dodici run platino verificate passo per passo, i progressi che si salvano da soli, e — se registri o streammi — ogni casella che spunti diventa un timestamp del video, un capitolo YouTube e una guida cliccabile che porta al minuto esatto in cui quella cosa è successa.
 
 Gira sul tuo PC. Non chiede un account, non manda niente a nessuno, non ha pubblicità. È gratis.
 
 **→ [voloire.github.io/platinumhub](https://voloire.github.io/platinumhub/)** — la pagina di presentazione, se ti serve un link da condividere.
 
 <p align="center">
-  <img src="docs/img/hub-home.jpg" alt="La pagina principale con le dieci run" width="820">
+  <img src="docs/img/hub-home.jpg" alt="La pagina principale con le dodici run" width="820">
 </p>
 
 ---
@@ -24,9 +24,9 @@ Le guide online rispondono, ma sono muri di testo che non sanno niente di te. Un
 
 ### Le checklist
 
-- **Dieci giochi**, 865 passi di cui 389 fanno scattare un trofeo — Elden Ring, Dark Souls Remastered, Dark Souls III, Stellar Blade, The First Berserker: Khazan, Lies of P + Overture, Beast of Reincarnation, Black Myth: Wukong, Nioh 3, NieR: Automata.
+- **Dodici giochi**, 1.062 passi di cui 486 fanno scattare un trofeo — Elden Ring, Dark Souls Remastered, Dark Souls III, Sekiro: Shadows Die Twice, Stellar Blade, The First Berserker: Khazan, Lies of P + Overture, Beast of Reincarnation, Black Myth: Wukong, Nioh 3, NieR: Automata, Horizon Zero Dawn Remastered.
 - **Ogni passo ti dice dove sei, cosa fare e cosa scatta**: posizione, trofeo associato, e l'avviso ⚠ **prima** del punto di non ritorno, non dopo.
-- **Bilingue italiano/inglese**, interfaccia *e* contenuti. I nomi in gioco sono quelli ufficiali: 1.137 termini verificati sulle liste trofei italiane di Sony. Dove il nome italiano non era verificabile resta l'inglese, di proposito — un nome inglese giusto ti fa trovare l'oggetto, uno italiano inventato te lo fa cercare a vuoto.
+- **Bilingue italiano/inglese**, interfaccia *e* contenuti. I nomi in gioco sono quelli ufficiali: 1.420 termini verificati sulle liste trofei italiane di Sony. Dove il nome italiano non era verificabile resta l'inglese, di proposito — un nome inglese giusto ti fa trovare l'oggetto, uno italiano inventato te lo fa cercare a vuoto.
 - **Niente glitch, niente skip, niente build copiate da una tier list.** Ogni route è pensata per essere rifatta da un giocatore normale.
 - Filtri, ricerca, "dove ero rimasto", note libere per ogni run, e una sezione richiudibile con le regole d'oro e la build spiegata a punti.
 
@@ -88,10 +88,10 @@ Per un problema di sicurezza: [SECURITY.md](SECURITY.md), senza aprire una issue
 python app.py                              # avvia l'app -> http://127.0.0.1:8787
 python -m pip install -r requirements-dev.txt
 python -m ruff check .                     # lint
-python -m pytest                           # test  (130, ~7 secondi)
+python -m pytest                           # test  (177, ~40 secondi)
 python tools/smoke_check.py                # l'app parte e risponde?
 ```
 
 ---
 
-<sub>Platinum Hub è un progetto indipendente. Non è affiliato né approvato da FromSoftware, Bandai Namco, Team Ninja, Square Enix, Game Science, Shift Up, Neowiz, Sony Interactive Entertainment, Valve o OBS Project. I nomi dei giochi e dei trofei appartengono ai rispettivi proprietari e sono citati a scopo descrittivo.</sub>
+<sub>Platinum Hub è un progetto indipendente. Non è affiliato né approvato da FromSoftware, Bandai Namco, Activision, Guerrilla Games, Team Ninja, Square Enix, Game Science, Shift Up, Neowiz, Sony Interactive Entertainment, Valve o OBS Project. I nomi dei giochi e dei trofei appartengono ai rispettivi proprietari e sono citati a scopo descrittivo.</sub>
