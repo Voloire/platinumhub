@@ -13,7 +13,7 @@ Le route non vengono scritte di getto. Ogni gioco nuovo passa per la stessa cate
 3. **Traduzione.** Il livello italiano si aggiunge come campi affiancati nello stesso file. La regola è ferrea: un nome in gioco si rende in italiano **solo** se il nome ufficiale è verificabile — di norma sulla lista trofei italiana di Sony. Altrimenti resta in inglese e finisce in `unverified_it`.
 4. **Caccia ai nomi inventati.** Un ultimo passaggio avversariale prende il glossario prodotto al punto 3 e prova a demolirlo. Una wiki amatoriale non basta, il titolo di un video YouTube non basta. Quello che non regge torna in inglese.
 
-Sui dieci giochi attuali, questo quarto passaggio ha eliminato 24 traduzioni che sembravano plausibili e non erano ufficiali. È il passaggio che sembra superfluo e non lo è.
+Sui dodici giochi attuali, questo quarto passaggio ha eliminato 35 traduzioni che sembravano plausibili e non erano ufficiali. È il passaggio che sembra superfluo e non lo è.
 
 ### Le regole di contenuto
 

@@ -122,7 +122,7 @@ Non saltare questo passo. Scarica lo zip dalla Release, scompattalo in una carte
 Cosa devi verificare:
 
 - [ ] Windows mostra l'avviso SmartScreen (è previsto): *Ulteriori informazioni* → *Esegui comunque*.
-- [ ] L'app parte, si apre il browser, i dieci giochi ci sono.
+- [ ] L'app parte, si apre il browser, i dodici giochi ci sono.
 - [ ] La finestra nera dice che il database è in `C:\Users\<tu>\AppData\Local\PlatinumHub\platinum.db`.
 - [ ] **Se avevi la cartella della v3.2 con dentro `platinum.db`**, mettila accanto all'exe la prima volta: deve scrivere *"progressi della versione precedente importati"* e ritrovare le tue spunte.
 - [ ] Le scorciatoie globali compaiono nell'elenco all'avvio (`ctrl+alt+F9` e compagnia) e **funzionano con un'altra finestra in primo piano**. Questa è la parte che non ho potuto collaudare: è tutta in `docs/COLLAUDO.md`, in fondo.

@@ -53,7 +53,7 @@ PlatinumHub/
   run.bat                cerca py / python / python3, spiega come installare Python se manca
   data/                  er dsr ds3 sb kz lop bor bmw n3 na  .json               (948 KB)
   fonts/                 roboto-400 / 400i / 700 .woff2  (76 KB, serviti da /fonts/)
-  standalone-html/       10 checklist HTML autonome, bilingui, senza server  (2,4 MB)
+  standalone-html/       12 checklist HTML autonome, bilingui, senza server  (2,9 MB)
   ISTRUZIONI.txt         guida utente completa in italiano
   README.txt             avvio rapido
   PLATINUM-HUB.md        documento di prodotto
@@ -69,7 +69,7 @@ Database in `%LOCALAPPDATA%\PlatinumHub\platinum.db` (vedi sopra).
 
 ## 3. Cosa è stato fatto
 
-### 3.1 Contenuti — 10 run verificate
+### 3.1 Contenuti — 12 run verificate
 
 | id | Gioco | Passi | Con trofeo | Accento |
 |---|---|---|---|---|
@@ -83,14 +83,17 @@ Database in `%LOCALAPPDATA%\PlatinumHub\platinum.db` (vedi sopra).
 | `bmw` | Black Myth: Wukong | 72 | 34 | `#c8483f` |
 | `n3` | Nioh 3 | 61 | 44 | `#8fae4e` |
 | `na` | NieR: Automata | 67 | 48 | `#7f86d8` |
-| | **Totale** | **865** | **389** | |
+| `sek` | Sekiro: Shadows Die Twice | 104 | 32 | `#d9803c` |
+| `hzd` | Horizon Zero Dawn Remastered | 93 | 65 | `#5fb8d4` |
+| | **Totale** | **1.062** | **486** | |
 
 Metodo di produzione dei contenuti, da riusare identico per ogni gioco nuovo:
 **agente di ricerca → agente di contro-verifica → agente di traduzione → agente a caccia di nomi inventati.**
 Fonti incrociate: PowerPyx, Fextralife, Game8, PSNProfiles. Le frasi sono sempre riscritte, mai incollate.
 
-**1.137 termini italiani verificati** in glossario, **944** voci registrate come non verificabili e lasciate in inglese.
-I nomi inventati intercettati dagli agenti avversariali sono 11 sui primi sette giochi e 13 sugli ultimi tre.
+**1.420 termini italiani verificati** in glossario, **981** voci registrate come non verificabili e lasciate in inglese.
+I nomi inventati intercettati dagli agenti avversariali sono 11 sui primi sette giochi, 13 sui tre successivi
+e 11 su Sekiro + Horizon (dove la wiki italiana amatoriale inventava soprattutto i nomi dei luoghi).
 Regola ferrea: **dove il nome italiano ufficiale non è verificabile, resta l'inglese.**
 
 ### 3.2 Funzioni dell'applicazione
@@ -141,7 +144,7 @@ session/start session/stop session/update session/delete cmd pending toast hotke
 
 ### 3.4 Materiale di contorno già pronto
 
-- **10 checklist HTML autonome** bilingui (funzionano senza Python, si aprono a doppio clic)
+- **12 checklist HTML autonome** bilingui (funzionano senza Python, si aprono a doppio clic)
 - **One-pager** di presentazione del prodotto, bilingue (`PlatinumHub-onepager.html`)
 - **Pacchetto YouTube per Elden Ring**: `thumb-elden-platino.jpg` (1280×720, 114 KB, oro/nero, la stessa per tutti
   gli episodi — generata da `make_thumb.py`), formato del titolo

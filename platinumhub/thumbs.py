@@ -375,6 +375,95 @@ cube: function(){
   for (let j=0;j<8;j++) ctx.fillRect(CTX-240+rnd()*480,CTY-220+rnd()*440,3+rnd()*14,3);
   ctx.restore();
 },
+katana: function(){
+  ctx.save();
+  // il cerchio d'inchiostro (enso) dietro la lama: sumi-e, non logo
+  ctx.strokeStyle='rgba(232,224,208,0.18)'; ctx.lineWidth=16; ctx.lineCap='round';
+  ctx.beginPath(); ctx.arc(CTX,CTY,196,Math.PI*0.72,Math.PI*2.38); ctx.stroke();
+  ctx.strokeStyle='rgba(232,224,208,0.10)'; ctx.lineWidth=7;
+  ctx.beginPath(); ctx.arc(CTX,CTY,214,Math.PI*0.85,Math.PI*2.2); ctx.stroke();
+  ctx.translate(CTX,CTY); ctx.rotate(-0.72);
+  // lama: leggermente ricurva, acciaio freddo su glow caldo del tramonto
+  ctx.shadowColor='rgba(240,160,70,0.75)'; ctx.shadowBlur=42;
+  const steel=ctx.createLinearGradient(-14,0,10,0);
+  steel.addColorStop(0,'#f2f6fa'); steel.addColorStop(0.45,'#c2ccd8');
+  steel.addColorStop(0.55,'#8c98a8'); steel.addColorStop(1,'#5a6472');
+  ctx.fillStyle=steel;
+  ctx.beginPath();
+  ctx.moveTo(-4,-252);                       // punta (kissaki)
+  ctx.quadraticCurveTo(16,-120,12,96);       // filo
+  ctx.lineTo(-8,96);
+  ctx.quadraticCurveTo(-16,-110,-4,-252);    // dorso
+  ctx.closePath(); ctx.fill();
+  ctx.shadowBlur=0;
+  ctx.strokeStyle='rgba(255,255,255,0.55)'; ctx.lineWidth=2;   // hamon
+  ctx.beginPath(); ctx.moveTo(0,-244); ctx.quadraticCurveTo(9,-90,6,90); ctx.stroke();
+  // tsuba e impugnatura con la trama a rombi
+  ctx.fillStyle='#3a3226';
+  ctx.beginPath(); ctx.ellipse(0,104,34,14,0,0,Math.PI*2); ctx.fill();
+  const wrap=ctx.createLinearGradient(-12,0,12,0);
+  wrap.addColorStop(0,'#20242c'); wrap.addColorStop(0.5,'#3a4250'); wrap.addColorStop(1,'#181c24');
+  ctx.fillStyle=wrap; ctx.fillRect(-12,112,24,118);
+  ctx.fillStyle='#c8503a';
+  for (let y=120;y<218;y+=24){
+    ctx.beginPath();
+    ctx.moveTo(0,y); ctx.lineTo(10,y+12); ctx.lineTo(0,y+24); ctx.lineTo(-10,y+12);
+    ctx.closePath(); ctx.fill();
+  }
+  ctx.fillStyle='#c8a24a'; ctx.fillRect(-13,228,26,12);   // kashira
+  ctx.restore();
+  // le foglie d'autunno di Ashina che salgono col vento
+  ctx.save();
+  const rnd=mulberry32(21);
+  for (let i=0;i<22;i++){
+    const x=CTX-210+rnd()*420, y=CTY-230+rnd()*460;
+    ctx.fillStyle='rgba(224,'+(130+Math.floor(rnd()*70))+',50,'+(0.20+rnd()*0.5).toFixed(2)+')';
+    ctx.save(); ctx.translate(x,y); ctx.rotate(rnd()*Math.PI);
+    ctx.beginPath(); ctx.ellipse(0,0,2.2+rnd()*4.2,1.2+rnd()*2.0,0,0,Math.PI*2); ctx.fill();
+    ctx.restore();
+  }
+  ctx.restore();
+},
+bow: function(){
+  ctx.save(); ctx.translate(CTX,CTY); ctx.rotate(0.16);
+  // arco ricurvo: legno e tendine, il glow e' la luce azzurra delle macchine
+  ctx.shadowColor='rgba(90,190,220,0.8)'; ctx.shadowBlur=38;
+  const wood=ctx.createLinearGradient(0,-230,0,230);
+  wood.addColorStop(0,'#8a6c48'); wood.addColorStop(0.5,'#c09a62'); wood.addColorStop(1,'#6e5438');
+  ctx.strokeStyle=wood; ctx.lineWidth=17; ctx.lineCap='round';
+  ctx.beginPath();
+  ctx.moveTo(-26,-226);
+  ctx.quadraticCurveTo(96,-150,86,-26);
+  ctx.quadraticCurveTo(82,26,86,26);
+  ctx.quadraticCurveTo(96,150,-26,226);
+  ctx.stroke();
+  ctx.shadowBlur=0;
+  ctx.strokeStyle='rgba(235,245,250,0.85)'; ctx.lineWidth=3;   // corda
+  ctx.beginPath(); ctx.moveTo(-26,-226); ctx.lineTo(-58,0); ctx.lineTo(-26,226); ctx.stroke();
+  // freccia incoccata, punta di macchina
+  ctx.strokeStyle='#d8cbb0'; ctx.lineWidth=7;
+  ctx.beginPath(); ctx.moveTo(-58,0); ctx.lineTo(158,0); ctx.stroke();
+  ctx.fillStyle='#9ad8ea'; ctx.shadowColor='rgba(90,190,220,0.9)'; ctx.shadowBlur=26;
+  ctx.beginPath(); ctx.moveTo(206,0); ctx.lineTo(150,-16); ctx.lineTo(150,16);
+  ctx.closePath(); ctx.fill();
+  ctx.shadowBlur=0; ctx.fillStyle='#c8503a';
+  for (const dx of [-52,-30]){
+    ctx.beginPath();
+    ctx.moveTo(dx,-4); ctx.lineTo(dx-18,-16); ctx.lineTo(dx-8,-4);
+    ctx.lineTo(dx-18,8); ctx.closePath(); ctx.fill();
+  }
+  ctx.restore();
+  // le luci delle macchine nell'erba alta
+  ctx.save();
+  const rnd=mulberry32(63);
+  for (let i=0;i<16;i++){
+    const x=CTX-220+rnd()*440, y=CTY-200+rnd()*400;
+    ctx.shadowColor='rgba(90,190,220,0.9)'; ctx.shadowBlur=12;
+    ctx.fillStyle='rgba(150,225,245,'+(0.25+rnd()*0.6).toFixed(2)+')';
+    ctx.beginPath(); ctx.arc(x,y,1.2+rnd()*2.6,0,Math.PI*2); ctx.fill();
+  }
+  ctx.restore();
+},
 trophy: function(){
   // il ripiego per un gioco senza design suo: una coppa, onesta e leggibile
   ctx.save();

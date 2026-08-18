@@ -102,7 +102,7 @@ Step 5 "Commit"
 
 git commit -q -m "feat: prima versione pubblica di Platinum Hub
 
-Dieci route platino verificate e bilingui, hub locale con persistenza SQLite,
+Dodici route platino verificate e bilingui, hub locale con persistenza SQLite,
 modalita' streamer con marker, capitoli YouTube, overlay per OBS e guida
 pubblicabile. Pipeline di CI con 130 test, lint e analisi di sicurezza."
 Ok "commit creato: $(git rev-parse --short HEAD)"

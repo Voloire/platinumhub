@@ -1,14 +1,14 @@
 # Platinum Hub — documento unico
 
 **by Voloirex** · v2.0 · agg. 16 agosto 2026
-Hub locale per dieci run platino, bilingue IT/EN, con salvataggio automatico su SQLite e modalità Streamer per marcare i video.
+Hub locale per dodici run platino, bilingue IT/EN, con salvataggio automatico su SQLite e modalità Streamer per marcare i video.
 Da qui in poi si lavora solo su questo: l'hub è l'unico progetto attivo.
 
 ---
 
 ## 1. Cos'è
 
-Un'app che gira sul tuo PC. Apre nel browser una pagina con dieci giochi, scegli quello che stai giocando, spunti le caselle mentre avanzi e ogni spunta finisce dentro un database locale. Chiudi tutto, riavvii, torni tra un mese: è tutto dov'era.
+Un'app che gira sul tuo PC. Apre nel browser una pagina con dodici giochi, scegli quello che stai giocando, spunti le caselle mentre avanzi e ogni spunta finisce dentro un database locale. Chiudi tutto, riavvii, torni tra un mese: è tutto dov'era.
 
 Niente account, niente cloud, niente internet. Niente `pip`, niente librerie: solo la standard library di Python 3 (`http.server` + `sqlite3`).
 
@@ -64,7 +64,7 @@ Copertura per gioco:
 | Lies of P + Overture | 172 | 201 |
 | Beast of Reincarnation | 80 | 71 |
 
-Tutti e dieci i giochi hanno localizzazione italiana ufficiale e nomi trofeo italiani ufficiali (Stellar Blade è l'unico anche doppiato). Le liste trofei italiane sono state accoppiate posizionalmente con quelle inglesi, così i nomi dei trofei sono esatti al 100%.
+Tutti e dodici i giochi hanno localizzazione italiana ufficiale e nomi trofeo italiani ufficiali (Stellar Blade e Horizon Zero Dawn Remastered sono gli unici anche doppiati). Le liste trofei italiane sono state accoppiate posizionalmente con quelle inglesi, così i nomi dei trofei sono esatti al 100%.
 
 Qualche caso che vale la pena sapere: in **Elden Ring** *Vigor* è **Vitalità**, non "Vigore". In **Lies of P** *Motivity* è **Forza Motrice**, *Advance* è **Sviluppo**, e alcuni titoli dei trofei sono ufficialmente **in inglese anche in italiano** (`Rise of P`, `Free from the puppet string`, `Real boy : They all lived happily ever after`); *Ergo*, *Stargazer* e *Hotel Krat* non sono tradotti nemmeno in italiano. In **Beast of Reincarnation** il cane si chiama **Kuu**, non "Koo".
 
@@ -98,7 +98,7 @@ Filtri e lingua restano salvati tra una sessione e l'altra.
 
 ### Backup
 
-Nella pagina principale: **Scarica backup** produce un `.json` datato con progressi, note e preferenze di tutte e dieci le run; **Ripristina backup…** lo rilegge (chiede conferma, perché sostituisce tutto). Un file che non è un backup di Platinum Hub viene rifiutato. Resta valido anche il metodo brutale: copiare `platinum.db`.
+Nella pagina principale: **Scarica backup** produce un `.json` datato con progressi, note e preferenze di tutte e dodici le run; **Ripristina backup…** lo rilegge (chiede conferma, perché sostituisce tutto). Un file che non è un backup di Platinum Hub viene rifiutato. Resta valido anche il metodo brutale: copiare `platinum.db`.
 
 ---
 
@@ -194,7 +194,7 @@ Le combinazioni si cambiano dalla scheda Sessione (formato `combinazione:azione`
 
 ---
 
-## 6. Le dieci run
+## 6. Le dodici run
 
 | Gioco | Build | Passi | Passi-trofeo | Prefisso codice |
 |---|---|---|---|---|
@@ -208,6 +208,8 @@ Le combinazioni si cambiano dalla scheda Sessione (formato `combinazione:azione`
 | Black Myth: Wukong | tank in posizione Smash, Immobilize + parata Rock Solid | 72 | 34 | `BMW-` |
 | Nioh 3 | samurai con odachi, set Crimson General | 61 | 44 | `N3-` |
 | NieR: Automata | 2B/9S/A2, chip di cura offensiva | 67 | 48 | `NA-` |
+| Sekiro: Shadows Die Twice | deflect-first, Contromossa Mikiri prima di tutto; 4 finali con backup del save | 104 | 32 | `SEK-` |
+| Horizon Zero Dawn Remastered | trapper-sniper difensiva: Concentrazione, archi, Tripcaster | 93 | 65 | `HZD-` |
 
 Ogni checklist, in entrambe le lingue, ha: regole d'oro, riassunto build, fasi richiudibili, doppia barra di avanzamento (trofei / step totali), tabella di progressione delle statistiche, riquadro note.
 
@@ -304,10 +306,10 @@ PlatinumHub/
 ├── ISTRUZIONI.txt          istruzioni in italiano
 ├── README.txt              le stesse in inglese, per condividere
 ├── platinum.db             creato al primo avvio (i tuoi progressi)
-├── data/                   le dieci route in JSON
+├── data/                   le dodici route in JSON
 │   └── er.json  dsr.json  ds3.json  sb.json  kz.json  lop.json  bor.json
 │       (ognuno contiene sia l'inglese sia l'italiano)
-└── standalone-html/        le stesse dieci checklist come file singoli bilingui
+└── standalone-html/        le stesse dodici checklist come file singoli bilingui
 ```
 
 La cartella `standalone-html/` contiene copie che si aprono a doppio click senza Python, ma **non salvano da sole**: prima di chiudere premi *Copy progress code* e tieniti il codice in un file di testo. Servono per condividere (Drive, telefono, un amico) o come scorta. Per giocare si usa l'hub.
@@ -323,12 +325,12 @@ La cartella `standalone-html/` contiene copie che si aprono a doppio click senza
 
 | Metodo | Percorso | Cosa fa |
 |---|---|---|
-| GET | `/` | home con le dieci card e le barre di avanzamento lette dal db |
+| GET | `/` | home con le dodici card e le barre di avanzamento lette dal db |
 | GET | `/run/<id>` | checklist renderizzata dal JSON |
 | GET | `/api/progress?run=<id>` | `{run, bits, updated_at, total}` |
 | POST | `/api/progress` | `{run, bits}` → upsert (valida che siano solo 0 e 1, poi pad/tronca alla lunghezza giusta) |
 | GET/POST | `/api/notes` | note libere per run |
-| GET | `/api/summary` | riepilogo JSON di tutte e dieci |
+| GET | `/api/summary` | riepilogo JSON di tutte e dodici |
 | GET | `/lang/<it\|en>?next=…` | cambia lingua e torna alla pagina |
 | GET | `/api/export` | scarica il backup completo in JSON |
 | POST | `/api/import` | ripristina un backup (rifiuta i file non validi) |
@@ -398,4 +400,4 @@ Sulle prime quattro checklist: 48 affermazioni verificate, 10 corrette. Sulla El
 Il livello italiano è passato per lo stesso trattamento: un agente di audit della localizzazione ha stabilito quali giochi hanno davvero nomi ufficiali italiani, sette agenti hanno costruito i glossari e tradotto (ognuno vincolato a lasciare l'inglese dove non riusciva a verificare), e due agenti avversariali hanno poi dato la caccia ai nomi inventati campionando i glossari e il testo dei passi. Hanno beccato **11 nomi sbagliati**, tutti corretti: fra gli altri *Rune Arc* = **Saetta runica** (non "Arco di runa"), *Comet Azur* = **Cometa di Azur** (non "Azul"), *Spirit Ashes* = **Ceneri spiritiche**, *Hermit's Cave* = **Grotta dell'Eremita**, *Soul of Cinder* = **Anima di tizzoni**, e *Blade Nexus* di Khazan riportato all'inglese perché nessuna fonte italiana lo conferma. Dove guida e community erano in disaccordo, ha vinto la risposta in-game della community.
 
 ### Verifiche fatte prima della consegna
-Roundtrip SQLite via API, dieci pagine renderizzate in entrambe le lingue senza errori JS, export/import di backup con file spazzatura rifiutato, click reali in un browser con persistenza confermata dopo reload, fallback di porta, payload malformati respinti con 400, installazione da zero simulata estraendo lo zip in una cartella pulita, e le dieci checklist singole aperte da `file://` con il cambio lingua e i codici progressi.
+Roundtrip SQLite via API, dodici pagine renderizzate in entrambe le lingue senza errori JS, export/import di backup con file spazzatura rifiutato, click reali in un browser con persistenza confermata dopo reload, fallback di porta, payload malformati respinti con 400, installazione da zero simulata estraendo lo zip in una cartella pulita, e le dodici checklist singole aperte da `file://` con il cambio lingua e i codici progressi.

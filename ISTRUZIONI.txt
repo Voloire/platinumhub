@@ -8,7 +8,7 @@ IN DUE RIGHE
 ------------
 Non si apre un HTML: si fa doppio click su  run.bat
 Si apre una finestra nera (e' l'app, lasciala aperta) e poi il browser
-da solo sulla pagina con i dieci giochi. Spunti le caselle e basta: si
+da solo sulla pagina con i dodici giochi. Spunti le caselle e basta: si
 salva tutto da solo.
 
 
@@ -149,7 +149,7 @@ avevi un platinum.db della v3.x accanto ad app.py viene importato da
 solo al primo avvio (l'originale resta li' rinominato .migrated).
 
 E' un database SQLite normale, si crea da solo al primo avvio. Dentro
-ci sono i progressi di tutte e dieci le run, le note e le preferenze.
+ci sono i progressi di tutte e dodici le run, le note e le preferenze.
 
   - Backup veloce         -> copia platinum.db da qualche parte
   - Backup datato         -> nella pagina principale, "Scarica backup":
